@@ -1,0 +1,2354 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion examples ArrowKeysAndNoTabNavAccordionComponent should render correctly 1`] = `
+<div
+  id="root15"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        tabindex="0"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-66"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 1 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        tabindex="-1"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-68"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 2 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        tabindex="-1"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-70"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 3 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples DefaultAccordionComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-0"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+        <div
+          class="v-gap-6 v-align-items-center v-flex v-flex-row"
+          valignitemscenter=""
+          vflex=""
+          vgap="6"
+        >
+          Accordion title
+        </div>
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples DisabledAccordionComponent should render correctly 1`] = `
+<div
+  id="root1"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        aria-disabled="true"
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        tabindex="-1"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-2"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+        <div
+          class="v-gap-6 v-align-items-center v-flex v-flex-row"
+          valignitemscenter=""
+          vflex=""
+          vgap="6"
+        >
+          Accordion title
+        </div>
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples MultiSelectDefaultAccordionComponent should render correctly 1`] = `
+<div
+  id="root2"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    multiselect=""
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-4"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 1 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-6"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 2 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-8"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 3 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples MultiSelectExpandedAccordionComponent should render correctly 1`] = `
+<div
+  id="root3"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    multiselect=""
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-10"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 1 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      open="open"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-13"
+            v-icon-visa-chevron-down-tiny=""
+            v-toggle-rotated-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+          
+        </v-icon-visa-toggle>
+         Accordion title 2 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-14"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 3 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples MultiSelectSubtleAccordionComponent should render correctly 1`] = `
+<div
+  id="root4"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    multiselect=""
+    subtle=""
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-tertiary v-typography-body-2-medium"
+        style="--v-button-default-background: transparent; --v-accordion-background: transparent; --v-button-default-gap: 2px; --v-accordion-items-gap: 2px; --v-accordion-foreground-initial: var(--palette-default-active);"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+        vtypography="body-2-medium"
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-16"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 1 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        style="--v-accordion-panel-background-color: transparent; --v-accordion-panel-border-size: 0px; --v-accordion-panel-padding-inline: 32px;"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-tertiary v-typography-body-2-medium"
+        style="--v-button-default-background: transparent; --v-accordion-background: transparent; --v-button-default-gap: 2px; --v-accordion-items-gap: 2px; --v-accordion-foreground-initial: var(--palette-default-active);"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+        vtypography="body-2-medium"
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-18"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 2 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        style="--v-accordion-panel-background-color: transparent; --v-accordion-panel-border-size: 0px; --v-accordion-panel-padding-inline: 32px;"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-tertiary v-typography-body-2-medium"
+        style="--v-button-default-background: transparent; --v-accordion-background: transparent; --v-button-default-gap: 2px; --v-accordion-items-gap: 2px; --v-accordion-foreground-initial: var(--palette-default-active);"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+        vtypography="body-2-medium"
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-20"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 3 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        style="--v-accordion-panel-background-color: transparent; --v-accordion-panel-border-size: 0px; --v-accordion-panel-padding-inline: 32px;"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples MultiSelectWithDisabledAccordionComponent should render correctly 1`] = `
+<div
+  id="root5"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    multiselect=""
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      v-accordion-item=""
+    >
+      <summary
+        aria-disabled="true"
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        tabindex="-1"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-22"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 1 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-24"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 2 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-26"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 3 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples SeparateToggleAccordionComponent should render correctly 1`] = `
+<div
+  id="root6"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    v-accordion=""
+  >
+    <div
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <div
+        class="v-accordion-heading v-align-items-center v-flex v-flex-row"
+        id="accordion-heading-standalone"
+        v-accordion-heading=""
+        valignitemscenter=""
+        vflex=""
+      >
+        <input
+          aria-labelledby="accordion-heading-standalone"
+          class="v-checkbox"
+          id="checkbox-standalone"
+          type="checkbox"
+          v-checkbox=""
+          value="checkbox-standalone-value"
+        />
+         Accordion title 
+        <button
+          aria-expanded="false"
+          aria-labelledby="accordion-heading-standalone"
+          buttonsize="small"
+          class="v-button v-button-icon v-button-small v-ml-auto v-my-auto"
+          type="button"
+          v-button-icon=""
+          vml="auto"
+          vmy="auto"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-28"
+            style="--v-accordion-icon-color: white;"
+            v-icon-visa-chevron-right-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </button>
+      </div>
+      <div
+        aria-hidden="true"
+        class="v-accordion-panel v-hide"
+        v-accordion-panel=""
+      >
+         This is required text that describes the accordion section in more detail. 
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples SingleSelectDefaultAccordionComponent should render correctly 1`] = `
+<div
+  id="root7"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-29"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 1 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-31"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 2 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-33"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 3 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples SingleSelectExpandedAccordionComponent should render correctly 1`] = `
+<div
+  id="root8"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-35"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 1 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      open="open"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-38"
+            v-icon-visa-chevron-down-tiny=""
+            v-toggle-rotated-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+          
+        </v-icon-visa-toggle>
+         Accordion title 2 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-39"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 3 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples SingleSelectSubtleAccordionComponent should render correctly 1`] = `
+<div
+  id="root9"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    subtle=""
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-tertiary v-typography-body-2-medium"
+        style="--v-button-default-background: transparent; --v-accordion-background: transparent; --v-button-default-gap: 2px; --v-accordion-items-gap: 2px; --v-accordion-foreground-initial: var(--palette-default-active);"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+        vtypography="body-2-medium"
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-41"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 1 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        style="--v-accordion-panel-background-color: transparent; --v-accordion-panel-border-size: 0px; --v-accordion-panel-padding-inline: 32px;"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-tertiary v-typography-body-2-medium"
+        style="--v-button-default-background: transparent; --v-accordion-background: transparent; --v-button-default-gap: 2px; --v-accordion-items-gap: 2px; --v-accordion-foreground-initial: var(--palette-default-active);"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+        vtypography="body-2-medium"
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-43"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 2 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        style="--v-accordion-panel-background-color: transparent; --v-accordion-panel-border-size: 0px; --v-accordion-panel-padding-inline: 32px;"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-tertiary v-typography-body-2-medium"
+        style="--v-button-default-background: transparent; --v-accordion-background: transparent; --v-button-default-gap: 2px; --v-accordion-items-gap: 2px; --v-accordion-foreground-initial: var(--palette-default-active);"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+        vtypography="body-2-medium"
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-45"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 3 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        style="--v-accordion-panel-background-color: transparent; --v-accordion-panel-border-size: 0px; --v-accordion-panel-padding-inline: 32px;"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples SingleSelectWithDisabledAccordionComponent should render correctly 1`] = `
+<div
+  id="root10"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        aria-disabled="true"
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        tabindex="-1"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-47"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 1 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-49"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 2 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-51"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 3 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples SubtleAccordionComponent should render correctly 1`] = `
+<div
+  id="root13"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    subtle=""
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        buttoncolor="tertiary"
+        buttonsize="medium"
+        class="v-accordion-heading v-button v-button-tertiary v-typography-body-2-medium"
+        style="--v-button-default-background: transparent; --v-accordion-background: transparent; --v-button-default-gap: 2px; --v-accordion-items-gap: 2px; --v-accordion-foreground-initial: var(--palette-default-active);"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+        vtypography="body-2-medium"
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-58"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        style="--v-accordion-panel-background-color: transparent; --v-accordion-panel-border-size: 0px; --v-accordion-panel-padding-inline: 32px;"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples SubtleDisabledAccordionComponent should render correctly 1`] = `
+<div
+  id="root11"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    subtle=""
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        aria-disabled="true"
+        buttoncolor="tertiary"
+        buttonsize="medium"
+        class="v-accordion-heading v-button v-button-tertiary v-typography-body-2-medium"
+        style="--v-button-default-background: transparent; --v-accordion-background: transparent; --v-button-default-gap: 2px; --v-accordion-items-gap: 2px;"
+        tabindex="-1"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+        vtypography="body-2-medium"
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-53"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        style="--v-accordion-panel-background-color: transparent; --v-accordion-panel-border-size: 0px; --v-accordion-panel-padding-inline: 32px;"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples SubtleWithIconAccordionComponent should render correctly 1`] = `
+<div
+  id="root12"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    subtle=""
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-tertiary v-typography-body-2-medium"
+        style="--v-button-default-background: transparent; --v-accordion-background: transparent; --v-button-default-gap: 2px; --v-accordion-items-gap: 2px; --v-accordion-foreground-initial: var(--palette-default-active);"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+        vtypography="body-2-medium"
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-55"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-cloud v-icon-low v-icon-visa"
+          focusable="false"
+          height="24"
+          id="a-v__icon__internal-57"
+          v-icon-visa-cloud-low=""
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            class="v-icon-secondary"
+            d="M17 12.001H15C15 11.451 14.55 11.001 14 11.001V9.00098C15.65 9.00098 17 10.351 17 12.001Z"
+          />
+          <path
+            class="v-icon-primary"
+            d="M19 20.001H5C2.24 20.001 0 17.761 0 15.001C0 12.751 1.5 10.821 3.59 10.201C3.98 8.36098 5.58 7.00098 7.5 7.00098C7.74 7.00098 7.98 7.02098 8.21 7.06098C9.51 5.16098 11.66 4.00098 14 4.00098C17.66 4.00098 20.67 6.82098 20.97 10.401C22.79 11.181 24 12.981 24 15.001C24 17.761 21.76 20.001 19 20.001ZM7.5 9.00098C6.4 9.00098 5.5 9.90098 5.5 11.001V11.881L4.62 12.021C3.13 12.211 2 13.491 2 15.001C2 16.651 3.35 18.001 5 18.001H19C20.65 18.001 22 16.651 22 15.001C22 13.631 21.08 12.431 19.75 12.091L18.98 11.891L19 11.001C19 8.24098 16.76 6.00098 14 6.00098C12.13 6.00098 10.43 7.03098 9.56 8.70098L9.13 9.52098L8.28 9.16098C8.04 9.05098 7.77 9.00098 7.5 9.00098Z"
+          />
+        </svg>
+         Accordion title 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        style="--v-accordion-panel-background-color: transparent; --v-accordion-panel-border-size: 0px; --v-accordion-panel-padding-inline: 32px;"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples WithArrowKeyNavAccordionComponent should render correctly 1`] = `
+<div
+  id="root14"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-60"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 1 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-62"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 2 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-64"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 3 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples WithBadgeAccordionComponent should render correctly 1`] = `
+<div
+  id="root16"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        aria-describedby="a-v-badge-0"
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-72"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 
+        <div
+          badgetype="stable"
+          class="v-badge v-badge-stable v-ml-auto"
+          id="a-v-badge-0"
+          v-badge=""
+          vml="auto"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-success v-icon-tiny v-icon-visa v-m-0"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-74"
+            v-icon-visa-success-tiny=""
+            vM="0"
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-secondary"
+              clip-rule="evenodd"
+              d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C8.74542 2 9.4591 2.13593 10.1176 2.38437L11.6319 0.870034C10.542 0.313733 9.30764 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16C12.4183 16 16 12.4183 16 8C16 7.21837 15.8879 6.46293 15.6789 5.74886L13.9678 7.37472C13.9891 7.58024 14 7.78885 14 8Z"
+              fill-rule="evenodd"
+            />
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M15 3.46597L7.72838 10.9961L5 8.18244L6.42533 6.71257L7.72838 8.05635L13.5747 1.99609L15 3.46597Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <span>
+            Label
+          </span>
+        </div>
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples WithCustomToggleIconsAccordionComponent should render correctly 1`] = `
+<div
+  id="root17"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        
+        <svg
+          aria-hidden="true"
+          class="v-accordion-toggle-icon v-icon v-icon-disclosure-expand v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-75"
+          v-icon-visa-disclosure-expand-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            d="M13 8L4 14V2L13 8Z"
+          />
+        </svg>
+        
+         Accordion title 1 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        
+        <svg
+          aria-hidden="true"
+          class="v-accordion-toggle-icon v-icon v-icon-disclosure-expand v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-76"
+          v-icon-visa-disclosure-expand-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            d="M13 8L4 14V2L13 8Z"
+          />
+        </svg>
+        
+         Accordion title 2 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        
+        <svg
+          aria-hidden="true"
+          class="v-accordion-toggle-icon v-icon v-icon-disclosure-expand v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-77"
+          v-icon-visa-disclosure-expand-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            d="M13 8L4 14V2L13 8Z"
+          />
+        </svg>
+        
+         Accordion title 3 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples WithIconAccordionComponent should render correctly 1`] = `
+<div
+  id="root18"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-78"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-cloud v-icon-low v-icon-visa"
+          focusable="false"
+          height="24"
+          id="a-v__icon__internal-80"
+          v-icon-visa-cloud-low=""
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            class="v-icon-secondary"
+            d="M17 12.001H15C15 11.451 14.55 11.001 14 11.001V9.00098C15.65 9.00098 17 10.351 17 12.001Z"
+          />
+          <path
+            class="v-icon-primary"
+            d="M19 20.001H5C2.24 20.001 0 17.761 0 15.001C0 12.751 1.5 10.821 3.59 10.201C3.98 8.36098 5.58 7.00098 7.5 7.00098C7.74 7.00098 7.98 7.02098 8.21 7.06098C9.51 5.16098 11.66 4.00098 14 4.00098C17.66 4.00098 20.67 6.82098 20.97 10.401C22.79 11.181 24 12.981 24 15.001C24 17.761 21.76 20.001 19 20.001ZM7.5 9.00098C6.4 9.00098 5.5 9.90098 5.5 11.001V11.881L4.62 12.021C3.13 12.211 2 13.491 2 15.001C2 16.651 3.35 18.001 5 18.001H19C20.65 18.001 22 16.651 22 15.001C22 13.631 21.08 12.431 19.75 12.091L18.98 11.891L19 11.001C19 8.24098 16.76 6.00098 14 6.00098C12.13 6.00098 10.43 7.03098 9.56 8.70098L9.13 9.52098L8.28 9.16098C8.04 9.05098 7.77 9.00098 7.5 9.00098Z"
+          />
+        </svg>
+         Accordion title 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+</div>
+`;
+
+exports[`Accordion examples WithProgrammaticExpansionAccordionComponent should render correctly 1`] = `
+<div
+  id="root19"
+>
+  <div
+    class="v-flex v-flex-col v-gap-6"
+    v-accordion=""
+  >
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-81"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 1 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-83"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 2 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+    <details
+      class="v-accordion"
+      name="a-accordion-details--0"
+      v-accordion-item=""
+    >
+      <summary
+        class="v-accordion-heading v-button v-button-large v-button-secondary"
+        type="button"
+        v-accordion-heading=""
+        v-button=""
+      >
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny v-accordion-toggle-icon"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-85"
+            v-icon-visa-chevron-right-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+         Accordion title 3 
+      </summary>
+      <div
+        class="v-accordion-panel"
+        v-accordion-panel=""
+      >
+        This is required text that describes the accordion section in more detail.
+      </div>
+    </details>
+  </div>
+  <div
+    class="v-mt-12"
+    vmt="12"
+  >
+    <button
+      class="v-button"
+      type="button"
+      v-button=""
+    >
+      Expand first item
+    </button>
+  </div>
+</div>
+`;

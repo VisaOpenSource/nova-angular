@@ -14,7 +14,7 @@
  * limitations under the License.
  *
  **/
-const packageJson = require('../../libs/nova-lib/package.json');
+const packageJson = require('../../projects/nova-angular/package.json');
 const path = require('path');
 const fs = require('fs');
 const { addStaticData } = require('./library-schema');
@@ -44,10 +44,7 @@ const Process = (() => {
     getContentData(); // uncomment when content hierarchy is updated by content team and needs to be recreated
     data['library'] = addStaticData(packageJson);
     data['components'] = getComponentData();
-    fs.writeFileSync(
-      path.resolve(`${TARGET_DIR}/metadata/nova-angular-${packageJson.version}.json`),
-      JSON.stringify(data, null, 2)
-    );
+    fs.writeFileSync(path.resolve(`${TARGET_DIR}/metadata/nova-angular-6.0.0.json`), JSON.stringify(data, null, 2));
   };
 
   processArgs(process.argv);

@@ -45,7 +45,7 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
-/apps/workshop/src/assets/themes
+/projects/workshop/public/themes
 
 # System Files
 .DS_Store
@@ -63,6 +63,6 @@ projects/vds-protractor-axe-plugin/node_modules
 *vds-lib-unit-test-junit-report*
 unit-test/*
 !/unit-test/vds-lib/junit/vds-lib-unit-test-junit-report
-apps/workshop/src/assets/themes/*
-apps/workshop/src/assets/metadata/nova-angular-*.json
-apps/workshop/src/assets/metadata/examples-hierarchy.json
+projects/workshop/public/themes/*
+projects/workshop/public/metadata/nova-angular-*.json
+projects/workshop/public/metadata/examples-hierarchy.json

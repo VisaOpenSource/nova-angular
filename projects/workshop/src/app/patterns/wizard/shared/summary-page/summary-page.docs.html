@@ -1,0 +1,45 @@
+<!--
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<h2 vTypography="headline-2" vAlignSelfStart>Summary</h2>
+@for (step of steps().slice(0, -1); track step.id; let i = $index) {
+  <div
+    vFlex
+    vFlexCol
+    vPY="20"
+    [style.padding-block-end]="i !== steps().length - 2 ? '20px' : '0'"
+    vAlignSelfStretch
+    [style.border-block-end]="
+      i !== steps().length - 2 ? '1px solid rgba(0, 0, 0, 0.1)' : ''
+    "
+  >
+    <div vFlex vJustifyContentBetween>
+      <h3 vTypography="body-2-bold" vTypographyColor="subtle">
+        {{ i + 1 }}. {{ step.stepLabel }}
+      </h3>
+      <button
+        v-button-icon
+        buttonColor="tertiary"
+        buttonSize="small"
+        [attr.aria-label]="'edit' + step.stepLabel"
+        (click)="edit.emit(i)"
+      >
+        <svg v-icon-visa-edit-tiny />
+      </button>
+    </div>
+    <p>Label: {{ step.inputValue }}</p>
+  </div>
+}

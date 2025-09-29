@@ -1,0 +1,3732 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Vertical navigation examples AlternateVerticalNavComponent should render correctly 1`] = `
+<div
+  id="root3"
+>
+  <div
+    class="app-container"
+  >
+    <header
+      class="v-alternate v-icon-two-color v-nav v-nav-vertical"
+      v-icon-two-color=""
+      v-nav=""
+      valternate=""
+      vertical=""
+    >
+      <a
+        class="v-link v-skip-link"
+        fragment="content"
+        href="/#content"
+        routerlink="./"
+        v-link=""
+        v-skip-to-content=""
+      >
+        Skip to content
+      </a>
+      <a
+        aria-label="Visa Application Name home"
+        class="v-link v-gap-12 v-flex v-flex-col v-link-no-underline v-mb-30 v-ml-24 v-mr-14 v-mt-16"
+        href="/"
+        nounderline=""
+        style="background-color: transparent;"
+        v-link=""
+        vflex=""
+        vflexcol=""
+        vgap="12"
+        vmb="30"
+        vml="24"
+        vmr="14"
+        vmt="16"
+      >
+        <svg
+          class="v-logo"
+          height="23"
+          v-logo-visa=""
+          viewBox="0 0 156 51"
+          width="71"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M111.134 33.9989C111.164 26.325 104.81 22.9893 99.7247 20.3201C96.3099 18.5276 93.4677 17.0357 93.5169 14.7323C93.5529 12.9893 95.2167 11.1311 98.8467 10.6629C103.098 10.2519 107.381 10.9985 111.242 12.8236L113.453 2.53852C109.695 1.1258 105.714 0.394122 101.699 0.377777C89.3107 0.377777 80.5309 6.98244 80.4516 16.4465C80.3724 23.4257 86.6962 27.3438 91.4714 29.6702C96.3691 32.047 98.0185 33.574 97.9968 35.7059C97.9968 38.9686 94.0859 40.4019 90.4775 40.4595C84.3492 40.5572 80.7168 38.8625 77.8368 37.5187L77.5634 37.3913L75.2658 48.0365C78.2045 49.3906 83.6279 50.5646 89.253 50.6222C102.455 50.6222 111.098 44.0968 111.141 33.9989H111.134ZM59.0603 1.26366L38.6989 49.8587H25.4103L15.3917 11.0806C14.7795 8.68941 14.2537 7.81791 12.4027 6.80957C9.36321 5.1746 4.39351 3.63327 0 2.67535L0.302504 1.23485H21.6866C24.5639 1.24665 27.0063 3.34708 27.4486 6.19015L32.7424 34.3158L45.8653 1.26366H59.0603ZM155.573 49.8443H143.949L142.429 42.6059H126.303L123.681 49.8587H110.486L129.335 4.82889C130.228 2.66308 132.343 1.25366 134.686 1.26367H145.425L155.573 49.8443ZM129.918 32.6448L136.537 14.3937L140.347 32.6448H129.918ZM66.6373 49.8587L77.0664 1.26362H64.4621L54.0617 49.8587H66.6373Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        <div
+          class="v-typography-color-default v-typography-subtitle-1"
+          vtypography="subtitle-1"
+          vtypographycolor="default"
+        >
+          Application Name
+        </div>
+      </a>
+      <nav
+        aria-label="Alternate vertical"
+        class="v-mb-6"
+        vmb="6"
+      >
+        <ul
+          class="v-tabs v-tabs-vertical"
+          v-tabs=""
+          vertical=""
+        >
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+               L1 label 1
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+               L1 label 2
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+               L1 label 3
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+               L1 label 4
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+               L1 label 5
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <hr
+        aria-hidden="true"
+        class="v-divider v-divider-decorative v-mb-6 v-mt-auto"
+        dividertype="decorative"
+        style="inline-size: 100%;"
+        v-divider=""
+        vmb="6"
+        vmt="auto"
+      />
+      <div
+        class="v-align-self-stretch v-flex v-flex-col v-mb-4"
+        valignselfstretch=""
+        vflex=""
+        vflexcol=""
+        vmb="4"
+      >
+        <div
+          class="v-tab"
+          disclosuretab=""
+          v-tab-item=""
+        >
+          <button
+            aria-controls="alternate-profile-links"
+            aria-expanded="false"
+            aria-label="Alex Miller"
+            buttoncolor="tertiary"
+            buttonsize="large"
+            class="v-button v-button-large v-button-tertiary"
+            type="button"
+            v-button=""
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-account v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-17"
+              v-icon-visa-account-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-secondary"
+                clip-rule="evenodd"
+                d="M8 11C5.23858 11 3 13.2386 3 16H1C1 12.134 4.13401 9 8 9C11.866 9 15 12.134 15 16H13C13 13.2386 10.7614 11 8 11Z"
+                fill-rule="evenodd"
+              />
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M8 2C6.89543 2 6 2.89543 6 4C6 5.10457 6.89543 6 8 6C9.10457 6 10 5.10457 10 4C10 2.89543 9.10457 2 8 2ZM4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+             Alex Miller 
+            <v-icon-visa-toggle
+              class="v-icon v-icon-tiny v-tab-suffix"
+              style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+            >
+              
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-tab-suffix"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-18"
+                v-icon-visa-chevron-down-tiny=""
+                v-toggle-default-template=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              
+            </v-icon-visa-toggle>
+          </button>
+          <div
+            aria-hidden="true"
+            class="v-hide v-flex v-flex-col v-p-4"
+            id="alternate-profile-links"
+            vflex=""
+            vflexcol=""
+            vp="4"
+          >
+            <ul
+              class="v-tabs v-tabs-vertical"
+              v-tabs=""
+              vertical=""
+            >
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 1
+                </a>
+              </li>
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 2
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <button
+        aria-expanded="true"
+        aria-label="Side bar"
+        buttoncolor="tertiary"
+        buttonsize="small"
+        class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary v-ml-auto v-mr-8"
+        subtle=""
+        type="button"
+        v-button-icon=""
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-20"
+          v-icon-visa-media-rewind-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            clip-rule="evenodd"
+            d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
+            fill-rule="evenodd"
+          />
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        
+        
+      </button>
+    </header>
+    <div
+      class="main-content"
+    >
+      Main content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Vertical navigation examples AlternateWithIconsVerticalNavComponent should render correctly 1`] = `
+<div
+  id="root2"
+>
+  <div
+    class="app-container"
+  >
+    <header
+      class="v-alternate v-icon-two-color v-nav v-nav-vertical"
+      v-icon-two-color=""
+      v-nav=""
+      valternate=""
+      vertical=""
+    >
+      <a
+        class="v-link v-skip-link"
+        fragment="content"
+        href="/#content"
+        routerlink="./"
+        v-link=""
+        v-skip-to-content=""
+      >
+        Skip to content
+      </a>
+      <a
+        aria-label="Visa Application Name home"
+        class="v-link v-gap-12 v-flex v-flex-col v-link-no-underline v-mb-30 v-ml-24 v-mr-14 v-mt-16"
+        href="/"
+        nounderline=""
+        style="background-color: transparent;"
+        v-link=""
+        vflex=""
+        vflexcol=""
+        vgap="12"
+        vmb="30"
+        vml="24"
+        vmr="14"
+        vmt="16"
+      >
+        <svg
+          class="v-logo"
+          height="23"
+          v-logo-visa=""
+          viewBox="0 0 156 51"
+          width="71"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M111.134 33.9989C111.164 26.325 104.81 22.9893 99.7247 20.3201C96.3099 18.5276 93.4677 17.0357 93.5169 14.7323C93.5529 12.9893 95.2167 11.1311 98.8467 10.6629C103.098 10.2519 107.381 10.9985 111.242 12.8236L113.453 2.53852C109.695 1.1258 105.714 0.394122 101.699 0.377777C89.3107 0.377777 80.5309 6.98244 80.4516 16.4465C80.3724 23.4257 86.6962 27.3438 91.4714 29.6702C96.3691 32.047 98.0185 33.574 97.9968 35.7059C97.9968 38.9686 94.0859 40.4019 90.4775 40.4595C84.3492 40.5572 80.7168 38.8625 77.8368 37.5187L77.5634 37.3913L75.2658 48.0365C78.2045 49.3906 83.6279 50.5646 89.253 50.6222C102.455 50.6222 111.098 44.0968 111.141 33.9989H111.134ZM59.0603 1.26366L38.6989 49.8587H25.4103L15.3917 11.0806C14.7795 8.68941 14.2537 7.81791 12.4027 6.80957C9.36321 5.1746 4.39351 3.63327 0 2.67535L0.302504 1.23485H21.6866C24.5639 1.24665 27.0063 3.34708 27.4486 6.19015L32.7424 34.3158L45.8653 1.26366H59.0603ZM155.573 49.8443H143.949L142.429 42.6059H126.303L123.681 49.8587H110.486L129.335 4.82889C130.228 2.66308 132.343 1.25366 134.686 1.26367H145.425L155.573 49.8443ZM129.918 32.6448L136.537 14.3937L140.347 32.6448H129.918ZM66.6373 49.8587L77.0664 1.26362H64.4621L54.0617 49.8587H66.6373Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        <div
+          class="v-typography-color-default v-typography-subtitle-1"
+          vtypography="subtitle-1"
+          vtypographycolor="default"
+        >
+          Application Name
+        </div>
+      </a>
+      <nav
+        aria-label="Alternate vertical with icons"
+        class="v-mb-6"
+        vmb="6"
+      >
+        <ul
+          class="v-tabs v-tabs-vertical"
+          v-tabs=""
+          vertical=""
+        >
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-statistics v-icon-tiny v-icon-visa"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-8"
+                v-icon-visa-statistics-tiny=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-secondary"
+                  clip-rule="evenodd"
+                  d="M7 0H8C12.4183 0 16 3.58172 16 8V9H7V0ZM9 2.08296V7H13.917C13.4955 4.4875 11.5125 2.50448 9 2.08296Z"
+                  fill-rule="evenodd"
+                />
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M5 0.578125C4.65376 0.718269 4.3195 0.881945 3.99927 1.06719C1.61068 2.44891 0 5.03393 0 7.99632C0 12.4146 3.58172 15.9963 8 15.9963C10.9624 15.9963 13.5474 14.3856 14.9291 11.997C15.1144 11.6768 15.278 11.3426 15.4182 10.9963H13.1975C12.1585 12.7919 10.2193 13.9963 8 13.9963C4.68629 13.9963 2 11.31 2 7.99632C2 5.77703 3.20439 3.83786 5 2.79882V0.578125Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+               L1 label 1
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-settings v-icon-tiny v-icon-visa"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-9"
+                v-icon-visa-settings-tiny=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-secondary"
+                  d="M7 6.99609H9V8.99609H7V6.99609Z"
+                />
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M0 8C0 7.63803 0.02404 7.28167 0.0706105 6.93244L2.0783 6.44497C2.75428 6.28084 3.07507 5.50638 2.71314 4.91233L1.63846 3.14845C2.07228 2.58047 2.58045 2.07231 3.14842 1.63848L4.91231 2.71316C5.50636 3.0751 6.28082 2.7543 6.44495 2.07832L6.93242 0.0706128C7.28166 0.0240408 7.63802 0 8 0C8.36198 0 8.71834 0.0240405 9.06757 0.070612L9.55504 2.07832C9.71917 2.7543 10.4936 3.0751 11.0877 2.71316L12.8516 1.63848C13.4196 2.0723 13.9277 2.58047 14.3615 3.14844L13.2869 4.91233C12.9249 5.50638 13.2457 6.28084 13.9217 6.44497L15.9294 6.93244C15.976 7.28167 16 7.63803 16 8C16 8.36199 15.976 8.71836 15.9294 9.0676L13.9217 9.55507C13.2457 9.7192 12.9249 10.4937 13.2869 11.0877L14.3615 12.8516C13.9277 13.4196 13.4195 13.9277 12.8515 14.3615L11.0877 13.2869C10.4936 12.9249 9.71917 13.2457 9.55504 13.9217L9.06758 15.9294C8.71834 15.976 8.36198 16 8 16C7.63802 16 7.28165 15.976 6.93241 15.9294L6.44495 13.9217C6.28082 13.2457 5.50636 12.9249 4.9123 13.2869L3.14845 14.3615C2.58047 13.9277 2.0723 13.4195 1.63848 12.8516L2.71314 11.0877C3.07507 10.4937 2.75428 9.7192 2.07829 9.55507L0.0706159 9.0676C0.0240418 8.71836 0 8.36199 0 8ZM11 8.00004C11 9.65689 9.65685 11 7.99999 11C6.34314 11 4.99999 9.65689 4.99999 8.00004C4.99999 6.34318 6.34314 5.00004 7.99999 5.00004C9.65685 5.00004 11 6.34318 11 8.00004Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+               L1 label 2
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-security v-icon-tiny v-icon-visa"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-10"
+                v-icon-visa-security-tiny=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-secondary"
+                  clip-rule="evenodd"
+                  d="M6.88793 5.81987C6.33951 6.09204 5.71415 6.2011 5.08826 6.11717C5.04154 6.1109 5 6.14724 5 6.19438V6.4515C5 6.54476 5.00202 6.63775 5.00602 6.73041C5.02639 7.20176 5.09818 7.66467 5.21748 8.11198C5.21974 8.12042 5.222 8.12886 5.22429 8.13729C5.63652 9.65795 6.59852 10.9963 7.9564 11.8704C7.98295 11.8875 8.01705 11.8875 8.0436 11.8704C9.40148 10.9963 10.3635 9.65795 10.7757 8.13729C10.778 8.12886 10.7803 8.12042 10.7825 8.11198C10.9018 7.66467 10.9736 7.20176 10.994 6.73041C10.998 6.63775 11 6.54476 11 6.4515V6.19438C11 6.14724 10.9585 6.1109 10.9117 6.11717C10.2858 6.2011 9.66049 6.09204 9.11207 5.81987C8.72745 5.62898 8.38067 5.35787 8.0981 5.01684L8 4.89844L7.9019 5.01684C7.61933 5.35787 7.27255 5.62898 6.88793 5.81987ZM7.22448 7.84629C7.39459 8.36078 7.65752 8.84022 8 9.26029C8.34248 8.84022 8.60541 8.36078 8.77552 7.84629C8.50796 7.75064 8.24851 7.63277 8 7.49381C7.7515 7.63277 7.49204 7.75064 7.22448 7.84629Z"
+                  fill-rule="evenodd"
+                />
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M6.24443 1.44916L7.22998 0.259705H8.77002L9.75557 1.44916C10.4155 2.24563 11.4392 2.64597 12.4644 2.50849L15 2.16846V6.67106C15 9.73158 13.4447 12.5823 10.8712 14.2388L8.54125 15.7386H7.45875L5.12879 14.2388C2.55531 12.5823 1 9.73158 1 6.67106V2.16846L3.53563 2.50849C4.56081 2.64597 5.58449 2.24563 6.24443 1.44916ZM8 2.46508L7.78447 2.7252C6.68458 4.05265 4.97844 4.71987 3.26981 4.49075L3 4.45457V6.67106C3 9.05146 4.20968 11.2687 6.21128 12.5571L8 13.7085L9.78872 12.5571C11.7903 11.2687 13 9.05146 13 6.67106V4.45457L12.7302 4.49075C11.0216 4.71987 9.31542 4.05265 8.21553 2.7252L8 2.46508Z"
+                  fill-rule="evenodd"
+                />
+                <defs>
+                  <clippath>
+                    <rect
+                      height="15.9989"
+                      width="16"
+                    />
+                  </clippath>
+                </defs>
+              </svg>
+               L1 label 3
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-notes v-icon-tiny v-icon-visa"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-11"
+                v-icon-visa-notes-tiny=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-secondary"
+                  clip-rule="evenodd"
+                  d="M6 8H10V6H6V8ZM6 12H10V10H6V12Z"
+                  fill-rule="evenodd"
+                />
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M3 0V2H2V4H12V14H4V6H2V16H14V2H13V0H11V2H9V0H7V2H5V0H3Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+               L1 label 4
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-support-ticket v-icon-tiny v-icon-visa"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-12"
+                v-icon-visa-support-ticket-tiny=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-secondary"
+                  d="M8 5.99609H10V9.99609H8V5.99609Z"
+                />
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M14 3.99609H2V5.1668C3.16519 5.57864 4 6.68988 4 7.99609C4 9.30231 3.16519 10.4136 2 10.8254V11.9961H14V10.8254C12.8348 10.4136 12 9.30231 12 7.99609C12 6.68988 12.8348 5.57864 14 5.1668V3.99609ZM0 1.99609V6.99609H1C1.55228 6.99609 2 7.44381 2 7.99609C2 8.54838 1.55228 8.99609 1 8.99609H0V13.9961H16V8.99609H15C14.4477 8.99609 14 8.54838 14 7.99609C14 7.44381 14.4477 6.99609 15 6.99609H16V1.99609H0Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+               L1 label 5
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <hr
+        aria-hidden="true"
+        class="v-divider v-divider-decorative v-mb-6 v-mt-auto"
+        dividertype="decorative"
+        style="inline-size: 100%;"
+        v-divider=""
+        vmb="6"
+        vmt="auto"
+      />
+      <div
+        class="v-align-self-stretch v-flex v-flex-col v-mb-4"
+        valignselfstretch=""
+        vflex=""
+        vflexcol=""
+        vmb="4"
+      >
+        <div
+          class="v-tab"
+          disclosuretab=""
+          v-tab-item=""
+        >
+          <button
+            aria-controls="alternate-icons-profile-links"
+            aria-expanded="false"
+            aria-label="Alex Miller"
+            buttoncolor="tertiary"
+            buttonsize="large"
+            class="v-button v-button-large v-button-tertiary"
+            type="button"
+            v-button=""
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-account v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-13"
+              v-icon-visa-account-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-secondary"
+                clip-rule="evenodd"
+                d="M8 11C5.23858 11 3 13.2386 3 16H1C1 12.134 4.13401 9 8 9C11.866 9 15 12.134 15 16H13C13 13.2386 10.7614 11 8 11Z"
+                fill-rule="evenodd"
+              />
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M8 2C6.89543 2 6 2.89543 6 4C6 5.10457 6.89543 6 8 6C9.10457 6 10 5.10457 10 4C10 2.89543 9.10457 2 8 2ZM4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+             Alex Miller 
+            <v-icon-visa-toggle
+              class="v-icon v-icon-tiny v-tab-suffix"
+              style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+            >
+              
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-tab-suffix"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-14"
+                v-icon-visa-chevron-down-tiny=""
+                v-toggle-default-template=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              
+            </v-icon-visa-toggle>
+          </button>
+          <div
+            aria-hidden="true"
+            class="v-hide v-flex v-flex-col v-p-4"
+            id="alternate-icons-profile-links"
+            vflex=""
+            vflexcol=""
+            vp="4"
+          >
+            <ul
+              class="v-tabs v-tabs-vertical"
+              v-tabs=""
+              vertical=""
+            >
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 1
+                </a>
+              </li>
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 2
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <button
+        aria-expanded="true"
+        aria-label="Side bar"
+        buttoncolor="tertiary"
+        buttonsize="small"
+        class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary v-ml-auto v-mr-8"
+        subtle=""
+        type="button"
+        v-button-icon=""
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-16"
+          v-icon-visa-media-rewind-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            clip-rule="evenodd"
+            d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
+            fill-rule="evenodd"
+          />
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        
+        
+      </button>
+    </header>
+    <div
+      class="main-content"
+    >
+      Main content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Vertical navigation examples DefaultVerticalNavComponent should render correctly 1`] = `
+<div
+  id="root4"
+>
+  <div
+    class="app-container"
+  >
+    <header
+      class="v-nav v-nav-vertical"
+      v-nav=""
+      vertical=""
+    >
+      <a
+        class="v-link v-skip-link"
+        fragment="content"
+        href="/#content"
+        routerlink="./"
+        v-link=""
+        v-skip-to-content=""
+      >
+        Skip to content
+      </a>
+      <a
+        aria-label="Visa Application Name home"
+        class="v-link v-gap-12 v-flex v-flex-col v-link-no-underline v-mb-30 v-ml-24 v-mr-14 v-mt-16"
+        href="/"
+        nounderline=""
+        style="background-color: transparent;"
+        v-link=""
+        vflex=""
+        vflexcol=""
+        vgap="12"
+        vmb="30"
+        vml="24"
+        vmr="14"
+        vmt="16"
+      >
+        <svg
+          class="v-logo"
+          height="23"
+          v-logo-visa=""
+          viewBox="0 0 156 51"
+          width="71"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M111.134 33.9989C111.164 26.325 104.81 22.9893 99.7247 20.3201C96.3099 18.5276 93.4677 17.0357 93.5169 14.7323C93.5529 12.9893 95.2167 11.1311 98.8467 10.6629C103.098 10.2519 107.381 10.9985 111.242 12.8236L113.453 2.53852C109.695 1.1258 105.714 0.394122 101.699 0.377777C89.3107 0.377777 80.5309 6.98244 80.4516 16.4465C80.3724 23.4257 86.6962 27.3438 91.4714 29.6702C96.3691 32.047 98.0185 33.574 97.9968 35.7059C97.9968 38.9686 94.0859 40.4019 90.4775 40.4595C84.3492 40.5572 80.7168 38.8625 77.8368 37.5187L77.5634 37.3913L75.2658 48.0365C78.2045 49.3906 83.6279 50.5646 89.253 50.6222C102.455 50.6222 111.098 44.0968 111.141 33.9989H111.134ZM59.0603 1.26366L38.6989 49.8587H25.4103L15.3917 11.0806C14.7795 8.68941 14.2537 7.81791 12.4027 6.80957C9.36321 5.1746 4.39351 3.63327 0 2.67535L0.302504 1.23485H21.6866C24.5639 1.24665 27.0063 3.34708 27.4486 6.19015L32.7424 34.3158L45.8653 1.26366H59.0603ZM155.573 49.8443H143.949L142.429 42.6059H126.303L123.681 49.8587H110.486L129.335 4.82889C130.228 2.66308 132.343 1.25366 134.686 1.26367H145.425L155.573 49.8443ZM129.918 32.6448L136.537 14.3937L140.347 32.6448H129.918ZM66.6373 49.8587L77.0664 1.26362H64.4621L54.0617 49.8587H66.6373Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        <div
+          class="v-nav-app-name v-typography-subtitle-1"
+          vtypography="subtitle-1"
+        >
+          Application Name
+        </div>
+      </a>
+      <nav
+        aria-label="Default vertical"
+        class="v-mb-6"
+        vmb="6"
+      >
+        <ul
+          class="v-tabs v-tabs-vertical"
+          v-tabs=""
+          vertical=""
+        >
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              L1 label 1
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              L1 label 2
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              L1 label 3
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              L1 label 4
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              L1 label 5
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <hr
+        aria-hidden="true"
+        class="v-divider v-divider-decorative v-mb-6 v-mt-auto"
+        dividertype="decorative"
+        style="inline-size: 100%;"
+        v-divider=""
+        vmb="6"
+        vmt="auto"
+      />
+      <div
+        class="v-align-self-stretch v-flex v-flex-col v-mb-4"
+        valignselfstretch=""
+        vflex=""
+        vflexcol=""
+        vmb="4"
+      >
+        <div
+          class="v-tab"
+          disclosuretab=""
+          v-tab-item=""
+        >
+          <button
+            aria-controls="default-profile-links"
+            aria-expanded="false"
+            aria-label="Alex Miller"
+            buttoncolor="tertiary"
+            buttonsize="large"
+            class="v-button v-button-large v-button-tertiary"
+            type="button"
+            v-button=""
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-account v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-21"
+              v-icon-visa-account-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-secondary"
+                clip-rule="evenodd"
+                d="M8 11C5.23858 11 3 13.2386 3 16H1C1 12.134 4.13401 9 8 9C11.866 9 15 12.134 15 16H13C13 13.2386 10.7614 11 8 11Z"
+                fill-rule="evenodd"
+              />
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M8 2C6.89543 2 6 2.89543 6 4C6 5.10457 6.89543 6 8 6C9.10457 6 10 5.10457 10 4C10 2.89543 9.10457 2 8 2ZM4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+             Alex Miller 
+            <v-icon-visa-toggle
+              class="v-icon v-icon-tiny v-tab-suffix"
+              style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+            >
+              
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-tab-suffix"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-22"
+                v-icon-visa-chevron-down-tiny=""
+                v-toggle-default-template=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              
+            </v-icon-visa-toggle>
+          </button>
+          <div
+            aria-hidden="true"
+            class="v-hide v-flex v-flex-col v-p-4"
+            id="default-profile-links"
+            vflex=""
+            vflexcol=""
+            vp="4"
+          >
+            <ul
+              class="v-tabs v-tabs-vertical"
+              v-tabs=""
+              vertical=""
+            >
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 2
+                </a>
+              </li>
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 1
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <button
+        aria-expanded="true"
+        aria-label="Side bar"
+        buttoncolor="tertiary"
+        buttonsize="small"
+        class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary v-ml-auto v-mr-8"
+        subtle=""
+        type="button"
+        v-button-icon=""
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-24"
+          v-icon-visa-media-rewind-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            clip-rule="evenodd"
+            d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
+            fill-rule="evenodd"
+          />
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        
+        
+      </button>
+    </header>
+    <div
+      class="main-content"
+    >
+      Main content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Vertical navigation examples LinksOnlyVerticalNavComponent should render correctly 1`] = `
+<div
+  id="root5"
+>
+  <div
+    class="app-container"
+  >
+    <header
+      class="v-nav v-nav-vertical"
+      v-nav=""
+      vertical=""
+    >
+      <a
+        class="v-link v-skip-link"
+        fragment="content"
+        href="/#content"
+        routerlink="./"
+        v-link=""
+        v-skip-to-content=""
+      >
+        Skip to content
+      </a>
+      <nav
+        aria-label="Vertical with links only"
+        class="v-mb-6"
+        vmb="6"
+      >
+        <ul
+          class="v-tabs v-tabs-vertical"
+          v-tabs=""
+          vertical=""
+        >
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              L1 label 1
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              L1 label 2
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              L1 label 3
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              L1 label 4
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              L1 label 5
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <button
+        aria-expanded="true"
+        aria-label="Side bar"
+        buttoncolor="tertiary"
+        buttonsize="small"
+        class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary v-ml-auto v-mr-8 v-mt-auto"
+        subtle=""
+        type="button"
+        v-button-icon=""
+        vmt="auto"
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-25"
+          v-icon-visa-media-rewind-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            clip-rule="evenodd"
+            d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
+            fill-rule="evenodd"
+          />
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        
+        
+      </button>
+    </header>
+    <div
+      class="main-content"
+    >
+      Main content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Vertical navigation examples NestedVerticalNavComponent should render correctly 1`] = `
+<div
+  id="root7"
+>
+  <div
+    class="app-container"
+  >
+    <header
+      class="v-nav v-nav-vertical"
+      v-nav=""
+      vertical=""
+    >
+      <a
+        class="v-link v-skip-link"
+        fragment="content"
+        href="/#content"
+        routerlink="./"
+        v-link=""
+        v-skip-to-content=""
+      >
+        Skip to content
+      </a>
+      <a
+        aria-label="Visa Application Name home"
+        class="v-link v-gap-12 v-flex v-flex-col v-link-no-underline v-mb-30 v-ml-24 v-mr-14 v-mt-16"
+        href="/"
+        nounderline=""
+        style="background-color: transparent;"
+        v-link=""
+        vflex=""
+        vflexcol=""
+        vgap="12"
+        vmb="30"
+        vml="24"
+        vmr="14"
+        vmt="16"
+      >
+        <svg
+          class="v-logo"
+          height="23"
+          v-logo-visa=""
+          viewBox="0 0 156 51"
+          width="71"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M111.134 33.9989C111.164 26.325 104.81 22.9893 99.7247 20.3201C96.3099 18.5276 93.4677 17.0357 93.5169 14.7323C93.5529 12.9893 95.2167 11.1311 98.8467 10.6629C103.098 10.2519 107.381 10.9985 111.242 12.8236L113.453 2.53852C109.695 1.1258 105.714 0.394122 101.699 0.377777C89.3107 0.377777 80.5309 6.98244 80.4516 16.4465C80.3724 23.4257 86.6962 27.3438 91.4714 29.6702C96.3691 32.047 98.0185 33.574 97.9968 35.7059C97.9968 38.9686 94.0859 40.4019 90.4775 40.4595C84.3492 40.5572 80.7168 38.8625 77.8368 37.5187L77.5634 37.3913L75.2658 48.0365C78.2045 49.3906 83.6279 50.5646 89.253 50.6222C102.455 50.6222 111.098 44.0968 111.141 33.9989H111.134ZM59.0603 1.26366L38.6989 49.8587H25.4103L15.3917 11.0806C14.7795 8.68941 14.2537 7.81791 12.4027 6.80957C9.36321 5.1746 4.39351 3.63327 0 2.67535L0.302504 1.23485H21.6866C24.5639 1.24665 27.0063 3.34708 27.4486 6.19015L32.7424 34.3158L45.8653 1.26366H59.0603ZM155.573 49.8443H143.949L142.429 42.6059H126.303L123.681 49.8587H110.486L129.335 4.82889C130.228 2.66308 132.343 1.25366 134.686 1.26367H145.425L155.573 49.8443ZM129.918 32.6448L136.537 14.3937L140.347 32.6448H129.918ZM66.6373 49.8587L77.0664 1.26362H64.4621L54.0617 49.8587H66.6373Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        <div
+          class="v-nav-app-name v-typography-subtitle-1"
+          vtypography="subtitle-1"
+        >
+          Application Name
+        </div>
+      </a>
+      <nav
+        aria-label="Vertical with nested elements"
+        class="v-mb-6"
+        vmb="6"
+      >
+        <ul
+          class="v-tabs v-tabs-vertical"
+          v-tabs=""
+          vertical=""
+        >
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+               L1 label 1
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            disclosuretab=""
+            v-tab-item=""
+          >
+            <button
+              aria-controls="l1_2-nested-tab"
+              aria-expanded="false"
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              type="button"
+              v-button=""
+            >
+               L1 label 2 
+              <v-icon-visa-toggle
+                class="v-icon v-icon-tiny v-tab-suffix"
+                style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+              >
+                
+                <svg
+                  aria-hidden="true"
+                  class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-tab-suffix"
+                  focusable="false"
+                  height="16"
+                  id="a-v__icon__internal-34"
+                  v-icon-visa-chevron-down-tiny=""
+                  v-toggle-default-template=""
+                  viewBox="0 0 16 16"
+                  width="16"
+                >
+                  <path
+                    class="v-icon-primary"
+                    clip-rule="evenodd"
+                    d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                
+              </v-icon-visa-toggle>
+            </button>
+            <ul
+              aria-hidden="true"
+              class="v-tabs v-hide v-tabs-vertical"
+              id="l1_2-nested-tab"
+              v-tabs=""
+              vertical=""
+            >
+              <li>
+                <a
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                >
+                   L2 label 1
+                </a>
+              </li>
+              <li>
+                <a
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                >
+                   L2 label 2
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+               L1 label 3
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            disclosuretab=""
+            v-tab-item=""
+          >
+            <button
+              aria-controls="l1_4-nested-tab"
+              aria-expanded="false"
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              type="button"
+              v-button=""
+            >
+               L1 label 4 
+              <v-icon-visa-toggle
+                class="v-icon v-icon-tiny v-tab-suffix"
+                style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+              >
+                
+                <svg
+                  aria-hidden="true"
+                  class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-tab-suffix"
+                  focusable="false"
+                  height="16"
+                  id="a-v__icon__internal-36"
+                  v-icon-visa-chevron-down-tiny=""
+                  v-toggle-default-template=""
+                  viewBox="0 0 16 16"
+                  width="16"
+                >
+                  <path
+                    class="v-icon-primary"
+                    clip-rule="evenodd"
+                    d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                
+              </v-icon-visa-toggle>
+            </button>
+            <ul
+              aria-hidden="true"
+              class="v-tabs v-hide v-tabs-vertical"
+              id="l1_4-nested-tab"
+              v-tabs=""
+              vertical=""
+            >
+              <li
+                class="v-tab"
+                disclosuretab=""
+                v-tab-item=""
+              >
+                <button
+                  aria-controls="l2_1-nested-tab"
+                  aria-expanded="false"
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  type="button"
+                  v-button=""
+                >
+                   L2 label 1 
+                  <v-icon-visa-toggle
+                    class="v-icon v-icon-tiny v-tab-suffix"
+                    style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+                  >
+                    
+                    <svg
+                      aria-hidden="true"
+                      class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-tab-suffix"
+                      focusable="false"
+                      height="16"
+                      id="a-v__icon__internal-38"
+                      v-icon-visa-chevron-down-tiny=""
+                      v-toggle-default-template=""
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        class="v-icon-primary"
+                        clip-rule="evenodd"
+                        d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                    
+                  </v-icon-visa-toggle>
+                </button>
+                <ul
+                  aria-hidden="true"
+                  class="v-tabs v-hide v-tabs-vertical"
+                  id="l2_1-nested-tab"
+                  v-tabs=""
+                  vertical=""
+                >
+                  <li
+                    class="v-tab"
+                    v-tab-item=""
+                  >
+                    <a
+                      buttoncolor="tertiary"
+                      class="v-button v-button-tertiary"
+                      href="./components/vertical-navigation"
+                      type="button"
+                      v-button=""
+                    >
+                       L3 label 1
+                    </a>
+                  </li>
+                  <li
+                    class="v-tab"
+                    v-tab-item=""
+                  >
+                    <a
+                      buttoncolor="tertiary"
+                      class="v-button v-button-tertiary"
+                      href="./components/vertical-navigation"
+                      type="button"
+                      v-button=""
+                    >
+                       L3 label 2
+                    </a>
+                  </li>
+                  <li
+                    class="v-tab"
+                    v-tab-item=""
+                  >
+                    <a
+                      buttoncolor="tertiary"
+                      class="v-button v-button-tertiary"
+                      href="./components/vertical-navigation"
+                      type="button"
+                      v-button=""
+                    >
+                       L3 label 3
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+               L1 label 5
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <hr
+        aria-hidden="true"
+        class="v-divider v-divider-decorative v-mb-6 v-mt-auto"
+        dividertype="decorative"
+        style="inline-size: 100%;"
+        v-divider=""
+        vmb="6"
+        vmt="auto"
+      />
+      <div
+        class="v-align-self-stretch v-flex v-flex-col v-mb-4"
+        valignselfstretch=""
+        vflex=""
+        vflexcol=""
+        vmb="4"
+      >
+        <div
+          class="v-tab"
+          disclosuretab=""
+          v-tab-item=""
+        >
+          <button
+            aria-controls="nested-profile-links"
+            aria-expanded="false"
+            aria-label="Alex Miller"
+            buttoncolor="tertiary"
+            buttonsize="large"
+            class="v-button v-button-large v-button-tertiary"
+            type="button"
+            v-button=""
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-account v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-40"
+              v-icon-visa-account-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-secondary"
+                clip-rule="evenodd"
+                d="M8 11C5.23858 11 3 13.2386 3 16H1C1 12.134 4.13401 9 8 9C11.866 9 15 12.134 15 16H13C13 13.2386 10.7614 11 8 11Z"
+                fill-rule="evenodd"
+              />
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M8 2C6.89543 2 6 2.89543 6 4C6 5.10457 6.89543 6 8 6C9.10457 6 10 5.10457 10 4C10 2.89543 9.10457 2 8 2ZM4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+             Alex Miller 
+            <v-icon-visa-toggle
+              class="v-icon v-icon-tiny v-tab-suffix"
+              style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+            >
+              
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-tab-suffix"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-41"
+                v-icon-visa-chevron-down-tiny=""
+                v-toggle-default-template=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              
+            </v-icon-visa-toggle>
+          </button>
+          <div
+            aria-hidden="true"
+            class="v-hide v-flex v-flex-col v-p-4"
+            id="nested-profile-links"
+            vflex=""
+            vflexcol=""
+            vp="4"
+          >
+            <ul
+              class="v-tabs v-tabs-vertical"
+              v-tabs=""
+              vertical=""
+            >
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 1
+                </a>
+              </li>
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 2
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <button
+        aria-expanded="true"
+        aria-label="Side bar"
+        buttoncolor="tertiary"
+        buttonsize="small"
+        class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary v-ml-auto v-mr-8"
+        subtle=""
+        type="button"
+        v-button-icon=""
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-43"
+          v-icon-visa-media-rewind-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            clip-rule="evenodd"
+            d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
+            fill-rule="evenodd"
+          />
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        
+        
+      </button>
+    </header>
+    <div
+      class="main-content"
+    >
+      Main content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Vertical navigation examples NestedWithSectionTitleVerticalNavComponent should render correctly 1`] = `
+<div
+  id="root6"
+>
+  <div
+    class="app-container"
+  >
+    <header
+      class="v-nav v-nav-vertical"
+      v-nav=""
+      vertical=""
+    >
+      <a
+        class="v-link v-skip-link"
+        fragment="content"
+        href="/#content"
+        routerlink="./"
+        v-link=""
+        v-skip-to-content=""
+      >
+        Skip to content
+      </a>
+      <a
+        aria-label="Visa Application Name home"
+        class="v-link v-gap-12 v-flex v-flex-col v-link-no-underline v-mb-30 v-ml-24 v-mr-14 v-mt-16"
+        href="/"
+        nounderline=""
+        style="background-color: transparent;"
+        v-link=""
+        vflex=""
+        vflexcol=""
+        vgap="12"
+        vmb="30"
+        vml="24"
+        vmr="14"
+        vmt="16"
+      >
+        <svg
+          class="v-logo"
+          height="23"
+          v-logo-visa=""
+          viewBox="0 0 156 51"
+          width="71"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M111.134 33.9989C111.164 26.325 104.81 22.9893 99.7247 20.3201C96.3099 18.5276 93.4677 17.0357 93.5169 14.7323C93.5529 12.9893 95.2167 11.1311 98.8467 10.6629C103.098 10.2519 107.381 10.9985 111.242 12.8236L113.453 2.53852C109.695 1.1258 105.714 0.394122 101.699 0.377777C89.3107 0.377777 80.5309 6.98244 80.4516 16.4465C80.3724 23.4257 86.6962 27.3438 91.4714 29.6702C96.3691 32.047 98.0185 33.574 97.9968 35.7059C97.9968 38.9686 94.0859 40.4019 90.4775 40.4595C84.3492 40.5572 80.7168 38.8625 77.8368 37.5187L77.5634 37.3913L75.2658 48.0365C78.2045 49.3906 83.6279 50.5646 89.253 50.6222C102.455 50.6222 111.098 44.0968 111.141 33.9989H111.134ZM59.0603 1.26366L38.6989 49.8587H25.4103L15.3917 11.0806C14.7795 8.68941 14.2537 7.81791 12.4027 6.80957C9.36321 5.1746 4.39351 3.63327 0 2.67535L0.302504 1.23485H21.6866C24.5639 1.24665 27.0063 3.34708 27.4486 6.19015L32.7424 34.3158L45.8653 1.26366H59.0603ZM155.573 49.8443H143.949L142.429 42.6059H126.303L123.681 49.8587H110.486L129.335 4.82889C130.228 2.66308 132.343 1.25366 134.686 1.26367H145.425L155.573 49.8443ZM129.918 32.6448L136.537 14.3937L140.347 32.6448H129.918ZM66.6373 49.8587L77.0664 1.26362H64.4621L54.0617 49.8587H66.6373Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        <div
+          class="v-nav-app-name v-typography-subtitle-1"
+          vtypography="subtitle-1"
+        >
+          Application Name
+        </div>
+      </a>
+      <nav
+        aria-label="Vertical with section titles and nested elements"
+        class="v-mb-6"
+        vmb="6"
+      >
+        <ul
+          class="v-tabs v-tabs-vertical"
+          v-tabs=""
+          vertical=""
+        >
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <h2
+              class="v-tab v-tab-section-title"
+              sectiontitle=""
+              v-tab-item=""
+            >
+              L1 section title 1
+            </h2>
+            <ul
+              class="v-tabs v-tabs-vertical"
+              style="--v-tabs-vertical-nested-count: 1;"
+              v-tabs=""
+              vertical=""
+            >
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                >
+                   L1 label 1
+                </a>
+              </li>
+              <li
+                class="v-tab"
+                disclosuretab=""
+                v-tab-item=""
+              >
+                <button
+                  aria-controls="l1_2-nested-titles-tab"
+                  aria-expanded="false"
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  type="button"
+                  v-button=""
+                >
+                   L1 label 2 
+                  <v-icon-visa-toggle
+                    class="v-icon v-icon-tiny v-tab-suffix"
+                    style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+                  >
+                    
+                    <svg
+                      aria-hidden="true"
+                      class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-tab-suffix"
+                      focusable="false"
+                      height="16"
+                      id="a-v__icon__internal-26"
+                      v-icon-visa-chevron-down-tiny=""
+                      v-toggle-default-template=""
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        class="v-icon-primary"
+                        clip-rule="evenodd"
+                        d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                    
+                  </v-icon-visa-toggle>
+                </button>
+                <div
+                  aria-hidden="true"
+                  class="v-tabs v-hide v-tabs-vertical"
+                  id="l1_2-nested-titles-tab"
+                  style="--v-tabs-vertical-nested-count: 2;"
+                  v-tabs=""
+                  vertical=""
+                >
+                  <h3
+                    class="v-tab v-tab-section-title"
+                    sectiontitle=""
+                    v-tab-item=""
+                  >
+                    L2 section title 1
+                  </h3>
+                  <ul
+                    class="v-tabs v-tabs-vertical"
+                    style="--v-tabs-vertical-nested-count: 2;"
+                    v-tabs=""
+                    vertical=""
+                  >
+                    <li>
+                      <a
+                        buttoncolor="tertiary"
+                        class="v-button v-button-tertiary"
+                        href="./components/vertical-navigation"
+                        type="button"
+                        v-button=""
+                      >
+                         L2 label 1
+                      </a>
+                    </li>
+                    <li
+                      class="v-tab"
+                      disclosuretab=""
+                      v-tab-item=""
+                    >
+                      <button
+                        aria-controls="l2_2-nested-titles-tab"
+                        aria-expanded="false"
+                        buttoncolor="tertiary"
+                        class="v-button v-button-tertiary"
+                        type="button"
+                        v-button=""
+                      >
+                         L2 label 2 
+                        <v-icon-visa-toggle
+                          class="v-icon v-icon-tiny v-tab-suffix"
+                          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+                        >
+                          
+                          <svg
+                            aria-hidden="true"
+                            class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-tab-suffix"
+                            focusable="false"
+                            height="16"
+                            id="a-v__icon__internal-28"
+                            v-icon-visa-chevron-down-tiny=""
+                            v-toggle-default-template=""
+                            viewBox="0 0 16 16"
+                            width="16"
+                          >
+                            <path
+                              class="v-icon-primary"
+                              clip-rule="evenodd"
+                              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                              fill-rule="evenodd"
+                            />
+                          </svg>
+                          
+                        </v-icon-visa-toggle>
+                      </button>
+                      <div
+                        aria-hidden="true"
+                        class="v-tabs v-hide v-tabs-vertical"
+                        id="l2_2-nested-titles-tab"
+                        style="--v-tabs-vertical-nested-count: 3;"
+                        v-tabs=""
+                        vertical=""
+                      >
+                        <h3
+                          class="v-tab v-tab-section-title"
+                          sectiontitle=""
+                          v-tab-item=""
+                        >
+                          L3 section title 1
+                        </h3>
+                        <ul
+                          class="v-tabs v-tabs-vertical"
+                          style="--v-tabs-vertical-nested-count: 3;"
+                          v-tabs=""
+                          vertical=""
+                        >
+                          <li>
+                            <a
+                              buttoncolor="tertiary"
+                              class="v-button v-button-tertiary"
+                              href="./components/vertical-navigation"
+                              type="button"
+                              v-button=""
+                            >
+                               L3 label 1
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              buttoncolor="tertiary"
+                              class="v-button v-button-tertiary"
+                              href="./components/vertical-navigation"
+                              type="button"
+                              v-button=""
+                            >
+                               L3 label 2
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <h2
+              class="v-tab v-tab-section-title"
+              sectiontitle=""
+              v-tab-item=""
+            >
+              L1 section title 2
+            </h2>
+            <ul
+              class="v-tabs v-tabs-vertical"
+              style="--v-tabs-vertical-nested-count: 1;"
+              v-tabs=""
+              vertical=""
+            >
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                >
+                   L1 label 3
+                </a>
+              </li>
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                >
+                   L1 label 4
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      
+      <hr
+        aria-hidden="true"
+        class="v-divider v-divider-decorative v-mb-6 v-mt-auto"
+        dividertype="decorative"
+        style="inline-size: 100%;"
+        v-divider=""
+        vmb="6"
+        vmt="auto"
+      />
+      <div
+        class="v-align-self-stretch v-flex v-flex-col v-mb-4"
+        valignselfstretch=""
+        vflex=""
+        vflexcol=""
+        vmb="4"
+      >
+        <div
+          class="v-tab"
+          disclosuretab=""
+          v-tab-item=""
+        >
+          <button
+            aria-controls="nested-section-titles-profile-links"
+            aria-expanded="false"
+            aria-label="Alex Miller"
+            buttoncolor="tertiary"
+            buttonsize="large"
+            class="v-button v-button-large v-button-tertiary"
+            type="button"
+            v-button=""
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-account v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-30"
+              v-icon-visa-account-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-secondary"
+                clip-rule="evenodd"
+                d="M8 11C5.23858 11 3 13.2386 3 16H1C1 12.134 4.13401 9 8 9C11.866 9 15 12.134 15 16H13C13 13.2386 10.7614 11 8 11Z"
+                fill-rule="evenodd"
+              />
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M8 2C6.89543 2 6 2.89543 6 4C6 5.10457 6.89543 6 8 6C9.10457 6 10 5.10457 10 4C10 2.89543 9.10457 2 8 2ZM4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+             Alex Miller 
+            <v-icon-visa-toggle
+              class="v-icon v-icon-tiny v-tab-suffix"
+              style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+            >
+              
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-tab-suffix"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-31"
+                v-icon-visa-chevron-down-tiny=""
+                v-toggle-default-template=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              
+            </v-icon-visa-toggle>
+          </button>
+          <div
+            aria-hidden="true"
+            class="v-hide v-flex v-flex-col v-p-4"
+            id="nested-section-titles-profile-links"
+            vflex=""
+            vflexcol=""
+            vp="4"
+          >
+            <ul
+              class="v-tabs v-tabs-vertical"
+              v-tabs=""
+              vertical=""
+            >
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 1
+                </a>
+              </li>
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 2
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <button
+        aria-expanded="true"
+        aria-label="Side bar"
+        buttoncolor="tertiary"
+        buttonsize="small"
+        class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary v-ml-auto v-mr-8"
+        subtle=""
+        type="button"
+        v-button-icon=""
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-33"
+          v-icon-visa-media-rewind-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            clip-rule="evenodd"
+            d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
+            fill-rule="evenodd"
+          />
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        
+        
+      </button>
+    </header>
+    <div
+      class="main-content"
+    >
+      Main content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Vertical navigation examples VerticalAlternateWithActiveElementNavComponent should render correctly 1`] = `
+<div
+  id="root1"
+>
+  <div
+    class="app-container"
+  >
+    <header
+      class="v-alternate v-nav v-nav-vertical"
+      v-nav=""
+      valternate=""
+      vertical=""
+    >
+      <a
+        class="v-link v-skip-link"
+        fragment="content"
+        href="/#content"
+        routerlink="./"
+        v-link=""
+        v-skip-to-content=""
+      >
+        Skip to content
+      </a>
+      <a
+        aria-label="Visa Application Name home"
+        class="v-link v-gap-12 v-flex v-flex-col v-link-no-underline v-mb-30 v-ml-24 v-mr-14 v-mt-16"
+        href="/"
+        nounderline=""
+        style="background-color: transparent;"
+        v-link=""
+        vflex=""
+        vflexcol=""
+        vgap="12"
+        vmb="30"
+        vml="24"
+        vmr="14"
+        vmt="16"
+      >
+        <svg
+          class="v-logo"
+          height="23"
+          v-logo-visa=""
+          viewBox="0 0 156 51"
+          width="71"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M111.134 33.9989C111.164 26.325 104.81 22.9893 99.7247 20.3201C96.3099 18.5276 93.4677 17.0357 93.5169 14.7323C93.5529 12.9893 95.2167 11.1311 98.8467 10.6629C103.098 10.2519 107.381 10.9985 111.242 12.8236L113.453 2.53852C109.695 1.1258 105.714 0.394122 101.699 0.377777C89.3107 0.377777 80.5309 6.98244 80.4516 16.4465C80.3724 23.4257 86.6962 27.3438 91.4714 29.6702C96.3691 32.047 98.0185 33.574 97.9968 35.7059C97.9968 38.9686 94.0859 40.4019 90.4775 40.4595C84.3492 40.5572 80.7168 38.8625 77.8368 37.5187L77.5634 37.3913L75.2658 48.0365C78.2045 49.3906 83.6279 50.5646 89.253 50.6222C102.455 50.6222 111.098 44.0968 111.141 33.9989H111.134ZM59.0603 1.26366L38.6989 49.8587H25.4103L15.3917 11.0806C14.7795 8.68941 14.2537 7.81791 12.4027 6.80957C9.36321 5.1746 4.39351 3.63327 0 2.67535L0.302504 1.23485H21.6866C24.5639 1.24665 27.0063 3.34708 27.4486 6.19015L32.7424 34.3158L45.8653 1.26366H59.0603ZM155.573 49.8443H143.949L142.429 42.6059H126.303L123.681 49.8587H110.486L129.335 4.82889C130.228 2.66308 132.343 1.25366 134.686 1.26367H145.425L155.573 49.8443ZM129.918 32.6448L136.537 14.3937L140.347 32.6448H129.918ZM66.6373 49.8587L77.0664 1.26362H64.4621L54.0617 49.8587H66.6373Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        <div
+          class="v-typography-color-default v-typography-subtitle-1"
+          vtypography="subtitle-1"
+          vtypographycolor="default"
+        >
+          Application Name
+        </div>
+      </a>
+      <nav
+        aria-label="Alternate vertical with active element"
+        class="v-mb-6"
+        vmb="6"
+      >
+        <ul
+          class="v-tabs v-tabs-vertical"
+          v-tabs=""
+          vertical=""
+        >
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              ariacurrentwhenactive="page"
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="/components/vertical-navigation"
+              routerlink="/components/vertical-navigation"
+              routerlinkactive="active"
+              type="button"
+              v-button=""
+            >
+              L1 label 1
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              aria-current="page"
+              ariacurrentwhenactive="page"
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary active"
+              href="/"
+              routerlink="/"
+              routerlinkactive="active"
+              type="button"
+              v-button=""
+            >
+              L1 label 2
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              aria-current="page"
+              ariacurrentwhenactive="page"
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary active"
+              href="/"
+              routerlink="/"
+              routerlinkactive="active"
+              type="button"
+              v-button=""
+            >
+              L1 label 3
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              aria-current="page"
+              ariacurrentwhenactive="page"
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary active"
+              href="/"
+              routerlink="/"
+              routerlinkactive="active"
+              type="button"
+              v-button=""
+            >
+              L1 label 4
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              aria-current="page"
+              ariacurrentwhenactive="page"
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary active"
+              href="/"
+              routerlink="/"
+              routerlinkactive="active"
+              type="button"
+              v-button=""
+            >
+              L1 label 5
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <hr
+        aria-hidden="true"
+        class="v-divider v-divider-decorative v-mb-6 v-mt-auto"
+        dividertype="decorative"
+        style="inline-size: 100%;"
+        v-divider=""
+        vmb="6"
+        vmt="auto"
+      />
+      <div
+        class="v-align-self-stretch v-flex v-flex-col v-mb-4"
+        valignselfstretch=""
+        vflex=""
+        vflexcol=""
+        vmb="4"
+      >
+        <div
+          class="v-tab"
+          disclosuretab=""
+          v-tab-item=""
+        >
+          <button
+            aria-controls="alternate-active-profile-links"
+            aria-expanded="false"
+            aria-label="Alex Miller"
+            buttoncolor="tertiary"
+            buttonsize="large"
+            class="v-button v-button-large v-button-tertiary"
+            type="button"
+            v-button=""
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-account v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-4"
+              v-icon-visa-account-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-secondary"
+                clip-rule="evenodd"
+                d="M8 11C5.23858 11 3 13.2386 3 16H1C1 12.134 4.13401 9 8 9C11.866 9 15 12.134 15 16H13C13 13.2386 10.7614 11 8 11Z"
+                fill-rule="evenodd"
+              />
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M8 2C6.89543 2 6 2.89543 6 4C6 5.10457 6.89543 6 8 6C9.10457 6 10 5.10457 10 4C10 2.89543 9.10457 2 8 2ZM4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+             Alex Miller 
+            <v-icon-visa-toggle
+              class="v-icon v-icon-tiny v-tab-suffix"
+              style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+            >
+              
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-tab-suffix"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-5"
+                v-icon-visa-chevron-down-tiny=""
+                v-toggle-default-template=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              
+            </v-icon-visa-toggle>
+          </button>
+          <div
+            aria-hidden="true"
+            class="v-hide v-flex v-flex-col v-p-4"
+            id="alternate-active-profile-links"
+            vflex=""
+            vflexcol=""
+            vp="4"
+          >
+            <ul
+              class="v-tabs v-tabs-vertical"
+              v-tabs=""
+              vertical=""
+            >
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 1
+                </a>
+              </li>
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 2
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <button
+        aria-expanded="true"
+        aria-label="Side bar"
+        buttoncolor="tertiary"
+        buttonsize="small"
+        class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary v-ml-auto v-mr-8"
+        subtle=""
+        type="button"
+        v-button-icon=""
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-7"
+          v-icon-visa-media-rewind-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            clip-rule="evenodd"
+            d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
+            fill-rule="evenodd"
+          />
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        
+        
+      </button>
+    </header>
+    <div
+      class="main-content"
+    >
+      Main content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Vertical navigation examples VerticalWithActiveElementNavComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <div
+    class="app-container"
+  >
+    <header
+      class="v-nav v-nav-vertical"
+      v-nav=""
+      vertical=""
+    >
+      <a
+        class="v-link v-skip-link"
+        fragment="content"
+        href="/#content"
+        routerlink="./"
+        v-link=""
+        v-skip-to-content=""
+      >
+        Skip to content
+      </a>
+      <a
+        aria-label="Visa Application Name home"
+        class="v-link v-gap-12 v-flex v-flex-col v-link-no-underline v-mb-30 v-ml-24 v-mr-14 v-mt-16"
+        href="/"
+        nounderline=""
+        style="background-color: transparent;"
+        v-link=""
+        vflex=""
+        vflexcol=""
+        vgap="12"
+        vmb="30"
+        vml="24"
+        vmr="14"
+        vmt="16"
+      >
+        <svg
+          class="v-logo"
+          height="23"
+          v-logo-visa=""
+          viewBox="0 0 156 51"
+          width="71"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M111.134 33.9989C111.164 26.325 104.81 22.9893 99.7247 20.3201C96.3099 18.5276 93.4677 17.0357 93.5169 14.7323C93.5529 12.9893 95.2167 11.1311 98.8467 10.6629C103.098 10.2519 107.381 10.9985 111.242 12.8236L113.453 2.53852C109.695 1.1258 105.714 0.394122 101.699 0.377777C89.3107 0.377777 80.5309 6.98244 80.4516 16.4465C80.3724 23.4257 86.6962 27.3438 91.4714 29.6702C96.3691 32.047 98.0185 33.574 97.9968 35.7059C97.9968 38.9686 94.0859 40.4019 90.4775 40.4595C84.3492 40.5572 80.7168 38.8625 77.8368 37.5187L77.5634 37.3913L75.2658 48.0365C78.2045 49.3906 83.6279 50.5646 89.253 50.6222C102.455 50.6222 111.098 44.0968 111.141 33.9989H111.134ZM59.0603 1.26366L38.6989 49.8587H25.4103L15.3917 11.0806C14.7795 8.68941 14.2537 7.81791 12.4027 6.80957C9.36321 5.1746 4.39351 3.63327 0 2.67535L0.302504 1.23485H21.6866C24.5639 1.24665 27.0063 3.34708 27.4486 6.19015L32.7424 34.3158L45.8653 1.26366H59.0603ZM155.573 49.8443H143.949L142.429 42.6059H126.303L123.681 49.8587H110.486L129.335 4.82889C130.228 2.66308 132.343 1.25366 134.686 1.26367H145.425L155.573 49.8443ZM129.918 32.6448L136.537 14.3937L140.347 32.6448H129.918ZM66.6373 49.8587L77.0664 1.26362H64.4621L54.0617 49.8587H66.6373Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        <div
+          class="v-nav-app-name v-typography-subtitle-1"
+          vtypography="subtitle-1"
+        >
+          Application Name
+        </div>
+      </a>
+      <nav
+        aria-label="Vertical with active element"
+        class="v-mb-6"
+        vmb="6"
+      >
+        <ul
+          class="v-tabs v-tabs-vertical"
+          v-tabs=""
+          vertical=""
+        >
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              ariacurrentwhenactive="page"
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="/components/vertical-navigation"
+              routerlink="/components/vertical-navigation"
+              routerlinkactive="active"
+              type="button"
+              v-button=""
+            >
+              L1 label 1
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              aria-current="page"
+              ariacurrentwhenactive="page"
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary active"
+              href="/"
+              routerlink="/"
+              routerlinkactive="active"
+              type="button"
+              v-button=""
+            >
+              L1 label 2
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              aria-current="page"
+              ariacurrentwhenactive="page"
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary active"
+              href="/"
+              routerlink="/"
+              routerlinkactive="active"
+              type="button"
+              v-button=""
+            >
+              L1 label 3
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              aria-current="page"
+              ariacurrentwhenactive="page"
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary active"
+              href="/"
+              routerlink="/"
+              routerlinkactive="active"
+              type="button"
+              v-button=""
+            >
+              L1 label 4
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              aria-current="page"
+              ariacurrentwhenactive="page"
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary active"
+              href="/"
+              routerlink="/"
+              routerlinkactive="active"
+              type="button"
+              v-button=""
+            >
+              L1 label 5
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <hr
+        aria-hidden="true"
+        class="v-divider v-divider-decorative v-mb-6 v-mt-auto"
+        dividertype="decorative"
+        style="inline-size: 100%;"
+        v-divider=""
+        vmb="6"
+        vmt="auto"
+      />
+      <div
+        class="v-align-self-stretch v-flex v-flex-col v-mb-4"
+        valignselfstretch=""
+        vflex=""
+        vflexcol=""
+        vmb="4"
+      >
+        <div
+          class="v-tab"
+          disclosuretab=""
+          v-tab-item=""
+        >
+          <button
+            aria-controls="activeElement-profile-links"
+            aria-expanded="false"
+            aria-label="Alex Miller"
+            buttoncolor="tertiary"
+            buttonsize="large"
+            class="v-button v-button-large v-button-tertiary"
+            type="button"
+            v-button=""
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-account v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-0"
+              v-icon-visa-account-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-secondary"
+                clip-rule="evenodd"
+                d="M8 11C5.23858 11 3 13.2386 3 16H1C1 12.134 4.13401 9 8 9C11.866 9 15 12.134 15 16H13C13 13.2386 10.7614 11 8 11Z"
+                fill-rule="evenodd"
+              />
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M8 2C6.89543 2 6 2.89543 6 4C6 5.10457 6.89543 6 8 6C9.10457 6 10 5.10457 10 4C10 2.89543 9.10457 2 8 2ZM4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+             Alex Miller 
+            <v-icon-visa-toggle
+              class="v-icon v-icon-tiny v-tab-suffix"
+              style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+            >
+              
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-tab-suffix"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-1"
+                v-icon-visa-chevron-down-tiny=""
+                v-toggle-default-template=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              
+            </v-icon-visa-toggle>
+          </button>
+          <div
+            aria-hidden="true"
+            class="v-hide v-flex v-flex-col v-p-4"
+            id="activeElement-profile-links"
+            vflex=""
+            vflexcol=""
+            vp="4"
+          >
+            <ul
+              class="v-tabs v-tabs-vertical"
+              v-tabs=""
+              vertical=""
+            >
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 1
+                </a>
+              </li>
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 2
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <button
+        aria-expanded="true"
+        aria-label="Side bar"
+        buttoncolor="tertiary"
+        buttonsize="small"
+        class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary v-ml-auto v-mr-8"
+        subtle=""
+        type="button"
+        v-button-icon=""
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-3"
+          v-icon-visa-media-rewind-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            clip-rule="evenodd"
+            d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
+            fill-rule="evenodd"
+          />
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        
+        
+      </button>
+    </header>
+    <div
+      class="main-content"
+    >
+      Main content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Vertical navigation examples WithIconsVerticalNavComponent should render correctly 1`] = `
+<div
+  id="root8"
+>
+  <div
+    class="app-container"
+  >
+    <header
+      class="v-nav v-nav-vertical"
+      v-nav=""
+      vertical=""
+    >
+      <a
+        class="v-link v-skip-link"
+        fragment="content"
+        href="/#content"
+        routerlink="./"
+        v-link=""
+        v-skip-to-content=""
+      >
+        Skip to content
+      </a>
+      <a
+        aria-label="Visa Application Name home"
+        class="v-link v-gap-12 v-flex v-flex-col v-link-no-underline v-mb-30 v-ml-24 v-mr-14 v-mt-16"
+        href="/"
+        nounderline=""
+        style="background-color: transparent;"
+        v-link=""
+        vflex=""
+        vflexcol=""
+        vgap="12"
+        vmb="30"
+        vml="24"
+        vmr="14"
+        vmt="16"
+      >
+        <svg
+          class="v-logo"
+          height="23"
+          v-logo-visa=""
+          viewBox="0 0 156 51"
+          width="71"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M111.134 33.9989C111.164 26.325 104.81 22.9893 99.7247 20.3201C96.3099 18.5276 93.4677 17.0357 93.5169 14.7323C93.5529 12.9893 95.2167 11.1311 98.8467 10.6629C103.098 10.2519 107.381 10.9985 111.242 12.8236L113.453 2.53852C109.695 1.1258 105.714 0.394122 101.699 0.377777C89.3107 0.377777 80.5309 6.98244 80.4516 16.4465C80.3724 23.4257 86.6962 27.3438 91.4714 29.6702C96.3691 32.047 98.0185 33.574 97.9968 35.7059C97.9968 38.9686 94.0859 40.4019 90.4775 40.4595C84.3492 40.5572 80.7168 38.8625 77.8368 37.5187L77.5634 37.3913L75.2658 48.0365C78.2045 49.3906 83.6279 50.5646 89.253 50.6222C102.455 50.6222 111.098 44.0968 111.141 33.9989H111.134ZM59.0603 1.26366L38.6989 49.8587H25.4103L15.3917 11.0806C14.7795 8.68941 14.2537 7.81791 12.4027 6.80957C9.36321 5.1746 4.39351 3.63327 0 2.67535L0.302504 1.23485H21.6866C24.5639 1.24665 27.0063 3.34708 27.4486 6.19015L32.7424 34.3158L45.8653 1.26366H59.0603ZM155.573 49.8443H143.949L142.429 42.6059H126.303L123.681 49.8587H110.486L129.335 4.82889C130.228 2.66308 132.343 1.25366 134.686 1.26367H145.425L155.573 49.8443ZM129.918 32.6448L136.537 14.3937L140.347 32.6448H129.918ZM66.6373 49.8587L77.0664 1.26362H64.4621L54.0617 49.8587H66.6373Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        <div
+          class="v-nav-app-name v-typography-subtitle-1"
+          vtypography="subtitle-1"
+        >
+          Application Name
+        </div>
+      </a>
+      <nav
+        aria-label="Vertical with icons"
+        class="v-mb-6"
+        vmb="6"
+      >
+        <ul
+          class="v-tabs v-tabs-vertical"
+          v-tabs=""
+          vertical=""
+        >
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-statistics v-icon-tiny v-icon-visa"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-44"
+                v-icon-visa-statistics-tiny=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-secondary"
+                  clip-rule="evenodd"
+                  d="M7 0H8C12.4183 0 16 3.58172 16 8V9H7V0ZM9 2.08296V7H13.917C13.4955 4.4875 11.5125 2.50448 9 2.08296Z"
+                  fill-rule="evenodd"
+                />
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M5 0.578125C4.65376 0.718269 4.3195 0.881945 3.99927 1.06719C1.61068 2.44891 0 5.03393 0 7.99632C0 12.4146 3.58172 15.9963 8 15.9963C10.9624 15.9963 13.5474 14.3856 14.9291 11.997C15.1144 11.6768 15.278 11.3426 15.4182 10.9963H13.1975C12.1585 12.7919 10.2193 13.9963 8 13.9963C4.68629 13.9963 2 11.31 2 7.99632C2 5.77703 3.20439 3.83786 5 2.79882V0.578125Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+               L1 label 1
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-settings v-icon-tiny v-icon-visa"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-45"
+                v-icon-visa-settings-tiny=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-secondary"
+                  d="M7 6.99609H9V8.99609H7V6.99609Z"
+                />
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M0 8C0 7.63803 0.02404 7.28167 0.0706105 6.93244L2.0783 6.44497C2.75428 6.28084 3.07507 5.50638 2.71314 4.91233L1.63846 3.14845C2.07228 2.58047 2.58045 2.07231 3.14842 1.63848L4.91231 2.71316C5.50636 3.0751 6.28082 2.7543 6.44495 2.07832L6.93242 0.0706128C7.28166 0.0240408 7.63802 0 8 0C8.36198 0 8.71834 0.0240405 9.06757 0.070612L9.55504 2.07832C9.71917 2.7543 10.4936 3.0751 11.0877 2.71316L12.8516 1.63848C13.4196 2.0723 13.9277 2.58047 14.3615 3.14844L13.2869 4.91233C12.9249 5.50638 13.2457 6.28084 13.9217 6.44497L15.9294 6.93244C15.976 7.28167 16 7.63803 16 8C16 8.36199 15.976 8.71836 15.9294 9.0676L13.9217 9.55507C13.2457 9.7192 12.9249 10.4937 13.2869 11.0877L14.3615 12.8516C13.9277 13.4196 13.4195 13.9277 12.8515 14.3615L11.0877 13.2869C10.4936 12.9249 9.71917 13.2457 9.55504 13.9217L9.06758 15.9294C8.71834 15.976 8.36198 16 8 16C7.63802 16 7.28165 15.976 6.93241 15.9294L6.44495 13.9217C6.28082 13.2457 5.50636 12.9249 4.9123 13.2869L3.14845 14.3615C2.58047 13.9277 2.0723 13.4195 1.63848 12.8516L2.71314 11.0877C3.07507 10.4937 2.75428 9.7192 2.07829 9.55507L0.0706159 9.0676C0.0240418 8.71836 0 8.36199 0 8ZM11 8.00004C11 9.65689 9.65685 11 7.99999 11C6.34314 11 4.99999 9.65689 4.99999 8.00004C4.99999 6.34318 6.34314 5.00004 7.99999 5.00004C9.65685 5.00004 11 6.34318 11 8.00004Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+               L1 label 2
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-security v-icon-tiny v-icon-visa"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-46"
+                v-icon-visa-security-tiny=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-secondary"
+                  clip-rule="evenodd"
+                  d="M6.88793 5.81987C6.33951 6.09204 5.71415 6.2011 5.08826 6.11717C5.04154 6.1109 5 6.14724 5 6.19438V6.4515C5 6.54476 5.00202 6.63775 5.00602 6.73041C5.02639 7.20176 5.09818 7.66467 5.21748 8.11198C5.21974 8.12042 5.222 8.12886 5.22429 8.13729C5.63652 9.65795 6.59852 10.9963 7.9564 11.8704C7.98295 11.8875 8.01705 11.8875 8.0436 11.8704C9.40148 10.9963 10.3635 9.65795 10.7757 8.13729C10.778 8.12886 10.7803 8.12042 10.7825 8.11198C10.9018 7.66467 10.9736 7.20176 10.994 6.73041C10.998 6.63775 11 6.54476 11 6.4515V6.19438C11 6.14724 10.9585 6.1109 10.9117 6.11717C10.2858 6.2011 9.66049 6.09204 9.11207 5.81987C8.72745 5.62898 8.38067 5.35787 8.0981 5.01684L8 4.89844L7.9019 5.01684C7.61933 5.35787 7.27255 5.62898 6.88793 5.81987ZM7.22448 7.84629C7.39459 8.36078 7.65752 8.84022 8 9.26029C8.34248 8.84022 8.60541 8.36078 8.77552 7.84629C8.50796 7.75064 8.24851 7.63277 8 7.49381C7.7515 7.63277 7.49204 7.75064 7.22448 7.84629Z"
+                  fill-rule="evenodd"
+                />
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M6.24443 1.44916L7.22998 0.259705H8.77002L9.75557 1.44916C10.4155 2.24563 11.4392 2.64597 12.4644 2.50849L15 2.16846V6.67106C15 9.73158 13.4447 12.5823 10.8712 14.2388L8.54125 15.7386H7.45875L5.12879 14.2388C2.55531 12.5823 1 9.73158 1 6.67106V2.16846L3.53563 2.50849C4.56081 2.64597 5.58449 2.24563 6.24443 1.44916ZM8 2.46508L7.78447 2.7252C6.68458 4.05265 4.97844 4.71987 3.26981 4.49075L3 4.45457V6.67106C3 9.05146 4.20968 11.2687 6.21128 12.5571L8 13.7085L9.78872 12.5571C11.7903 11.2687 13 9.05146 13 6.67106V4.45457L12.7302 4.49075C11.0216 4.71987 9.31542 4.05265 8.21553 2.7252L8 2.46508Z"
+                  fill-rule="evenodd"
+                />
+                <defs>
+                  <clippath>
+                    <rect
+                      height="15.9989"
+                      width="16"
+                    />
+                  </clippath>
+                </defs>
+              </svg>
+               L1 label 3
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-notes v-icon-tiny v-icon-visa"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-47"
+                v-icon-visa-notes-tiny=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-secondary"
+                  clip-rule="evenodd"
+                  d="M6 8H10V6H6V8ZM6 12H10V10H6V12Z"
+                  fill-rule="evenodd"
+                />
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M3 0V2H2V4H12V14H4V6H2V16H14V2H13V0H11V2H9V0H7V2H5V0H3Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+               L1 label 4
+            </a>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <a
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              href="./components/vertical-navigation"
+              type="button"
+              v-button=""
+            >
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-support-ticket v-icon-tiny v-icon-visa"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-48"
+                v-icon-visa-support-ticket-tiny=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-secondary"
+                  d="M8 5.99609H10V9.99609H8V5.99609Z"
+                />
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M14 3.99609H2V5.1668C3.16519 5.57864 4 6.68988 4 7.99609C4 9.30231 3.16519 10.4136 2 10.8254V11.9961H14V10.8254C12.8348 10.4136 12 9.30231 12 7.99609C12 6.68988 12.8348 5.57864 14 5.1668V3.99609ZM0 1.99609V6.99609H1C1.55228 6.99609 2 7.44381 2 7.99609C2 8.54838 1.55228 8.99609 1 8.99609H0V13.9961H16V8.99609H15C14.4477 8.99609 14 8.54838 14 7.99609C14 7.44381 14.4477 6.99609 15 6.99609H16V1.99609H0Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+               L1 label 5
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <hr
+        aria-hidden="true"
+        class="v-divider v-divider-decorative v-mb-6 v-mt-auto"
+        dividertype="decorative"
+        style="inline-size: 100%;"
+        v-divider=""
+        vmb="6"
+        vmt="auto"
+      />
+      <div
+        class="v-align-self-stretch v-flex v-flex-col v-mb-4"
+        valignselfstretch=""
+        vflex=""
+        vflexcol=""
+        vmb="4"
+      >
+        <div
+          class="v-tab"
+          disclosuretab=""
+          v-tab-item=""
+        >
+          <button
+            aria-controls="with-icons-profile-links"
+            aria-expanded="false"
+            aria-label="Alex Miller"
+            buttoncolor="tertiary"
+            buttonsize="large"
+            class="v-button v-button-large v-button-tertiary"
+            type="button"
+            v-button=""
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-account v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-49"
+              v-icon-visa-account-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-secondary"
+                clip-rule="evenodd"
+                d="M8 11C5.23858 11 3 13.2386 3 16H1C1 12.134 4.13401 9 8 9C11.866 9 15 12.134 15 16H13C13 13.2386 10.7614 11 8 11Z"
+                fill-rule="evenodd"
+              />
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M8 2C6.89543 2 6 2.89543 6 4C6 5.10457 6.89543 6 8 6C9.10457 6 10 5.10457 10 4C10 2.89543 9.10457 2 8 2ZM4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+             Alex Miller 
+            <v-icon-visa-toggle
+              class="v-icon v-icon-tiny v-tab-suffix"
+              style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+            >
+              
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-tab-suffix"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-50"
+                v-icon-visa-chevron-down-tiny=""
+                v-toggle-default-template=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              
+            </v-icon-visa-toggle>
+          </button>
+          <div
+            aria-hidden="true"
+            class="v-hide v-flex v-flex-col v-p-4"
+            id="with-icons-profile-links"
+            vflex=""
+            vflexcol=""
+            vp="4"
+          >
+            <ul
+              class="v-tabs v-tabs-vertical"
+              v-tabs=""
+              vertical=""
+            >
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 1
+                </a>
+              </li>
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 2
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <button
+        aria-expanded="true"
+        aria-label="Side bar"
+        buttoncolor="tertiary"
+        buttonsize="small"
+        class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary v-ml-auto v-mr-8"
+        subtle=""
+        type="button"
+        v-button-icon=""
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-52"
+          v-icon-visa-media-rewind-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            clip-rule="evenodd"
+            d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
+            fill-rule="evenodd"
+          />
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        
+        
+      </button>
+    </header>
+    <div
+      class="main-content"
+    >
+      Main content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Vertical navigation examples WithSectionTitleVerticalNavComponent should render correctly 1`] = `
+<div
+  id="root9"
+>
+  <div
+    class="app-container"
+  >
+    <header
+      class="v-nav v-nav-vertical"
+      v-nav=""
+      vertical=""
+    >
+      <a
+        class="v-link v-skip-link"
+        fragment="content"
+        href="/#content"
+        routerlink="./"
+        v-link=""
+        v-skip-to-content=""
+      >
+        Skip to content
+      </a>
+      <a
+        aria-label="Visa Application Name home"
+        class="v-link v-gap-12 v-flex v-flex-col v-link-no-underline v-mb-30 v-ml-24 v-mr-14 v-mt-16"
+        href="/"
+        nounderline=""
+        style="background-color: transparent;"
+        v-link=""
+        vflex=""
+        vflexcol=""
+        vgap="12"
+        vmb="30"
+        vml="24"
+        vmr="14"
+        vmt="16"
+      >
+        <svg
+          class="v-logo"
+          height="23"
+          v-logo-visa=""
+          viewBox="0 0 156 51"
+          width="71"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M111.134 33.9989C111.164 26.325 104.81 22.9893 99.7247 20.3201C96.3099 18.5276 93.4677 17.0357 93.5169 14.7323C93.5529 12.9893 95.2167 11.1311 98.8467 10.6629C103.098 10.2519 107.381 10.9985 111.242 12.8236L113.453 2.53852C109.695 1.1258 105.714 0.394122 101.699 0.377777C89.3107 0.377777 80.5309 6.98244 80.4516 16.4465C80.3724 23.4257 86.6962 27.3438 91.4714 29.6702C96.3691 32.047 98.0185 33.574 97.9968 35.7059C97.9968 38.9686 94.0859 40.4019 90.4775 40.4595C84.3492 40.5572 80.7168 38.8625 77.8368 37.5187L77.5634 37.3913L75.2658 48.0365C78.2045 49.3906 83.6279 50.5646 89.253 50.6222C102.455 50.6222 111.098 44.0968 111.141 33.9989H111.134ZM59.0603 1.26366L38.6989 49.8587H25.4103L15.3917 11.0806C14.7795 8.68941 14.2537 7.81791 12.4027 6.80957C9.36321 5.1746 4.39351 3.63327 0 2.67535L0.302504 1.23485H21.6866C24.5639 1.24665 27.0063 3.34708 27.4486 6.19015L32.7424 34.3158L45.8653 1.26366H59.0603ZM155.573 49.8443H143.949L142.429 42.6059H126.303L123.681 49.8587H110.486L129.335 4.82889C130.228 2.66308 132.343 1.25366 134.686 1.26367H145.425L155.573 49.8443ZM129.918 32.6448L136.537 14.3937L140.347 32.6448H129.918ZM66.6373 49.8587L77.0664 1.26362H64.4621L54.0617 49.8587H66.6373Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        <div
+          class="v-nav-app-name v-typography-subtitle-1"
+          vtypography="subtitle-1"
+        >
+          Application Name
+        </div>
+      </a>
+      <nav
+        aria-label="Vertical with section titles"
+        class="v-mb-6"
+        vmb="6"
+      >
+        <ul
+          class="v-tabs v-tabs-vertical"
+          v-tabs=""
+          vertical=""
+        >
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <h2
+              class="v-tab v-tab-section-title"
+              sectiontitle=""
+              v-tab-item=""
+            >
+              Section title L1
+            </h2>
+            <ul
+              class="v-tabs v-tabs-vertical"
+              style="--v-tabs-vertical-nested-count: 1;"
+              v-tabs=""
+              vertical=""
+            >
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                >
+                   L1 label 1
+                </a>
+              </li>
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                >
+                   L1 label 2
+                </a>
+              </li>
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                >
+                   L1 label 3
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li
+            class="v-tab"
+            v-tab-item=""
+          >
+            <h2
+              class="v-tab v-tab-section-title"
+              sectiontitle=""
+              v-tab-item=""
+            >
+              Section title L2
+            </h2>
+            <ul
+              class="v-tabs v-tabs-vertical"
+              style="--v-tabs-vertical-nested-count: 1;"
+              v-tabs=""
+              vertical=""
+            >
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                >
+                   L1 label 4 
+                </a>
+              </li>
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                >
+                   L1 label 5
+                </a>
+              </li>
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                >
+                   L1 label 6 
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      
+      <hr
+        aria-hidden="true"
+        class="v-divider v-divider-decorative v-mb-6 v-mt-auto"
+        dividertype="decorative"
+        style="inline-size: 100%;"
+        v-divider=""
+        vmb="6"
+        vmt="auto"
+      />
+      <div
+        class="v-align-self-stretch v-flex v-flex-col v-mb-4"
+        valignselfstretch=""
+        vflex=""
+        vflexcol=""
+        vmb="4"
+      >
+        <div
+          class="v-tab"
+          disclosuretab=""
+          v-tab-item=""
+        >
+          <button
+            aria-controls="section-titles-profile-links"
+            aria-expanded="false"
+            aria-label="Alex Miller"
+            buttoncolor="tertiary"
+            buttonsize="large"
+            class="v-button v-button-large v-button-tertiary"
+            type="button"
+            v-button=""
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-account v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-53"
+              v-icon-visa-account-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-secondary"
+                clip-rule="evenodd"
+                d="M8 11C5.23858 11 3 13.2386 3 16H1C1 12.134 4.13401 9 8 9C11.866 9 15 12.134 15 16H13C13 13.2386 10.7614 11 8 11Z"
+                fill-rule="evenodd"
+              />
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M8 2C6.89543 2 6 2.89543 6 4C6 5.10457 6.89543 6 8 6C9.10457 6 10 5.10457 10 4C10 2.89543 9.10457 2 8 2ZM4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+             Alex Miller 
+            <v-icon-visa-toggle
+              class="v-icon v-icon-tiny v-tab-suffix"
+              style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+            >
+              
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-tab-suffix"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-54"
+                v-icon-visa-chevron-down-tiny=""
+                v-toggle-default-template=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              
+            </v-icon-visa-toggle>
+          </button>
+          <div
+            aria-hidden="true"
+            class="v-hide v-flex v-flex-col v-p-4"
+            id="section-titles-profile-links"
+            vflex=""
+            vflexcol=""
+            vp="4"
+          >
+            <ul
+              class="v-tabs v-tabs-vertical"
+              v-tabs=""
+              vertical=""
+            >
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 1
+                </a>
+              </li>
+              <li
+                class="v-tab"
+                v-tab-item=""
+              >
+                <a
+                  buttoncolor="tertiary"
+                  buttonsize="large"
+                  class="v-button v-button-large v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-label-large"
+                  href="./components/vertical-navigation"
+                  type="button"
+                  v-button=""
+                  vflex=""
+                  vjustifycontentstart=""
+                  vtypography="label-large"
+                >
+                  L2 label 2
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <button
+        aria-expanded="true"
+        aria-label="Side bar"
+        buttoncolor="tertiary"
+        buttonsize="small"
+        class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary v-ml-auto v-mr-8"
+        subtle=""
+        type="button"
+        v-button-icon=""
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-56"
+          v-icon-visa-media-rewind-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            clip-rule="evenodd"
+            d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
+            fill-rule="evenodd"
+          />
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        
+        
+      </button>
+    </header>
+    <div
+      class="main-content"
+    >
+      Main content
+    </div>
+  </div>
+</div>
+`;

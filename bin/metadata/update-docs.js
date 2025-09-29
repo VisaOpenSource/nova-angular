@@ -18,7 +18,7 @@ const fs = require('fs');
 const path = require('path');
 
 function updateDocs() {
-  const componentsDir = path.resolve('apps/workshop/src/app/components');
+  const componentsDir = path.resolve('projects/workshop/src/app/components');
 
   fs.readdir(componentsDir, (err, components) => {
     if (err) {

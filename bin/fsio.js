@@ -17,32 +17,31 @@
 const { openSync, readdirSync, readFileSync, statSync } = require('fs');
 const path = require('path');
 
-const getDirsFiltered = (dir, file) => readdirSync(dir).filter(f => {
-  try {
-    return statSync(path.join(dir, f)).isDirectory() &&
-    statSync(path.join(dir, `${f}/${file}`)).isFile();
-  } catch (err) {
-    return false;
-  }
-}); 
+const getDirsFiltered = (dir, file) =>
+  readdirSync(dir).filter((f) => {
+    try {
+      return statSync(path.join(dir, f)).isDirectory() && statSync(path.join(dir, `${f}/${file}`)).isFile();
+    } catch (err) {
+      return false;
+    }
+  });
 
-const getDirs = (dir) => readdirSync(dir).filter(f => {
-  return statSync(path.join(dir, f)).isDirectory()
-}); 
+const getDirs = (dir) =>
+  readdirSync(dir).filter((f) => {
+    return statSync(path.join(dir, f)).isDirectory();
+  });
 
-const getFiles = (dir) => readdirSync(dir).filter(f => {
-  return !statSync(path.join(dir, f)).isDirectory() &&
-  f.indexOf('.') !== 0;
-});
+const getFiles = (dir) =>
+  readdirSync(dir).filter((f) => {
+    return !statSync(path.join(dir, f)).isDirectory() && f.indexOf('.') !== 0;
+  });
 
-const getFile = (filepath) => (
-  readFileSync(path.resolve(filepath), 'utf-8')
-); 
+const getFile = (filepath) => readFileSync(path.resolve(filepath), 'utf-8');
 
 const createFile = (filepath, flags = 'w') => {
-  openSync(path.resolve(filepath), flags)
-  return getFile(filepath); 
-}; 
+  openSync(path.resolve(filepath), flags);
+  return getFile(filepath);
+};
 
 module.exports = {
   getDirs,

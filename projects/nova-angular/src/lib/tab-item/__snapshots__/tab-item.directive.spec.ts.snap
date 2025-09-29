@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabItemDirective should allow tagSuffix 1`] = `
+<div
+  id="root17"
+>
+  <v-icon-visa-toggle
+    class="v-icon v-icon-tiny v-tab v-tab-suffix"
+    disclosuretab=""
+    style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+    v-tab-item=""
+  >
+    
+    <div
+      class="v-tab-suffix"
+      v-toggle-default-template=""
+    >
+      Default
+    </div>
+    
+  </v-icon-visa-toggle>
+</div>
+`;
+
+exports[`TabItemDirective should show default toggle icon 1`] = `
+<div
+  id="root15"
+>
+  <div
+    class="v-tab"
+    disclosuretab=""
+    v-tab-item=""
+  >
+    <button
+      aria-expanded="false"
+      class="v-button v-button-large v-button-tertiary"
+      type="button"
+      v-button=""
+    >
+      <v-icon-visa-toggle
+        class="v-icon v-icon-tiny v-tab-suffix"
+        style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+      >
+        
+        <svg
+          class="v-tab-suffix"
+          data-testid="default-icon"
+          v-toggle-default-template=""
+        />
+        
+      </v-icon-visa-toggle>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`TabItemDirective should show rotated toggle icon 1`] = `
+<div
+  id="root14"
+>
+  <div
+    class="v-tab"
+    disclosuretab=""
+    expanded=""
+    v-tab-item=""
+  >
+    <button
+      aria-expanded="true"
+      class="v-button v-button-large v-button-tertiary"
+      type="button"
+      v-button=""
+    >
+      <v-icon-visa-toggle
+        class="v-icon v-icon-tiny v-tab-suffix"
+        style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+      >
+        <svg
+          class="v-tab-suffix"
+          data-testid="rotated-icon"
+          v-toggle-rotated-template=""
+        />
+        
+        
+      </v-icon-visa-toggle>
+    </button>
+  </div>
+</div>
+`;

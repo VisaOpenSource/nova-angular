@@ -1,0 +1,71 @@
+<!--
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<fieldset
+  aria-labelledby="checkbox-indeterminate-error-legend checkbox-indeterminate-error-input-message checkbox-indeterminate-error-message"
+>
+  <legend v-label vTypography="label-large" id="checkbox-indeterminate-error-legend">Group label (required)</legend>
+  <div v-input-message id="checkbox-indeterminate-error-input-message">Select two or more options.</div>
+  <ul vFlex vFlexCol>
+    @for(item of nestedItems; track item.id) { @if(item.children) {
+    <li vFlex vFlexCol>
+      <div v-input-container>
+        <input
+          [id]="item.id"
+          name="checkbox-indeterminate-error"
+          v-checkbox
+          [invalid]="invalid"
+          (change)="item.checked = !item.checked; onParentChange($event)"
+          [checked]="item.checked"
+          [indeterminate]="item.indeterminate"
+        />
+        <label v-label [for]="item.id">{{ item.label }}</label>
+      </div>
+      <ul vFlex vFlexCol [vML]="20">
+        @for(child of item.children; track child.id) {
+        <ng-container [ngTemplateOutlet]="checkboxTemplate" [ngTemplateOutletContext]="{item: child, isChild: true}" />
+        }
+      </ul>
+    </li>
+    } @else {
+    <ng-container [ngTemplateOutlet]="checkboxTemplate" [ngTemplateOutletContext]="{item: item, isChild: false}" />
+    }
+
+    <ng-template #checkboxTemplate let-item="item" let-isChild="isChild">
+      <li v-input-container>
+        <input
+          [id]="item.id"
+          name="checkbox-indeterminate-error-nested"
+          v-checkbox
+          [invalid]="invalid"
+          [checked]="item.checked"
+          (change)="item.checked = !item.checked; isChild && onChildChange()"
+        />
+        <label v-label [for]="item.id">{{ item.label }}</label>
+      </li>
+    </ng-template>
+    }
+  </ul>
+  <span v-input-message id="checkbox-indeterminate-error-message" aria-atomic="true" aria-live="assertive">
+    @if(invalid){
+    <svg v-icon-visa-error-tiny />
+    Select two or more options and resubmit.}
+  </span>
+</fieldset>
+<div vFlex vGap="16" vMT="24">
+  <button v-button (click)="handleSubmit()">Submit</button>
+  <button v-button buttonColor="secondary" (click)="handleReset()">Reset</button>
+</div>

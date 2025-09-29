@@ -1,0 +1,64 @@
+/**
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ **/
+:host {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  inline-size: 100%;
+
+  .api-list {
+    .v-typography-headline-2 {
+      color: var(--palette-default-text);
+    }
+  }
+  > .v-anchor-link-menu {
+    min-inline-size: 20%;
+    flex-grow: 1;
+
+    :is(section) {
+      max-block-size: 100vh;
+      overflow-y: auto;
+      padding: 2px;
+      padding-inline-start: 0;
+    }
+  }
+
+  > .api-list {
+    inline-size: 75%;
+    flex-grow: 3;
+  }
+}
+
+.w-api-table th:nth-child(3),
+.w-api-table td:nth-child(3),
+.w-api-table th:nth-child(5),
+.w-api-table td:nth-child(5) {
+  max-inline-size: 50%;
+}
+
+.w-api-table .v-td:empty,
+.v-th-alt:empty,
+.v-th:empty {
+  border-block-end: var(--v-table-border-block-end-size-default) var(--v-table-border-block-end-style-default)
+    var(--v-table-border-block-end-color-default);
+  border-block-start: var(--v-table-border-block-start-size-default) var(--v-table-border-block-start-style-default)
+    var(--v-table-border-block-start-color-default);
+  border-inline-end: var(--v-table-border-inline-end-size-default) var(--v-table-border-inline-end-style-default)
+    var(--v-table-border-inline-end-color-default);
+  border-inline-start: var(--v-table-border-inline-start-size-default) var(--v-table-border-inline-start-style-default)
+    var(--v-table-border-inline-start-color-default);
+}

@@ -1,0 +1,64 @@
+<!--
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<section aria-label="Accounts" style="max-inline-size: 343px">
+  <div vTypography="label" vMB="6">Accounts</div>
+  <ul v-content-card vP="4" style="--v-content-card-border: 0px; --v-content-card-border-radius: 8px">
+    @for(item of items; track item.id) {
+    <li vSurface vP="0">
+      <a
+        href="./components/list-item"
+        v-button
+        buttonColor="tertiary"
+        vFlex
+        vAlignItemsCenter
+        vJustifyContentBetween
+        vTypography="label-large"
+        vPL="0"
+        vPR="4"
+        vPY="6"
+        style="color: var(--palette-default-text); --v-button-default-border-radius: 0px; min-block-size: 64px"
+      >
+        <div vFlex vGap="3">
+          <div
+            [style.background-color]="item.color"
+            style="inline-size: 5px; block-size: 56px; border-radius: 10px"
+          ></div>
+          <div vFlex vAlignItemsCenter vGap="8">
+            <div
+              vFlex
+              vAlignItemsCenter
+              vJustifyContentCenter
+              [style.background-color]="item.color"
+              style="border-radius: 4px; inline-size: 40px; block-size: 25px"
+            >
+              <svg v-logo-visa height="10" width="30" aria-label="Visa" style="fill: white" />
+            </div>
+            <div vFlex vFlexCol style="color: var(--palette-default-text)">
+              <span vTypography="overline">{{ item.overline }}</span>
+              <span vTypography="label">Digital Bank Card</span>
+            </div>
+          </div>
+        </div>
+        <div vFlex vAlignItemsCenter vGap="8">
+          <span vTypography="subtitle-3" style="color: var(--palette-default-text)">$1,234.56</span>
+          <svg v-icon-visa-chevron-right-tiny style="color: var(--palette-default-active)" />
+        </div>
+      </a>
+    </li>
+    }
+  </ul>
+</section>

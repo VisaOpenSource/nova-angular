@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonDirective should render defaults correctly 1`] = `
+<div
+  id="root0"
+>
+  <button
+    class="v-button"
+    type="button"
+    v-button=""
+  >
+    Content
+  </button>
+</div>
+`;

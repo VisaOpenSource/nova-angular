@@ -1,0 +1,59 @@
+<!--
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div class="app-container">
+  <header v-nav vertical>
+    @if(navOpen){
+    <a v-skip-to-content v-link routerLink="./" fragment="content">Skip to content</a>
+    <nav aria-label="Vertical with links only" vMB="6">
+      <ul v-tabs vertical>
+        <li v-tab-item>
+          <a v-button buttonColor="tertiary" href="./components/vertical-navigation">L1 label 1</a>
+        </li>
+        <li v-tab-item>
+          <a v-button buttonColor="tertiary" href="./components/vertical-navigation">L1 label 2</a>
+        </li>
+        <li v-tab-item>
+          <a v-button buttonColor="tertiary" href="./components/vertical-navigation">L1 label 3</a>
+        </li>
+        <li v-tab-item>
+          <a v-button buttonColor="tertiary" href="./components/vertical-navigation">L1 label 4</a>
+        </li>
+        <li v-tab-item>
+          <a v-button buttonColor="tertiary" href="./components/vertical-navigation">L1 label 5</a>
+        </li>
+      </ul>
+    </nav>
+    }
+    <button
+      v-button-icon
+      buttonColor="tertiary"
+      buttonSize="small"
+      subtle
+      [vML]="navOpen ? 'auto' : ''"
+      [vMR]="navOpen ? 8 : ''"
+      [vMX]="navOpen ? '' : 5"
+      vMT="auto"
+      (click)="navOpen = !navOpen"
+      aria-label="Side bar"
+      [aria-expanded]="navOpen"
+    >
+      @if(navOpen){
+      <svg v-icon-visa-media-rewind-tiny /> } @else { <svg v-icon-visa-media-fast-forward-tiny /> }
+    </button>
+  </header>
+  <div class="main-content">Main content</div>
+</div>

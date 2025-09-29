@@ -1,0 +1,63 @@
+/**
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ **/
+import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
+import { NavigationEnd, Router, RouterModule } from '@angular/router';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { NovaLibModule } from '@visa/nova-angular';
+import { VisaChevronRightTiny, VisaFolderTiny, VisaOptionHorizontalTiny } from '@visa/nova-icons-angular';
+import { filter, map } from 'rxjs/operators';
+
+@Component({
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  selector: 'nova-workshop-breadcrumbs-with-custom-items',
+  templateUrl: './custom-items.docs.html',
+  standalone: true,
+  imports: [NovaLibModule, RouterModule, VisaOptionHorizontalTiny, VisaFolderTiny, VisaChevronRightTiny]
+})
+export class CustomItemsBreadcrumbsComponent {
+  readonly router = inject(Router);
+
+  readonly crumbLimit = signal(1);
+  readonly pages = [
+    { path: '', text: 'L1 label', icon: 'folder' },
+    { path: '/components', text: 'L2 label' },
+    { path: '/components', text: 'L3 label' },
+    { path: '/components/#', text: 'L4 label' },
+    { path: '/components/breadcrumbs', text: 'L5 label' },
+    { path: '/examples/components/breadcrumbs/custom-items', text: 'L6 label' }
+  ];
+
+  // Convert the router.url observable to a signal
+  readonly currentRoute = toSignal(
+    this.router.events.pipe(
+      filter((event): event is NavigationEnd => event instanceof NavigationEnd),
+      map(() => this.router.url)
+    ),
+    { initialValue: this.router.url }
+  );
+
+  readonly activeIndex = computed(() => {
+    const routeWithoutAnchor = this.currentRoute().split('#')[0];
+    return this.pages.findIndex((page) => page.path === (routeWithoutAnchor || this.currentRoute()));
+  });
+
+  readonly currentCrumbCount = computed(() => this.pages.slice(0, this.activeIndex()).length);
+
+  showOverflow() {
+    this.crumbLimit.set(this.currentCrumbCount());
+  }
+}

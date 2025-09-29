@@ -1,0 +1,33 @@
+<!--
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<label v-label for="ms-error" id="ms-error-label">Label (required)</label>
+<div v-listbox-container id="ms-error" aria-labelledby="ms-error-label" aria-describedby="multiselect-error-message">
+  <ul v-listbox containHeight multiselect [invalid]="isInvalid()" [(value)]="value">
+    @for(item of items; track item.value; let i = $index) {
+    <li v-listbox-item [value]="item.value">{{ item.label }}</li>
+    }
+  </ul>
+</div>
+<span v-input-message id="multiselect-error-message" role="alert" aria-live="polite">
+  @if (isInvalid()) {
+  <svg v-icon-visa-error-tiny />
+  This is required text that describes the error in more detail. }
+</span>
+<div vFlex vGap="16">
+  <button v-button vMT="8" (click)="handleSubmit()">Submit</button>
+  <button v-button buttonColor="secondary" vMT="8" (click)="handleReset()">Reset</button>
+</div>

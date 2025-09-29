@@ -1,0 +1,78 @@
+<!--
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<form [formGroup]="multiselectForm" vFlex vFlexCol vGap="16">
+  <div v-combobox v-floating-ui-container formControlName="multiselectFormControl" [invalid]="isInvalid">
+    <label v-label for="multiselect-model-driven-fb" id="multiselect-model-driven-fb-label">Label</label>
+    <div v-input-container v-floating-ui-trigger vMY="4" vSurface vFlexRow vPL="3" vPR="6" vPY="3">
+      <div vFlex vGap="2" vFlexShrink="1" vFlexGrow vFlexWrap>
+        @for(item of chipArray(); track item.value; let i = $index) {
+        <div v-chip vFlex vFlexShrink0 compact>
+          <label v-label [for]="'model-driven-fb-' + item.value + '-' + i">{{ item.label }}</label>
+          <button
+            v-button-icon
+            buttonColor="tertiary"
+            subtle
+            [attr.aria-label]="'Remove ' + item.label"
+            aria-describedby="multiselect-model-driven-fb-label"
+            [id]="'model-driven-fb-' + item.value + '-' + i"
+            (click)="deleteChip(item.value)"
+          >
+            <svg v-icon-visa-clear-alt-tiny />
+          </button>
+        </div>
+        }
+        <input
+          v-input
+          vPL="4"
+          id="multiselect-model-driven-fb"
+          name="multiselect-model-driven-fb"
+          aria-describedby="multiselect-model-driven-fb-no-results"
+        />
+      </div>
+      <button v-button-icon buttonColor="tertiary" buttonSize="small" aria-label="toggle">
+        <v-icon-visa-toggle>
+          <svg v-toggle-default-template v-icon-visa-chevron-down-tiny />
+          <svg v-toggle-rotated-template v-icon-visa-chevron-up-tiny />
+        </v-icon-visa-toggle>
+      </button>
+    </div>
+    <span v-input-message id="default-error-message" aria-atomic="true" aria-live="assertive">
+      @if(isInvalid) {
+      <svg v-icon-visa-error-tiny />
+      This is required text that describes the error in more detail. }
+    </span>
+    <div v-listbox-container v-floating-ui-element>
+      <ul v-listbox multiselect>
+        @for(item of optionTypes; track item.value; let i = $index) {
+        <li v-listbox-item [value]="item.value">{{item.label}}</li>
+        }
+      </ul>
+    </div>
+  </div>
+  <div vMT="12" vGap="16" vFlex>
+    <button v-button (click)="submit()" type="submit">Submit</button>
+    <button v-button buttonColor="secondary" (click)="reset()" type="reset">Reset</button>
+  </div>
+</form>
+
+<!-- For demo purposes: -->
+@if (multiselectForm.controls.multiselectFormControl.value) {
+<code>{{'Label: ' + multiselectForm.controls.multiselectFormControl.value.label}}</code>
+<code>{{'Value: ' + '[' + multiselectForm.controls.multiselectFormControl.value.value + ']'}}</code>
+} @else {
+<code>{{'Value: ' + multiselectForm.controls.multiselectFormControl.value }}</code>
+}

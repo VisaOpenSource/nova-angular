@@ -1,0 +1,325 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer examples NovaFooterDefaultComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <footer
+    class="v-footer v-gap-15"
+    v-footer=""
+    vgap="15"
+  >
+    <div
+      class="v-flex v-flex-row v-mr-1"
+      vflex=""
+      vmr="1"
+    >
+      <svg
+        aria-label="Visa"
+        class="v-logo"
+        height="23"
+        v-logo-visa=""
+        viewBox="0 0 156 51"
+        width="71"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M111.134 33.9989C111.164 26.325 104.81 22.9893 99.7247 20.3201C96.3099 18.5276 93.4677 17.0357 93.5169 14.7323C93.5529 12.9893 95.2167 11.1311 98.8467 10.6629C103.098 10.2519 107.381 10.9985 111.242 12.8236L113.453 2.53852C109.695 1.1258 105.714 0.394122 101.699 0.377777C89.3107 0.377777 80.5309 6.98244 80.4516 16.4465C80.3724 23.4257 86.6962 27.3438 91.4714 29.6702C96.3691 32.047 98.0185 33.574 97.9968 35.7059C97.9968 38.9686 94.0859 40.4019 90.4775 40.4595C84.3492 40.5572 80.7168 38.8625 77.8368 37.5187L77.5634 37.3913L75.2658 48.0365C78.2045 49.3906 83.6279 50.5646 89.253 50.6222C102.455 50.6222 111.098 44.0968 111.141 33.9989H111.134ZM59.0603 1.26366L38.6989 49.8587H25.4103L15.3917 11.0806C14.7795 8.68941 14.2537 7.81791 12.4027 6.80957C9.36321 5.1746 4.39351 3.63327 0 2.67535L0.302504 1.23485H21.6866C24.5639 1.24665 27.0063 3.34708 27.4486 6.19015L32.7424 34.3158L45.8653 1.26366H59.0603ZM155.573 49.8443H143.949L142.429 42.6059H126.303L123.681 49.8587H110.486L129.335 4.82889C130.228 2.66308 132.343 1.25366 134.686 1.26367H145.425L155.573 49.8443ZM129.918 32.6448L136.537 14.3937L140.347 32.6448H129.918ZM66.6373 49.8587L77.0664 1.26362H64.4621L54.0617 49.8587H66.6373Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div
+      class="v-gap-42 v-flex v-flex-grow v-flex-row v-flex-wrap v-justify-content-between"
+      vflex=""
+      vflexgrow=""
+      vflexwrap=""
+      vgap="42"
+      vjustifycontentbetween=""
+    >
+      <p>
+        Copyright © YYYY-YYYY Visa. All rights reserved.
+      </p>
+      <ul
+        class="v-gap-16 v-flex v-flex-row v-flex-wrap"
+        v-footer-links=""
+        vflex=""
+        vflexwrap=""
+        vgap="16"
+      >
+        <li>
+          <a
+            class="v-link"
+            href="./components/footer"
+            v-link=""
+          >
+            Contact us
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="./components/footer"
+            v-link=""
+          >
+            Privacy
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="./components/footer"
+            v-link=""
+          >
+            Legal/terms and conditions
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`Footer examples NovaFooterExtendedComponent should render correctly 1`] = `
+<div
+  id="root1"
+>
+  <footer
+    class="v-footer v-gap-32 v-flex v-flex-row v-px-32"
+    v-footer=""
+    vflexrow=""
+    vgap="32"
+    vpx="32"
+  >
+    <div
+      class="footer-main-column v-gap-24 v-flex v-flex-col v-flex-grow v-flex-shrink-0"
+      vflex=""
+      vflexcol=""
+      vflexgrow=""
+      vflexshrink0=""
+      vgap="24"
+    >
+      <svg
+        aria-label="Visa"
+        class="v-logo"
+        height="23"
+        v-logo-visa=""
+        viewBox="0 0 156 51"
+        width="71"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M111.134 33.9989C111.164 26.325 104.81 22.9893 99.7247 20.3201C96.3099 18.5276 93.4677 17.0357 93.5169 14.7323C93.5529 12.9893 95.2167 11.1311 98.8467 10.6629C103.098 10.2519 107.381 10.9985 111.242 12.8236L113.453 2.53852C109.695 1.1258 105.714 0.394122 101.699 0.377777C89.3107 0.377777 80.5309 6.98244 80.4516 16.4465C80.3724 23.4257 86.6962 27.3438 91.4714 29.6702C96.3691 32.047 98.0185 33.574 97.9968 35.7059C97.9968 38.9686 94.0859 40.4019 90.4775 40.4595C84.3492 40.5572 80.7168 38.8625 77.8368 37.5187L77.5634 37.3913L75.2658 48.0365C78.2045 49.3906 83.6279 50.5646 89.253 50.6222C102.455 50.6222 111.098 44.0968 111.141 33.9989H111.134ZM59.0603 1.26366L38.6989 49.8587H25.4103L15.3917 11.0806C14.7795 8.68941 14.2537 7.81791 12.4027 6.80957C9.36321 5.1746 4.39351 3.63327 0 2.67535L0.302504 1.23485H21.6866C24.5639 1.24665 27.0063 3.34708 27.4486 6.19015L32.7424 34.3158L45.8653 1.26366H59.0603ZM155.573 49.8443H143.949L142.429 42.6059H126.303L123.681 49.8587H110.486L129.335 4.82889C130.228 2.66308 132.343 1.25366 134.686 1.26367H145.425L155.573 49.8443ZM129.918 32.6448L136.537 14.3937L140.347 32.6448H129.918ZM66.6373 49.8587L77.0664 1.26362H64.4621L54.0617 49.8587H66.6373Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+      <p>
+         The information furnished herein is confidential and is to be used solely for the support of clients' Visa programs. This information shall not be duplicated, published, or disclosed in whole, or in part, without the prior written permission of Visa. 
+      </p>
+      <p
+        class="v-typography-color-subtle"
+      >
+        Copyright © YYYY-YYYY Visa. All rights reserved.
+      </p>
+    </div>
+    <div
+      class="footer-link-column v-gap-28 v-flex v-flex-col v-flex-grow v-flex-wrap"
+      vflex=""
+      vflexcol=""
+      vflexgrow=""
+      vflexwrap=""
+      vgap="28"
+    >
+      <h2
+        class="v-typography-body-2-bold"
+      >
+        Visa Inc.
+      </h2>
+      <ul
+        class="v-gap-16 v-flex v-flex-col"
+        vflex=""
+        vflexcol=""
+        vgap="16"
+      >
+        <li>
+          <a
+            class="v-link"
+            href="./components/footer"
+            v-link=""
+          >
+            Privacy
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="./components/footer"
+            v-link=""
+          >
+            Terms of use
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="./components/footer"
+            v-link=""
+          >
+            About Visa
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    <div
+      class="footer-link-column v-gap-28 v-flex v-flex-col v-flex-grow v-flex-wrap"
+      vflex=""
+      vflexcol=""
+      vflexgrow=""
+      vflexwrap=""
+      vgap="28"
+    >
+      <h2
+        class="v-typography-body-2-bold"
+      >
+        Support
+      </h2>
+      <ul
+        class="v-gap-16 v-flex v-flex-col"
+        vflex=""
+        vflexcol=""
+        vgap="16"
+      >
+        <li>
+          <a
+            class="v-link"
+            href="./components/footer"
+            v-link=""
+          >
+            FAQs
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="./components/footer"
+            v-link=""
+          >
+            Feedback/Contact us
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="./components/footer"
+            v-link=""
+          >
+            Online help
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    <div
+      class="footer-link-column v-gap-28 v-flex v-flex-col v-flex-grow v-flex-wrap"
+      vflex=""
+      vflexcol=""
+      vflexgrow=""
+      vflexwrap=""
+      vgap="28"
+    >
+      <h2
+        class="v-typography-body-2-bold"
+      >
+        Update Profile
+      </h2>
+      <ul
+        class="v-gap-16 v-flex v-flex-col"
+        vflex=""
+        vflexcol=""
+        vgap="16"
+      >
+        <li>
+          <a
+            class="v-link"
+            href="./components/footer"
+            v-link=""
+          >
+            My information
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="./components/footer"
+            v-link=""
+          >
+            My security
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="./components/footer"
+            v-link=""
+          >
+            My services
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    <div
+      class="footer-link-column v-gap-28 v-flex v-flex-col v-flex-grow v-flex-wrap"
+      vflex=""
+      vflexcol=""
+      vflexgrow=""
+      vflexwrap=""
+      vgap="28"
+    >
+      <h2
+        class="v-typography-body-2-bold"
+      >
+        Site Index
+      </h2>
+      <ul
+        class="v-gap-16 v-flex v-flex-col"
+        vflex=""
+        vflexcol=""
+        vgap="16"
+      >
+        <li>
+          <a
+            class="v-link"
+            href="./components/footer"
+            v-link=""
+          >
+            Alphabetized index
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="./components/footer"
+            v-link=""
+          >
+            Site map
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="./components/footer"
+            v-link=""
+          >
+            Topic index
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </footer>
+</div>
+`;

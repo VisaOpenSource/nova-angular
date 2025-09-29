@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconToggleComponent should allow rotated input 1`] = `
+<div
+  id="root2"
+>
+  <v-icon-visa-toggle
+    class="v-icon v-icon-tiny"
+    rotated=""
+    style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+  >
+    <div
+      v-toggle-rotated-template=""
+    >
+      Rotated
+    </div>
+    
+    
+  </v-icon-visa-toggle>
+</div>
+`;
+
+exports[`IconToggleComponent should allow tagSuffix 1`] = `
+<div
+  id="root6"
+>
+  <v-icon-visa-toggle
+    class="v-icon v-icon-tiny v-tab v-tab-suffix"
+    disclosuretab=""
+    style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+    v-tab-item=""
+  >
+    
+    <div
+      class="v-tab-suffix"
+      v-toggle-default-template=""
+    >
+      Default
+    </div>
+    
+  </v-icon-visa-toggle>
+</div>
+`;

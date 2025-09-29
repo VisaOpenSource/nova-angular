@@ -1,0 +1,3730 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <div
+    class="v-gap-40 v-align-items-center v-flex v-flex-col"
+    style="container-type: inline-size;"
+    valignitemscenter=""
+    vflex=""
+    vflexcol=""
+    vgap="40"
+  >
+    
+    <nav
+      aria-label="wizard for compact example-desktop"
+      class="v-mobile-container-hide"
+      style="inline-size: 100%;"
+      vcontainerhide="mobile"
+    >
+      <ol
+        class="v-wizard v-justify-content-center"
+        v-wizard=""
+      >
+        <li
+          aria-current="step"
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          
+          <button
+            aria-label="1 Step 1 label"
+            buttoncolor="tertiary"
+            class="v-button v-button-tertiary v-typography-color-default v-typography-label-large-active"
+            type="button"
+            v-button=""
+          >
+            <div
+              class="v-gap-8 v-flex v-flex-row"
+              vflex=""
+              vgap="8"
+            >
+              
+              
+              <span
+                badgetype="active"
+                class="v-badge v-badge-active v-badge-icon"
+                icon=""
+                id="a-v-badge-0"
+                v-badge=""
+              >
+                1
+              </span>
+              
+              
+              <span
+                class="v-mobile-container-hide"
+                vcontainerhide="mobile"
+              >
+                Step 1 label
+              </span>
+            </div>
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-mobile-container-hide"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-0"
+              v-icon-visa-chevron-right-tiny=""
+              vContainerHide="mobile"
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            
+            
+          </button>
+          
+        </li>
+        <li
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          <div
+            class="v-gap-8 v-flex v-flex-row"
+            vflex=""
+            vgap="8"
+          >
+            
+            
+            
+            <span
+              badgetype="subtle"
+              class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+              icon=""
+              id="a-v-badge-1"
+              nobackground=""
+              v-badge=""
+            >
+              2
+            </span>
+            
+            <span
+              class="v-mobile-container-hide"
+              vcontainerhide="mobile"
+            >
+              Step 2 label
+            </span>
+          </div>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-mobile-container-hide"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-1"
+            v-icon-visa-chevron-right-tiny=""
+            vContainerHide="mobile"
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+          
+          
+          
+        </li>
+        <li
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          <div
+            class="v-gap-8 v-flex v-flex-row"
+            vflex=""
+            vgap="8"
+          >
+            
+            
+            
+            <span
+              badgetype="subtle"
+              class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+              icon=""
+              id="a-v-badge-2"
+              nobackground=""
+              v-badge=""
+            >
+              3
+            </span>
+            
+            <span
+              class="v-mobile-container-hide"
+              vcontainerhide="mobile"
+            >
+              Step 3 label
+            </span>
+          </div>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-mobile-container-hide"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-2"
+            v-icon-visa-chevron-right-tiny=""
+            vContainerHide="mobile"
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+          
+          
+          
+        </li>
+        <li
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          <div
+            class="v-gap-8 v-flex v-flex-row"
+            vflex=""
+            vgap="8"
+          >
+            
+            
+            
+            <span
+              badgetype="subtle"
+              class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+              icon=""
+              id="a-v-badge-3"
+              nobackground=""
+              v-badge=""
+            >
+              4
+            </span>
+            
+            <span
+              class="v-mobile-container-hide"
+              vcontainerhide="mobile"
+            >
+              Step 4 label
+            </span>
+          </div>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-mobile-container-hide"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-3"
+            v-icon-visa-chevron-right-tiny=""
+            vContainerHide="mobile"
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+          
+          
+          
+        </li>
+        <li
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          <div
+            class="v-gap-8 v-flex v-flex-row"
+            vflex=""
+            vgap="8"
+          >
+            
+            
+            
+            <span
+              badgetype="subtle"
+              class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+              icon=""
+              id="a-v-badge-4"
+              nobackground=""
+              v-badge=""
+            >
+              5
+            </span>
+            
+            <span
+              class="v-mobile-container-hide"
+              vcontainerhide="mobile"
+            >
+              Step 5 label
+            </span>
+          </div>
+          
+          
+          
+          
+        </li>
+        
+        
+      </ol>
+    </nav>
+    <nav
+      aria-label="wizard for compact example-mobile"
+      class="v-desktop-container-hide"
+      style="inline-size: 100%;"
+      vcontainerhide="desktop"
+    >
+      <ol
+        class="v-wizard v-justify-content-center v-wizard-compact"
+        compact=""
+        v-wizard=""
+      >
+        <li
+          aria-current="step"
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          <div
+            class="v-gap-8 v-flex v-flex-row"
+            vflex=""
+            vgap="8"
+          >
+            
+            
+            <span
+              badgetype="active"
+              class="v-badge v-badge-active v-badge-icon"
+              icon=""
+              id="a-v-badge-5"
+              v-badge=""
+            >
+              1
+            </span>
+            
+            
+            <span
+              class="v-mobile-container-hide"
+              vcontainerhide="mobile"
+            >
+              Step 1 label
+            </span>
+          </div>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-mobile-container-hide"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-4"
+            v-icon-visa-chevron-right-tiny=""
+            vContainerHide="mobile"
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+          
+          
+          
+        </li>
+        <li
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          <div
+            class="v-gap-8 v-flex v-flex-row"
+            vflex=""
+            vgap="8"
+          >
+            
+            
+            
+            <span
+              badgetype="subtle"
+              class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+              icon=""
+              id="a-v-badge-6"
+              nobackground=""
+              v-badge=""
+            >
+              2
+            </span>
+            
+            <span
+              class="v-mobile-container-hide"
+              vcontainerhide="mobile"
+            >
+              Step 2 label
+            </span>
+          </div>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-mobile-container-hide"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-5"
+            v-icon-visa-chevron-right-tiny=""
+            vContainerHide="mobile"
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+          
+          
+          
+        </li>
+        <li
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          <div
+            class="v-gap-8 v-flex v-flex-row"
+            vflex=""
+            vgap="8"
+          >
+            
+            
+            
+            <span
+              badgetype="subtle"
+              class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+              icon=""
+              id="a-v-badge-7"
+              nobackground=""
+              v-badge=""
+            >
+              3
+            </span>
+            
+            <span
+              class="v-mobile-container-hide"
+              vcontainerhide="mobile"
+            >
+              Step 3 label
+            </span>
+          </div>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-mobile-container-hide"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-6"
+            v-icon-visa-chevron-right-tiny=""
+            vContainerHide="mobile"
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+          
+          
+          
+        </li>
+        <li
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          <div
+            class="v-gap-8 v-flex v-flex-row"
+            vflex=""
+            vgap="8"
+          >
+            
+            
+            
+            <span
+              badgetype="subtle"
+              class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+              icon=""
+              id="a-v-badge-8"
+              nobackground=""
+              v-badge=""
+            >
+              4
+            </span>
+            
+            <span
+              class="v-mobile-container-hide"
+              vcontainerhide="mobile"
+            >
+              Step 4 label
+            </span>
+          </div>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-mobile-container-hide"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-7"
+            v-icon-visa-chevron-right-tiny=""
+            vContainerHide="mobile"
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+          
+          
+          
+        </li>
+        <li
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          <div
+            class="v-gap-8 v-flex v-flex-row"
+            vflex=""
+            vgap="8"
+          >
+            
+            
+            
+            <span
+              badgetype="subtle"
+              class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+              icon=""
+              id="a-v-badge-9"
+              nobackground=""
+              v-badge=""
+            >
+              5
+            </span>
+            
+            <span
+              class="v-mobile-container-hide"
+              vcontainerhide="mobile"
+            >
+              Step 5 label
+            </span>
+          </div>
+          
+          
+          
+          
+        </li>
+        
+        
+      </ol>
+    </nav>
+    
+    <form
+      class="ng-untouched ng-pristine ng-valid"
+      novalidate=""
+      style="max-inline-size: 603px; inline-size: 100%;"
+    >
+      <div
+        class="v-content-card v-gap-24 v-flex v-flex-col v-p-48"
+        style="box-shadow: none;"
+        v-content-card=""
+        vflex=""
+        vflexcol=""
+        vgap="24"
+        vp="48"
+      >
+        <div
+          class="v-gap-8 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+        >
+          <span
+            class="v-typography-headline-2"
+            vtypography="headline-2"
+          >
+            Step 1 label
+          </span>
+          
+          <span
+            class="v-typography-body-1"
+            vtypography="body-1"
+          >
+            * Indicates a required field.
+          </span>
+        </div>
+        <div
+          class="v-gap-4 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+          vgap="4"
+        >
+          <label
+            class="v-label"
+            for="compact-wizard-compact-0"
+            id="a-v-label-0"
+            v-label=""
+          >
+            * Label
+          </label>
+          <div
+            class="v-input-container v-surface"
+            v-input-container=""
+          >
+            <input
+              aria-describedby=""
+              aria-invalid="false"
+              class="v-input ng-untouched ng-pristine ng-valid"
+              id="compact-wizard-compact-0"
+              required=""
+              v-input=""
+              value=""
+            />
+            
+          </div>
+          
+          
+        </div>
+        <div
+          class="v-hide v-gap-8 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+        >
+          <span
+            class="v-hide v-typography-headline-2"
+            vtypography="headline-2"
+          >
+            Step 2 label
+          </span>
+          
+          <span
+            class="v-hide v-typography-body-1"
+            vtypography="body-1"
+          >
+            * Indicates a required field.
+          </span>
+        </div>
+        <div
+          class="v-hide v-gap-4 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+          vgap="4"
+        >
+          <label
+            class="v-label"
+            for="compact-wizard-compact-1"
+            id="a-v-label-1"
+            v-label=""
+          >
+            * Label
+          </label>
+          <div
+            class="v-input-container v-surface"
+            v-input-container=""
+          >
+            <input
+              aria-describedby=""
+              aria-invalid="false"
+              class="v-input ng-untouched ng-pristine ng-valid"
+              id="compact-wizard-compact-1"
+              required=""
+              v-input=""
+              value=""
+            />
+            
+          </div>
+          
+          
+        </div>
+        <div
+          class="v-hide v-gap-8 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+        >
+          <span
+            class="v-hide v-typography-headline-2"
+            vtypography="headline-2"
+          >
+            Step 3 label
+          </span>
+          
+          <span
+            class="v-hide v-typography-body-1"
+            vtypography="body-1"
+          >
+            * Indicates a required field.
+          </span>
+        </div>
+        <div
+          class="v-hide v-gap-4 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+          vgap="4"
+        >
+          <label
+            class="v-label"
+            for="compact-wizard-compact-2"
+            id="a-v-label-2"
+            v-label=""
+          >
+            * Label
+          </label>
+          <div
+            class="v-input-container v-surface"
+            v-input-container=""
+          >
+            <input
+              aria-describedby=""
+              aria-invalid="false"
+              class="v-input ng-untouched ng-pristine ng-valid"
+              id="compact-wizard-compact-2"
+              required=""
+              v-input=""
+              value=""
+            />
+            
+          </div>
+          
+          
+        </div>
+        <div
+          class="v-hide v-gap-8 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+        >
+          <span
+            class="v-hide v-typography-headline-2"
+            vtypography="headline-2"
+          >
+            Step 4 label
+          </span>
+          
+          <span
+            class="v-hide v-typography-body-1"
+            vtypography="body-1"
+          >
+            * Indicates a required field.
+          </span>
+        </div>
+        <div
+          class="v-hide v-gap-4 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+          vgap="4"
+        >
+          <label
+            class="v-label"
+            for="compact-wizard-compact-3"
+            id="a-v-label-3"
+            v-label=""
+          >
+            * Label
+          </label>
+          <div
+            class="v-input-container v-surface"
+            v-input-container=""
+          >
+            <input
+              aria-describedby=""
+              aria-invalid="false"
+              class="v-input ng-untouched ng-pristine ng-valid"
+              id="compact-wizard-compact-3"
+              required=""
+              v-input=""
+              value=""
+            />
+            
+          </div>
+          
+          
+        </div>
+        <div
+          class="v-hide v-gap-8 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+        >
+          <span
+            class="v-hide v-typography-headline-2"
+            vtypography="headline-2"
+          >
+            Step 5 label
+          </span>
+          
+          <span
+            class="v-hide v-typography-body-1"
+            vtypography="body-1"
+          >
+            * Indicates a required field.
+          </span>
+        </div>
+        <div
+          class="v-hide v-gap-4 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+          vgap="4"
+        >
+          <label
+            class="v-label"
+            for="compact-wizard-compact-4"
+            id="a-v-label-4"
+            v-label=""
+          >
+            * Label
+          </label>
+          <div
+            class="v-input-container v-surface"
+            v-input-container=""
+          >
+            <input
+              aria-describedby=""
+              aria-invalid="false"
+              class="v-input ng-untouched ng-pristine ng-valid"
+              id="compact-wizard-compact-4"
+              required=""
+              v-input=""
+              value=""
+            />
+            
+          </div>
+          
+          
+        </div>
+        
+      </div>
+      <p
+        class="v-mt-10 v-typography-body-3"
+        vmt="10"
+        vtypography="body-3"
+      >
+        Changes have been automatically saved.
+      </p>
+      <nova-workshop-wizard-shared-exit-dialog>
+        <dialog
+          aria-describedby="a-v-dialog-0-description"
+          aria-labelledby="a-v-dialog-0-title"
+          aria-modal="true"
+          class="v-dialog v-message v-message-warning"
+          id="a-v-dialog-0"
+          messagetype="warning"
+          role="dialog"
+          style="max-inline-size: 300px;"
+          v-dialog=""
+          v-message=""
+        >
+          <div
+            aria-hidden="true"
+            class="cdk-visually-hidden cdk-focus-trap-anchor"
+            tabindex="0"
+          />
+          <div
+            cdktrapfocus=""
+            cdktrapfocusautocapture=""
+            class="v-flex v-flex-row"
+            vflex=""
+            vflexrow=""
+          >
+            <div
+              class="v-message-content v-pb-2 v-pr-2"
+              v-message-content=""
+              vpb="2"
+              vpr="2"
+            >
+              <h2
+                class="v-dialog-header v-gap-6 v-align-items-center v-flex v-flex-row v-justify-content-start"
+                id="a-v-dialog-0-title"
+                v-dialog-header=""
+                valignitemscenter=""
+                vflex=""
+                vgap="6"
+                vjustifycontentstart=""
+              >
+                <svg
+                  aria-hidden="false"
+                  aria-label="Warning"
+                  class="v-message-icon v-icon v-icon-low v-icon-visa v-icon-warning"
+                  focusable="false"
+                  height="24"
+                  id="a-v__icon__internal-8"
+                  role="img"
+                  v-icon-visa-warning-low=""
+                  v-message-icon=""
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path
+                    class="v-icon-secondary"
+                    d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+                  />
+                  <path
+                    class="v-icon-primary"
+                    clip-rule="evenodd"
+                    d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <span>
+                  Exit form?
+                </span>
+              </h2>
+              <p
+                id="a-v-dialog-0-description"
+                v-dialog-text=""
+              >
+                 Your progress has been automatically saved. You can continue where you left off when you return. 
+              </p>
+              <div
+                class="v-gap-8 v-align-items-center v-flex v-flex-row v-flex-wrap v-justify-content-start v-pl-2 v-pt-16"
+                valignitemscenter=""
+                vflex=""
+                vflexwrap=""
+                vgap="8"
+                vjustifycontentstart=""
+                vpl="2"
+                vpt="16"
+              >
+                <button
+                  autofocus=""
+                  buttoncolor="primary"
+                  class="v-button"
+                  style="inline-size: 100%;"
+                  type="button"
+                  v-button=""
+                >
+                  Exit
+                </button>
+              </div>
+            </div>
+            <button
+              aria-label="close"
+              buttoncolor="tertiary"
+              buttonsize="small"
+              class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary -v-ml-12 -v-mr-18 -v-mt-20"
+              subtle=""
+              type="button"
+              v-button-icon=""
+              vml="-12"
+              vmr="-18"
+              vmt="-20"
+            >
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-close v-icon-tiny v-icon-visa"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-9"
+                v-icon-visa-close-tiny=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-primary"
+                  d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+                />
+                <defs>
+                  <clippath>
+                    <rect
+                      height="16"
+                      transform="translate(0 0.000488281)"
+                      width="16"
+                    />
+                  </clippath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+          <div
+            aria-hidden="true"
+            class="cdk-visually-hidden cdk-focus-trap-anchor"
+            tabindex="0"
+          />
+        </dialog>
+      </nova-workshop-wizard-shared-exit-dialog>
+      <div
+        class="v-xs-container-hide v-gap-24 v-flex v-flex-row v-flex-wrap v-justify-content-between v-mt-40"
+        vcontainerhide="xs"
+        vflex=""
+        vflexwrap=""
+        vgap="24"
+        vjustifycontentbetween=""
+        vmt="40"
+      >
+        <div
+          class="v-col-gap-24 v-row-gap-16 v-flex v-flex-row v-flex-wrap v-justify-content-start"
+          vcolgap="24"
+          vflex=""
+          vflexwrap=""
+          vjustifycontentstart=""
+          vrowgap="16"
+        >
+          <button
+            buttoncolor="secondary"
+            class="v-button v-button-secondary"
+            type="button"
+            v-button=""
+          >
+             Save 
+          </button>
+          <button
+            buttoncolor="tertiary"
+            class="v-button v-button-tertiary"
+            type="button"
+            v-button=""
+          >
+             Exit 
+          </button>
+        </div>
+        <div
+          class="v-gap-24 v-flex v-flex-row v-flex-wrap v-justify-content-end"
+          vflex=""
+          vflexwrap=""
+          vgap="24"
+          vjustifycontentend=""
+        >
+          
+          
+          <button
+            class="v-button"
+            type="button"
+            v-button=""
+          >
+             Next 
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-10"
+              v-icon-visa-arrow-forward-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
+                fill-rule="evenodd"
+              />
+              <defs>
+                <clippath>
+                  <rect
+                    height="16"
+                    width="16"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+          </button>
+          
+        </div>
+      </div>
+      <div
+        class="v-desktop-container-hide"
+        vcontainerhide="desktop"
+      >
+        <div
+          class="v-sm-container-hide v-gap-16 v-flex v-flex-col v-mt-40"
+          vcontainerhide="sm"
+          vflex=""
+          vflexcol=""
+          vgap="16"
+          vmt="40"
+        >
+          <button
+            buttoncolor="secondary"
+            class="v-button v-button-secondary"
+            type="button"
+            v-button=""
+          >
+             Save 
+          </button>
+          <button
+            buttoncolor="tertiary"
+            class="v-button v-button-tertiary"
+            type="button"
+            v-button=""
+          >
+             Exit 
+          </button>
+          
+          
+          <button
+            class="v-button"
+            type="button"
+            v-button=""
+          >
+             Next 
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-11"
+              v-icon-visa-arrow-forward-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
+                fill-rule="evenodd"
+              />
+              <defs>
+                <clippath>
+                  <rect
+                    height="16"
+                    width="16"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+          </button>
+          
+        </div>
+      </div>
+      
+    </form>
+    
+    
+    
+  </div>
+  
+  
+  
+</div>
+`;
+
+exports[`Wizard examples HorizontalWizardComponent should render correctly 1`] = `
+<div
+  id="root1"
+>
+  <div
+    class="v-gap-40 v-align-items-center v-flex v-flex-col"
+    valignitemscenter=""
+    vflex=""
+    vflexcol=""
+    vgap="40"
+  >
+    
+    <nav
+      aria-label="wizard for horizontal example"
+      class="v-flex v-flex-row v-justify-content-center"
+      style="inline-size: 100%;"
+      vflex=""
+      vjustifycontentcenter=""
+    >
+      <ol
+        class="v-wizard v-justify-content-center"
+        v-wizard=""
+      >
+        <li
+          aria-current="step"
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          <button
+            aria-label="1 Step 1 label"
+            buttoncolor="tertiary"
+            class="v-button v-button-tertiary v-typography-color-default v-typography-label-large-active"
+            type="button"
+            v-button=""
+          >
+            <div
+              class="v-gap-8 v-flex v-flex-row"
+              vflex=""
+              vgap="8"
+            >
+              
+              
+              <span
+                badgetype="active"
+                class="v-badge v-badge-active v-badge-icon"
+                icon=""
+                id="a-v-badge-0"
+                v-badge=""
+              >
+                1
+              </span>
+              
+              
+               Step 1 label 
+            </div>
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-12"
+              v-icon-visa-chevron-right-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            
+            
+          </button>
+          
+          
+        </li>
+        <li
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          
+          <div
+            class="v-gap-8 v-flex v-flex-row"
+            vflex=""
+            vgap="8"
+          >
+            
+            
+            
+            <span
+              badgetype="subtle"
+              class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+              icon=""
+              id="a-v-badge-1"
+              nobackground=""
+              v-badge=""
+            >
+              2
+            </span>
+            
+             Step 2 label 
+          </div>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-13"
+            v-icon-visa-chevron-right-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+          
+          
+        </li>
+        <li
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          
+          <div
+            class="v-gap-8 v-flex v-flex-row"
+            vflex=""
+            vgap="8"
+          >
+            
+            
+            
+            <span
+              badgetype="subtle"
+              class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+              icon=""
+              id="a-v-badge-2"
+              nobackground=""
+              v-badge=""
+            >
+              3
+            </span>
+            
+             Step 3 label 
+          </div>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-14"
+            v-icon-visa-chevron-right-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+          
+          
+        </li>
+        <li
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          
+          <div
+            class="v-gap-8 v-flex v-flex-row"
+            vflex=""
+            vgap="8"
+          >
+            
+            
+            
+            <span
+              badgetype="subtle"
+              class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+              icon=""
+              id="a-v-badge-3"
+              nobackground=""
+              v-badge=""
+            >
+              4
+            </span>
+            
+             Step 4 label 
+          </div>
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-15"
+            v-icon-visa-chevron-right-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+          
+          
+        </li>
+        <li
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          
+          <div
+            class="v-gap-8 v-flex v-flex-row"
+            vflex=""
+            vgap="8"
+          >
+            
+            
+            
+            <span
+              badgetype="subtle"
+              class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+              icon=""
+              id="a-v-badge-4"
+              nobackground=""
+              v-badge=""
+            >
+              5
+            </span>
+            
+             Step 5 label 
+          </div>
+          
+          
+          
+        </li>
+        
+      </ol>
+    </nav>
+    
+    <form
+      class="ng-untouched ng-pristine ng-valid"
+      novalidate=""
+      style="max-inline-size: 603px; inline-size: 100%;"
+    >
+      <div
+        class="v-content-card v-gap-24 v-flex v-flex-col v-p-48"
+        style="box-shadow: none;"
+        v-content-card=""
+        vflex=""
+        vflexcol=""
+        vgap="24"
+        vp="48"
+      >
+        <div
+          class="v-gap-8 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+        >
+          <span
+            class="v-typography-headline-2"
+            vtypography="headline-2"
+          >
+            Step 1 label
+          </span>
+          
+          <span
+            class="v-typography-body-1"
+            vtypography="body-1"
+          >
+            * Indicates a required field.
+          </span>
+        </div>
+        <div
+          class="v-gap-4 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+          vgap="4"
+        >
+          <label
+            class="v-label"
+            for="horizontal-wizard-horizontal-0"
+            id="a-v-label-0"
+            v-label=""
+          >
+            * Label
+          </label>
+          <div
+            class="v-input-container v-surface"
+            v-input-container=""
+          >
+            <input
+              aria-describedby=""
+              aria-invalid="false"
+              class="v-input ng-untouched ng-pristine ng-valid"
+              id="horizontal-wizard-horizontal-0"
+              required=""
+              v-input=""
+              value=""
+            />
+            
+          </div>
+          
+          
+        </div>
+        <div
+          class="v-hide v-gap-8 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+        >
+          <span
+            class="v-hide v-typography-headline-2"
+            vtypography="headline-2"
+          >
+            Step 2 label
+          </span>
+          
+          <span
+            class="v-hide v-typography-body-1"
+            vtypography="body-1"
+          >
+            * Indicates a required field.
+          </span>
+        </div>
+        <div
+          class="v-hide v-gap-4 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+          vgap="4"
+        >
+          <label
+            class="v-label"
+            for="horizontal-wizard-horizontal-1"
+            id="a-v-label-1"
+            v-label=""
+          >
+            * Label
+          </label>
+          <div
+            class="v-input-container v-surface"
+            v-input-container=""
+          >
+            <input
+              aria-describedby=""
+              aria-invalid="false"
+              class="v-input ng-untouched ng-pristine ng-valid"
+              id="horizontal-wizard-horizontal-1"
+              required=""
+              v-input=""
+              value=""
+            />
+            
+          </div>
+          
+          
+        </div>
+        <div
+          class="v-hide v-gap-8 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+        >
+          <span
+            class="v-hide v-typography-headline-2"
+            vtypography="headline-2"
+          >
+            Step 3 label
+          </span>
+          
+          <span
+            class="v-hide v-typography-body-1"
+            vtypography="body-1"
+          >
+            * Indicates a required field.
+          </span>
+        </div>
+        <div
+          class="v-hide v-gap-4 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+          vgap="4"
+        >
+          <label
+            class="v-label"
+            for="horizontal-wizard-horizontal-2"
+            id="a-v-label-2"
+            v-label=""
+          >
+            * Label
+          </label>
+          <div
+            class="v-input-container v-surface"
+            v-input-container=""
+          >
+            <input
+              aria-describedby=""
+              aria-invalid="false"
+              class="v-input ng-untouched ng-pristine ng-valid"
+              id="horizontal-wizard-horizontal-2"
+              required=""
+              v-input=""
+              value=""
+            />
+            
+          </div>
+          
+          
+        </div>
+        <div
+          class="v-hide v-gap-8 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+        >
+          <span
+            class="v-hide v-typography-headline-2"
+            vtypography="headline-2"
+          >
+            Step 4 label
+          </span>
+          
+          <span
+            class="v-hide v-typography-body-1"
+            vtypography="body-1"
+          >
+            * Indicates a required field.
+          </span>
+        </div>
+        <div
+          class="v-hide v-gap-4 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+          vgap="4"
+        >
+          <label
+            class="v-label"
+            for="horizontal-wizard-horizontal-3"
+            id="a-v-label-3"
+            v-label=""
+          >
+            * Label
+          </label>
+          <div
+            class="v-input-container v-surface"
+            v-input-container=""
+          >
+            <input
+              aria-describedby=""
+              aria-invalid="false"
+              class="v-input ng-untouched ng-pristine ng-valid"
+              id="horizontal-wizard-horizontal-3"
+              required=""
+              v-input=""
+              value=""
+            />
+            
+          </div>
+          
+          
+        </div>
+        <div
+          class="v-hide v-gap-8 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+        >
+          <span
+            class="v-hide v-typography-headline-2"
+            vtypography="headline-2"
+          >
+            Step 5 label
+          </span>
+          
+          <span
+            class="v-hide v-typography-body-1"
+            vtypography="body-1"
+          >
+            * Indicates a required field.
+          </span>
+        </div>
+        <div
+          class="v-hide v-gap-4 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+          vgap="4"
+        >
+          
+        </div>
+        
+      </div>
+      <p
+        class="v-mt-10 v-typography-body-3"
+        vmt="10"
+        vtypography="body-3"
+      >
+        Changes have been automatically saved.
+      </p>
+      <div
+        class="v-gap-10 v-flex v-flex-row v-flex-wrap v-justify-content-between v-mt-40"
+        vflex=""
+        vflexwrap=""
+        vgap="10"
+        vjustifycontentbetween=""
+        vmt="40"
+      >
+        <div
+          class="v-gap-24 v-flex v-flex-row v-flex-wrap"
+          vflex=""
+          vflexwrap=""
+          vgap="24"
+        >
+          <button
+            buttoncolor="secondary"
+            class="v-button v-button-secondary"
+            type="button"
+            v-button=""
+          >
+             Save 
+          </button>
+          <button
+            buttoncolor="tertiary"
+            class="v-button v-button-tertiary"
+            type="button"
+            v-button=""
+          >
+             Exit 
+          </button>
+          <nova-workshop-wizard-shared-exit-dialog>
+            <dialog
+              aria-describedby="a-v-dialog-0-description"
+              aria-labelledby="a-v-dialog-0-title"
+              aria-modal="true"
+              class="v-dialog v-message v-message-warning"
+              id="a-v-dialog-0"
+              messagetype="warning"
+              role="dialog"
+              style="max-inline-size: 300px;"
+              v-dialog=""
+              v-message=""
+            >
+              <div
+                aria-hidden="true"
+                class="cdk-visually-hidden cdk-focus-trap-anchor"
+                tabindex="0"
+              />
+              <div
+                cdktrapfocus=""
+                cdktrapfocusautocapture=""
+                class="v-flex v-flex-row"
+                vflex=""
+                vflexrow=""
+              >
+                <div
+                  class="v-message-content v-pb-2 v-pr-2"
+                  v-message-content=""
+                  vpb="2"
+                  vpr="2"
+                >
+                  <h2
+                    class="v-dialog-header v-gap-6 v-align-items-center v-flex v-flex-row v-justify-content-start"
+                    id="a-v-dialog-0-title"
+                    v-dialog-header=""
+                    valignitemscenter=""
+                    vflex=""
+                    vgap="6"
+                    vjustifycontentstart=""
+                  >
+                    <svg
+                      aria-hidden="false"
+                      aria-label="Warning"
+                      class="v-message-icon v-icon v-icon-low v-icon-visa v-icon-warning"
+                      focusable="false"
+                      height="24"
+                      id="a-v__icon__internal-16"
+                      role="img"
+                      v-icon-visa-warning-low=""
+                      v-message-icon=""
+                      viewBox="0 0 24 24"
+                      width="24"
+                    >
+                      <path
+                        class="v-icon-secondary"
+                        d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+                      />
+                      <path
+                        class="v-icon-primary"
+                        clip-rule="evenodd"
+                        d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                    <span>
+                      Exit form?
+                    </span>
+                  </h2>
+                  <p
+                    id="a-v-dialog-0-description"
+                    v-dialog-text=""
+                  >
+                     Your progress has been automatically saved. You can continue where you left off when you return. 
+                  </p>
+                  <div
+                    class="v-gap-8 v-align-items-center v-flex v-flex-row v-flex-wrap v-justify-content-start v-pl-2 v-pt-16"
+                    valignitemscenter=""
+                    vflex=""
+                    vflexwrap=""
+                    vgap="8"
+                    vjustifycontentstart=""
+                    vpl="2"
+                    vpt="16"
+                  >
+                    <button
+                      autofocus=""
+                      buttoncolor="primary"
+                      class="v-button"
+                      style="inline-size: 100%;"
+                      type="button"
+                      v-button=""
+                    >
+                      Exit
+                    </button>
+                  </div>
+                </div>
+                <button
+                  aria-label="close"
+                  buttoncolor="tertiary"
+                  buttonsize="small"
+                  class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary -v-ml-12 -v-mr-18 -v-mt-20"
+                  subtle=""
+                  type="button"
+                  v-button-icon=""
+                  vml="-12"
+                  vmr="-18"
+                  vmt="-20"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="v-icon v-icon-close v-icon-tiny v-icon-visa"
+                    focusable="false"
+                    height="16"
+                    id="a-v__icon__internal-17"
+                    v-icon-visa-close-tiny=""
+                    viewBox="0 0 16 16"
+                    width="16"
+                  >
+                    <path
+                      class="v-icon-primary"
+                      d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+                    />
+                    <defs>
+                      <clippath>
+                        <rect
+                          height="16"
+                          transform="translate(0 0.000488281)"
+                          width="16"
+                        />
+                      </clippath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+              <div
+                aria-hidden="true"
+                class="cdk-visually-hidden cdk-focus-trap-anchor"
+                tabindex="0"
+              />
+            </dialog>
+          </nova-workshop-wizard-shared-exit-dialog>
+        </div>
+        <div
+          class="v-gap-24 v-flex v-flex-row v-flex-wrap"
+          vflex=""
+          vflexwrap=""
+          vgap="24"
+        >
+          
+          
+          <button
+            class="v-button"
+            type="button"
+            v-button=""
+          >
+             Next 
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-18"
+              v-icon-visa-arrow-forward-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
+                fill-rule="evenodd"
+              />
+              <defs>
+                <clippath>
+                  <rect
+                    height="16"
+                    width="16"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+          </button>
+          
+        </div>
+      </div>
+      
+    </form>
+    
+    
+    
+  </div>
+  
+  
+</div>
+`;
+
+exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
+<div
+  id="root3"
+>
+  <nav
+    aria-label="Single-page wizard example"
+    class="v-flex v-flex-col v-justify-content-center"
+    style="inline-size: 100%;"
+    vflex=""
+    vflexcol=""
+    vjustifycontentcenter=""
+  >
+    
+    <div
+      class="v-wizard v-gap-16 v-flex v-flex-col"
+      v-wizard=""
+      vflex=""
+      vflexcol=""
+      vgap="16"
+    >
+      <details
+        aria-current="step"
+        class="v-accordion v-wizard-step v-flex v-flex-col"
+        name="a-accordion-details--0"
+        open="open"
+        v-accordion=""
+        v-accordion-item=""
+        v-wizard-step=""
+      >
+        <summary
+          aria-label="1 Step 1 label"
+          class="v-accordion-heading v-button v-button-large v-button-secondary v-flex v-flex-row v-justify-content-between"
+          type="button"
+          v-accordion-heading=""
+          v-button=""
+          vflex=""
+          vjustifycontentbetween=""
+        >
+          <div
+            class="v-gap-6 v-align-items-center v-flex v-flex-row v-typography-color-active"
+            valignitemscenter=""
+            vflex=""
+            vgap="6"
+          >
+            
+            
+            <span
+              badgetype="active"
+              class="v-badge v-badge-active v-badge-icon"
+              icon=""
+              id="a-v-badge-0"
+              v-badge=""
+            >
+              1
+            </span>
+            
+            
+             Step 1 label
+
+            
+          </div>
+          <v-icon-visa-toggle
+            class="v-icon v-icon-tiny v-accordion-toggle-icon"
+            style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-25"
+              v-icon-visa-chevron-down-tiny=""
+              v-toggle-rotated-template=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            
+            
+          </v-icon-visa-toggle>
+        </summary>
+        <div
+          class="v-accordion-panel v-px-0 v-py-12"
+          v-accordion-panel=""
+          vpx="0"
+          vpy="12"
+        >
+          <div
+            class="v-flex v-flex-col"
+            vflex=""
+            vflexcol=""
+          >
+            
+            <div
+              class="v-gap-4 v-flex v-flex-col v-px-40 v-py-12"
+              vflex=""
+              vflexcol=""
+              vgap="4"
+              vpx="40"
+              vpy="12"
+            >
+              
+              <p
+                class="v-mb-16"
+                vmb="16"
+              >
+                * Indicates a required field.
+              </p>
+              <label
+                class="v-label"
+                for="custom-markup-wizard-0"
+                id="a-v-label-0"
+                v-label=""
+              >
+                * Label
+              </label>
+              <div
+                class="v-input-container v-surface"
+                v-input-container=""
+              >
+                <input
+                  aria-describedby=""
+                  aria-invalid="false"
+                  class="v-input ng-untouched ng-dirty ng-invalid"
+                  id="custom-markup-wizard-0"
+                  required=""
+                  v-input=""
+                />
+                
+              </div>
+              
+            </div>
+            
+            <hr
+              aria-hidden="true"
+              class="v-divider v-divider-decorative v-my-12"
+              dividertype="decorative"
+              v-divider=""
+              vmy="12"
+            />
+            <div
+              class="v-gap-8 v-flex v-flex-row v-flex-wrap v-justify-content-between v-px-40 v-py-12"
+              vflex=""
+              vflexwrap=""
+              vgap="8"
+              vjustifycontentbetween=""
+              vpx="40"
+              vpy="12"
+            >
+              <div
+                class="v-gap-24 v-flex v-flex-row v-flex-wrap"
+                vflex=""
+                vflexwrap=""
+                vgap="24"
+              >
+                <button
+                  buttoncolor="secondary"
+                  class="v-button v-button-secondary"
+                  type="button"
+                  v-button=""
+                >
+                   Save 
+                </button>
+                <button
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  type="button"
+                  v-button=""
+                >
+                   Exit 
+                </button>
+              </div>
+              <div
+                class="v-gap-24 v-flex v-flex-row v-flex-wrap"
+                vflex=""
+                vflexwrap=""
+                vgap="24"
+              >
+                
+                
+                <button
+                  class="v-button"
+                  type="button"
+                  v-button=""
+                >
+                   Next 
+                  <svg
+                    aria-hidden="true"
+                    class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
+                    focusable="false"
+                    height="16"
+                    id="a-v__icon__internal-34"
+                    v-icon-visa-arrow-forward-tiny=""
+                    viewBox="0 0 16 16"
+                    width="16"
+                  >
+                    <path
+                      class="v-icon-primary"
+                      clip-rule="evenodd"
+                      d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
+                      fill-rule="evenodd"
+                    />
+                    <defs>
+                      <clippath>
+                        <rect
+                          height="16"
+                          width="16"
+                        />
+                      </clippath>
+                    </defs>
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+      <details
+        class="v-accordion v-wizard-step v-flex v-flex-col"
+        name="a-accordion-details--1"
+        tabindex="-1"
+        v-accordion=""
+        v-accordion-item=""
+        v-wizard-step=""
+      >
+        <summary
+          aria-disabled="true"
+          aria-label="2 Step 2 label"
+          class="v-accordion-heading v-button v-button-large v-button-secondary v-flex v-flex-row v-justify-content-between"
+          disabled="disabled"
+          tabindex="-1"
+          type="button"
+          v-accordion-heading=""
+          v-button=""
+          vflex=""
+          vjustifycontentbetween=""
+        >
+          <div
+            class="v-gap-6 v-align-items-center v-flex v-flex-row v-typography-color-subtle"
+            valignitemscenter=""
+            vflex=""
+            vgap="6"
+          >
+            
+            
+            
+            <span
+              badgetype="subtle"
+              class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+              icon=""
+              id="a-v-badge-1"
+              nobackground=""
+              style="--v-badge-border-color: var(--palette-default-text-subtle); --v-badge-foreground: var(--palette-default-text-subtle);"
+              v-badge=""
+            >
+              2
+            </span>
+            
+             Step 2 label
+
+            
+          </div>
+          <v-icon-visa-toggle
+            class="v-icon v-icon-tiny v-accordion-toggle-icon"
+            style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+          >
+            
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-26"
+              style="--v-icon-primary: var(--palette-default-disabled);"
+              v-icon-visa-chevron-right-tiny=""
+              v-toggle-default-template=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            
+          </v-icon-visa-toggle>
+        </summary>
+        <div
+          class="v-accordion-panel v-px-0 v-py-12"
+          v-accordion-panel=""
+          vpx="0"
+          vpy="12"
+        >
+          <div
+            class="v-flex v-flex-col"
+            vflex=""
+            vflexcol=""
+          >
+            
+            <div
+              class="v-gap-4 v-flex v-flex-col v-px-40 v-py-12"
+              vflex=""
+              vflexcol=""
+              vgap="4"
+              vpx="40"
+              vpy="12"
+            >
+              
+              <p
+                class="v-mb-16"
+                vmb="16"
+              >
+                * Indicates a required field.
+              </p>
+              <label
+                class="v-label"
+                for="custom-markup-wizard-1"
+                id="a-v-label-1"
+                v-label=""
+              >
+                * Label
+              </label>
+              <div
+                class="v-input-container v-surface v-hide"
+                v-input-container=""
+              >
+                <input
+                  aria-describedby=""
+                  aria-invalid="false"
+                  class="v-input ng-untouched ng-dirty ng-invalid"
+                  id="custom-markup-wizard-1"
+                  required=""
+                  v-input=""
+                />
+                
+              </div>
+              
+            </div>
+            
+            <hr
+              aria-hidden="true"
+              class="v-divider v-divider-decorative v-my-12"
+              dividertype="decorative"
+              v-divider=""
+              vmy="12"
+            />
+            <div
+              class="v-gap-8 v-flex v-flex-row v-flex-wrap v-justify-content-between v-px-40 v-py-12"
+              vflex=""
+              vflexwrap=""
+              vgap="8"
+              vjustifycontentbetween=""
+              vpx="40"
+              vpy="12"
+            >
+              <div
+                class="v-gap-24 v-flex v-flex-row v-flex-wrap"
+                vflex=""
+                vflexwrap=""
+                vgap="24"
+              >
+                <button
+                  buttoncolor="secondary"
+                  class="v-button v-button-secondary"
+                  type="button"
+                  v-button=""
+                >
+                   Save 
+                </button>
+                <button
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  type="button"
+                  v-button=""
+                >
+                   Exit 
+                </button>
+              </div>
+              <div
+                class="v-gap-24 v-flex v-flex-row v-flex-wrap"
+                vflex=""
+                vflexwrap=""
+                vgap="24"
+              >
+                
+                
+                <button
+                  class="v-button"
+                  type="button"
+                  v-button=""
+                >
+                   Next 
+                  <svg
+                    aria-hidden="true"
+                    class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
+                    focusable="false"
+                    height="16"
+                    id="a-v__icon__internal-35"
+                    v-icon-visa-arrow-forward-tiny=""
+                    viewBox="0 0 16 16"
+                    width="16"
+                  >
+                    <path
+                      class="v-icon-primary"
+                      clip-rule="evenodd"
+                      d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
+                      fill-rule="evenodd"
+                    />
+                    <defs>
+                      <clippath>
+                        <rect
+                          height="16"
+                          width="16"
+                        />
+                      </clippath>
+                    </defs>
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+      <details
+        class="v-accordion v-wizard-step v-flex v-flex-col"
+        name="a-accordion-details--2"
+        tabindex="-1"
+        v-accordion=""
+        v-accordion-item=""
+        v-wizard-step=""
+      >
+        <summary
+          aria-disabled="true"
+          aria-label="3 Step 3 label"
+          class="v-accordion-heading v-button v-button-large v-button-secondary v-flex v-flex-row v-justify-content-between"
+          disabled="disabled"
+          tabindex="-1"
+          type="button"
+          v-accordion-heading=""
+          v-button=""
+          vflex=""
+          vjustifycontentbetween=""
+        >
+          <div
+            class="v-gap-6 v-align-items-center v-flex v-flex-row v-typography-color-subtle"
+            valignitemscenter=""
+            vflex=""
+            vgap="6"
+          >
+            
+            
+            
+            <span
+              badgetype="subtle"
+              class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+              icon=""
+              id="a-v-badge-2"
+              nobackground=""
+              style="--v-badge-border-color: var(--palette-default-text-subtle); --v-badge-foreground: var(--palette-default-text-subtle);"
+              v-badge=""
+            >
+              3
+            </span>
+            
+             Step 3 label
+
+            
+          </div>
+          <v-icon-visa-toggle
+            class="v-icon v-icon-tiny v-accordion-toggle-icon"
+            style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+          >
+            
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-28"
+              style="--v-icon-primary: var(--palette-default-disabled);"
+              v-icon-visa-chevron-right-tiny=""
+              v-toggle-default-template=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            
+          </v-icon-visa-toggle>
+        </summary>
+        <div
+          class="v-accordion-panel v-px-0 v-py-12"
+          v-accordion-panel=""
+          vpx="0"
+          vpy="12"
+        >
+          <div
+            class="v-flex v-flex-col"
+            vflex=""
+            vflexcol=""
+          >
+            
+            <div
+              class="v-gap-4 v-flex v-flex-col v-px-40 v-py-12"
+              vflex=""
+              vflexcol=""
+              vgap="4"
+              vpx="40"
+              vpy="12"
+            >
+              
+              <p
+                class="v-mb-16"
+                vmb="16"
+              >
+                * Indicates a required field.
+              </p>
+              <label
+                class="v-label"
+                for="custom-markup-wizard-2"
+                id="a-v-label-2"
+                v-label=""
+              >
+                * Label
+              </label>
+              <div
+                class="v-input-container v-surface v-hide"
+                v-input-container=""
+              >
+                <input
+                  aria-describedby=""
+                  aria-invalid="false"
+                  class="v-input ng-untouched ng-dirty ng-invalid"
+                  id="custom-markup-wizard-2"
+                  required=""
+                  v-input=""
+                />
+                
+              </div>
+              
+            </div>
+            
+            <hr
+              aria-hidden="true"
+              class="v-divider v-divider-decorative v-my-12"
+              dividertype="decorative"
+              v-divider=""
+              vmy="12"
+            />
+            <div
+              class="v-gap-8 v-flex v-flex-row v-flex-wrap v-justify-content-between v-px-40 v-py-12"
+              vflex=""
+              vflexwrap=""
+              vgap="8"
+              vjustifycontentbetween=""
+              vpx="40"
+              vpy="12"
+            >
+              <div
+                class="v-gap-24 v-flex v-flex-row v-flex-wrap"
+                vflex=""
+                vflexwrap=""
+                vgap="24"
+              >
+                <button
+                  buttoncolor="secondary"
+                  class="v-button v-button-secondary"
+                  type="button"
+                  v-button=""
+                >
+                   Save 
+                </button>
+                <button
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  type="button"
+                  v-button=""
+                >
+                   Exit 
+                </button>
+              </div>
+              <div
+                class="v-gap-24 v-flex v-flex-row v-flex-wrap"
+                vflex=""
+                vflexwrap=""
+                vgap="24"
+              >
+                
+                
+                <button
+                  class="v-button"
+                  type="button"
+                  v-button=""
+                >
+                   Next 
+                  <svg
+                    aria-hidden="true"
+                    class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
+                    focusable="false"
+                    height="16"
+                    id="a-v__icon__internal-36"
+                    v-icon-visa-arrow-forward-tiny=""
+                    viewBox="0 0 16 16"
+                    width="16"
+                  >
+                    <path
+                      class="v-icon-primary"
+                      clip-rule="evenodd"
+                      d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
+                      fill-rule="evenodd"
+                    />
+                    <defs>
+                      <clippath>
+                        <rect
+                          height="16"
+                          width="16"
+                        />
+                      </clippath>
+                    </defs>
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+      <details
+        class="v-accordion v-wizard-step v-flex v-flex-col"
+        name="a-accordion-details--3"
+        tabindex="-1"
+        v-accordion=""
+        v-accordion-item=""
+        v-wizard-step=""
+      >
+        <summary
+          aria-disabled="true"
+          aria-label="4 Step 4 label"
+          class="v-accordion-heading v-button v-button-large v-button-secondary v-flex v-flex-row v-justify-content-between"
+          disabled="disabled"
+          tabindex="-1"
+          type="button"
+          v-accordion-heading=""
+          v-button=""
+          vflex=""
+          vjustifycontentbetween=""
+        >
+          <div
+            class="v-gap-6 v-align-items-center v-flex v-flex-row v-typography-color-subtle"
+            valignitemscenter=""
+            vflex=""
+            vgap="6"
+          >
+            
+            
+            
+            <span
+              badgetype="subtle"
+              class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+              icon=""
+              id="a-v-badge-3"
+              nobackground=""
+              style="--v-badge-border-color: var(--palette-default-text-subtle); --v-badge-foreground: var(--palette-default-text-subtle);"
+              v-badge=""
+            >
+              4
+            </span>
+            
+             Step 4 label
+
+            
+          </div>
+          <v-icon-visa-toggle
+            class="v-icon v-icon-tiny v-accordion-toggle-icon"
+            style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+          >
+            
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-30"
+              style="--v-icon-primary: var(--palette-default-disabled);"
+              v-icon-visa-chevron-right-tiny=""
+              v-toggle-default-template=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            
+          </v-icon-visa-toggle>
+        </summary>
+        <div
+          class="v-accordion-panel v-px-0 v-py-12"
+          v-accordion-panel=""
+          vpx="0"
+          vpy="12"
+        >
+          <div
+            class="v-flex v-flex-col"
+            vflex=""
+            vflexcol=""
+          >
+            
+            <div
+              class="v-gap-4 v-flex v-flex-col v-px-40 v-py-12"
+              vflex=""
+              vflexcol=""
+              vgap="4"
+              vpx="40"
+              vpy="12"
+            >
+              
+              <p
+                class="v-mb-16"
+                vmb="16"
+              >
+                * Indicates a required field.
+              </p>
+              <label
+                class="v-label"
+                for="custom-markup-wizard-3"
+                id="a-v-label-3"
+                v-label=""
+              >
+                * Label
+              </label>
+              <div
+                class="v-input-container v-surface v-hide"
+                v-input-container=""
+              >
+                <input
+                  aria-describedby=""
+                  aria-invalid="false"
+                  class="v-input ng-untouched ng-dirty ng-invalid"
+                  id="custom-markup-wizard-3"
+                  required=""
+                  v-input=""
+                />
+                
+              </div>
+              
+            </div>
+            
+            <hr
+              aria-hidden="true"
+              class="v-divider v-divider-decorative v-my-12"
+              dividertype="decorative"
+              v-divider=""
+              vmy="12"
+            />
+            <div
+              class="v-gap-8 v-flex v-flex-row v-flex-wrap v-justify-content-between v-px-40 v-py-12"
+              vflex=""
+              vflexwrap=""
+              vgap="8"
+              vjustifycontentbetween=""
+              vpx="40"
+              vpy="12"
+            >
+              <div
+                class="v-gap-24 v-flex v-flex-row v-flex-wrap"
+                vflex=""
+                vflexwrap=""
+                vgap="24"
+              >
+                <button
+                  buttoncolor="secondary"
+                  class="v-button v-button-secondary"
+                  type="button"
+                  v-button=""
+                >
+                   Save 
+                </button>
+                <button
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  type="button"
+                  v-button=""
+                >
+                   Exit 
+                </button>
+              </div>
+              <div
+                class="v-gap-24 v-flex v-flex-row v-flex-wrap"
+                vflex=""
+                vflexwrap=""
+                vgap="24"
+              >
+                
+                
+                <button
+                  class="v-button"
+                  type="button"
+                  v-button=""
+                >
+                   Next 
+                  <svg
+                    aria-hidden="true"
+                    class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
+                    focusable="false"
+                    height="16"
+                    id="a-v__icon__internal-37"
+                    v-icon-visa-arrow-forward-tiny=""
+                    viewBox="0 0 16 16"
+                    width="16"
+                  >
+                    <path
+                      class="v-icon-primary"
+                      clip-rule="evenodd"
+                      d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
+                      fill-rule="evenodd"
+                    />
+                    <defs>
+                      <clippath>
+                        <rect
+                          height="16"
+                          width="16"
+                        />
+                      </clippath>
+                    </defs>
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+      <details
+        class="v-accordion v-wizard-step v-flex v-flex-col"
+        name="a-accordion-details--4"
+        tabindex="-1"
+        v-accordion=""
+        v-accordion-item=""
+        v-wizard-step=""
+      >
+        <summary
+          aria-disabled="true"
+          aria-label="5 Step 5 label"
+          class="v-accordion-heading v-button v-button-large v-button-secondary v-flex v-flex-row v-justify-content-between"
+          disabled="disabled"
+          tabindex="-1"
+          type="button"
+          v-accordion-heading=""
+          v-button=""
+          vflex=""
+          vjustifycontentbetween=""
+        >
+          <div
+            class="v-gap-6 v-align-items-center v-flex v-flex-row v-typography-color-subtle"
+            valignitemscenter=""
+            vflex=""
+            vgap="6"
+          >
+            
+            
+            
+            <span
+              badgetype="subtle"
+              class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+              icon=""
+              id="a-v-badge-4"
+              nobackground=""
+              style="--v-badge-border-color: var(--palette-default-text-subtle); --v-badge-foreground: var(--palette-default-text-subtle);"
+              v-badge=""
+            >
+              5
+            </span>
+            
+             Step 5 label
+
+            
+          </div>
+          <v-icon-visa-toggle
+            class="v-icon v-icon-tiny v-accordion-toggle-icon"
+            style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+          >
+            
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-32"
+              style="--v-icon-primary: var(--palette-default-disabled);"
+              v-icon-visa-chevron-right-tiny=""
+              v-toggle-default-template=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            
+          </v-icon-visa-toggle>
+        </summary>
+        <div
+          class="v-accordion-panel v-px-0 v-py-12"
+          v-accordion-panel=""
+          vpx="0"
+          vpy="12"
+        >
+          <div
+            class="v-flex v-flex-col"
+            vflex=""
+            vflexcol=""
+          >
+            
+            <div
+              class="v-gap-4 v-flex v-flex-col v-px-40 v-py-12"
+              vflex=""
+              vflexcol=""
+              vgap="4"
+              vpx="40"
+              vpy="12"
+            >
+              
+              <p
+                class="v-mb-16"
+                vmb="16"
+              >
+                * Indicates a required field.
+              </p>
+              <label
+                class="v-label"
+                for="custom-markup-wizard-4"
+                id="a-v-label-4"
+                v-label=""
+              >
+                * Label
+              </label>
+              <div
+                class="v-input-container v-surface v-hide"
+                v-input-container=""
+              >
+                <input
+                  aria-describedby=""
+                  aria-invalid="false"
+                  class="v-input ng-untouched ng-dirty ng-invalid"
+                  id="custom-markup-wizard-4"
+                  required=""
+                  v-input=""
+                />
+                
+              </div>
+              
+            </div>
+            
+            <hr
+              aria-hidden="true"
+              class="v-divider v-divider-decorative v-my-12"
+              dividertype="decorative"
+              v-divider=""
+              vmy="12"
+            />
+            <div
+              class="v-gap-8 v-flex v-flex-row v-flex-wrap v-justify-content-between v-px-40 v-py-12"
+              vflex=""
+              vflexwrap=""
+              vgap="8"
+              vjustifycontentbetween=""
+              vpx="40"
+              vpy="12"
+            >
+              <div
+                class="v-gap-24 v-flex v-flex-row v-flex-wrap"
+                vflex=""
+                vflexwrap=""
+                vgap="24"
+              >
+                <button
+                  buttoncolor="secondary"
+                  class="v-button v-button-secondary"
+                  type="button"
+                  v-button=""
+                >
+                   Save 
+                </button>
+                <button
+                  buttoncolor="tertiary"
+                  class="v-button v-button-tertiary"
+                  type="button"
+                  v-button=""
+                >
+                   Exit 
+                </button>
+              </div>
+              <div
+                class="v-gap-24 v-flex v-flex-row v-flex-wrap"
+                vflex=""
+                vflexwrap=""
+                vgap="24"
+              >
+                
+                
+                <button
+                  class="v-button"
+                  type="button"
+                  v-button=""
+                >
+                   Next 
+                  <svg
+                    aria-hidden="true"
+                    class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
+                    focusable="false"
+                    height="16"
+                    id="a-v__icon__internal-38"
+                    v-icon-visa-arrow-forward-tiny=""
+                    viewBox="0 0 16 16"
+                    width="16"
+                  >
+                    <path
+                      class="v-icon-primary"
+                      clip-rule="evenodd"
+                      d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
+                      fill-rule="evenodd"
+                    />
+                    <defs>
+                      <clippath>
+                        <rect
+                          height="16"
+                          width="16"
+                        />
+                      </clippath>
+                    </defs>
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+      
+    </div>
+    
+    
+  </nav>
+  <nova-workshop-wizard-shared-exit-dialog>
+    <dialog
+      aria-describedby="a-v-dialog-0-description"
+      aria-labelledby="a-v-dialog-0-title"
+      aria-modal="true"
+      class="v-dialog v-message v-message-warning"
+      id="a-v-dialog-0"
+      messagetype="warning"
+      role="dialog"
+      style="max-inline-size: 300px;"
+      v-dialog=""
+      v-message=""
+    >
+      <div
+        aria-hidden="true"
+        class="cdk-visually-hidden cdk-focus-trap-anchor"
+        tabindex="0"
+      />
+      <div
+        cdktrapfocus=""
+        cdktrapfocusautocapture=""
+        class="v-flex v-flex-row"
+        vflex=""
+        vflexrow=""
+      >
+        <div
+          class="v-message-content v-pb-2 v-pr-2"
+          v-message-content=""
+          vpb="2"
+          vpr="2"
+        >
+          <h2
+            class="v-dialog-header v-gap-6 v-align-items-center v-flex v-flex-row v-justify-content-start"
+            id="a-v-dialog-0-title"
+            v-dialog-header=""
+            valignitemscenter=""
+            vflex=""
+            vgap="6"
+            vjustifycontentstart=""
+          >
+            <svg
+              aria-hidden="false"
+              aria-label="Warning"
+              class="v-message-icon v-icon v-icon-low v-icon-visa v-icon-warning"
+              focusable="false"
+              height="24"
+              id="a-v__icon__internal-22"
+              role="img"
+              v-icon-visa-warning-low=""
+              v-message-icon=""
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path
+                class="v-icon-secondary"
+                d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+              />
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            <span>
+              Exit form?
+            </span>
+          </h2>
+          <p
+            id="a-v-dialog-0-description"
+            v-dialog-text=""
+          >
+             Your progress has been automatically saved. You can continue where you left off when you return. 
+          </p>
+          <div
+            class="v-gap-8 v-align-items-center v-flex v-flex-row v-flex-wrap v-justify-content-start v-pl-2 v-pt-16"
+            valignitemscenter=""
+            vflex=""
+            vflexwrap=""
+            vgap="8"
+            vjustifycontentstart=""
+            vpl="2"
+            vpt="16"
+          >
+            <button
+              autofocus=""
+              buttoncolor="primary"
+              class="v-button"
+              style="inline-size: 100%;"
+              type="button"
+              v-button=""
+            >
+              Exit
+            </button>
+          </div>
+        </div>
+        <button
+          aria-label="close"
+          buttoncolor="tertiary"
+          buttonsize="small"
+          class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary -v-ml-12 -v-mr-18 -v-mt-20"
+          subtle=""
+          type="button"
+          v-button-icon=""
+          vml="-12"
+          vmr="-18"
+          vmt="-20"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-close v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-23"
+            v-icon-visa-close-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+            />
+            <defs>
+              <clippath>
+                <rect
+                  height="16"
+                  transform="translate(0 0.000488281)"
+                  width="16"
+                />
+              </clippath>
+            </defs>
+          </svg>
+        </button>
+      </div>
+      <div
+        aria-hidden="true"
+        class="cdk-visually-hidden cdk-focus-trap-anchor"
+        tabindex="0"
+      />
+    </dialog>
+  </nova-workshop-wizard-shared-exit-dialog>
+  
+</div>
+`;
+
+exports[`Wizard examples VerticalWizardComponent should render correctly 1`] = `
+<div
+  id="root2"
+>
+  <div
+    class="v-gap-40 v-flex v-flex-row v-flex-wrap"
+    style="margin: 0 auto; max-inline-size: 878px;"
+    vflex=""
+    vflexrow=""
+    vflexwrap=""
+    vgap="40"
+  >
+    <nav
+      aria-label="wizard for vertical example"
+      style="max-inline-size: 235px; inline-size: 100%;"
+    >
+      <ol
+        class="v-wizard v-wizard-vertical"
+        v-wizard=""
+        vertical=""
+      >
+        <li
+          aria-current="step"
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          <button
+            aria-label="1 Step 1 label"
+            buttoncolor="tertiary"
+            class="v-button v-button-tertiary v-flex v-flex-row v-justify-content-start v-typography-color-default v-typography-label-large-active"
+            type="button"
+            v-button=""
+            vflex=""
+            vjustifycontentstart=""
+          >
+            
+            
+            <span
+              badgetype="active"
+              class="v-badge v-badge-active v-badge-icon"
+              icon=""
+              id="a-v-badge-0"
+              v-badge=""
+            >
+              1
+            </span>
+            
+            
+             Step 1 label
+
+            
+          </button>
+          
+          
+        </li>
+        <li
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          
+          
+          
+          
+          <span
+            badgetype="subtle"
+            class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+            icon=""
+            id="a-v-badge-1"
+            nobackground=""
+            v-badge=""
+          >
+            2
+          </span>
+          
+           Step 2  label
+
+          
+          
+        </li>
+        <li
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          
+          
+          
+          
+          <span
+            badgetype="subtle"
+            class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+            icon=""
+            id="a-v-badge-2"
+            nobackground=""
+            v-badge=""
+          >
+            3
+          </span>
+          
+           Step 3 label
+
+          
+          
+        </li>
+        <li
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          
+          
+          
+          
+          <span
+            badgetype="subtle"
+            class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+            icon=""
+            id="a-v-badge-3"
+            nobackground=""
+            v-badge=""
+          >
+            4
+          </span>
+          
+           Step 4 label
+
+          
+          
+        </li>
+        <li
+          class="v-wizard-step"
+          v-wizard-step=""
+        >
+          
+          
+          
+          
+          <span
+            badgetype="subtle"
+            class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+            icon=""
+            id="a-v-badge-4"
+            nobackground=""
+            v-badge=""
+          >
+            5
+          </span>
+          
+           Step 5 label
+
+          
+          
+        </li>
+        
+      </ol>
+    </nav>
+    <div
+      class="v-flex v-flex-col v-flex-grow"
+      style="max-inline-size: 603px;"
+      vflex=""
+      vflexcol=""
+      vflexgrow=""
+    >
+      
+      
+      <form
+        class="ng-untouched ng-pristine ng-valid"
+        novalidate=""
+      >
+        <div
+          class="v-content-card v-gap-24 v-flex v-flex-col v-p-48"
+          style="box-shadow: none;"
+          v-content-card=""
+          vflex=""
+          vflexcol=""
+          vgap="24"
+          vp="48"
+        >
+          <div
+            class="v-gap-8 v-flex v-flex-col"
+            vflex=""
+            vflexcol=""
+          >
+            <span
+              class="v-typography-headline-2"
+              vtypography="headline-2"
+            >
+              Step 1 label
+            </span>
+            
+            <span
+              class="v-typography-body-1"
+              vtypography="body-1"
+            >
+              * Indicates a required field.
+            </span>
+          </div>
+          <div
+            class="v-gap-4 v-flex v-flex-col"
+            vflex=""
+            vflexcol=""
+            vgap="4"
+          >
+            <label
+              class="v-label"
+              for="vertical-wizard-vertical-0"
+              id="a-v-label-0"
+              v-label=""
+            >
+              * Label
+            </label>
+            <div
+              class="v-input-container v-surface"
+              v-input-container=""
+            >
+              <input
+                aria-describedby=""
+                aria-invalid="false"
+                class="v-input ng-untouched ng-pristine ng-valid"
+                id="vertical-wizard-vertical-0"
+                required=""
+                v-input=""
+                value=""
+              />
+              
+            </div>
+            
+            
+          </div>
+          <div
+            class="v-hide v-gap-8 v-flex v-flex-col"
+            vflex=""
+            vflexcol=""
+          >
+            <span
+              class="v-hide v-typography-headline-2"
+              vtypography="headline-2"
+            >
+              Step 2  label
+            </span>
+            
+            <span
+              class="v-hide v-typography-body-1"
+              vtypography="body-1"
+            >
+              * Indicates a required field.
+            </span>
+          </div>
+          <div
+            class="v-hide v-gap-4 v-flex v-flex-col"
+            vflex=""
+            vflexcol=""
+            vgap="4"
+          >
+            <label
+              class="v-label"
+              for="vertical-wizard-vertical-1"
+              id="a-v-label-1"
+              v-label=""
+            >
+              * Label
+            </label>
+            <div
+              class="v-input-container v-surface"
+              v-input-container=""
+            >
+              <input
+                aria-describedby=""
+                aria-invalid="false"
+                class="v-input ng-untouched ng-pristine ng-valid"
+                id="vertical-wizard-vertical-1"
+                required=""
+                v-input=""
+                value=""
+              />
+              
+            </div>
+            
+            
+          </div>
+          <div
+            class="v-hide v-gap-8 v-flex v-flex-col"
+            vflex=""
+            vflexcol=""
+          >
+            <span
+              class="v-hide v-typography-headline-2"
+              vtypography="headline-2"
+            >
+              Step 3 label
+            </span>
+            
+            <span
+              class="v-hide v-typography-body-1"
+              vtypography="body-1"
+            >
+              * Indicates a required field.
+            </span>
+          </div>
+          <div
+            class="v-hide v-gap-4 v-flex v-flex-col"
+            vflex=""
+            vflexcol=""
+            vgap="4"
+          >
+            <label
+              class="v-label"
+              for="vertical-wizard-vertical-2"
+              id="a-v-label-2"
+              v-label=""
+            >
+              * Label
+            </label>
+            <div
+              class="v-input-container v-surface"
+              v-input-container=""
+            >
+              <input
+                aria-describedby=""
+                aria-invalid="false"
+                class="v-input ng-untouched ng-pristine ng-valid"
+                id="vertical-wizard-vertical-2"
+                required=""
+                v-input=""
+                value=""
+              />
+              
+            </div>
+            
+            
+          </div>
+          <div
+            class="v-hide v-gap-8 v-flex v-flex-col"
+            vflex=""
+            vflexcol=""
+          >
+            <span
+              class="v-hide v-typography-headline-2"
+              vtypography="headline-2"
+            >
+              Step 4 label
+            </span>
+            
+            <span
+              class="v-hide v-typography-body-1"
+              vtypography="body-1"
+            >
+              * Indicates a required field.
+            </span>
+          </div>
+          <div
+            class="v-hide v-gap-4 v-flex v-flex-col"
+            vflex=""
+            vflexcol=""
+            vgap="4"
+          >
+            <label
+              class="v-label"
+              for="vertical-wizard-vertical-3"
+              id="a-v-label-3"
+              v-label=""
+            >
+              * Label
+            </label>
+            <div
+              class="v-input-container v-surface"
+              v-input-container=""
+            >
+              <input
+                aria-describedby=""
+                aria-invalid="false"
+                class="v-input ng-untouched ng-pristine ng-valid"
+                id="vertical-wizard-vertical-3"
+                required=""
+                v-input=""
+                value=""
+              />
+              
+            </div>
+            
+            
+          </div>
+          <div
+            class="v-hide v-gap-8 v-flex v-flex-col"
+            vflex=""
+            vflexcol=""
+          >
+            <span
+              class="v-hide v-typography-headline-2"
+              vtypography="headline-2"
+            >
+              Step 5 label
+            </span>
+            
+            <span
+              class="v-hide v-typography-body-1"
+              vtypography="body-1"
+            >
+              * Indicates a required field.
+            </span>
+          </div>
+          <div
+            class="v-hide v-gap-4 v-flex v-flex-col"
+            vflex=""
+            vflexcol=""
+            vgap="4"
+          >
+            <label
+              class="v-label"
+              for="vertical-wizard-vertical-4"
+              id="a-v-label-4"
+              v-label=""
+            >
+              * Label
+            </label>
+            <div
+              class="v-input-container v-surface"
+              v-input-container=""
+            >
+              <input
+                aria-describedby=""
+                aria-invalid="false"
+                class="v-input ng-untouched ng-pristine ng-valid"
+                id="vertical-wizard-vertical-4"
+                required=""
+                v-input=""
+                value=""
+              />
+              
+            </div>
+            
+            
+          </div>
+          
+        </div>
+        <p
+          class="v-mt-10 v-typography-body-3"
+          vmt="10"
+          vtypography="body-3"
+        >
+          Changes have been automatically saved.
+        </p>
+        <div
+          class="v-gap-10 v-flex v-flex-row v-flex-wrap v-justify-content-between v-mt-40"
+          vflex=""
+          vflexwrap=""
+          vgap="10"
+          vjustifycontentbetween=""
+          vmt="40"
+        >
+          <div
+            class="v-gap-24 v-flex v-flex-row v-flex-wrap"
+            vflex=""
+            vflexwrap=""
+            vgap="24"
+          >
+            <button
+              buttoncolor="secondary"
+              class="v-button v-button-secondary"
+              type="button"
+              v-button=""
+            >
+              Save
+            </button>
+            <button
+              buttoncolor="tertiary"
+              class="v-button v-button-tertiary"
+              type="button"
+              v-button=""
+            >
+              Exit
+            </button>
+            <nova-workshop-wizard-shared-exit-dialog>
+              <dialog
+                aria-describedby="a-v-dialog-0-description"
+                aria-labelledby="a-v-dialog-0-title"
+                aria-modal="true"
+                class="v-dialog v-message v-message-warning"
+                id="a-v-dialog-0"
+                messagetype="warning"
+                role="dialog"
+                style="max-inline-size: 300px;"
+                v-dialog=""
+                v-message=""
+              >
+                <div
+                  aria-hidden="true"
+                  class="cdk-visually-hidden cdk-focus-trap-anchor"
+                  tabindex="0"
+                />
+                <div
+                  cdktrapfocus=""
+                  cdktrapfocusautocapture=""
+                  class="v-flex v-flex-row"
+                  vflex=""
+                  vflexrow=""
+                >
+                  <div
+                    class="v-message-content v-pb-2 v-pr-2"
+                    v-message-content=""
+                    vpb="2"
+                    vpr="2"
+                  >
+                    <h2
+                      class="v-dialog-header v-gap-6 v-align-items-center v-flex v-flex-row v-justify-content-start"
+                      id="a-v-dialog-0-title"
+                      v-dialog-header=""
+                      valignitemscenter=""
+                      vflex=""
+                      vgap="6"
+                      vjustifycontentstart=""
+                    >
+                      <svg
+                        aria-hidden="false"
+                        aria-label="Warning"
+                        class="v-message-icon v-icon v-icon-low v-icon-visa v-icon-warning"
+                        focusable="false"
+                        height="24"
+                        id="a-v__icon__internal-19"
+                        role="img"
+                        v-icon-visa-warning-low=""
+                        v-message-icon=""
+                        viewBox="0 0 24 24"
+                        width="24"
+                      >
+                        <path
+                          class="v-icon-secondary"
+                          d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+                        />
+                        <path
+                          class="v-icon-primary"
+                          clip-rule="evenodd"
+                          d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                      <span>
+                        Exit form?
+                      </span>
+                    </h2>
+                    <p
+                      id="a-v-dialog-0-description"
+                      v-dialog-text=""
+                    >
+                       Your progress has been automatically saved. You can continue where you left off when you return. 
+                    </p>
+                    <div
+                      class="v-gap-8 v-align-items-center v-flex v-flex-row v-flex-wrap v-justify-content-start v-pl-2 v-pt-16"
+                      valignitemscenter=""
+                      vflex=""
+                      vflexwrap=""
+                      vgap="8"
+                      vjustifycontentstart=""
+                      vpl="2"
+                      vpt="16"
+                    >
+                      <button
+                        autofocus=""
+                        buttoncolor="primary"
+                        class="v-button"
+                        style="inline-size: 100%;"
+                        type="button"
+                        v-button=""
+                      >
+                        Exit
+                      </button>
+                    </div>
+                  </div>
+                  <button
+                    aria-label="close"
+                    buttoncolor="tertiary"
+                    buttonsize="small"
+                    class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary -v-ml-12 -v-mr-18 -v-mt-20"
+                    subtle=""
+                    type="button"
+                    v-button-icon=""
+                    vml="-12"
+                    vmr="-18"
+                    vmt="-20"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="v-icon v-icon-close v-icon-tiny v-icon-visa"
+                      focusable="false"
+                      height="16"
+                      id="a-v__icon__internal-20"
+                      v-icon-visa-close-tiny=""
+                      viewBox="0 0 16 16"
+                      width="16"
+                    >
+                      <path
+                        class="v-icon-primary"
+                        d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+                      />
+                      <defs>
+                        <clippath>
+                          <rect
+                            height="16"
+                            transform="translate(0 0.000488281)"
+                            width="16"
+                          />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+                <div
+                  aria-hidden="true"
+                  class="cdk-visually-hidden cdk-focus-trap-anchor"
+                  tabindex="0"
+                />
+              </dialog>
+            </nova-workshop-wizard-shared-exit-dialog>
+          </div>
+          <div
+            class="v-gap-24 v-flex v-flex-row v-flex-wrap"
+            vflex=""
+            vflexwrap=""
+            vgap="24"
+          >
+            
+            
+            <button
+              class="v-button"
+              type="button"
+              v-button=""
+            >
+              Next 
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-21"
+                v-icon-visa-arrow-forward-tiny=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
+                  fill-rule="evenodd"
+                />
+                <defs>
+                  <clippath>
+                    <rect
+                      height="16"
+                      width="16"
+                    />
+                  </clippath>
+                </defs>
+              </svg>
+            </button>
+            
+          </div>
+        </div>
+        
+      </form>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+</div>
+`;

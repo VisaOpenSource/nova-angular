@@ -1,0 +1,68 @@
+<!--
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div vFlex vFlexCol vGap="12">
+  <p>Accordion</p>
+  <div v-accordion>
+    <details v-accordion-item>
+      <summary v-accordion-heading v-button>
+        <svg v-icon v-icon-toggle></svg>
+        <div vFlex vAlignItemsCenter vGap="6">Accordion title</div>
+      </summary>
+      <div v-accordion-panel>This is required text that describes the accordion section in more detail.</div>
+    </details>
+  </div>
+
+  <p>Combobox</p>
+  <div v-combobox v-floating-ui-container>
+    <label v-label>Label</label>
+    <div v-input-container v-floating-ui-trigger vMY="4">
+      <input v-input />
+      <button v-button-icon buttonColor="tertiary" buttonSize="small" aria-label="toggle">
+        <svg v-icon v-icon-toggle></svg>
+      </button>
+    </div>
+    <div v-listbox-container v-floating-ui-element>
+      <ul v-listbox>
+        <li v-listbox-item value="option-a">Option A</li>
+        <li v-listbox-item value="option-b">Option B</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>Dropdown menu</p>
+  <div v-floating-ui-container>
+    <button v-button v-floating-ui-trigger>
+      Action
+      <svg v-icon v-icon-toggle></svg>
+    </button>
+    <div v-dropdown-menu vFlex vFlexCol>
+      <ul v-dropdown-list vAddArrowKeys>
+        <li>
+          <button v-dropdown-item>Label 1</button>
+        </li>
+        <li>
+          <button v-dropdown-item>Label 2</button>
+        </li>
+        <li>
+          <button v-dropdown-item>Label 3</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<v-icon-library-visa />

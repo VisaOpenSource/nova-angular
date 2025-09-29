@@ -1,0 +1,1335 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Panel examples DefaultResponsivePanelComponent should render correctly 1`] = `
+<div
+  id="root6"
+>
+  <button
+    aria-controls="reponsive-default-panel"
+    class="v-button v-m-10"
+    style="position: absolute; flex-basis: 30%;"
+    type="button"
+    v-button=""
+    vflexbasis="30%"
+    vm="10"
+  >
+     Close responsive panel
+
+  </button>
+  <div
+    aria-describedby="responsive-panel-description"
+    aria-hidden="false"
+    aria-labelledby="responsive-panel-title"
+    class="v-panel v-ml-auto v-panel-responsive"
+    id="reponsive-default-panel"
+    responsive=""
+    v-panel=""
+    vml="auto"
+  >
+    <div
+      class="v-panel-content v-surface"
+      v-panel-content=""
+    >
+      <header
+        class="v-gap-4 v-flex v-flex-row v-justify-content-between"
+        vflex=""
+        vgap="4"
+        vjustifycontentbetween=""
+      >
+        <h2
+          class="v-typography-headline-4"
+          id="responsive-panel-title"
+          vtypography="headline-4"
+        >
+          Panel title
+        </h2>
+        <button
+          aria-label="close responsive default panel"
+          buttoncolor="tertiary"
+          buttonsize="small"
+          class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary -v-mr-8 -v-mt-3"
+          subtle=""
+          type="button"
+          v-button-icon=""
+          vmr="-8"
+          vmt="-3"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-close v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-11"
+            v-icon-visa-close-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+            />
+            <defs>
+              <clippath>
+                <rect
+                  height="16"
+                  transform="translate(0 0.000488281)"
+                  width="16"
+                />
+              </clippath>
+            </defs>
+          </svg>
+        </button>
+      </header>
+      <div
+        class="v-panel-body"
+        v-panel-body=""
+      >
+        <h3
+          class="v-typography-subtitle-2"
+          id="responsive-panel-description"
+          vtypography="subtitle-2"
+        >
+          Panel subtitle
+        </h3>
+        <p>
+          This is required text that can be used to describe the panel title and subtitle in more detail.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Panel examples ModalDefaultPanelComponent should render correctly 1`] = `
+<div
+  id="root1"
+>
+  <button
+    class="v-button v-m-10"
+    type="button"
+    v-button=""
+    vm="10"
+  >
+    Open modal panel
+  </button>
+  <dialog
+    aria-describedby="modal-panel-description"
+    aria-labelledby="modal-panel-title"
+    aria-modal="true"
+    class="v-panel"
+    role="dialog"
+    v-panel=""
+  >
+    <div
+      class="v-panel-content v-surface"
+      v-panel-content=""
+    >
+      <header
+        class="v-gap-4 v-flex v-flex-row v-justify-content-between"
+        vflex=""
+        vgap="4"
+        vjustifycontentbetween=""
+      >
+        <h2
+          class="v-typography-headline-4"
+          id="modal-panel-title"
+          vtypography="headline-4"
+        >
+          Panel title
+        </h2>
+        <button
+          aria-label="close modal default panel"
+          autofocus=""
+          buttoncolor="tertiary"
+          buttonsize="small"
+          class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary -v-mr-8 -v-mt-3"
+          subtle=""
+          type="button"
+          v-button-icon=""
+          vmr="-8"
+          vmt="-3"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-close v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-2"
+            v-icon-visa-close-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+            />
+            <defs>
+              <clippath>
+                <rect
+                  height="16"
+                  transform="translate(0 0.000488281)"
+                  width="16"
+                />
+              </clippath>
+            </defs>
+          </svg>
+        </button>
+      </header>
+      <div
+        class="v-panel-body"
+        v-panel-body=""
+      >
+        <h3
+          class="v-typography-subtitle-2"
+          id="modal-panel-description"
+          vtypography="subtitle-2"
+        >
+          Panel subtitle
+        </h3>
+        <p>
+          This is required text that can be used to describe the panel title and subtitle in more detail.
+        </p>
+      </div>
+    </div>
+  </dialog>
+</div>
+`;
+
+exports[`Panel examples ModalExpandablePanelComponent should render correctly 1`] = `
+<div
+  id="root5"
+>
+  <div
+    class="v-flex v-flex-row v-justify-content-end"
+    vflex=""
+    vjustifycontentend=""
+  >
+    <button
+      aria-label="expand panel"
+      buttonsize="large"
+      class="v-button v-panel-toggle v-button-icon v-button-large"
+      type="button"
+      v-button-icon=""
+      v-panel-toggle=""
+    >
+      <svg
+        aria-hidden="true"
+        class="v-icon-two-color v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-9"
+        v-icon-two-color=""
+        v-icon-visa-media-rewind-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+  </div>
+  <dialog
+    aria-describedby="modal-expandable-subtitle"
+    aria-labelledby="modal-expandable-title"
+    aria-modal="true"
+    class="v-panel v-ml-auto v-panel-expandable"
+    expandable=""
+    role="dialog"
+    v-panel=""
+    vml="auto"
+  >
+    <button
+      aria-expanded="false"
+      aria-label="collapse panel"
+      autofocus=""
+      buttonsize="large"
+      class="v-button v-panel-toggle v-button-icon v-button-large"
+      type="button"
+      v-button-icon=""
+      v-panel-toggle=""
+    >
+      <svg
+        aria-hidden="true"
+        class="v-icon-two-color v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-10"
+        v-icon-two-color=""
+        v-icon-visa-media-fast-forward-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+    
+  </dialog>
+</div>
+`;
+
+exports[`Panel examples ModalExpandableSecondaryButtonPanelComponent should render correctly 1`] = `
+<div
+  id="root3"
+>
+  <div
+    class="v-flex v-flex-row v-justify-content-end"
+    vflex=""
+    vjustifycontentend=""
+  >
+    <button
+      aria-label="Panel"
+      buttoncolor="secondary"
+      buttonsize="large"
+      class="v-button v-panel-toggle v-button-icon v-button-large v-button-secondary"
+      type="button"
+      v-button-icon=""
+      v-panel-toggle=""
+    >
+      <svg
+        aria-hidden="true"
+        class="v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-5"
+        v-icon-visa-media-rewind-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+  </div>
+  <dialog
+    aria-describedby="modal-secondary-button-subtitle"
+    aria-labelledby="modal-secondary-button-title"
+    aria-modal="true"
+    class="v-panel v-ml-auto v-panel-expandable"
+    expandable=""
+    role="dialog"
+    v-panel=""
+    vml="auto"
+  >
+    <button
+      aria-expanded="false"
+      aria-label="Panel"
+      autofocus=""
+      buttoncolor="secondary"
+      buttonsize="large"
+      class="v-button v-panel-toggle v-button-icon v-button-large v-button-secondary"
+      type="button"
+      v-button-icon=""
+      v-panel-toggle=""
+    >
+      <svg
+        aria-hidden="true"
+        class="v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-6"
+        v-icon-visa-media-fast-forward-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+    <div
+      class="v-panel-content v-surface"
+      v-panel-content=""
+    >
+      <header
+        class="v-gap-4 v-flex v-flex-row v-justify-content-between"
+        vflex=""
+        vgap="4"
+        vjustifycontentbetween=""
+      >
+        <h3
+          class="v-typography-headline-4"
+          id="modal-secondary-button-title"
+          vtypography="headline-4"
+        >
+          Panel title
+        </h3>
+      </header>
+      <div
+        class="v-panel-body"
+        v-panel-body=""
+      >
+        <h4
+          class="v-typography-subtitle-2"
+          id="modal-secondary-button-subtitle"
+          vtypography="subtitle-2"
+        >
+          Panel subtitle
+        </h4>
+        <p>
+          This is required text that can be used to describe the panel title and subtitle in more detail.
+        </p>
+      </div>
+    </div>
+  </dialog>
+</div>
+`;
+
+exports[`Panel examples ModalExpandableSkrimPanelComponent should render correctly 1`] = `
+<div
+  id="root4"
+>
+  <div
+    class="v-flex v-flex-row v-justify-content-end"
+    vflex=""
+    vjustifycontentend=""
+  >
+    <button
+      aria-label="Modal panel"
+      buttonsize="large"
+      class="v-button v-panel-toggle v-button-icon v-button-large"
+      type="button"
+      v-button-icon=""
+      v-panel-toggle=""
+    >
+      <svg
+        aria-hidden="true"
+        class="v-icon-two-color v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-7"
+        v-icon-two-color=""
+        v-icon-visa-media-rewind-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+  </div>
+  <dialog
+    aria-describedby="modal-skrim-subtitle"
+    aria-labelledby="modal-skrim-title"
+    aria-modal="true"
+    class="v-panel v-ml-auto v-panel-expandable v-panel-skrim"
+    expandable=""
+    role="dialog"
+    skrim=""
+    v-panel=""
+    vml="auto"
+  >
+    <button
+      aria-expanded="false"
+      aria-label="Modal panel"
+      autofocus=""
+      buttonsize="large"
+      class="v-button v-panel-toggle v-button-icon v-button-large"
+      type="button"
+      v-button-icon=""
+      v-panel-toggle=""
+    >
+      <svg
+        aria-hidden="true"
+        class="v-icon-two-color v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-8"
+        v-icon-two-color=""
+        v-icon-visa-media-fast-forward-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+    <div
+      class="v-panel-content v-surface"
+      v-panel-content=""
+    >
+      <header
+        class="v-gap-4 v-flex v-flex-row v-justify-content-between"
+        vflex=""
+        vgap="4"
+        vjustifycontentbetween=""
+      >
+        <h3
+          class="v-typography-headline-4"
+          id="modal-skrim-title"
+          vtypography="headline-4"
+        >
+          Panel title
+        </h3>
+      </header>
+      <div
+        class="v-panel-body"
+        v-panel-body=""
+      >
+        <h4
+          class="v-typography-subtitle-2"
+          id="modal-skrim-subtitle"
+          vtypography="subtitle-2"
+        >
+          Panel subtitle
+        </h4>
+        <p>
+          This is required text that can be used to describe the panel title and subtitle in more detail.
+        </p>
+      </div>
+    </div>
+  </dialog>
+</div>
+`;
+
+exports[`Panel examples ModalExpandableTabbedPanelComponent should render correctly 1`] = `
+<div
+  id="root2"
+>
+  <div
+    class="v-flex v-flex-row v-justify-content-end"
+    vflex=""
+    vjustifycontentend=""
+  >
+    <button
+      aria-label="expand panel"
+      buttonsize="large"
+      class="v-button v-panel-toggle v-button-icon v-button-large"
+      type="button"
+      v-button-icon=""
+      v-panel-toggle=""
+    >
+      <svg
+        aria-hidden="true"
+        class="v-icon-two-color v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-3"
+        v-icon-two-color=""
+        v-icon-visa-media-rewind-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+  </div>
+  <dialog
+    aria-describedby="modal-tabbed-body-0"
+    aria-labelledby="modal-tabbed-title-0"
+    aria-modal="true"
+    class="v-panel v-panel-expandable"
+    role="dialog"
+    v-panel=""
+  >
+    <button
+      aria-expanded="false"
+      aria-label="collapse panel"
+      autofocus=""
+      buttonsize="large"
+      class="v-button v-panel-toggle v-button-icon v-button-large"
+      type="button"
+      v-button-icon=""
+      v-panel-toggle=""
+    >
+      <svg
+        aria-hidden="true"
+        class="v-icon-two-color v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-4"
+        v-icon-two-color=""
+        v-icon-visa-media-fast-forward-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+    <div
+      class="v-panel-content v-surface"
+      v-panel-content=""
+    >
+      <ul
+        aria-label="Modal expandable panel tabs"
+        class="v-tabs v-panel-tabs v-tabs-horizontal"
+        role="tablist"
+        v-tabs=""
+      >
+        <li
+          class="v-tab"
+          role="none"
+          v-tab-item=""
+        >
+          <button
+            aria-controls="nova-tab-panel-auto-example-0"
+            aria-selected="true"
+            class="v-button v-button-large v-button-tertiary"
+            id="nova-tab-panel-auto-example-0-tab-label-0"
+            role="tab"
+            tabindex="0"
+            type="button"
+            v-button=""
+          >
+             FAQ 
+          </button>
+        </li>
+        <li
+          class="v-tab"
+          role="none"
+          v-tab-item=""
+        >
+          <button
+            aria-controls="nova-tab-panel-auto-example-1"
+            aria-selected="false"
+            class="v-button v-button-large v-button-tertiary"
+            id="nova-tab-panel-auto-example-1-tab-label-1"
+            role="tab"
+            tabindex="-1"
+            type="button"
+            v-button=""
+          >
+             Chat 
+          </button>
+        </li>
+        <li
+          class="v-tab"
+          role="none"
+          v-tab-item=""
+        >
+          <button
+            aria-controls="nova-tab-panel-auto-example-2"
+            aria-selected="false"
+            class="v-button v-button-large v-button-tertiary"
+            id="nova-tab-panel-auto-example-2-tab-label-2"
+            role="tab"
+            tabindex="-1"
+            type="button"
+            v-button=""
+          >
+             Contact 
+          </button>
+        </li>
+        
+      </ul>
+      <hr
+        aria-hidden="true"
+        class="v-divider v-divider-decorative"
+        dividertype="decorative"
+        v-divider=""
+      />
+      <div
+        aria-labelledby="nova-tab-panel-auto-example-0-tab-label-0"
+        id="nova-tab-panel-auto-example-0"
+        role="tabpanel"
+        tabindex="0"
+      >
+        <header
+          class="v-gap-4 v-flex v-flex-row v-justify-content-between"
+          vflex=""
+          vgap="4"
+          vjustifycontentbetween=""
+        >
+          <h3
+            class="v-typography-headline-4"
+            id="modal-tabbed-title-0"
+            vtypography="headline-4"
+          >
+            Panel title
+          </h3>
+        </header>
+        <div
+          class="v-panel-body"
+          id="modal-tabbed-body-0"
+          v-panel-body=""
+        >
+          <h3
+            class="v-typography-subtitle-2"
+            vtypography="subtitle-2"
+          >
+            Panel subtitle
+          </h3>
+          <p>
+             panel content shows here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus sem, fringilla ac lorem vel, maxialiquam urna. 
+          </p>
+        </div>
+      </div>
+      <div
+        aria-labelledby="nova-tab-panel-auto-example-1-tab-label-1"
+        class="v-hide"
+        id="nova-tab-panel-auto-example-1"
+        role="tabpanel"
+        tabindex="0"
+      >
+        <header
+          class="v-gap-4 v-flex v-flex-row v-justify-content-between"
+          vflex=""
+          vgap="4"
+          vjustifycontentbetween=""
+        >
+          <h3
+            class="v-typography-headline-4"
+            id="modal-tabbed-title-1"
+            vtypography="headline-4"
+          >
+            Panel title
+          </h3>
+        </header>
+        <div
+          class="v-panel-body"
+          id="modal-tabbed-body-1"
+          v-panel-body=""
+        >
+          <h3
+            class="v-typography-subtitle-2"
+            vtypography="subtitle-2"
+          >
+            Panel subtitle
+          </h3>
+          <p>
+             panel content shows here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus sem, fringilla ac lorem vel, maxialiquam urna. 
+          </p>
+        </div>
+      </div>
+      <div
+        aria-labelledby="nova-tab-panel-auto-example-2-tab-label-2"
+        class="v-hide"
+        id="nova-tab-panel-auto-example-2"
+        role="tabpanel"
+        tabindex="0"
+      >
+        <header
+          class="v-gap-4 v-flex v-flex-row v-justify-content-between"
+          vflex=""
+          vgap="4"
+          vjustifycontentbetween=""
+        >
+          <h3
+            class="v-typography-headline-4"
+            id="modal-tabbed-title-2"
+            vtypography="headline-4"
+          >
+            Panel title
+          </h3>
+        </header>
+        <div
+          class="v-panel-body"
+          id="modal-tabbed-body-2"
+          v-panel-body=""
+        >
+          <h3
+            class="v-typography-subtitle-2"
+            vtypography="subtitle-2"
+          >
+            Panel subtitle
+          </h3>
+          <p>
+             panel content shows here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus sem, fringilla ac lorem vel, maxialiquam urna. 
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </dialog>
+</div>
+`;
+
+exports[`Panel examples ResponsiveExpandedPanelComponent should render correctly 1`] = `
+<div
+  id="root8"
+>
+  <div
+    class="v-panel v-ml-auto v-panel-expandable v-panel-responsive"
+    responsive=""
+    v-panel=""
+    vml="auto"
+  >
+    <button
+      aria-controls="responsive-expanded-panel"
+      aria-expanded="true"
+      aria-label="Panel"
+      buttonsize="large"
+      class="v-button v-panel-toggle v-sm-media-hide v-xs-media-hide v-button-icon v-button-large"
+      type="button"
+      v-button-icon=""
+      v-panel-toggle=""
+    >
+      <svg
+        aria-hidden="true"
+        class="v-icon-two-color v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-15"
+        style="--v-icon-secondary: var(--palette-default-active-accent);"
+        v-icon-two-color=""
+        v-icon-visa-media-fast-forward-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+      
+      
+    </button>
+    <div
+      aria-hidden="false"
+      class="v-panel-content v-surface"
+      id="responsive-expanded-panel"
+      v-panel-content=""
+    >
+      <header
+        class="v-gap-4 v-flex v-flex-row v-justify-content-between"
+        vflex=""
+        vgap="4"
+        vjustifycontentbetween=""
+      >
+        <h3
+          class="v-typography-headline-4"
+          vtypography="headline-4"
+        >
+          Panel title
+        </h3>
+        <button
+          aria-label="Close responsive expanded panel"
+          buttoncolor="tertiary"
+          buttonsize="small"
+          class="v-button v-desktop-media-hide v-button-icon v-button-small v-button-subtle v-button-tertiary"
+          subtle=""
+          type="button"
+          v-button-icon=""
+          vmediahide="desktop"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-close v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-14"
+            v-icon-visa-close-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+            />
+            <defs>
+              <clippath>
+                <rect
+                  height="16"
+                  transform="translate(0 0.000488281)"
+                  width="16"
+                />
+              </clippath>
+            </defs>
+          </svg>
+        </button>
+      </header>
+      <div
+        class="v-panel-body"
+        v-panel-body=""
+      >
+        <h4
+          class="v-typography-subtitle-2"
+          vtypography="subtitle-2"
+        >
+          Panel subtitle
+        </h4>
+        <p>
+          This is required text that can be used to describe the panel title and subtitle in more detail.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Panel examples ResponsiveExpandedTabbedPanelComponent should render correctly 1`] = `
+<div
+  id="root7"
+>
+  <div
+    class="v-panel v-ml-auto v-panel-expandable v-panel-responsive"
+    responsive=""
+    v-panel=""
+    vml="auto"
+  >
+    <button
+      aria-controls="responsive-expanded-tabbed-panel-content"
+      aria-expanded="true"
+      aria-label="Panel"
+      buttonsize="large"
+      class="v-button v-panel-toggle v-sm-media-hide v-xs-media-hide v-button-icon v-button-large"
+      type="button"
+      v-button-icon=""
+      v-panel-toggle=""
+    >
+      <svg
+        aria-hidden="true"
+        class="v-icon-two-color v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-13"
+        style="--v-icon-secondary: var(--palette-default-active-accent);"
+        v-icon-two-color=""
+        v-icon-visa-media-fast-forward-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+      
+      
+    </button>
+    <div
+      aria-hidden="false"
+      class="v-panel-content v-surface"
+      id="responsive-expanded-tabbed-panel-content"
+      v-panel-content=""
+    >
+      <div
+        class="v-flex v-flex-row v-flex-wrap-reverse v-justify-content-between"
+        vflex=""
+        vflexwrapreverse=""
+        vjustifycontentbetween=""
+      >
+        <ul
+          aria-label="Responsive expanded panel tabs"
+          class="v-tabs v-flex v-flex-row v-panel-tabs v-tabs-horizontal"
+          role="tablist"
+          style="flex-basis: 80%;"
+          v-tabs=""
+          vflex=""
+          vflexbasis="80%"
+        >
+          <li
+            class="v-tab"
+            role="none"
+            v-tab-item=""
+          >
+            <button
+              aria-controls="nova-tab-panel-auto-example-0"
+              aria-selected="true"
+              class="v-button v-button-large v-button-tertiary"
+              id="nova-tab-panel-auto-example-0-tab-label-0"
+              role="tab"
+              tabindex="0"
+              type="button"
+              v-button=""
+            >
+               FAQ 
+            </button>
+          </li>
+          <li
+            class="v-tab"
+            role="none"
+            v-tab-item=""
+          >
+            <button
+              aria-controls="nova-tab-panel-auto-example-1"
+              aria-selected="false"
+              class="v-button v-button-large v-button-tertiary"
+              id="nova-tab-panel-auto-example-1-tab-label-1"
+              role="tab"
+              tabindex="-1"
+              type="button"
+              v-button=""
+            >
+               Chat 
+            </button>
+          </li>
+          <li
+            class="v-tab"
+            role="none"
+            v-tab-item=""
+          >
+            <button
+              aria-controls="nova-tab-panel-auto-example-2"
+              aria-selected="false"
+              class="v-button v-button-large v-button-tertiary"
+              id="nova-tab-panel-auto-example-2-tab-label-2"
+              role="tab"
+              tabindex="-1"
+              type="button"
+              v-button=""
+            >
+               Contact 
+            </button>
+          </li>
+          
+        </ul>
+        <button
+          aria-label="Close tabbed responsive expanded panel"
+          buttoncolor="tertiary"
+          buttonsize="small"
+          class="v-button v-desktop-media-hide v-button-icon v-button-small v-button-subtle v-button-tertiary v-mb-auto"
+          subtle=""
+          type="button"
+          v-button-icon=""
+          vmb="auto"
+          vmediahide="desktop"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-close v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-12"
+            v-icon-visa-close-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+            />
+            <defs>
+              <clippath>
+                <rect
+                  height="16"
+                  transform="translate(0 0.000488281)"
+                  width="16"
+                />
+              </clippath>
+            </defs>
+          </svg>
+        </button>
+      </div>
+      <hr
+        aria-hidden="true"
+        class="v-divider v-divider-decorative"
+        dividertype="decorative"
+        v-divider=""
+      />
+      <div
+        aria-labelledby="nova-tab-panel-auto-example-0-tab-label-0"
+        id="nova-tab-panel-auto-example-0"
+        role="tabpanel"
+        tabindex="0"
+      >
+        <header
+          class="v-gap-4 v-flex v-flex-row v-justify-content-between"
+          vflex=""
+          vgap="4"
+          vjustifycontentbetween=""
+        >
+          <h3
+            class="v-typography-headline-4"
+            vtypography="headline-4"
+          >
+            Panel title
+          </h3>
+        </header>
+        <div
+          class="v-panel-body"
+          v-panel-body=""
+        >
+          <h3
+            class="v-typography-subtitle-2"
+            vtypography="subtitle-2"
+          >
+            Panel subtitle
+          </h3>
+          <p>
+             panel content shows here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus sem, fringilla ac lorem vel, maxialiquam urna. 
+          </p>
+        </div>
+      </div>
+      <div
+        aria-labelledby="nova-tab-panel-auto-example-1-tab-label-1"
+        class="v-hide"
+        id="nova-tab-panel-auto-example-1"
+        role="tabpanel"
+        tabindex="0"
+      >
+        <header
+          class="v-gap-4 v-flex v-flex-row v-justify-content-between"
+          vflex=""
+          vgap="4"
+          vjustifycontentbetween=""
+        >
+          <h3
+            class="v-typography-headline-4"
+            vtypography="headline-4"
+          >
+            Panel title
+          </h3>
+        </header>
+        <div
+          class="v-panel-body"
+          v-panel-body=""
+        >
+          <h3
+            class="v-typography-subtitle-2"
+            vtypography="subtitle-2"
+          >
+            Panel subtitle
+          </h3>
+          <p>
+             panel content shows here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus sem, fringilla ac lorem vel, maxialiquam urna. 
+          </p>
+        </div>
+      </div>
+      <div
+        aria-labelledby="nova-tab-panel-auto-example-2-tab-label-2"
+        class="v-hide"
+        id="nova-tab-panel-auto-example-2"
+        role="tabpanel"
+        tabindex="0"
+      >
+        <header
+          class="v-gap-4 v-flex v-flex-row v-justify-content-between"
+          vflex=""
+          vgap="4"
+          vjustifycontentbetween=""
+        >
+          <h3
+            class="v-typography-headline-4"
+            vtypography="headline-4"
+          >
+            Panel title
+          </h3>
+        </header>
+        <div
+          class="v-panel-body"
+          v-panel-body=""
+        >
+          <h3
+            class="v-typography-subtitle-2"
+            vtypography="subtitle-2"
+          >
+            Panel subtitle
+          </h3>
+          <p>
+             panel content shows here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus sem, fringilla ac lorem vel, maxialiquam urna. 
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Panel examples ResposniveExpandedWithCustomPlacementPanelComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <div
+    class="v-panel v-panel-expandable v-panel-responsive"
+    responsive=""
+    v-panel=""
+  >
+    <button
+      aria-expanded="true"
+      aria-label="Panel"
+      buttoncolor="secondary"
+      buttonsize="large"
+      class="v-button v-panel-toggle v-sm-media-hide v-xs-media-hide v-button-icon v-button-large v-button-secondary v-button-subtle"
+      style="transform: rotate(180deg);"
+      subtle=""
+      type="button"
+      v-button-icon=""
+      v-panel-toggle=""
+    >
+      <svg
+        aria-hidden="true"
+        class="v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-0"
+        v-icon-visa-media-fast-forward-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+      
+      
+    </button>
+    <div
+      class="v-panel-content v-surface"
+      style="--v-panel-border-width: 0 1px 0 0;"
+      v-panel-content=""
+    >
+      <header
+        class="v-gap-4 v-flex v-flex-row v-justify-content-between"
+        vflex=""
+        vgap="4"
+        vjustifycontentbetween=""
+      >
+        <h3
+          class="v-typography-headline-4"
+          vtypography="headline-4"
+        >
+          Panel title
+        </h3>
+        <button
+          aria-label="Close custom placement panel"
+          buttoncolor="tertiary"
+          buttonsize="small"
+          class="v-button v-desktop-media-hide v-button-icon v-button-small v-button-subtle v-button-tertiary"
+          subtle=""
+          type="button"
+          v-button-icon=""
+          vmediahide="desktop"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-close v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-1"
+            v-icon-visa-close-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+            />
+            <defs>
+              <clippath>
+                <rect
+                  height="16"
+                  transform="translate(0 0.000488281)"
+                  width="16"
+                />
+              </clippath>
+            </defs>
+          </svg>
+        </button>
+      </header>
+      <div
+        class="v-panel-body"
+        v-panel-body=""
+      >
+        <h4
+          class="v-typography-subtitle-2"
+          vtypography="subtitle-2"
+        >
+          Panel subtitle
+        </h4>
+        <p>
+          This is required text that can be used to describe the panel title and subtitle in more detail.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;

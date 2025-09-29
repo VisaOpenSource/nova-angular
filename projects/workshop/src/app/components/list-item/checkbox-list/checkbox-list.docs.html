@@ -1,0 +1,51 @@
+<!--
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<fieldset aria-labelledby="checkbox-list-title" style="max-inline-size: 343px">
+  <legend id="checkbox-list-title" vTypography="label" vMB="6">Section title</legend>
+  <ul
+    v-content-card
+    vP="4"
+    vFlex
+    vFlexCol
+    vGap="4"
+    vM="0"
+    style="--v-content-card-border: 0px; --v-content-card-border-radius: 8px"
+  >
+    @for(item of items; track item.id) {
+    <li vSurface vP="0">
+      <label
+        v-label
+        vTypography="label-large"
+        vPX="8"
+        vPY="6"
+        vFlex
+        vAlignItemsCenter
+        vJustifyContentBetween
+        style="border: unset; min-block-size: 64px; inline-size: 100%"
+        [for]="item.id"
+        class="v-action v-action-secondary"
+      >
+        <div vFlex vAlignItemsCenter vGap="8">
+          <input v-checkbox [id]="item.id" name="checkbox-list" type="checkbox" style="--v-checkbox-glow-offset: 0px" />
+          {{ item.label1 }}
+        </div>
+        <span>{{ item.label2 }}</span>
+      </label>
+    </li>
+    }
+  </ul>
+</fieldset>

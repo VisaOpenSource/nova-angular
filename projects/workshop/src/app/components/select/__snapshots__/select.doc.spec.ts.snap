@@ -1,0 +1,2009 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select examples DefaultSelectComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="default-select-field"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <select
+        class="v-input"
+        id="default-select-field"
+        v-select=""
+      >
+        <option
+          hidden=""
+        />
+        <option
+          value="1"
+        >
+          Option A
+        </option>
+        <option
+          value="2"
+        >
+          Option B
+        </option>
+        <option
+          value="3"
+        >
+          Option C
+        </option>
+        <option
+          value="4"
+        >
+          Option D
+        </option>
+        <option
+          value="5"
+        >
+          Option E
+        </option>
+      </select>
+      <div
+        class="v-input-control"
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-0"
+          v-icon-visa-chevron-down-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Select examples DisabledSelectComponent should render correctly 1`] = `
+<div
+  id="root1"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="disabled-select-field"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <select
+        aria-describedby="disabled-inline-message"
+        class="v-input"
+        disabled=""
+        id="disabled-select-field"
+        v-select=""
+      >
+        <option
+          value="1"
+        >
+          Option A
+        </option>
+        <option
+          value="2"
+        >
+          Option B
+        </option>
+        <option
+          value="3"
+        >
+          Option C
+        </option>
+        <option
+          value="4"
+        >
+          Option D
+        </option>
+        <option
+          value="5"
+        >
+          Option E
+        </option>
+      </select>
+      <div
+        class="v-input-control"
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-1"
+          v-icon-visa-chevron-down-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      
+    </div>
+    <span
+      class="v-input-message"
+      id="disabled-inline-message"
+      v-input-message=""
+    >
+      This is optional text that describes the label in more detail.
+    </span>
+  </div>
+  <div
+    class="v-input-container"
+    v-input-container=""
+  >
+    <input
+      checked="checked"
+      class="v-checkbox"
+      id="disabled-select-field-checkbox"
+      type="checkbox"
+      v-checkbox=""
+      value="checkbox-value"
+    />
+    <label
+      class="v-label"
+      for="disabled-select-field-checkbox"
+      id="a-v-label-1"
+      v-label=""
+    >
+      Label
+    </label>
+    
+  </div>
+</div>
+`;
+
+exports[`Select examples ErrorSelectComponent should render correctly 1`] = `
+<div
+  id="root2"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="invalid-select"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <select
+        aria-describedby="error-message"
+        aria-invalid="false"
+        class="v-input"
+        id="invalid-select"
+        required=""
+        v-select=""
+      >
+        <option
+          hidden=""
+        />
+        <option
+          value="1"
+        >
+          Option A
+        </option>
+        <option
+          value="2"
+        >
+          Option B
+        </option>
+        <option
+          value="3"
+        >
+          Option C
+        </option>
+        <option
+          value="4"
+        >
+          Option D
+        </option>
+        <option
+          value="5"
+        >
+          Option E
+        </option>
+      </select>
+      <div
+        class="v-input-control"
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-2"
+          v-icon-visa-chevron-down-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      
+    </div>
+    <span
+      aria-atomic="true"
+      aria-live="assertive"
+      class="v-input-message"
+      id="error-message"
+      v-input-message=""
+    >
+      
+    </span>
+  </div>
+  <div
+    class="v-gap-16 v-flex v-flex-row v-mt-12"
+    vflex=""
+    vgap="16"
+    vmt="12"
+  >
+    <button
+      class="v-button"
+      type="button"
+      v-button=""
+    >
+      Submit
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Select examples InitialValueSelectComponent should render correctly 1`] = `
+<div
+  id="root3"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="initial-select"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <select
+        class="v-input"
+        id="initial-select"
+        v-select=""
+        value="2"
+      >
+        <option
+          value="1"
+        >
+          Option A
+        </option>
+        <option
+          value="2"
+        >
+          Option B
+        </option>
+        <option
+          value="3"
+        >
+          Option C
+        </option>
+        <option
+          value="4"
+        >
+          Option D
+        </option>
+        <option
+          value="5"
+        >
+          Option E
+        </option>
+      </select>
+      <div
+        class="v-input-control"
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-3"
+          v-icon-visa-chevron-down-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Select examples MockDataSelectComponent should render correctly 1`] = `
+<div
+  id="root4"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="mock-data-select"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <select
+        aria-describedby="mock-data-message"
+        class="v-input"
+        id="mock-data-select"
+        v-select=""
+      >
+        
+      </select>
+      <div
+        class="v-input-control"
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-4"
+          v-icon-visa-chevron-down-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      
+    </div>
+    <span
+      class="v-input-message"
+      id="mock-data-message"
+      v-input-message=""
+    >
+      This is optional text that describes the label in more detail.
+    </span>
+  </div>
+  <div
+    class="v-gap-4 v-flex v-flex-row v-mt-8"
+    vflex=""
+    vgap="4"
+    vmt="8"
+  >
+    <button
+      class="v-button"
+      type="button"
+      v-button=""
+    >
+      Change data
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Select examples ModelDrivenFbSelectComponent should render correctly 1`] = `
+<div
+  id="root5"
+>
+  <form
+    class="ng-untouched ng-pristine ng-invalid v-gap-16 v-flex v-flex-col"
+    novalidate=""
+    vflex=""
+    vflexcol=""
+    vgap="16"
+  >
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="model-fb-select-1"
+        id="a-v-label-0"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <select
+          aria-describedby="model-fb-select-message-1"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine ng-invalid"
+          formcontrolname="input1"
+          id="model-fb-select-1"
+          required=""
+          v-select=""
+        >
+          <option
+            hidden=""
+          />
+          <option
+            value="1"
+          >
+            Option A
+          </option>
+          <option
+            value="2"
+          >
+            Option B
+          </option>
+          <option
+            value="3"
+          >
+            Option C
+          </option>
+          <option
+            value="4"
+          >
+            Option D
+          </option>
+          <option
+            value="5"
+          >
+            Option E
+          </option>
+        </select>
+        <div
+          class="v-input-control"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-5"
+            v-icon-visa-chevron-down-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </div>
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="model-fb-select-message-1"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="model-fb-select-2"
+        id="a-v-label-1"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <select
+          aria-describedby="model-fb-select-message-2"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine ng-invalid"
+          formcontrolname="input2"
+          id="model-fb-select-2"
+          required=""
+          v-select=""
+        >
+          <option
+            hidden=""
+          />
+          <option
+            value="1"
+          >
+            Option A
+          </option>
+          <option
+            value="2"
+          >
+            Option B
+          </option>
+          <option
+            value="3"
+          >
+            Option C
+          </option>
+          <option
+            value="4"
+          >
+            Option D
+          </option>
+          <option
+            value="5"
+          >
+            Option E
+          </option>
+        </select>
+        <div
+          class="v-input-control"
+        >
+          <v-icon-visa-toggle
+            class="v-icon v-icon-tiny"
+            style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+          >
+            
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-6"
+              v-icon-visa-chevron-down-tiny=""
+              v-toggle-default-template=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            
+          </v-icon-visa-toggle>
+        </div>
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="model-fb-select-message-2"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="model-fb-select-3"
+        id="a-v-label-2"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <select
+          aria-describedby="model-fb-select-message-3"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine ng-invalid"
+          formcontrolname="input3"
+          id="model-fb-select-3"
+          required=""
+          v-select=""
+        >
+          <option
+            hidden=""
+          />
+          <option
+            value="1"
+          >
+            Option A
+          </option>
+          <option
+            value="2"
+          >
+            Option B
+          </option>
+          <option
+            value="3"
+          >
+            Option C
+          </option>
+          <option
+            value="4"
+          >
+            Option D
+          </option>
+          <option
+            value="5"
+          >
+            Option E
+          </option>
+        </select>
+        <div
+          class="v-input-control"
+        >
+          <v-icon-visa-toggle
+            class="v-icon v-icon-tiny"
+            style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+          >
+            
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-7"
+              v-icon-visa-chevron-down-tiny=""
+              v-toggle-default-template=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            
+          </v-icon-visa-toggle>
+        </div>
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="model-fb-select-message-3"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-16 v-flex v-flex-row v-mt-8"
+      vflex=""
+      vgap="16"
+      vmt="8"
+    >
+      <button
+        class="v-button"
+        type="submit"
+        v-button=""
+      >
+        Submit
+      </button>
+      <button
+        buttoncolor="secondary"
+        class="v-button v-button-secondary"
+        type="reset"
+        v-button=""
+      >
+        Reset
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Select examples ModelDrivenFormSelectComponent should render correctly 1`] = `
+<div
+  id="root6"
+>
+  <form
+    class="ng-untouched ng-pristine ng-invalid v-gap-16 v-flex v-flex-col"
+    novalidate=""
+    vflex=""
+    vflexcol=""
+    vgap="16"
+  >
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="model-select-1"
+        id="a-v-label-0"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <select
+          aria-describedby="model-select-message-1"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine ng-invalid"
+          id="model-select-1"
+          required=""
+          v-select=""
+        >
+          <option
+            hidden=""
+          />
+          <option
+            value="1"
+          >
+            Option A
+          </option>
+          <option
+            value="2"
+          >
+            Option B
+          </option>
+          <option
+            value="3"
+          >
+            Option C
+          </option>
+          <option
+            value="4"
+          >
+            Option D
+          </option>
+          <option
+            value="5"
+          >
+            Option E
+          </option>
+        </select>
+        <div
+          class="v-input-control"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-8"
+            v-icon-visa-chevron-down-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </div>
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="model-select-message-1"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="model-select-2"
+        id="a-v-label-1"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <select
+          aria-describedby="model-select-message-2"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine"
+          disabled=""
+          id="model-select-2"
+          required=""
+          v-select=""
+        >
+          <option
+            hidden=""
+          />
+          <option
+            value="1"
+          >
+            Option A
+          </option>
+          <option
+            value="2"
+          >
+            Option B
+          </option>
+          <option
+            value="3"
+          >
+            Option C
+          </option>
+          <option
+            value="4"
+          >
+            Option D
+          </option>
+          <option
+            value="5"
+          >
+            Option E
+          </option>
+        </select>
+        <div
+          class="v-input-control"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-9"
+            v-icon-visa-chevron-down-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </div>
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="model-select-message-2"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="model-select-3"
+        id="a-v-label-2"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <select
+          aria-describedby="model-select-message-3"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine ng-invalid"
+          id="model-select-3"
+          required=""
+          v-select=""
+        >
+          <option
+            hidden=""
+          />
+          <option
+            value="1"
+          >
+            Option A
+          </option>
+          <option
+            value="2"
+          >
+            Option B
+          </option>
+          <option
+            value="3"
+          >
+            Option C
+          </option>
+          <option
+            value="4"
+          >
+            Option D
+          </option>
+          <option
+            value="5"
+          >
+            Option E
+          </option>
+        </select>
+        <div
+          class="v-input-control"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-10"
+            v-icon-visa-chevron-down-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </div>
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="model-select-message-3"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-16 v-flex v-flex-row v-mt-8"
+      vflex=""
+      vgap="16"
+      vmt="8"
+    >
+      <button
+        class="v-button"
+        type="submit"
+        v-button=""
+      >
+        Submit
+      </button>
+      <button
+        buttoncolor="secondary"
+        class="v-button v-button-secondary"
+        type="reset"
+        v-button=""
+      >
+        Reset
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Select examples ModelDrivenObjectSelectComponent should render correctly 1`] = `
+<div
+  id="root7"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="model-driven-object-select"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <select
+        class="v-input ng-untouched ng-pristine ng-valid"
+        id="model-driven-object-select"
+        v-select=""
+      >
+        <option
+          value="0: Object"
+        >
+          United States
+        </option>
+        <option
+          value="1: Object"
+        >
+          Australia
+        </option>
+        <option
+          value="2: Object"
+        >
+          Canada
+        </option>
+        <option
+          value="3: Object"
+        >
+          Brazil
+        </option>
+        <option
+          value="4: Object"
+        >
+          England
+        </option>
+        
+      </select>
+      <div
+        class="v-input-control"
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-11"
+          v-icon-visa-chevron-down-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      
+    </div>
+  </div>
+  <button
+    class="v-button v-my-8"
+    type="button"
+    v-button=""
+    vmy="8"
+  >
+    Reset initial value
+  </button>
+  <code
+    class="v-mt-16"
+    vmt="16"
+  >
+    object.value.value: 5
+  </code>
+  <code>
+    object.value.value: England
+  </code>
+  
+</div>
+`;
+
+exports[`Select examples ModelDrivenSelectComponent should render correctly 1`] = `
+<div
+  id="root8"
+>
+  <div
+    aria-labelledby="model-input-label"
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="model-input"
+      id="model-input-label"
+      v-label=""
+    >
+      Label
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <select
+        class="v-input ng-untouched ng-pristine ng-valid"
+        id="model-input"
+        v-select=""
+      >
+        <option
+          hidden=""
+        />
+        <option
+          value="1"
+        >
+          Option A
+        </option>
+        <option
+          value="2"
+        >
+          Option B
+        </option>
+        <option
+          value="3"
+        >
+          Option C
+        </option>
+        <option
+          value="4"
+        >
+          Option D
+        </option>
+        <option
+          value="5"
+        >
+          Option E
+        </option>
+      </select>
+      <div
+        class="v-input-control"
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-12"
+          v-icon-visa-chevron-down-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      
+    </div>
+  </div>
+  <code>
+    selectFormControl.value: 3
+  </code>
+</div>
+`;
+
+exports[`Select examples ReadOnlySelectComponent should render correctly 1`] = `
+<div
+  id="root9"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="read-only-select-field"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <select
+        class="v-input"
+        id="read-only-select-field"
+        readonly=""
+        v-select=""
+      >
+        <option
+          hidden=""
+        />
+        <option
+          disabled=""
+          value=""
+        />
+        <option
+          disabled=""
+          selected=""
+          value="1"
+        >
+          Option
+        </option>
+      </select>
+      <div
+        class="v-input-control"
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-13"
+          v-icon-visa-chevron-down-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Select examples TemplateDrivenFormSelectComponent should render correctly 1`] = `
+<div
+  id="root10"
+>
+  <form
+    class="ng-untouched ng-pristine ng-valid v-gap-16 v-flex v-flex-col"
+    novalidate=""
+    vflex=""
+    vflexcol=""
+    vgap="16"
+  >
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="template-select-1"
+        id="a-v-label-0"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <select
+          aria-describedby="template-select-message-1"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine ng-valid"
+          id="template-select-1"
+          name="template1"
+          ngmodel=""
+          required=""
+          v-select=""
+        >
+          <option
+            hidden=""
+          />
+          <option
+            value="1"
+          >
+            Option A
+          </option>
+          <option
+            value="2"
+          >
+            Option B
+          </option>
+          <option
+            value="3"
+          >
+            Option C
+          </option>
+          <option
+            value="4"
+          >
+            Option D
+          </option>
+          <option
+            value="5"
+          >
+            Option E
+          </option>
+        </select>
+        <div
+          class="v-input-control"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-14"
+            v-icon-visa-chevron-down-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </div>
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="template-select-message-1"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="template-select-2"
+        id="a-v-label-1"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <select
+          aria-describedby="template-select-message-2"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine ng-valid"
+          id="template-select-2"
+          name="template2"
+          ngmodel=""
+          required=""
+          v-select=""
+        >
+          <option
+            hidden=""
+          />
+          <option
+            value="1"
+          >
+            Option A
+          </option>
+          <option
+            value="2"
+          >
+            Option B
+          </option>
+          <option
+            value="3"
+          >
+            Option C
+          </option>
+          <option
+            value="4"
+          >
+            Option D
+          </option>
+          <option
+            value="5"
+          >
+            Option E
+          </option>
+        </select>
+        <div
+          class="v-input-control"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-15"
+            v-icon-visa-chevron-down-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </div>
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="template-select-message-2"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="template-select-3"
+        id="a-v-label-2"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <select
+          aria-describedby="template-select-message-3"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine ng-valid"
+          id="template-select-3"
+          name="template3"
+          ngmodel=""
+          required=""
+          v-select=""
+        >
+          <option
+            hidden=""
+          />
+          <option
+            value="1"
+          >
+            Option A
+          </option>
+          <option
+            value="2"
+          >
+            Option B
+          </option>
+          <option
+            value="3"
+          >
+            Option C
+          </option>
+          <option
+            value="4"
+          >
+            Option D
+          </option>
+          <option
+            value="5"
+          >
+            Option E
+          </option>
+        </select>
+        <div
+          class="v-input-control"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-16"
+            v-icon-visa-chevron-down-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </div>
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="template-select-message-3"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-16 v-flex v-flex-row"
+      vflex=""
+      vgap="16"
+    >
+      <button
+        class="v-button"
+        type="submit"
+        v-button=""
+      >
+        Submit
+      </button>
+      <button
+        buttoncolor="secondary"
+        class="v-button v-button-secondary"
+        type="reset"
+        v-button=""
+      >
+        Reset
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Select examples TemplateDrivenObjectSelectComponent should render correctly 1`] = `
+<div
+  id="root11"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="template-object-select"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <select
+        class="v-input ng-untouched ng-pristine ng-valid"
+        id="template-object-select"
+        name="templateNameObject"
+        v-select=""
+      >
+        <option
+          value="0: Object"
+        >
+          United States
+        </option>
+        <option
+          value="1: Object"
+        >
+          Australia
+        </option>
+        <option
+          value="2: Object"
+        >
+          Canada
+        </option>
+        <option
+          value="3: Object"
+        >
+          Brazil
+        </option>
+        <option
+          value="4: Object"
+        >
+          England
+        </option>
+        
+      </select>
+      <div
+        class="v-input-control"
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-17"
+          v-icon-visa-chevron-down-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      
+    </div>
+  </div>
+  <button
+    class="v-button v-my-8"
+    type="button"
+    v-button=""
+    vmy="8"
+  >
+    Reset initial value
+  </button>
+  <code>
+    templateValueControl.value.value: null
+  </code>
+  <code>
+    templateValueControl.value.label: null
+  </code>
+</div>
+`;
+
+exports[`Select examples TemplateDrivenSelectComponent should render correctly 1`] = `
+<div
+  id="root12"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="template-select"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <select
+        class="v-input ng-untouched ng-pristine ng-valid"
+        id="template-select"
+        v-select=""
+      >
+        <option
+          value="1"
+        >
+          Option A
+        </option>
+        <option
+          value="2"
+        >
+          Option B
+        </option>
+        <option
+          value="3"
+        >
+          Option C
+        </option>
+        <option
+          value="4"
+        >
+          Option D
+        </option>
+        <option
+          value="5"
+        >
+          Option E
+        </option>
+      </select>
+      <div
+        class="v-input-control"
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-18"
+          v-icon-visa-chevron-down-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      
+    </div>
+  </div>
+  <code>
+    selectVal: 2
+  </code>
+</div>
+`;
+
+exports[`Select examples WithInlineLabelSelectComponent should render correctly 1`] = `
+<div
+  id="root13"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-row"
+    vflex=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="inline-select"
+      id="inline-select-label"
+      style="line-height: var(--v-input-container-block-size); text-wrap: nowrap;"
+      v-label=""
+    >
+      Label
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <select
+        class="v-input"
+        id="inline-select"
+        v-select=""
+      >
+        <option
+          hidden=""
+        />
+        <option
+          value="1"
+        >
+          Option A
+        </option>
+        <option
+          value="2"
+        >
+          Option B
+        </option>
+        <option
+          value="3"
+        >
+          Option C
+        </option>
+        <option
+          value="4"
+        >
+          Option D
+        </option>
+        <option
+          value="5"
+        >
+          Option E
+        </option>
+      </select>
+      <div
+        class="v-input-control"
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-19"
+          v-icon-visa-chevron-down-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Select examples WithInlineMessageSelectComponent should render correctly 1`] = `
+<div
+  id="root14"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col v-flex-grow"
+    vflex=""
+    vflexcol=""
+    vflexgrow=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="inline-select-with-message"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <select
+        aria-describedby="inline-message"
+        class="v-input"
+        id="inline-select-with-message"
+        v-select=""
+      >
+        <option
+          hidden=""
+        />
+        <option
+          value="1"
+        >
+          Option A
+        </option>
+        <option
+          value="2"
+        >
+          Option B
+        </option>
+        <option
+          value="3"
+        >
+          Option C
+        </option>
+        <option
+          value="4"
+        >
+          Option D
+        </option>
+        <option
+          value="5"
+        >
+          Option E
+        </option>
+      </select>
+      <div
+        class="v-input-control"
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-20"
+          v-icon-visa-chevron-down-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      
+    </div>
+    <span
+      class="v-input-message"
+      id="inline-message"
+      v-input-message=""
+    >
+      This is optional text that describes the label in more detail.
+    </span>
+  </div>
+</div>
+`;

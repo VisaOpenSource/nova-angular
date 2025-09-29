@@ -14,6 +14,9 @@
  * limitations under the License.
  *
  **/
+const fs = require('fs');
+const { get } = require('http');
+const path = require('path');
 /**
  * EXAMPLE SCHEMA
  *
@@ -31,11 +34,40 @@
  * | libraryId    | Null                                                          | true     | Null      |
  */
 
-const propertyType = () => {};
+const getNameAlias = (defaultValue) => {
+  /* START GENAI@CHATGPT-4 */
+  // Extract alias value from defaultValue string if present
+  // only input signals have alias
+  let alias = null;
+  const aliasMatch = defaultValue && defaultValue.match(/alias:\s*['"`]([^'"`]+)['"`]/);
+  if (aliasMatch) {
+    alias = aliasMatch[1];
+  }
+  return alias;
+  /* END GENAI@CHATGPT-4 */
+};
 
-const propertyDefault = () => {};
+const extractExplicitType = (defaultValue, type) => {
+  /* START GENAI@CHATGPT-4 */
 
-const propertyRequired = () => {};
+  let fullType = null;
+  const value = defaultValue || '';
+  const fullTypeMatch = value.match(/<([\s\S]*?)>/);
+  if (fullTypeMatch && fullTypeMatch[1]) {
+    // Split on first comma, take the part before the comma, and trim
+    fullType = fullTypeMatch[1].split(',')[0].trim();
+  }
+  if (!fullType) {
+    fullType = type || '';
+    const fullTypeMatch = fullType.match(/<([\s\S]*?)>/);
+    if (fullTypeMatch && fullTypeMatch[1]) {
+      // Split on first comma, take the part before the comma, and trim
+      fullType = fullTypeMatch[1].split(',')[0].trim();
+    }
+  }
+  return fullType;
+  /* END GENAI@CHATGPT-4 */
+};
 
 const componentID = () => {
   return null;
@@ -45,7 +77,7 @@ const libraryID = () => {
   return null;
 };
 
-const getPropertyData = (prop, decoratorType) => {
+const getPropertyData = (prop, name, type, bindingtype) => {
   /** tags are probably not needed, but leaving logic */
   // let tags = [];
   // prop['jsdoctags']?.forEach((tag) => {
@@ -64,6 +96,15 @@ const getPropertyData = (prop, decoratorType) => {
   }
   defaultValue = defaultValue ? defaultValue : prop['defaultValue'];
 
+  defaultValue = type.toLowerCase().includes('emit') || type.toLowerCase().includes('event') ? '' : defaultValue; // emit signals do not have default values
+  // Extract actual default value from patterns like input<TYPE>(VALUE, ...) or model<TYPE>(VALUE)
+  if (typeof defaultValue === 'string' && defaultValue !== '') {
+    const match = defaultValue.match(/(?:input|model)<[^>]*>\(([^,)\n]+)/);
+    if (match && match[1] !== undefined) {
+      defaultValue = match[1].trim();
+    }
+  }
+
   let builtIn = false;
   const tag2 = prop['jsdoctags']?.find(
     (tag) => tag['tagName']['escapedText'] === 'builtin' || tag['tagName']['escapedText'] === 'builtIn'
@@ -71,10 +112,10 @@ const getPropertyData = (prop, decoratorType) => {
   builtIn = tag2 ? tag2['comment'] : false;
 
   return {
-    name: prop['name'],
-    'decorator type': decoratorType,
+    name: name,
+    'binding type': bindingtype, // input, output, or null
+    'property type': type + 'signal',
     default: removeHTMLCode(defaultValue),
-    type: prop['type'],
     description: removeHTMLCode(prop['description']),
     builtIn: removeHTMLCode(builtIn + '')
     // tags: tags,
@@ -87,33 +128,48 @@ const getPropertyData = (prop, decoratorType) => {
  * @param {*} type
  * @returns
  */
-const createExampleProperty = (libProperty, type, sectionName) => {
-  return {
-    name: libProperty.name,
-    // description: propertyDescription(),
-    // type: propertyType(),
-    // decoratorType: type,
-    // default: contentProperty.default,
-    // required: contentProperty.required,
-    section: sectionName,
-    componentId: componentID(),
-    libraryId: libraryID(),
-    data: getPropertyData(libProperty, type)
-  };
+const createExampleProperty = (libProperty, sectionName) => {
+  const type = libProperty.type ? libProperty.type.toLowerCase() : null;
+  if (!type) return;
+  // return input signals, outputs, and model signals
+  const isInputSignal = type.includes('inputsignal');
+  const isModelSignal = type.includes('model');
+  const isOutputSignal = type.includes('emit') || type.includes('event');
+  if (type && (isInputSignal || isModelSignal || isOutputSignal)) {
+    let name = libProperty.name; // store name
+    let type = libProperty.type; // store type
+    if (isInputSignal || isModelSignal) {
+      name = getNameAlias(libProperty.defaultValue) || libProperty.name;
+      type = extractExplicitType(libProperty.defaultValue, libProperty.type) || libProperty.type;
+    }
+    const bindingType = isInputSignal ? 'Input' : isModelSignal ? 'Model' : isOutputSignal ? 'Output' : null;
+    return {
+      name: name,
+      section: sectionName,
+      componentId: componentID(),
+      libraryId: libraryID(),
+      data: getPropertyData(libProperty, name, type, bindingType)
+    };
+  }
 };
 
 const getDirectiveProps = (component, name) => {
   let examples = [];
   component.inputsClass.forEach((libProperty) => {
-    examples.push(createExampleProperty(libProperty, '@Input()', name));
+    examples.push(createExampleProperty(libProperty, name));
   });
   component.outputsClass.forEach((libProperty) => {
-    examples.push(createExampleProperty(libProperty, '@Output()', name));
+    examples.push(createExampleProperty(libProperty, name));
   });
-  return examples;
+  component.propertiesClass.forEach((libProperty) => {
+    // Check if a property with the same name already exists in examples
+    if (examples.some((example) => example && example.name === libProperty.name)) return;
+    examples.push(createExampleProperty(libProperty, name));
+  });
+  return examples.filter((example) => example);
 };
 
-const createExampleConstant = (option, section) => {
+const createExampleEnumConst = (option, section) => {
   const options = option.split(':');
   return {
     name: options[0].trim(),
@@ -127,18 +183,61 @@ const createExampleConstant = (option, section) => {
   };
 };
 
+const getLiteralConstant = (filePath, name) => {
+  // Read the file and extract the value assigned to libProperty.name
+  // START GENAI@CHATGPT-4
+  try {
+    const fileContent = fs.readFileSync(filePath, 'utf8');
+    // Match: <name> = <value> (until a line ending with a semicolon, but allow semicolons inside value)
+    // This regex captures everything after '=' up to the first semicolon at the end of a line
+    const regex = new RegExp(`${name}\\s*=\\s*([\\s\\S]*?);\\s*$`, 'm');
+    const match = fileContent.match(regex);
+    if (match && match[1]) {
+      const value = match[1].trim();
+      return {
+        name: name,
+        section: name,
+        componentId: componentID(),
+        libraryId: libraryID(),
+        data: {
+          name: name,
+          type: value
+        }
+      };
+    }
+  } catch (err) {
+    console.error('Error reading file for literal type:', err);
+  }
+  // END GENAI@CHATGPT-4
+};
+
 const getConstantProps = (libProperty) => {
   let constants = [];
-  let options = libProperty.defaultValue;
-  if (options.includes('as const')) {
-    // !IMPORTANT this only applies for 'as const' values. We'll need another function for other variables.
+  let options = libProperty.rawtype ?? libProperty.defaultValue;
+  if (options?.includes('as const')) {
     options = options.split('\n').slice(1, -1); // transform into key-value pairs like MEDIUM - 'medium'
-    // options = options.slice(1, -1); // remove options[0] = '{' and options.last = '} as const'
     options.forEach((option) => {
-      constants.push(createExampleConstant(option, libProperty.name));
+      constants.push(createExampleEnumConst(option, libProperty.name));
+    });
+  } else if (options.includes('literal type')) {
+    const file = libProperty.file;
+    const filePath = path.resolve(file);
+    const literalConstant = getLiteralConstant(filePath, libProperty.name);
+    if (literalConstant) {
+      constants.push(literalConstant);
+    }
+  } else {
+    constants.push({
+      name: libProperty.name,
+      section: libProperty.name,
+      componentId: componentID(),
+      libraryId: libraryID(),
+      data: {
+        name: libProperty.name,
+        type: options
+      }
     });
   }
-
   return constants;
 };
 
@@ -152,15 +251,17 @@ const createServiceProperties = (prop, sectionName) => {
   }
   defaultValue = defaultValue ? defaultValue : prop['defaultValue'];
   defaultValue = removeHTMLCode(defaultValue);
+  const name = getNameAlias(defaultValue) || prop['name'];
+  const type = extractExplicitType(defaultValue, prop['type']) || prop['type'];
   return {
-    name: prop['name'],
+    name: name,
     section: sectionName,
     libraryId: libraryID(),
     componentId: componentID(),
     serviceUsage: 'property',
     data: {
-      name: prop['name'],
-      type: prop['type'],
+      name: name,
+      type: type,
       default: defaultValue,
       description: removeHTMLCode(prop['description'])
     }
@@ -224,7 +325,6 @@ const getProperties = (name, type, component) => {
   } else if (type === 'services') {
     examples = getServiceProps(component, name.service ? name.service : name);
   }
-
   return examples;
 };
 

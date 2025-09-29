@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconComponent should allow isBadgeEllipse icon 1`] = `
+<div
+  id="root8"
+>
+  <svg
+    class="v-icon v-badge-ellipse v-icon-tiny v-icon-visa"
+    focusable="false"
+    height="16"
+    hidden="true"
+    isBadgeEllipse=""
+    style="--v-icon-height: var(--size-scalable-8); --v-icon-primary: var(--v-badge-ellipse-color); --v-icon-secondary: var(--v-badge-ellipse-color); --v-icon-width: var(--size-scalable-8);"
+    v-icon=""
+    viewBox="0 0 16 16"
+    width="16"
+  >
+    
+    <circle
+      cx="8"
+      cy="8"
+      r="8"
+      style="fill: var(--v-badge-ellipse-color);"
+    />
+    
+    Label
+  </svg>
+</div>
+`;
+
+exports[`IconComponent should render the defaults correctly 1`] = `
+<div
+  id="root0"
+>
+  <svg
+    class="v-icon v-icon-tiny v-icon-visa"
+    focusable="false"
+    height="16"
+    hidden="true"
+    v-icon=""
+    viewBox="0 0 16 16"
+    width="16"
+  >
+    
+    
+    Label
+  </svg>
+</div>
+`;

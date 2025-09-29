@@ -1,0 +1,49 @@
+/**
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ **/
+.example-title {
+  color: var(--palette-default-text);
+}
+
+.example__content {
+  --v-surface-border-color: var(--palette-default-surface-3);
+  --v-surface-border-size: 1px;
+  --v-surface-border-radius: var(--size-rounded-large);
+  --v-surface-padding-block: 0px;
+  --v-surface-padding-inline: 0px;
+  margin-bottom: 40px;
+  --w-background-lighter: var(--palette-default-surface-1, #fff);
+  --w-background-darker: var(--palette-default-surface-2, #f8f8f8);
+
+  margin-block: 14px;
+  /* background: conic-gradient(from 90deg at 1px 1px, transparent 90deg, var(--example-background) 0) 0 0/16px 16px;
+  background-clip: padding-box;
+  border: 4px dashed var(--palette-default-surface-3);
+  border-radius: var(--size-rounded-xlarge);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px; */
+}
+
+.example__content > .v-badge {
+  inline-size: fit-content;
+}
+
+.example__content li.v-surface {
+  --v-surface-border-size: 0px;
+  --v-surface-border-radius: 0px;
+}

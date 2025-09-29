@@ -1,0 +1,1003 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <div
+    class="v-flex v-flex-col"
+    gap="12"
+    vflex=""
+    vflexcol=""
+  >
+    <div
+      style="--v-dropdown-menu-surface-margin-block-start: 0;"
+      v-floating-ui-container=""
+    >
+      <button
+        aria-controls="a-v-floating-ui-element-1"
+        aria-expanded="false"
+        class="v-button v-dropdown"
+        type="button"
+        v-button=""
+        v-floating-ui-trigger=""
+      >
+         Action 
+        <v-icon-visa-toggle
+          class="v-icon v-icon-tiny"
+          style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+        >
+          
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-0"
+            v-icon-visa-chevron-down-tiny=""
+            v-toggle-default-template=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              clip-rule="evenodd"
+              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+              fill-rule="evenodd"
+            />
+          </svg>
+          
+        </v-icon-visa-toggle>
+      </button>
+      <div
+        aria-hidden="true"
+        class="v-dropdown-menu v-surface v-flex v-flex-col v-p-4"
+        id="a-v-floating-ui-element-1"
+        style="inline-size: 180px; max-inline-size: 100%; --v-dropdown-menu-surface-margin-block-start: 0; position: absolute; top: 0px; left: 0px; display: none; z-index: 200;"
+        v-dropdown-menu=""
+        vflex=""
+        vflexcol=""
+        vp="4"
+      >
+        <div
+          class="v-flex v-flex-col v-gap-6"
+          v-accordion=""
+        >
+          <details
+            class="v-accordion"
+            name="a-accordion-details--0"
+            v-accordion-item=""
+          >
+            <summary
+              class="v-accordion-heading v-button v-button-large v-button-secondary"
+              type="button"
+              v-accordion-heading=""
+              v-button=""
+            >
+              <v-icon-visa-toggle
+                class="v-icon v-icon-tiny v-accordion-toggle-icon"
+                style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+              >
+                
+                <svg
+                  aria-hidden="true"
+                  class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
+                  focusable="false"
+                  height="16"
+                  id="a-v__icon__internal-2"
+                  v-icon-visa-chevron-right-tiny=""
+                  v-toggle-default-template=""
+                  viewBox="0 0 16 16"
+                  width="16"
+                >
+                  <path
+                    class="v-icon-primary"
+                    clip-rule="evenodd"
+                    d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                
+              </v-icon-visa-toggle>
+              <div
+                class="v-gap-6 v-align-items-center v-flex v-flex-row"
+                valignitemscenter=""
+                vflex=""
+                vgap="6"
+              >
+                Accordion title
+              </div>
+            </summary>
+            <div
+              class="v-accordion-panel"
+              v-accordion-panel=""
+            >
+              This is required text that describes the accordion section in more detail.
+            </div>
+          </details>
+        </div>
+        <div
+          class="v-combobox v-mt-12"
+          style="--v-dropdown-menu-surface-margin-block-start: 0;"
+          v-combobox=""
+          v-floating-ui-container=""
+          vmt="12"
+        >
+          <label
+            class="v-label"
+            for="a-v-input-0"
+            id="a-v-label-0"
+            v-label=""
+          >
+            Label
+          </label>
+          <div
+            class="v-input-container v-dropdown v-surface v-my-4"
+            v-floating-ui-trigger=""
+            v-input-container=""
+            vmy="4"
+          >
+            <input
+              aria-autocomplete="list"
+              aria-describedby="combobox-inline-message"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+              aria-owns="a-v-floating-ui-element-0"
+              class="v-input"
+              id="a-v-input-0"
+              role="combobox"
+              v-input=""
+              value=""
+            />
+            <button
+              aria-haspopup="true"
+              aria-label="toggle"
+              buttoncolor="tertiary"
+              buttonsize="small"
+              class="v-button v-button-icon v-button-small v-button-tertiary"
+              tabindex="-1"
+              type="button"
+              v-button-icon=""
+            >
+              <v-icon-visa-toggle
+                class="v-icon v-icon-tiny"
+                style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+              >
+                
+                <svg
+                  aria-hidden="true"
+                  class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+                  focusable="false"
+                  height="16"
+                  id="a-v__icon__internal-4"
+                  v-icon-visa-chevron-down-tiny=""
+                  v-toggle-default-template=""
+                  viewBox="0 0 16 16"
+                  width="16"
+                >
+                  <path
+                    class="v-icon-primary"
+                    clip-rule="evenodd"
+                    d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                
+              </v-icon-visa-toggle>
+            </button>
+            
+          </div>
+          <span
+            class="v-input-message"
+            id="combobox-inline-message"
+            v-input-message=""
+          >
+            This is optional text that describes the label in more detail.
+          </span>
+          <div
+            aria-hidden="true"
+            class="v-listbox-container"
+            id="a-v-floating-ui-element-0"
+            role="listbox"
+            style="position: absolute; top: 0px; left: 0px; display: none; inline-size: 100%; z-index: 200;"
+            v-floating-ui-element=""
+            v-listbox-container=""
+          >
+            <ul
+              class="v-listbox"
+              id="a-v-listbox-0"
+              role="group"
+              v-listbox=""
+            >
+              <li
+                aria-selected="false"
+                class="v-listbox-item"
+                id="v-listbox-item-option-a"
+                role="option"
+                v-listbox-item=""
+                value="option-a"
+              >
+                <span
+                  class="v-flex-shrink-0 v-radio"
+                />
+                Option A
+              </li>
+              <li
+                aria-selected="false"
+                class="v-listbox-item"
+                id="v-listbox-item-option-b"
+                role="option"
+                v-listbox-item=""
+                value="option-b"
+              >
+                <span
+                  class="v-flex-shrink-0 v-radio"
+                />
+                Option B
+              </li>
+              <li
+                aria-selected="false"
+                class="v-listbox-item"
+                id="v-listbox-item-option-c"
+                role="option"
+                v-listbox-item=""
+                value="option-c"
+              >
+                <span
+                  class="v-flex-shrink-0 v-radio"
+                />
+                Option C
+              </li>
+              <li
+                aria-selected="false"
+                class="v-listbox-item"
+                id="v-listbox-item-option-d"
+                role="option"
+                v-listbox-item=""
+                value="option-d"
+              >
+                <span
+                  class="v-flex-shrink-0 v-radio"
+                />
+                Option D
+              </li>
+              <li
+                aria-selected="false"
+                class="v-listbox-item"
+                id="v-listbox-item-option-e"
+                role="option"
+                v-listbox-item=""
+                value="option-e"
+              >
+                <span
+                  class="v-flex-shrink-0 v-radio"
+                />
+                Option E
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="v-combobox"
+      style="--v-dropdown-menu-surface-margin-block-start: 0;"
+      v-combobox=""
+      v-floating-ui-container=""
+    >
+      <label
+        class="v-label"
+        for="a-v-input-1"
+        id="a-v-label-1"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-dropdown v-surface v-my-4"
+        v-floating-ui-trigger=""
+        v-input-container=""
+        vmy="4"
+      >
+        <input
+          aria-autocomplete="list"
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          aria-owns="a-v-floating-ui-element-2"
+          class="v-input"
+          id="a-v-input-1"
+          role="combobox"
+          v-input=""
+          value=""
+        />
+        <button
+          aria-haspopup="true"
+          aria-label="toggle"
+          buttoncolor="tertiary"
+          buttonsize="small"
+          class="v-button v-button-icon v-button-small v-button-tertiary"
+          tabindex="-1"
+          type="button"
+          v-button-icon=""
+        >
+          <v-icon-visa-toggle
+            class="v-icon v-icon-tiny"
+            style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+          >
+            
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-6"
+              v-icon-visa-chevron-down-tiny=""
+              v-toggle-default-template=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            
+          </v-icon-visa-toggle>
+        </button>
+        
+      </div>
+      <div
+        aria-hidden="true"
+        class="v-listbox-container"
+        id="a-v-floating-ui-element-2"
+        role="listbox"
+        style="position: absolute; top: 0px; left: 0px; display: none; inline-size: 100%; z-index: 200;"
+        v-floating-ui-element=""
+        v-listbox-container=""
+      >
+        <ul
+          class="v-listbox"
+          id="a-v-listbox-1"
+          role="group"
+          v-listbox=""
+        >
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-option-a"
+            role="option"
+            v-listbox-item=""
+            value="option-a"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Option A
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-option-b"
+            role="option"
+            v-listbox-item=""
+            value="option-b"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Option B
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-option-c"
+            role="option"
+            v-listbox-item=""
+            value="option-c"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Option C
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-option-d"
+            role="option"
+            v-listbox-item=""
+            value="option-d"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Option D
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-option-e"
+            role="option"
+            v-listbox-item=""
+            value="option-e"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Option E
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="v-combobox"
+      style="--v-dropdown-menu-surface-margin-block-start: 0;"
+      v-combobox=""
+      v-floating-ui-container=""
+    >
+      <label
+        class="v-label"
+        for="a-v-input-2"
+        id="a-v-label-2"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-dropdown v-surface v-my-4"
+        v-floating-ui-trigger=""
+        v-input-container=""
+        vmy="4"
+      >
+        <input
+          aria-autocomplete="list"
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          aria-owns="a-v-floating-ui-element-3"
+          class="v-input"
+          id="a-v-input-2"
+          role="combobox"
+          v-input=""
+          value=""
+        />
+        <button
+          aria-haspopup="true"
+          aria-label="toggle"
+          buttoncolor="tertiary"
+          buttonsize="small"
+          class="v-button v-button-icon v-button-small v-button-tertiary"
+          tabindex="-1"
+          type="button"
+          v-button-icon=""
+        >
+          <v-icon-visa-toggle
+            class="v-icon v-icon-tiny"
+            style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+          >
+            
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-8"
+              v-icon-visa-chevron-down-tiny=""
+              v-toggle-default-template=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+            
+          </v-icon-visa-toggle>
+        </button>
+        
+      </div>
+      <div
+        aria-hidden="true"
+        class="v-listbox-container"
+        id="a-v-floating-ui-element-3"
+        role="listbox"
+        style="position: absolute; top: 0px; left: 0px; display: none; inline-size: 100%; z-index: 200;"
+        v-floating-ui-element=""
+        v-listbox-container=""
+      >
+        <ul
+          class="v-listbox"
+          id="a-v-listbox-2"
+          role="group"
+          v-listbox=""
+        >
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-option-a"
+            role="option"
+            v-listbox-item=""
+            value="option-a"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Option A
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-option-b"
+            role="option"
+            v-listbox-item=""
+            value="option-b"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Option B
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-option-c"
+            role="option"
+            v-listbox-item=""
+            value="option-c"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Option C
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-option-d"
+            role="option"
+            v-listbox-item=""
+            value="option-d"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Option D
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-option-e"
+            role="option"
+            v-listbox-item=""
+            value="option-e"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Option E
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button
+      buttoncolor="primary"
+      class="v-button"
+      type="button"
+      v-button=""
+    >
+      Open default dialog
+    </button>
+    <dialog
+      aria-describedby="a-v-dialog-0-description"
+      aria-labelledby="a-v-dialog-0-title"
+      aria-modal="true"
+      class="v-dialog v-message v-dialog-default"
+      id="a-v-dialog-0"
+      role="dialog"
+      v-dialog=""
+      v-message=""
+    >
+      <div
+        aria-hidden="true"
+        class="cdk-visually-hidden cdk-focus-trap-anchor"
+        tabindex="0"
+      />
+      <div
+        cdktrapfocus=""
+        cdktrapfocusautocapture=""
+        class="v-flex v-flex-row"
+        vflex=""
+        vflexrow=""
+      >
+        <div
+          class="v-message-content v-pb-2 v-pr-2"
+          v-message-content=""
+          vpb="2"
+          vpr="2"
+        >
+          <div
+            class="v-combobox"
+            style="--v-dropdown-menu-surface-margin-block-start: 0;"
+            v-combobox=""
+            v-floating-ui-container=""
+          >
+            <label
+              class="v-label"
+              for="a-v-input-3"
+              id="a-v-label-3"
+              v-label=""
+            >
+              Label (required)
+            </label>
+            <div
+              class="v-input-container v-dropdown v-surface v-my-4"
+              v-floating-ui-trigger=""
+              v-input-container=""
+              vmy="4"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-owns="a-v-floating-ui-element-4"
+                class="v-input"
+                id="a-v-input-3"
+                role="combobox"
+                v-input=""
+                value=""
+              />
+              <button
+                aria-haspopup="true"
+                aria-label="toggle"
+                buttoncolor="tertiary"
+                buttonsize="small"
+                class="v-button v-button-icon v-button-small v-button-tertiary"
+                tabindex="-1"
+                type="button"
+                v-button-icon=""
+              >
+                <v-icon-visa-toggle
+                  class="v-icon v-icon-tiny"
+                  style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+                >
+                  
+                  <svg
+                    aria-hidden="true"
+                    class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+                    focusable="false"
+                    height="16"
+                    id="a-v__icon__internal-10"
+                    v-icon-visa-chevron-down-tiny=""
+                    v-toggle-default-template=""
+                    viewBox="0 0 16 16"
+                    width="16"
+                  >
+                    <path
+                      class="v-icon-primary"
+                      clip-rule="evenodd"
+                      d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                  
+                </v-icon-visa-toggle>
+              </button>
+              
+            </div>
+            <div
+              aria-hidden="true"
+              class="v-listbox-container"
+              id="a-v-floating-ui-element-4"
+              role="listbox"
+              style="position: absolute; top: 0px; left: 0px; display: none; inline-size: 100%; z-index: 200;"
+              v-floating-ui-element=""
+              v-listbox-container=""
+            >
+              <ul
+                class="v-listbox"
+                id="a-v-listbox-3"
+                role="group"
+                v-listbox=""
+              >
+                <li
+                  aria-selected="false"
+                  class="v-listbox-item"
+                  id="v-listbox-item-option-a"
+                  role="option"
+                  v-listbox-item=""
+                  value="option-a"
+                >
+                  <span
+                    class="v-flex-shrink-0 v-radio"
+                  />
+                  Option A
+                </li>
+                <li
+                  aria-selected="false"
+                  class="v-listbox-item"
+                  id="v-listbox-item-option-b"
+                  role="option"
+                  v-listbox-item=""
+                  value="option-b"
+                >
+                  <span
+                    class="v-flex-shrink-0 v-radio"
+                  />
+                  Option B
+                </li>
+                <li
+                  aria-selected="false"
+                  class="v-listbox-item"
+                  id="v-listbox-item-option-c"
+                  role="option"
+                  v-listbox-item=""
+                  value="option-c"
+                >
+                  <span
+                    class="v-flex-shrink-0 v-radio"
+                  />
+                  Option C
+                </li>
+                <li
+                  aria-selected="false"
+                  class="v-listbox-item"
+                  id="v-listbox-item-option-d"
+                  role="option"
+                  v-listbox-item=""
+                  value="option-d"
+                >
+                  <span
+                    class="v-flex-shrink-0 v-radio"
+                  />
+                  Option D
+                </li>
+                <li
+                  aria-selected="false"
+                  class="v-listbox-item"
+                  id="v-listbox-item-option-e"
+                  role="option"
+                  v-listbox-item=""
+                  value="option-e"
+                >
+                  <span
+                    class="v-flex-shrink-0 v-radio"
+                  />
+                  Option E
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button
+          aria-label="close"
+          buttoncolor="tertiary"
+          buttonsize="small"
+          class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary -v-ml-12 -v-mr-18 -v-mt-20"
+          subtle=""
+          type="button"
+          v-button-icon=""
+          vml="-12"
+          vmr="-18"
+          vmt="-20"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-close v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            id="a-v__icon__internal-12"
+            v-icon-visa-close-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+            />
+            <defs>
+              <clippath>
+                <rect
+                  height="16"
+                  transform="translate(0 0.000488281)"
+                  width="16"
+                />
+              </clippath>
+            </defs>
+          </svg>
+        </button>
+      </div>
+      <div
+        aria-hidden="true"
+        class="cdk-visually-hidden cdk-focus-trap-anchor"
+        tabindex="0"
+      />
+    </dialog>
+    <ul
+      aria-label="Tabs with tab panels"
+      class="v-tabs v-tabs-horizontal"
+      role="tablist"
+      v-tabs=""
+    >
+      <li
+        class="v-tab"
+        role="none"
+        v-tab-item=""
+      >
+        <button
+          class="v-button v-button-large v-button-tertiary"
+          role="tab"
+          type="button"
+          v-button=""
+        >
+          Label
+        </button>
+      </li>
+    </ul>
+    <div
+      class="v-surface v-elevation-inset v-my-8"
+      role="tabpanel"
+      style="min-block-size: 200px;"
+      tabindex="0"
+      vmy="8"
+      vsurface=""
+    >
+      <div
+        class="v-combobox"
+        style="--v-dropdown-menu-surface-margin-block-start: 0;"
+        v-combobox=""
+        v-floating-ui-container=""
+      >
+        <label
+          class="v-label"
+          for="a-v-input-4"
+          id="a-v-label-4"
+          v-label=""
+        >
+          Label (required)
+        </label>
+        <div
+          class="v-input-container v-dropdown v-surface v-my-4"
+          v-floating-ui-trigger=""
+          v-input-container=""
+          vmy="4"
+        >
+          <input
+            aria-autocomplete="list"
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            aria-owns="a-v-floating-ui-element-5"
+            class="v-input"
+            id="a-v-input-4"
+            role="combobox"
+            v-input=""
+            value=""
+          />
+          <button
+            aria-haspopup="true"
+            aria-label="toggle"
+            buttoncolor="tertiary"
+            buttonsize="small"
+            class="v-button v-button-icon v-button-small v-button-tertiary"
+            tabindex="-1"
+            type="button"
+            v-button-icon=""
+          >
+            <v-icon-visa-toggle
+              class="v-icon v-icon-tiny"
+              style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+            >
+              
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-13"
+                v-icon-visa-chevron-down-tiny=""
+                v-toggle-default-template=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+              
+            </v-icon-visa-toggle>
+          </button>
+          
+        </div>
+        <div
+          aria-hidden="true"
+          class="v-listbox-container"
+          id="a-v-floating-ui-element-5"
+          role="listbox"
+          style="position: absolute; top: 0px; left: 0px; display: none; inline-size: 100%; z-index: 200;"
+          v-floating-ui-element=""
+          v-listbox-container=""
+        >
+          <ul
+            class="v-listbox"
+            id="a-v-listbox-4"
+            role="group"
+            v-listbox=""
+          >
+            <li
+              aria-selected="false"
+              class="v-listbox-item"
+              id="v-listbox-item-option-a"
+              role="option"
+              v-listbox-item=""
+              value="option-a"
+            >
+              <span
+                class="v-flex-shrink-0 v-radio"
+              />
+              Option A
+            </li>
+            <li
+              aria-selected="false"
+              class="v-listbox-item"
+              id="v-listbox-item-option-b"
+              role="option"
+              v-listbox-item=""
+              value="option-b"
+            >
+              <span
+                class="v-flex-shrink-0 v-radio"
+              />
+              Option B
+            </li>
+            <li
+              aria-selected="false"
+              class="v-listbox-item"
+              id="v-listbox-item-option-c"
+              role="option"
+              v-listbox-item=""
+              value="option-c"
+            >
+              <span
+                class="v-flex-shrink-0 v-radio"
+              />
+              Option C
+            </li>
+            <li
+              aria-selected="false"
+              class="v-listbox-item"
+              id="v-listbox-item-option-d"
+              role="option"
+              v-listbox-item=""
+              value="option-d"
+            >
+              <span
+                class="v-flex-shrink-0 v-radio"
+              />
+              Option D
+            </li>
+            <li
+              aria-selected="false"
+              class="v-listbox-item"
+              id="v-listbox-item-option-e"
+              role="option"
+              v-listbox-item=""
+              value="option-e"
+            >
+              <span
+                class="v-flex-shrink-0 v-radio"
+              />
+              Option E
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

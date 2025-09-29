@@ -1,0 +1,1436 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio examples DisabledAndSelectedRadioComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <div
+    class="v-input-container"
+    v-input-container=""
+  >
+    <input
+      checked=""
+      class="v-radio"
+      disabled="disabled"
+      id="radio-disabled-selected"
+      name="radio-disabled-selected"
+      type="radio"
+      v-radio=""
+      value="radio-disabled-selected"
+    />
+    <label
+      class="v-label"
+      for="radio-disabled-selected"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    
+  </div>
+</div>
+`;
+
+exports[`Radio examples DisabledPanelRadioComponent should render correctly 1`] = `
+<div
+  id="root1"
+>
+  <div
+    class="v-action v-action-secondary v-checkbox-panel"
+    v-radio-panel=""
+  >
+    <div
+      class="v-input-container v-align-items-start v-flex v-flex-row"
+      v-input-container=""
+      valignitemsstart=""
+      vflex=""
+    >
+      <input
+        aria-describedby="disabled-radio-panel-message"
+        class="v-radio"
+        disabled="disabled"
+        id="disabled-radio-panel"
+        name="disabled-radio-panel"
+        type="radio"
+        v-radio=""
+        value="disabled-radio-panel-value"
+      />
+      <div
+        class="v-gap-2 v-flex v-flex-col v-my-8"
+        vflex=""
+        vflexcol=""
+        vgap="2"
+      >
+        <label
+          class="v-label"
+          for="disabled-radio-panel"
+          id="a-v-label-0"
+          v-label=""
+        >
+          Label
+        </label>
+        <span
+          class="v-input-message"
+          id="disabled-radio-panel-message"
+          v-input-message=""
+        >
+           This is optional text that describes the label in more detail 
+        </span>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Radio examples DisabledRadioComponent should render correctly 1`] = `
+<div
+  id="root2"
+>
+  <div
+    class="v-input-container"
+    v-input-container=""
+  >
+    <input
+      class="v-radio"
+      disabled="disabled"
+      id="radio-disabled"
+      name="radio-disabled"
+      type="radio"
+      v-radio=""
+      value="radio-disabled"
+    />
+    <label
+      class="v-label"
+      for="radio-disabled"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    
+  </div>
+</div>
+`;
+
+exports[`Radio examples GroupRadioComponent should render correctly 1`] = `
+<div
+  id="root4"
+>
+  <fieldset>
+    <legend
+      class="v-label v-typography-label"
+      id="a-v-label-0"
+      v-label=""
+      vtypography="label"
+    >
+      Group label
+    </legend>
+    <div
+      class="v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+    >
+      <div
+        class="v-input-container"
+        v-input-container=""
+      >
+        <input
+          class="v-radio"
+          id="radio-group-1"
+          name="radio-group"
+          type="radio"
+          v-radio=""
+          value="1"
+        />
+        <label
+          class="v-label"
+          for="radio-group-1"
+          id="a-v-label-1"
+          v-label=""
+        >
+          Label 1
+        </label>
+        
+      </div>
+      <div
+        class="v-input-container"
+        v-input-container=""
+      >
+        <input
+          class="v-radio"
+          id="radio-group-2"
+          name="radio-group"
+          type="radio"
+          v-radio=""
+          value="2"
+        />
+        <label
+          class="v-label"
+          for="radio-group-2"
+          id="a-v-label-2"
+          v-label=""
+        >
+          Label 2
+        </label>
+        
+      </div>
+      <div
+        class="v-input-container"
+        v-input-container=""
+      >
+        <input
+          class="v-radio"
+          id="radio-group-3"
+          name="radio-group"
+          type="radio"
+          v-radio=""
+          value="3"
+        />
+        <label
+          class="v-label"
+          for="radio-group-3"
+          id="a-v-label-3"
+          v-label=""
+        >
+          Label 3
+        </label>
+        
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Radio examples GroupWithErrorRadioComponent should render correctly 1`] = `
+<div
+  id="root3"
+>
+  <fieldset
+    aria-labelledby="radio-group-error-legend radio-group-error-message"
+    class="v-mt-16"
+    vmt="16"
+  >
+    <legend
+      class="v-label v-typography-label"
+      id="radio-group-error-legend"
+      v-label=""
+      vtypography="label"
+    >
+      Group label (required)
+    </legend>
+    <div
+      aria-required="true"
+      class="v-flex v-flex-col"
+      required=""
+      role="radiogroup"
+      v-radio-group=""
+      vflex=""
+      vflexcol=""
+    >
+      <div
+        class="v-input-container"
+        v-input-container=""
+      >
+        <input
+          aria-invalid="false"
+          class="v-radio"
+          id="radio-group-error-1"
+          name="radio-group-error"
+          required="required"
+          type="radio"
+          v-radio=""
+          value="1"
+        />
+        <label
+          class="v-label"
+          for="radio-group-error-1"
+          id="a-v-label-1"
+          v-label=""
+        >
+          Label 1
+        </label>
+        
+      </div>
+      <div
+        class="v-input-container"
+        v-input-container=""
+      >
+        <input
+          aria-invalid="false"
+          class="v-radio"
+          id="radio-group-error-2"
+          name="radio-group-error"
+          required="required"
+          type="radio"
+          v-radio=""
+          value="2"
+        />
+        <label
+          class="v-label"
+          for="radio-group-error-2"
+          id="a-v-label-2"
+          v-label=""
+        >
+          Label 2
+        </label>
+        
+      </div>
+      <div
+        class="v-input-container"
+        v-input-container=""
+      >
+        <input
+          aria-invalid="false"
+          class="v-radio"
+          id="radio-group-error-3"
+          name="radio-group-error"
+          required="required"
+          type="radio"
+          v-radio=""
+          value="3"
+        />
+        <label
+          class="v-label"
+          for="radio-group-error-3"
+          id="a-v-label-3"
+          v-label=""
+        >
+          Label 3
+        </label>
+        
+      </div>
+    </div>
+    <span
+      aria-atomic="true"
+      aria-live="assertive"
+      class="v-input-message"
+      id="radio-group-error-message"
+      v-input-message=""
+    >
+      
+    </span>
+  </fieldset>
+  <div
+    class="v-gap-16 v-flex v-flex-row"
+    vflex=""
+    vgap="16"
+  >
+    <button
+      class="v-button v-mt-12"
+      type="button"
+      v-button=""
+      vmt="12"
+    >
+      Submit
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary v-mt-12"
+      type="button"
+      v-button=""
+      vmt="12"
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Radio examples HorizontalGroupRadioComponent should render correctly 1`] = `
+<div
+  id="root5"
+>
+  <fieldset>
+    <legend
+      class="v-label v-typography-label"
+      id="a-v-label-0"
+      v-label=""
+      vtypography="label"
+    >
+      Group label
+    </legend>
+    <div
+      class="v-gap-24 v-flex v-flex-row v-flex-wrap"
+      vflex=""
+      vflexwrap=""
+      vgap="24"
+    >
+      <div
+        class="v-input-container v-flex v-flex-grow-0 v-flex-row"
+        v-input-container=""
+        vflex=""
+        vflexgrow0=""
+      >
+        <input
+          class="v-radio"
+          id="horizontal-radio-group-1"
+          name="horizontal-radio-group"
+          type="radio"
+          v-radio=""
+          value="1"
+        />
+        <label
+          class="v-label"
+          for="horizontal-radio-group-1"
+          id="a-v-label-1"
+          v-label=""
+        >
+          Label 1
+        </label>
+        
+      </div>
+      <div
+        class="v-input-container v-flex v-flex-grow-0 v-flex-row"
+        v-input-container=""
+        vflex=""
+        vflexgrow0=""
+      >
+        <input
+          class="v-radio"
+          id="horizontal-radio-group-2"
+          name="horizontal-radio-group"
+          type="radio"
+          v-radio=""
+          value="2"
+        />
+        <label
+          class="v-label"
+          for="horizontal-radio-group-2"
+          id="a-v-label-2"
+          v-label=""
+        >
+          Label 2
+        </label>
+        
+      </div>
+      <div
+        class="v-input-container v-flex v-flex-grow-0 v-flex-row"
+        v-input-container=""
+        vflex=""
+        vflexgrow0=""
+      >
+        <input
+          class="v-radio"
+          id="horizontal-radio-group-3"
+          name="horizontal-radio-group"
+          type="radio"
+          v-radio=""
+          value="3"
+        />
+        <label
+          class="v-label"
+          for="horizontal-radio-group-3"
+          id="a-v-label-3"
+          v-label=""
+        >
+          Label 3
+        </label>
+        
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Radio examples ModelDrivenFbRadioComponent should render correctly 1`] = `
+<div
+  id="root6"
+>
+  <form
+    class="ng-untouched ng-dirty ng-valid v-gap-16 v-flex v-flex-col v-mt-16"
+    novalidate=""
+    vflex=""
+    vflexcol=""
+    vgap="16"
+    vmt="16"
+  >
+    <fieldset
+      aria-labelledby="model-fb-radio-label model-fb-radio-message"
+    >
+      <legend
+        class="v-label v-typography-label"
+        id="model-fb-radio-label"
+        v-label=""
+        vtypography="label"
+      >
+        Group label (required)
+      </legend>
+      <div
+        aria-required="true"
+        class="ng-untouched ng-dirty ng-valid v-flex v-flex-col"
+        formcontrolname="radioControl"
+        required=""
+        role="radiogroup"
+        v-radio-group=""
+        vflex=""
+        vflexcol=""
+      >
+        <div
+          class="v-input-container"
+          v-input-container=""
+        >
+          <input
+            aria-invalid="false"
+            class="v-radio"
+            id="model-fb-radio-1"
+            name="a-v-radio-group-0"
+            required="required"
+            type="radio"
+            v-radio=""
+            value="1"
+          />
+          <label
+            class="v-label"
+            for="model-fb-radio-1"
+            id="a-v-label-1"
+            v-label=""
+          >
+            Label 1
+          </label>
+          
+        </div>
+        <div
+          class="v-input-container"
+          v-input-container=""
+        >
+          <input
+            aria-invalid="false"
+            class="v-radio"
+            id="model-fb-radio-2"
+            name="a-v-radio-group-0"
+            required="required"
+            type="radio"
+            v-radio=""
+            value="2"
+          />
+          <label
+            class="v-label"
+            for="model-fb-radio-2"
+            id="a-v-label-2"
+            v-label=""
+          >
+            Label 2
+          </label>
+          
+        </div>
+        <div
+          class="v-input-container"
+          v-input-container=""
+        >
+          <input
+            aria-invalid="false"
+            class="v-radio"
+            id="model-fb-radio-3"
+            name="a-v-radio-group-0"
+            required="required"
+            type="radio"
+            v-radio=""
+            value="3"
+          />
+          <label
+            class="v-label"
+            for="model-fb-radio-3"
+            id="a-v-label-3"
+            v-label=""
+          >
+            Label 3
+          </label>
+          
+        </div>
+      </div>
+    </fieldset>
+    <span
+      aria-atomic="true"
+      aria-live="assertive"
+      class="v-input-message"
+      id="model-fb-radio-message"
+      v-input-message=""
+    >
+      
+    </span>
+    <div
+      class="v-gap-16 v-flex v-flex-row v-mt-8"
+      vflex=""
+      vgap="16"
+      vmt="8"
+    >
+      <button
+        class="v-button"
+        type="submit"
+        v-button=""
+      >
+        Submit
+      </button>
+      <button
+        buttoncolor="secondary"
+        class="v-button v-button-secondary"
+        type="reset"
+        v-button=""
+      >
+        Reset
+      </button>
+    </div>
+  </form>
+  <code>
+    formValidation.value['radioControl']: 2
+  </code>
+</div>
+`;
+
+exports[`Radio examples ModelDrivenFormRadioComponent should render correctly 1`] = `
+<div
+  id="root7"
+>
+  <form
+    class="ng-untouched ng-dirty ng-valid v-gap-16 v-flex v-flex-col v-mt-16"
+    novalidate=""
+    vflex=""
+    vflexcol=""
+    vgap="16"
+    vmt="16"
+  >
+    <fieldset
+      aria-labelledby="model-radio-label model-radio-message"
+    >
+      <legend
+        class="v-label v-typography-label"
+        id="model-radio-label"
+        v-label=""
+        vtypography="label"
+      >
+        Group label (required)
+      </legend>
+      <div
+        aria-required="true"
+        class="ng-untouched ng-dirty ng-valid v-flex v-flex-col"
+        formcontrolname="radioControl"
+        required=""
+        role="radiogroup"
+        v-radio-group=""
+        vflex=""
+        vflexcol=""
+      >
+        <div
+          class="v-input-container"
+          v-input-container=""
+        >
+          <input
+            aria-invalid="false"
+            class="v-radio"
+            id="model-radio-1"
+            name="a-v-radio-group-0"
+            required="required"
+            type="radio"
+            v-radio=""
+            value="1"
+          />
+          <label
+            class="v-label"
+            for="model-radio-1"
+            id="a-v-label-1"
+            v-label=""
+          >
+            Label 1
+          </label>
+          
+        </div>
+        <div
+          class="v-input-container"
+          v-input-container=""
+        >
+          <input
+            aria-invalid="false"
+            class="v-radio"
+            id="model-radio-2"
+            name="a-v-radio-group-0"
+            required="required"
+            type="radio"
+            v-radio=""
+            value="2"
+          />
+          <label
+            class="v-label"
+            for="model-radio-2"
+            id="a-v-label-2"
+            v-label=""
+          >
+            Label 2
+          </label>
+          
+        </div>
+        <div
+          class="v-input-container"
+          v-input-container=""
+        >
+          <input
+            aria-invalid="false"
+            class="v-radio"
+            id="model-radio-3"
+            name="a-v-radio-group-0"
+            required="required"
+            type="radio"
+            v-radio=""
+            value="3"
+          />
+          <label
+            class="v-label"
+            for="model-radio-3"
+            id="a-v-label-3"
+            v-label=""
+          >
+            Label 3
+          </label>
+          
+        </div>
+        
+      </div>
+    </fieldset>
+    <span
+      aria-atomic="true"
+      aria-live="assertive"
+      class="v-input-message"
+      id="model-radio-message"
+      v-input-message=""
+    >
+      
+    </span>
+    <div
+      class="v-gap-16 v-flex v-flex-row v-mt-8"
+      vflex=""
+      vgap="16"
+      vmt="8"
+    >
+      <button
+        class="v-button"
+        type="submit"
+        v-button=""
+      >
+        Submit
+      </button>
+      <button
+        buttoncolor="secondary"
+        class="v-button v-button-secondary"
+        type="reset"
+        v-button=""
+      >
+        Reset
+      </button>
+    </div>
+  </form>
+  <code>
+    formValidation.value['radioControl']: 2
+  </code>
+</div>
+`;
+
+exports[`Radio examples PanelGroupRadioComponent should render correctly 1`] = `
+<div
+  id="root9"
+>
+  <fieldset>
+    <legend
+      class="v-label v-typography-label"
+      id="a-v-label-0"
+      v-label=""
+      vtypography="label"
+    >
+      Group label
+    </legend>
+    <div
+      class="v-gap-8 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="8"
+    >
+      <div
+        class="v-action v-action-secondary v-checkbox-panel"
+        v-radio-panel=""
+      >
+        <div
+          class="v-input-container v-align-items-start v-flex v-flex-row"
+          v-input-container=""
+          valignitemsstart=""
+          vflex=""
+        >
+          <input
+            aria-describedby="panel-group-message-1"
+            class="v-radio"
+            id="panel-group-1"
+            name="panel-group"
+            type="radio"
+            v-radio=""
+            value="panel-group-value-1"
+          />
+          <div
+            class="v-gap-2 v-flex v-flex-col v-my-8"
+            vflex=""
+            vflexcol=""
+            vgap="2"
+          >
+            <label
+              class="v-label"
+              for="panel-group-1"
+              id="a-v-label-1"
+              v-label=""
+            >
+              Label 1
+            </label>
+            <span
+              class="v-input-message"
+              id="panel-group-message-1"
+              v-input-message=""
+            >
+               This is optional text that describes the label in more detail 
+            </span>
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="v-action v-action-secondary v-checkbox-panel"
+        v-radio-panel=""
+      >
+        <div
+          class="v-input-container v-align-items-start v-flex v-flex-row"
+          v-input-container=""
+          valignitemsstart=""
+          vflex=""
+        >
+          <input
+            aria-describedby="panel-group-message-2"
+            class="v-radio"
+            id="panel-group-2"
+            name="panel-group"
+            type="radio"
+            v-radio=""
+            value="panel-group-value-2"
+          />
+          <div
+            class="v-gap-2 v-flex v-flex-col v-my-8"
+            vflex=""
+            vflexcol=""
+            vgap="2"
+          >
+            <label
+              class="v-label"
+              for="panel-group-2"
+              id="a-v-label-2"
+              v-label=""
+            >
+              Label 2
+            </label>
+            <span
+              class="v-input-message"
+              id="panel-group-message-2"
+              v-input-message=""
+            >
+               This is optional text that describes the label in more detail 
+            </span>
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="v-action v-action-secondary v-checkbox-panel"
+        v-radio-panel=""
+      >
+        <div
+          class="v-input-container v-align-items-start v-flex v-flex-row"
+          v-input-container=""
+          valignitemsstart=""
+          vflex=""
+        >
+          <input
+            aria-describedby="panel-group-message-3"
+            class="v-radio"
+            id="panel-group-3"
+            name="panel-group"
+            type="radio"
+            v-radio=""
+            value="panel-group-value-3"
+          />
+          <div
+            class="v-gap-2 v-flex v-flex-col v-my-8"
+            vflex=""
+            vflexcol=""
+            vgap="2"
+          >
+            <label
+              class="v-label"
+              for="panel-group-3"
+              id="a-v-label-3"
+              v-label=""
+            >
+              Label 3
+            </label>
+            <span
+              class="v-input-message"
+              id="panel-group-message-3"
+              v-input-message=""
+            >
+               This is optional text that describes the label in more detail 
+            </span>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Radio examples PanelGroupWithErrorRadioComponent should render correctly 1`] = `
+<div
+  id="root8"
+>
+  <fieldset
+    aria-labelledby="panel-group-error-legend panel-group-error-message"
+    class="v-mt-16"
+    vmt="16"
+  >
+    <legend
+      class="v-label v-typography-label"
+      id="panel-group-error-legend"
+      v-label=""
+      vtypography="label"
+    >
+      Group label (required)
+    </legend>
+    <div
+      aria-required="true"
+      class="v-flex v-flex-col"
+      required=""
+      role="radiogroup"
+      v-radio-group=""
+      vflex=""
+      vflexcol=""
+    >
+      <div
+        class="v-action v-action-secondary v-checkbox-panel"
+        v-radio-panel=""
+      >
+        <div
+          class="v-input-container v-align-items-start v-flex v-flex-row"
+          v-input-container=""
+          valignitemsstart=""
+          vflex=""
+        >
+          <input
+            aria-describedby="panel-group-error-message-1"
+            aria-invalid="false"
+            class="v-radio"
+            id="panel-group-error-1"
+            name="panel-group-error"
+            required="required"
+            type="radio"
+            v-radio=""
+            value="panel-group-error-value-1"
+          />
+          <div
+            class="v-gap-2 v-flex v-flex-col v-my-8"
+            vflex=""
+            vflexcol=""
+            vgap="2"
+          >
+            <label
+              class="v-label"
+              for="panel-group-error-1"
+              id="a-v-label-1"
+              v-label=""
+            >
+              Label 1
+            </label>
+            <span
+              class="v-input-message"
+              id="panel-group-error-message-1"
+              v-input-message=""
+            >
+               This is optional text that describes the label in more detail 
+            </span>
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="v-action v-action-secondary v-checkbox-panel"
+        v-radio-panel=""
+      >
+        <div
+          class="v-input-container v-align-items-start v-flex v-flex-row"
+          v-input-container=""
+          valignitemsstart=""
+          vflex=""
+        >
+          <input
+            aria-describedby="panel-group-error-message-2"
+            aria-invalid="false"
+            class="v-radio"
+            id="panel-group-error-2"
+            name="panel-group-error"
+            required="required"
+            type="radio"
+            v-radio=""
+            value="panel-group-error-value-2"
+          />
+          <div
+            class="v-gap-2 v-flex v-flex-col v-my-8"
+            vflex=""
+            vflexcol=""
+            vgap="2"
+          >
+            <label
+              class="v-label"
+              for="panel-group-error-2"
+              id="a-v-label-2"
+              v-label=""
+            >
+              Label 2
+            </label>
+            <span
+              class="v-input-message"
+              id="panel-group-error-message-2"
+              v-input-message=""
+            >
+               This is optional text that describes the label in more detail 
+            </span>
+          </div>
+          
+        </div>
+      </div>
+      <div
+        class="v-action v-action-secondary v-checkbox-panel"
+        v-radio-panel=""
+      >
+        <div
+          class="v-input-container v-align-items-start v-flex v-flex-row"
+          v-input-container=""
+          valignitemsstart=""
+          vflex=""
+        >
+          <input
+            aria-describedby="panel-group-error-message-3"
+            aria-invalid="false"
+            class="v-radio"
+            id="panel-group-error-3"
+            name="panel-group-error"
+            required="required"
+            type="radio"
+            v-radio=""
+            value="panel-group-error-value-3"
+          />
+          <div
+            class="v-gap-2 v-flex v-flex-col v-my-8"
+            vflex=""
+            vflexcol=""
+            vgap="2"
+          >
+            <label
+              class="v-label"
+              for="panel-group-error-3"
+              id="a-v-label-3"
+              v-label=""
+            >
+              Label 3
+            </label>
+            <span
+              class="v-input-message"
+              id="panel-group-error-message-3"
+              v-input-message=""
+            >
+               This is optional text that describes the label in more detail 
+            </span>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <span
+      aria-atomic="true"
+      aria-live="assertive"
+      class="v-input-message"
+      id="panel-group-error-message"
+      v-input-message=""
+    >
+      
+    </span>
+  </fieldset>
+  <div
+    class="v-gap-16 v-flex v-flex-row"
+    vflex=""
+    vgap="16"
+  >
+    <button
+      class="v-button v-mt-12"
+      type="button"
+      v-button=""
+      vmt="12"
+    >
+      Submit
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary v-mt-12"
+      type="button"
+      v-button=""
+      vmt="12"
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Radio examples PanelRadioComponent should render correctly 1`] = `
+<div
+  id="root11"
+>
+  <div
+    class="v-action v-action-secondary v-checkbox-panel"
+    v-radio-panel=""
+  >
+    <div
+      class="v-input-container v-align-items-start v-flex v-flex-row"
+      v-input-container=""
+      valignitemsstart=""
+      vflex=""
+    >
+      <input
+        aria-describedby="radio-panel-message"
+        class="v-radio"
+        id="radio-panel-with-message"
+        name="radio-panel-with-message"
+        type="radio"
+        v-radio=""
+        value="1"
+      />
+      <div
+        class="v-gap-2 v-flex v-flex-col v-my-9"
+        vflex=""
+        vflexcol=""
+        vgap="2"
+      >
+        <label
+          class="v-label"
+          for="radio-panel-with-message"
+          id="a-v-label-0"
+          v-label=""
+        >
+          Label
+        </label>
+        <span
+          class="v-input-message"
+          id="radio-panel-message"
+          v-input-message=""
+        >
+           This is optional text that describes the label in more detail 
+        </span>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Radio examples PanelWithoutDescriptionRadioComponent should render correctly 1`] = `
+<div
+  id="root10"
+>
+  <div
+    class="v-action v-action-secondary v-checkbox-panel v-align-items-start v-flex v-flex-col"
+    v-radio-panel=""
+    valignitemsstart=""
+    vflex=""
+    vflexcol=""
+  >
+    <div
+      class="v-input-container"
+      v-input-container=""
+    >
+      <input
+        class="v-radio"
+        id="radio-panel-without-description"
+        name="radio-panel-without-description"
+        type="radio"
+        v-radio=""
+        value="radio-panel-without-description"
+      />
+      <label
+        class="v-label"
+        for="radio-panel-without-description"
+        id="a-v-label-0"
+        v-label=""
+      >
+        Label
+      </label>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Radio examples SelectedRadioComponent should render correctly 1`] = `
+<div
+  id="root12"
+>
+  <div
+    class="v-input-container"
+    v-input-container=""
+  >
+    <input
+      checked=""
+      class="v-radio"
+      id="radio-selected"
+      name="radio-selected"
+      type="radio"
+      v-radio=""
+      value="radio-selected"
+    />
+    <label
+      class="v-label"
+      for="radio-selected"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    
+  </div>
+</div>
+`;
+
+exports[`Radio examples TemplateDrivenFormRadioComponent should render correctly 1`] = `
+<div
+  id="root13"
+>
+  <form
+    class="ng-untouched ng-pristine ng-valid v-flex v-flex-col v-mt-16"
+    novalidate=""
+    vflex=""
+    vflexcol=""
+    vmt="16"
+  >
+    <fieldset
+      aria-labelledby="radio-template-group-label radio-template-error-message"
+    >
+      <legend
+        class="v-label v-typography-label"
+        id="radio-template-group-label"
+        v-label=""
+        vtypography="label"
+      >
+        Group label (required)
+      </legend>
+      <div
+        aria-required="true"
+        class="ng-untouched ng-pristine ng-valid v-flex v-flex-col"
+        name="radio-template"
+        required=""
+        role="radiogroup"
+        v-radio-group=""
+        vflex=""
+        vflexcol=""
+      >
+        <div
+          class="v-input-container"
+          v-input-container=""
+        >
+          <input
+            aria-invalid="false"
+            class="v-radio"
+            id="radio-template-group-1"
+            name="radio-template-group"
+            required="required"
+            type="radio"
+            v-radio=""
+            value="1"
+          />
+          <label
+            class="v-label"
+            for="radio-template-group-1"
+            id="a-v-label-1"
+            v-label=""
+          >
+            Label 1
+          </label>
+          
+        </div>
+        <div
+          class="v-input-container"
+          v-input-container=""
+        >
+          <input
+            aria-invalid="false"
+            class="v-radio"
+            id="radio-template-group-2"
+            name="radio-template-group"
+            required="required"
+            type="radio"
+            v-radio=""
+            value="2"
+          />
+          <label
+            class="v-label"
+            for="radio-template-group-2"
+            id="a-v-label-2"
+            v-label=""
+          >
+            Label 2
+          </label>
+          
+        </div>
+        <div
+          class="v-input-container"
+          v-input-container=""
+        >
+          <input
+            aria-invalid="false"
+            class="v-radio"
+            id="radio-template-group-3"
+            name="radio-template-group"
+            required="required"
+            type="radio"
+            v-radio=""
+            value="3"
+          />
+          <label
+            class="v-label"
+            for="radio-template-group-3"
+            id="a-v-label-3"
+            v-label=""
+          >
+            Label 3
+          </label>
+          
+        </div>
+        
+      </div>
+    </fieldset>
+    <span
+      aria-atomic="true"
+      aria-live="assertive"
+      class="v-input-message"
+      id="radio-error-message"
+      v-input-message=""
+    >
+      
+    </span>
+    <div
+      class="v-gap-16 v-flex v-flex-row v-mt-12"
+      vflex=""
+      vgap="16"
+      vmt="12"
+    >
+      <button
+        class="v-button"
+        type="submit"
+        v-button=""
+      >
+        Submit
+      </button>
+      <button
+        buttoncolor="secondary"
+        class="v-button v-button-secondary"
+        type="reset"
+        v-button=""
+      >
+         Reset 
+      </button>
+    </div>
+  </form>
+  <code>
+    templateFormValidation.value['radio-template']: undefined 
+  </code>
+</div>
+`;
+
+exports[`Radio examples WithDescriptionRadioComponent should render correctly 1`] = `
+<div
+  id="root14"
+>
+  <div
+    class="v-input-container v-align-items-start v-flex v-flex-row"
+    v-input-container=""
+    valignitemsstart=""
+    vflex=""
+  >
+    <input
+      aria-describedby="radio-panel-message-1"
+      class="v-radio"
+      id="radio-panel-with-message-1"
+      name="radio-panel-with-message"
+      type="radio"
+      v-radio=""
+      value="radio-panel-with-message-value-1"
+    />
+    <div
+      class="v-gap-2 v-flex v-flex-col v-my-8"
+      vflex=""
+      vflexcol=""
+      vgap="2"
+      vmy="8"
+    >
+      <label
+        class="v-label"
+        for="radio-panel-with-message-1"
+        id="a-v-label-0"
+        v-label=""
+      >
+        Label
+      </label>
+      <span
+        class="v-input-message"
+        id="radio-panel-message-1"
+        v-input-message=""
+      >
+         This is optional text that describes the label in more detail 
+      </span>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`Radio examples WithLabelRadioComponent should render correctly 1`] = `
+<div
+  id="root15"
+>
+  <div
+    class="v-input-container"
+    v-input-container=""
+  >
+    <input
+      class="v-radio"
+      id="radio-with-label"
+      name="radio-with-label"
+      type="radio"
+      v-radio=""
+      value="radio-with-label"
+    />
+    <label
+      class="v-label"
+      for="radio-with-label"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    
+  </div>
+</div>
+`;
+
+exports[`Radio examples WithoutVisibleLabelRadioComponent should render correctly 1`] = `
+<div
+  id="root16"
+>
+  <input
+    aria-label="Radio button without visible label"
+    class="v-radio"
+    id="radio-standalone"
+    type="radio"
+    v-radio=""
+    value="radio-standalone-value"
+  />
+</div>
+`;

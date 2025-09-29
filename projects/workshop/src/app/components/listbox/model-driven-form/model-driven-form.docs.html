@@ -1,0 +1,76 @@
+<!--
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<form [formGroup]="formValidation" vFlex vFlexCol vGap="16">
+  <div>
+    <label id="model-form-singleselect-label" for="model-form-singleselect" v-label>Label (required)</label>
+    <div
+      v-listbox-container
+      id="model-form-singleselect"
+      aria-labelledby="model-form-singleselect-label"
+      aria-describedby="model-form-singleselect-message"
+    >
+      <ul
+        v-listbox
+        containHeight
+        [formControl]="ssFormControl"
+        [invalid]="isSubmitted && formValidation.controls['ssFormControl'].invalid"
+      >
+        @for(item of singleSelectItems; track item.value) {
+        <li v-listbox-item [value]="item.value">{{ item.label }}</li>
+        }
+      </ul>
+    </div>
+    <span v-input-message role="alert" aria-live="polite" id="model-form-singleselect-message">
+      @if (isSubmitted && formValidation.controls['ssFormControl'].invalid) {
+
+      <svg v-icon-visa-error-tiny />Error: Please fill out field }
+    </span>
+  </div>
+  <div>
+    <label id="model-form-multiselect-label" for="model-form-multiselect" v-label>Label (required)</label>
+    <div
+      v-listbox-container
+      id="model-form-multiselect"
+      aria-labelledby="model-form-multiselect-label"
+      aria-describedby="model-form-multiselect-message"
+    >
+      <ul
+        v-listbox
+        containHeight
+        multiselect
+        [formControl]="msFormControl"
+        [invalid]="isSubmitted && formValidation.controls['msFormControl'].invalid"
+      >
+        @for(item of multiselectItems; track item.value) {
+        <li v-listbox-item [value]="item.value">{{ item.label }}</li>
+        }
+      </ul>
+    </div>
+    <span v-input-message aria-live="assertive" aria-atomic="true" id="model-form-multiselect-message">
+      @if (isSubmitted && formValidation.controls['msFormControl'].invalid) {
+      <svg v-icon-visa-error-tiny />Error: Please fill out field }
+    </span>
+  </div>
+  <div vMT="8" vFlex vGap="16">
+    <button v-button type="submit" (click)="onSubmit()">Submit</button>
+    <button v-button buttonColor="secondary" type="reset" (click)="onReset()">Reset</button>
+  </div>
+</form>
+
+<!-- For demo purposes: -->
+<code>{{'ssFormControl: [ ' + singleSelectDisplay() + ' ]'}}</code>
+<code>{{'msFormControl: [ ' + multiSelectDisplay() + ' ]'}}</code>

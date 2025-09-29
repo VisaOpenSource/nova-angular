@@ -1,4 +1,1 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-pnpm test && pnpm lib:build && pnpm docs:build;
+pnpm build:lib && pnpm build:docs && pnpm test;

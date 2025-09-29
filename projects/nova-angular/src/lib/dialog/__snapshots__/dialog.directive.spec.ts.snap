@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DialogDirective should allow child element 1`] = `
+<div
+  id="root2"
+>
+  <dialog
+    aria-describedby="a-v-dialog-2-description"
+    aria-labelledby="a-v-dialog-2-title"
+    aria-modal="true"
+    class="v-dialog v-dialog-default"
+    id="a-v-dialog-2"
+    role="dialog"
+    v-dialog=""
+  >
+    <p>
+      Hello
+    </p>
+  </dialog>
+</div>
+`;

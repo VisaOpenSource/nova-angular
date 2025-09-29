@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectDirective form integration should render defaults correctly 1`] = `
+<div
+  id="root4"
+>
+  <select
+    class="v-input"
+    ngmodel=""
+    v-select=""
+  />
+</div>
+`;
+
+exports[`SelectDirective should render defaults correctly 1`] = `
+<div
+  id="root0"
+>
+  <select
+    class="v-input"
+    v-select=""
+  />
+</div>
+`;

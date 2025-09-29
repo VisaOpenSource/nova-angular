@@ -1,0 +1,319 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Anchor link menu examples snapshots NovaDefaultAnchorLinkMenuComponent should render correctly 1`] = `
+<div
+  id="root2"
+>
+  <aside
+    aria-label="default anchor link menu"
+    class="v-anchor-link-menu"
+    v-anchor-link-menu=""
+  >
+    <section
+      style="position: sticky; top: var(--size-scalable-10);"
+    >
+      <div
+        class="v-anchor-link-menu-header"
+        v-anchor-link-menu-header=""
+      >
+        <h2
+          class="v-typography-overline"
+          vtypography="overline"
+        >
+          Section title
+        </h2>
+      </div>
+      <ul>
+        <li>
+          <a
+            aria-current="true"
+            class="v-link"
+            href="/"
+            id="header-1-link"
+            v-link=""
+          >
+             L1 label 1 
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="/"
+            id="header-2-link"
+            v-link=""
+          >
+             L1 label 2 
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="/"
+            id="header-3-link"
+            v-link=""
+          >
+             L1 label 3 
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="/"
+            id="header-4-link"
+            v-link=""
+          >
+             L1 label 4 
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="/"
+            id="header-5-link"
+            v-link=""
+          >
+             L1 label 5 
+          </a>
+        </li>
+      </ul>
+    </section>
+  </aside>
+</div>
+`;
+
+exports[`Anchor link menu examples snapshots NovaDefaultNestedAnchorLinkMenuComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <aside
+    aria-label="Anchor link menu with nested items"
+    class="v-anchor-link-menu"
+    v-anchor-link-menu=""
+  >
+    <section
+      style="position: sticky; top: var(--size-scalable-10);"
+    >
+      <div
+        class="v-anchor-link-menu-header"
+        v-anchor-link-menu-header=""
+      >
+        <h2
+          class="v-typography-overline"
+          vtypography="overline"
+        >
+          Section title
+        </h2>
+      </div>
+      <ul>
+        <li>
+          <a
+            aria-current="true"
+            class="v-link"
+            href="/"
+            id="header-1-nested"
+            v-link=""
+          >
+             L1 label 1 
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="/"
+            id="header-2-nested"
+            v-link=""
+          >
+             L1 label 2 
+          </a>
+          <ul>
+            <li>
+              <a
+                class="v-link"
+                href="/"
+                id="header-2.1-nested"
+                v-link=""
+              >
+                 L2 label 1 
+              </a>
+            </li>
+            <li>
+              <a
+                class="v-link"
+                href="/"
+                id="header-2.2-nested"
+                v-link=""
+              >
+                 L2 label 2 
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="/"
+            id="header-3-nested"
+            v-link=""
+          >
+             L1 label 3 
+          </a>
+        </li>
+      </ul>
+    </section>
+  </aside>
+</div>
+`;
+
+exports[`Anchor link menu examples snapshots NovaDefaultNoTitleAnchorLinkMenuComponent should render correctly 1`] = `
+<div
+  id="root1"
+>
+  <aside
+    aria-label="Anchor link menu without section title"
+    class="v-anchor-link-menu"
+    v-anchor-link-menu=""
+  >
+    <section
+      style="position: sticky; top: var(--size-scalable-10);"
+    >
+      <ul>
+        <li>
+          <a
+            aria-current="true"
+            class="v-link"
+            href="/"
+            id="header-1-no-title"
+            v-link=""
+          >
+             L1 label 1 
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="/"
+            id="header-2-no-title"
+            v-link=""
+          >
+             L1 label 2 
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="/"
+            id="header-3-no-title"
+            v-link=""
+          >
+             L1 label 3 
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="/"
+            id="header-4-no-title"
+            v-link=""
+          >
+             L1 label 4 
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="/"
+            id="header-5-no-title"
+            v-link=""
+          >
+             L1 label 5 
+          </a>
+        </li>
+      </ul>
+    </section>
+  </aside>
+</div>
+`;
+
+exports[`Anchor link menu examples snapshots NovaRightToLeftAnchorLinkMenuComponent should render correctly 1`] = `
+<div
+  id="root3"
+>
+  <aside
+    aria-label="Right to left anchor link menu"
+    class="v-anchor-link-menu"
+    dir="rtl"
+    v-anchor-link-menu=""
+  >
+    <section
+      style="position: sticky; top: var(--size-scalable-10);"
+    >
+      <div
+        class="v-anchor-link-menu-header"
+        v-anchor-link-menu-header=""
+      >
+        <h2
+          class="v-typography-overline"
+          vtypography="overline"
+        >
+          Section title
+        </h2>
+      </div>
+      <ul>
+        <li>
+          <a
+            aria-current="true"
+            class="v-link"
+            href="/"
+            id="header-1-rtl"
+            v-link=""
+          >
+             L1 label 1 
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="/"
+            id="header-2-rtl"
+            v-link=""
+          >
+             L1 label 2 
+          </a>
+          <ul>
+            <li>
+              <a
+                class="v-link"
+                href="/"
+                id="header-2.1-rtl"
+                v-link=""
+              >
+                 L2 label 1 
+              </a>
+            </li>
+            <li>
+              <a
+                class="v-link"
+                href="/"
+                id="header-2.2-rtl"
+                v-link=""
+              >
+                 L2 label 2 
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a
+            class="v-link"
+            href="/"
+            id="header-3-rtl"
+            v-link=""
+          >
+             L1 label 3 
+          </a>
+        </li>
+      </ul>
+    </section>
+  </aside>
+</div>
+`;

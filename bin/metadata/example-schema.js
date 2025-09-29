@@ -32,6 +32,9 @@
  * | url          | URL path. Assumes domain name and any versioned directory. | false    | String    |
  */
 
+const fs = require('fs');
+const path = require('path');
+
 const componentID = () => {
   return null;
 };
@@ -54,6 +57,27 @@ const libraryID = () => {
 const exampleSnippets = (example) => {
   const html = example.templateData;
   const ts = example.sourceCode;
+  const styles = example.styleUrlsData;
+  const isPattern = example.file.includes('/patterns/');
+  // If this is a pattern, adjust path to include the pattern directory
+  if (isPattern) {
+    const pathParts = example.file.split('/');
+    const startIndex = pathParts.findIndex((part) => part === 'patterns');
+    const patternPath = pathParts.slice(startIndex, -1).join('/');
+    const filename = pathParts[pathParts.length - 1];
+    const css = Object.fromEntries(
+      (Array.isArray(styles) ? styles : []).map((style) => [
+        `${patternPath}/${style.styleUrl.replace('./', '')}`,
+        style.data
+      ])
+    );
+    return {
+      [`${patternPath}/${filename}`]: ts,
+      [`${patternPath}/${filename.replace('.ts', '.html')}`]: html,
+      ...css
+    };
+  }
+
   return {
     html,
     ts
@@ -101,8 +125,48 @@ const createExampleObject = (contentExample, sectionName, docsJsonExample) => {
     section: sectionName,
     snippets: exampleSnippets(docsJsonExample),
     tags: exampleTags(docsJsonExample),
-    url: exampleUrl(docsJsonExample)
+    url: {
+      iframe: exampleUrl(docsJsonExample),
+      github: `projects/workshop/src/app/` + exampleUrl(docsJsonExample)
+    }
   };
+};
+
+/**
+ * Get shared examples for patterns
+ */
+const getSharedExamples = (patternName, _section, docsData) => {
+  const examples = [];
+  const sharedPath = path.join(process.cwd(), 'projects/workshop/src/app/patterns', patternName, 'shared');
+
+  if (!fs.existsSync(sharedPath)) return examples;
+
+  const sharedDirs = fs
+    .readdirSync(sharedPath, { withFileTypes: true })
+    .filter((dirent) => dirent.isDirectory())
+    .map((dirent) => dirent.name);
+
+  sharedDirs.forEach((dir) => {
+    const sharedExample = docsData.find((example) => example.file.includes(`patterns/${patternName}/shared/${dir}`));
+    if (sharedExample) {
+      examples.push(
+        createExampleObject(
+          {
+            name: dir
+              .split('-')
+              .map((word, i) => (i === 0 ? word.charAt(0).toUpperCase() + word.slice(1) : word))
+              .join(' '),
+            description: '',
+            order: 0
+          },
+          'Shared components',
+          sharedExample
+        )
+      );
+    }
+  });
+
+  return examples;
 };
 
 const getExamples = (name, docsData, examplesData) => {
@@ -114,7 +178,16 @@ const getExamples = (name, docsData, examplesData) => {
         const docsJsonExample = docsData.find((example) => example.selector === contentExample.selector.trim());
         if (docsJsonExample) {
           const example = createExampleObject(contentExample, section.name, docsJsonExample);
-          if (example) examples.push(example);
+          if (example) {
+            examples.push(example);
+            // If this is a pattern, add its shared components to the examples array
+            if (docsJsonExample.file.includes('/patterns/')) {
+              const pathParts = docsJsonExample.file.split('/');
+              const patternIndex = pathParts.findIndex((part) => part === 'patterns');
+              const patternName = pathParts[patternIndex + 1];
+              examples.push(...getSharedExamples(patternName, section.name, docsData));
+            }
+          }
         }
       });
     });

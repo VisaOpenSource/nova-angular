@@ -1,0 +1,2722 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table examples CompactPaddingBandedRowsTableComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <table
+    class="v-table v-table-alt"
+    style="--v-table-data-block-default: var(--v-table-data-block-small); --v-table-data-padding-block-default: var(--v-table-data-padding-block-small);"
+    tablesize="compact"
+    v-table=""
+  >
+    <caption
+      class="v-sr"
+      vsr=""
+    >
+       Table with compact padding and banded rows. 
+    </caption>
+    <thead>
+      <tr
+        v-tr=""
+      >
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column A
+        </th>
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column B
+        </th>
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column C
+        </th>
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column D
+        </th>
+        
+      </tr>
+    </thead>
+    <tbody
+      v-tbody=""
+    >
+      <tr
+        v-tr=""
+      >
+        <td
+          class="v-td"
+          v-td=""
+        >
+          A1
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          B1
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          C1
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          D1
+        </td>
+      </tr>
+      <tr
+        v-tr=""
+      >
+        <td
+          class="v-td"
+          v-td=""
+        >
+          A2
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          B2
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          C2
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          D2
+        </td>
+      </tr>
+      <tr
+        v-tr=""
+      >
+        <td
+          class="v-td"
+          v-td=""
+        >
+          A3
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          B3
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          C3
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          D3
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Table examples FixedFirstColumnComponent should render correctly 1`] = `
+<div
+  id="root1"
+>
+  <div
+    class="v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+  >
+    <div
+      class="v-gap-10 v-flex v-flex-row v-flex-wrap v-m-8"
+      vflex=""
+      vflexwrap=""
+      vgap="10"
+      vm="8"
+    >
+      <label
+        class="v-label v-switch-label"
+        for="alternate-switch"
+        id="a-v-label-0"
+        v-label=""
+        v-switch-label=""
+      >
+        Banded rows
+      </label>
+      <input
+        class="v-switch"
+        id="alternate-switch"
+        name="alternate-switch"
+        role="switch"
+        type="checkbox"
+        v-switch=""
+      />
+    </div>
+    <div
+      class="v-table-wrapper"
+      style="--v-table-wrapper-block-size: unset; --v-table-wrapper-inline-size: unset;"
+      tabindex="0"
+      v-table-wrapper=""
+    >
+      <table
+        class="v-table fixed-table fixed-column-standard v-table-border-block"
+        style="--v-table-data-block-default: var(--v-table-data-block-large); --v-table-data-padding-block-default: var(--v-table-data-padding-block-large);"
+        tablesize="large"
+        v-table=""
+      >
+        <caption
+          class="v-sr"
+          vsr=""
+        >
+           Table with fixed first column. Dummy data displayed with the title in the first column and related data in the subsequent columns. 
+        </caption>
+        <thead>
+          <tr
+            v-tr=""
+          >
+            <th
+              class="v-th"
+              scope="col"
+              v-th=""
+            >
+              Column A
+            </th>
+            <th
+              class="v-th"
+              scope="col"
+              v-th=""
+            >
+              Column B
+            </th>
+            <th
+              class="v-th"
+              scope="col"
+              v-th=""
+            >
+              Column C
+            </th>
+            <th
+              class="v-th"
+              scope="col"
+              v-th=""
+            >
+              Column D
+            </th>
+            <th
+              class="v-th"
+              scope="col"
+              v-th=""
+            >
+              Column E
+            </th>
+            <th
+              class="v-th"
+              scope="col"
+              v-th=""
+            >
+              Column F
+            </th>
+            <th
+              class="v-th"
+              scope="col"
+              v-th=""
+            >
+              Column G
+            </th>
+            <th
+              class="v-th"
+              scope="col"
+              v-th=""
+            >
+              Column H
+            </th>
+            <th
+              class="v-th"
+              scope="col"
+              v-th=""
+            >
+              Column I
+            </th>
+            <th
+              class="v-th"
+              scope="col"
+              v-th=""
+            >
+              Column J
+            </th>
+            <th
+              class="v-th"
+              scope="col"
+              v-th=""
+            >
+              Column K
+            </th>
+            <th
+              class="v-th"
+              scope="col"
+              v-th=""
+            >
+              Column L
+            </th>
+            <th
+              class="v-th"
+              scope="col"
+              v-th=""
+            >
+              Column M
+            </th>
+            <th
+              class="v-th"
+              scope="col"
+              v-th=""
+            >
+              Column N
+            </th>
+            
+          </tr>
+        </thead>
+        <tbody
+          v-tbody=""
+        >
+          <tr
+            v-tr=""
+          >
+            <th
+              class="v-td"
+              scope="row"
+              v-td=""
+            >
+              A1
+            </th>
+            
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              B1
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              C1
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              D1
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              E1
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              F1
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              G1
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              H1
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              I1
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              J1
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              K1
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              L1
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              M1
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              N1
+            </td>
+            
+            
+          </tr>
+          <tr
+            v-tr=""
+          >
+            <th
+              class="v-td"
+              scope="row"
+              v-td=""
+            >
+              A2
+            </th>
+            
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              B2
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              C2
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              D2
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              E2
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              F2
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              G2
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              H2
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              I2
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              J2
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              K2
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              L2
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              M2
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              N2
+            </td>
+            
+            
+          </tr>
+          <tr
+            v-tr=""
+          >
+            <th
+              class="v-td"
+              scope="row"
+              v-td=""
+            >
+              A3
+            </th>
+            
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              B3
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              C3
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              D3
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              E3
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              F3
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              G3
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              H3
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              I3
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              J3
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              K3
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              L3
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              M3
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              N3
+            </td>
+            
+            
+          </tr>
+          <tr
+            v-tr=""
+          >
+            <th
+              class="v-td"
+              scope="row"
+              v-td=""
+            >
+              A4
+            </th>
+            
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              B4
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              C4
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              D4
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              E4
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              F4
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              G4
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              H4
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              I4
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              J4
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              K4
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              L4
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              M4
+            </td>
+            
+            
+            <td
+              class="v-td"
+              v-td=""
+            >
+              N4
+            </td>
+            
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Table examples GroupHeadersTableComponent should render correctly 1`] = `
+<div
+  id="root3"
+>
+  <table
+    class="v-table v-table-border"
+    v-table=""
+  >
+    <caption
+      class="v-sr"
+      vsr=""
+    >
+       Table with group headers. 
+    </caption>
+    <thead>
+      <tr
+        v-tr=""
+      >
+        <th
+          class="v-th v-th-alt v-typography-overline"
+          colspan="2"
+          scope="col"
+          v-th=""
+        >
+          Group header 1
+        </th>
+        <th
+          class="v-th v-th-alt v-typography-overline"
+          colspan="2"
+          scope="col"
+          v-th=""
+        >
+          Group header 2
+        </th>
+      </tr>
+      <tr
+        v-tr=""
+      >
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column A
+        </th>
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column B
+        </th>
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column C
+        </th>
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column D
+        </th>
+        
+      </tr>
+    </thead>
+    <tbody
+      v-tbody=""
+    >
+      <tr
+        v-tr=""
+      >
+        <td
+          class="v-td"
+          v-td=""
+        >
+          A1
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          B1
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          C1
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          D1
+        </td>
+      </tr>
+      <tr
+        v-tr=""
+      >
+        <td
+          class="v-td"
+          v-td=""
+        >
+          A2
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          B2
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          C2
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          D2
+        </td>
+      </tr>
+      <tr
+        v-tr=""
+      >
+        <td
+          class="v-td"
+          v-td=""
+        >
+          A3
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          B3
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          C3
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          D3
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Table examples GroupHeadersWithEmptyCellTableComponent should render correctly 1`] = `
+<div
+  id="root2"
+>
+  <table
+    class="v-table v-table-border"
+    v-table=""
+  >
+    <caption
+      class="v-sr"
+      vsr=""
+    >
+       Table with group headers and empty cell. 
+    </caption>
+    <thead>
+      <tr
+        v-tr=""
+      >
+        <th />
+        <th
+          class="v-th v-th-alt v-typography-overline"
+          scope="col"
+          v-th=""
+        >
+          Group header 1
+        </th>
+        <th
+          class="v-th v-th-alt v-typography-overline"
+          scope="col"
+          v-th=""
+        >
+          Group header 2
+        </th>
+      </tr>
+      <tr
+        v-tr=""
+      >
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column A
+        </th>
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column B
+        </th>
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column C
+        </th>
+        
+      </tr>
+    </thead>
+    <tbody
+      v-tbody=""
+    >
+      <tr
+        v-tr=""
+      >
+        <td
+          class="v-td"
+          v-td=""
+        >
+          A1
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          B1
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          C1
+        </td>
+      </tr>
+      <tr
+        v-tr=""
+      >
+        <td
+          class="v-td"
+          v-td=""
+        >
+          A2
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          B2
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          C2
+        </td>
+      </tr>
+      <tr
+        v-tr=""
+      >
+        <td
+          class="v-td"
+          v-td=""
+        >
+          A3
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          B3
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          C3
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Table examples KeyValueTableBandedTableComponent should render correctly 1`] = `
+<div
+  id="root4"
+>
+  <table
+    class="v-table v-table-alt v-table-key-value"
+    tablesize="medium"
+    v-table=""
+  >
+    <caption
+      class="v-sr"
+      vsr=""
+    >
+       Table with banded key-value pairs. 
+    </caption>
+    <tbody
+      v-tbody=""
+    >
+      <tr
+        v-tr=""
+      >
+        <th
+          class="v-td"
+          scope="row"
+          v-th=""
+        >
+          Key 1
+        </th>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          Value 1
+        </td>
+      </tr>
+      <tr
+        v-tr=""
+      >
+        <th
+          class="v-td"
+          scope="row"
+          v-th=""
+        >
+          Key 2
+        </th>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          Value 2
+        </td>
+      </tr>
+      <tr
+        v-tr=""
+      >
+        <th
+          class="v-td"
+          scope="row"
+          v-th=""
+        >
+          Key 3
+        </th>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          Value 3
+        </td>
+      </tr>
+      <tr
+        v-tr=""
+      >
+        <th
+          class="v-td"
+          scope="row"
+          v-th=""
+        >
+          Key 4
+        </th>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          Value 4
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Table examples KeyValueTableLinedTableComponent should render correctly 1`] = `
+<div
+  id="root5"
+>
+  <div
+    class="v-table-wrapper"
+    style="--v-table-wrapper-block-size: unset; --v-table-wrapper-inline-size: unset;"
+    v-table-wrapper=""
+  >
+    <table
+      class="v-table v-table-border v-table-key-value"
+      tablesize="medium"
+      v-table=""
+    >
+      <caption
+        class="v-sr"
+        vsr=""
+      >
+         Table with lined key-value pairs. 
+      </caption>
+      <tbody
+        v-tbody=""
+      >
+        <tr
+          v-tr=""
+        >
+          <th
+            class="v-td"
+            scope="row"
+            v-th=""
+          >
+            Key 1
+          </th>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            Value 1
+          </td>
+        </tr>
+        <tr
+          v-tr=""
+        >
+          <th
+            class="v-td"
+            scope="row"
+            v-th=""
+          >
+            Key 2
+          </th>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            Value 2
+          </td>
+        </tr>
+        <tr
+          v-tr=""
+        >
+          <th
+            class="v-td"
+            scope="row"
+            v-th=""
+          >
+            Key 3
+          </th>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            Value 3
+          </td>
+        </tr>
+        <tr
+          v-tr=""
+        >
+          <th
+            class="v-td"
+            scope="row"
+            v-th=""
+          >
+            Key 4
+          </th>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            Value 4
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Table examples LargePaddingBandedRowsTableComponent should render correctly 1`] = `
+<div
+  id="root6"
+>
+  <table
+    class="v-table v-table-alt"
+    style="--v-table-data-block-default: var(--v-table-data-block-large); --v-table-data-padding-block-default: var(--v-table-data-padding-block-large);"
+    tablesize="large"
+    v-table=""
+  >
+    <caption
+      class="v-sr"
+      vsr=""
+    >
+       Table with large padding and banded rows. 
+    </caption>
+    <thead>
+      <tr
+        v-tr=""
+      >
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column A
+        </th>
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column B
+        </th>
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column C
+        </th>
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column D
+        </th>
+        
+      </tr>
+    </thead>
+    <tbody
+      v-tbody=""
+    >
+      <tr
+        v-tr=""
+      >
+        <td
+          class="v-td"
+          v-td=""
+        >
+          A1
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          B1
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          C1
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          D1
+        </td>
+      </tr>
+      <tr
+        v-tr=""
+      >
+        <td
+          class="v-td"
+          v-td=""
+        >
+          A2
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          B2
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          C2
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          D2
+        </td>
+      </tr>
+      <tr
+        v-tr=""
+      >
+        <td
+          class="v-td"
+          v-td=""
+        >
+          A3
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          B3
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          C3
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          D3
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Table examples LinedRowsTableComponent should render correctly 1`] = `
+<div
+  id="root7"
+>
+  <table
+    class="v-table v-table-border-block"
+    v-table=""
+  >
+    <caption
+      class="v-sr"
+      vsr=""
+    >
+       Table with lined rows. 
+    </caption>
+    <thead>
+      <tr
+        v-tr=""
+      >
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column A
+        </th>
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column B
+        </th>
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column C
+        </th>
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column D
+        </th>
+        
+      </tr>
+    </thead>
+    <tbody
+      v-tbody=""
+    >
+      <tr
+        v-tr=""
+      >
+        <td
+          class="v-td"
+          v-td=""
+        >
+          A1
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          B1
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          C1
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          D1
+        </td>
+      </tr>
+      <tr
+        v-tr=""
+      >
+        <td
+          class="v-td"
+          v-td=""
+        >
+          A2
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          B2
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          C2
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          D2
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Table examples MediumPaddingBandedRowsTableComponent should render correctly 1`] = `
+<div
+  id="root8"
+>
+  <table
+    class="v-table v-table-alt"
+    tablesize="medium"
+    v-table=""
+  >
+    <caption
+      class="v-sr"
+      vsr=""
+    >
+       Table with medium padding and banded rows. 
+    </caption>
+    <thead>
+      <tr
+        v-tr=""
+      >
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column A
+        </th>
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column B
+        </th>
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column C
+        </th>
+        <th
+          class="v-th"
+          scope="col"
+          v-th=""
+        >
+          Column D
+        </th>
+        
+      </tr>
+    </thead>
+    <tbody
+      v-tbody=""
+    >
+      <tr
+        v-tr=""
+      >
+        <td
+          class="v-td"
+          v-td=""
+        >
+          A1
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          B1
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          C1
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          D1
+        </td>
+      </tr>
+      <tr
+        v-tr=""
+      >
+        <td
+          class="v-td"
+          v-td=""
+        >
+          A2
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          B2
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          C2
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          D2
+        </td>
+      </tr>
+      <tr
+        v-tr=""
+      >
+        <td
+          class="v-td"
+          v-td=""
+        >
+          A3
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          B3
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          C3
+        </td>
+        <td
+          class="v-td"
+          v-td=""
+        >
+          D3
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Table examples OuterBorderColumnAndRowDividersTableComponent should render correctly 1`] = `
+<div
+  id="root9"
+>
+  <div
+    class="v-table-wrapper"
+    style="--v-table-wrapper-block-size: unset; --v-table-wrapper-inline-size: unset;"
+    v-table-wrapper=""
+  >
+    <table
+      class="v-table v-table-border"
+      v-table=""
+    >
+      <caption
+        class="v-sr"
+        vsr=""
+      >
+         Table with outer borders on columns and row dividers. 
+      </caption>
+      <thead>
+        <tr
+          v-tr=""
+        >
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column A
+          </th>
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column B
+          </th>
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column C
+          </th>
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column D
+          </th>
+          
+        </tr>
+      </thead>
+      <tbody
+        v-tbody=""
+      >
+        <tr
+          v-tr=""
+        >
+          <td
+            class="v-td"
+            v-td=""
+          >
+            A1
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            B1
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            C1
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            D1
+          </td>
+        </tr>
+        <tr
+          v-tr=""
+        >
+          <td
+            class="v-td"
+            v-td=""
+          >
+            A2
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            B2
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            C2
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            D2
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Table examples OuterBorderSubtleHeadersTableComponent should render correctly 1`] = `
+<div
+  id="root10"
+>
+  <div
+    class="v-table-wrapper"
+    style="--v-table-wrapper-block-size: unset; --v-table-wrapper-inline-size: unset;"
+    v-table-wrapper=""
+  >
+    <table
+      class="v-table v-table-border v-table-subtle"
+      v-table=""
+    >
+      <caption
+        class="v-sr"
+        vsr=""
+      >
+         Table with outer borders and subtle headers. 
+      </caption>
+      <thead>
+        <tr
+          v-tr=""
+        >
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column A
+          </th>
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column B
+          </th>
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column C
+          </th>
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column D
+          </th>
+          
+        </tr>
+      </thead>
+      <tbody
+        v-tbody=""
+      >
+        <tr
+          v-tr=""
+        >
+          <td
+            class="v-td"
+            v-td=""
+          >
+            A1
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            B1
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            C1
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            D1
+          </td>
+        </tr>
+        <tr
+          v-tr=""
+        >
+          <td
+            class="v-td"
+            v-td=""
+          >
+            A2
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            B2
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            C2
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            D2
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Table examples ScrollTableComponent should render correctly 1`] = `
+<div
+  id="root11"
+>
+  <div
+    class="v-table-wrapper"
+    scrollblocksize="298"
+    scrollinlinesize="601"
+    style="--v-table-wrapper-block-size: 298px; --v-table-wrapper-inline-size: 601px;"
+    tabindex="0"
+    v-table-wrapper=""
+  >
+    <table
+      class="v-table v-table-alt"
+      tablesize="medium"
+      v-table=""
+    >
+      <caption
+        class="v-sr"
+        vsr=""
+      >
+         Table with extra data added to demo scrollable content. 
+      </caption>
+      <thead>
+        <tr
+          v-tr=""
+        >
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column A
+          </th>
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column B
+          </th>
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column C
+          </th>
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column D
+          </th>
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column E
+          </th>
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column F
+          </th>
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column G
+          </th>
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column H
+          </th>
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column I
+          </th>
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column J
+          </th>
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column K
+          </th>
+          <th
+            class="v-th"
+            scope="col"
+            v-th=""
+          >
+            Column L
+          </th>
+          
+        </tr>
+      </thead>
+      <tbody
+        v-tbody=""
+      >
+        <tr
+          v-tr=""
+        >
+          <td
+            class="v-td"
+            v-td=""
+          >
+            A1
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            B1
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            C1
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            D1
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            E1
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            F1
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            G1
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            H1
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            I1
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            J1
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            K1
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            L1
+          </td>
+        </tr>
+        <tr
+          v-tr=""
+        >
+          <td
+            class="v-td"
+            v-td=""
+          >
+            A2
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            B2
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            C2
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            D2
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            E2
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            F2
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            G2
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            H2
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            I2
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            J2
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            K2
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            L2
+          </td>
+        </tr>
+        <tr
+          v-tr=""
+        >
+          <td
+            class="v-td"
+            v-td=""
+          >
+            A3
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            B3
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            C3
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            D3
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            E3
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            F3
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            G3
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            H3
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            I3
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            J3
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            K3
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            L3
+          </td>
+        </tr>
+        <tr
+          v-tr=""
+        >
+          <td
+            class="v-td"
+            v-td=""
+          >
+            A4
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            B4
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            C4
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            D4
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            E4
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            F4
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            G4
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            H4
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            I4
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            J4
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            K4
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            L4
+          </td>
+        </tr>
+        <tr
+          v-tr=""
+        >
+          <td
+            class="v-td"
+            v-td=""
+          >
+            A5
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            B5
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            C5
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            D5
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            E5
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            F5
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            G5
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            H5
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            I5
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            J5
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            K5
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            L5
+          </td>
+        </tr>
+        <tr
+          v-tr=""
+        >
+          <td
+            class="v-td"
+            v-td=""
+          >
+            A6
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            B6
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            C6
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            D6
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            E6
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            F6
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            G6
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            H6
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            I6
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            J6
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            K6
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            L6
+          </td>
+        </tr>
+        <tr
+          v-tr=""
+        >
+          <td
+            class="v-td"
+            v-td=""
+          >
+            A7
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            B7
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            C7
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            D7
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            E7
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            F7
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            G7
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            H7
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            I7
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            J7
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            K7
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            L7
+          </td>
+        </tr>
+        <tr
+          v-tr=""
+        >
+          <td
+            class="v-td"
+            v-td=""
+          >
+            A8
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            B8
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            C8
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            D8
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            E8
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            F8
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            G8
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            H8
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            I8
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            J8
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            K8
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            L8
+          </td>
+        </tr>
+        <tr
+          v-tr=""
+        >
+          <td
+            class="v-td"
+            v-td=""
+          >
+            A9
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            B9
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            C9
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            D9
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            E9
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            F9
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            G9
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            H9
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            I9
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            J9
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            K9
+          </td>
+          <td
+            class="v-td"
+            v-td=""
+          >
+            L9
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

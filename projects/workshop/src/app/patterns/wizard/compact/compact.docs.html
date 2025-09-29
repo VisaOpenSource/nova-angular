@@ -1,0 +1,295 @@
+<!--
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div
+  vFlex
+  vFlexCol
+  vGap="40"
+  vAlignItemsCenter
+  style="container-type: inline-size"
+>
+  @if (!showSuccess()) { @if (showFlag()) {
+  <nova-workshop-wizard-shared-save-flag
+    (closeFlag)="showFlag.set(false)"
+    vAlignSelfEnd
+  />
+  }
+  <nav
+    aria-label="wizard for compact example-desktop"
+    vContainerHide="mobile"
+    style="inline-size: 100%"
+  >
+    <ol v-wizard class="v-justify-content-center">
+      <ng-template
+        [ngTemplateOutlet]="wizardSteps"
+        [ngTemplateOutletContext]="{ steps: steps, isMobile: false }"
+      />
+    </ol>
+  </nav>
+  <nav
+    aria-label="wizard for compact example-mobile"
+    vContainerHide="desktop"
+    style="inline-size: 100%"
+  >
+    <ol v-wizard compact class="v-justify-content-center">
+      <ng-template
+        [ngTemplateOutlet]="wizardSteps"
+        [ngTemplateOutletContext]="{ steps: steps, isMobile: true }"
+      />
+    </ol>
+  </nav>
+  @if (currentStep() === steps.length - 1) {
+  <div
+    vFlex
+    vFlexCol
+    vAlignSelfCenter
+    style="max-inline-size: 603px; inline-size: 100%"
+  >
+    <div
+      v-content-card
+      vAlignSelfCenter
+      vFlex
+      vGap="32"
+      vJustifyContentCenter
+      vP="48"
+      style="box-shadow: none; inline-size: 100%"
+    >
+      <nova-workshop-wizard-shared-summary-page
+        [steps]="steps"
+        (edit)="goTo($event)"
+        style="inline-size: 100%"
+      />
+    </div>
+    <p vTypography="body-3" vMT="10">Changes have been automatically saved.</p>
+    <ng-template [ngTemplateOutlet]="actions" />
+  </div>
+  } @else {
+  <form style="max-inline-size: 603px; inline-size: 100%">
+    <div
+      v-content-card
+      vFlex
+      vFlexCol
+      vGap="24"
+      vP="48"
+      style="box-shadow: none"
+    >
+      @for (step of steps; track step.id; let i = $index) {
+      <div
+        vFlex
+        vFlexCol
+        [vGap]="step.invalid ? '16' : '8'"
+        [vHide]="!(i === currentStep())"
+      >
+        <span vTypography="headline-2" [vHide]="!(i === currentStep())"
+          >{{ step.stepLabel }}</span
+        >
+        @if (step.invalid && step.showErrorMessage) {
+        <div v-section v-message messageType="error" id="section-error-compact">
+          <svg
+            v-message-icon
+            v-icon-visa-error-low
+            aria-hidden="false"
+            aria-label="Error"
+            role="img"
+          />
+          <div v-message-content vPL="2" vPB="2">
+            <p>
+              One or more required fields are missing. Complete all required
+              fields to continue.
+            </p>
+          </div>
+          <button
+            v-button-icon
+            subtle
+            vMT="-8"
+            vMR="-8"
+            vML="14"
+            vP="7"
+            buttonSize="small"
+            buttonColor="tertiary"
+            aria-label="close"
+            (click)="hideErrorMessage(i)"
+          >
+            <svg v-icon-visa-close-tiny></svg>
+          </button>
+        </div>
+        }
+        <span vTypography="body-1" [vHide]="!(i === currentStep())"
+          >* Indicates a required field.</span
+        >
+      </div>
+      <div vFlex vGap="4" vFlexCol [vHide]="!(i === currentStep())">
+        @if (step.inputLabel) {
+        <label v-label [for]="'compact-wizard-' + step.id"
+          >{{ step.inputLabel }}</label
+        >
+        <div v-input-container>
+          <input
+            v-input
+            required
+            [invalid]="step.invalid"
+            [id]="'compact-wizard-' + step.id"
+            [name]="'compact-wizard-' + step.id"
+            [attr.aria-describedby]="
+                      step.invalid ? 'section-error-compact compact-wizard-message' + step.id : ''
+                    "
+            [(ngModel)]="step.inputValue"
+          />
+        </div>
+        @if (step.invalid) {
+        <span v-input-message [id]="'compact-wizard-message' + step.id">
+          <svg v-icon-visa-error-tiny />
+          This is a required field.
+        </span>
+        } }
+      </div>
+      }
+    </div>
+    <p vTypography="body-3" vMT="10">Changes have been automatically saved.</p>
+    <ng-template [ngTemplateOutlet]="actions"></ng-template>
+  </form>
+  } } @else {
+  <div
+    vSurface
+    vFlex
+    vJustifyContentCenter
+    vPX="32"
+    vPY="44"
+    style="max-inline-size: 676px; inline-size: 100%"
+  >
+    <nova-workshop-wizard-shared-success-page
+      (reset)="showSuccess.set(false)"
+    />
+  </div>
+  }
+</div>
+
+<ng-template #wizardSteps let-steps="steps" let-isMobile="isMobile">
+  @for (step of steps; track step.id; let i = $index) {
+  <li v-wizard-step [active]="i === currentStep()">
+    @if (isMobile || !step.available) {
+    <ng-template
+      [ngTemplateOutlet]="stepContent"
+      [ngTemplateOutletContext]="{ step: step, index: i }"
+    ></ng-template>
+    } @else {
+    <button
+      v-button
+      buttonColor="tertiary"
+      (click)="goTo(i)"
+      [vTypography]="
+            i === currentStep() ? 'label-large-active' : 'label-large'
+          "
+      [vTypographyColor]="i === currentStep() ? 'default' : ''"
+      [attr.aria-label]="(step.invalid ? 'Error ' : step.complete ? 'Completed ' : (i + 1) + ' ') + step.stepLabel"
+    >
+      <ng-template
+        [ngTemplateOutlet]="stepContent"
+        [ngTemplateOutletContext]="{ step: step, index: i }"
+      ></ng-template>
+    </button>
+    }
+  </li>
+  }
+</ng-template>
+
+<ng-template #stepContent let-step="step" let-index="index">
+  <div vFlex vGap="8">
+    @if (step.complete) {
+    <span
+      v-badge
+      icon
+      [noBackground]="!(currentStep() === index)"
+      badgeType="stable"
+    >
+      <svg v-icon-visa-checkmark-tiny />
+    </span>
+    } @else if (step.invalid) {
+    <span
+      v-badge
+      icon
+      [noBackground]="!(currentStep() === index)"
+      badgeType="critical"
+    >
+      <svg v-icon-visa-error-alt-tiny />
+    </span>
+    } @else if (currentStep() === index) {
+    <span v-badge icon badgeType="active">{{ index + 1 }}</span>
+    } @else {
+    <span v-badge icon noBackground badgeType="subtle">{{ index + 1 }}</span>
+    }
+    <span vContainerHide="mobile">{{ step.stepLabel }}</span>
+  </div>
+  @if (index !== steps.length - 1) {
+  <svg vContainerHide="mobile" v-icon-visa-chevron-right-tiny />
+  }
+</ng-template>
+
+<ng-template #actions>
+  <nova-workshop-wizard-shared-exit-dialog #exitDialog />
+  <div
+    vContainerHide="xs"
+    vFlex
+    vJustifyContentBetween
+    vGap="24"
+    vFlexWrap
+    vMT="40"
+  >
+    <div vFlex vFlexWrap vColGap="24" vRowGap="16" vJustifyContentStart>
+      <button v-button buttonColor="secondary" (click)="nextStep(true)">
+        Save
+      </button>
+      <button v-button buttonColor="tertiary" (click)="exitDialog.openDialog()">
+        Exit
+      </button>
+    </div>
+    <div vFlex vGap="24" vFlexWrap vJustifyContentEnd>
+      @if (currentStep() !== 0) {
+      <button v-button buttonColor="secondary" (click)="previousStep()">
+        <svg v-icon-visa-arrow-back-tiny />Back
+      </button>
+      } @if (currentStep() === steps.length - 1) {
+      <button v-button (click)="submit()">Submit</button>
+      } @else {
+      <button v-button (click)="nextStep()">
+        Next <svg v-icon-visa-arrow-forward-tiny />
+      </button>
+      }
+    </div>
+  </div>
+
+  <div vContainerHide="desktop">
+    <div vFlex vFlexCol vGap="16" vMT="40" vContainerHide="sm">
+      <button v-button buttonColor="secondary" (click)="nextStep(true)">
+        Save
+      </button>
+      <button v-button buttonColor="tertiary" (click)="exitDialog.openDialog()">
+        Exit
+      </button>
+      @if (currentStep() !== 0) {
+      <button v-button buttonColor="secondary" (click)="previousStep()">
+        <svg v-icon-visa-arrow-back-tiny />Back
+      </button>
+      } @if (currentStep() === steps.length - 1) {
+      <button v-button (click)="submit()">Submit</button>
+      } @else {
+      <button v-button (click)="nextStep()">
+        Next <svg v-icon-visa-arrow-forward-tiny />
+      </button>
+      }
+    </div>
+  </div>
+</ng-template>

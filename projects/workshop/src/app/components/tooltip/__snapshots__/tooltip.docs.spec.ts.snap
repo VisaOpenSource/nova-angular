@@ -1,0 +1,244 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip examples BottomTooltipComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <div
+    class="v-m-auto v-py-36"
+    placement="bottom"
+    style="--v-dropdown-menu-surface-margin-block-start: 0;"
+    v-floating-ui-container=""
+    vm="auto"
+    vpy="36"
+  >
+    <button
+      aria-describedby="bottom-example-nova"
+      class="v-button v-dropdown"
+      type="button"
+      v-button=""
+      v-floating-ui-trigger=""
+    >
+      Primary action
+    </button>
+    <span
+      class="v-surface v-tooltip"
+      id="bottom-example-nova"
+      role="tooltip"
+      style="top: 0px; left: 0px; display: none; z-index: 700;"
+      v-tooltip=""
+    >
+      Tooltip label
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Tooltip examples CustomEventsTooltipComponent should render correctly 1`] = `
+<div
+  id="root1"
+>
+  <div
+    class="v-m-auto v-py-36"
+    placement="top"
+    style="--v-dropdown-menu-surface-margin-block-start: 0;"
+    v-floating-ui-container=""
+    vm="auto"
+    vpy="36"
+  >
+    <button
+      aria-describedby="custom-events-example-nova"
+      aria-label="pressing space will hide the tooltip"
+      class="v-button v-dropdown"
+      type="button"
+      v-button=""
+      v-floating-ui-trigger=""
+    >
+       Primary action 
+    </button>
+    <span
+      class="v-surface v-tooltip"
+      id="custom-events-example-nova"
+      role="tooltip"
+      style="top: 0px; left: 0px; display: none; z-index: 700;"
+      v-tooltip=""
+    >
+      Tooltip label
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Tooltip examples CustomMiddlewareTooltipComponent should render correctly 1`] = `
+<div
+  id="root2"
+>
+  <div
+    class="v-m-auto v-py-36"
+    style="--v-dropdown-menu-surface-margin-block-start: 0;"
+    v-floating-ui-container=""
+    vm="auto"
+    vpy="36"
+  >
+    <button
+      aria-describedby="custom-middleware-example-nova"
+      class="v-button v-dropdown"
+      type="button"
+      v-button=""
+      v-floating-ui-trigger=""
+    >
+      Primary action
+    </button>
+    <span
+      class="v-surface v-tooltip"
+      id="custom-middleware-example-nova"
+      role="tooltip"
+      style="top: 0px; left: 0px; display: none; z-index: 700;"
+      v-tooltip=""
+    >
+      Tooltip label
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Tooltip examples LeftTooltipComponent should render correctly 1`] = `
+<div
+  id="root3"
+>
+  <div
+    class="v-m-auto v-py-36"
+    placement="left"
+    style="--v-dropdown-menu-surface-margin-block-start: 0;"
+    v-floating-ui-container=""
+    vm="auto"
+    vpy="36"
+  >
+    <button
+      aria-describedby="left-example-nova"
+      class="v-button v-dropdown"
+      type="button"
+      v-button=""
+      v-floating-ui-trigger=""
+    >
+      Primary action
+    </button>
+    <span
+      class="v-surface v-tooltip"
+      id="left-example-nova"
+      role="tooltip"
+      style="top: 0px; left: 0px; display: none; z-index: 700;"
+      v-tooltip=""
+    >
+      Tooltip label
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Tooltip examples RightTooltipComponent should render correctly 1`] = `
+<div
+  id="root4"
+>
+  <div
+    class="v-m-auto v-py-36"
+    placement="right"
+    style="--v-dropdown-menu-surface-margin-block-start: 0;"
+    v-floating-ui-container=""
+    vm="auto"
+    vpy="36"
+  >
+    <button
+      aria-describedby="right-example-nova"
+      class="v-button v-dropdown"
+      type="button"
+      v-button=""
+      v-floating-ui-trigger=""
+    >
+      Primary action
+    </button>
+    <span
+      class="v-surface v-tooltip"
+      id="right-example-nova"
+      role="tooltip"
+      style="top: 0px; left: 0px; display: none; z-index: 700;"
+      v-tooltip=""
+    >
+      Tooltip label
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Tooltip examples TopTooltipComponent should render correctly 1`] = `
+<div
+  id="root5"
+>
+  <div
+    class="v-m-auto v-py-36"
+    placement="top"
+    style="--v-dropdown-menu-surface-margin-block-start: 0;"
+    v-floating-ui-container=""
+    vm="auto"
+    vpy="36"
+  >
+    <button
+      aria-describedby="top-example-nova"
+      class="v-button v-dropdown"
+      type="button"
+      v-button=""
+      v-floating-ui-trigger=""
+    >
+      Primary action
+    </button>
+    <span
+      class="v-surface v-tooltip"
+      id="top-example-nova"
+      role="tooltip"
+      style="top: 0px; left: 0px; display: none; z-index: 700;"
+      v-tooltip=""
+    >
+      Tooltip label
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Tooltip examples WithArrowTooltipComponent should render correctly 1`] = `
+<div
+  id="root6"
+>
+  <div
+    class="v-m-auto v-py-36"
+    placement="top"
+    style="--v-dropdown-menu-surface-margin-block-start: 0;"
+    v-floating-ui-container=""
+    vm="auto"
+    vpy="36"
+  >
+    <button
+      aria-describedby="with-arrow-example"
+      class="v-button v-dropdown"
+      type="button"
+      v-button=""
+      v-floating-ui-trigger=""
+    >
+      Primary action
+    </button>
+    <span
+      class="v-surface v-tooltip"
+      id="with-arrow-example"
+      role="tooltip"
+      style="top: 0px; left: 0px; display: none; z-index: 700;"
+      v-tooltip=""
+    >
+      Tooltip label 
+      <span
+        class="v-tooltip-arrow"
+        style="position: absolute; transform: rotate(45deg); z-index: -1; block-size: 8px; inline-size: 8px;"
+        v-tooltip-arrow=""
+      />
+    </span>
+  </div>
+</div>
+`;

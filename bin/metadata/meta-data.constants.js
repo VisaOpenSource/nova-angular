@@ -51,20 +51,20 @@ const dataType = {
   }
 };
 
-const DOCS_COMPONENTS_DIR = path.resolve('apps/workshop/src/app/components');
-const DOCS_FOUNDATIONS_DIR = path.resolve('apps/workshop/src/app/foundations');
-const DOCS_UTILITIES_DIR = path.resolve('apps/workshop/src/app/utilities');
-const DOCS_SERVICES_DIR = path.resolve('apps/workshop/src/app/services');
-const LIB_DIR = path.resolve('libs/nova-lib/src/lib');
+const DOCS_COMPONENTS_DIR = path.resolve('projects/workshop/src/app/components');
+const DOCS_FOUNDATIONS_DIR = path.resolve('projects/workshop/src/app/foundations');
+const DOCS_UTILITIES_DIR = path.resolve('projects/workshop/src/app/utilities');
+const DOCS_SERVICES_DIR = path.resolve('projects/workshop/src/app/services');
+const LIB_DIR = path.resolve('projects/nova-angular/src/lib');
 const LIB_SERVICES_SUFFIX = 'service.ts';
-const LIB_UTILITIES_DIR = path.resolve('./libs/nova-lib/src/lib/_utilities');
+const LIB_UTILITIES_DIR = path.resolve('./projects/nova-angular/src/lib/_utilities');
 
 // needed
-const DOCS_JSON = path.resolve('apps/workshop/src/assets/app/workshop/documentation.json');
-const LIB_JSON = path.resolve('apps/workshop/src/assets/lib/nova/documentation.json');
-const TARGET_DIR = path.resolve('apps/workshop/src/assets');
-const API_CONTENT = path.resolve('apps/workshop/src/assets/metadata/api-content.json');
-const EXAMPLES_HIERARCHY = path.resolve('apps/workshop/src/assets/metadata/examples-hierarchy.json');
+const DOCS_JSON = path.resolve('projects/workshop/public/app/workshop/documentation.json');
+const LIB_JSON = path.resolve('projects/workshop/public/lib/nova/documentation.json');
+const TARGET_DIR = path.resolve('projects/workshop/public');
+const API_CONTENT = path.resolve('projects/workshop/public/metadata/api-content.json');
+const EXAMPLES_HIERARCHY = path.resolve('projects/workshop/public/metadata/examples-hierarchy.json');
 
 module.exports = {
   DOCS_COMPONENTS_DIR,

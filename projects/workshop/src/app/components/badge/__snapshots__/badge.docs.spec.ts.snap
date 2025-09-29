@@ -1,0 +1,1230 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge examples snapshots DefaultBadgeComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <span
+    class="v-badge v-badge-default"
+    id="a-v-badge-0"
+    v-badge=""
+  >
+     Label 
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots LongNumberBadgeComponent should render correctly 1`] = `
+<div
+  id="root1"
+>
+  <span
+    class="v-badge v-badge-default v-badge-number v-typography-label-active"
+    id="a-v-badge-0"
+    number=""
+    v-badge=""
+    vtypography="label-active"
+  >
+    12345
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots NegativeIconNoBackgroundBadgeComponent should render correctly 1`] = `
+<div
+  id="root2"
+>
+  <span
+    badgetype="negative"
+    class="v-badge v-badge-clear v-badge-critical v-badge-icon"
+    icon=""
+    id="a-v-badge-0"
+    nobackground=""
+    v-badge=""
+  >
+    <svg
+      aria-hidden="true"
+      class="v-icon v-icon-error-alt v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      id="a-v__icon__internal-0"
+      v-icon-visa-error-alt-tiny=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <path
+        class="v-icon-primary"
+        clip-rule="evenodd"
+        d="M9 1H7V11H9V1ZM8 15C8.55228 15 9 14.5523 9 14C9 13.4477 8.55228 13 8 13C7.44772 13 7 13.4477 7 14C7 14.5523 7.44772 15 8 15Z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots NegativeIconOnlyBadgeComponent should render correctly 1`] = `
+<div
+  id="root3"
+>
+  <span
+    badgetype="negative"
+    class="v-badge v-badge-critical v-badge-icon"
+    icon=""
+    id="a-v-badge-0"
+    v-badge=""
+  >
+    <svg
+      aria-hidden="true"
+      class="v-icon v-icon-error-alt v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      id="a-v__icon__internal-1"
+      v-icon-visa-error-alt-tiny=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <path
+        class="v-icon-primary"
+        clip-rule="evenodd"
+        d="M9 1H7V11H9V1ZM8 15C8.55228 15 9 14.5523 9 14C9 13.4477 8.55228 13 8 13C7.44772 13 7 13.4477 7 14C7 14.5523 7.44772 15 8 15Z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots NegativeLabelOnlyBadgeComponent should render correctly 1`] = `
+<div
+  id="root4"
+>
+  <span
+    badgetype="negative"
+    class="v-badge v-badge-critical"
+    id="a-v-badge-0"
+    v-badge=""
+  >
+     Label 
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots NegativeNoBackgroundBadgeComponent should render correctly 1`] = `
+<div
+  id="root5"
+>
+  <span
+    badgetype="negative"
+    class="v-badge v-badge-clear v-badge-critical"
+    id="a-v-badge-0"
+    nobackground=""
+    v-badge=""
+  >
+    <svg
+      class="v-icon v-badge-ellipse v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      hidden="true"
+      iconSize="tiny"
+      isBadgeEllipse=""
+      style="--v-icon-height: var(--size-scalable-8); --v-icon-primary: var(--v-badge-ellipse-color); --v-icon-secondary: var(--v-badge-ellipse-color); --v-icon-width: var(--size-scalable-8);"
+      v-icon=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      
+      <circle
+        cx="8"
+        cy="8"
+        r="8"
+        style="fill: var(--v-badge-ellipse-color);"
+      />
+      
+    </svg>
+     Label 
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots NegativeNumberBadgeComponent should render correctly 1`] = `
+<div
+  id="root7"
+>
+  <span
+    badgetype="negative"
+    class="v-badge v-badge-critical v-badge-number v-typography-label-active"
+    id="a-v-badge-0"
+    number=""
+    v-badge=""
+    vtypography="label-active"
+  >
+    3
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots NegativeNumberNoBackgroundBadgeComponent should render correctly 1`] = `
+<div
+  id="root6"
+>
+  <span
+    badgetype="negative"
+    class="v-badge v-badge-clear v-badge-critical v-badge-number v-typography-label-active"
+    id="a-v-badge-0"
+    nobackground=""
+    number=""
+    v-badge=""
+    vtypography="label-active"
+  >
+    3
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots NegativeWithEllipseBadgeComponent should render correctly 1`] = `
+<div
+  id="root8"
+>
+  <div
+    badgetype="negative"
+    class="v-badge v-badge-critical"
+    id="a-v-badge-0"
+    v-badge=""
+  >
+    <svg
+      class="v-icon v-badge-ellipse v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      hidden="true"
+      iconSize="tiny"
+      isBadgeEllipse=""
+      style="--v-icon-height: var(--size-scalable-8); --v-icon-primary: var(--v-badge-ellipse-color); --v-icon-secondary: var(--v-badge-ellipse-color); --v-icon-width: var(--size-scalable-8);"
+      v-icon=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      
+      <circle
+        cx="8"
+        cy="8"
+        r="8"
+        style="fill: var(--v-badge-ellipse-color);"
+      />
+      
+    </svg>
+    <span>
+      Label
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Badge examples snapshots NegativeWithIconBadgeComponent should render correctly 1`] = `
+<div
+  id="root9"
+>
+  <div
+    badgetype="negative"
+    class="v-badge v-badge-critical"
+    id="a-v-badge-0"
+    v-badge=""
+  >
+    <svg
+      aria-hidden="true"
+      class="v-icon v-icon-error v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      id="a-v__icon__internal-2"
+      style="--v-icon-primary: var(--v-badge-error-icon-color); --v-icon-secondary: var(--v-badge-error-icon-color);"
+      v-icon-visa-error-tiny=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <path
+        class="v-icon-secondary"
+        clip-rule="evenodd"
+        d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
+        fill-rule="evenodd"
+      />
+      <path
+        class="v-icon-primary"
+        clip-rule="evenodd"
+        d="M9 4H7V8H9V4ZM8 10C7.44772 10 7 10.4477 7 11C7 11.5523 7.44772 12 8 12C8.55228 12 9 11.5523 9 11C9 10.4477 8.55228 10 8 10Z"
+        fill-rule="evenodd"
+      />
+      <defs>
+        <clippath>
+          <rect
+            height="16"
+            width="16"
+          />
+        </clippath>
+      </defs>
+    </svg>
+    <span>
+      Label
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Badge examples snapshots NeutralIconNoBackgroundBadgeComponent should render correctly 1`] = `
+<div
+  id="root10"
+>
+  <span
+    badgetype="neutral"
+    class="v-badge v-badge-clear v-badge-icon v-badge-neutral"
+    icon=""
+    id="a-v-badge-0"
+    nobackground=""
+    v-badge=""
+  >
+    <svg
+      aria-hidden="true"
+      class="v-icon v-icon-information-alt v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      id="a-v__icon__internal-3"
+      v-icon-visa-information-alt-tiny=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <path
+        class="v-icon-primary"
+        clip-rule="evenodd"
+        d="M9 1H7V3H9V1ZM7 7H6V5H9V7V8V13H10V15H6V13H7V8V7Z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots NeutralIconOnlyBadgeComponent should render correctly 1`] = `
+<div
+  id="root11"
+>
+  <span
+    badgetype="neutral"
+    class="v-badge v-badge-icon v-badge-neutral"
+    icon=""
+    id="a-v-badge-0"
+    v-badge=""
+  >
+    <svg
+      aria-hidden="true"
+      class="v-icon v-icon-information-alt v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      id="a-v__icon__internal-4"
+      v-icon-visa-information-alt-tiny=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <path
+        class="v-icon-primary"
+        clip-rule="evenodd"
+        d="M9 1H7V3H9V1ZM7 7H6V5H9V7V8V13H10V15H6V13H7V8V7Z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots NeutralLabelOnlyBadgeComponent should render correctly 1`] = `
+<div
+  id="root12"
+>
+  <span
+    badgetype="neutral"
+    class="v-badge v-badge-neutral"
+    id="a-v-badge-0"
+    v-badge=""
+  >
+     Label 
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots NeutralNumberBadgeComponent should render correctly 1`] = `
+<div
+  id="root14"
+>
+  <span
+    badgetype="neutral"
+    class="v-badge v-badge-neutral v-badge-number v-typography-label-active"
+    id="a-v-badge-0"
+    number=""
+    v-badge=""
+    vtypography="label-active"
+  >
+    3
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots NeutralNumberNoBackgroundBadgeComponent should render correctly 1`] = `
+<div
+  id="root13"
+>
+  <span
+    badgetype="neutral"
+    class="v-badge v-badge-clear v-badge-neutral v-badge-number v-typography-label-active"
+    id="a-v-badge-0"
+    nobackground=""
+    number=""
+    v-badge=""
+    vtypography="label-active"
+  >
+    3
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots NeutralWithEllipseBadgeComponent should render correctly 1`] = `
+<div
+  id="root15"
+>
+  <div
+    badgetype="neutral"
+    class="v-badge v-badge-neutral"
+    id="a-v-badge-0"
+    v-badge=""
+  >
+    <svg
+      class="v-icon v-badge-ellipse v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      hidden="true"
+      iconSize="tiny"
+      isBadgeEllipse=""
+      style="--v-icon-height: var(--size-scalable-8); --v-icon-primary: var(--v-badge-ellipse-color); --v-icon-secondary: var(--v-badge-ellipse-color); --v-icon-width: var(--size-scalable-8);"
+      v-icon=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      
+      <circle
+        cx="8"
+        cy="8"
+        r="8"
+        style="fill: var(--v-badge-ellipse-color);"
+      />
+      
+    </svg>
+    <span>
+      Label
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Badge examples snapshots NeutralWithIconBadgeComponent should render correctly 1`] = `
+<div
+  id="root16"
+>
+  <div
+    badgetype="neutral"
+    class="v-badge v-badge-neutral"
+    id="a-v-badge-0"
+    v-badge=""
+  >
+    <svg
+      aria-hidden="true"
+      class="v-icon v-icon-information v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      id="a-v__icon__internal-5"
+      v-icon-visa-information-tiny=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <path
+        class="v-icon-primary"
+        clip-rule="evenodd"
+        d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM7 5V3H9V5H7ZM6 9H7V10V11H6V13H7H9H10V11H9V10V8V7H6V9Z"
+        fill-rule="evenodd"
+      />
+      <defs>
+        <clippath>
+          <rect
+            height="16"
+            width="16"
+          />
+        </clippath>
+      </defs>
+    </svg>
+    <span>
+      Label
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Badge examples snapshots NumberBadgeComponent should render correctly 1`] = `
+<div
+  id="root18"
+>
+  <span
+    class="v-badge v-badge-default v-badge-number v-typography-label-active"
+    id="a-v-badge-0"
+    number=""
+    v-badge=""
+    vtypography="label-active"
+  >
+    3
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots NumberNoBackgroundBadgeComponent should render correctly 1`] = `
+<div
+  id="root17"
+>
+  <span
+    class="v-badge v-badge-clear v-badge-default v-badge-number v-typography-label-active"
+    id="a-v-badge-0"
+    nobackground=""
+    number=""
+    v-badge=""
+    vtypography="label-active"
+  >
+    3
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots StableIconNoBackgroundBadgeComponent should render correctly 1`] = `
+<div
+  id="root19"
+>
+  <span
+    badgetype="stable"
+    class="v-badge v-badge-clear v-badge-icon v-badge-stable"
+    icon=""
+    id="a-v-badge-0"
+    nobackground=""
+    v-badge=""
+  >
+    <svg
+      aria-hidden="true"
+      class="v-icon v-icon-checkmark v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      id="a-v__icon__internal-6"
+      v-icon-visa-checkmark-tiny=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <path
+        class="v-icon-primary"
+        d="M15.7443 3.43912L5.03718 14.1462L0.330078 9.43912L1.74429 8.0249L5.03718 11.3178L14.3301 2.0249L15.7443 3.43912Z"
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots StableIconOnlyBadgeComponent should render correctly 1`] = `
+<div
+  id="root20"
+>
+  <span
+    badgetype="stable"
+    class="v-badge v-badge-icon v-badge-stable"
+    icon=""
+    id="a-v-badge-0"
+    v-badge=""
+  >
+    <svg
+      aria-hidden="true"
+      class="v-icon v-icon-checkmark v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      id="a-v__icon__internal-7"
+      v-icon-visa-checkmark-tiny=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <path
+        class="v-icon-primary"
+        d="M15.7443 3.43912L5.03718 14.1462L0.330078 9.43912L1.74429 8.0249L5.03718 11.3178L14.3301 2.0249L15.7443 3.43912Z"
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots StableLabelOnlyBadgeComponent should render correctly 1`] = `
+<div
+  id="root21"
+>
+  <span
+    badgetype="stable"
+    class="v-badge v-badge-stable"
+    id="a-v-badge-0"
+    v-badge=""
+  >
+     Label 
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots StableNoBackgroundBadgeComponent should render correctly 1`] = `
+<div
+  id="root22"
+>
+  <span
+    badgetype="stable"
+    class="v-badge v-badge-clear v-badge-stable"
+    id="a-v-badge-0"
+    nobackground=""
+    v-badge=""
+  >
+    <svg
+      class="v-icon v-badge-ellipse v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      hidden="true"
+      iconSize="tiny"
+      isBadgeEllipse=""
+      style="--v-icon-height: var(--size-scalable-8); --v-icon-primary: var(--v-badge-ellipse-color); --v-icon-secondary: var(--v-badge-ellipse-color); --v-icon-width: var(--size-scalable-8);"
+      v-icon=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      
+      <circle
+        cx="8"
+        cy="8"
+        r="8"
+        style="fill: var(--v-badge-ellipse-color);"
+      />
+      
+    </svg>
+     Label 
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots StableNumberBadgeComponent should render correctly 1`] = `
+<div
+  id="root24"
+>
+  <span
+    badgetype="stable"
+    class="v-badge v-badge-number v-badge-stable v-typography-label-active"
+    id="a-v-badge-0"
+    number=""
+    v-badge=""
+    vtypography="label-active"
+  >
+    3
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots StableNumberNoBackgroundBadgeComponent should render correctly 1`] = `
+<div
+  id="root23"
+>
+  <span
+    badgetype="stable"
+    class="v-badge v-badge-clear v-badge-number v-badge-stable v-typography-label-active"
+    id="a-v-badge-0"
+    nobackground=""
+    number=""
+    v-badge=""
+    vtypography="label-active"
+  >
+    3
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots StableWithEllipseBadgeComponent should render correctly 1`] = `
+<div
+  id="root25"
+>
+  <div
+    badgetype="stable"
+    class="v-badge v-badge-stable"
+    id="a-v-badge-0"
+    v-badge=""
+  >
+    <svg
+      class="v-icon v-badge-ellipse v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      hidden="true"
+      iconSize="tiny"
+      isBadgeEllipse=""
+      style="--v-icon-height: var(--size-scalable-8); --v-icon-primary: var(--v-badge-ellipse-color); --v-icon-secondary: var(--v-badge-ellipse-color); --v-icon-width: var(--size-scalable-8);"
+      v-icon=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      
+      <circle
+        cx="8"
+        cy="8"
+        r="8"
+        style="fill: var(--v-badge-ellipse-color);"
+      />
+      
+    </svg>
+    <span>
+      Label
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Badge examples snapshots StableWithIconBadgeComponent should render correctly 1`] = `
+<div
+  id="root26"
+>
+  <div
+    badgetype="stable"
+    class="v-badge v-badge-stable"
+    id="a-v-badge-0"
+    v-badge=""
+  >
+    <svg
+      aria-hidden="true"
+      class="v-icon v-icon-success v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      id="a-v__icon__internal-8"
+      style="--v-icon-primary: var(--v-badge-stable-icon-color); --v-icon-secondary: var(--v-badge-stable-icon-color);"
+      v-icon-visa-success-tiny=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <path
+        class="v-icon-secondary"
+        clip-rule="evenodd"
+        d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C8.74542 2 9.4591 2.13593 10.1176 2.38437L11.6319 0.870034C10.542 0.313733 9.30764 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16C12.4183 16 16 12.4183 16 8C16 7.21837 15.8879 6.46293 15.6789 5.74886L13.9678 7.37472C13.9891 7.58024 14 7.78885 14 8Z"
+        fill-rule="evenodd"
+      />
+      <path
+        class="v-icon-primary"
+        clip-rule="evenodd"
+        d="M15 3.46597L7.72838 10.9961L5 8.18244L6.42533 6.71257L7.72838 8.05635L13.5747 1.99609L15 3.46597Z"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <span>
+      Label
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Badge examples snapshots SubtleIconNoBackgroundBadgeComponent should render correctly 1`] = `
+<div
+  id="root27"
+>
+  <span
+    badgetype="subtle"
+    class="v-badge v-badge-clear v-badge-icon v-badge-subtle"
+    icon=""
+    id="a-v-badge-0"
+    nobackground=""
+    v-badge=""
+  >
+    <svg
+      aria-hidden="true"
+      class="v-icon v-icon-history v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      id="a-v__icon__internal-9"
+      v-icon-visa-history-tiny=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <path
+        class="v-icon-secondary"
+        clip-rule="evenodd"
+        d="M7 4H9V7.19575L10.47 6.277L11.53 7.973L7 10.8042V4Z"
+        fill-rule="evenodd"
+      />
+      <path
+        class="v-icon-primary"
+        clip-rule="evenodd"
+        d="M2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8C14 11.3137 11.3137 14 8 14V16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 10.3904 1.0484 12.5348 2.70861 14H1V16H6V11H4V12.4724C2.77174 11.3731 2 9.77615 2 8Z"
+        fill-rule="evenodd"
+      />
+      <defs>
+        <clippath>
+          <rect
+            height="16"
+            width="16"
+          />
+        </clippath>
+      </defs>
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots SubtleIconOnlyBadgeComponent should render correctly 1`] = `
+<div
+  id="root28"
+>
+  <span
+    badgetype="subtle"
+    class="v-badge v-badge-icon v-badge-subtle"
+    icon=""
+    id="a-v-badge-0"
+    v-badge=""
+  >
+    <svg
+      aria-hidden="true"
+      class="v-icon v-icon-history v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      id="a-v__icon__internal-10"
+      v-icon-visa-history-tiny=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <path
+        class="v-icon-secondary"
+        clip-rule="evenodd"
+        d="M7 4H9V7.19575L10.47 6.277L11.53 7.973L7 10.8042V4Z"
+        fill-rule="evenodd"
+      />
+      <path
+        class="v-icon-primary"
+        clip-rule="evenodd"
+        d="M2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8C14 11.3137 11.3137 14 8 14V16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 10.3904 1.0484 12.5348 2.70861 14H1V16H6V11H4V12.4724C2.77174 11.3731 2 9.77615 2 8Z"
+        fill-rule="evenodd"
+      />
+      <defs>
+        <clippath>
+          <rect
+            height="16"
+            width="16"
+          />
+        </clippath>
+      </defs>
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots SubtleLabelOnlyBadgeComponent should render correctly 1`] = `
+<div
+  id="root29"
+>
+  <span
+    badgetype="subtle"
+    class="v-badge v-badge-subtle"
+    id="a-v-badge-0"
+    v-badge=""
+  >
+     Label 
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots SubtleNoBackgroundBadgeComponent should render correctly 1`] = `
+<div
+  id="root30"
+>
+  <span
+    badgetype="subtle"
+    class="v-badge v-badge-clear v-badge-subtle"
+    id="a-v-badge-0"
+    nobackground=""
+    v-badge=""
+  >
+    <svg
+      class="v-icon v-badge-ellipse v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      hidden="true"
+      iconSize="tiny"
+      isBadgeEllipse=""
+      style="--v-icon-height: var(--size-scalable-8); --v-icon-primary: var(--v-badge-ellipse-color); --v-icon-secondary: var(--v-badge-ellipse-color); --v-icon-width: var(--size-scalable-8);"
+      v-icon=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      
+      <circle
+        cx="8"
+        cy="8"
+        r="8"
+        style="fill: var(--v-badge-ellipse-color);"
+      />
+      
+    </svg>
+     Label 
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots SubtleNumberBadgeComponent should render correctly 1`] = `
+<div
+  id="root32"
+>
+  <span
+    badgetype="subtle"
+    class="v-badge v-badge-number v-badge-subtle v-typography-label-active"
+    id="a-v-badge-0"
+    number=""
+    v-badge=""
+    vtypography="label-active"
+  >
+    3
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots SubtleNumberNoBackgroundBadgeComponent should render correctly 1`] = `
+<div
+  id="root31"
+>
+  <span
+    badgetype="subtle"
+    class="v-badge v-badge-clear v-badge-number v-badge-subtle v-typography-label-active"
+    id="a-v-badge-0"
+    nobackground=""
+    number=""
+    v-badge=""
+    vtypography="label-active"
+  >
+    3
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots SubtleWithEllipseBadgeComponent should render correctly 1`] = `
+<div
+  id="root33"
+>
+  <div
+    badgetype="subtle"
+    class="v-badge v-badge-subtle"
+    id="a-v-badge-0"
+    v-badge=""
+  >
+    <svg
+      class="v-icon v-badge-ellipse v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      hidden="true"
+      iconSize="tiny"
+      isBadgeEllipse=""
+      style="--v-icon-height: var(--size-scalable-8); --v-icon-primary: var(--v-badge-ellipse-color); --v-icon-secondary: var(--v-badge-ellipse-color); --v-icon-width: var(--size-scalable-8);"
+      v-icon=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      
+      <circle
+        cx="8"
+        cy="8"
+        r="8"
+        style="fill: var(--v-badge-ellipse-color);"
+      />
+      
+    </svg>
+    <span>
+      Label
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Badge examples snapshots SubtleWithIconBadgeComponent should render correctly 1`] = `
+<div
+  id="root34"
+>
+  <div
+    badgetype="subtle"
+    class="v-badge v-badge-subtle"
+    id="a-v-badge-0"
+    v-badge=""
+  >
+    <svg
+      aria-hidden="true"
+      class="v-icon v-icon-history v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      id="a-v__icon__internal-11"
+      v-icon-visa-history-tiny=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <path
+        class="v-icon-secondary"
+        clip-rule="evenodd"
+        d="M7 4H9V7.19575L10.47 6.277L11.53 7.973L7 10.8042V4Z"
+        fill-rule="evenodd"
+      />
+      <path
+        class="v-icon-primary"
+        clip-rule="evenodd"
+        d="M2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8C14 11.3137 11.3137 14 8 14V16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 10.3904 1.0484 12.5348 2.70861 14H1V16H6V11H4V12.4724C2.77174 11.3731 2 9.77615 2 8Z"
+        fill-rule="evenodd"
+      />
+      <defs>
+        <clippath>
+          <rect
+            height="16"
+            width="16"
+          />
+        </clippath>
+      </defs>
+    </svg>
+    <span>
+      Label
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Badge examples snapshots WarningIconNoBackgroundBadgeComponent should render correctly 1`] = `
+<div
+  id="root35"
+>
+  <span
+    badgetype="warning"
+    class="v-badge v-badge-clear v-badge-icon v-badge-warning"
+    icon=""
+    id="a-v-badge-0"
+    nobackground=""
+    v-badge=""
+  >
+    <svg
+      aria-hidden="true"
+      class="v-icon v-icon-tiny v-icon-visa v-icon-warning"
+      focusable="false"
+      height="16"
+      id="a-v__icon__internal-12"
+      style="--v-icon-primary: var(--v-badge-warning-icon-color); --v-icon-secondary: var(--v-badge-warning-icon-color);"
+      v-icon-visa-warning-tiny=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <path
+        class="v-icon-secondary"
+        d="M7 8H9V10H7V8Z"
+      />
+      <path
+        class="v-icon-primary"
+        clip-rule="evenodd"
+        d="M2.74153 12L8.0005 2.9846L13.2595 12H2.74153ZM15.8643 12.4961L8.86428 0.496094H7.13672L0.136719 12.4961L1.0005 14H15.0005L15.8643 12.4961Z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots WarningIconOnlyBadgeComponent should render correctly 1`] = `
+<div
+  id="root36"
+>
+  <span
+    badgetype="warning"
+    class="v-badge v-badge-icon v-badge-warning"
+    icon=""
+    id="a-v-badge-0"
+    v-badge=""
+  >
+    <svg
+      aria-hidden="true"
+      class="v-icon v-icon-tiny v-icon-visa v-icon-warning"
+      focusable="false"
+      height="16"
+      id="a-v__icon__internal-13"
+      style="--v-icon-primary: var(--v-badge-foreground); --v-icon-secondary: var(--v-badge-foreground);"
+      v-icon-visa-warning-tiny=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <path
+        class="v-icon-secondary"
+        d="M7 8H9V10H7V8Z"
+      />
+      <path
+        class="v-icon-primary"
+        clip-rule="evenodd"
+        d="M2.74153 12L8.0005 2.9846L13.2595 12H2.74153ZM15.8643 12.4961L8.86428 0.496094H7.13672L0.136719 12.4961L1.0005 14H15.0005L15.8643 12.4961Z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots WarningLabelOnlyBadgeComponent should render correctly 1`] = `
+<div
+  id="root37"
+>
+  <span
+    badgetype="warning"
+    class="v-badge v-badge-warning"
+    id="a-v-badge-0"
+    v-badge=""
+  >
+     Label 
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots WarningNoBackgroundBadgeComponent should render correctly 1`] = `
+<div
+  id="root38"
+>
+  <span
+    badgetype="warning"
+    class="v-badge v-badge-clear v-badge-warning"
+    id="a-v-badge-0"
+    nobackground=""
+    v-badge=""
+  >
+    <svg
+      class="v-icon v-badge-ellipse v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      hidden="true"
+      iconSize="tiny"
+      isBadgeEllipse=""
+      style="--v-icon-height: var(--size-scalable-8); --v-icon-primary: var(--v-badge-ellipse-color); --v-icon-secondary: var(--v-badge-ellipse-color); --v-icon-width: var(--size-scalable-8);"
+      v-icon=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      
+      <circle
+        cx="8"
+        cy="8"
+        r="8"
+        style="fill: var(--v-badge-ellipse-color);"
+      />
+      
+    </svg>
+     Label 
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots WarningNumberBadgeComponent should render correctly 1`] = `
+<div
+  id="root40"
+>
+  <span
+    badgetype="warning"
+    class="v-badge v-badge-number v-badge-warning v-typography-label-active"
+    id="a-v-badge-0"
+    number=""
+    v-badge=""
+    vtypography="label-active"
+  >
+    3
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots WarningNumberNoBackgroundBadgeComponent should render correctly 1`] = `
+<div
+  id="root39"
+>
+  <span
+    badgetype="warning"
+    class="v-badge v-badge-clear v-badge-number v-badge-warning v-typography-label-active"
+    id="a-v-badge-0"
+    nobackground=""
+    number=""
+    v-badge=""
+    vtypography="label-active"
+  >
+    3
+  </span>
+</div>
+`;
+
+exports[`Badge examples snapshots WarningWithEllipseBadgeComponent should render correctly 1`] = `
+<div
+  id="root41"
+>
+  <div
+    badgetype="warning"
+    class="v-badge v-badge-warning"
+    id="a-v-badge-0"
+    v-badge=""
+  >
+    <svg
+      class="v-icon v-badge-ellipse v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      hidden="true"
+      iconSize="tiny"
+      isBadgeEllipse=""
+      style="--v-icon-height: var(--size-scalable-8); --v-icon-primary: var(--v-badge-ellipse-color); --v-icon-secondary: var(--v-badge-ellipse-color); --v-icon-width: var(--size-scalable-8);"
+      v-icon=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      
+      <circle
+        cx="8"
+        cy="8"
+        r="8"
+        style="fill: var(--v-badge-ellipse-color);"
+      />
+      
+    </svg>
+    <span>
+      Label
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Badge examples snapshots WarningWithIconBadgeComponent should render correctly 1`] = `
+<div
+  id="root42"
+>
+  <div
+    badgetype="warning"
+    class="v-badge v-badge-warning"
+    id="a-v-badge-0"
+    v-badge=""
+  >
+    <svg
+      aria-hidden="true"
+      class="v-icon v-icon-tiny v-icon-visa v-icon-warning"
+      focusable="false"
+      height="16"
+      id="a-v__icon__internal-14"
+      style="--v-icon-primary: var(--v-badge-warning-icon-color); --v-icon-secondary: var(--v-badge-warning-icon-color);"
+      v-icon-visa-warning-tiny=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <path
+        class="v-icon-secondary"
+        d="M7 8H9V10H7V8Z"
+      />
+      <path
+        class="v-icon-primary"
+        clip-rule="evenodd"
+        d="M2.74153 12L8.0005 2.9846L13.2595 12H2.74153ZM15.8643 12.4961L8.86428 0.496094H7.13672L0.136719 12.4961L1.0005 14H15.0005L15.8643 12.4961Z"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <span>
+      Label
+    </span>
+  </div>
+</div>
+`;

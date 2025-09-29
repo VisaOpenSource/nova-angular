@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputDirective should allow custom id 1`] = `
+<div
+  id="root5"
+>
+  <input
+    class="v-input"
+    id="test-id"
+    v-input=""
+    value=""
+  />
+</div>
+`;

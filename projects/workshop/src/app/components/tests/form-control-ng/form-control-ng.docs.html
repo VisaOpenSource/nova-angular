@@ -1,0 +1,181 @@
+<!--
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div vFlex vFlexCol vP="20" style="overflow-y: auto; block-size: 100%">
+  <div vFlex vM="20" vFlexCol [formGroup]="formGroup">
+    <!-- Form Control Testing Instructions -->
+    <div vFlex vFlexCol vGap="8" vP="16" style="border: 1px solid #ccc; border-radius: 4px; margin-bottom: 20px">
+      <h3 vM="0">Form Control State Testing</h3>
+      <p vM="8">
+        Interact with the form controls below to see how Angular's form states change naturally. Each control displays
+        its own state values.
+      </p>
+      <div vFlex vFlexCol vGap="2">
+        <h4 vM="0">Testing Tips:</h4>
+        <ul>
+          <li>Pristine/Dirty: Changes when you modify the value</li>
+          <li>Valid/Invalid: Changes based on validation rules (if any)</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Radio -->
+    <fieldset (change)="printValues('radio')">
+      <legend v-label>Legend for radio group</legend>
+      <div vFlex vFlexCol>
+        <div v-input-container>
+          <input id="radio-group-1" v-radio value="1" formControlName="radio" />
+          <label v-label for="radio-group-1">First label</label>
+        </div>
+        <div v-input-container>
+          <input id="radio-group-2" v-radio value="2" formControlName="radio" />
+          <label v-label for="radio-group-2">Second label</label>
+        </div>
+        <div v-input-container>
+          <input id="radio-group-3" v-radio value="3" formControlName="radio" />
+          <label v-label for="radio-group-3">Third label</label>
+        </div>
+      </div>
+      <div vFlex vFlexCol vGap="2" vMT="8">
+        <span>Dirty: <code>{{ formGroup.get('radio')?.dirty }}</code></span>
+        <span>Touched: <code>{{ formGroup.get('radio')?.touched }}</code></span>
+      </div>
+    </fieldset>
+    <hr v-divider vMY="12" />
+    <!-- Select -->
+    <fieldset vFlex vFlexCol vGap="4">
+      <label v-label for="default-select">Select</label>
+      <div v-input-container>
+        <select
+          v-select
+          id="default-select"
+          (change)="printValues('select')"
+          (blur)="printValues('select')"
+          formControlName="select"
+        >
+          <option hidden></option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+        </select>
+      </div>
+      <div vFlex vFlexCol vGap="2" vMT="8">
+        <span>Dirty: <code>{{ formGroup.get('select')?.dirty }}</code></span>
+        <span>Touched: <code>{{ formGroup.get('select')?.touched }}</code></span>
+      </div>
+    </fieldset>
+    <hr v-divider vMY="12" />
+    <!-- Input -->
+    <div vFlex vGap="4" vFlexCol>
+      <label v-label for="default-input">Input</label>
+      <div v-input-container>
+        <input
+          v-input
+          (input)="printValues('input')"
+          (blur)="printValues('input')"
+          id="default-input"
+          aria-describedby="default-message"
+          formControlName="input"
+        />
+      </div>
+      <span v-input-message id="default-message">Inline message</span>
+      <div vFlex vFlexCol vGap="2" vMT="8">
+        <span>Dirty: <code>{{ formGroup.get('input')?.dirty }}</code></span>
+        <span>Touched: <code>{{ formGroup.get('input')?.touched }}</code></span>
+      </div>
+    </div>
+    <hr v-divider vMY="12" />
+    <!-- Listbox -->
+    <label v-label for="listbox-field" id="listbox-field-label">Listbox</label>
+    <div v-listbox-container>
+      <ul
+        v-listbox
+        (valueUpdated)="printValues('listbox')"
+        id="listbox-field"
+        aria-labelledby="listbox-field-label"
+        formControlName="listbox"
+      >
+        <li v-listbox-item value="item-1">Item 1</li>
+        <li v-listbox-item value="item-2">Item 2</li>
+        <li v-listbox-item value="item-3">Item 3</li>
+      </ul>
+    </div>
+    <div vFlex vFlexCol vGap="2" vMT="8">
+      <span>Dirty: <code>{{ formGroup.get('listbox')?.dirty }}</code></span>
+      <span>Touched: <code>{{ formGroup.get('listbox')?.touched }}</code></span>
+    </div>
+    <hr v-divider vMY="12" />
+    <!-- Combobox -->
+    <div v-combobox v-floating-ui-container formControlName="combobox" (itemSelected)="printValues('combobox')">
+      <label v-label>Combobox</label>
+      <div v-input-container v-floating-ui-trigger vMY="4">
+        <input v-input (blur)="printValues('combobox')" />
+        <button v-button-icon buttonColor="tertiary" buttonSize="small" aria-label="toggle">
+          <v-icon-visa-toggle>
+            <svg v-toggle-default-template default-template v-icon-visa-chevron-down-tiny />
+            <svg v-toggle-rotated-template v-icon-visa-chevron-up-tiny />
+          </v-icon-visa-toggle>
+        </button>
+      </div>
+      <div v-listbox-container v-floating-ui-element>
+        <ul v-listbox>
+          <li v-listbox-item value="item-1">Item 1</li>
+          <li v-listbox-item value="item-2">Item 2</li>
+          <li v-listbox-item value="item-3">Item 3</li>
+        </ul>
+      </div>
+    </div>
+    <div vFlex vFlexCol vGap="2" vMT="8">
+      <span>Dirty: <code>{{ formGroup.get('combobox')?.dirty }}</code></span>
+      <span>Touched: <code>{{ formGroup.get('combobox')?.touched }}</code></span>
+    </div>
+    <hr v-divider vMY="12" />
+    <!-- Checkbox -->
+    <div v-input-container>
+      <input
+        (change)="printValues('checkbox')"
+        (blur)="printValues('checkbox')"
+        id="checkbox"
+        value="checkbox-value"
+        v-checkbox
+        formControlName="checkbox"
+      />
+      <label v-label for="checkbox">Label</label>
+    </div>
+    <div vFlex vFlexCol vGap="2" vMT="8">
+      <span>Dirty: <code>{{ formGroup.get('checkbox')?.dirty }}</code></span>
+      <span>Touched: <code>{{ formGroup.get('checkbox')?.touched }}</code></span>
+    </div>
+    <hr v-divider vMY="12" />
+    <!-- Switch -->
+    <div vFlex vFlexWrap vJustifyContentBetween vGap="10" vM="8" style="max-inline-size: 288px">
+      <label v-switch-label v-label for="switch-control-1">Switch</label>
+      <input
+        (change)="printValues('switch')"
+        (blur)="printValues('switch')"
+        v-switch
+        id="switch-control-1"
+        name="default-switch"
+        formControlName="switch"
+      />
+    </div>
+    <div vFlex vFlexCol vGap="2" vMT="8">
+      <span>Dirty: <code>{{ formGroup.get('switch')?.dirty }}</code></span>
+      <span>Touched: <code>{{ formGroup.get('switch')?.touched }}</code></span>
+    </div>
+  </div>
+</div>

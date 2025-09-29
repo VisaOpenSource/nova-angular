@@ -1,0 +1,820 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner examples CustomButtonsDropdownmenuComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <div
+    style="--v-dropdown-menu-surface-margin-block-start: 0;"
+    v-floating-ui-container=""
+  >
+    <button
+      aria-controls="a-v-floating-ui-element-0"
+      aria-expanded="false"
+      class="v-button v-dropdown"
+      type="button"
+      v-button=""
+      v-floating-ui-trigger=""
+    >
+       Action 
+      <v-icon-visa-toggle
+        class="v-icon v-icon-tiny"
+        style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+      >
+        
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-0"
+          v-icon-visa-chevron-down-tiny=""
+          v-toggle-default-template=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        
+      </v-icon-visa-toggle>
+    </button>
+    <div
+      aria-hidden="true"
+      class="v-dropdown-menu v-surface"
+      id="a-v-floating-ui-element-0"
+      style="inline-size: 180px; max-inline-size: 100%; --v-dropdown-menu-surface-margin-block-start: 0; position: absolute; top: 0px; left: 0px; display: none; z-index: 200;"
+      v-dropdown-menu=""
+    >
+      <ul
+        class="v-listbox"
+        v-dropdown-list=""
+        vaddarrowkeys=""
+      >
+        <li>
+          <button
+            class="v-dropdown-item v-listbox-item v-button v-button-tertiary v-justify-content-start"
+            subtle=""
+            v-dropdown-item=""
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-export v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-2"
+              v-icon-visa-export-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-secondary"
+                clip-rule="evenodd"
+                d="M12 2H11.9143L12 1.91429V2ZM0 0H11.0859L9.08586 2H2V14H9.08586L11.0859 16H0V0ZM12 14.0857V14H11.9143L12 14.0857Z"
+                fill-rule="evenodd"
+              />
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M10.7072 12.7316L15.4143 8.02449L10.7072 3.31738L9.29299 4.7316L11.5858 7.02441H5.00009V9.02441H11.586L9.29299 11.3174L10.7072 12.7316Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+             Label 1
+          </button>
+        </li>
+        <li>
+          <button
+            class="v-dropdown-item v-listbox-item v-button v-button-tertiary v-justify-content-start"
+            disabled=""
+            subtle=""
+            v-dropdown-item=""
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-copy v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-3"
+              v-icon-visa-copy-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-secondary"
+                clip-rule="evenodd"
+                d="M4 14.001V4.00098H2V16.001H10V14.001H4Z"
+                fill-rule="evenodd"
+              />
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M6 0.000976562H15V12.001H6V10.001H13V2.00098H8V8.00098H6V0.000976562Z"
+                fill-rule="evenodd"
+              />
+              <defs>
+                <clippath>
+                  <rect
+                    height="16"
+                    transform="translate(0 0.000976562)"
+                    width="16"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+             Label 2
+          </button>
+        </li>
+        <li>
+          <button
+            class="v-dropdown-item v-listbox-item v-button v-button-tertiary v-justify-content-start"
+            subtle=""
+            v-dropdown-item=""
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-file-download v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-4"
+              v-icon-visa-file-download-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-secondary"
+                clip-rule="evenodd"
+                d="M0 10V16H16V10H14V14H2V10H0Z"
+                fill-rule="evenodd"
+              />
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M11 6.29289L8.70711 8.58579V0H6.70711V8.58579L4.41421 6.29289L3 7.70711L7.70711 12.4142L12.4142 7.70711L11 6.29289Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+             Label 3
+          </button>
+        </li>
+        <li>
+          <button
+            class="v-dropdown-item v-listbox-item v-button v-button-tertiary v-button-destructive v-justify-content-start"
+            v-dropdown-item=""
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-delete v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              id="a-v__icon__internal-5"
+              v-icon-visa-delete-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-secondary"
+                clip-rule="evenodd"
+                d="M9 2.00049H16V4.00049H14V16.0005H2V6.00049H4V14.0005H12V4.00049H0V2.00049H7L7 0.000488281H9V2.00049Z"
+                fill-rule="evenodd"
+              />
+              <path
+                class="v-icon-primary"
+                clip-rule="evenodd"
+                d="M8.00008 10.4148L6.20718 12.2077L4.79297 10.7935L6.58586 9.00056L4.79297 7.20767L6.20718 5.79346L8.00008 7.58635L9.79297 5.79346L11.2072 7.20767L9.41429 9.00056L11.2072 10.7935L9.79297 12.2077L8.00008 10.4148Z"
+                fill-rule="evenodd"
+              />
+              <defs>
+                <clippath>
+                  <rect
+                    height="16"
+                    transform="translate(0 0.000488281)"
+                    width="16"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+             Label 4 
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner examples CustomLinksDropdownmenuComponent should render correctly 1`] = `
+<div
+  id="root1"
+>
+  <div
+    style="--v-dropdown-menu-surface-margin-block-start: 0;"
+    v-floating-ui-container=""
+  >
+    <button
+      aria-controls="a-v-floating-ui-element-0"
+      aria-expanded="false"
+      class="v-button v-dropdown"
+      type="button"
+      v-button=""
+      v-floating-ui-trigger=""
+    >
+       Action 
+      <v-icon-visa-toggle
+        class="v-icon v-icon-tiny"
+        style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+      >
+        
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-6"
+          v-icon-visa-chevron-down-tiny=""
+          v-toggle-default-template=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        
+      </v-icon-visa-toggle>
+    </button>
+    <div
+      aria-hidden="true"
+      class="v-dropdown-menu v-surface v-flex v-flex-col"
+      id="a-v-floating-ui-element-0"
+      style="inline-size: 180px; max-inline-size: 100%; --v-dropdown-menu-surface-margin-block-start: 0; position: absolute; top: 0px; left: 0px; display: none; z-index: 200;"
+      v-dropdown-menu=""
+      vflex=""
+      vflexcol=""
+    >
+      <ul
+        class="v-listbox"
+        v-dropdown-list=""
+        vaddarrowkeys=""
+      >
+        <li>
+          <a
+            class="v-dropdown-item v-listbox-item v-flex v-flex-row"
+            href="./components/dropdown-menu"
+            justifycontentstart=""
+            v-dropdown-item=""
+            vflex=""
+            vlink=""
+          >
+            Label 1
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-dropdown-item v-listbox-item v-flex v-flex-row v-justify-content-start"
+            href="./components/dropdown-menu"
+            v-dropdown-item=""
+            vflex=""
+            vjustifycontentstart=""
+            vlink=""
+          >
+            Label 2
+          </a>
+        </li>
+        <li>
+          <a
+            class="v-dropdown-item v-listbox-item v-flex v-flex-row v-justify-content-start"
+            href="./components/dropdown-menu"
+            v-dropdown-item=""
+            vflex=""
+            vjustifycontentstart=""
+            vlink=""
+          >
+            Label 3
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner examples FormDropdownmenuComponent should render correctly 1`] = `
+<div
+  id="root2"
+>
+  <div
+    style="--v-dropdown-menu-surface-margin-block-start: 0;"
+    v-floating-ui-container=""
+  >
+    <button
+      aria-controls="a-v-floating-ui-element-0"
+      aria-expanded="false"
+      class="v-button v-dropdown"
+      type="button"
+      v-button=""
+      v-floating-ui-trigger=""
+    >
+       Action 
+      <v-icon-visa-toggle
+        class="v-icon v-icon-tiny"
+        style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+      >
+        
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-8"
+          v-icon-visa-chevron-down-tiny=""
+          v-toggle-default-template=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        
+      </v-icon-visa-toggle>
+    </button>
+    <div
+      aria-hidden="true"
+      class="v-dropdown-menu v-surface"
+      id="a-v-floating-ui-element-0"
+      style="inline-size: 180px; max-inline-size: 100%; --v-dropdown-menu-surface-margin-block-start: 0; position: absolute; top: 0px; left: 0px; display: none; z-index: 200;"
+      v-dropdown-menu=""
+    >
+      <div
+        class="v-gap-8 v-flex v-flex-col v-p-16"
+        vflex=""
+        vflexcol=""
+        vgap="8"
+        vp="16"
+      >
+        <label
+          class="v-label"
+          for="input-1"
+          id="a-v-label-0"
+          v-label=""
+        >
+          ID
+        </label>
+        <div
+          class="v-input-container v-surface"
+          v-input-container=""
+        >
+          <input
+            class="v-input"
+            id="input-1"
+            v-input=""
+            value=""
+          />
+          
+        </div>
+        <label
+          class="v-label"
+          for="select-1"
+          id="a-v-label-1"
+          v-label=""
+        >
+          Status
+        </label>
+        <div
+          class="v-input-container v-surface"
+          v-input-container=""
+        >
+          <select
+            class="v-input"
+            id="select-1"
+            v-select=""
+          >
+            <option
+              hidden=""
+            />
+            <option
+              value="pending"
+            >
+              Pending
+            </option>
+            <option
+              value="approved"
+            >
+              Approved
+            </option>
+            <option
+              value="rejected"
+            >
+              Rejected
+            </option>
+          </select>
+          <div
+            class="v-input-control"
+          />
+          
+        </div>
+        <button
+          class="v-button"
+          type="button"
+          v-button=""
+        >
+          Apply
+        </button>
+        <button
+          buttoncolor="tertiary"
+          class="v-button v-button-tertiary"
+          type="button"
+          v-button=""
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner examples IconButtonDropdownmenuComponent should render correctly 1`] = `
+<div
+  id="root3"
+>
+  <div
+    style="--v-dropdown-menu-surface-margin-block-start: 0;"
+    v-floating-ui-container=""
+  >
+    <button
+      aria-controls="a-v-floating-ui-element-0"
+      aria-expanded="false"
+      aria-label="dropdown menu with custom icon"
+      class="v-button v-dropdown v-button-icon"
+      type="button"
+      v-button-icon=""
+      v-floating-ui-trigger=""
+    >
+      <svg
+        aria-hidden="true"
+        class="v-icon v-icon-low v-icon-option-horizontal v-icon-visa"
+        focusable="false"
+        height="24"
+        id="a-v__icon__internal-10"
+        v-icon-visa-option-horizontal-low=""
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M5 12C5 13.1046 4.10457 14 3 14C1.89543 14 1 13.1046 1 12C1 10.8954 1.89543 10 3 10C4.10457 10 5 10.8954 5 12ZM23 12C23 13.1046 22.1046 14 21 14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10C22.1046 10 23 10.8954 23 12ZM12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </button>
+    <div
+      aria-hidden="true"
+      class="v-dropdown-menu v-surface"
+      id="a-v-floating-ui-element-0"
+      style="inline-size: 180px; max-inline-size: 100%; --v-dropdown-menu-surface-margin-block-start: 0; position: absolute; top: 0px; left: 0px; display: none; z-index: 200;"
+      v-dropdown-menu=""
+    >
+      <ul
+        class="v-listbox"
+        v-dropdown-list=""
+        vaddarrowkeys=""
+      >
+        <li>
+          <button
+            class="v-dropdown-item v-listbox-item v-button v-button-tertiary v-justify-content-start"
+            v-dropdown-item=""
+          >
+            Label 1
+          </button>
+        </li>
+        <li>
+          <button
+            class="v-dropdown-item v-listbox-item v-button v-button-tertiary v-justify-content-start"
+            v-dropdown-item=""
+          >
+            Label 2
+          </button>
+        </li>
+        <li>
+          <button
+            class="v-dropdown-item v-listbox-item v-button v-button-tertiary v-justify-content-start"
+            v-dropdown-item=""
+          >
+            Label 3
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner examples NativePopoverDropdownmenuComponent should render correctly 1`] = `
+<div
+  id="root4"
+>
+  <div>
+    <button
+      class="v-button"
+      popovertarget="mypopover"
+      type="button"
+      v-button=""
+    >
+       Action 
+      <v-icon-visa-toggle
+        class="v-icon v-icon-tiny"
+        style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+      >
+        
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-11"
+          v-icon-visa-chevron-down-tiny=""
+          v-toggle-default-template=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        
+      </v-icon-visa-toggle>
+    </button>
+    <div
+      id="mypopover"
+      popover=""
+    >
+      <div
+        aria-hidden="true"
+        class="v-dropdown-menu v-surface v-flex v-flex-col"
+        style="inline-size: 180px; max-inline-size: 100%; --v-dropdown-menu-surface-margin-block-start: 0; z-index: 200;"
+        v-dropdown-menu=""
+        vflex=""
+        vflexcol=""
+      >
+        <ul
+          class="v-listbox"
+          v-dropdown-list=""
+          vaddarrowkeys=""
+        >
+          <li>
+            <button
+              class="v-dropdown-item v-listbox-item v-button v-button-tertiary v-justify-content-start"
+              subtle=""
+              v-dropdown-item=""
+            >
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-export v-icon-tiny v-icon-visa"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-13"
+                v-icon-visa-export-tiny=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-secondary"
+                  clip-rule="evenodd"
+                  d="M12 2H11.9143L12 1.91429V2ZM0 0H11.0859L9.08586 2H2V14H9.08586L11.0859 16H0V0ZM12 14.0857V14H11.9143L12 14.0857Z"
+                  fill-rule="evenodd"
+                />
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M10.7072 12.7316L15.4143 8.02449L10.7072 3.31738L9.29299 4.7316L11.5858 7.02441H5.00009V9.02441H11.586L9.29299 11.3174L10.7072 12.7316Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+               Label 1
+            </button>
+          </li>
+          <li>
+            <button
+              class="v-dropdown-item v-listbox-item v-button v-button-tertiary v-justify-content-start"
+              subtle=""
+              v-dropdown-item=""
+            >
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-copy v-icon-tiny v-icon-visa"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-14"
+                v-icon-visa-copy-tiny=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-secondary"
+                  clip-rule="evenodd"
+                  d="M4 14.001V4.00098H2V16.001H10V14.001H4Z"
+                  fill-rule="evenodd"
+                />
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M6 0.000976562H15V12.001H6V10.001H13V2.00098H8V8.00098H6V0.000976562Z"
+                  fill-rule="evenodd"
+                />
+                <defs>
+                  <clippath>
+                    <rect
+                      height="16"
+                      transform="translate(0 0.000976562)"
+                      width="16"
+                    />
+                  </clippath>
+                </defs>
+              </svg>
+               Label 2
+            </button>
+          </li>
+          <li>
+            <button
+              class="v-dropdown-item v-listbox-item v-button v-button-tertiary v-justify-content-start"
+              subtle=""
+              v-dropdown-item=""
+            >
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-file-download v-icon-tiny v-icon-visa"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-15"
+                v-icon-visa-file-download-tiny=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-secondary"
+                  clip-rule="evenodd"
+                  d="M0 10V16H16V10H14V14H2V10H0Z"
+                  fill-rule="evenodd"
+                />
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M11 6.29289L8.70711 8.58579V0H6.70711V8.58579L4.41421 6.29289L3 7.70711L7.70711 12.4142L12.4142 7.70711L11 6.29289Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+               Label 3
+            </button>
+          </li>
+          <li>
+            <button
+              class="v-dropdown-item v-listbox-item v-button-destructive v-button v-button-tertiary v-justify-content-start"
+              destructive=""
+              type="button"
+              v-button=""
+              v-dropdown-item=""
+            >
+              <svg
+                aria-hidden="true"
+                class="v-icon v-icon-delete v-icon-tiny v-icon-visa"
+                focusable="false"
+                height="16"
+                id="a-v__icon__internal-16"
+                v-icon-visa-delete-tiny=""
+                viewBox="0 0 16 16"
+                width="16"
+              >
+                <path
+                  class="v-icon-secondary"
+                  clip-rule="evenodd"
+                  d="M9 2.00049H16V4.00049H14V16.0005H2V6.00049H4V14.0005H12V4.00049H0V2.00049H7L7 0.000488281H9V2.00049Z"
+                  fill-rule="evenodd"
+                />
+                <path
+                  class="v-icon-primary"
+                  clip-rule="evenodd"
+                  d="M8.00008 10.4148L6.20718 12.2077L4.79297 10.7935L6.58586 9.00056L4.79297 7.20767L6.20718 5.79346L8.00008 7.58635L9.79297 5.79346L11.2072 7.20767L9.41429 9.00056L11.2072 10.7935L9.79297 12.2077L8.00008 10.4148Z"
+                  fill-rule="evenodd"
+                />
+                <defs>
+                  <clippath>
+                    <rect
+                      height="16"
+                      transform="translate(0 0.000488281)"
+                      width="16"
+                    />
+                  </clippath>
+                </defs>
+              </svg>
+               Label 4
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Banner examples TextButtonDropdownmenuComponent should render correctly 1`] = `
+<div
+  id="root5"
+>
+  <div
+    style="--v-dropdown-menu-surface-margin-block-start: 0;"
+    v-floating-ui-container=""
+  >
+    <button
+      aria-controls="a-v-floating-ui-element-0"
+      aria-expanded="false"
+      class="v-button v-dropdown"
+      type="button"
+      v-button=""
+      v-floating-ui-trigger=""
+    >
+       Action 
+      <v-icon-visa-toggle
+        class="v-icon v-icon-tiny"
+        style="align-items: center; justify-content: center; pointer-events: none; --v-icon-primary: inherit; --v-icon-secondary: inherit;"
+      >
+        
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-17"
+          v-icon-visa-chevron-down-tiny=""
+          v-toggle-default-template=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        
+      </v-icon-visa-toggle>
+    </button>
+    <div
+      aria-hidden="true"
+      class="v-dropdown-menu v-surface v-flex v-flex-col"
+      id="a-v-floating-ui-element-0"
+      style="inline-size: 180px; max-inline-size: 100%; --v-dropdown-menu-surface-margin-block-start: 0; position: absolute; top: 0px; left: 0px; display: none; z-index: 200;"
+      v-dropdown-menu=""
+      vflex=""
+      vflexcol=""
+    >
+      <ul
+        class="v-listbox"
+        v-dropdown-list=""
+        vaddarrowkeys=""
+      >
+        <li>
+          <button
+            class="v-dropdown-item v-listbox-item v-button v-button-tertiary v-justify-content-start"
+            v-dropdown-item=""
+          >
+            Label 1
+          </button>
+        </li>
+        <li>
+          <button
+            class="v-dropdown-item v-listbox-item v-button v-button-tertiary v-justify-content-start"
+            v-dropdown-item=""
+          >
+            Label 2
+          </button>
+        </li>
+        <li>
+          <button
+            class="v-dropdown-item v-listbox-item v-button v-button-tertiary v-justify-content-start"
+            v-dropdown-item=""
+          >
+            Label 3
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,1529 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input examples CharacterCounterInputComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <span
+    class="v-typography-label"
+    vtypography="label"
+  >
+    * indicates a required field
+  </span>
+  <div
+    class="v-gap-4 v-flex v-flex-col v-mt-16"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+    vmt="16"
+  >
+    <label
+      class="v-label"
+      for="character-counter-error"
+      id="a-v-label-0"
+      v-label=""
+    >
+      * Label
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <textarea
+        aria-describedby="character-counter-initial-message character-counter-progress-message character-counter-error-message"
+        aria-invalid="false"
+        class="v-input v-input-resize-none"
+        id="character-counter-error"
+        noresize=""
+        rows="4"
+        v-input=""
+        value=""
+      />
+      
+    </div>
+    <div
+      class="v-input-message v-gap-0 v-flex v-flex-col"
+      v-input-message=""
+      vflex=""
+      vflexcol=""
+      vgap="0"
+    >
+      <span
+        id="character-counter-initial-message"
+      >
+        400 characters remaining
+        
+      </span>
+      <span
+        aria-live="polite"
+        id="character-counter-progress-message"
+      >
+        
+      </span>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-gap-4 v-align-items-center v-flex v-flex-row"
+        id="character-counter-error-message"
+        valignitemscenter=""
+        vflex=""
+        vgap="4"
+      >
+        
+        
+      </span>
+    </div>
+  </div>
+  <div
+    class="v-gap-16 v-flex v-flex-row"
+    vflex=""
+    vgap="16"
+  >
+    <button
+      class="v-button v-mt-8"
+      type="button"
+      v-button=""
+      vmt="8"
+    >
+      Submit
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary v-mt-8"
+      type="button"
+      v-button=""
+      vmt="8"
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Input examples DefaultInputComponent should render correctly 1`] = `
+<div
+  id="root1"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="default-input-single-line"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <input
+        class="v-input"
+        id="default-input-single-line"
+        required=""
+        v-input=""
+        value=""
+      />
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input examples DisabledInputComponent should render correctly 1`] = `
+<div
+  id="root2"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="default-disabled"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <input
+        class="v-input"
+        disabled="disabled"
+        id="default-disabled"
+        required=""
+        v-input=""
+        value=""
+      />
+      
+    </div>
+  </div>
+  <div
+    class="v-input-container v-mt-8"
+    style="container-type: inline-size;"
+    v-input-container=""
+    vmt="8"
+  >
+    <input
+      checked="checked"
+      class="v-checkbox"
+      id="disabled-checkbox"
+      type="checkbox"
+      v-checkbox=""
+    />
+    <label
+      class="v-label"
+      for="disabled-checkbox"
+      id="a-v-label-1"
+      v-label=""
+    >
+      Mark input as disabled
+    </label>
+    
+  </div>
+</div>
+`;
+
+exports[`Input examples ErrorInputComponent should render correctly 1`] = `
+<div
+  id="root3"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="default-error"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <input
+        aria-describedby="default-error-message"
+        aria-invalid="false"
+        class="v-input"
+        id="default-error"
+        required=""
+        v-input=""
+        value=""
+      />
+      
+    </div>
+    <span
+      aria-atomic="true"
+      aria-live="assertive"
+      class="v-input-message"
+      id="default-error-message"
+      v-input-message=""
+    >
+      
+    </span>
+  </div>
+  <div
+    class="v-gap-16 v-flex v-flex-row"
+    vflex=""
+    vgap="16"
+  >
+    <button
+      class="v-button v-mt-8"
+      type="button"
+      v-button=""
+      vmt="8"
+    >
+      Submit
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary v-mt-8"
+      type="button"
+      v-button=""
+      vmt="8"
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Input examples InitialValueInputComponent should render correctly 1`] = `
+<div
+  id="root4"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="initial-input"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <input
+        class="v-input"
+        id="initial-input"
+        required=""
+        v-input=""
+        value="Initial value"
+      />
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input examples InlineInputComponent should render correctly 1`] = `
+<div
+  id="root5"
+>
+  <div
+    class="v-gap-4 v-align-items-start v-flex v-flex-row v-flex-wrap"
+    valignitemsstart=""
+    vflex=""
+    vflexwrap=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="inline-input"
+      id="a-v-label-0"
+      style="line-height: var(--v-input-container-block-size);"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-gap-4 v-flex v-flex-col v-flex-grow"
+      vflex=""
+      vflexcol=""
+      vflexgrow=""
+      vgap="4"
+    >
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <input
+          aria-describedby="inline-input-message"
+          class="v-input"
+          id="inline-input"
+          required=""
+          v-input=""
+          value=""
+        />
+        
+      </div>
+      <span
+        class="v-input-message"
+        id="inline-input-message"
+        v-input-message=""
+      >
+        This is optional text that describes the label in more detail.
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input examples InlineMessageInputComponent should render correctly 1`] = `
+<div
+  id="root6"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="inline-message-input"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <input
+        aria-describedby="inline-message"
+        class="v-input"
+        id="inline-message-input"
+        required=""
+        v-input=""
+        value=""
+      />
+      
+    </div>
+    <span
+      class="v-input-message"
+      id="inline-message"
+      v-input-message=""
+    >
+      This is optional text that describes the label in more detail.
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Input examples LeadingIconInputComponent should render correctly 1`] = `
+<div
+  id="root7"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="leading-icon-input"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <span
+        class="v-flex v-flex-col v-justify-content-center v-typography-body-2-bold"
+        vflex=""
+        vflexcol=""
+        vjustifycontentcenter=""
+        vtypography="body-2-bold"
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-account v-icon-low v-icon-visa"
+          focusable="false"
+          height="24"
+          id="a-v__icon__internal-0"
+          v-icon-visa-account-low=""
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            class="v-icon-secondary"
+            clip-rule="evenodd"
+            d="M12 14C7.58172 14 4 17.5817 4 22V24H2V22C2 16.4772 6.47715 12 12 12C17.5228 12 22 16.4772 22 22V24H20V22C20 17.5817 16.4183 14 12 14Z"
+            fill-rule="evenodd"
+          />
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8ZM12 10C14.7614 10 17 7.76142 17 5C17 2.23858 14.7614 0 12 0C9.23858 0 7 2.23858 7 5C7 7.76142 9.23858 10 12 10Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </span>
+      <input
+        class="v-input"
+        id="leading-icon-input"
+        required=""
+        v-input=""
+        value=""
+      />
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input examples ModelDrivenFbInputComponent should render correctly 1`] = `
+<div
+  id="root8"
+>
+  <form
+    class="ng-untouched ng-pristine ng-invalid v-gap-16 v-flex v-flex-col"
+    novalidate=""
+    vflex=""
+    vflexcol=""
+    vgap="16"
+  >
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="model-fb-input-1"
+        id="a-v-label-0"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <input
+          aria-describedby="model-fb-input-message-1"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine ng-invalid"
+          formcontrolname="input1"
+          id="model-fb-input-1"
+          v-input=""
+          value=""
+        />
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="model-fb-input-message-1"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="model-fb-input-2"
+        id="a-v-label-1"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <input
+          aria-describedby="model-fb-input-message-2"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine ng-invalid"
+          formcontrolname="input2"
+          id="model-fb-input-2"
+          v-input=""
+          value=""
+        />
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="model-fb-input-message-2"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="model-fb-input-3"
+        id="a-v-label-2"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <input
+          aria-describedby="model-fb-input-message-3"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine ng-invalid"
+          formcontrolname="input3"
+          id="model-fb-input-3"
+          v-input=""
+          value=""
+        />
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="model-fb-input-message-3"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-16 v-flex v-flex-row v-mt-8"
+      vflex=""
+      vgap="16"
+      vmt="8"
+    >
+      <button
+        class="v-button"
+        type="submit"
+        v-button=""
+      >
+        Submit
+      </button>
+      <button
+        buttoncolor="secondary"
+        class="v-button v-button-secondary"
+        type="reset"
+        v-button=""
+      >
+         Reset 
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Input examples ModelDrivenFormInputComponent should render correctly 1`] = `
+<div
+  id="root9"
+>
+  <form
+    class="ng-untouched ng-pristine ng-invalid v-gap-16 v-flex v-flex-col"
+    novalidate=""
+    vflex=""
+    vflexcol=""
+    vgap="16"
+  >
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="model-input-1"
+        id="a-v-label-0"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <input
+          aria-describedby="model-input-message-1"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine ng-invalid"
+          id="model-input-1"
+          v-input=""
+          value=""
+        />
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="model-input-message-1"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="model-input-2"
+        id="a-v-label-1"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <input
+          aria-describedby="model-input-message-2"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine ng-invalid"
+          id="model-input-2"
+          v-input=""
+          value=""
+        />
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="model-input-message-2"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="model-input-3"
+        id="a-v-label-2"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <input
+          aria-describedby="model-input-message-3"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine ng-invalid"
+          id="model-input-3"
+          v-input=""
+          value=""
+        />
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="model-input-message-3"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-16 v-flex v-flex-row v-mt-8"
+      vflex=""
+      vgap="16"
+      vmt="8"
+    >
+      <button
+        class="v-button"
+        type="submit"
+        v-button=""
+      >
+        Submit
+      </button>
+      <button
+        buttoncolor="secondary"
+        class="v-button v-button-secondary"
+        type="reset"
+        v-button=""
+      >
+        Reset
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Input examples ModelDrivenInputComponent should render correctly 1`] = `
+<div
+  id="root10"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="model-input"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <input
+        class="v-input ng-untouched ng-dirty ng-valid"
+        id="model-input"
+        required=""
+        v-input=""
+        value="Initial value"
+      />
+      
+    </div>
+  </div>
+  <code>
+    Value: Initial value
+  </code>
+</div>
+`;
+
+exports[`Input examples OneTimePasscodeInputComponent should render correctly 1`] = `
+<div
+  id="root11"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="one-time-passcode"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    <div
+      class="v-input-container v-surface"
+      style="inline-size: 160px;"
+      v-input-container=""
+    >
+      <input
+        class="v-input v-input-otp"
+        id="one-time-passcode"
+        otp=""
+        v-input=""
+        value=""
+      />
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input examples PrefixInputComponent should render correctly 1`] = `
+<div
+  id="root12"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="prefix-input"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <span
+        class="v-typography-body-2-bold"
+        id="prefix-example-character"
+        vtypography="body-2-bold"
+      >
+        $
+      </span>
+      <input
+        aria-describedby="prefix-example-character"
+        class="v-input"
+        id="prefix-input"
+        v-input=""
+        value=""
+      />
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input examples ReadOnlyInputComponent should render correctly 1`] = `
+<div
+  id="root13"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="default-readonly"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <input
+        class="v-input"
+        id="default-readonly"
+        readonly="readonly"
+        required=""
+        v-input=""
+        value="Read-only example text."
+      />
+      
+    </div>
+  </div>
+  <div
+    class="v-input-container v-mt-8"
+    style="container-type: inline-size;"
+    v-input-container=""
+    vmt="8"
+  >
+    <input
+      checked="checked"
+      class="v-checkbox"
+      id="readonly-checkbox"
+      type="checkbox"
+      v-checkbox=""
+    />
+    <label
+      class="v-label"
+      for="readonly-checkbox"
+      id="a-v-label-1"
+      v-label=""
+    >
+      Mark input as read-only
+    </label>
+    
+  </div>
+</div>
+`;
+
+exports[`Input examples SuffixInputComponent should render correctly 1`] = `
+<div
+  id="root14"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="suffix-input"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <input
+        aria-describedby="suffix-example-character"
+        class="v-input"
+        id="suffix-input"
+        v-input=""
+        value=""
+      />
+      <span
+        class="v-typography-body-2-bold"
+        id="suffix-example-character"
+        vtypography="body-2-bold"
+      >
+        %
+      </span>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input examples TemplateDrivenFormInputComponent should render correctly 1`] = `
+<div
+  id="root15"
+>
+  <form
+    class="ng-untouched ng-pristine v-gap-16 v-flex v-flex-col ng-invalid"
+    novalidate=""
+    vflex=""
+    vflexcol=""
+    vgap="16"
+  >
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="template-input-1"
+        id="a-v-label-0"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <input
+          aria-describedby="template-input-message-1"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine ng-invalid"
+          id="template-input-1"
+          name="template1"
+          ngmodel=""
+          required=""
+          v-input=""
+          value=""
+        />
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="template-input-message-1"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="template-input-2"
+        id="a-v-label-1"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <input
+          aria-describedby="template-input-message-2"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine ng-invalid"
+          id="template-input-2"
+          name="template2"
+          ngmodel=""
+          required=""
+          v-input=""
+          value=""
+        />
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="template-input-message-2"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <label
+        class="v-label"
+        for="template-input-3"
+        id="a-v-label-2"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        class="v-input-container v-surface"
+        v-input-container=""
+      >
+        <input
+          aria-describedby="template-input-message-3"
+          aria-invalid="false"
+          class="v-input ng-untouched ng-pristine ng-invalid"
+          id="template-input-3"
+          name="template3"
+          ngmodel=""
+          required=""
+          v-input=""
+          value=""
+        />
+        
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="template-input-message-3"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-16 v-flex v-flex-row"
+      vflex=""
+      vgap="16"
+    >
+      <button
+        class="v-button"
+        type="submit"
+        v-button=""
+      >
+        Submit
+      </button>
+      <button
+        buttoncolor="secondary"
+        class="v-button v-button-secondary"
+        type="reset"
+        v-button=""
+      >
+         Reset 
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Input examples TemplateDrivenInputComponent should render correctly 1`] = `
+<div
+  id="root16"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="template-input"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <input
+        class="v-input ng-untouched ng-dirty ng-valid"
+        id="template-input"
+        required=""
+        v-input=""
+        value="John Doe"
+      />
+      
+    </div>
+  </div>
+  <code>
+    Value: John Doe
+  </code>
+</div>
+`;
+
+exports[`Input examples TextareaWithFixedHeightAndResizeInputComponent should render correctly 1`] = `
+<div
+  id="root17"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="fixed-height-and-resize-textarea"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <textarea
+        class="v-input"
+        id="fixed-height-and-resize-textarea"
+        required=""
+        style="block-size: 130px;"
+        v-input=""
+        value=""
+      />
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input examples TextareaWithFixedHeightInputComponent should render correctly 1`] = `
+<div
+  id="root18"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="fixed-height-textarea"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <textarea
+        class="v-input v-input-resize-none"
+        id="fixed-height-textarea"
+        noresize=""
+        required=""
+        style="block-size: 130px;"
+        v-input=""
+        value=""
+      />
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input examples TextareaWithNativeRowsAttributeInputComponent should render correctly 1`] = `
+<div
+  id="root19"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="native-rows-textarea"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <textarea
+        class="v-input v-input-resize-none"
+        id="native-rows-textarea"
+        noresize=""
+        required=""
+        rows="3"
+        v-input=""
+        value=""
+      />
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input examples TextareaWithResizeInputComponent should render correctly 1`] = `
+<div
+  id="root21"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="resize-textarea"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <textarea
+        class="v-input"
+        id="resize-textarea"
+        required=""
+        v-input=""
+        value=""
+      />
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input examples TextareaWithoutResizeInputComponent should render correctly 1`] = `
+<div
+  id="root20"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="no-resize-textarea"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <textarea
+        class="v-input v-input-resize-none"
+        id="no-resize-textarea"
+        noresize=""
+        required=""
+        v-input=""
+        value=""
+      />
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input examples WithActionButtonInputComponent should render correctly 1`] = `
+<div
+  id="root22"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="action-button"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <input
+        class="v-input"
+        id="action-button"
+        type="text"
+        v-input=""
+        value=""
+      />
+      <button
+        aria-label="hide password"
+        buttoncolor="tertiary"
+        buttonsize="small"
+        class="v-button v-button-icon v-button-small v-button-tertiary"
+        type="button"
+        v-button-icon=""
+      >
+        
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-password-hide v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-1"
+          v-icon-visa-password-hide-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            clip-rule="evenodd"
+            d="M0.298828 14.29L14.2988 0.290039L15.713 1.70425L1.71304 15.7043L0.298828 14.29Z"
+            fill-rule="evenodd"
+          />
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M6.51868 13.7269C8.90896 14.2429 11.5201 13.4989 13.2736 11.4949L15.47 8.98466C15.9649 8.41913 15.9649 7.57469 15.47 7.00915L14.4277 5.81788L13.0103 7.23523L13.6768 7.99691L11.7684 10.1779C10.8608 11.2152 9.63149 11.7798 8.37364 11.8719L6.51868 13.7269ZM7.63841 4.12184C6.38022 4.21369 5.15051 4.77838 4.24266 5.81594L2.33431 7.99691L3.00119 8.75906L1.58384 10.1764L0.541057 8.98466C0.0462088 8.41912 0.0462116 7.57469 0.541057 7.00915L2.7375 4.49893C4.49118 2.49473 7.10265 1.75079 9.49314 2.26711L7.63841 4.12184Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        
+      </button>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input examples WithClearTextButtonInputComponent should render correctly 1`] = `
+<div
+  id="root23"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="button-input"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label (required)
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <input
+        class="v-input"
+        id="button-input"
+        required=""
+        v-input=""
+        value=""
+      />
+      
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Input examples WithMaskedFieldInputComponent should render correctly 1`] = `
+<div
+  id="root24"
+>
+  <div
+    class="v-gap-4 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="4"
+  >
+    <label
+      class="v-label"
+      for="masked-field"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    <div
+      class="v-input-container v-surface"
+      v-input-container=""
+    >
+      <input
+        class="v-input"
+        id="masked-field"
+        type="password"
+        v-input=""
+        value="password"
+      />
+      <button
+        aria-label="show password"
+        buttoncolor="tertiary"
+        buttonsize="small"
+        class="v-button v-button-icon v-button-small v-button-tertiary"
+        type="button"
+        v-button-icon=""
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-password-show v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-2"
+          v-icon-visa-password-show-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M4.2368 5.8188C6.22885 3.54217 9.77051 3.54217 11.7626 5.81881L13.6709 7.99977L11.7626 10.1807C9.7705 12.4574 6.22885 12.4574 4.23679 10.1807L2.32845 7.99977L4.2368 5.8188ZM13.2677 4.5018C10.4788 1.31451 5.52052 1.3145 2.73164 4.50179L0.535198 7.01202C0.0403522 7.57756 0.0403494 8.42199 0.535197 8.98753L2.73164 11.4978C5.52052 14.685 10.4788 14.685 13.2677 11.4978L15.4642 8.98753C15.959 8.42199 15.959 7.57756 15.4642 7.01202L13.2677 4.5018ZM7.99968 10C9.10425 10 9.99968 9.10457 9.99968 8C9.99968 6.89543 9.10425 6 7.99968 6C6.89511 6 5.99968 6.89543 5.99968 8C5.99968 9.10457 6.89511 10 7.99968 10Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+        
+        
+      </button>
+      
+    </div>
+  </div>
+</div>
+`;

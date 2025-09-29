@@ -1,0 +1,68 @@
+<!--
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div v-combobox v-floating-ui-container>
+  <label v-label for="multiselect-read-only-selections" id="multiselect-read-only-selections-label">Label</label>
+  <div v-input-container v-floating-ui-trigger vMY="4" vSurface vFlexRow vPL="3" vPR="6" vPY="3">
+    <div vFlex vGap="2" vFlexShrink="1" vFlexGrow vFlexWrap>
+      @for(item of chipArray(); track item.value; let i = $index) {
+      <div v-chip vFlex vFlexShrink0 compact>
+        @if (readonly) { {{ item.label }} } @else {
+        <label v-label [for]="'read-only-' + item.value + '-' + i">{{ item.label }}</label>
+        <button
+          v-button-icon
+          buttonColor="tertiary"
+          subtle
+          [attr.aria-label]="'Remove ' + item.label"
+          aria-describedby="multiselect-read-only-selections-label"
+          [id]="'read-only-' + item.value + '-' + i"
+          (click)="deleteChip(item.value)"
+        >
+          <svg v-icon-visa-clear-alt-tiny />
+        </button>
+        }
+      </div>
+      }
+      <input
+        v-input
+        vFlexShrink="1"
+        vFlexBasis="50px"
+        [readonly]="readonly"
+        id="multiselect-read-only-selections"
+        name="multiselect-read-only-selections"
+        aria-describedby="multiselect-read-only-selections-no-results"
+      />
+    </div>
+    <button v-button-icon buttonColor="tertiary" buttonSize="small" aria-label="toggle">
+      <v-icon-visa-toggle>
+        <svg v-toggle-default-template v-icon-visa-chevron-down-tiny />
+        <svg v-toggle-rotated-template v-icon-visa-chevron-up-tiny />
+      </v-icon-visa-toggle>
+    </button>
+  </div>
+  <div v-listbox-container v-floating-ui-element>
+    <ul v-listbox multiselect>
+      @for(item of optionTypes; track item.value; let i = $index) {
+      <li v-listbox-item [value]="item.value">{{item.label}}</li>
+      }
+    </ul>
+  </div>
+</div>
+
+<div v-input-container vMT="8" style="container-type: inline-size">
+  <input v-checkbox type="checkbox" checked (change)="readonly = !readonly" id="readonly-checkbox" />
+  <label v-label for="readonly-checkbox">Mark input as read-only</label>
+</div>

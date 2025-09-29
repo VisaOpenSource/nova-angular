@@ -9,7 +9,7 @@
       "type": "json"
     },
     {
-      "filename": "libs/nova-lib/package.json",
+      "filename": "projects/nova-angular/package.json",
       "type": "json"
     }
   ],

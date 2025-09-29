@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputContainerComponent it should disable all child buttons when input is disabled 1`] = `
+<div
+  id="root6"
+>
+  <div
+    class="v-input-container v-surface"
+    v-input-container=""
+  >
+    <input
+      class="v-input"
+      disabled="disabled"
+      id="test-id"
+      v-input=""
+      value=""
+    />
+    <button
+      class="v-button"
+      disabled="disabled"
+      role="button"
+      type="button"
+      v-button=""
+    />
+    <button
+      class="v-button"
+      disabled="disabled"
+      role="button"
+      type="button"
+      v-button=""
+    />
+    
+  </div>
+</div>
+`;
+
+exports[`InputContainerComponent it should disable all child buttons when input is readonly 1`] = `
+<div
+  id="root7"
+>
+  <div
+    class="v-input-container v-surface"
+    v-input-container=""
+  >
+    <input
+      class="v-input"
+      id="test-id"
+      readonly="readonly"
+      v-input=""
+      value=""
+    />
+    <button
+      class="v-button"
+      disabled="disabled"
+      role="button"
+      type="button"
+      v-button=""
+    />
+    <button
+      class="v-button"
+      disabled="disabled"
+      role="button"
+      type="button"
+      v-button=""
+    />
+    
+  </div>
+</div>
+`;
+
+exports[`InputContainerComponent should not render v-input-control when select is a child and v-icon-visa-toggle is a child 1`] = `
+<div
+  id="root5"
+>
+  <div
+    class="v-input-container v-surface"
+    usecustomicon="true"
+    v-input-container=""
+  >
+    <select
+      class="v-input"
+      id="default-select-field"
+      v-select=""
+    >
+      <option
+        hidden=""
+      />
+    </select>
+    
+  </div>
+</div>
+`;
+
+exports[`InputContainerComponent should render v-input-control when select is a child and v-icon-visa-toggle is a child 1`] = `
+<div
+  id="root4"
+>
+  <div
+    class="v-input-container v-surface"
+    v-input-container=""
+  >
+    <select
+      class="v-input"
+      id="default-select-field"
+      v-select=""
+    >
+      <option
+        hidden=""
+      />
+    </select>
+    <div
+      class="v-input-control"
+    >
+      <svg
+        v-icon-visa-chevron-down-tiny=""
+      />
+    </div>
+    
+  </div>
+</div>
+`;

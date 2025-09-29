@@ -35,15 +35,13 @@ const { DOCS_JSON, EXAMPLES_HIERARCHY, API_CONTENT, LIB_JSON } = require('./meta
 const { getSections } = require('./example-sections-schema');
 const { getExamples } = require('./example-schema');
 const { getPropertySections } = require('./property-sections-schema');
-const full = require('core-js/full');
-const { getServiceProps } = require('./property-schema');
 
 /**
  * traverse the docs json and grab the first-level docs pages to get names and orders
  */
 const getTopLevelPages = (docsData) => {
   const topLevel = docsData.filter((component) => {
-    return component.file.replace('apps/workshop/src/app/', '').split('/').length <= 3;
+    return component.file.replace('projects/workshop/src/app/', '').split('/').length <= 3;
   });
   return topLevel;
 };
@@ -52,7 +50,7 @@ const getTopLevelPages = (docsData) => {
  * retrieve component name
  */
 const componentName = (component) => {
-  let componentName = component.file.replace('apps/workshop/src/app/', '').split('/')[1];
+  let componentName = component.file.replace('projects/workshop/src/app/', '').split('/')[1];
   if (!componentName) return;
   return componentName;
 };
@@ -74,7 +72,7 @@ const componentDescription = () => {
 };
 
 /**
- * One of the following: 'foundations', 'utilities', 'components', 'services'
+ * One of the following: 'foundations', 'utilities', 'components', 'services', 'patterns'
  */
 const componentCategory = (category) => {
   return category;
@@ -116,7 +114,6 @@ const createComponentObject = (item, type) => {
 };
 
 let docsData;
-let libData;
 let fullLibData;
 let examplesData;
 let apiContentData;
@@ -142,6 +139,7 @@ const getComponentData = () => {
   let services = [];
   let utilities = [];
   let foundations = [];
+  let patterns = [];
 
   topLevelPages.forEach((page) => {
     if (page.file.includes('components')) {
@@ -150,6 +148,8 @@ const getComponentData = () => {
       utilities.push(page);
     } else if (page.file.includes('foundations')) {
       foundations.push(page);
+    } else if (page.file.includes('patterns')) {
+      patterns.push(page);
     }
   });
 
@@ -178,6 +178,10 @@ const getComponentData = () => {
 
   foundations.forEach((item) => {
     data.push(createComponentObject(item, 'foundations'));
+  });
+
+  patterns.forEach((item) => {
+    data.push(createComponentObject(item, 'patterns'));
   });
 
   return data;

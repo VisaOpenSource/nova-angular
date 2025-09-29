@@ -1,0 +1,1042 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Progress examples NovaCompletedProgressBarProgressComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <progress
+    class="v-progress v-progress-bar v-progress-complete v-mb-8"
+    determinate=""
+    id="progress-bar-complete"
+    max="100"
+    percentage="100"
+    v-progress-complete=""
+    v-progress-linear=""
+    value="100"
+    vmb="8"
+  />
+  <label
+    class="v-progress-label"
+    for="progress-bar-complete"
+    id="a-v-label-0"
+    progresslabel=""
+    v-label=""
+  >
+    <span
+      class="v-gap-4 v-flex v-flex-row"
+      role="alert"
+      vflex=""
+      vgap="4"
+    >
+      <svg
+        aria-hidden="true"
+        class="v-icon v-icon-success v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-0"
+        v-icon-visa-success-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C8.74542 2 9.4591 2.13593 10.1176 2.38437L11.6319 0.870034C10.542 0.313733 9.30764 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16C12.4183 16 16 12.4183 16 8C16 7.21837 15.8879 6.46293 15.6789 5.74886L13.9678 7.37472C13.9891 7.58024 14 7.78885 14 8Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M15 3.46597L7.72838 10.9961L5 8.18244L6.42533 6.71257L7.72838 8.05635L13.5747 1.99609L15 3.46597Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+       File is now uploaded 
+    </span>
+    <span>
+      100%
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Progress examples NovaCustomLinearProgressComponent should render correctly 1`] = `
+<div
+  id="root1"
+>
+  
+  <div
+    class="v-gap-12 v-flex v-flex-row v-mt-12"
+    vflex=""
+    vgap="12"
+    vmt="12"
+  >
+    <button
+      class="v-button"
+      type="button"
+      v-button=""
+    >
+      Start
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      Reset
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      
+      <svg
+        aria-hidden="true"
+        class="v-icon v-icon-media-pause-alt v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-1"
+        v-icon-visa-media-pause-alt-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M5 5V11H7L7 5H5ZM9 5L9 11H11L11 5H9Z"
+          fill-rule="evenodd"
+        />
+        <defs>
+          <clippath>
+            <rect
+              height="16"
+              width="16"
+            />
+          </clippath>
+        </defs>
+      </svg>
+      
+       Pause 
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Progress examples NovaCustomSizeCircularProgressComponent should render correctly 1`] = `
+<div
+  id="root2"
+>
+  
+  <div
+    class="v-gap-12 v-flex v-flex-row v-mt-12"
+    vflex=""
+    vgap="12"
+    vmt="12"
+  >
+    <button
+      class="v-button"
+      type="button"
+      v-button=""
+    >
+      Start
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      Reset
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      
+      <svg
+        aria-hidden="true"
+        class="v-icon v-icon-media-pause-alt v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-2"
+        v-icon-visa-media-pause-alt-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M5 5V11H7L7 5H5ZM9 5L9 11H11L11 5H9Z"
+          fill-rule="evenodd"
+        />
+        <defs>
+          <clippath>
+            <rect
+              height="16"
+              width="16"
+            />
+          </clippath>
+        </defs>
+      </svg>
+      
+       Pause 
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Progress examples NovaCustomSlowCircularProgressComponent should render correctly 1`] = `
+<div
+  id="root3"
+>
+  
+  <div
+    class="v-gap-12 v-flex v-flex-row v-mt-12"
+    vflex=""
+    vgap="12"
+    vmt="12"
+  >
+    <button
+      class="v-button"
+      type="button"
+      v-button=""
+    >
+      Start
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      Reset
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      
+      <svg
+        aria-hidden="true"
+        class="v-icon v-icon-media-pause-alt v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-3"
+        v-icon-visa-media-pause-alt-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M5 5V11H7L7 5H5ZM9 5L9 11H11L11 5H9Z"
+          fill-rule="evenodd"
+        />
+        <defs>
+          <clippath>
+            <rect
+              height="16"
+              width="16"
+            />
+          </clippath>
+        </defs>
+      </svg>
+      
+       Pause 
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Progress examples NovaDeterminateCircularProgressCompletedComponent should render correctly 1`] = `
+<div
+  id="root4"
+>
+  <div
+    aria-labelledby="completed-circular completed-circular-sr-msg"
+    aria-valuenow="100"
+    class="v-progress v-progress-circular v-progress-complete"
+    determinate=""
+    percentage="100"
+    role="progressbar"
+    v-progress-circular=""
+  >
+    <svg
+      class="v-progress-circular-track v-progress-complete"
+    >
+      <circle
+        class="v-progress-circular-background"
+      />
+      <circle
+        class="v-progress-circular-bar"
+        style="stroke-dasharray: 213.62830044410595; stroke-dashoffset: 0; stroke-dasharray: 213.62830044410595;"
+      />
+    </svg>
+    <div
+      class="v-progress-label v-typography-body-2-bold"
+      id="completed-circular"
+      v-label=""
+      vtypography="body-2-bold"
+    >
+      100%
+    </div>
+  </div>
+  <span
+    class="v-sr"
+    id="completed-circular-sr-msg"
+    role="alert"
+    vsr=""
+  >
+    Loading complete
+  </span>
+</div>
+`;
+
+exports[`Progress examples NovaDeterminateCircularProgressComponent should render correctly 1`] = `
+<div
+  id="root6"
+>
+  <div
+    aria-labelledby="progress-large-circular-percentage"
+    aria-valuenow="0"
+    class="v-progress v-progress-circular"
+    determinate=""
+    role="progressbar"
+    v-progress-circular=""
+  >
+    <svg
+      class="v-progress-circular-track"
+    >
+      <circle
+        class="v-progress-circular-background"
+      />
+      <circle
+        class="v-progress-circular-bar"
+        style="stroke-dasharray: 213.62830044410595; stroke-dashoffset: 213.62830044410595; stroke-dasharray: 213.62830044410595; stroke-dashoffset: 213.62830044410595;"
+      />
+    </svg>
+    <div
+      class="v-progress-label v-typography-body-2-bold"
+      id="progress-large-circular-percentage"
+      v-label=""
+      vtypography="body-2-bold"
+    >
+      0%
+    </div>
+  </div>
+  <span
+    class="v-sr"
+    role="alert"
+    vsr=""
+  >
+    
+  </span>
+  <div
+    class="v-gap-12 v-flex v-flex-row v-mt-12"
+    vflex=""
+    vgap="12"
+    vmt="12"
+  >
+    <button
+      class="v-button"
+      type="button"
+      v-button=""
+    >
+      Start
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Progress examples NovaDeterminateCircularSmallProgressComponent should render correctly 1`] = `
+<div
+  id="root5"
+>
+  <div
+    aria-labelledby="small-circular-determinate-percentage small-circular-determinate-sr-msg"
+    aria-valuenow="83"
+    class="v-progress v-progress-circular v-progress-circular-small"
+    determinate=""
+    percentage="83"
+    role="progressbar"
+    small=""
+    v-progress-circular=""
+  >
+    <svg
+      class="v-progress-circular-track"
+    >
+      <circle
+        class="v-progress-circular-background"
+      />
+      <circle
+        class="v-progress-circular-bar"
+        style="stroke-dasharray: 138.23007675795088; stroke-dashoffset: 23.49911304885164; stroke-dasharray: 138.23007675795088; stroke-dashoffset: 23.49911304885164;"
+      />
+    </svg>
+    <div
+      class="v-progress-label v-typography-body-2-bold"
+      id="small-circular-determinate-percentage"
+      v-label=""
+      vtypography="body-2-bold"
+    >
+      83%
+    </div>
+    <span
+      class="v-sr"
+      id="small-circular-determinate-sr-msg"
+      role="alert"
+      vsr=""
+    >
+      Loading...
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Progress examples NovaDeterminateProgressBarNoLabelProgressComponent should render correctly 1`] = `
+<div
+  id="root7"
+>
+  <progress
+    class="v-progress v-progress-bar v-mb-8"
+    determinate=""
+    id="progress-bar-determinate-no-label"
+    max="100"
+    v-progress-linear=""
+    value="0"
+  />
+  <label
+    class="v-progress-label"
+    for="progress-bar-determinate-no-label"
+    id="a-v-label-0"
+    progresslabel=""
+    v-label=""
+  >
+    <span>
+      0%
+    </span>
+    <span
+      class="v-sr"
+      role="alert"
+      vsr=""
+    >
+      
+    </span>
+  </label>
+  <div
+    class="v-gap-12 v-flex v-flex-row v-mt-12"
+    vflex=""
+    vgap="12"
+    vmt="12"
+  >
+    <button
+      class="v-button"
+      type="button"
+      v-button=""
+    >
+      Start
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Progress examples NovaDeterminateProgressBarProgressComponent should render correctly 1`] = `
+<div
+  id="root8"
+>
+  <progress
+    class="v-progress v-progress-bar v-mb-8"
+    determinate=""
+    id="progress-bar-determinate"
+    max="100"
+    v-progress-linear=""
+    value="15"
+  />
+  <label
+    class="v-progress-label"
+    for="progress-bar-determinate"
+    id="a-v-label-0"
+    progresslabel=""
+    v-label=""
+  >
+    <span>
+      filename.jpg
+    </span>
+    <span>
+      15%
+    </span>
+    <span
+      class="v-sr"
+      role="alert"
+      vsr=""
+    >
+      Loading...
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Progress examples NovaErrorProgressBarProgressComponent should render correctly 1`] = `
+<div
+  id="root10"
+>
+  <progress
+    class="v-progress v-progress-bar v-progress-error v-mb-8"
+    determinate=""
+    id="progress-bar-error"
+    invalid=""
+    max="100"
+    percentage="0"
+    v-progress-error=""
+    v-progress-linear=""
+    value="0"
+  />
+  <label
+    class="v-progress-label"
+    for="progress-bar-error"
+    id="a-v-label-0"
+    progresslabel=""
+    v-label=""
+  >
+    <span
+      class="v-gap-4 v-flex v-flex-row"
+      role="alert"
+      vflex=""
+      vgap="4"
+    >
+      <svg
+        aria-hidden="true"
+        class="v-icon v-icon-error v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-5"
+        v-icon-visa-error-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M9 4H7V8H9V4ZM8 10C7.44772 10 7 10.4477 7 11C7 11.5523 7.44772 12 8 12C8.55228 12 9 11.5523 9 11C9 10.4477 8.55228 10 8 10Z"
+          fill-rule="evenodd"
+        />
+        <defs>
+          <clippath>
+            <rect
+              height="16"
+              width="16"
+            />
+          </clippath>
+        </defs>
+      </svg>
+       This is required text that describes the error in more detail. 
+    </span>
+    <span
+      class="v-ml-8"
+      vml="8"
+    >
+      0%
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Progress examples NovaErrorProgressCircularProgressComponent should render correctly 1`] = `
+<div
+  id="root9"
+>
+  <span
+    class="v-input-message v-input-error"
+    role="alert"
+  >
+    <svg
+      aria-hidden="true"
+      class="v-icon v-icon-error v-icon-tiny v-icon-visa"
+      focusable="false"
+      height="16"
+      id="a-v__icon__internal-4"
+      v-icon-visa-error-tiny=""
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <path
+        class="v-icon-secondary"
+        clip-rule="evenodd"
+        d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z"
+        fill-rule="evenodd"
+      />
+      <path
+        class="v-icon-primary"
+        clip-rule="evenodd"
+        d="M9 4H7V8H9V4ZM8 10C7.44772 10 7 10.4477 7 11C7 11.5523 7.44772 12 8 12C8.55228 12 9 11.5523 9 11C9 10.4477 8.55228 10 8 10Z"
+        fill-rule="evenodd"
+      />
+      <defs>
+        <clippath>
+          <rect
+            height="16"
+            width="16"
+          />
+        </clippath>
+      </defs>
+    </svg>
+     This is required text that describes the error in more detail.
+
+  </span>
+</div>
+`;
+
+exports[`Progress examples NovaIndeterminateCircularProgressComponent should render correctly 1`] = `
+<div
+  id="root12"
+>
+  
+  <div
+    class="v-gap-12 v-flex v-flex-row v-mt-12"
+    vflex=""
+    vgap="12"
+    vmt="12"
+  >
+    <button
+      class="v-button"
+      type="button"
+      v-button=""
+    >
+      Start
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      Reset
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      
+      <svg
+        aria-hidden="true"
+        class="v-icon v-icon-media-pause-alt v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-7"
+        v-icon-visa-media-pause-alt-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M5 5V11H7L7 5H5ZM9 5L9 11H11L11 5H9Z"
+          fill-rule="evenodd"
+        />
+        <defs>
+          <clippath>
+            <rect
+              height="16"
+              width="16"
+            />
+          </clippath>
+        </defs>
+      </svg>
+      
+       Pause 
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Progress examples NovaIndeterminateCircularProgressSmallComponent should render correctly 1`] = `
+<div
+  id="root11"
+>
+  
+  <div
+    class="v-gap-12 v-flex v-flex-row v-mt-12"
+    vflex=""
+    vgap="12"
+    vmt="12"
+  >
+    <button
+      class="v-button"
+      type="button"
+      v-button=""
+    >
+      Start
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      Reset
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      
+      <svg
+        aria-hidden="true"
+        class="v-icon v-icon-media-pause-alt v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-6"
+        v-icon-visa-media-pause-alt-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M5 5V11H7L7 5H5ZM9 5L9 11H11L11 5H9Z"
+          fill-rule="evenodd"
+        />
+        <defs>
+          <clippath>
+            <rect
+              height="16"
+              width="16"
+            />
+          </clippath>
+        </defs>
+      </svg>
+      
+       Pause 
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Progress examples NovaIndeterminateProgressBarNoLabelProgressComponent should render correctly 1`] = `
+<div
+  id="root13"
+>
+  
+  <div
+    class="v-gap-12 v-flex v-flex-row v-mt-12"
+    vflex=""
+    vgap="12"
+    vmt="12"
+  >
+    <button
+      class="v-button"
+      type="button"
+      v-button=""
+    >
+      Start
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      Reset
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      
+      <svg
+        aria-hidden="true"
+        class="v-icon v-icon-media-pause-alt v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-8"
+        v-icon-visa-media-pause-alt-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M5 5V11H7L7 5H5ZM9 5L9 11H11L11 5H9Z"
+          fill-rule="evenodd"
+        />
+        <defs>
+          <clippath>
+            <rect
+              height="16"
+              width="16"
+            />
+          </clippath>
+        </defs>
+      </svg>
+      
+       Pause 
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Progress examples NovaIndeterminateProgressBarProgressComponent should render correctly 1`] = `
+<div
+  id="root14"
+>
+  
+  <div
+    class="v-gap-12 v-flex v-flex-row v-mt-12"
+    vflex=""
+    vgap="12"
+    vmt="12"
+  >
+    <button
+      class="v-button"
+      type="button"
+      v-button=""
+    >
+      Start
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      Reset
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      
+      <svg
+        aria-hidden="true"
+        class="v-icon v-icon-media-pause-alt v-icon-tiny v-icon-visa"
+        focusable="false"
+        height="16"
+        id="a-v__icon__internal-9"
+        v-icon-visa-media-pause-alt-tiny=""
+        viewBox="0 0 16 16"
+        width="16"
+      >
+        <path
+          class="v-icon-secondary"
+          clip-rule="evenodd"
+          d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8Z"
+          fill-rule="evenodd"
+        />
+        <path
+          class="v-icon-primary"
+          clip-rule="evenodd"
+          d="M5 5V11H7L7 5H5ZM9 5L9 11H11L11 5H9Z"
+          fill-rule="evenodd"
+        />
+        <defs>
+          <clippath>
+            <rect
+              height="16"
+              width="16"
+            />
+          </clippath>
+        </defs>
+      </svg>
+      
+       Pause 
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Progress examples NovaLiveCircularProgressComponent should render correctly 1`] = `
+<div
+  id="root15"
+>
+  <div
+    aria-labelledby="live-circular"
+    aria-valuenow="0"
+    class="v-progress v-progress-circular v-progress-circular-small"
+    determinate=""
+    role="progressbar"
+    small=""
+    v-progress-circular=""
+  >
+    <svg
+      class="v-progress-circular-track"
+    >
+      <circle
+        class="v-progress-circular-background"
+      />
+      <circle
+        class="v-progress-circular-bar"
+        style="stroke-dasharray: 138.23007675795088; stroke-dashoffset: 138.23007675795088; stroke-dasharray: 138.23007675795088; stroke-dashoffset: 138.23007675795088;"
+      />
+    </svg>
+    <div
+      class="v-progress-label v-typography-body-2-bold"
+      id="live-circular"
+      v-label=""
+      vtypography="body-2-bold"
+    >
+      0%
+    </div>
+  </div>
+  <span
+    class="v-sr"
+    role="alert"
+    vsr=""
+  >
+    
+  </span>
+  <div
+    class="v-gap-12 v-flex v-flex-row v-mt-12"
+    vflex=""
+    vgap="12"
+    vmt="12"
+  >
+    <button
+      class="v-button"
+      type="button"
+      v-button=""
+    >
+      Start
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Progress examples NovaLiveProgressBarProgressComponent should render correctly 1`] = `
+<div
+  id="root16"
+>
+  <progress
+    class="v-progress v-progress-bar v-mb-8"
+    determinate=""
+    id="liveProgressBar"
+    max="100"
+    v-progress-linear=""
+    value="0"
+    vmb="8"
+  />
+  <label
+    class="v-progress-label"
+    for="liveProgressBar"
+    id="a-v-label-0"
+    progresslabel=""
+    v-label=""
+  >
+    <span>
+      Filename.jpg
+    </span>
+    <span>
+      0%
+    </span>
+    <span
+      class="v-sr"
+      role="alert"
+      vsr=""
+    >
+      
+    </span>
+  </label>
+  <div
+    class="v-gap-12 v-flex v-flex-row v-mt-12"
+    vflex=""
+    vgap="12"
+    vmt="12"
+  >
+    <button
+      class="v-button"
+      type="button"
+      v-button=""
+    >
+      Start
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;

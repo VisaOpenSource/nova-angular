@@ -1,0 +1,64 @@
+<!--
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div class="page__header">
+  <div vFlex class="home__hero" vMX="auto" vAlignItemsCenter vGap="36">
+    <div class="home__hero-left v-xs-media-hide v-sm-media-hide v-md-media-hide v-lg-media-hide">
+      <nova-workshop-thumbnail [componentsGraphic]="true"></nova-workshop-thumbnail>
+    </div>
+    <div class="home__hero-right">
+      <h1 vTypography="display-2" class="v-mb-12" style="color: var(--palette-default-active)">Components</h1>
+    </div>
+  </div>
+</div>
+<div class="page__content page__content-centered">
+  <div class="search-bar">
+    <label for="search-component">Search components</label>
+    <div v-input-container class="search-bar-container">
+      <svg v-icon-visa-search-low />
+      <input v-input id="search-component" (input)="setFilter($event)" #search />
+      @if (search && search.value) {
+        <div vFlex vAlignContentCenter vGap="4">
+          <button v-button-icon buttonColor="tertiary" buttonSize="small" (click)="clearValue()">
+            <svg v-icon-visa-close-tiny />
+          </button>
+        </div>
+      }
+    </div>
+  </div>
+
+  <div class="components-table">
+    @if (filteredComponents.length > 0) {
+      @for (component of filteredComponents; track component.path; let i = $index) {
+        <div v-content-card clickable>
+          @if (component.path) {
+            <nova-workshop-thumbnail [name]="component.path"></nova-workshop-thumbnail>
+          } @else {
+            <img v-content-card-image [src]="null" [attr.alt]="'Thumbnail for the ' + component.name + ' component'" />
+          }
+          <div v-content-card-body>
+            <h3 v-content-card-title>
+              <a [routerLink]="component.path" v-content-card-title-link>{{ component.path | titlecase }}</a>
+              <svg v-icon-visa-chevron-link-tiny />
+            </h3>
+          </div>
+        </div>
+      }
+    } @else {
+      <p vTypography="label-large-active">No component found</p>
+    }
+  </div>
+</div>

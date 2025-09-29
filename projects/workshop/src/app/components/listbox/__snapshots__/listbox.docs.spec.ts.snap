@@ -1,0 +1,4181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Listbox examples AutomaticSingleSelectListboxComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <label
+    class="v-label"
+    for="auto-ss-listbox"
+    id="auto-ss-listbox-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-labelledby="auto-ss-listbox-label"
+    class="v-listbox-container"
+    id="auto-ss-listbox"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll"
+      containheight=""
+      id="a-v-listbox-0"
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-a"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-c"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples DisabledMultiSelectListboxComponent should render correctly 1`] = `
+<div
+  id="root1"
+>
+  <label
+    class="v-label"
+    for="disabled-ms-listbox"
+    id="disabled-ms-listbox-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-labelledby="disabled-ms-listbox-label"
+    aria-multiselectable="true"
+    class="v-listbox-container v-listbox-disabled"
+    id="disabled-ms-listbox"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll"
+      containheight=""
+      id="a-v-listbox-0"
+      multiselect=""
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-disabled="true"
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-a-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item A
+      </li>
+      <li
+        aria-disabled="true"
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item B
+      </li>
+      <li
+        aria-disabled="true"
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-c-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item C
+      </li>
+      <li
+        aria-disabled="true"
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item D
+      </li>
+      <li
+        aria-disabled="true"
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item E
+      </li>
+      <li
+        aria-disabled="true"
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item F
+      </li>
+      <li
+        aria-disabled="true"
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples DisabledSingleSelectListboxComponent should render correctly 1`] = `
+<div
+  id="root2"
+>
+  <label
+    class="v-label"
+    for="disabled-ss-listbox"
+    id="disabled-ss-listbox-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-labelledby="disabled-ss-listbox-label"
+    class="v-listbox-container v-listbox-disabled"
+    id="disabled-ss-listbox"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll"
+      containheight=""
+      disabled=""
+      id="a-v-listbox-0"
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-disabled="true"
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-a"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item A
+      </li>
+      <li
+        aria-disabled="true"
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item B
+      </li>
+      <li
+        aria-disabled="true"
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-c"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item C
+      </li>
+      <li
+        aria-disabled="true"
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item D
+      </li>
+      <li
+        aria-disabled="true"
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item E
+      </li>
+      <li
+        aria-disabled="true"
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item F
+      </li>
+      <li
+        aria-disabled="true"
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples ModelDrivenFBListboxComponent should render correctly 1`] = `
+<div
+  id="root3"
+>
+  <form
+    class="v-gap-16 v-flex v-flex-col ng-untouched ng-dirty ng-invalid"
+    novalidate=""
+    vflex=""
+    vflexcol=""
+    vgap="16"
+  >
+    <div>
+      <label
+        class="v-label"
+        for="model-fb-singleselect"
+        id="model-fb-singleselect-label"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        aria-describedby="model-fb-singleselect-message"
+        aria-labelledby="model-fb-singleselect-label"
+        class="v-listbox-container"
+        id="model-fb-singleselect"
+        role="listbox"
+        v-listbox-container=""
+      >
+        <ul
+          class="v-listbox v-listbox-scroll ng-untouched ng-dirty ng-invalid"
+          containheight=""
+          formcontrolname="ssFormControl"
+          id="a-v-listbox-0"
+          role="group"
+          v-listbox=""
+        >
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-a-reactive"
+            role="option"
+            tabindex="0"
+            v-listbox-item=""
+            value="item-a-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item A
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-b-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-b-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item B
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-c-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-c-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item C
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-d-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-d-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item D
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-e-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-e-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item E
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-f-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-f-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item F
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-g-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-g-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item G
+          </li>
+          
+        </ul>
+      </div>
+      <span
+        aria-live="polite"
+        class="v-input-message"
+        id="model-fb-singleselect-message"
+        role="alert"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div>
+      <label
+        class="v-label"
+        for="model-fb-multiselect"
+        id="model-fb-multiselect-label"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        aria-describedby="model-fb-multiselect-message"
+        aria-labelledby="model-fb-multiselect-label"
+        aria-multiselectable="true"
+        class="v-listbox-container"
+        id="model-fb-multiselect"
+        role="listbox"
+        v-listbox-container=""
+      >
+        <ul
+          class="v-listbox v-listbox-scroll ng-untouched ng-dirty ng-invalid"
+          containheight=""
+          formcontrolname="msFormControl"
+          id="a-v-listbox-1"
+          multiselect=""
+          role="group"
+          v-listbox=""
+        >
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-a-multiselect-reactive"
+            role="option"
+            tabindex="0"
+            v-listbox-item=""
+            value="item-a-multiselect-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item A
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-b-multiselect-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-b-multiselect-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item B
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-c-multiselect-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-c-multiselect-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item C
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-d-multiselect-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-d-multiselect-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item D
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-e-multiselect-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-e-multiselect-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item E
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-f-multiselect-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-f-multiselect-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item F
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-g-multiselect-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-g-multiselect-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item G
+          </li>
+          
+        </ul>
+      </div>
+      <span
+        aria-live="polite"
+        class="v-input-message"
+        id="model-fb-multiselect-message"
+        role="alert"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-16 v-flex v-flex-row v-mt-8"
+      vflex=""
+      vgap="16"
+      vmt="8"
+    >
+      <button
+        class="v-button"
+        type="submit"
+        v-button=""
+      >
+        Submit
+      </button>
+      <button
+        buttoncolor="secondary"
+        class="v-button v-button-secondary"
+        type="reset"
+        v-button=""
+      >
+        Reset
+      </button>
+    </div>
+  </form>
+  <code>
+    ssFormControl: [ null ]
+  </code>
+  <code>
+    msFormControl: [  ]
+  </code>
+</div>
+`;
+
+exports[`Listbox examples ModelDrivenFormListboxComponent should render correctly 1`] = `
+<div
+  id="root4"
+>
+  <form
+    class="v-gap-16 v-flex v-flex-col ng-untouched ng-dirty ng-invalid"
+    novalidate=""
+    vflex=""
+    vflexcol=""
+    vgap="16"
+  >
+    <div>
+      <label
+        class="v-label"
+        for="model-form-singleselect"
+        id="model-form-singleselect-label"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        aria-describedby="model-form-singleselect-message"
+        aria-labelledby="model-form-singleselect-label"
+        class="v-listbox-container"
+        id="model-form-singleselect"
+        role="listbox"
+        v-listbox-container=""
+      >
+        <ul
+          class="v-listbox v-listbox-scroll ng-untouched ng-dirty ng-invalid"
+          containheight=""
+          id="a-v-listbox-0"
+          role="group"
+          v-listbox=""
+        >
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-a-reactive"
+            role="option"
+            tabindex="0"
+            v-listbox-item=""
+            value="item-a-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item A
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-b-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-b-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item B
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-c-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-c-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item C
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-d-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-d-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item D
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-e-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-e-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item E
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-f-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-f-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item F
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-g-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-g-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item G
+          </li>
+          
+        </ul>
+      </div>
+      <span
+        aria-live="polite"
+        class="v-input-message"
+        id="model-form-singleselect-message"
+        role="alert"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div>
+      <label
+        class="v-label"
+        for="model-form-multiselect"
+        id="model-form-multiselect-label"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        aria-describedby="model-form-multiselect-message"
+        aria-labelledby="model-form-multiselect-label"
+        aria-multiselectable="true"
+        class="v-listbox-container"
+        id="model-form-multiselect"
+        role="listbox"
+        v-listbox-container=""
+      >
+        <ul
+          class="v-listbox v-listbox-scroll ng-untouched ng-dirty ng-invalid"
+          containheight=""
+          id="a-v-listbox-1"
+          multiselect=""
+          role="group"
+          v-listbox=""
+        >
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-a-multiselect-reactive"
+            role="option"
+            tabindex="0"
+            v-listbox-item=""
+            value="item-a-multiselect-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item A
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-b-multiselect-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-b-multiselect-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item B
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-c-multiselect-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-c-multiselect-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item C
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-d-multiselect-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-d-multiselect-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item D
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-e-multiselect-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-e-multiselect-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item E
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-f-multiselect-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-f-multiselect-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item F
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-g-multiselect-reactive"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-g-multiselect-reactive"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item G
+          </li>
+          
+        </ul>
+      </div>
+      <span
+        aria-atomic="true"
+        aria-live="assertive"
+        class="v-input-message"
+        id="model-form-multiselect-message"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-16 v-flex v-flex-row v-mt-8"
+      vflex=""
+      vgap="16"
+      vmt="8"
+    >
+      <button
+        class="v-button"
+        type="submit"
+        v-button=""
+      >
+        Submit
+      </button>
+      <button
+        buttoncolor="secondary"
+        class="v-button v-button-secondary"
+        type="reset"
+        v-button=""
+      >
+        Reset
+      </button>
+    </div>
+  </form>
+  <code>
+    ssFormControl: [  ]
+  </code>
+  <code>
+    msFormControl: [  ]
+  </code>
+</div>
+`;
+
+exports[`Listbox examples MultiSelectCheckboxGroupListboxComponent should render correctly 1`] = `
+<div
+  id="root5"
+>
+  <label
+    class="v-label"
+    for="checkbox-group"
+    id="checkbox-group-label"
+    v-label=""
+  >
+    Label
+  </label>
+  <div
+    aria-labelledby="checkbox-group-label"
+    class="v-listbox-container"
+    id="checkbox-group"
+    role="none"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll"
+      containheight=""
+      id="a-v-listbox-0"
+      role="none"
+      v-listbox=""
+    >
+      <li
+        class="v-listbox-item"
+      >
+        <input
+          class="v-checkbox"
+          id="ms-checkbox-item-a-multiselect"
+          type="checkbox"
+          v-checkbox=""
+          value="item-a-multiselect"
+        />
+        <label
+          class="v-label"
+          for="ms-checkbox-item-a-multiselect"
+          id="a-v-label-1"
+          v-label=""
+        >
+          Item A
+        </label>
+      </li>
+      <li
+        class="v-listbox-item"
+      >
+        <input
+          class="v-checkbox"
+          id="ms-checkbox-item-b-multiselect"
+          type="checkbox"
+          v-checkbox=""
+          value="item-b-multiselect"
+        />
+        <label
+          class="v-label"
+          for="ms-checkbox-item-b-multiselect"
+          id="a-v-label-2"
+          v-label=""
+        >
+          Item B
+        </label>
+      </li>
+      <li
+        class="v-listbox-item"
+      >
+        <input
+          class="v-checkbox"
+          id="ms-checkbox-item-c-multiselect"
+          type="checkbox"
+          v-checkbox=""
+          value="item-c-multiselect"
+        />
+        <label
+          class="v-label"
+          for="ms-checkbox-item-c-multiselect"
+          id="a-v-label-3"
+          v-label=""
+        >
+          Item C
+        </label>
+      </li>
+      <li
+        class="v-listbox-item"
+      >
+        <input
+          class="v-checkbox"
+          id="ms-checkbox-item-d-multiselect"
+          type="checkbox"
+          v-checkbox=""
+          value="item-d-multiselect"
+        />
+        <label
+          class="v-label"
+          for="ms-checkbox-item-d-multiselect"
+          id="a-v-label-4"
+          v-label=""
+        >
+          Item D
+        </label>
+      </li>
+      <li
+        class="v-listbox-item"
+      >
+        <input
+          class="v-checkbox"
+          id="ms-checkbox-item-e-multiselect"
+          type="checkbox"
+          v-checkbox=""
+          value="item-e-multiselect"
+        />
+        <label
+          class="v-label"
+          for="ms-checkbox-item-e-multiselect"
+          id="a-v-label-5"
+          v-label=""
+        >
+          Item E
+        </label>
+      </li>
+      <li
+        class="v-listbox-item"
+      >
+        <input
+          class="v-checkbox"
+          id="ms-checkbox-item-f-multiselect"
+          type="checkbox"
+          v-checkbox=""
+          value="item-f-multiselect"
+        />
+        <label
+          class="v-label"
+          for="ms-checkbox-item-f-multiselect"
+          id="a-v-label-6"
+          v-label=""
+        >
+          Item F
+        </label>
+      </li>
+      <li
+        class="v-listbox-item"
+      >
+        <input
+          class="v-checkbox"
+          id="ms-checkbox-item-g-multiselect"
+          type="checkbox"
+          v-checkbox=""
+          value="item-g-multiselect"
+        />
+        <label
+          class="v-label"
+          for="ms-checkbox-item-g-multiselect"
+          id="a-v-label-7"
+          v-label=""
+        >
+          Item G
+        </label>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples MultiSelectDefaultListboxComponent should render correctly 1`] = `
+<div
+  id="root6"
+>
+  <label
+    class="v-label"
+    for="ms-listbox-default"
+    id="ms-listbox-default-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-labelledby="ms-listbox-default-label"
+    aria-multiselectable="true"
+    class="v-listbox-container"
+    id="ms-listbox-default"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll"
+      containheight=""
+      id="a-v-listbox-0"
+      multiselect=""
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a-multiselect"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-a-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-c-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples MultiSelectModelDrivenListboxComponent should render correctly 1`] = `
+<div
+  id="root7"
+>
+  <label
+    class="v-label"
+    for="ms-model-driven"
+    id="ms-model-driven-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-activedescendant="v-listbox-item-item-c-multiselect-reactive"
+    aria-labelledby="ms-model-driven-label"
+    aria-multiselectable="true"
+    class="v-listbox-container"
+    id="ms-model-driven"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll ng-untouched ng-dirty ng-valid"
+      containheight=""
+      id="a-v-listbox-0"
+      multiselect=""
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a-multiselect-reactive"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-a-multiselect-reactive"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b-multiselect-reactive"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b-multiselect-reactive"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="true"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c-multiselect-reactive"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-c-multiselect-reactive"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d-multiselect-reactive"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d-multiselect-reactive"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e-multiselect-reactive"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e-multiselect-reactive"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f-multiselect-reactive"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f-multiselect-reactive"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g-multiselect-reactive"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g-multiselect-reactive"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+  <code>
+    Value: [ item-c-multiselect-reactive ]
+  </code>
+</div>
+`;
+
+exports[`Listbox examples MultiSelectScrollToIndexListboxComponent should render correctly 1`] = `
+<div
+  id="root8"
+>
+  <label
+    class="v-label"
+    for="ms-scroll-to-index"
+    id="ms-scroll-to-index-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-labelledby="ms-scroll-to-index-label"
+    aria-multiselectable="true"
+    class="v-listbox-container"
+    id="ms-scroll-to-index"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll"
+      containheight=""
+      id="a-v-listbox-0"
+      multiselect=""
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a-multiselect"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-a-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-c-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+  <div
+    class="v-gap-16 v-flex v-flex-row"
+    vflex=""
+    vgap="16"
+  >
+    <button
+      class="v-button v-mt-8"
+      type="button"
+      v-button=""
+      vmt="8"
+    >
+      Select and scroll to option 6
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary v-mt-8"
+      type="button"
+      v-button=""
+      vmt="8"
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples MultiSelectTemplateDrivenListboxComponent should render correctly 1`] = `
+<div
+  id="root9"
+>
+  <label
+    class="v-label"
+    for="ms-template-driven"
+    id="ms-template-driven-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-activedescendant="v-listbox-item-item-c-multiselect-template"
+    aria-labelledby="ms-template-driven-label"
+    aria-multiselectable="true"
+    class="v-listbox-container"
+    id="ms-template-driven"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll ng-untouched ng-valid ng-dirty"
+      containheight=""
+      id="a-v-listbox-0"
+      multiselect=""
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a-multiselect-template"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-a-multiselect-template"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b-multiselect-template"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b-multiselect-template"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="true"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c-multiselect-template"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-c-multiselect-template"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d-multiselect-template"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d-multiselect-template"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e-multiselect-template"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e-multiselect-template"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f-multiselect-template"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f-multiselect-template"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g-multiselect-template"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g-multiselect-template"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+  <code>
+    Value: [ item-c-multiselect-template ]
+  </code>
+</div>
+`;
+
+exports[`Listbox examples MultiSelectWithDisabledItemListboxComponent should render correctly 1`] = `
+<div
+  id="root12"
+>
+  <label
+    class="v-label"
+    for="ms-disabled-option"
+    id="ms-disabled-option-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-labelledby="ms-disabled-option-label"
+    aria-multiselectable="true"
+    class="v-listbox-container"
+    id="ms-disabled-option"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll"
+      containheight=""
+      id="a-v-listbox-0"
+      multiselect=""
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a-multiselect"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-a-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item A
+      </li>
+      <li
+        aria-disabled="true"
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-c-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples MultiSelectWithErrorListboxComponent should render correctly 1`] = `
+<div
+  id="root10"
+>
+  <label
+    class="v-label"
+    for="ms-error"
+    id="ms-error-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-describedby="multiselect-error-message"
+    aria-labelledby="ms-error-label"
+    aria-multiselectable="true"
+    class="v-listbox-container"
+    id="ms-error"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll"
+      containheight=""
+      id="a-v-listbox-0"
+      multiselect=""
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a-multiselect"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-a-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-c-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+  <span
+    aria-live="polite"
+    class="v-input-message"
+    id="multiselect-error-message"
+    role="alert"
+    v-input-message=""
+  >
+    
+  </span>
+  <div
+    class="v-gap-16 v-flex v-flex-row"
+    vflex=""
+    vgap="16"
+  >
+    <button
+      class="v-button v-mt-8"
+      type="button"
+      v-button=""
+      vmt="8"
+    >
+      Submit
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary v-mt-8"
+      type="button"
+      v-button=""
+      vmt="8"
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples MultiSelectWithInlineMessageListboxComponent should render correctly 1`] = `
+<div
+  id="root11"
+>
+  <label
+    class="v-label"
+    for="multi-select-with-message"
+    id="multi-select-with-message-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-labelledby="multi-select-with-message-label multi-select-with-message-message"
+    aria-multiselectable="true"
+    class="v-listbox-container"
+    id="multi-select-with-message"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll"
+      containheight=""
+      id="a-v-listbox-0"
+      multiselect=""
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a-multiselect"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-a-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-c-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+  <div
+    class="v-input-message"
+    id="multi-select-with-message-message"
+    v-input-message=""
+  >
+     This is optional text that describes the label in more detail.
+
+  </div>
+</div>
+`;
+
+exports[`Listbox examples MultiSelectWithResizeListboxComponent should render correctly 1`] = `
+<div
+  id="root25"
+>
+  <label
+    class="v-label"
+    for="ms-resize"
+    id="ms-resize-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-labelledby="ms-resize-label"
+    aria-multiselectable="true"
+    class="v-listbox-container"
+    id="ms-resize"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox"
+      id="a-v-listbox-0"
+      multiselect=""
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a-multiselect"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-a-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-c-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples MultiSelectWithSelectedItemListboxComponent should render correctly 1`] = `
+<div
+  id="root13"
+>
+  <label
+    class="v-label"
+    for="ms-selected-options"
+    id="ms-selected-options-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-activedescendant="v-listbox-item-item-b-multiselect"
+    aria-labelledby="ms-selected-options-label"
+    aria-multiselectable="true"
+    class="v-listbox-container"
+    id="ms-selected-options"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll"
+      containheight=""
+      id="a-v-listbox-0"
+      multiselect=""
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-a-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="true"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b-multiselect"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-b-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-c-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-checkbox"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples SingleSelectDefaultListboxComponent should render correctly 1`] = `
+<div
+  id="root14"
+>
+  <label
+    class="v-label"
+    for="ss-default"
+    id="ss-default-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-labelledby="ss-default-label"
+    class="v-listbox-container"
+    id="ss-default"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll"
+      containheight=""
+      id="a-v-listbox-0"
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-a"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-c"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples SingleSelectModelDrivenListboxComponent should render correctly 1`] = `
+<div
+  id="root15"
+>
+  <label
+    class="v-label"
+    for="ss-model-driven"
+    id="ss-model-driven-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-activedescendant="v-listbox-item-item-c-reactive"
+    aria-labelledby="ss-model-driven-label"
+    class="v-listbox-container"
+    id="ss-model-driven"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll ng-untouched ng-dirty ng-valid"
+      containheight=""
+      id="a-v-listbox-0"
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a-reactive"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-a-reactive"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b-reactive"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b-reactive"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="true"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c-reactive"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-c-reactive"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d-reactive"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d-reactive"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e-reactive"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e-reactive"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f-reactive"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f-reactive"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g-reactive"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g-reactive"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+  <code>
+    Value: [ item-c-reactive ]
+  </code>
+</div>
+`;
+
+exports[`Listbox examples SingleSelectRadioGroupListboxComponent should render correctly 1`] = `
+<div
+  id="root16"
+>
+  <label
+    class="v-label"
+    for="ss-radio-group"
+    id="ss-radio-group-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-labelledby="ss-radio-group-label"
+    class="v-listbox-container"
+    id="ss-radio-group"
+    role="none"
+    v-listbox-container=""
+  >
+    <div
+      class="v-listbox v-listbox-scroll"
+      containheight=""
+      id="a-v-listbox-0"
+      role="none"
+      v-listbox=""
+    >
+      <div
+        class="v-listbox-item"
+      >
+        <input
+          class="v-radio"
+          id="ss-radio-item-a"
+          name="as-radio"
+          type="radio"
+          v-radio=""
+          value="item-a"
+        />
+        <label
+          class="v-label"
+          for="ss-radio-item-a"
+          id="a-v-label-1"
+          v-label=""
+        >
+          Item A
+        </label>
+      </div>
+      <div
+        class="v-listbox-item"
+      >
+        <input
+          class="v-radio"
+          id="ss-radio-item-b"
+          name="as-radio"
+          type="radio"
+          v-radio=""
+          value="item-b"
+        />
+        <label
+          class="v-label"
+          for="ss-radio-item-b"
+          id="a-v-label-2"
+          v-label=""
+        >
+          Item B
+        </label>
+      </div>
+      <div
+        class="v-listbox-item"
+      >
+        <input
+          class="v-radio"
+          id="ss-radio-item-c"
+          name="as-radio"
+          type="radio"
+          v-radio=""
+          value="item-c"
+        />
+        <label
+          class="v-label"
+          for="ss-radio-item-c"
+          id="a-v-label-3"
+          v-label=""
+        >
+          Item C
+        </label>
+      </div>
+      <div
+        class="v-listbox-item"
+      >
+        <input
+          class="v-radio"
+          id="ss-radio-item-d"
+          name="as-radio"
+          type="radio"
+          v-radio=""
+          value="item-d"
+        />
+        <label
+          class="v-label"
+          for="ss-radio-item-d"
+          id="a-v-label-4"
+          v-label=""
+        >
+          Item D
+        </label>
+      </div>
+      <div
+        class="v-listbox-item"
+      >
+        <input
+          class="v-radio"
+          id="ss-radio-item-e"
+          name="as-radio"
+          type="radio"
+          v-radio=""
+          value="item-e"
+        />
+        <label
+          class="v-label"
+          for="ss-radio-item-e"
+          id="a-v-label-5"
+          v-label=""
+        >
+          Item E
+        </label>
+      </div>
+      <div
+        class="v-listbox-item"
+      >
+        <input
+          class="v-radio"
+          id="ss-radio-item-f"
+          name="as-radio"
+          type="radio"
+          v-radio=""
+          value="item-f"
+        />
+        <label
+          class="v-label"
+          for="ss-radio-item-f"
+          id="a-v-label-6"
+          v-label=""
+        >
+          Item F
+        </label>
+      </div>
+      <div
+        class="v-listbox-item"
+      >
+        <input
+          class="v-radio"
+          id="ss-radio-item-g"
+          name="as-radio"
+          type="radio"
+          v-radio=""
+          value="item-g"
+        />
+        <label
+          class="v-label"
+          for="ss-radio-item-g"
+          id="a-v-label-7"
+          v-label=""
+        >
+          Item G
+        </label>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples SingleSelectScrollToIndexListboxComponent should render correctly 1`] = `
+<div
+  id="root17"
+>
+  <label
+    class="v-label"
+    for="scroll-to-index-label"
+    id="scroll-to-index-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-labelledby="scroll-to-index-label"
+    class="v-listbox-container"
+    id="scroll-to-index"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll"
+      containheight=""
+      id="a-v-listbox-0"
+      role="group"
+      style="position: relative;"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-a"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-c"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples SingleSelectTemplateDrivenListboxComponent should render correctly 1`] = `
+<div
+  id="root18"
+>
+  <label
+    class="v-label"
+    for="ss-template-driven"
+    id="ss-template-driven-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-activedescendant="v-listbox-item-item-c-template"
+    aria-labelledby="ss-template-driven-label"
+    class="v-listbox-container"
+    id="ss-template-driven"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll ng-untouched ng-valid ng-dirty"
+      containheight=""
+      id="a-v-listbox-0"
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a-template"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-a-template"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b-template"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b-template"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="true"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c-template"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-c-template"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d-template"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d-template"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e-template"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e-template"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f-template"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f-template"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g-template"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g-template"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+  <code>
+    Value: [ item-c-template ]
+  </code>
+</div>
+`;
+
+exports[`Listbox examples SingleSelectWithDisabledItemListboxComponent should render correctly 1`] = `
+<div
+  id="root22"
+>
+  <label
+    class="v-label"
+    for="ss-disabled-option"
+    id="ss-disabled-option-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-labelledby="ss-disabled-option-label"
+    class="v-listbox-container"
+    id="ss-disabled-option"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll"
+      containheight=""
+      id="a-v-listbox-0"
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-disabled="true"
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-a"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-b"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-c"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples SingleSelectWithErrorListboxComponent should render correctly 1`] = `
+<div
+  id="root19"
+>
+  <label
+    class="v-label"
+    for="ss-error"
+    id="ss-error-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-describedby="single-select-error-message"
+    aria-labelledby="ss-error-label"
+    class="v-listbox-container"
+    id="ss-error"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll"
+      containheight=""
+      id="a-v-listbox-0"
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a-multiselect"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-a-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-c-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g-multiselect"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g-multiselect"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+  <span
+    aria-live="polite"
+    class="v-input-message"
+    id="single-select-error-message"
+    role="alert"
+    v-input-message=""
+  >
+    
+  </span>
+  <div
+    class="v-gap-16 v-flex v-flex-row"
+    vflex=""
+    vgap="16"
+  >
+    <button
+      class="v-button v-mt-8"
+      type="button"
+      v-button=""
+      vmt="8"
+    >
+      Submit
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary v-mt-8"
+      type="button"
+      v-button=""
+      vmt="8"
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples SingleSelectWithInlineMessageListboxComponent should render correctly 1`] = `
+<div
+  id="root20"
+>
+  <label
+    class="v-label"
+    for="single-select-with-message"
+    id="single-select-with-message-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-labelledby="single-select-with-message-label single-select-with-message-message"
+    class="v-listbox-container"
+    id="single-select-with-message"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll"
+      containheight=""
+      id="a-v-listbox-0"
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-a"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-c"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+  <div
+    class="v-input-message"
+    id="single-select-with-message-message"
+    v-input-message=""
+  >
+     This is optional text that describes the label in more detail.
+
+  </div>
+</div>
+`;
+
+exports[`Listbox examples SingleSelectWithResizeListboxComponent should render correctly 1`] = `
+<div
+  id="root21"
+>
+  <label
+    class="v-label"
+    for="ss-resize"
+    id="ss-resize-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-labelledby="ss-resize-label"
+    class="v-listbox-container"
+    id="ss-resize"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox"
+      id="a-v-listbox-0"
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-a"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-b"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-c"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples SingleSelectWithSelectedItemListboxComponent should render correctly 1`] = `
+<div
+  id="root23"
+>
+  <label
+    class="v-label"
+    for="ss-selected-option"
+    id="ss-selected-option-label"
+    v-label=""
+  >
+    Label (required)
+  </label>
+  <div
+    aria-activedescendant="v-listbox-item-item-b"
+    aria-labelledby="ss-selected-option-label"
+    class="v-listbox-container"
+    id="ss-selected-option"
+    role="listbox"
+    v-listbox-container=""
+  >
+    <ul
+      class="v-listbox v-listbox-scroll"
+      containheight=""
+      id="a-v-listbox-0"
+      role="group"
+      v-listbox=""
+    >
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-a"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-a"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item A
+      </li>
+      <li
+        aria-selected="true"
+        class="v-listbox-item"
+        id="v-listbox-item-item-b"
+        role="option"
+        tabindex="0"
+        v-listbox-item=""
+        value="item-b"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item B
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-c"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-c"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item C
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-d"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-d"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item D
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-e"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-e"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item E
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-f"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-f"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item F
+      </li>
+      <li
+        aria-selected="false"
+        class="v-listbox-item"
+        id="v-listbox-item-item-g"
+        role="option"
+        tabindex="-1"
+        v-listbox-item=""
+        value="item-g"
+      >
+        <span
+          class="v-flex-shrink-0 v-radio"
+        />
+        Item G
+      </li>
+      
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Listbox examples TemplateDrivenFormListboxComponent should render correctly 1`] = `
+<div
+  id="root24"
+>
+  <form
+    class="v-gap-16 v-flex v-flex-col ng-untouched ng-dirty ng-invalid"
+    novalidate=""
+    vflex=""
+    vflexcol=""
+    vgap="16"
+  >
+    <div>
+      <label
+        class="v-label"
+        for="template-driven-singleselect"
+        id="template-driven-singleselect-label"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        aria-describedby="template-driven-singleselect-message"
+        aria-labelledby="template-driven-singleselect-label"
+        aria-required="true"
+        class="v-listbox-container"
+        id="template-driven-singleselect"
+        role="listbox"
+        v-listbox-container=""
+      >
+        <ul
+          class="v-listbox v-listbox-scroll ng-untouched ng-dirty ng-invalid"
+          containheight=""
+          id="a-v-listbox-0"
+          name="singleselect"
+          ngmodel=""
+          required=""
+          role="group"
+          v-listbox=""
+        >
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-a-template"
+            role="option"
+            tabindex="0"
+            v-listbox-item=""
+            value="item-a-template"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item A
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-b-template"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-b-template"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item B
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-c-template"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-c-template"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item C
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-d-template"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-d-template"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item D
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-e-template"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-e-template"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item E
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-f-template"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-f-template"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item F
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-g-template"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-g-template"
+          >
+            <span
+              class="v-flex-shrink-0 v-radio"
+            />
+            Item G
+          </li>
+          
+        </ul>
+      </div>
+      <span
+        aria-live="polite"
+        class="v-input-message"
+        id="template-driven-singleselect-message"
+        role="alert"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div>
+      <label
+        class="v-label"
+        for="template-driven-multiselect"
+        id="template-driven-multiselect-label"
+        v-label=""
+      >
+        Label (required)
+      </label>
+      <div
+        aria-describedby="template-driven-multiselect-message"
+        aria-labelledby="template-driven-multiselect-label"
+        aria-multiselectable="true"
+        aria-required="true"
+        class="v-listbox-container"
+        id="template-driven-multiselect"
+        role="listbox"
+        v-listbox-container=""
+      >
+        <ul
+          class="v-listbox v-listbox-scroll ng-untouched ng-dirty ng-invalid"
+          containheight=""
+          id="a-v-listbox-1"
+          multiselect=""
+          name="multiselect"
+          ngmodel=""
+          required=""
+          role="group"
+          v-listbox=""
+        >
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-a-multiselect-template"
+            role="option"
+            tabindex="0"
+            v-listbox-item=""
+            value="item-a-multiselect-template"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item A
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-b-multiselect-template"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-b-multiselect-template"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item B
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-c-multiselect-template"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-c-multiselect-template"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item C
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-d-multiselect-template"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-d-multiselect-template"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item D
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-e-multiselect-template"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-e-multiselect-template"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item E
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-f-multiselect-template"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-f-multiselect-template"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item F
+          </li>
+          <li
+            aria-selected="false"
+            class="v-listbox-item"
+            id="v-listbox-item-item-g-multiselect-template"
+            role="option"
+            tabindex="-1"
+            v-listbox-item=""
+            value="item-g-multiselect-template"
+          >
+            <span
+              class="v-flex-shrink-0 v-checkbox"
+            />
+            Item G
+          </li>
+          
+        </ul>
+      </div>
+      <span
+        aria-live="polite"
+        class="v-input-message"
+        id="template-driven-multiselect-message"
+        role="alert"
+        v-input-message=""
+      >
+        
+      </span>
+    </div>
+    <div
+      class="v-gap-16 v-flex v-flex-row"
+      vflex=""
+      vgap="16"
+    >
+      <button
+        class="v-button"
+        type="submit"
+        v-button=""
+      >
+        Submit
+      </button>
+      <button
+        buttoncolor="secondary"
+        class="v-button v-button-secondary"
+        type="reset"
+        v-button=""
+      >
+         Reset 
+      </button>
+    </div>
+  </form>
+  <code>
+    singleselect: [  ]
+  </code>
+  <code>
+    multiselect: [  ]
+  </code>
+</div>
+`;

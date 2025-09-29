@@ -1,0 +1,42 @@
+<!--
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<section aria-label="section title" style="max-inline-size: 343px">
+  <div vFlex vAlignItemsCenter vJustifyContentBetween vTypography="label" vMB="6">
+    <span>Section title</span>
+    <a v-link noUnderline vTypography="label" href="./components/list-item">
+      Hyperlink
+      <svg v-icon-visa-chevron-right-tiny />
+    </a>
+  </div>
+  <ul v-content-card vP="4" style="--v-content-card-border: 0px; --v-content-card-border-radius: 8px">
+    @for(item of items; track item.id) {
+    <li
+      vSurface
+      vPX="8"
+      vPY="6"
+      vFlex
+      vAlignItemsCenter
+      vJustifyContentBetween
+      vTypography="label-large"
+      style="min-block-size: 64px"
+    >
+      <span>{{ item.label1 }}</span>
+      <span>{{ item.label2 }}</span>
+    </li>
+    }
+  </ul>
+</section>

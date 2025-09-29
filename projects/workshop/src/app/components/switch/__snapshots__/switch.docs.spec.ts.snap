@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch examples NovaDisabledOffSwitchDocsComponent should render correctly 1`] = `
+<div
+  id="root2"
+>
+  <div
+    class="v-gap-10 v-flex v-flex-row v-flex-wrap v-justify-content-between v-m-8"
+    style="max-inline-size: 288px;"
+    vflex=""
+    vflexwrap=""
+    vgap="10"
+    vjustifycontentbetween=""
+    vm="8"
+  >
+    <label
+      class="v-label v-switch-label v-typography-label-large"
+      for="switch-control-2"
+      id="a-v-label-0"
+      v-switch-label=""
+      vtypography="label-large"
+    >
+      Label
+    </label>
+    <input
+      class="v-switch"
+      disabled="disabled"
+      id="switch-control-2"
+      name="default-switch"
+      role="switch"
+      type="checkbox"
+      v-switch=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Switch examples NovaOptionalTextSwitchDocsComponent should render correctly 1`] = `
+<div
+  id="root1"
+>
+  <div
+    class="v-gap-10 v-flex v-flex-row v-flex-wrap v-justify-content-between v-m-8"
+    style="max-inline-size: 288px;"
+    vflex=""
+    vflexwrap=""
+    vgap="10"
+    vjustifycontentbetween=""
+    vm="8"
+  >
+    <div
+      class="v-gap-2 v-flex v-flex-col v-flex-grow v-mt-2"
+      vflex=""
+      vflexbasis="min-content"
+      vflexcol=""
+      vflexgrow=""
+      vgap="2"
+      vmt="2"
+    >
+      <label
+        class="v-label v-switch-label v-typography-label-large"
+        for="switch-control-4"
+        id="a-v-label-0"
+        v-switch-label=""
+        vtypography="label-large"
+      >
+        Label
+      </label>
+      <span
+        class="v-input-message v-typography-body-3"
+        id="switch-message-4"
+        v-input-message=""
+        vtypography="body-3"
+      >
+        This is optional text that can be used to describe the label in more detail. 
+      </span>
+    </div>
+    <input
+      aria-describedby="switch-message-4"
+      class="v-switch"
+      id="switch-control-4"
+      name="optional-text-switch"
+      role="switch"
+      type="checkbox"
+      v-switch=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Switch examples NovaStandardSwitchComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <div
+    class="v-gap-10 v-flex v-flex-row v-flex-wrap v-justify-content-between v-m-8"
+    style="max-inline-size: 288px;"
+    vflex=""
+    vflexwrap=""
+    vgap="10"
+    vjustifycontentbetween=""
+    vm="8"
+  >
+    <label
+      class="v-label v-switch-label v-typography-label-large"
+      for="switch-control-1"
+      id="a-v-label-0"
+      v-label=""
+      v-switch-label=""
+      vtypography="label-large"
+    >
+      Label
+    </label>
+    <input
+      class="v-switch"
+      id="switch-control-1"
+      name="default-switch"
+      role="switch"
+      type="checkbox"
+      v-switch=""
+    />
+  </div>
+</div>
+`;

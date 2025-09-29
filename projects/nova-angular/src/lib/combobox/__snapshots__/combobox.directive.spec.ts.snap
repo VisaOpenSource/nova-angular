@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComboboxDirective should render defaults correctly 1`] = `
+<div
+  id="root0"
+>
+  <div
+    class="v-combobox"
+    v-combobox=""
+  >
+    Content
+  </div>
+</div>
+`;

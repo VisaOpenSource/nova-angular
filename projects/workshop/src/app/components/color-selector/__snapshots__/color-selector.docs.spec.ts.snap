@@ -1,0 +1,261 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Color selector examples AvailableValuesColorSelectorComponent should render correctly 1`] = `
+<div
+  id="root0"
+>
+  <div
+    class="v-gap-6 v-align-items-center v-flex v-flex-row v-flex-wrap"
+    valignitemscenter=""
+    vflex=""
+    vflexwrap=""
+    vgap="6"
+  >
+    <input
+      aria-describedby="values-a11y-color-tooltip"
+      class="v-input v-flex-grow-0"
+      id="color-selector-values"
+      style="flex-basis: 5%;"
+      type="color"
+      v-input=""
+      value="#a4afe0"
+      vflexbasis="5%"
+      vflexgrow0=""
+    />
+    <label
+      class="v-label"
+      for="color-selector-values"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    <div
+      placement="top"
+      style="--v-dropdown-menu-surface-margin-block-start: 0;"
+      v-floating-ui-container=""
+    >
+      <button
+        aria-describedby="values-a11y-color-tooltip"
+        aria-label="Color selector accessibility information"
+        buttoncolor="tertiary"
+        buttonsize="small"
+        class="v-button v-dropdown v-button-icon v-button-small v-button-tertiary"
+        type="button"
+        v-button-icon=""
+        v-floating-ui-trigger=""
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-accessibility v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-0"
+          v-icon-visa-accessibility-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            clip-rule="evenodd"
+            d="M3.75736 3.75736C1.41421 6.1005 1.41421 9.89949 3.75736 12.2426L2.34315 13.6569C-0.781049 10.5327 -0.781049 5.46734 2.34315 2.34315C5.46734 -0.781049 10.5327 -0.781049 13.6569 2.34315C16.781 5.46734 16.781 10.5327 13.6569 13.6569L12.2426 12.2426C14.5858 9.8995 14.5858 6.1005 12.2426 3.75736C9.89949 1.41421 6.1005 1.41421 3.75736 3.75736Z"
+            fill-rule="evenodd"
+          />
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M8 8C9.10457 8 10 7.10457 10 6C10 4.89543 9.10457 4 8 4C6.89543 4 6 4.89543 6 6C6 7.10457 6.89543 8 8 8ZM8 8H12V10H9V10.9628L10.8844 14.5332L9.11562 15.4668L8 13.353L6.88438 15.4668L5.11562 14.5332L7 10.9628V10H4V8H8Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+      <span
+        class="v-surface v-tooltip"
+        id="values-a11y-color-tooltip"
+        role="tooltip"
+        style="top: 0px; left: 0px; display: none; z-index: 700;"
+        v-tooltip=""
+      >
+        For RGB, use values between 0-255. For HSL, use H values between 0-359, S and L values between 0-100%. For hex, use the format #RRGGBB and values between 0-9 or A-F.
+      </span>
+    </div>
+  </div>
+  <code>
+    Hex value: #a4afe0
+  </code>
+  <code>
+    RGB value: { r: 164, g: 175, b: 224 }
+  </code>
+  <code>
+    HSL value: { h: 229, s: 49.2%, l: 76.1% }
+  </code>
+</div>
+`;
+
+exports[`Color selector examples DefaultColorSelectorComponent should render correctly 1`] = `
+<div
+  id="root1"
+>
+  <div
+    class="v-gap-6 v-align-items-center v-flex v-flex-row v-flex-wrap"
+    valignitemscenter=""
+    vflex=""
+    vflexwrap=""
+    vgap="6"
+  >
+    <input
+      aria-describedby="default-a11y-color-tooltip"
+      class="v-input v-flex-grow-0"
+      id="default-color-selector-input"
+      style="flex-basis: 5%;"
+      type="color"
+      v-input=""
+      value=""
+      vflexbasis="5%"
+      vflexgrow0=""
+    />
+    <label
+      class="v-label"
+      for="default-color-selector-input"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    <div
+      placement="right"
+      style="--v-dropdown-menu-surface-margin-block-start: 0;"
+      v-floating-ui-container=""
+    >
+      <button
+        aria-describedby="default-a11y-color-tooltip"
+        aria-label="Color selector accessibility information"
+        buttoncolor="tertiary"
+        buttonsize="small"
+        class="v-button v-dropdown v-button-icon v-button-small v-button-tertiary"
+        type="button"
+        v-button-icon=""
+        v-floating-ui-trigger=""
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-accessibility v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-1"
+          v-icon-visa-accessibility-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            clip-rule="evenodd"
+            d="M3.75736 3.75736C1.41421 6.1005 1.41421 9.89949 3.75736 12.2426L2.34315 13.6569C-0.781049 10.5327 -0.781049 5.46734 2.34315 2.34315C5.46734 -0.781049 10.5327 -0.781049 13.6569 2.34315C16.781 5.46734 16.781 10.5327 13.6569 13.6569L12.2426 12.2426C14.5858 9.8995 14.5858 6.1005 12.2426 3.75736C9.89949 1.41421 6.1005 1.41421 3.75736 3.75736Z"
+            fill-rule="evenodd"
+          />
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M8 8C9.10457 8 10 7.10457 10 6C10 4.89543 9.10457 4 8 4C6.89543 4 6 4.89543 6 6C6 7.10457 6.89543 8 8 8ZM8 8H12V10H9V10.9628L10.8844 14.5332L9.11562 15.4668L8 13.353L6.88438 15.4668L5.11562 14.5332L7 10.9628V10H4V8H8Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+      <span
+        class="v-surface v-tooltip"
+        id="default-a11y-color-tooltip"
+        role="tooltip"
+        style="top: 0px; left: 0px; display: none; z-index: 700;"
+        v-tooltip=""
+      >
+        For RGB, use values between 0-255. For HSL, use H values between 0-359, S and L values between 0-100%. For hex, use the format #RRGGBB and values between 0-9 or A-F.
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Color selector examples DisabledColorSelectorComponent should render correctly 1`] = `
+<div
+  id="root2"
+>
+  <div
+    class="v-gap-6 v-align-items-center v-flex v-flex-row v-flex-wrap"
+    valignitemscenter=""
+    vflex=""
+    vflexwrap=""
+    vgap="6"
+  >
+    <input
+      aria-describedby="disabled-a11y-color-tooltip"
+      class="v-input v-flex-grow-0"
+      disabled="disabled"
+      id="disabled-color-selector-input"
+      style="flex-basis: 5%;"
+      type="color"
+      v-input=""
+      value=""
+      vflexbasis="5%"
+      vflexgrow0=""
+    />
+    <label
+      class="v-label"
+      for="disabled-color-selector-input"
+      id="a-v-label-0"
+      v-label=""
+    >
+      Label
+    </label>
+    <div
+      placement="top"
+      style="--v-dropdown-menu-surface-margin-block-start: 0;"
+      v-floating-ui-container=""
+    >
+      <button
+        aria-describedby="disabled-a11y-color-tooltip"
+        aria-label="Color selector accessibility information"
+        buttoncolor="tertiary"
+        buttonsize="small"
+        class="v-button v-dropdown v-button-icon v-button-small v-button-tertiary"
+        disabled="disabled"
+        type="button"
+        v-button-icon=""
+        v-floating-ui-trigger=""
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon v-icon-accessibility v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          id="a-v__icon__internal-2"
+          v-icon-visa-accessibility-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            clip-rule="evenodd"
+            d="M3.75736 3.75736C1.41421 6.1005 1.41421 9.89949 3.75736 12.2426L2.34315 13.6569C-0.781049 10.5327 -0.781049 5.46734 2.34315 2.34315C5.46734 -0.781049 10.5327 -0.781049 13.6569 2.34315C16.781 5.46734 16.781 10.5327 13.6569 13.6569L12.2426 12.2426C14.5858 9.8995 14.5858 6.1005 12.2426 3.75736C9.89949 1.41421 6.1005 1.41421 3.75736 3.75736Z"
+            fill-rule="evenodd"
+          />
+          <path
+            class="v-icon-primary"
+            clip-rule="evenodd"
+            d="M8 8C9.10457 8 10 7.10457 10 6C10 4.89543 9.10457 4 8 4C6.89543 4 6 4.89543 6 6C6 7.10457 6.89543 8 8 8ZM8 8H12V10H9V10.9628L10.8844 14.5332L9.11562 15.4668L8 13.353L6.88438 15.4668L5.11562 14.5332L7 10.9628V10H4V8H8Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+      <span
+        class="v-surface v-tooltip"
+        id="disabled-a11y-color-tooltip"
+        role="tooltip"
+        style="top: 0px; left: 0px; display: none; z-index: 700;"
+        v-tooltip=""
+      >
+        For RGB, use disabled between 0–255. For HSL, use H disabled between 0–359, S and L disabled between 0–100%. For hex, use the format #RRGGBB and disabled between 0–9 or A–F.
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,252 @@
+<!--
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<nav
+  vFlex
+  vFlexCol
+  vJustifyContentCenter
+  aria-label="Single-page wizard example"
+  style="inline-size: 100%"
+>
+  @if (!showSuccess()) { @if (showFlag()) {
+  <nova-workshop-wizard-shared-save-flag
+    (closeFlag)="showFlag.set(false)"
+    vAlignSelfEnd
+    vMB="16"
+  />
+  }
+  <div v-wizard vFlex vFlexCol vGap="16">
+    @for (step of steps; track step.id; let i = $index) {
+    <details
+      v-wizard-step
+      v-accordion
+      v-accordion-item
+      [open]="i === currentStep()"
+    >
+      <summary
+        v-accordion-heading
+        [disabled]="!step.available"
+        [attr.aria-label]="(step.invalid ? 'Error ' : step.complete ? 'Completed ' : (i + 1) + ' ') + step.stepLabel"
+        (click)="goTo(i, $event)"
+        v-button
+        vFlex
+        vJustifyContentBetween
+      >
+        <div
+          vFlex
+          vAlignItemsCenter
+          vGap="6"
+          [vTypographyColor]="
+                i === currentStep() && !step.invalid && !step.complete
+                  ? 'active'
+                  : step.available
+                    ? ''
+                    : 'subtle'
+              "
+        >
+          <ng-template
+            [ngTemplateOutlet]="stepContent"
+            [ngTemplateOutletContext]="{ index: i, step: step }"
+          ></ng-template>
+        </div>
+        <v-icon-visa-toggle>
+          <svg
+            v-toggle-default-template
+            v-icon-visa-chevron-right-tiny
+            [style.--v-icon-primary]="
+                  step.available ? '' : 'var(--palette-default-disabled)'
+                "
+          />
+          <svg
+            v-toggle-rotated-template
+            v-icon-visa-chevron-down-tiny
+            [style.--v-icon-primary]="
+                  step.available ? '' : 'var(--palette-default-disabled)'
+                "
+          />
+        </v-icon-visa-toggle>
+      </summary>
+      <div v-accordion-panel vPX="0" vPY="12">
+        <div vFlex vFlexCol>
+          @if (currentStep() === steps.length - 1) {
+          <div vFlex vGap="4" vFlexCol vPX="40" vPY="8">
+            <nova-workshop-wizard-shared-summary-page
+              [steps]="steps"
+              (edit)="goTo($event)"
+            />
+          </div>
+          } @else {
+          <div vFlex vGap="4" vFlexCol vPX="40" vPY="12">
+            @if (step.invalid && step.showErrorMessage) {
+            <div
+              v-section
+              v-message
+              messageType="error"
+              id="section-error-in-page"
+              vMB="16"
+            >
+              <svg
+                v-message-icon
+                v-icon-visa-error-low
+                aria-hidden="false"
+                aria-label="Error"
+                role="img"
+              />
+              <div v-message-content vPL="2" vPB="2">
+                <p>
+                  One or more required fields are missing. Complete all required
+                  fields to continue.
+                </p>
+              </div>
+              <button
+                v-button-icon
+                subtle
+                vMT="-8"
+                vMR="-8"
+                vML="14"
+                vP="7"
+                buttonSize="small"
+                buttonColor="tertiary"
+                aria-label="close"
+                (click)="hideErrorMessage(i)"
+              >
+                <svg v-icon-visa-close-tiny></svg>
+              </button>
+            </div>
+            }
+            <p vMB="16">* Indicates a required field.</p>
+            <label v-label [for]="'custom-markup-wizard-' + i"
+              >{{ step.inputLabel }}</label
+            >
+            <div v-input-container [vHide]="!(i === currentStep())">
+              <input
+                v-input
+                required
+                [invalid]="step.invalid"
+                [id]="'custom-markup-wizard-' + i"
+                [name]="'custom-markup-wizard-' + i"
+                [attr.aria-describedby]="
+                        step.invalid ? 'section-error-in-page custom-markup-wizard-message-' + i : ''
+                      "
+                [(ngModel)]="step.inputValue"
+              />
+            </div>
+            @if (step.invalid) {
+            <span
+              v-input-message
+              [id]="'custom-markup-wizard-message-' + i"
+              vMT="4"
+            >
+              <svg v-icon-visa-error-tiny />
+              This is a required field.
+            </span>
+            }
+          </div>
+          }
+          <hr v-divider dividerType="decorative" vMY="12" />
+          <div
+            vFlex
+            vJustifyContentBetween
+            vFlexWrap
+            vGap="8"
+            vPX="40"
+            vPY="12"
+          >
+            <div vFlex vGap="24" vFlexWrap>
+              <button v-button buttonColor="secondary" (click)="nextStep(true)">
+                Save
+              </button>
+              <button
+                v-button
+                buttonColor="tertiary"
+                (click)="exitDialog.openDialog()"
+              >
+                Exit
+              </button>
+            </div>
+            <div vFlex vGap="24" vFlexWrap>
+              @if (currentStep() !== 0) {
+              <button v-button buttonColor="secondary" (click)="previousStep()">
+                <svg v-icon-visa-arrow-back-tiny />Back
+              </button>
+              } @if (currentStep() === steps.length - 1) {
+              <button v-button (click)="submit()">Submit</button>
+              } @else {
+              <button v-button (click)="nextStep()">
+                Next <svg v-icon-visa-arrow-forward-tiny />
+              </button>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </details>
+    }
+  </div>
+  } @else {
+  <div vFlex vJustifyContentCenter>
+    <div
+      vSurface
+      vFlex
+      vJustifyContentCenter
+      vPX="32"
+      vPY="44"
+      style="max-inline-size: 676px; inline-size: 100%"
+    >
+      <nova-workshop-wizard-shared-success-page
+        (reset)="showSuccess.set(false)"
+      />
+    </div>
+  </div>
+  }
+</nav>
+<nova-workshop-wizard-shared-exit-dialog #exitDialog />
+
+<ng-template #stepContent let-step="step" let-index="index">
+  @if (step.complete) {
+  <span
+    v-badge
+    icon
+    [noBackground]="!(currentStep() === index)"
+    badgeType="stable"
+  >
+    <svg v-icon-visa-checkmark-tiny />
+  </span>
+  } @else if (step.invalid) {
+  <span
+    v-badge
+    icon
+    [noBackground]="!(currentStep() === index)"
+    badgeType="critical"
+  >
+    <svg v-icon-visa-error-alt-tiny />
+  </span>
+  } @else if (currentStep() === index) {
+  <span v-badge icon badgeType="active">{{ index + 1 }}</span>
+  } @else {
+  <span
+    v-badge
+    icon
+    noBackground
+    badgeType="subtle"
+    style="
+      --v-badge-border-color: var(--palette-default-text-subtle);
+      --v-badge-foreground: var(--palette-default-text-subtle);
+    "
+    >{{ index + 1 }}</span
+  >
+  } {{ step.stepLabel }}
+</ng-template>

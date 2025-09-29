@@ -1,0 +1,73 @@
+{
+  "@angular/common@20.1.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/angular/angular",
+    "publisher": "angular",
+    "path": "node_modules/@angular/common",
+    "licenseFile": "node_modules/@angular/common/LICENSE"
+  },
+  "@angular/core@20.1.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/angular/angular",
+    "publisher": "angular",
+    "path": "node_modules/@angular/core",
+    "licenseFile": "node_modules/@angular/core/LICENSE"
+  },
+  "@angular/forms@20.1.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/angular/angular",
+    "publisher": "angular",
+    "path": "node_modules/@angular/forms",
+    "licenseFile": "node_modules/@angular/forms/LICENSE"
+  },
+  "@angular/platform-browser@20.1.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/angular/angular",
+    "publisher": "angular",
+    "path": "node_modules/@angular/platform-browser",
+    "licenseFile": "node_modules/@angular/platform-browser/LICENSE"
+  },
+  "@floating-ui/core@1.7.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/floating-ui/floating-ui",
+    "publisher": "atomiks",
+    "path": "node_modules/@floating-ui/core",
+    "licenseFile": "node_modules/@floating-ui/core/LICENSE"
+  },
+  "@floating-ui/dom@1.7.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/floating-ui/floating-ui",
+    "publisher": "atomiks",
+    "path": "node_modules/@floating-ui/dom",
+    "licenseFile": "node_modules/@floating-ui/dom/LICENSE"
+  },
+  "@floating-ui/utils@0.2.10": {
+    "licenses": "MIT",
+    "repository": "https://github.com/floating-ui/floating-ui",
+    "publisher": "atomiks",
+    "path": "node_modules/@floating-ui/utils",
+    "licenseFile": "node_modules/@floating-ui/utils/LICENSE"
+  },
+  "@visa/nova-styles@1.6.4": {
+    "licenses": "Apache-2.0",
+    "publisher": "Visa Product Design System",
+    "path": "node_modules/@visa/nova-styles",
+    "licenseFile": "node_modules/@visa/nova-styles/LICENSE",
+    "noticeFile": "node_modules/@visa/nova-styles/NOTICE"
+  },
+  "rxjs@7.8.2": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/reactivex/rxjs",
+    "publisher": "Ben Lesh",
+    "email": "ben@benlesh.com",
+    "path": "node_modules/rxjs",
+    "licenseFile": "node_modules/rxjs/LICENSE.txt"
+  },
+  "tslib@2.8.1": {
+    "licenses": "0BSD",
+    "repository": "https://github.com/Microsoft/tslib",
+    "publisher": "Microsoft Corp.",
+    "path": "node_modules/tslib",
+    "licenseFile": "node_modules/tslib/LICENSE.txt"
+  }
+}

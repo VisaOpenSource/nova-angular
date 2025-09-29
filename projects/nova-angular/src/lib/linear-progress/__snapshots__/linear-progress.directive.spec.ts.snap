@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinearProgressDirective should render defaults correctly 1`] = `
+<div
+  id="root0"
+>
+  <progress
+    aria-hidden="true"
+    class="v-progress v-progress-bar v-progress-indeterminate"
+    v-progress-linear=""
+  />
+  <label
+    class="v-progress-label"
+    id="test-id"
+    progresslabel=""
+    v-label=""
+  >
+    Label
+  </label>
+</div>
+`;

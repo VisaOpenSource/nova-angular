@@ -36,7 +36,9 @@ const getPropertySections = (name, apiContentData, libData, type = 'components')
       .find((section) => section.type === 'services')
       ?.content?.find((service) => service.name === name);
     if (service) {
-      const libComponent = libData.injectables.find((comp) => comp.name === service.service);
+      const libComponent =
+        libData.injectables.find((comp) => comp.name === service.service) ??
+        libData.classes.find((comp) => comp.name === service.service);
       props = getProperties(service, 'services', libComponent);
       description = removeHTMLCode(libComponent?.description) || '';
     }
@@ -53,7 +55,8 @@ const getPropertySections = (name, apiContentData, libData, type = 'components')
                 ? libData.components.concat(libData.directives).find((comp) => comp.name === value)
                 : type === 'services'
                   ? libData.injectables.find((comp) => comp.name === value)
-                  : libData.miscellaneous.variables.find((comp) => comp.name === value);
+                  : (libData.miscellaneous.variables.find((comp) => comp.name === value) ??
+                    libData.miscellaneous.typealiases.find((comp) => comp.name === value));
 
             if (!libComponent && (type === 'directives' || type === 'related')) {
               const renamedValue = value.includes('Directive')

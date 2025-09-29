@@ -1,0 +1,38 @@
+<!--
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<svg width="304" height="140" viewBox="0 0 304 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="304" height="140" fill="var(--palette-default-surface-2, #F5F5F5)"/>
+<path d="M235.621 10H68.3786C59.8853 10 53 15.5354 53 22.3636V116.636C53 123.465 59.8853 129 68.3786 129H235.621C244.115 129 251 123.465 251 116.636V22.3636C251 15.5354 244.115 10 235.621 10Z" fill="var(--palette-default-surface-1, white)"/>
+<path d="M84.5 39C90.299 39 95 34.9706 95 30C95 25.0294 90.299 21 84.5 21C78.701 21 74 25.0294 74 30C74 34.9706 78.701 39 84.5 39Z" fill="var(--palette-default-text, black)" fill-opacity="0.9"/>
+<path d="M168.132 28H108.868C107.284 28 106 29.1193 106 30.5C106 31.8807 107.284 33 108.868 33H168.132C169.716 33 171 31.8807 171 30.5C171 29.1193 169.716 28 168.132 28Z" fill="var(--palette-default-text, black)" fill-opacity="0.3"/>
+<g opacity="0.01">
+<path d="M224.494 30.7958H223.6V31.5735H224.494V30.7958Z" fill="var(--palette-default-active, #1434CB)"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M220.219 25L226 30L220.219 35L219 33.9457L223.562 30L219 26.0543L220.219 25Z" fill="var(--palette-default-text, black)" fill-opacity="0.9"/>
+<path d="M84.5 78C90.299 78 95 73.7467 95 68.5C95 63.2533 90.299 59 84.5 59C78.701 59 74 63.2533 74 68.5C74 73.7467 78.701 78 84.5 78Z" fill="var(--palette-default-text, black)" fill-opacity="0.9"/>
+<path d="M142.146 66H108.854C107.278 66 106 67.1193 106 68.5C106 69.8807 107.278 71 108.854 71H142.146C143.722 71 145 69.8807 145 68.5C145 67.1193 143.722 66 142.146 66Z" fill="var(--palette-default-text, black)" fill-opacity="0.3"/>
+<g opacity="0.01">
+<path d="M224.494 69.2772H223.6V70.0548H224.494V69.2772Z" fill="var(--palette-default-active, #1434CB)"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M220.219 63L226 68.5L220.219 74L219 72.8403L223.562 68.5L219 64.1597L220.219 63Z" fill="var(--palette-default-text, black)" fill-opacity="0.9"/>
+<path d="M84.5 116C90.299 116 95 111.971 95 107C95 102.029 90.299 98 84.5 98C78.701 98 74 102.029 74 107C74 111.971 78.701 116 84.5 116Z" fill="var(--palette-default-text, black)" fill-opacity="0.9"/>
+<path d="M161.1 104H108.9C107.298 104 106 105.119 106 106.5C106 107.881 107.298 109 108.9 109H161.1C162.702 109 164 107.881 164 106.5C164 105.119 162.702 104 161.1 104Z" fill="var(--palette-default-text, black)" fill-opacity="0.3"/>
+<g opacity="0.01">
+<path d="M224.494 107.759H223.6V108.536H224.494V107.759Z" fill="var(--palette-default-active, #1434CB)"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M220.219 102L226 107L220.219 112L219 110.946L223.562 107L219 103.054L220.219 102Z" fill="var(--palette-default-text, black)" fill-opacity="0.9"/>
+</svg>

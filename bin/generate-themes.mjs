@@ -17,7 +17,7 @@
 import { sentenceCase } from 'change-case';
 import { copyFileSync, existsSync, mkdirSync, readdir, writeFileSync } from 'fs';
 const themesDir = './node_modules/@visa/nova-styles/themes';
-const workshopDir = './apps/workshop/src/assets';
+const workshopDir = './projects/workshop/public';
 
 if (!existsSync(workshopDir)) {
   mkdirSync(workshopDir);

@@ -1,0 +1,54 @@
+<!--
+ *              © 2025 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<fieldset
+  aria-labelledby="checkbox-panel-group-error-legend checkbox-panel-group-error-input-message"
+  (change)="handleChange()"
+>
+  <legend v-label id="checkbox-panel-group-error-legend">Group label (required)</legend>
+  <div v-input-message id="checkbox-panel-group-error-input-message">Select one or more options.</div>
+  <ul vFlex vFlexCol>
+    @for(checkbox of checkboxValues; track $index) {
+    <li v-checkbox-panel>
+      <div v-input-container vFlex vAlignItemsStart>
+        <input
+          [id]="'checkbox-panel-group-error-' + $index"
+          name="checkbox-panel-group-error"
+          v-checkbox
+          [(checked)]="checkboxValues[$index]"
+          [attr.aria-describedby]="'checkbox-panel-group-error-message-' + $index"
+          [invalid]="isInvalid"
+        />
+        <div vFlex vFlexCol vGap="2" [vMY]="8">
+          <label v-label [for]="'checkbox-panel-group-error-' + $index">Label {{ $index + 1 }}</label>
+          <span v-input-message [id]="'checkbox-panel-group-error-message-' + $index">
+            This is optional text that describes the label in more detail.
+          </span>
+        </div>
+      </div>
+    </li>
+    }
+  </ul>
+  <span v-input-message id="checkbox-panel-group-error-message" aria-atomic="true" aria-live="assertive">
+    @if(isInvalid){
+    <svg v-icon-visa-error-tiny />
+    This is required text that describes the error in more detail. }
+  </span>
+</fieldset>
+<div vFlex vGap="16" vMT="24">
+  <button v-button (click)="handleSubmit()">Submit</button>
+  <button v-button buttonColor="secondary" (click)="handleReset()">Reset</button>
+</div>
