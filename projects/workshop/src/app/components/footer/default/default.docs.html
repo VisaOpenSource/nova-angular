@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,11 +16,11 @@
  -->
 <footer v-footer vGap="15">
   <div vFlex vMR="1">
-    <svg v-logo-visa height="23" width="71" aria-label="Visa" />
+    <svg v-logo-visa height="23" width="71" aria-label="Visa" aria-hidden="false" />
   </div>
   <div vFlex vFlexGrow vFlexWrap vJustifyContentBetween vGap="42">
     <p>Copyright © YYYY-YYYY Visa. All rights reserved.</p>
-    <ul v-footer-links vFlex vFlexWrap vGap="16">
+    <ul vFlex vFlexWrap vGap="16">
       @for(data of mockFooterData; track data.path){
       <li>
         <a [href]="data.path" v-link>{{data.title}}</a>

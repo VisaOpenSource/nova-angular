@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,7 +34,9 @@ const config: Config = {
   moduleFileExtensions: ['ts', 'html', 'js', 'json', 'mjs'],
   collectCoverageFrom: ['src/**/*.ts', '!src/**/*.spec.ts', '!src/main.ts', '!src/polyfills.ts'],
   moduleNameMapper: {
-    '@visa/nova-angular': '<rootDir>/../nova-angular/src/index.ts'
+    '@visa/nova-angular': '<rootDir>/../nova-angular/src/index.ts',
+    '^ngx-markdown$': '<rootDir>/src/__mocks__/ngx-markdown.ts',
+    '^marked$': '<rootDir>/src/__mocks__/marked.ts'
   }
 };
 

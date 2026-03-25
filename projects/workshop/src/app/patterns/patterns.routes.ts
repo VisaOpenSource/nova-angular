@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,21 +20,39 @@ import { sentenceCase } from 'change-case';
 
 export const patternsRoutes: ({ name?: string; path: string } & Route)[] = [
   {
-    path: 'wizard',
-    loadChildren: () => import('./wizard/wizard.routes')
+    path: 'chat',
+    loadChildren: () => import('./chat/chat.routes')
   },
   {
     path: 'application-layouts',
-    loadChildren: () => import('./application-layouts/application-layouts.routes')
-  }
+    loadChildren: () =>
+      import('./application-layouts/application-layouts.routes'),
+  },
+  {
+    path: 'dynamic-table',
+    loadChildren: () => import('./dynamic-table/dynamic-table.routes'),
+  },
+  {
+    path: 'file-upload',
+    loadChildren: () => import('./file-upload/file-upload.routes'),
+  },
+  {
+    path: 'wizard',
+    loadChildren: () => import('./wizard/wizard.routes'),
+  },
 ];
 
-export const patternRoutesWithTitle: ({ name: string; path: string } & Route)[] = patternsRoutes.map(
-  (patternRoute) => ({
-    name: sentenceCase(patternRoute.path),
-    title: sentenceCase(patternRoute.path) + ' | Pattern' + TITLE_SEPARATOR + TITLE_SUFFIX,
-    ...patternRoute
-  })
-);
+export const patternRoutesWithTitle: ({
+  name: string;
+  path: string;
+} & Route)[] = patternsRoutes.map((patternRoute) => ({
+  name: sentenceCase(patternRoute.path),
+  title:
+    sentenceCase(patternRoute.path) +
+    ' | Pattern' +
+    TITLE_SEPARATOR +
+    TITLE_SUFFIX,
+  ...patternRoute,
+}));
 
 export default patternsRoutes;

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,7 +39,7 @@ import { IdGenerator } from '../id-generator/id-generator.service';
   standalone: true
 })
 export class AccordionDirective {
-  private readonly flex: FlexDirective | null = inject(FlexDirective, { optional: true });
+  private readonly flex: FlexDirective | null = inject(FlexDirective, { optional: true, host: true });
   private readonly idGenerator: IdGenerator = inject<IdGenerator>(forwardRef(() => IdGenerator));
   public readonly singleSelectItemsName: WritableSignal<string> = signal<string>(
     this.idGenerator.newId('accordion-details-')

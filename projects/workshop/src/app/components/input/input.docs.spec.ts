@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,6 +31,7 @@ import { ModelDrivenInputComponent } from './model-driven/model-driven.docs';
 import { OneTimePasscodeInputComponent } from './one-time-passcode/one-time-passcode.docs';
 import { PrefixInputComponent } from './prefix/prefix.docs';
 import { ReadOnlyInputComponent } from './read-only/read-only.docs';
+import { ReusableInputDemo } from './reusable/reusable.docs';
 import { SuffixInputComponent } from './suffix/suffix.docs';
 import { TemplateDrivenFormInputComponent } from './template-driven-form/template-driven-form.docs';
 import { TemplateDrivenInputComponent } from './template-driven/template-driven.docs';
@@ -68,7 +69,8 @@ const examples = {
   TextareaWithResizeInputComponent,
   WithActionButtonInputComponent,
   WithClearTextButtonInputComponent,
-  WithMaskedFieldInputComponent
+  WithMaskedFieldInputComponent,
+  ReusableInputDemo
 };
 
 const keys = Object.keys(examples);

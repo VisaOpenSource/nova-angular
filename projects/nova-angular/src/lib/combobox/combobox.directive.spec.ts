@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,27 +14,27 @@
  * limitations under the License.
  *
  **/
-import userEvent from '@testing-library/user-event';
 import { render } from '@testing-library/angular';
 import { screen } from '@testing-library/dom';
+import userEvent from '@testing-library/user-event';
 
-import { ComboboxDirective } from './combobox.directive';
-import { ListboxContainerDirective } from '../listbox-container/listbox-container.directive';
-import { InputDirective } from '../input/input.directive';
-import { ListboxDirective } from '../listbox/listbox.directive';
-import { FloatingUITriggerDirective } from '../floating-ui-trigger/floating-ui-trigger.directive';
-import { FloatingUIContainer } from '../floating-ui-container/floating-ui-container.directive';
-import { FloatingUIElementDirective } from '../floating-ui-element/floating-ui-element.directive';
-import { FloatingUIService } from '../floating-ui/floating-ui.service';
-import { NovaLibService } from '../nova-lib.service';
-import { ListboxItemComponent } from '../listbox-item/listbox-item.component';
-import { LabelDirective } from '../label/label.directive';
-import { IdGenerator } from '../id-generator/id-generator.service';
-import { ButtonDirective } from '../button/button.directive';
-import { IconToggleComponent } from '../icon-toggle/icon-toggle.component';
-import { InputContainerComponent } from '../input-container/input-container.component';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
+import { ButtonDirective } from '../button/button.directive';
+import { FloatingUIContainer } from '../floating-ui-container/floating-ui-container.directive';
+import { FloatingUIElementDirective } from '../floating-ui-element/floating-ui-element.directive';
+import { FloatingUITriggerDirective } from '../floating-ui-trigger/floating-ui-trigger.directive';
+import { FloatingUIService } from '../floating-ui/floating-ui.service';
+import { IconToggleComponent } from '../icon-toggle/icon-toggle.component';
+import { IdGenerator } from '../id-generator/id-generator.service';
+import { InputContainerComponent } from '../input-container/input-container.component';
+import { InputDirective } from '../input/input.directive';
+import { LabelDirective } from '../label/label.directive';
+import { ListboxContainerDirective } from '../listbox-container/listbox-container.directive';
+import { ListboxItemComponent } from '../listbox-item/listbox-item.component';
+import { ListboxDirective } from '../listbox/listbox.directive';
+import { NovaLibService } from '../nova-lib.service';
+import { ComboboxDirective } from './combobox.directive';
 
 describe('ComboboxDirective', () => {
   it('should render defaults correctly', async () => {
@@ -599,14 +599,17 @@ describe('ComboboxDirective', () => {
       expect(listboxContainer.style.display).toBe('none');
     });
     it('should close the listbox on tab key press', async () => {
-      await render(
-        `<div v-combobox v-floating-ui-container>
+      const { fixture } = await render(
+        `<div>
+          <div v-combobox v-floating-ui-container>
             <input v-input v-floating-ui-trigger data-testid="input" />
             <div v-listbox-container v-floating-ui-element data-testid="listbox-container">
               <ul v-listbox id="listbox">
                 <li v-listbox-item value="option-a" id="option-a" data-testid="item-1">Option A</li>
                 </ul>
             </div>
+          </div>
+          <button data-testid="next-element">Next Element</button>
         </div>`,
         {
           imports: [
@@ -627,6 +630,8 @@ describe('ComboboxDirective', () => {
       await userEvent.click(input);
       await userEvent.keyboard('{ArrowDown}');
       await userEvent.keyboard('{Tab}');
+      await fixture.whenStable();
+      fixture.detectChanges();
       expect(listboxContainer.style.display).toBe('none');
     });
   });
@@ -771,7 +776,6 @@ describe('ComboboxDirective', () => {
         }
       );
       const input = screen.getByTestId('input');
-      const listboxContainer = screen.getByTestId('listbox-container');
       const listboxItem1 = screen.getByTestId('item-1');
       const listboxItem2 = screen.getByTestId('item-2');
       await fixture.whenStable();
@@ -898,5 +902,110 @@ describe('ComboboxDirective', () => {
     });
 
     // @TODO: should we test the chips implementation?
+  });
+
+  describe('Combobox touched state', () => {
+    it('should be marked as touched when input is blurred', async () => {
+      const comboboxControl = new FormControl(null);
+      const { fixture } = await render(
+        `<div v-combobox [formControl]="comboboxControl">
+          <input v-input data-testid="input" />
+          <div v-listbox-container>
+            <ul v-listbox>
+              <li v-listbox-item value="option-a">Option A</li>
+              <li v-listbox-item value="option-b">Option B</li>
+            </ul>
+          </div>
+        </div>`,
+        {
+          imports: [
+            ComboboxDirective,
+            InputDirective,
+            ListboxContainerDirective,
+            ListboxDirective,
+            ListboxItemComponent,
+            ReactiveFormsModule
+          ],
+          componentProperties: {
+            comboboxControl
+          }
+        }
+      );
+
+      const input = screen.getByTestId<HTMLInputElement>('input');
+
+      // Initially should be untouched
+      expect(comboboxControl.touched).toBe(false);
+      expect(comboboxControl.untouched).toBe(true);
+
+      // Focus the input
+      await userEvent.click(input);
+      fixture.detectChanges();
+
+      // Still untouched after focus
+      expect(comboboxControl.touched).toBe(false);
+
+      // Blur the input
+      await userEvent.tab();
+      fixture.detectChanges();
+      await fixture.whenStable();
+
+      // Should be touched after blur
+      expect(comboboxControl.touched).toBe(true);
+      expect(comboboxControl.untouched).toBe(false);
+    });
+
+    it('should remain pristine when initialized with a value', async () => {
+      const comboboxControl = new FormControl({ label: 'Option A', value: 'option-a' });
+      const { fixture } = await render(
+        `<div v-combobox [formControl]="comboboxControl">
+          <input v-input data-testid="input" />
+          <div v-listbox-container>
+            <ul v-listbox>
+              <li v-listbox-item value="option-a" data-testid="item-a">Option A</li>
+              <li v-listbox-item value="option-b" data-testid="item-b">Option B</li>
+            </ul>
+          </div>
+        </div>`,
+        {
+          imports: [
+            ComboboxDirective,
+            InputDirective,
+            ListboxContainerDirective,
+            ListboxDirective,
+            ListboxItemComponent,
+            ReactiveFormsModule
+          ],
+          componentProperties: {
+            comboboxControl
+          }
+        }
+      );
+
+      fixture.detectChanges();
+      await fixture.whenStable();
+
+      const input = screen.getByTestId<HTMLInputElement>('input');
+
+      // Should have the initial value
+      expect(input.value).toBe('Option A');
+
+      // Should remain pristine with initial value
+      expect(comboboxControl.pristine).toBe(true);
+      expect(comboboxControl.dirty).toBe(false);
+
+      // Should remain untouched until user interacts
+      expect(comboboxControl.touched).toBe(false);
+      expect(comboboxControl.untouched).toBe(true);
+
+      // After user selects different item, it should become dirty
+      const itemB = screen.getByTestId('item-b');
+      await userEvent.click(itemB);
+      fixture.detectChanges();
+
+      expect(input.value).toBe('Option B');
+      expect(comboboxControl.dirty).toBe(true);
+      expect(comboboxControl.pristine).toBe(false);
+    });
   });
 });

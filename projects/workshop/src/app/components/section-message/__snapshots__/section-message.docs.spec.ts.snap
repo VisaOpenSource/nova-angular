@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Section message examples EmptyDefaultSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <div
     class="v-message v-section"
     v-message=""
@@ -13,9 +11,7 @@ exports[`Section message examples EmptyDefaultSectionMessageComponent should ren
 `;
 
 exports[`Section message examples EmptyErrorSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <div
     class="v-message v-section v-message-error"
     messagetype="error"
@@ -26,9 +22,7 @@ exports[`Section message examples EmptyErrorSectionMessageComponent should rende
 `;
 
 exports[`Section message examples EmptySubtleSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <div
     class="v-message v-section v-message-subtle"
     messagetype="subtle"
@@ -39,9 +33,7 @@ exports[`Section message examples EmptySubtleSectionMessageComponent should rend
 `;
 
 exports[`Section message examples EmptySuccessSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root3"
->
+<div>
   <div
     class="v-message v-section v-message-success"
     messagetype="success"
@@ -52,9 +44,7 @@ exports[`Section message examples EmptySuccessSectionMessageComponent should ren
 `;
 
 exports[`Section message examples EmptyWarningSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root4"
->
+<div>
   <div
     class="v-message v-section v-message-warning"
     messagetype="warning"
@@ -65,9 +55,7 @@ exports[`Section message examples EmptyWarningSectionMessageComponent should ren
 `;
 
 exports[`Section message examples NovaDefaultErrorSectionMessageSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root5"
->
+<div>
   <div
     class="v-message v-section v-message-error"
     messagetype="error"
@@ -80,7 +68,6 @@ exports[`Section message examples NovaDefaultErrorSectionMessageSectionMessageCo
       class="v-message-icon v-icon v-icon-error v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-0"
       role="img"
       v-icon-visa-error-low=""
       v-message-icon=""
@@ -89,13 +76,11 @@ exports[`Section message examples NovaDefaultErrorSectionMessageSectionMessageCo
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11 6V14H13V6H11ZM12 18C12.5523 18 13 17.5523 13 17C13 16.4477 12.5523 16 12 16C11.4477 16 11 16.4477 11 17C11 17.5523 11.4477 18 12 18Z"
-        fill-rule="evenodd"
+        d="M12 16C12.5523 16 13 16.4477 13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16ZM13 14H11V6H13V14Z"
       />
       <defs>
         <clippath>
@@ -134,14 +119,13 @@ exports[`Section message examples NovaDefaultErrorSectionMessageSectionMessageCo
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-1"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -159,9 +143,7 @@ exports[`Section message examples NovaDefaultErrorSectionMessageSectionMessageCo
 `;
 
 exports[`Section message examples NovaDefaultInfoSectionMessageSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root6"
->
+<div>
   <div
     class="v-message v-section"
     messagetype="information"
@@ -174,7 +156,6 @@ exports[`Section message examples NovaDefaultInfoSectionMessageSectionMessageCom
       class="v-message-icon v-icon v-icon-information v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-2"
       role="img"
       v-icon-visa-information-low=""
       v-message-icon=""
@@ -183,11 +164,11 @@ exports[`Section message examples NovaDefaultInfoSectionMessageSectionMessageCom
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        d="M15 19H9V17.0351H11.451V12.9874H9.43137V11.0225H13.4118V17.0351H15V19ZM12 9.53895C10.7549 9.53895 9.73529 8.51719 9.73529 7.26947C9.73529 6.02175 10.7549 5 12 5C13.2549 5 14.2647 6.02175 14.2647 7.26947C14.2647 8.51719 13.2549 9.53895 12 9.53895ZM12 6.96491C11.8333 6.96491 11.6961 7.10246 11.6961 7.26947C11.6961 7.43649 11.8333 7.57403 12 7.57403C12.1667 7.57403 12.3039 7.43649 12.3039 7.26947C12.3039 7.10246 12.1667 6.96491 12 6.96491Z"
+        d="M13.4121 17.0352H15V19H9V17.0352H11.4512V12.9873H9.43164V11.0225H13.4121V17.0352ZM12 5C13.2549 5 14.2646 6.02181 14.2646 7.26953C14.2646 8.51722 13.2549 9.53906 12 9.53906C10.7549 9.53906 9.73538 8.51722 9.73535 7.26953C9.73535 6.02181 10.7549 5 12 5ZM12 6.96484C11.8333 6.96484 11.6963 7.10251 11.6963 7.26953C11.6963 7.43652 11.8334 7.57422 12 7.57422C12.1666 7.57422 12.3037 7.43652 12.3037 7.26953C12.3037 7.10251 12.1667 6.96484 12 6.96484Z"
       />
       <defs>
         <clippath>
@@ -226,14 +207,13 @@ exports[`Section message examples NovaDefaultInfoSectionMessageSectionMessageCom
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-3"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -251,9 +231,7 @@ exports[`Section message examples NovaDefaultInfoSectionMessageSectionMessageCom
 `;
 
 exports[`Section message examples NovaDefaultSubtleSectionMessageSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root7"
->
+<div>
   <div
     class="v-message v-section v-message-subtle"
     messagetype="subtle"
@@ -265,7 +243,6 @@ exports[`Section message examples NovaDefaultSubtleSectionMessageSectionMessageC
       class="v-message-icon v-icon v-icon-idea v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-4"
       v-icon-visa-idea-low=""
       v-message-icon=""
       viewBox="0 0 24 24"
@@ -273,11 +250,11 @@ exports[`Section message examples NovaDefaultSubtleSectionMessageSectionMessageC
     >
       <path
         class="v-icon-secondary"
-        d="M16 22H8V24H16V22Z"
+        d="M16 22V24H8V22H16Z"
       />
       <path
         class="v-icon-primary"
-        d="M12 0C6.37 0 3 4.58 3 9C3 12.66 5.22 14.21 6.55 15.14C6.85 15.35 7.14 15.55 7.29 15.7C7.67 16.08 8 18.09 8 20L9 21H15L16 20C16 17.59 16.23 16.18 16.71 15.71C16.86 15.56 17.15 15.36 17.45 15.15C18.78 14.21 21 12.66 21 9C21 4.58 17.63 0 12 0ZM16.3 13.5C15.92 13.76 15.57 14.01 15.29 14.29C14.46 15.12 14.08 16.47 14.01 19H13V11H15V9H9V11H11V19H9.98C9.91 17.53 9.65 15.23 8.71 14.29C8.43 14.01 8.08 13.76 7.7 13.5C6.5 12.66 5 11.62 5 9C5 5.61 7.45 2 12 2C16.55 2 19 5.61 19 9C19 11.62 17.5 12.66 16.3 13.5Z"
+        d="M12 0C17.63 0 21 4.58 21 9C21 12.66 18.7802 14.2104 17.4502 15.1504C17.1502 15.3604 16.86 15.56 16.71 15.71C16.23 16.18 16 17.59 16 20L15 21H9L8 20C8 18.0902 7.66999 16.0805 7.29004 15.7002C7.14004 15.5502 6.8498 15.3496 6.5498 15.1396C5.21977 14.2096 3 12.6597 3 9C3 4.58 6.37 0 12 0ZM12 2C7.45 2 5 5.61 5 9C5 11.62 6.5002 12.66 7.7002 13.5C8.08014 13.76 8.42999 14.0101 8.70996 14.29C9.64996 15.23 9.91047 17.53 9.98047 19H11V11H9V9H15V11H13V19H14.0098C14.0798 16.47 14.46 15.12 15.29 14.29C15.57 14.0101 15.9199 13.76 16.2998 13.5C17.4998 12.66 19 11.62 19 9C19 5.61 16.55 2 12 2Z"
       />
     </svg>
     <div
@@ -308,14 +285,13 @@ exports[`Section message examples NovaDefaultSubtleSectionMessageSectionMessageC
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-5"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -333,9 +309,7 @@ exports[`Section message examples NovaDefaultSubtleSectionMessageSectionMessageC
 `;
 
 exports[`Section message examples NovaDefaultSuccessSectionMessageSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root8"
->
+<div>
   <div
     class="v-message v-section v-message-success"
     messagetype="success"
@@ -348,7 +322,6 @@ exports[`Section message examples NovaDefaultSuccessSectionMessageSectionMessage
       class="v-message-icon v-icon v-icon-low v-icon-success v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-6"
       role="img"
       v-icon-visa-success-low=""
       v-message-icon=""
@@ -357,11 +330,11 @@ exports[`Section message examples NovaDefaultSuccessSectionMessageSectionMessage
     >
       <path
         class="v-icon-secondary"
-        d="M10.5726 14.2094L8.36276 11.9469L7 13.3422L10.5726 17L18 9.39529L16.6372 8L10.5726 14.2094Z"
+        d="M18 9.39551L10.5723 17L7 13.3418L8.3623 11.9473L10.5723 14.209L16.6377 8L18 9.39551Z"
       />
       <path
         class="v-icon-primary"
-        d="M12 0C5.38317 0 0 5.38317 0 12C0 18.6168 5.38317 24 12 24C18.6168 24 24 18.6168 24 12C24 5.38317 18.6168 0 12 0ZM12 21.8182C6.58647 21.8182 2.18182 17.4141 2.18182 12C2.18182 6.58647 6.58647 2.18182 12 2.18182C17.4141 2.18182 21.8182 6.58647 21.8182 12C21.8182 17.4141 17.4141 21.8182 12 21.8182Z"
+        d="M12 0C18.6168 0 24 5.38317 24 12C24 18.6168 18.6168 24 12 24C5.38317 24 0 18.6168 0 12C0 5.38317 5.38317 0 12 0ZM12 2.18164C6.58647 2.18164 2.18164 6.58647 2.18164 12C2.18164 17.4141 6.58647 21.8184 12 21.8184C17.4141 21.8184 21.8184 17.4141 21.8184 12C21.8184 6.58647 17.4141 2.18164 12 2.18164Z"
       />
       <defs>
         <clippath>
@@ -400,14 +373,13 @@ exports[`Section message examples NovaDefaultSuccessSectionMessageSectionMessage
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-7"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -425,9 +397,7 @@ exports[`Section message examples NovaDefaultSuccessSectionMessageSectionMessage
 `;
 
 exports[`Section message examples NovaDefaultWarningSectionMessageSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root9"
->
+<div>
   <div
     class="v-message v-section v-message-warning"
     messagetype="warning"
@@ -440,7 +410,6 @@ exports[`Section message examples NovaDefaultWarningSectionMessageSectionMessage
       class="v-message-icon v-icon v-icon-low v-icon-visa v-icon-warning"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-8"
       role="img"
       v-icon-visa-warning-low=""
       v-message-icon=""
@@ -449,13 +418,11 @@ exports[`Section message examples NovaDefaultWarningSectionMessageSectionMessage
     >
       <path
         class="v-icon-secondary"
-        d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+        d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-        fill-rule="evenodd"
+        d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
       />
     </svg>
     <div
@@ -486,14 +453,13 @@ exports[`Section message examples NovaDefaultWarningSectionMessageSectionMessage
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-9"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -511,9 +477,7 @@ exports[`Section message examples NovaDefaultWarningSectionMessageSectionMessage
 `;
 
 exports[`Section message examples NovaErrorSectionMessageSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root12"
->
+<div>
   <div
     class="v-message v-section v-message-error"
     messagetype="error"
@@ -526,7 +490,6 @@ exports[`Section message examples NovaErrorSectionMessageSectionMessageComponent
       class="v-message-icon v-icon v-icon-error v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-14"
       role="img"
       v-icon-visa-error-low=""
       v-message-icon=""
@@ -535,13 +498,11 @@ exports[`Section message examples NovaErrorSectionMessageSectionMessageComponent
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11 6V14H13V6H11ZM12 18C12.5523 18 13 17.5523 13 17C13 16.4477 12.5523 16 12 16C11.4477 16 11 16.4477 11 17C11 17.5523 11.4477 18 12 18Z"
-        fill-rule="evenodd"
+        d="M12 16C12.5523 16 13 16.4477 13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16ZM13 14H11V6H13V14Z"
       />
       <defs>
         <clippath>
@@ -586,14 +547,13 @@ exports[`Section message examples NovaErrorSectionMessageSectionMessageComponent
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-15"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -611,9 +571,7 @@ exports[`Section message examples NovaErrorSectionMessageSectionMessageComponent
 `;
 
 exports[`Section message examples NovaErrorSectionMessageWithActionButtonSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root10"
->
+<div>
   <div
     class="v-message v-section v-message-error"
     messagetype="error"
@@ -626,7 +584,6 @@ exports[`Section message examples NovaErrorSectionMessageWithActionButtonSection
       class="v-message-icon v-icon v-icon-error v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-10"
       role="img"
       v-icon-visa-error-low=""
       v-message-icon=""
@@ -635,13 +592,11 @@ exports[`Section message examples NovaErrorSectionMessageWithActionButtonSection
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11 6V14H13V6H11ZM12 18C12.5523 18 13 17.5523 13 17C13 16.4477 12.5523 16 12 16C11.4477 16 11 16.4477 11 17C11 17.5523 11.4477 18 12 18Z"
-        fill-rule="evenodd"
+        d="M12 16C12.5523 16 13 16.4477 13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16ZM13 14H11V6H13V14Z"
       />
       <defs>
         <clippath>
@@ -688,14 +643,13 @@ exports[`Section message examples NovaErrorSectionMessageWithActionButtonSection
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-11"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -713,9 +667,7 @@ exports[`Section message examples NovaErrorSectionMessageWithActionButtonSection
 `;
 
 exports[`Section message examples NovaErrorSectionMessageWithLinkSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root11"
->
+<div>
   <div
     class="v-message v-section v-message-error"
     messagetype="error"
@@ -728,7 +680,6 @@ exports[`Section message examples NovaErrorSectionMessageWithLinkSectionMessageC
       class="v-message-icon v-icon v-icon-error v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-12"
       role="img"
       v-icon-visa-error-low=""
       v-message-icon=""
@@ -737,13 +688,11 @@ exports[`Section message examples NovaErrorSectionMessageWithLinkSectionMessageC
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11 6V14H13V6H11ZM12 18C12.5523 18 13 17.5523 13 17C13 16.4477 12.5523 16 12 16C11.4477 16 11 16.4477 11 17C11 17.5523 11.4477 18 12 18Z"
-        fill-rule="evenodd"
+        d="M12 16C12.5523 16 13 16.4477 13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16ZM13 14H11V6H13V14Z"
       />
       <defs>
         <clippath>
@@ -792,14 +741,13 @@ exports[`Section message examples NovaErrorSectionMessageWithLinkSectionMessageC
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-13"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -817,9 +765,7 @@ exports[`Section message examples NovaErrorSectionMessageWithLinkSectionMessageC
 `;
 
 exports[`Section message examples NovaInfoSectionMessageWithActionButtonSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root13"
->
+<div>
   <div
     class="v-message v-section"
     messagetype="information"
@@ -832,7 +778,6 @@ exports[`Section message examples NovaInfoSectionMessageWithActionButtonSectionM
       class="v-message-icon v-icon v-icon-information v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-16"
       role="img"
       v-icon-visa-information-low=""
       v-message-icon=""
@@ -841,11 +786,11 @@ exports[`Section message examples NovaInfoSectionMessageWithActionButtonSectionM
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        d="M15 19H9V17.0351H11.451V12.9874H9.43137V11.0225H13.4118V17.0351H15V19ZM12 9.53895C10.7549 9.53895 9.73529 8.51719 9.73529 7.26947C9.73529 6.02175 10.7549 5 12 5C13.2549 5 14.2647 6.02175 14.2647 7.26947C14.2647 8.51719 13.2549 9.53895 12 9.53895ZM12 6.96491C11.8333 6.96491 11.6961 7.10246 11.6961 7.26947C11.6961 7.43649 11.8333 7.57403 12 7.57403C12.1667 7.57403 12.3039 7.43649 12.3039 7.26947C12.3039 7.10246 12.1667 6.96491 12 6.96491Z"
+        d="M13.4121 17.0352H15V19H9V17.0352H11.4512V12.9873H9.43164V11.0225H13.4121V17.0352ZM12 5C13.2549 5 14.2646 6.02181 14.2646 7.26953C14.2646 8.51722 13.2549 9.53906 12 9.53906C10.7549 9.53906 9.73538 8.51722 9.73535 7.26953C9.73535 6.02181 10.7549 5 12 5ZM12 6.96484C11.8333 6.96484 11.6963 7.10251 11.6963 7.26953C11.6963 7.43652 11.8334 7.57422 12 7.57422C12.1666 7.57422 12.3037 7.43652 12.3037 7.26953C12.3037 7.10251 12.1667 6.96484 12 6.96484Z"
       />
       <defs>
         <clippath>
@@ -892,14 +837,13 @@ exports[`Section message examples NovaInfoSectionMessageWithActionButtonSectionM
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-17"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -917,9 +861,7 @@ exports[`Section message examples NovaInfoSectionMessageWithActionButtonSectionM
 `;
 
 exports[`Section message examples NovaInfoSectionMessageWithLinkSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root14"
->
+<div>
   <div
     class="v-message v-section"
     messagetype="information"
@@ -932,7 +874,6 @@ exports[`Section message examples NovaInfoSectionMessageWithLinkSectionMessageCo
       class="v-message-icon v-icon v-icon-information v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-18"
       role="img"
       v-icon-visa-information-low=""
       v-message-icon=""
@@ -941,11 +882,11 @@ exports[`Section message examples NovaInfoSectionMessageWithLinkSectionMessageCo
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        d="M15 19H9V17.0351H11.451V12.9874H9.43137V11.0225H13.4118V17.0351H15V19ZM12 9.53895C10.7549 9.53895 9.73529 8.51719 9.73529 7.26947C9.73529 6.02175 10.7549 5 12 5C13.2549 5 14.2647 6.02175 14.2647 7.26947C14.2647 8.51719 13.2549 9.53895 12 9.53895ZM12 6.96491C11.8333 6.96491 11.6961 7.10246 11.6961 7.26947C11.6961 7.43649 11.8333 7.57403 12 7.57403C12.1667 7.57403 12.3039 7.43649 12.3039 7.26947C12.3039 7.10246 12.1667 6.96491 12 6.96491Z"
+        d="M13.4121 17.0352H15V19H9V17.0352H11.4512V12.9873H9.43164V11.0225H13.4121V17.0352ZM12 5C13.2549 5 14.2646 6.02181 14.2646 7.26953C14.2646 8.51722 13.2549 9.53906 12 9.53906C10.7549 9.53906 9.73538 8.51722 9.73535 7.26953C9.73535 6.02181 10.7549 5 12 5ZM12 6.96484C11.8333 6.96484 11.6963 7.10251 11.6963 7.26953C11.6963 7.43652 11.8334 7.57422 12 7.57422C12.1666 7.57422 12.3037 7.43652 12.3037 7.26953C12.3037 7.10251 12.1667 6.96484 12 6.96484Z"
       />
       <defs>
         <clippath>
@@ -994,14 +935,13 @@ exports[`Section message examples NovaInfoSectionMessageWithLinkSectionMessageCo
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-19"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -1019,9 +959,7 @@ exports[`Section message examples NovaInfoSectionMessageWithLinkSectionMessageCo
 `;
 
 exports[`Section message examples NovaPersistentErrorSectionMessageSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root15"
->
+<div>
   <div
     class="v-message v-section v-message-error"
     messagetype="error"
@@ -1034,7 +972,6 @@ exports[`Section message examples NovaPersistentErrorSectionMessageSectionMessag
       class="v-message-icon v-icon v-icon-error v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-20"
       role="img"
       v-icon-visa-error-low=""
       v-message-icon=""
@@ -1043,13 +980,11 @@ exports[`Section message examples NovaPersistentErrorSectionMessageSectionMessag
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11 6V14H13V6H11ZM12 18C12.5523 18 13 17.5523 13 17C13 16.4477 12.5523 16 12 16C11.4477 16 11 16.4477 11 17C11 17.5523 11.4477 18 12 18Z"
-        fill-rule="evenodd"
+        d="M12 16C12.5523 16 13 16.4477 13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16ZM13 14H11V6H13V14Z"
       />
       <defs>
         <clippath>
@@ -1075,9 +1010,7 @@ exports[`Section message examples NovaPersistentErrorSectionMessageSectionMessag
 `;
 
 exports[`Section message examples NovaPersistentInfoSectionMessageSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root16"
->
+<div>
   <div
     class="v-message v-section"
     messagetype="information"
@@ -1090,7 +1023,6 @@ exports[`Section message examples NovaPersistentInfoSectionMessageSectionMessage
       class="v-message-icon v-icon v-icon-information v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-21"
       role="img"
       v-icon-visa-information-low=""
       v-message-icon=""
@@ -1099,11 +1031,11 @@ exports[`Section message examples NovaPersistentInfoSectionMessageSectionMessage
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        d="M15 19H9V17.0351H11.451V12.9874H9.43137V11.0225H13.4118V17.0351H15V19ZM12 9.53895C10.7549 9.53895 9.73529 8.51719 9.73529 7.26947C9.73529 6.02175 10.7549 5 12 5C13.2549 5 14.2647 6.02175 14.2647 7.26947C14.2647 8.51719 13.2549 9.53895 12 9.53895ZM12 6.96491C11.8333 6.96491 11.6961 7.10246 11.6961 7.26947C11.6961 7.43649 11.8333 7.57403 12 7.57403C12.1667 7.57403 12.3039 7.43649 12.3039 7.26947C12.3039 7.10246 12.1667 6.96491 12 6.96491Z"
+        d="M13.4121 17.0352H15V19H9V17.0352H11.4512V12.9873H9.43164V11.0225H13.4121V17.0352ZM12 5C13.2549 5 14.2646 6.02181 14.2646 7.26953C14.2646 8.51722 13.2549 9.53906 12 9.53906C10.7549 9.53906 9.73538 8.51722 9.73535 7.26953C9.73535 6.02181 10.7549 5 12 5ZM12 6.96484C11.8333 6.96484 11.6963 7.10251 11.6963 7.26953C11.6963 7.43652 11.8334 7.57422 12 7.57422C12.1666 7.57422 12.3037 7.43652 12.3037 7.26953C12.3037 7.10251 12.1667 6.96484 12 6.96484Z"
       />
       <defs>
         <clippath>
@@ -1129,9 +1061,7 @@ exports[`Section message examples NovaPersistentInfoSectionMessageSectionMessage
 `;
 
 exports[`Section message examples NovaPersistentSubtleSectionMessageSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root17"
->
+<div>
   <div
     class="v-message v-section v-message-subtle"
     messagetype="subtle"
@@ -1143,7 +1073,6 @@ exports[`Section message examples NovaPersistentSubtleSectionMessageSectionMessa
       class="v-message-icon v-icon v-icon-idea v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-22"
       v-icon-visa-idea-low=""
       v-message-icon=""
       viewBox="0 0 24 24"
@@ -1151,11 +1080,11 @@ exports[`Section message examples NovaPersistentSubtleSectionMessageSectionMessa
     >
       <path
         class="v-icon-secondary"
-        d="M16 22H8V24H16V22Z"
+        d="M16 22V24H8V22H16Z"
       />
       <path
         class="v-icon-primary"
-        d="M12 0C6.37 0 3 4.58 3 9C3 12.66 5.22 14.21 6.55 15.14C6.85 15.35 7.14 15.55 7.29 15.7C7.67 16.08 8 18.09 8 20L9 21H15L16 20C16 17.59 16.23 16.18 16.71 15.71C16.86 15.56 17.15 15.36 17.45 15.15C18.78 14.21 21 12.66 21 9C21 4.58 17.63 0 12 0ZM16.3 13.5C15.92 13.76 15.57 14.01 15.29 14.29C14.46 15.12 14.08 16.47 14.01 19H13V11H15V9H9V11H11V19H9.98C9.91 17.53 9.65 15.23 8.71 14.29C8.43 14.01 8.08 13.76 7.7 13.5C6.5 12.66 5 11.62 5 9C5 5.61 7.45 2 12 2C16.55 2 19 5.61 19 9C19 11.62 17.5 12.66 16.3 13.5Z"
+        d="M12 0C17.63 0 21 4.58 21 9C21 12.66 18.7802 14.2104 17.4502 15.1504C17.1502 15.3604 16.86 15.56 16.71 15.71C16.23 16.18 16 17.59 16 20L15 21H9L8 20C8 18.0902 7.66999 16.0805 7.29004 15.7002C7.14004 15.5502 6.8498 15.3496 6.5498 15.1396C5.21977 14.2096 3 12.6597 3 9C3 4.58 6.37 0 12 0ZM12 2C7.45 2 5 5.61 5 9C5 11.62 6.5002 12.66 7.7002 13.5C8.08014 13.76 8.42999 14.0101 8.70996 14.29C9.64996 15.23 9.91047 17.53 9.98047 19H11V11H9V9H15V11H13V19H14.0098C14.0798 16.47 14.46 15.12 15.29 14.29C15.57 14.0101 15.9199 13.76 16.2998 13.5C17.4998 12.66 19 11.62 19 9C19 5.61 16.55 2 12 2Z"
       />
     </svg>
     <div
@@ -1173,9 +1102,7 @@ exports[`Section message examples NovaPersistentSubtleSectionMessageSectionMessa
 `;
 
 exports[`Section message examples NovaPersistentSuccessSectionMessageSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root18"
->
+<div>
   <div
     class="v-message v-section v-message-success"
     messagetype="success"
@@ -1188,7 +1115,6 @@ exports[`Section message examples NovaPersistentSuccessSectionMessageSectionMess
       class="v-message-icon v-icon v-icon-low v-icon-success v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-23"
       role="img"
       v-icon-visa-success-low=""
       v-message-icon=""
@@ -1197,11 +1123,11 @@ exports[`Section message examples NovaPersistentSuccessSectionMessageSectionMess
     >
       <path
         class="v-icon-secondary"
-        d="M10.5726 14.2094L8.36276 11.9469L7 13.3422L10.5726 17L18 9.39529L16.6372 8L10.5726 14.2094Z"
+        d="M18 9.39551L10.5723 17L7 13.3418L8.3623 11.9473L10.5723 14.209L16.6377 8L18 9.39551Z"
       />
       <path
         class="v-icon-primary"
-        d="M12 0C5.38317 0 0 5.38317 0 12C0 18.6168 5.38317 24 12 24C18.6168 24 24 18.6168 24 12C24 5.38317 18.6168 0 12 0ZM12 21.8182C6.58647 21.8182 2.18182 17.4141 2.18182 12C2.18182 6.58647 6.58647 2.18182 12 2.18182C17.4141 2.18182 21.8182 6.58647 21.8182 12C21.8182 17.4141 17.4141 21.8182 12 21.8182Z"
+        d="M12 0C18.6168 0 24 5.38317 24 12C24 18.6168 18.6168 24 12 24C5.38317 24 0 18.6168 0 12C0 5.38317 5.38317 0 12 0ZM12 2.18164C6.58647 2.18164 2.18164 6.58647 2.18164 12C2.18164 17.4141 6.58647 21.8184 12 21.8184C17.4141 21.8184 21.8184 17.4141 21.8184 12C21.8184 6.58647 17.4141 2.18164 12 2.18164Z"
       />
       <defs>
         <clippath>
@@ -1227,9 +1153,7 @@ exports[`Section message examples NovaPersistentSuccessSectionMessageSectionMess
 `;
 
 exports[`Section message examples NovaPersistentWarningSectionMessageSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root19"
->
+<div>
   <div
     class="v-message v-section v-message-warning"
     messagetype="warning"
@@ -1242,7 +1166,6 @@ exports[`Section message examples NovaPersistentWarningSectionMessageSectionMess
       class="v-message-icon v-icon v-icon-low v-icon-visa v-icon-warning"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-24"
       role="img"
       v-icon-visa-warning-low=""
       v-message-icon=""
@@ -1251,13 +1174,11 @@ exports[`Section message examples NovaPersistentWarningSectionMessageSectionMess
     >
       <path
         class="v-icon-secondary"
-        d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+        d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-        fill-rule="evenodd"
+        d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
       />
     </svg>
     <div
@@ -1275,9 +1196,7 @@ exports[`Section message examples NovaPersistentWarningSectionMessageSectionMess
 `;
 
 exports[`Section message examples NovaSubtleSectionMessageWithActionButtonSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root20"
->
+<div>
   <div
     class="v-message v-section v-message-subtle"
     messagetype="subtle"
@@ -1289,7 +1208,6 @@ exports[`Section message examples NovaSubtleSectionMessageWithActionButtonSectio
       class="v-message-icon v-icon v-icon-idea v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-25"
       v-icon-visa-idea-low=""
       v-message-icon=""
       viewBox="0 0 24 24"
@@ -1297,11 +1215,11 @@ exports[`Section message examples NovaSubtleSectionMessageWithActionButtonSectio
     >
       <path
         class="v-icon-secondary"
-        d="M16 22H8V24H16V22Z"
+        d="M16 22V24H8V22H16Z"
       />
       <path
         class="v-icon-primary"
-        d="M12 0C6.37 0 3 4.58 3 9C3 12.66 5.22 14.21 6.55 15.14C6.85 15.35 7.14 15.55 7.29 15.7C7.67 16.08 8 18.09 8 20L9 21H15L16 20C16 17.59 16.23 16.18 16.71 15.71C16.86 15.56 17.15 15.36 17.45 15.15C18.78 14.21 21 12.66 21 9C21 4.58 17.63 0 12 0ZM16.3 13.5C15.92 13.76 15.57 14.01 15.29 14.29C14.46 15.12 14.08 16.47 14.01 19H13V11H15V9H9V11H11V19H9.98C9.91 17.53 9.65 15.23 8.71 14.29C8.43 14.01 8.08 13.76 7.7 13.5C6.5 12.66 5 11.62 5 9C5 5.61 7.45 2 12 2C16.55 2 19 5.61 19 9C19 11.62 17.5 12.66 16.3 13.5Z"
+        d="M12 0C17.63 0 21 4.58 21 9C21 12.66 18.7802 14.2104 17.4502 15.1504C17.1502 15.3604 16.86 15.56 16.71 15.71C16.23 16.18 16 17.59 16 20L15 21H9L8 20C8 18.0902 7.66999 16.0805 7.29004 15.7002C7.14004 15.5502 6.8498 15.3496 6.5498 15.1396C5.21977 14.2096 3 12.6597 3 9C3 4.58 6.37 0 12 0ZM12 2C7.45 2 5 5.61 5 9C5 11.62 6.5002 12.66 7.7002 13.5C8.08014 13.76 8.42999 14.0101 8.70996 14.29C9.64996 15.23 9.91047 17.53 9.98047 19H11V11H9V9H15V11H13V19H14.0098C14.0798 16.47 14.46 15.12 15.29 14.29C15.57 14.0101 15.9199 13.76 16.2998 13.5C17.4998 12.66 19 11.62 19 9C19 5.61 16.55 2 12 2Z"
       />
     </svg>
     <div
@@ -1340,14 +1258,13 @@ exports[`Section message examples NovaSubtleSectionMessageWithActionButtonSectio
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-26"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -1365,9 +1282,7 @@ exports[`Section message examples NovaSubtleSectionMessageWithActionButtonSectio
 `;
 
 exports[`Section message examples NovaSubtleSectionMessageWithLinkSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root21"
->
+<div>
   <div
     class="v-message v-section v-message-subtle"
     messagetype="subtle"
@@ -1379,7 +1294,6 @@ exports[`Section message examples NovaSubtleSectionMessageWithLinkSectionMessage
       class="v-message-icon v-icon v-icon-idea v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-27"
       v-icon-visa-idea-low=""
       v-message-icon=""
       viewBox="0 0 24 24"
@@ -1387,11 +1301,11 @@ exports[`Section message examples NovaSubtleSectionMessageWithLinkSectionMessage
     >
       <path
         class="v-icon-secondary"
-        d="M16 22H8V24H16V22Z"
+        d="M16 22V24H8V22H16Z"
       />
       <path
         class="v-icon-primary"
-        d="M12 0C6.37 0 3 4.58 3 9C3 12.66 5.22 14.21 6.55 15.14C6.85 15.35 7.14 15.55 7.29 15.7C7.67 16.08 8 18.09 8 20L9 21H15L16 20C16 17.59 16.23 16.18 16.71 15.71C16.86 15.56 17.15 15.36 17.45 15.15C18.78 14.21 21 12.66 21 9C21 4.58 17.63 0 12 0ZM16.3 13.5C15.92 13.76 15.57 14.01 15.29 14.29C14.46 15.12 14.08 16.47 14.01 19H13V11H15V9H9V11H11V19H9.98C9.91 17.53 9.65 15.23 8.71 14.29C8.43 14.01 8.08 13.76 7.7 13.5C6.5 12.66 5 11.62 5 9C5 5.61 7.45 2 12 2C16.55 2 19 5.61 19 9C19 11.62 17.5 12.66 16.3 13.5Z"
+        d="M12 0C17.63 0 21 4.58 21 9C21 12.66 18.7802 14.2104 17.4502 15.1504C17.1502 15.3604 16.86 15.56 16.71 15.71C16.23 16.18 16 17.59 16 20L15 21H9L8 20C8 18.0902 7.66999 16.0805 7.29004 15.7002C7.14004 15.5502 6.8498 15.3496 6.5498 15.1396C5.21977 14.2096 3 12.6597 3 9C3 4.58 6.37 0 12 0ZM12 2C7.45 2 5 5.61 5 9C5 11.62 6.5002 12.66 7.7002 13.5C8.08014 13.76 8.42999 14.0101 8.70996 14.29C9.64996 15.23 9.91047 17.53 9.98047 19H11V11H9V9H15V11H13V19H14.0098C14.0798 16.47 14.46 15.12 15.29 14.29C15.57 14.0101 15.9199 13.76 16.2998 13.5C17.4998 12.66 19 11.62 19 9C19 5.61 16.55 2 12 2Z"
       />
     </svg>
     <div
@@ -1432,14 +1346,13 @@ exports[`Section message examples NovaSubtleSectionMessageWithLinkSectionMessage
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-28"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -1457,9 +1370,7 @@ exports[`Section message examples NovaSubtleSectionMessageWithLinkSectionMessage
 `;
 
 exports[`Section message examples NovaSuccessSectionMessageSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root24"
->
+<div>
   <div
     class="v-message v-section v-message-success"
     messagetype="success"
@@ -1472,7 +1383,6 @@ exports[`Section message examples NovaSuccessSectionMessageSectionMessageCompone
       class="v-message-icon v-icon v-icon-low v-icon-success v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-33"
       role="img"
       v-icon-visa-success-low=""
       v-message-icon=""
@@ -1481,11 +1391,11 @@ exports[`Section message examples NovaSuccessSectionMessageSectionMessageCompone
     >
       <path
         class="v-icon-secondary"
-        d="M10.5726 14.2094L8.36276 11.9469L7 13.3422L10.5726 17L18 9.39529L16.6372 8L10.5726 14.2094Z"
+        d="M18 9.39551L10.5723 17L7 13.3418L8.3623 11.9473L10.5723 14.209L16.6377 8L18 9.39551Z"
       />
       <path
         class="v-icon-primary"
-        d="M12 0C5.38317 0 0 5.38317 0 12C0 18.6168 5.38317 24 12 24C18.6168 24 24 18.6168 24 12C24 5.38317 18.6168 0 12 0ZM12 21.8182C6.58647 21.8182 2.18182 17.4141 2.18182 12C2.18182 6.58647 6.58647 2.18182 12 2.18182C17.4141 2.18182 21.8182 6.58647 21.8182 12C21.8182 17.4141 17.4141 21.8182 12 21.8182Z"
+        d="M12 0C18.6168 0 24 5.38317 24 12C24 18.6168 18.6168 24 12 24C5.38317 24 0 18.6168 0 12C0 5.38317 5.38317 0 12 0ZM12 2.18164C6.58647 2.18164 2.18164 6.58647 2.18164 12C2.18164 17.4141 6.58647 21.8184 12 21.8184C17.4141 21.8184 21.8184 17.4141 21.8184 12C21.8184 6.58647 17.4141 2.18164 12 2.18164Z"
       />
       <defs>
         <clippath>
@@ -1530,14 +1440,13 @@ exports[`Section message examples NovaSuccessSectionMessageSectionMessageCompone
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-34"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -1555,9 +1464,7 @@ exports[`Section message examples NovaSuccessSectionMessageSectionMessageCompone
 `;
 
 exports[`Section message examples NovaSuccessSectionMessageWithActionButtonSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root22"
->
+<div>
   <div
     class="v-message v-section v-message-success"
     messagetype="success"
@@ -1570,7 +1477,6 @@ exports[`Section message examples NovaSuccessSectionMessageWithActionButtonSecti
       class="v-message-icon v-icon v-icon-low v-icon-success v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-29"
       role="img"
       v-icon-visa-success-low=""
       v-message-icon=""
@@ -1579,11 +1485,11 @@ exports[`Section message examples NovaSuccessSectionMessageWithActionButtonSecti
     >
       <path
         class="v-icon-secondary"
-        d="M10.5726 14.2094L8.36276 11.9469L7 13.3422L10.5726 17L18 9.39529L16.6372 8L10.5726 14.2094Z"
+        d="M18 9.39551L10.5723 17L7 13.3418L8.3623 11.9473L10.5723 14.209L16.6377 8L18 9.39551Z"
       />
       <path
         class="v-icon-primary"
-        d="M12 0C5.38317 0 0 5.38317 0 12C0 18.6168 5.38317 24 12 24C18.6168 24 24 18.6168 24 12C24 5.38317 18.6168 0 12 0ZM12 21.8182C6.58647 21.8182 2.18182 17.4141 2.18182 12C2.18182 6.58647 6.58647 2.18182 12 2.18182C17.4141 2.18182 21.8182 6.58647 21.8182 12C21.8182 17.4141 17.4141 21.8182 12 21.8182Z"
+        d="M12 0C18.6168 0 24 5.38317 24 12C24 18.6168 18.6168 24 12 24C5.38317 24 0 18.6168 0 12C0 5.38317 5.38317 0 12 0ZM12 2.18164C6.58647 2.18164 2.18164 6.58647 2.18164 12C2.18164 17.4141 6.58647 21.8184 12 21.8184C17.4141 21.8184 21.8184 17.4141 21.8184 12C21.8184 6.58647 17.4141 2.18164 12 2.18164Z"
       />
       <defs>
         <clippath>
@@ -1630,14 +1536,13 @@ exports[`Section message examples NovaSuccessSectionMessageWithActionButtonSecti
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-30"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -1655,9 +1560,7 @@ exports[`Section message examples NovaSuccessSectionMessageWithActionButtonSecti
 `;
 
 exports[`Section message examples NovaSuccessSectionMessageWithLinkSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root23"
->
+<div>
   <div
     class="v-message v-section v-message-success"
     messagetype="success"
@@ -1670,7 +1573,6 @@ exports[`Section message examples NovaSuccessSectionMessageWithLinkSectionMessag
       class="v-message-icon v-icon v-icon-low v-icon-success v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-31"
       role="img"
       v-icon-visa-success-low=""
       v-message-icon=""
@@ -1679,11 +1581,11 @@ exports[`Section message examples NovaSuccessSectionMessageWithLinkSectionMessag
     >
       <path
         class="v-icon-secondary"
-        d="M10.5726 14.2094L8.36276 11.9469L7 13.3422L10.5726 17L18 9.39529L16.6372 8L10.5726 14.2094Z"
+        d="M18 9.39551L10.5723 17L7 13.3418L8.3623 11.9473L10.5723 14.209L16.6377 8L18 9.39551Z"
       />
       <path
         class="v-icon-primary"
-        d="M12 0C5.38317 0 0 5.38317 0 12C0 18.6168 5.38317 24 12 24C18.6168 24 24 18.6168 24 12C24 5.38317 18.6168 0 12 0ZM12 21.8182C6.58647 21.8182 2.18182 17.4141 2.18182 12C2.18182 6.58647 6.58647 2.18182 12 2.18182C17.4141 2.18182 21.8182 6.58647 21.8182 12C21.8182 17.4141 17.4141 21.8182 12 21.8182Z"
+        d="M12 0C18.6168 0 24 5.38317 24 12C24 18.6168 18.6168 24 12 24C5.38317 24 0 18.6168 0 12C0 5.38317 5.38317 0 12 0ZM12 2.18164C6.58647 2.18164 2.18164 6.58647 2.18164 12C2.18164 17.4141 6.58647 21.8184 12 21.8184C17.4141 21.8184 21.8184 17.4141 21.8184 12C21.8184 6.58647 17.4141 2.18164 12 2.18164Z"
       />
       <defs>
         <clippath>
@@ -1732,14 +1634,13 @@ exports[`Section message examples NovaSuccessSectionMessageWithLinkSectionMessag
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-32"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -1757,9 +1658,7 @@ exports[`Section message examples NovaSuccessSectionMessageWithLinkSectionMessag
 `;
 
 exports[`Section message examples NovaTitleErrorSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root25"
->
+<div>
   <div
     class="v-message v-section v-message-error"
     messagetype="error"
@@ -1772,7 +1671,6 @@ exports[`Section message examples NovaTitleErrorSectionMessageComponent should r
       class="v-message-icon v-icon v-icon-error v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-35"
       role="img"
       v-icon-visa-error-low=""
       v-message-icon=""
@@ -1781,13 +1679,11 @@ exports[`Section message examples NovaTitleErrorSectionMessageComponent should r
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11 6V14H13V6H11ZM12 18C12.5523 18 13 17.5523 13 17C13 16.4477 12.5523 16 12 16C11.4477 16 11 16.4477 11 17C11 17.5523 11.4477 18 12 18Z"
-        fill-rule="evenodd"
+        d="M12 16C12.5523 16 13 16.4477 13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16ZM13 14H11V6H13V14Z"
       />
       <defs>
         <clippath>
@@ -1832,14 +1728,13 @@ exports[`Section message examples NovaTitleErrorSectionMessageComponent should r
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-36"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -1857,9 +1752,7 @@ exports[`Section message examples NovaTitleErrorSectionMessageComponent should r
 `;
 
 exports[`Section message examples NovaTitleInfoSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root26"
->
+<div>
   <div
     class="v-message v-section"
     messagetype="information"
@@ -1872,7 +1765,6 @@ exports[`Section message examples NovaTitleInfoSectionMessageComponent should re
       class="v-message-icon v-icon v-icon-information v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-37"
       role="img"
       v-icon-visa-information-low=""
       v-message-icon=""
@@ -1881,11 +1773,11 @@ exports[`Section message examples NovaTitleInfoSectionMessageComponent should re
     >
       <path
         class="v-icon-secondary"
-        d="M12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
       />
       <path
         class="v-icon-primary"
-        d="M15 19H9V17.0351H11.451V12.9874H9.43137V11.0225H13.4118V17.0351H15V19ZM12 9.53895C10.7549 9.53895 9.73529 8.51719 9.73529 7.26947C9.73529 6.02175 10.7549 5 12 5C13.2549 5 14.2647 6.02175 14.2647 7.26947C14.2647 8.51719 13.2549 9.53895 12 9.53895ZM12 6.96491C11.8333 6.96491 11.6961 7.10246 11.6961 7.26947C11.6961 7.43649 11.8333 7.57403 12 7.57403C12.1667 7.57403 12.3039 7.43649 12.3039 7.26947C12.3039 7.10246 12.1667 6.96491 12 6.96491Z"
+        d="M13.4121 17.0352H15V19H9V17.0352H11.4512V12.9873H9.43164V11.0225H13.4121V17.0352ZM12 5C13.2549 5 14.2646 6.02181 14.2646 7.26953C14.2646 8.51722 13.2549 9.53906 12 9.53906C10.7549 9.53906 9.73538 8.51722 9.73535 7.26953C9.73535 6.02181 10.7549 5 12 5ZM12 6.96484C11.8333 6.96484 11.6963 7.10251 11.6963 7.26953C11.6963 7.43652 11.8334 7.57422 12 7.57422C12.1666 7.57422 12.3037 7.43652 12.3037 7.26953C12.3037 7.10251 12.1667 6.96484 12 6.96484Z"
       />
       <defs>
         <clippath>
@@ -1930,14 +1822,13 @@ exports[`Section message examples NovaTitleInfoSectionMessageComponent should re
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-38"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -1955,9 +1846,7 @@ exports[`Section message examples NovaTitleInfoSectionMessageComponent should re
 `;
 
 exports[`Section message examples NovaTitleSubtleSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root27"
->
+<div>
   <div
     class="v-message v-section v-message-subtle"
     messagetype="subtle"
@@ -1969,7 +1858,6 @@ exports[`Section message examples NovaTitleSubtleSectionMessageComponent should 
       class="v-message-icon v-icon v-icon-idea v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-39"
       v-icon-visa-idea-low=""
       v-message-icon=""
       viewBox="0 0 24 24"
@@ -1977,11 +1865,11 @@ exports[`Section message examples NovaTitleSubtleSectionMessageComponent should 
     >
       <path
         class="v-icon-secondary"
-        d="M16 22H8V24H16V22Z"
+        d="M16 22V24H8V22H16Z"
       />
       <path
         class="v-icon-primary"
-        d="M12 0C6.37 0 3 4.58 3 9C3 12.66 5.22 14.21 6.55 15.14C6.85 15.35 7.14 15.55 7.29 15.7C7.67 16.08 8 18.09 8 20L9 21H15L16 20C16 17.59 16.23 16.18 16.71 15.71C16.86 15.56 17.15 15.36 17.45 15.15C18.78 14.21 21 12.66 21 9C21 4.58 17.63 0 12 0ZM16.3 13.5C15.92 13.76 15.57 14.01 15.29 14.29C14.46 15.12 14.08 16.47 14.01 19H13V11H15V9H9V11H11V19H9.98C9.91 17.53 9.65 15.23 8.71 14.29C8.43 14.01 8.08 13.76 7.7 13.5C6.5 12.66 5 11.62 5 9C5 5.61 7.45 2 12 2C16.55 2 19 5.61 19 9C19 11.62 17.5 12.66 16.3 13.5Z"
+        d="M12 0C17.63 0 21 4.58 21 9C21 12.66 18.7802 14.2104 17.4502 15.1504C17.1502 15.3604 16.86 15.56 16.71 15.71C16.23 16.18 16 17.59 16 20L15 21H9L8 20C8 18.0902 7.66999 16.0805 7.29004 15.7002C7.14004 15.5502 6.8498 15.3496 6.5498 15.1396C5.21977 14.2096 3 12.6597 3 9C3 4.58 6.37 0 12 0ZM12 2C7.45 2 5 5.61 5 9C5 11.62 6.5002 12.66 7.7002 13.5C8.08014 13.76 8.42999 14.0101 8.70996 14.29C9.64996 15.23 9.91047 17.53 9.98047 19H11V11H9V9H15V11H13V19H14.0098C14.0798 16.47 14.46 15.12 15.29 14.29C15.57 14.0101 15.9199 13.76 16.2998 13.5C17.4998 12.66 19 11.62 19 9C19 5.61 16.55 2 12 2Z"
       />
     </svg>
     <div
@@ -2018,14 +1906,13 @@ exports[`Section message examples NovaTitleSubtleSectionMessageComponent should 
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-40"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -2043,9 +1930,7 @@ exports[`Section message examples NovaTitleSubtleSectionMessageComponent should 
 `;
 
 exports[`Section message examples NovaTitleSuccessSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root28"
->
+<div>
   <div
     class="v-message v-section v-message-success"
     messagetype="success"
@@ -2058,7 +1943,6 @@ exports[`Section message examples NovaTitleSuccessSectionMessageComponent should
       class="v-message-icon v-icon v-icon-low v-icon-success v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-41"
       role="img"
       v-icon-visa-success-low=""
       v-message-icon=""
@@ -2067,11 +1951,11 @@ exports[`Section message examples NovaTitleSuccessSectionMessageComponent should
     >
       <path
         class="v-icon-secondary"
-        d="M10.5726 14.2094L8.36276 11.9469L7 13.3422L10.5726 17L18 9.39529L16.6372 8L10.5726 14.2094Z"
+        d="M18 9.39551L10.5723 17L7 13.3418L8.3623 11.9473L10.5723 14.209L16.6377 8L18 9.39551Z"
       />
       <path
         class="v-icon-primary"
-        d="M12 0C5.38317 0 0 5.38317 0 12C0 18.6168 5.38317 24 12 24C18.6168 24 24 18.6168 24 12C24 5.38317 18.6168 0 12 0ZM12 21.8182C6.58647 21.8182 2.18182 17.4141 2.18182 12C2.18182 6.58647 6.58647 2.18182 12 2.18182C17.4141 2.18182 21.8182 6.58647 21.8182 12C21.8182 17.4141 17.4141 21.8182 12 21.8182Z"
+        d="M12 0C18.6168 0 24 5.38317 24 12C24 18.6168 18.6168 24 12 24C5.38317 24 0 18.6168 0 12C0 5.38317 5.38317 0 12 0ZM12 2.18164C6.58647 2.18164 2.18164 6.58647 2.18164 12C2.18164 17.4141 6.58647 21.8184 12 21.8184C17.4141 21.8184 21.8184 17.4141 21.8184 12C21.8184 6.58647 17.4141 2.18164 12 2.18164Z"
       />
       <defs>
         <clippath>
@@ -2116,14 +2000,13 @@ exports[`Section message examples NovaTitleSuccessSectionMessageComponent should
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-42"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -2141,9 +2024,7 @@ exports[`Section message examples NovaTitleSuccessSectionMessageComponent should
 `;
 
 exports[`Section message examples NovaTitleWarningSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root29"
->
+<div>
   <div
     class="v-message v-section v-message-warning"
     messagetype="warning"
@@ -2156,7 +2037,6 @@ exports[`Section message examples NovaTitleWarningSectionMessageComponent should
       class="v-message-icon v-icon v-icon-low v-icon-visa v-icon-warning"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-43"
       role="img"
       v-icon-visa-warning-low=""
       v-message-icon=""
@@ -2165,13 +2045,11 @@ exports[`Section message examples NovaTitleWarningSectionMessageComponent should
     >
       <path
         class="v-icon-secondary"
-        d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+        d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-        fill-rule="evenodd"
+        d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
       />
     </svg>
     <div
@@ -2208,14 +2086,13 @@ exports[`Section message examples NovaTitleWarningSectionMessageComponent should
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-44"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -2233,9 +2110,7 @@ exports[`Section message examples NovaTitleWarningSectionMessageComponent should
 `;
 
 exports[`Section message examples NovaWarningSectionMessageSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root32"
->
+<div>
   <div
     class="v-message v-section v-message-warning"
     messagetype="warning"
@@ -2248,7 +2123,6 @@ exports[`Section message examples NovaWarningSectionMessageSectionMessageCompone
       class="v-message-icon v-icon v-icon-low v-icon-visa v-icon-warning"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-49"
       role="img"
       v-icon-visa-warning-low=""
       v-message-icon=""
@@ -2257,13 +2131,11 @@ exports[`Section message examples NovaWarningSectionMessageSectionMessageCompone
     >
       <path
         class="v-icon-secondary"
-        d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+        d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-        fill-rule="evenodd"
+        d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
       />
     </svg>
     <div
@@ -2300,14 +2172,13 @@ exports[`Section message examples NovaWarningSectionMessageSectionMessageCompone
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-50"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -2325,9 +2196,7 @@ exports[`Section message examples NovaWarningSectionMessageSectionMessageCompone
 `;
 
 exports[`Section message examples NovaWarningSectionMessageWithActionButtonSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root30"
->
+<div>
   <div
     class="v-message v-section v-message-warning"
     messagetype="warning"
@@ -2340,7 +2209,6 @@ exports[`Section message examples NovaWarningSectionMessageWithActionButtonSecti
       class="v-message-icon v-icon v-icon-low v-icon-visa v-icon-warning"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-45"
       role="img"
       v-icon-visa-warning-low=""
       v-message-icon=""
@@ -2349,13 +2217,11 @@ exports[`Section message examples NovaWarningSectionMessageWithActionButtonSecti
     >
       <path
         class="v-icon-secondary"
-        d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+        d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-        fill-rule="evenodd"
+        d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
       />
     </svg>
     <div
@@ -2394,14 +2260,13 @@ exports[`Section message examples NovaWarningSectionMessageWithActionButtonSecti
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-46"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>
@@ -2419,9 +2284,7 @@ exports[`Section message examples NovaWarningSectionMessageWithActionButtonSecti
 `;
 
 exports[`Section message examples NovaWarningSectionMessageWithLinkSectionMessageComponent should render correctly 1`] = `
-<div
-  id="root31"
->
+<div>
   <div
     class="v-message v-section v-message-warning"
     messagetype="warning"
@@ -2434,7 +2297,6 @@ exports[`Section message examples NovaWarningSectionMessageWithLinkSectionMessag
       class="v-message-icon v-icon v-icon-low v-icon-visa v-icon-warning"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-47"
       role="img"
       v-icon-visa-warning-low=""
       v-message-icon=""
@@ -2443,13 +2305,11 @@ exports[`Section message examples NovaWarningSectionMessageWithLinkSectionMessag
     >
       <path
         class="v-icon-secondary"
-        d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+        d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-        fill-rule="evenodd"
+        d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
       />
     </svg>
     <div
@@ -2490,14 +2350,13 @@ exports[`Section message examples NovaWarningSectionMessageWithLinkSectionMessag
         class="v-icon v-icon-close v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-48"
         v-icon-visa-close-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-primary"
-          d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+          d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
         />
         <defs>
           <clippath>

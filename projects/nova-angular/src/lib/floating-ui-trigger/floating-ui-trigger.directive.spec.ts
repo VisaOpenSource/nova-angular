@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,7 +41,7 @@ describe('FloatingUITriggerDirective', () => {
     expect(container.firstElementChild?.getAttribute('class')).toBe('v-dropdown test-class');
   });
 
-  it.only('should adjust based on triggersDropdownMenu true', async () => {
+  it('should adjust based on triggersDropdownMenu true', async () => {
     const { debugElement, fixture } = await render(
       `<div v-floating-ui-container>
         <button v-floating-ui-trigger v-button data-testid="trigger">Label</button> 

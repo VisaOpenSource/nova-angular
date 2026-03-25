@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,8 +37,6 @@ Nova Angular is a comprehensive library of accessible components designed to ali
 It provides developers with a set of reusable UI elements that can be easily integrated into Angular applications. With
 Nova Angular, developers can quickly build visually consistent and user-friendly interfaces that adhere to accessibility
 best practices.
-
-See our MIGRATION-GUIDE.md for complete information on updating from Nova Angular 5.x to 6.x.
 
 ### Key Features
 
@@ -95,8 +93,8 @@ View our package.json for the most up-to-date dependencies, including peer depen
 
 ### Step 1: Update Angular
 
-Nova Angular supports Angular v18-v20. Visit Angular’s guide on how to update
-[Angular](https://angular.dev/update-guide?v=17.0-18.0&l=1).
+The latest Nova Angular supports Angular v19-v21. Visit Angular’s guide on how to update
+[Angular to v19](https://angular.dev/update-guide?v=18.0-19.0&l=1).
 
 ### Step 2: Install the library
 

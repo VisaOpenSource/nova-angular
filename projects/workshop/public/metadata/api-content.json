@@ -480,19 +480,6 @@
     "type": "patterns",
     "content": [
       {
-        "name": "wizard",
-        "directives": ["WizardDirective", "WizardStepDirective"],
-        "related": [
-          "AccordionDirective",
-          "AccordionDetailsDirective",
-          "AccordionHeadingDirective",
-          "AccordionPanelDirective",
-          "BadgeDirective",
-          "ButtonDirective",
-          "IconToggleComponent"
-        ]
-      },
-      {
         "name": "application-layouts",
         "related": [
           "NavigationDirective",
@@ -512,6 +499,50 @@
           "NovaLibService",
           "AlternateDirective",
           "SurfaceDirective"
+        ]
+      },
+      {
+        "name": "chat",
+        "related": ["DialogComponent", "PanelDirective"]
+      },
+      {
+        "name": "dynamic-table",
+        "related": [
+          "AccordionDirective",
+          "AccordionDetailsDirective",
+          "AccordionHeadingDirective",
+          "AccordionPanelDirective",
+          "AddArrowKeysDirective",
+          "BadgeDirective",
+          "ButtonDirective",
+          "DropdownItemDirective",
+          "DropdownListDirective",
+          "DropdownMenuDirective",
+          "FloatingUIContainer",
+          "FloatingUITriggerDirective",
+          "IconComponent",
+          "IconToggleComponent",
+          "PaginationControl",
+          "PaginationDirective",
+          "PaginationOverflowDirective",
+          "ScreenreaderOnlyDirective",
+          "TableDirective",
+          "TableWrapperDirective",
+          "TdDirective",
+          "ThDirective"
+        ]
+      },
+      {
+        "name": "wizard",
+        "directives": ["WizardDirective", "WizardStepDirective"],
+        "related": [
+          "AccordionDirective",
+          "AccordionDetailsDirective",
+          "AccordionHeadingDirective",
+          "AccordionPanelDirective",
+          "BadgeDirective",
+          "ButtonDirective",
+          "IconToggleComponent"
         ]
       }
     ]

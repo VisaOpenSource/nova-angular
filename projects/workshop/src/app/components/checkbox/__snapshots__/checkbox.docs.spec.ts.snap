@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Checkbox examples CheckedCheckboxComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <div
     class="v-input-container"
     v-input-container=""
@@ -30,9 +28,7 @@ exports[`Checkbox examples CheckedCheckboxComponent should render correctly 1`] 
 `;
 
 exports[`Checkbox examples DisabledCheckboxComponent should render correctly 1`] = `
-<div
-  id="root3"
->
+<div>
   <div
     class="v-input-container"
     v-input-container=""
@@ -59,9 +55,7 @@ exports[`Checkbox examples DisabledCheckboxComponent should render correctly 1`]
 `;
 
 exports[`Checkbox examples DisabledCheckedCheckboxComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <div
     class="v-input-container"
     v-input-container=""
@@ -89,9 +83,7 @@ exports[`Checkbox examples DisabledCheckedCheckboxComponent should render correc
 `;
 
 exports[`Checkbox examples DisabledPanelCheckboxComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <div
     class="v-action v-action-secondary v-checkbox-panel"
     v-checkbox-panel=""
@@ -141,9 +133,7 @@ exports[`Checkbox examples DisabledPanelCheckboxComponent should render correctl
 `;
 
 exports[`Checkbox examples ErrorCheckboxComponent should render correctly 1`] = `
-<div
-  id="root4"
->
+<div>
   <div
     class="v-input-container"
     v-input-container=""
@@ -205,9 +195,7 @@ exports[`Checkbox examples ErrorCheckboxComponent should render correctly 1`] = 
 `;
 
 exports[`Checkbox examples GroupCheckboxComponent should render correctly 1`] = `
-<div
-  id="root6"
->
+<div>
   <fieldset>
     <legend
       class="v-label v-typography-label-large"
@@ -291,9 +279,7 @@ exports[`Checkbox examples GroupCheckboxComponent should render correctly 1`] = 
 `;
 
 exports[`Checkbox examples GroupWithErrorCheckboxComponent should render correctly 1`] = `
-<div
-  id="root5"
->
+<div>
   <fieldset
     aria-labelledby="checkbox-group-error-legend checkbox-group-error-input-message"
   >
@@ -420,9 +406,7 @@ exports[`Checkbox examples GroupWithErrorCheckboxComponent should render correct
 `;
 
 exports[`Checkbox examples HorizontalGroupCheckboxComponent should render correctly 1`] = `
-<div
-  id="root7"
->
+<div>
   <fieldset>
     <legend
       class="v-label v-typography-label-large"
@@ -513,9 +497,7 @@ exports[`Checkbox examples HorizontalGroupCheckboxComponent should render correc
 `;
 
 exports[`Checkbox examples IndeterminateGroupCheckboxComponent should render correctly 1`] = `
-<div
-  id="root9"
->
+<div>
   <fieldset>
     <legend
       class="v-label v-typography-label-large"
@@ -692,9 +674,7 @@ exports[`Checkbox examples IndeterminateGroupCheckboxComponent should render cor
 `;
 
 exports[`Checkbox examples IndeterminateGroupWithErrorCheckboxComponent should render correctly 1`] = `
-<div
-  id="root8"
->
+<div>
   <fieldset
     aria-labelledby="checkbox-indeterminate-error-legend checkbox-indeterminate-error-input-message checkbox-indeterminate-error-message"
   >
@@ -864,9 +844,7 @@ exports[`Checkbox examples IndeterminateGroupWithErrorCheckboxComponent should r
 `;
 
 exports[`Checkbox examples IndeterminateWithErrorCheckboxComponent should render correctly 1`] = `
-<div
-  id="root10"
->
+<div>
   <div
     class="v-input-container"
     v-input-container=""
@@ -894,9 +872,7 @@ exports[`Checkbox examples IndeterminateWithErrorCheckboxComponent should render
 `;
 
 exports[`Checkbox examples ModelDrivenCheckboxComponent should render correctly 1`] = `
-<div
-  id="root13"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -932,9 +908,7 @@ exports[`Checkbox examples ModelDrivenCheckboxComponent should render correctly 
 `;
 
 exports[`Checkbox examples ModelDrivenFbCheckboxComponent should render correctly 1`] = `
-<div
-  id="root11"
->
+<div>
   <form
     class="ng-untouched ng-pristine ng-valid v-gap-16 v-flex v-flex-col"
     novalidate=""
@@ -1091,9 +1065,7 @@ exports[`Checkbox examples ModelDrivenFbCheckboxComponent should render correctl
 `;
 
 exports[`Checkbox examples ModelDrivenFormCheckboxComponent should render correctly 1`] = `
-<div
-  id="root12"
->
+<div>
   <form
     class="ng-untouched ng-pristine ng-valid v-gap-16 v-flex v-flex-col"
     novalidate=""
@@ -1247,9 +1219,7 @@ exports[`Checkbox examples ModelDrivenFormCheckboxComponent should render correc
 `;
 
 exports[`Checkbox examples PanelCheckboxComponent should render correctly 1`] = `
-<div
-  id="root17"
->
+<div>
   <div
     class="v-action v-action-secondary v-checkbox-panel"
     v-checkbox-panel=""
@@ -1297,9 +1267,7 @@ exports[`Checkbox examples PanelCheckboxComponent should render correctly 1`] = 
 `;
 
 exports[`Checkbox examples PanelGroupCheckboxComponent should render correctly 1`] = `
-<div
-  id="root15"
->
+<div>
   <fieldset
     aria-labelledby="group-panel-legend"
   >
@@ -1451,9 +1419,7 @@ exports[`Checkbox examples PanelGroupCheckboxComponent should render correctly 1
 `;
 
 exports[`Checkbox examples PanelGroupWithErrorCheckboxComponent should render correctly 1`] = `
-<div
-  id="root14"
->
+<div>
   <fieldset
     aria-labelledby="checkbox-panel-group-error-legend checkbox-panel-group-error-input-message"
   >
@@ -1646,9 +1612,7 @@ exports[`Checkbox examples PanelGroupWithErrorCheckboxComponent should render co
 `;
 
 exports[`Checkbox examples PanelWithoutDescriptionCheckboxComponent should render correctly 1`] = `
-<div
-  id="root16"
->
+<div>
   <div
     class="v-action v-action-secondary v-checkbox-panel"
     v-checkbox-panel=""
@@ -1678,10 +1642,1926 @@ exports[`Checkbox examples PanelWithoutDescriptionCheckboxComponent should rende
 </div>
 `;
 
+exports[`Checkbox examples ReusableCheckboxDemo should render correctly 1`] = `
+<div>
+  <div
+    class="v-gap-32 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="32"
+  >
+    <div
+      class="v-gap-6 v-flex v-flex-col v-mt-24"
+      vflexcol=""
+      vgap="6"
+      vmt="24"
+    >
+      <nova-reusable-checkbox>
+        
+        <div
+          class="v-input-container"
+          v-input-container=""
+        >
+          <input
+            aria-describedby="a-reusable-checkbox-0-description"
+            aria-invalid="false"
+            class="v-checkbox"
+            id="a-reusable-checkbox-0-input"
+            type="checkbox"
+            v-checkbox=""
+          />
+          <div
+            class="v-gap-2 v-align-items-start v-flex v-flex-col v-my-10"
+            valignitemsstart=""
+            vflex=""
+            vflexcol=""
+            vgap="2"
+            vmy="10"
+          >
+            <label
+              class="v-label"
+              for="a-reusable-checkbox-0-input"
+              id="a-v-label-0"
+              v-label=""
+            >
+              Label
+            </label>
+            
+            <span
+              class="v-input-message"
+              id="a-reusable-checkbox-0-description"
+              v-input-message=""
+            >
+               This is optional text that describes the label in more detail. 
+            </span>
+            
+          </div>
+          
+        </div>
+        
+        
+        
+        <span
+          class="v-input-message v-mt-4"
+          id="a-reusable-checkbox-0-message"
+          v-input-message=""
+          vmt="4"
+        >
+          
+          
+        </span>
+      </nova-reusable-checkbox>
+    </div>
+    
+    <div
+      class="v-flag v-message"
+      messagetype="information"
+      style="--v-message-max-inline-size: 100%;"
+      v-flag=""
+      v-message=""
+    >
+      <svg
+        aria-hidden="false"
+        aria-label="Information"
+        class="v-message-icon v-icon v-icon-information v-icon-low v-icon-visa"
+        focusable="false"
+        height="24"
+        role="img"
+        v-icon-visa-information-low=""
+        v-message-icon=""
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          class="v-icon-secondary"
+          d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        />
+        <path
+          class="v-icon-primary"
+          d="M13.4121 17.0352H15V19H9V17.0352H11.4512V12.9873H9.43164V11.0225H13.4121V17.0352ZM12 5C13.2549 5 14.2646 6.02181 14.2646 7.26953C14.2646 8.51722 13.2549 9.53906 12 9.53906C10.7549 9.53906 9.73538 8.51722 9.73535 7.26953C9.73535 6.02181 10.7549 5 12 5ZM12 6.96484C11.8333 6.96484 11.6963 7.10251 11.6963 7.26953C11.6963 7.43652 11.8334 7.57422 12 7.57422C12.1666 7.57422 12.3037 7.43652 12.3037 7.26953C12.3037 7.10251 12.1667 6.96484 12 6.96484Z"
+        />
+        <defs>
+          <clippath>
+            <rect
+              height="24"
+              width="24"
+            />
+          </clippath>
+        </defs>
+      </svg>
+      <div
+        class="v-message-content v-pb-2 v-pl-2"
+        v-message-content=""
+        vpb="2"
+        vpl="2"
+      >
+        <p>
+           To create a group of checkboxes, see the 
+          <a
+            class="v-link"
+            href="/examples/components/checkbox/reusable-group"
+            routerlink="/examples/components/checkbox/reusable-group"
+            v-link=""
+          >
+            reusable checkbox-group example
+          </a>
+          . 
+        </p>
+      </div>
+    </div>
+  </div>
+  <nova-dynamic-reusable-form
+    class="nova-dynamic-reusable-form"
+  >
+    <div
+      class="v-panel v-ml-auto v-panel-expandable v-panel-responsive"
+      responsive=""
+      style="inline-size: 100%;"
+      v-panel=""
+      vml="auto"
+    >
+      <button
+        aria-controls="responsive-expanded-panel"
+        aria-expanded="true"
+        aria-label="Customize demo panel"
+        buttonsize="large"
+        class="v-button v-panel-toggle v-sm-media-hide v-xs-media-hide v-button-icon v-button-large"
+        type="button"
+        v-button-icon=""
+        v-panel-toggle=""
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon-two-color v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          style="--v-icon-secondary: var(--palette-default-active-accent);"
+          v-icon-two-color=""
+          v-icon-visa-media-fast-forward-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            d="M15 8L8.39355 15L7 13.5244L12.2139 8L7 2.47559L8.39355 1L15 8Z"
+          />
+          <path
+            class="v-icon-primary"
+            d="M9 8L2.39355 15L1 13.5244L6.21387 8L1 2.47559L2.39355 1L9 8Z"
+          />
+        </svg>
+        
+        
+      </button>
+      <div
+        aria-hidden="false"
+        class="v-panel-content v-surface v-flex v-flex-col"
+        id="responsive-expanded-panel"
+        v-panel-content=""
+        vflex=""
+        vflexcol=""
+      >
+        <header
+          class="v-gap-4 v-flex v-flex-row v-justify-content-between"
+          vflex=""
+          vgap="4"
+          vjustifycontentbetween=""
+        >
+          <h3
+            class="v-typography-headline-4"
+            vtypography="headline-4"
+          >
+            Customize demo
+          </h3>
+          <button
+            aria-label="Close customize demo panel"
+            buttoncolor="tertiary"
+            buttonsize="small"
+            class="v-button v-desktop-media-hide v-button-icon v-button-small v-button-subtle v-button-tertiary"
+            subtle=""
+            type="button"
+            v-button-icon=""
+            vmediahide="desktop"
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-close v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              v-icon-visa-close-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
+              />
+              <defs>
+                <clippath>
+                  <rect
+                    height="16"
+                    transform="translate(0 0.000488281)"
+                    width="16"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+          </button>
+        </header>
+        <hr
+          aria-hidden="true"
+          class="v-divider v-divider-decorative v-flex-shrink-0 v-mb-20 v-mx-8"
+          dividertype="decorative"
+          v-divider=""
+          vflexshrink0=""
+          vmb="20"
+          vmx="8"
+        />
+        <div
+          class="v-panel-body v-flex v-flex-grow v-flex-row"
+          v-panel-body=""
+          vflex=""
+          vflexgrow=""
+        >
+          <form
+            class="v-gap-16 v-flex v-flex-col ng-untouched ng-pristine ng-valid"
+            novalidate=""
+            vflex=""
+            vflexcol=""
+            vgap="16"
+          >
+            <div
+              class="reusable-form-field-wrapper v-gap-48 v-flex v-flex-row v-mb-32"
+              vflex=""
+              vgap="48"
+              vmb="32"
+            >
+              <div
+                class="v-gap-16 v-flex v-flex-col"
+                style="inline-size: max-content;"
+                vflex=""
+                vflexcol=""
+                vgap="16"
+              >
+                <h4
+                  class="v-typography-subtitle-2"
+                  vtypography="subtitle-2"
+                >
+                  Boolean properties
+                </h4>
+                <div
+                  class="v-gap-16 v-flex v-flex-col v-flex-wrap"
+                  vflex=""
+                  vflexcol=""
+                  vflexwrap=""
+                  vgap="16"
+                >
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="checked"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="checked"
+                          id="a-v-label-1"
+                          v-label=""
+                        >
+                          Checked
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        checked="checked"
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="showLabel"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="showLabel"
+                          id="a-v-label-2"
+                          v-label=""
+                        >
+                          Show label
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        checked="checked"
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="showMessage"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="showMessage"
+                          id="a-v-label-3"
+                          v-label=""
+                        >
+                          Show input message
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="disabled"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="disabled"
+                          id="a-v-label-4"
+                          v-label=""
+                        >
+                          Disabled
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="invalid"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="invalid"
+                          id="a-v-label-5"
+                          v-label=""
+                        >
+                          Invalid
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="panel"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="panel"
+                          id="a-v-label-6"
+                          v-label=""
+                        >
+                          Panel
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="required"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="required"
+                          id="a-v-label-7"
+                          v-label=""
+                        >
+                          Required
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+              <div
+                class="v-gap-16 v-flex v-flex-col"
+                style="inline-size: max-content;"
+                vflex=""
+                vflexcol=""
+                vgap="16"
+              >
+                <h4
+                  class="v-typography-subtitle-2"
+                  vtypography="subtitle-2"
+                >
+                  Text/numeric properties
+                </h4>
+                <div
+                  class="v-gap-16 v-flex v-flex-col v-flex-wrap"
+                  vflex=""
+                  vflexcol=""
+                  vflexwrap=""
+                  vgap="16"
+                >
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <label
+                      class="v-label"
+                      for="label"
+                      id="a-v-label-8"
+                      v-label=""
+                    >
+                      Label
+                    </label>
+                    <div
+                      class="v-input-container v-surface"
+                      v-input-container=""
+                    >
+                      <textarea
+                        cdktextareaautosize=""
+                        class="v-input cdk-textarea-autosize ng-untouched ng-pristine ng-valid"
+                        id="label"
+                        rows="1"
+                        style="max-block-size: 200px;"
+                        v-input=""
+                        value="Label"
+                      />
+                      
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <label
+                      class="v-label"
+                      for="description"
+                      id="a-v-label-9"
+                      v-label=""
+                    >
+                      Input message
+                    </label>
+                    <div
+                      class="v-input-container v-surface"
+                      v-input-container=""
+                    >
+                      <textarea
+                        cdktextareaautosize=""
+                        class="v-input cdk-textarea-autosize ng-untouched ng-pristine ng-valid"
+                        id="description"
+                        rows="1"
+                        style="max-block-size: 200px;"
+                        v-input=""
+                        value="This is optional text that describes the label in more detail."
+                      />
+                      
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+              
+            </div>
+            
+            <div
+              class="v-gap-16 v-flex v-flex-row v-mb-16 v-ml-auto"
+              vflex=""
+              vgap="16"
+              vmb="16"
+              vml="auto"
+            >
+              <button
+                class="v-button"
+                type="submit"
+                v-button=""
+              >
+                Apply
+              </button>
+              <button
+                buttoncolor="secondary"
+                class="v-button v-button-secondary"
+                type="button"
+                v-button=""
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nova-dynamic-reusable-form>
+</div>
+`;
+
+exports[`Checkbox examples ReusableCheckboxGroupDemo should render correctly 1`] = `
+<div>
+  <div
+    class="v-gap-32 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="32"
+  >
+    <div
+      class="v-gap-6 v-flex v-flex-col v-mt-24"
+      vflexcol=""
+      vgap="6"
+      vmt="24"
+    >
+      <nova-reusable-checkbox-group>
+        <fieldset
+          aria-labelledby="a-reusable-checkbox-group-0-legend a-reusable-checkbox-group-0-description"
+        >
+          <legend
+            class="v-label v-typography-label-large"
+            id="a-reusable-checkbox-group-0-legend"
+            v-label=""
+            vtypography="label-large"
+          >
+             Group label 
+          </legend>
+          <div
+            class="v-input-message"
+            id="a-reusable-checkbox-group-0-description"
+            v-input-message=""
+          >
+            This is optional text that describes the label in more detail.
+          </div>
+          
+          <ul
+            class="v-flex v-flex-col"
+            vflex=""
+          >
+            <li
+              class="v-flex v-flex-col"
+              vflex=""
+              vflexcol=""
+            >
+              <nova-reusable-checkbox>
+                
+                <div
+                  class="v-input-container"
+                  v-input-container=""
+                >
+                  <input
+                    aria-invalid="false"
+                    class="v-checkbox"
+                    id="a-reusable-checkbox-0-input"
+                    type="checkbox"
+                    v-checkbox=""
+                  />
+                  <div
+                    class="v-gap-2 v-align-items-start v-flex v-flex-col v-my-10"
+                    valignitemsstart=""
+                    vflex=""
+                    vflexcol=""
+                    vgap="2"
+                    vmy="10"
+                  >
+                    <label
+                      class="v-label"
+                      for="a-reusable-checkbox-0-input"
+                      id="a-v-label-1"
+                      v-label=""
+                    >
+                      L1 label 1
+                    </label>
+                    
+                    <span
+                      class="v-input-message"
+                      id="a-reusable-checkbox-0-description"
+                      v-input-message=""
+                    >
+                        
+                    </span>
+                    
+                  </div>
+                  
+                </div>
+                
+                
+                
+                <span
+                  class="v-input-message v-mt-4"
+                  id="a-reusable-checkbox-0-message"
+                  v-input-message=""
+                  vmt="4"
+                >
+                  
+                  
+                </span>
+              </nova-reusable-checkbox>
+              
+            </li>
+            <li
+              class="v-flex v-flex-col"
+              vflex=""
+              vflexcol=""
+            >
+              <nova-reusable-checkbox>
+                
+                <div
+                  class="v-input-container"
+                  v-input-container=""
+                >
+                  <input
+                    aria-invalid="false"
+                    class="v-checkbox"
+                    id="a-reusable-checkbox-1-input"
+                    type="checkbox"
+                    v-checkbox=""
+                  />
+                  <div
+                    class="v-gap-2 v-align-items-start v-flex v-flex-col v-my-10"
+                    valignitemsstart=""
+                    vflex=""
+                    vflexcol=""
+                    vgap="2"
+                    vmy="10"
+                  >
+                    <label
+                      class="v-label"
+                      for="a-reusable-checkbox-1-input"
+                      id="a-v-label-8"
+                      v-label=""
+                    >
+                      L1 label 2
+                    </label>
+                    
+                    <span
+                      class="v-input-message"
+                      id="a-reusable-checkbox-1-description"
+                      v-input-message=""
+                    >
+                        
+                    </span>
+                    
+                  </div>
+                  
+                </div>
+                
+                
+                
+                <span
+                  class="v-input-message v-mt-4"
+                  id="a-reusable-checkbox-1-message"
+                  v-input-message=""
+                  vmt="4"
+                >
+                  
+                  
+                </span>
+              </nova-reusable-checkbox>
+              <nova-reusable-checkbox-group
+                root="false"
+              >
+                
+                <ul
+                  class="v-flex v-flex-col v-ml-32"
+                  vflex=""
+                >
+                  <li
+                    class="v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                  >
+                    <nova-reusable-checkbox>
+                      
+                      <div
+                        class="v-input-container"
+                        v-input-container=""
+                      >
+                        <input
+                          aria-invalid="false"
+                          class="v-checkbox"
+                          id="a-reusable-checkbox-2-input"
+                          type="checkbox"
+                          v-checkbox=""
+                        />
+                        <div
+                          class="v-gap-2 v-align-items-start v-flex v-flex-col v-my-10"
+                          valignitemsstart=""
+                          vflex=""
+                          vflexcol=""
+                          vgap="2"
+                          vmy="10"
+                        >
+                          <label
+                            class="v-label"
+                            for="a-reusable-checkbox-2-input"
+                            id="a-v-label-2"
+                            v-label=""
+                          >
+                            L2 label 1
+                          </label>
+                          
+                          <span
+                            class="v-input-message"
+                            id="a-reusable-checkbox-2-description"
+                            v-input-message=""
+                          >
+                              
+                          </span>
+                          
+                        </div>
+                        
+                      </div>
+                      
+                      
+                      
+                      <span
+                        class="v-input-message v-mt-4"
+                        id="a-reusable-checkbox-2-message"
+                        v-input-message=""
+                        vmt="4"
+                      >
+                        
+                        
+                      </span>
+                    </nova-reusable-checkbox>
+                    
+                  </li>
+                  <li
+                    class="v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                  >
+                    <nova-reusable-checkbox>
+                      
+                      <div
+                        class="v-input-container"
+                        v-input-container=""
+                      >
+                        <input
+                          aria-invalid="false"
+                          class="v-checkbox"
+                          id="a-reusable-checkbox-3-input"
+                          type="checkbox"
+                          v-checkbox=""
+                        />
+                        <div
+                          class="v-gap-2 v-align-items-start v-flex v-flex-col v-my-10"
+                          valignitemsstart=""
+                          vflex=""
+                          vflexcol=""
+                          vgap="2"
+                          vmy="10"
+                        >
+                          <label
+                            class="v-label"
+                            for="a-reusable-checkbox-3-input"
+                            id="a-v-label-7"
+                            v-label=""
+                          >
+                            L2 label 2
+                          </label>
+                          
+                          <span
+                            class="v-input-message"
+                            id="a-reusable-checkbox-3-description"
+                            v-input-message=""
+                          >
+                              
+                          </span>
+                          
+                        </div>
+                        
+                      </div>
+                      
+                      
+                      
+                      <span
+                        class="v-input-message v-mt-4"
+                        id="a-reusable-checkbox-3-message"
+                        v-input-message=""
+                        vmt="4"
+                      >
+                        
+                        
+                      </span>
+                    </nova-reusable-checkbox>
+                    <nova-reusable-checkbox-group
+                      root="false"
+                    >
+                      
+                      <ul
+                        class="v-flex v-flex-col v-ml-32"
+                        vflex=""
+                      >
+                        <li
+                          class="v-flex v-flex-col"
+                          vflex=""
+                          vflexcol=""
+                        >
+                          <nova-reusable-checkbox>
+                            
+                            <div
+                              class="v-input-container"
+                              v-input-container=""
+                            >
+                              <input
+                                aria-invalid="false"
+                                class="v-checkbox"
+                                id="a-reusable-checkbox-4-input"
+                                type="checkbox"
+                                v-checkbox=""
+                              />
+                              <div
+                                class="v-gap-2 v-align-items-start v-flex v-flex-col v-my-10"
+                                valignitemsstart=""
+                                vflex=""
+                                vflexcol=""
+                                vgap="2"
+                                vmy="10"
+                              >
+                                <label
+                                  class="v-label"
+                                  for="a-reusable-checkbox-4-input"
+                                  id="a-v-label-3"
+                                  v-label=""
+                                >
+                                  L3 label 1
+                                </label>
+                                
+                                <span
+                                  class="v-input-message"
+                                  id="a-reusable-checkbox-4-description"
+                                  v-input-message=""
+                                >
+                                    
+                                </span>
+                                
+                              </div>
+                              
+                            </div>
+                            
+                            
+                            
+                            <span
+                              class="v-input-message v-mt-4"
+                              id="a-reusable-checkbox-4-message"
+                              v-input-message=""
+                              vmt="4"
+                            >
+                              
+                              
+                            </span>
+                          </nova-reusable-checkbox>
+                          
+                        </li>
+                        <li
+                          class="v-flex v-flex-col"
+                          vflex=""
+                          vflexcol=""
+                        >
+                          <nova-reusable-checkbox>
+                            
+                            <div
+                              class="v-input-container"
+                              v-input-container=""
+                            >
+                              <input
+                                aria-invalid="false"
+                                class="v-checkbox"
+                                id="a-reusable-checkbox-5-input"
+                                type="checkbox"
+                                v-checkbox=""
+                              />
+                              <div
+                                class="v-gap-2 v-align-items-start v-flex v-flex-col v-my-10"
+                                valignitemsstart=""
+                                vflex=""
+                                vflexcol=""
+                                vgap="2"
+                                vmy="10"
+                              >
+                                <label
+                                  class="v-label"
+                                  for="a-reusable-checkbox-5-input"
+                                  id="a-v-label-6"
+                                  v-label=""
+                                >
+                                  L3 label 2
+                                </label>
+                                
+                                <span
+                                  class="v-input-message"
+                                  id="a-reusable-checkbox-5-description"
+                                  v-input-message=""
+                                >
+                                    
+                                </span>
+                                
+                              </div>
+                              
+                            </div>
+                            
+                            
+                            
+                            <span
+                              class="v-input-message v-mt-4"
+                              id="a-reusable-checkbox-5-message"
+                              v-input-message=""
+                              vmt="4"
+                            >
+                              
+                              
+                            </span>
+                          </nova-reusable-checkbox>
+                          <nova-reusable-checkbox-group
+                            root="false"
+                          >
+                            
+                            <ul
+                              class="v-flex v-flex-col v-ml-32"
+                              vflex=""
+                            >
+                              <li
+                                class="v-flex v-flex-col"
+                                vflex=""
+                                vflexcol=""
+                              >
+                                <nova-reusable-checkbox>
+                                  
+                                  <div
+                                    class="v-input-container"
+                                    v-input-container=""
+                                  >
+                                    <input
+                                      aria-invalid="false"
+                                      class="v-checkbox"
+                                      id="a-reusable-checkbox-6-input"
+                                      type="checkbox"
+                                      v-checkbox=""
+                                    />
+                                    <div
+                                      class="v-gap-2 v-align-items-start v-flex v-flex-col v-my-10"
+                                      valignitemsstart=""
+                                      vflex=""
+                                      vflexcol=""
+                                      vgap="2"
+                                      vmy="10"
+                                    >
+                                      <label
+                                        class="v-label"
+                                        for="a-reusable-checkbox-6-input"
+                                        id="a-v-label-4"
+                                        v-label=""
+                                      >
+                                        L4 label 1
+                                      </label>
+                                      
+                                      <span
+                                        class="v-input-message"
+                                        id="a-reusable-checkbox-6-description"
+                                        v-input-message=""
+                                      >
+                                          
+                                      </span>
+                                      
+                                    </div>
+                                    
+                                  </div>
+                                  
+                                  
+                                  
+                                  <span
+                                    class="v-input-message v-mt-4"
+                                    id="a-reusable-checkbox-6-message"
+                                    v-input-message=""
+                                    vmt="4"
+                                  >
+                                    
+                                    
+                                  </span>
+                                </nova-reusable-checkbox>
+                                
+                              </li>
+                              <li
+                                class="v-flex v-flex-col"
+                                vflex=""
+                                vflexcol=""
+                              >
+                                <nova-reusable-checkbox>
+                                  
+                                  <div
+                                    class="v-input-container"
+                                    v-input-container=""
+                                  >
+                                    <input
+                                      aria-invalid="false"
+                                      class="v-checkbox"
+                                      id="a-reusable-checkbox-7-input"
+                                      type="checkbox"
+                                      v-checkbox=""
+                                    />
+                                    <div
+                                      class="v-gap-2 v-align-items-start v-flex v-flex-col v-my-10"
+                                      valignitemsstart=""
+                                      vflex=""
+                                      vflexcol=""
+                                      vgap="2"
+                                      vmy="10"
+                                    >
+                                      <label
+                                        class="v-label"
+                                        for="a-reusable-checkbox-7-input"
+                                        id="a-v-label-5"
+                                        v-label=""
+                                      >
+                                        L4 label 2
+                                      </label>
+                                      
+                                      <span
+                                        class="v-input-message"
+                                        id="a-reusable-checkbox-7-description"
+                                        v-input-message=""
+                                      >
+                                          
+                                      </span>
+                                      
+                                    </div>
+                                    
+                                  </div>
+                                  
+                                  
+                                  
+                                  <span
+                                    class="v-input-message v-mt-4"
+                                    id="a-reusable-checkbox-7-message"
+                                    v-input-message=""
+                                    vmt="4"
+                                  >
+                                    
+                                    
+                                  </span>
+                                </nova-reusable-checkbox>
+                                
+                              </li>
+                              
+                            </ul>
+                            
+                            
+                            
+                          </nova-reusable-checkbox-group>
+                          
+                        </li>
+                        
+                      </ul>
+                      
+                      
+                      
+                    </nova-reusable-checkbox-group>
+                    
+                  </li>
+                  
+                </ul>
+                
+                
+                
+              </nova-reusable-checkbox-group>
+              
+            </li>
+            
+          </ul>
+          
+          <span
+            class="v-input-message"
+            id="a-reusable-checkbox-group-0-message"
+            v-input-message=""
+          >
+            
+            
+          </span>
+        </fieldset>
+        
+        
+        
+      </nova-reusable-checkbox-group>
+    </div>
+    
+    <div
+      class="v-flag v-message"
+      messagetype="information"
+      style="--v-message-max-inline-size: 100%;"
+      v-flag=""
+      v-message=""
+    >
+      <svg
+        aria-hidden="false"
+        aria-label="Information"
+        class="v-message-icon v-icon v-icon-information v-icon-low v-icon-visa"
+        focusable="false"
+        height="24"
+        role="img"
+        v-icon-visa-information-low=""
+        v-message-icon=""
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          class="v-icon-secondary"
+          d="M12 0C18.62 0 24 5.38 24 12C24 18.62 18.62 24 12 24C5.38 24 0 18.62 0 12C0 5.38 5.38 0 12 0ZM12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2Z"
+        />
+        <path
+          class="v-icon-primary"
+          d="M13.4121 17.0352H15V19H9V17.0352H11.4512V12.9873H9.43164V11.0225H13.4121V17.0352ZM12 5C13.2549 5 14.2646 6.02181 14.2646 7.26953C14.2646 8.51722 13.2549 9.53906 12 9.53906C10.7549 9.53906 9.73538 8.51722 9.73535 7.26953C9.73535 6.02181 10.7549 5 12 5ZM12 6.96484C11.8333 6.96484 11.6963 7.10251 11.6963 7.26953C11.6963 7.43652 11.8334 7.57422 12 7.57422C12.1666 7.57422 12.3037 7.43652 12.3037 7.26953C12.3037 7.10251 12.1667 6.96484 12 6.96484Z"
+        />
+        <defs>
+          <clippath>
+            <rect
+              height="24"
+              width="24"
+            />
+          </clippath>
+        </defs>
+      </svg>
+      <div
+        class="v-message-content v-pb-2 v-pl-2"
+        v-message-content=""
+        vpb="2"
+        vpl="2"
+      >
+        <p>
+           Built with the reusable checkbox component. See the 
+          <a
+            class="v-link"
+            href="/examples/components/checkbox/reusable"
+            routerlink="/examples/components/checkbox/reusable"
+            v-link=""
+          >
+            reusable checkbox example
+          </a>
+           for individual checkbox configuration. 
+        </p>
+      </div>
+    </div>
+  </div>
+  <nova-dynamic-reusable-form
+    class="nova-dynamic-reusable-form"
+  >
+    <div
+      class="v-panel v-ml-auto v-panel-expandable v-panel-responsive"
+      responsive=""
+      style="inline-size: 100%;"
+      v-panel=""
+      vml="auto"
+    >
+      <button
+        aria-controls="responsive-expanded-panel"
+        aria-expanded="true"
+        aria-label="Customize demo panel"
+        buttonsize="large"
+        class="v-button v-panel-toggle v-sm-media-hide v-xs-media-hide v-button-icon v-button-large"
+        type="button"
+        v-button-icon=""
+        v-panel-toggle=""
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon-two-color v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          style="--v-icon-secondary: var(--palette-default-active-accent);"
+          v-icon-two-color=""
+          v-icon-visa-media-fast-forward-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            d="M15 8L8.39355 15L7 13.5244L12.2139 8L7 2.47559L8.39355 1L15 8Z"
+          />
+          <path
+            class="v-icon-primary"
+            d="M9 8L2.39355 15L1 13.5244L6.21387 8L1 2.47559L2.39355 1L9 8Z"
+          />
+        </svg>
+        
+        
+      </button>
+      <div
+        aria-hidden="false"
+        class="v-panel-content v-surface v-flex v-flex-col"
+        id="responsive-expanded-panel"
+        v-panel-content=""
+        vflex=""
+        vflexcol=""
+      >
+        <header
+          class="v-gap-4 v-flex v-flex-row v-justify-content-between"
+          vflex=""
+          vgap="4"
+          vjustifycontentbetween=""
+        >
+          <h3
+            class="v-typography-headline-4"
+            vtypography="headline-4"
+          >
+            Customize demo
+          </h3>
+          <button
+            aria-label="Close customize demo panel"
+            buttoncolor="tertiary"
+            buttonsize="small"
+            class="v-button v-desktop-media-hide v-button-icon v-button-small v-button-subtle v-button-tertiary"
+            subtle=""
+            type="button"
+            v-button-icon=""
+            vmediahide="desktop"
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-close v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              v-icon-visa-close-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
+              />
+              <defs>
+                <clippath>
+                  <rect
+                    height="16"
+                    transform="translate(0 0.000488281)"
+                    width="16"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+          </button>
+        </header>
+        <hr
+          aria-hidden="true"
+          class="v-divider v-divider-decorative v-flex-shrink-0 v-mb-20 v-mx-8"
+          dividertype="decorative"
+          v-divider=""
+          vflexshrink0=""
+          vmb="20"
+          vmx="8"
+        />
+        <div
+          class="v-panel-body v-flex v-flex-grow v-flex-row"
+          v-panel-body=""
+          vflex=""
+          vflexgrow=""
+        >
+          <form
+            class="v-gap-16 v-flex v-flex-col ng-untouched ng-pristine ng-valid"
+            novalidate=""
+            vflex=""
+            vflexcol=""
+            vgap="16"
+          >
+            <div
+              class="reusable-form-field-wrapper v-gap-48 v-flex v-flex-row v-mb-32"
+              vflex=""
+              vgap="48"
+              vmb="32"
+            >
+              <div
+                class="v-gap-16 v-flex v-flex-col"
+                style="inline-size: max-content;"
+                vflex=""
+                vflexcol=""
+                vgap="16"
+              >
+                <h4
+                  class="v-typography-subtitle-2"
+                  vtypography="subtitle-2"
+                >
+                  Boolean properties
+                </h4>
+                <div
+                  class="v-gap-16 v-flex v-flex-col v-flex-wrap"
+                  vflex=""
+                  vflexcol=""
+                  vflexwrap=""
+                  vgap="16"
+                >
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="disabled"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="disabled"
+                          id="a-v-label-9"
+                          v-label=""
+                        >
+                          Disabled
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="horizontal"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="horizontal"
+                          id="a-v-label-10"
+                          v-label=""
+                        >
+                          Inline
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="invalid"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="invalid"
+                          id="a-v-label-11"
+                          v-label=""
+                        >
+                          Invalid
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="panel"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="panel"
+                          id="a-v-label-12"
+                          v-label=""
+                        >
+                          Panel
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="required"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="required"
+                          id="a-v-label-13"
+                          v-label=""
+                        >
+                          Required
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+              <div
+                class="v-gap-16 v-flex v-flex-col"
+                style="inline-size: max-content;"
+                vflex=""
+                vflexcol=""
+                vgap="16"
+              >
+                <h4
+                  class="v-typography-subtitle-2"
+                  vtypography="subtitle-2"
+                >
+                  Text/numeric properties
+                </h4>
+                <div
+                  class="v-gap-16 v-flex v-flex-col v-flex-wrap"
+                  vflex=""
+                  vflexcol=""
+                  vflexwrap=""
+                  vgap="16"
+                >
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <label
+                      class="v-label"
+                      for="label"
+                      id="a-v-label-14"
+                      v-label=""
+                    >
+                      Label
+                    </label>
+                    <div
+                      class="v-input-container v-surface"
+                      v-input-container=""
+                    >
+                      <textarea
+                        cdktextareaautosize=""
+                        class="v-input cdk-textarea-autosize ng-untouched ng-pristine ng-valid"
+                        id="label"
+                        rows="1"
+                        style="max-block-size: 200px;"
+                        v-input=""
+                        value="Group label"
+                      />
+                      
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <label
+                      class="v-label"
+                      for="description"
+                      id="a-v-label-15"
+                      v-label=""
+                    >
+                      Description
+                    </label>
+                    <div
+                      class="v-input-container v-surface"
+                      v-input-container=""
+                    >
+                      <textarea
+                        cdktextareaautosize=""
+                        class="v-input cdk-textarea-autosize ng-untouched ng-pristine ng-valid"
+                        id="description"
+                        rows="1"
+                        style="max-block-size: 200px;"
+                        v-input=""
+                        value="This is optional text that describes the label in more detail."
+                      />
+                      
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+              
+            </div>
+            <div
+              class="reusable-form-field-wrapper v-gap-48 v-flex v-flex-col v-mb-32"
+              vflex=""
+              vflexcol=""
+              vgap="48"
+              vmb="32"
+            >
+              <div
+                class="v-gap-4 v-flex v-flex-col v-flex-grow"
+                vflex=""
+                vflexcol=""
+                vflexgrow=""
+                vgap="4"
+              >
+                <label
+                  class="v-label"
+                  for="checkboxes"
+                  id="a-v-label-16"
+                  v-label=""
+                >
+                  Checkboxes (JSON)
+                </label>
+                <div
+                  class="v-input-container v-surface"
+                  v-input-container=""
+                >
+                  <textarea
+                    aria-describedby="checkboxes-help"
+                    cdktextareaautosize=""
+                    class="v-input cdk-textarea-autosize ng-untouched ng-pristine ng-valid"
+                    id="checkboxes"
+                    rows="1"
+                    style="max-block-size: 200px;"
+                    v-input=""
+                    value="[
+  {
+    "description": "This is optional text that describes the label in more detail.",
+    "checked": false,
+    "label": "L1 label 1"
+  },
+  {
+    "checked": false,
+    "label": "L1 label 2",
+    "children": [
+      {
+        "checked": false,
+        "label": "L2 label 1"
+      },
+      {
+        "checked": false,
+        "label": "L2 label 2",
+        "children": [
+          {
+            "checked": false,
+            "label": "L3 label 1"
+          },
+          {
+            "checked": false,
+            "label": "L3 label 2",
+            "children": [
+              {
+                "checked": false,
+                "label": "L4 label 1"
+              },
+              {
+                "checked": false,
+                "label": "L4 label 2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]"
+                  />
+                  
+                </div>
+                <span
+                  class="v-input-message"
+                  id="checkboxes-help"
+                  v-input-message=""
+                >
+                  Edit the JSON structure to customize the checkbox group hierarchy.
+                </span>
+                
+              </div>
+              
+            </div>
+            
+            <div
+              class="v-gap-16 v-flex v-flex-row v-mb-16 v-ml-auto"
+              vflex=""
+              vgap="16"
+              vmb="16"
+              vml="auto"
+            >
+              <button
+                class="v-button"
+                type="submit"
+                v-button=""
+              >
+                Apply
+              </button>
+              <button
+                buttoncolor="secondary"
+                class="v-button v-button-secondary"
+                type="button"
+                v-button=""
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nova-dynamic-reusable-form>
+</div>
+`;
+
 exports[`Checkbox examples TemplateDrivenCheckboxComponent should render correctly 1`] = `
-<div
-  id="root19"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -1716,9 +3596,7 @@ exports[`Checkbox examples TemplateDrivenCheckboxComponent should render correct
 `;
 
 exports[`Checkbox examples TemplateDrivenFormCheckboxComponent should render correctly 1`] = `
-<div
-  id="root18"
->
+<div>
   <form
     class="ng-untouched ng-pristine ng-valid v-flex v-flex-col"
     novalidate=""
@@ -1855,9 +3733,7 @@ exports[`Checkbox examples TemplateDrivenFormCheckboxComponent should render cor
 `;
 
 exports[`Checkbox examples WithDescriptionCheckboxComponent should render correctly 1`] = `
-<div
-  id="root20"
->
+<div>
   <div
     class="v-input-container"
     v-input-container=""
@@ -1899,9 +3775,7 @@ exports[`Checkbox examples WithDescriptionCheckboxComponent should render correc
 `;
 
 exports[`Checkbox examples WithLabelCheckboxComponent should render correctly 1`] = `
-<div
-  id="root21"
->
+<div>
   <div
     class="v-input-container"
     v-input-container=""
@@ -1927,9 +3801,7 @@ exports[`Checkbox examples WithLabelCheckboxComponent should render correctly 1`
 `;
 
 exports[`Checkbox examples WithoutVisibleLabelCheckboxComponent should render correctly 1`] = `
-<div
-  id="root22"
->
+<div>
   <input
     aria-label="label"
     class="v-checkbox"

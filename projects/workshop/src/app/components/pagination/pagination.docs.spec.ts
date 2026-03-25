@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,19 +20,17 @@ import { IdGenerator } from '@visa/nova-angular';
 import { PaginationDefaultFirstPageComponent } from './default-first-page/default-first-page.docs';
 import { PaginationDefaultLastPageComponent } from './default-last-page/default-last-page.docs';
 import { PaginationDefaultMiddlePageComponent } from './default-middle-page/default-middle-page.docs';
-import { MultiplePaginationsComponent } from './multiple-paginations/multiple-paginations.docs';
+import { ReusablePagination } from './reusable/reusable.docs';
 import { PaginationSlimWithCountComponent } from './slim-with-count/slim-with-count.docs';
 import { PaginationSlimComponent } from './slim/slim.docs';
-import { PaginationTableComponent } from './table/table.docs';
 
-const examples = {
+const examples: Record<string, any> = {
   PaginationDefaultFirstPageComponent,
   PaginationDefaultLastPageComponent,
   PaginationDefaultMiddlePageComponent,
-  MultiplePaginationsComponent,
   PaginationSlimWithCountComponent,
   PaginationSlimComponent,
-  PaginationTableComponent
+  ReusablePagination
 };
 
 const keys = Object.keys(examples);

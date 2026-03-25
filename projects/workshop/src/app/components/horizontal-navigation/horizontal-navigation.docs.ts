@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,6 +30,7 @@ import { PersistentSearcgHorizontalNavComponent } from './persistent-search/pers
 import { StackedWithPersistentSearchHorizontalNavComponent } from './stacked-with-persistent-search/stacked-with-persistent-search.docs';
 import { StackedHorizontalNavComponent } from './stacked/stacked.docs';
 import { WithActiveElementHorizontalNavComponent } from './with-active-element/with-active-element.docs';
+import { WithActivePropHorizontalNavComponent } from './with-active-prop/with-active-prop.docs';
 import { WithIconsHorizontalNavComponent } from './with-icons/with-icons.docs';
 
 @Component({
@@ -48,6 +49,7 @@ import { WithIconsHorizontalNavComponent } from './with-icons/with-icons.docs';
     StackedHorizontalNavComponent,
     StackedWithPersistentSearchHorizontalNavComponent,
     WithActiveElementHorizontalNavComponent,
+    WithActivePropHorizontalNavComponent,
     WithIconsHorizontalNavComponent
   ],
   standalone: true,
@@ -101,14 +103,6 @@ export class HorizontalNavigationDocsComponent {
       { name: 'NovaLibService', type: 'service-source' },
       { name: 'IconToggle', type: 'constant' }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 
   htmlLayout = `<div class="app-container">

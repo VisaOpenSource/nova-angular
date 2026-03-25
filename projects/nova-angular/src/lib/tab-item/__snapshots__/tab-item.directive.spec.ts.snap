@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`TabItemDirective should allow tagSuffix 1`] = `
-<div
-  id="root17"
->
+<div>
   <v-icon-visa-toggle
     class="v-icon v-icon-tiny v-tab v-tab-suffix"
     disclosuretab=""
@@ -23,9 +21,7 @@ exports[`TabItemDirective should allow tagSuffix 1`] = `
 `;
 
 exports[`TabItemDirective should show default toggle icon 1`] = `
-<div
-  id="root15"
->
+<div>
   <div
     class="v-tab"
     disclosuretab=""
@@ -55,9 +51,7 @@ exports[`TabItemDirective should show default toggle icon 1`] = `
 `;
 
 exports[`TabItemDirective should show rotated toggle icon 1`] = `
-<div
-  id="root14"
->
+<div>
   <div
     class="v-tab"
     disclosuretab=""

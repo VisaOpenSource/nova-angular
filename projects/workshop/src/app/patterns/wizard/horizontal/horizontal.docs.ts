@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -40,6 +40,11 @@ import { SharedWizardSaveFlagComponent } from '../shared/save-flag/save-flag.doc
 import { SharedWizardSuccessPageComponent } from '../shared/success-page/success-page.docs';
 import { SharedWizardSummaryPageComponent } from '../shared/summary-page/summary-page.docs';
 
+/**
+ * Multi-page wizard with horizontal step navigation.
+ * Steps are displayed in a horizontal bar at the top, with each step shown on a separate page.
+ * Users navigate forward through validation, and can return to previous completed steps.
+ */
 /** #patterns **/
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -65,15 +70,29 @@ import { SharedWizardSummaryPageComponent } from '../shared/summary-page/summary
   ],
 })
 export class HorizontalWizardComponent {
+  /** Reference to the exit confirmation dialog component */
   readonly exitDialog =
     viewChild<SharedWizardExitDialogComponent>('exitDialog');
+
+  /** References to all input elements in the wizard steps */
   readonly inputs = viewChildren<InputDirective, ElementRef<HTMLInputElement>>(
     InputDirective,
     { read: ElementRef },
   );
+
+  /** Index of the currently active step (zero-based) */
   readonly currentStep = signal(0);
+
+  /** Controls visibility of the save success flag notification */
   readonly showFlag = signal(false);
+
+  /** Controls whether the success page is displayed after submission */
   readonly showSuccess = signal(false);
+
+  /**
+   * Configuration for each wizard step including label, validation state, and input values.
+   * Each step tracks its own completion status, availability, and error state.
+   */
   readonly steps = [
     {
       stepLabel: 'Step 1 label',
@@ -125,10 +144,18 @@ export class HorizontalWizardComponent {
     },
   ];
 
+  /**
+   * Navigates to the previous step in the wizard.
+   */
   previousStep() {
     this.goTo(this.currentStep() - 1);
   }
 
+  /**
+   * Advances to the next step after validating the current step's input.
+   * If called with isSave=true, displays the save flag instead of advancing.
+   * @param {boolean} isSave - Whether this is a save action rather than navigation
+   */
   nextStep(isSave: boolean = false) {
     if (isSave) return this.showFlag.set(true);
 
@@ -137,7 +164,7 @@ export class HorizontalWizardComponent {
 
     this.validateStep(this.currentStep());
     if (!currentStep.invalid) {
-      // only make the next step available if current is valid
+      // Only make the next step available if current is valid
       if (this.currentStep() + 1 < this.steps.length) {
         this.steps[this.currentStep() + 1].available = true;
       }
@@ -147,6 +174,7 @@ export class HorizontalWizardComponent {
 
     currentStep.complete = false;
 
+    // Focus the input field if validation failed
     setTimeout(() => {
       const input = this.inputs()[this.currentStep()];
       if (
@@ -159,14 +187,19 @@ export class HorizontalWizardComponent {
     }, 0);
   }
 
+  /**
+   * Navigates to a specific step by index.
+   * Validates the current step if navigating forward. Clears error states when navigating away.
+   * @param {number} index - Zero-based index of the target step
+   */
   goTo(index: number) {
     const currentStep = this.steps[this.currentStep()];
 
-    // clear error state for the current step when navigating away
+    // Clear error state for the current step when navigating away
     currentStep.invalid = false;
     currentStep.showErrorMessage = false;
 
-    // validate the current step if navigating forward
+    // Validate the current step if navigating forward
     if (index > this.currentStep()) {
       this.validateStep(this.currentStep());
       if (currentStep.invalid) {
@@ -179,7 +212,7 @@ export class HorizontalWizardComponent {
     this.steps[index].available = true;
     this.currentStep.set(index);
 
-    // wait for input to render before setting focus
+    // Wait for DOM update before setting focus
     setTimeout(() => {
       if (this.currentStep() < this.steps.length - 1) {
         const input = this.inputs()[this.currentStep()];
@@ -192,7 +225,7 @@ export class HorizontalWizardComponent {
           input.nativeElement.focus();
         }
       } else {
-        // focus the first edit button on the summary page
+        // On summary page, focus the first edit button
         const firstEditButton = document.querySelector('[aria-label^="edit"]');
         if (firstEditButton && firstEditButton !== document.activeElement) {
           (firstEditButton as HTMLElement).focus();
@@ -201,6 +234,9 @@ export class HorizontalWizardComponent {
     }, 0);
   }
 
+  /**
+   * Completes the wizard submission, displays the success page, and resets all step data.
+   */
   submit() {
     this.showSuccess.set(true);
     this.steps.forEach((input, index) => {
@@ -211,10 +247,19 @@ export class HorizontalWizardComponent {
     this.currentStep.set(0);
   }
 
+  /**
+   * Hides the error message banner for a specific step.
+   * @param {number} index - Index of the step whose error message should be hidden
+   */
   hideErrorMessage(index: number): void {
     this.steps[index].showErrorMessage = false;
   }
 
+  /**
+   * Validates a step's input value and updates its error state.
+   * A step is invalid if its input value is empty or contains only whitespace.
+   * @param {number} index - Index of the step to validate
+   */
   validateStep(index: number): void {
     const step = this.steps[index];
     if (!step.inputValue || step.inputValue.trim() === '') {

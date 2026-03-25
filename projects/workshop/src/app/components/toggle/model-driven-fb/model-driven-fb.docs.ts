@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,8 @@
  *
  **/
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { NovaLibModule } from '@visa/nova-angular';
 import { VisaErrorTiny } from '@visa/nova-icons-angular';
@@ -50,4 +51,16 @@ export class ModelDrivenFbToggleComponent {
     this.formValidation.reset();
     this.isSubmitted = false;
   }
+
+  /** For demo purposes */
+  // Signal to track form control value using toSignal
+  formValue = toSignal(this.formValidation.get('toggleControl')!.valueChanges, {
+    initialValue: this.formValidation.get('toggleControl')?.value ?? null
+  });
+
+  // Computed signal for formatted display value
+  formValueDisplay = computed(() => {
+    const value = this.formValue();
+    return value !== undefined ? value : '';
+  });
 }

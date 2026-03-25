@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,9 +22,14 @@ import {
   OnInit,
   OutputRefSubscription,
   viewChild,
-  ViewEncapsulation
+  ViewEncapsulation,
 } from '@angular/core';
-import { ActivatedRoute, NavigationEnd, Router, RouterModule } from '@angular/router';
+import {
+  ActivatedRoute,
+  NavigationEnd,
+  Router,
+  RouterModule,
+} from '@angular/router';
 import { NovaLibModule } from '@visa/nova-angular';
 import { MarkdownModule, MarkdownService } from 'ngx-markdown';
 import { filter } from 'rxjs';
@@ -44,12 +49,12 @@ import { SiteNavComponent } from '../../app-components/site-nav/site-nav.compone
     SiteFooterComponent,
     SiteHeaderComponent,
     SiteNavComponent,
-    GlobalBannerComponent
+    GlobalBannerComponent,
   ],
   selector: 'nova-workshop-docs',
   templateUrl: './docs-layout.docs.html',
   styleUrl: './docs-layout.docs.scss',
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
 export class DocsLayoutComponent implements OnInit, AfterViewInit {
   private readonly content = viewChild<ElementRef>('content');

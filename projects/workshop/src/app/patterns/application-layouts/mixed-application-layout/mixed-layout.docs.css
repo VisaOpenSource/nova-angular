@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  *
  **/
 
- /* example styles are prefixed with ".layout-mixed" to avoid conflicts with other styles in the documentation app. */
+/* example styles are prefixed with ".layout-mixed" to avoid conflicts with other styles in the documentation app. */
 
 .layout-mixed {
   display: grid;
@@ -60,7 +60,7 @@
 
 /* customize the default footer color */
 .layout-mixed .v-footer {
-  background-color: var(--v-palette-default-surface-3);
+  background-color: var(--palette-default-surface-3);
 }
 
 /* breakpoints */
@@ -74,7 +74,7 @@
   }
 
   .layout-mixed .v-desktop-container-hide.v-hide {
-    display: none;  
+    display: none;
   }
 }
 

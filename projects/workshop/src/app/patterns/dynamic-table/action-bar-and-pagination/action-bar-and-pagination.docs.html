@@ -1,0 +1,137 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<!-- action bar and pagination example content -->
+<div vFlex vFlexCol vGap="16">
+  <form [formGroup]="formValidation" vFlex vFlexCol vGap="16" vMT="16">
+    <div vFlex vGap="4" vFlexCol vAlignSelfStart>
+      <label v-label for="model-radio-label">Action bar</label>
+      <div v-input-container>
+        <select v-select id="model-radio-label" formControlName="radioControl">
+          <option hidden></option>
+          @for(item of actionBarVariants; track item.value) {
+          <option [value]="item.value">{{ item.name }}</option>
+          }
+        </select>
+        <svg v-icon-visa-chevron-down-tiny />
+      </div>
+    </div>
+  </form>
+
+  <!-- Action bar to render based on selection -->
+  @switch (formValidation.value['radioControl']) { @case ('search') {
+  <nova-workshop-dynamic-table-search-action-bar />
+  } @case ('subtle') {
+  <nova-workshop-dynamic-table-subtle-action-bar />
+  } @case ('toggle') {
+  <nova-workshop-dynamic-table-toggle-action-bar />
+  } @default {
+  <nova-workshop-dynamic-table-selection-based-action-bar
+    [amountSelected]="checkedRowsCount()"
+    (clear)="clearSelectedRows()"
+  />
+  } }
+
+  <div v-table-wrapper>
+    <table v-table alternate tableSize="compact">
+      <caption vSR>
+        Dynamic table with pagination and action bar.
+      </caption>
+      <thead>
+        <tr>
+          @if (formValidation.value['radioControl'] === 'selection-based') {
+          <td v-th v-td class="compact-column">
+            <div vFlex vAlignItemsCenter>
+              <input
+                value="default-multi-select-all"
+                [attr.aria-label]="headerCheckbox().checked ? 'Unselect all' : 'Select all'"
+                v-checkbox
+                [indeterminate]="headerCheckbox().indeterminate"
+                [checked]="headerCheckbox().checked"
+                (change)="onHeaderCheckboxChange($event)"
+              />
+            </div>
+          </td>
+          } @for (colItem of columnData; track colItem.name) {
+          <th
+            [attr.aria-sort]="
+                colItem.name === sortKey().column
+                  ? sortKey().direction === 'ascending'
+                    ? 'ascending'
+                    : 'descending'
+                  : null
+              "
+            v-th
+            scope="col"
+          >
+            <div vFlex vAlignItemsCenter vGap="4">
+              @if (colItem.compact) {
+              <span vSR>{{ colItem.name }}</span>
+              } @else { {{ colItem.name }} }
+              <div vFlex vFlexGrow vGap="4">
+                <nova-workshop-dynamic-table-actions-button
+                  [label]="colItem.name"
+                  [sorted]="colItem.name === sortKey().column ? sortKey().direction : 'none'"
+                  (sort)="sort(colItem, $event)"
+                  [column]="colItem"
+                />
+              </div>
+            </div>
+          </th>
+          }
+        </tr>
+      </thead>
+      <tbody v-tbody>
+        @for (rowItem of visibleRows() || []; track rowItem[identifyingColumn]; let index = $index) {
+        <tr>
+          @if (formValidation.value['radioControl'] === 'selection-based') {
+          <td v-td class="compact-column">
+            <div vFlex vAlignItemsCenter>
+              <input
+                [value]="'default-multi-select-row-' + rowItem[identifyingColumn]"
+                [attr.aria-label]="checkedRows()[rowItem[identifyingColumn]]
+              ? `Unselect ${rowItem[identifyingColumn]}`
+              : `Select ${rowItem[identifyingColumn]}`"
+                v-checkbox
+                [checked]="!!checkedRows()[rowItem[identifyingColumn]]"
+                (change)="onRowCheckboxChange(rowItem)"
+                [class.row-selection-checkbox]="true"
+              />
+            </div>
+          </td>
+          } @for (colItem of columnData; track colItem.name) {
+          <td v-td [attr.scope]="colItem.identifier ? 'row' : null" [class.compact-column]="colItem.compact">
+            @if (colItem.component) {
+            <ng-container
+              [ngComponentOutlet]="colItem.component"
+              [ngComponentOutletInputs]="getComponentInputs(colItem, rowItem, identifyingColumn)"
+            />
+            } @else { {{ rowItem[colItem.name] }} }
+          </td>
+          }
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <nova-workshop-dynamic-table-shared-pagination
+    [(itemsPerPage)]="itemsPerPage"
+    [totalItems]="totalItems()"
+    [(selectedPage)]="selectedPage"
+    id="action-bar-and-pagination-dynamic-table"
+  />
+</div>

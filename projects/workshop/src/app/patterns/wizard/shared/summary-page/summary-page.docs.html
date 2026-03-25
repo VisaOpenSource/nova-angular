@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,7 @@
  *
  -->
 <h2 vTypography="headline-2" vAlignSelfStart>Summary</h2>
+<!-- Display all steps except the last one, which is the summary step itself -->
 @for (step of steps().slice(0, -1); track step.id; let i = $index) {
   <div
     vFlex

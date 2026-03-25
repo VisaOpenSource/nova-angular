@@ -1,0 +1,60 @@
+<!--
+ *              © 2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div vFlex vGap="4" [vFlexCol]="!inline()" vFlexWrap [vAlignItemsStart]="inline()">
+  <label
+    v-label
+    [for]="id() + '-select'"
+    [id]="id() + '-label'"
+    [style.lineHeight]="inline() ? 'var(--v-input-container-block-size)': null"
+    [style.textWrap]="inline() ? 'nowrap': null"
+  >
+    {{label()}} {{required() ? ' (required)' : ''}}
+  </label>
+  <!-- Prevent select from taking full width when inline (allows room for label and/or message on same line) -->
+  <div v-input-container [style.--v-surface-inline-size]="inline() ? '60%' : 'inherit'">
+    <select
+      v-select
+      (change)="handleChange($event)"
+      [attr.aria-describedby]="id()+'-message'"
+      [attr.readonly]="readonly() ? true : null"
+      [disabled]="disabled() ? true : null"
+      [id]="id()+'-select'"
+      [invalid]="invalid()"
+      [required]="required() ? true : null"
+      [value]="value()"
+    >
+      <option hidden></option>
+      @for(option of options(); track id() + '-option-' + option.value + i; let i = $index){
+      <option [disabled]="readonly() || disabled() || option.disabled" [hidden]="option.hidden" [value]="option.value">
+        {{option.label}}
+      </option>
+      }
+    </select>
+    <svg v-icon-visa-chevron-down-tiny />
+  </div>
+  <span
+    v-input-message
+    [id]="id()+'-message'"
+    [attr.aria-atomic]="invalid()"
+    [attr.aria-live]="invalid() ? 'assertive': null"
+    [style.lineHeight]="inline() ? 'var(--v-input-container-block-size)': null"
+    vFlex
+    vAlignItemsCenter
+  >
+    @if(invalid()){ <svg v-icon-visa-error-tiny />} @if(message()){ {{message()}} }
+  </span>
+</div>

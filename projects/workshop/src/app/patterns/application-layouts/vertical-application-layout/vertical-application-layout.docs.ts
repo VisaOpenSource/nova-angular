@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,19 +18,18 @@ import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { NovaLibModule } from '@visa/nova-angular';
 import { FooterLayoutComponent } from '../shared/footer-layout/footer-layout.docs';
-import { VerticalNavLayoutComponent } from '../vertical-nav-layout/vertical-nav-layout.docs';
-/** #patterns **/
+import { VerticalNavLayoutComponent } from './vertical-nav-layout/vertical-nav-layout.docs';
+/**
+ * Layout with vertical navigation on the side.
+ * Combines sidebar navigation, content area, and footer.
+ * #patterns
+ **/
 @Component({
   selector: 'nova-workshop-vertical-application-layout',
   templateUrl: './vertical-application-layout.docs.html',
   styleUrls: ['./vertical-layout.docs.css'],
   encapsulation: ViewEncapsulation.None,
   standalone: true,
-  imports: [
-    CommonModule,
-    NovaLibModule,
-    FooterLayoutComponent,
-    VerticalNavLayoutComponent
-  ]
+  imports: [CommonModule, NovaLibModule, FooterLayoutComponent, VerticalNavLayoutComponent]
 })
 export class VerticalApplicationLayoutComponent {}

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,7 +26,6 @@ type RowData = Record<string, string>;
   templateUrl: './group-headers-with-empty-cell.docs.html'
 })
 export class GroupHeadersWithEmptyCellTableComponent {
-  readonly columnData = signal<string[]>(['Column A', 'Column B', 'Column C']);
   readonly rowData = signal<RowData[]>([
     {
       'col-a': 'A1',

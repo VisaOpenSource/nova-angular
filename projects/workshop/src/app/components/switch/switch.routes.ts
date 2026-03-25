@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,6 +23,8 @@ export const switchRoutes: Routes = [
 	{ loadComponent: () => import('./disabled-off/disabled-off.docs').then(m => m.NovaDisabledOffSwitchDocsComponent), path: 'disabled-off', title: 'Disabled off switch component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./disabled-selected/disabled-selected.docs').then(m => m.NovaDisabledSelectedSwitchDocsComponent), path: 'disabled-selected', title: 'Disabled selected switch component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./optional-text/optional-text.docs').then(m => m.NovaOptionalTextSwitchDocsComponent), path: 'optional-text', title: 'Optional text switch component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable-component/reusable-component.docs').then(m => m.ReusableSwitch), path: 'reusable-component', title: 'Reusable component switch component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable.docs').then(m => m.ReusableSwitchDemo), path: 'reusable', title: 'Reusable switch component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./standard/standard.docs').then(m => m.NovaStandardSwitchComponent), path: 'standard', title: 'Standard switch component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX }
 ];
 

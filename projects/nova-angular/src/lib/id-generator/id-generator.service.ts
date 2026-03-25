@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ let counters: Record<string, number> = {};
 /**
  * Service that generates unique IDs for DOM nodes.
  * Note that this service should not be used inside templates and should only be used within classes or else id will change with every render.
- * @docs {@link https://design.visa.com/developing/angular/services/id-generator/ | See docs}
+ * @docs {@link https://design.visa.com/developing/angular/services/id-generator | See docs}
  */
 @Injectable({ providedIn: 'root' })
 export class IdGenerator {

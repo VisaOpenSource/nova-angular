@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,13 @@
  *
  **/
 import { HttpClient } from '@angular/common/http';
-import { ElementRef, inject, Injectable, signal, WritableSignal } from '@angular/core';
+import {
+  ElementRef,
+  inject,
+  Injectable,
+  signal,
+  WritableSignal,
+} from '@angular/core';
 import { SafeHtml } from '@angular/platform-browser';
 import { NovaLibService } from '@visa/nova-angular';
 import packageJson from '../../../../../../package.json';
@@ -35,11 +41,11 @@ import {
   SafeInputsInterface,
   SafeMethodsInterface,
   SafeOutputsInterface,
-  SafePropertiesInterface
+  SafePropertiesInterface,
 } from './workshop.constants';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class WorkshopService {
   private readonly novaLibService = inject(NovaLibService);
@@ -79,25 +85,25 @@ export class WorkshopService {
   readonly displayRTL = signal(false);
   readonly version = packageJson?.version || '0.0.0';
   readonly versionLinks = [
-    { name: 'Latest', type: 'main', url: 'https://design.visa.com/developing/angular/' },
+    {
+      name: 'Latest',
+      type: 'main',
+      url: 'https://design.visa.com/developing/angular/',
+    },
   ];
   readonly supportLinks = [
     {
-      name: 'Email',
-      url: 'mailto:productdesignsystem@visa.com'
-    },
-    {
       name: 'Open Jira ticket',
-      url: 'https://bookmarks.visa.com/vpds-microsoft-teams-channel'
+      url: 'https://bookmarks.visa.com/vpds-microsoft-teams-channel',
     },
     {
       name: 'Join us on Teams',
-      url: 'https://bookmarks.visa.com/vpds-microsoft-teams-channel'
+      url: 'https://bookmarks.visa.com/vpds-microsoft-teams-channel',
     },
     {
       name: 'Send us some love!',
-      url: 'https://bookmarks.visa.com/vpds-uplift-us'
-    }
+      url: 'https://bookmarks.visa.com/vpds-uplift-us',
+    },
   ];
   readonly componentName = signal('');
   readonly pageType = signal('');
@@ -121,7 +127,11 @@ export class WorkshopService {
     setTimeout(() => {
       // not the best way to do this, but it works for now
       const elm = document.getElementById(id);
-      if (elm) this.content()?.nativeElement.scroll({ top: elm.offsetTop, behavior: 'smooth' });
+      if (elm)
+        this.content()?.nativeElement.scroll({
+          top: elm.offsetTop,
+          behavior: 'smooth',
+        });
     }, 100);
   }
 
@@ -154,31 +164,42 @@ export class WorkshopService {
     if (!name || !this.libJsonData) return;
     let returnAPI: ReturnAPI = {} as ReturnAPI;
     const lowerCaseType = type.toLowerCase();
-    if (lowerCaseType === APITypes.DIRECTIVE || lowerCaseType === APITypes.COMPONENT) {
+    if (
+      lowerCaseType === APITypes.DIRECTIVE ||
+      lowerCaseType === APITypes.COMPONENT
+    ) {
       const match = this.libJsonData[lowerCaseType + 's'].filter(
-        (component: ComponentTypeCompoDocs) => component.name === name
+        (component: ComponentTypeCompoDocs) => component.name === name,
       );
       if (!match[0]) return;
       const component = match[0];
       returnAPI = this.getDirectiveComponentAPI(component);
     } else if (lowerCaseType === APITypes.CONSTANT) {
       const match = this.libJsonData['miscellaneous']['variables'].filter(
-        (variable: ConstantTypeCompoDocs) => variable.name === name
+        (variable: ConstantTypeCompoDocs) => variable.name === name,
       );
       if (!match[0]) return;
       const constant = match[0];
       returnAPI = this.getConstantAPI(constant);
     } else if (lowerCaseType === APITypes.SERVICESOURCE) {
-      let match = this.libJsonData['injectables'].filter((variable: InjectableTypeCompoDocs) => variable.name === name);
+      let match = this.libJsonData['injectables'].filter(
+        (variable: InjectableTypeCompoDocs) => variable.name === name,
+      );
       if (!match[0]) {
-        match = this.libJsonData['classes'].filter((variable: InjectableTypeCompoDocs) => variable.name === name);
+        match = this.libJsonData['classes'].filter(
+          (variable: InjectableTypeCompoDocs) => variable.name === name,
+        );
       }
       if (!match[0]) return;
       returnAPI = this.getServiceSourceCode(match[0]);
     } else if (lowerCaseType === APITypes.SERVICE) {
-      let match = this.libJsonData['injectables'].filter((variable: InjectableTypeCompoDocs) => variable.name === name);
+      let match = this.libJsonData['injectables'].filter(
+        (variable: InjectableTypeCompoDocs) => variable.name === name,
+      );
       if (!match[0]) {
-        match = this.libJsonData['classes'].filter((variable: InjectableTypeCompoDocs) => variable.name === name);
+        match = this.libJsonData['classes'].filter(
+          (variable: InjectableTypeCompoDocs) => variable.name === name,
+        );
       }
       if (!match[0]) return;
       returnAPI = this.getServiceAPI(match[0]);
@@ -194,7 +215,9 @@ export class WorkshopService {
     APIData.selector = component.selector;
     APIData.type = component.type;
     APIData.file = component.file;
-    APIData.description = component.description ? this.htmlSanitizerService.sanitizeHtml(component.description) : null;
+    APIData.description = component.description
+      ? this.htmlSanitizerService.sanitizeHtml(component.description)
+      : null;
 
     component['inputsClass'].forEach((prop: BasePropMethodTypeCompoDocs) => {
       let tags: { tagName: SafeHtml; value: SafeHtml }[] = [];
@@ -204,24 +227,33 @@ export class WorkshopService {
       // look for default value located in jsdoctag rather than directly in Input
       const valueTag = prop['jsdoctags']?.filter(
         (tag: JsdocTagsTypeCompoDocs) =>
-          tag['tagName']['escapedText'] === 'default' || tag['tagName']['escapedText'] === 'defaultValue'
+          tag['tagName']['escapedText'] === 'default' ||
+          tag['tagName']['escapedText'] === 'defaultValue',
       );
       if (!valueTag) {
         defaultValue = [];
       } else if (
         valueTag?.length === 1 &&
-        this.htmlSanitizerService.sanitizeHtml(valueTag[0]['comment']) !== prop['defaultValue']
+        this.htmlSanitizerService.sanitizeHtml(valueTag[0]['comment']) !==
+          prop['defaultValue']
       ) {
-        defaultValue = [this.htmlSanitizerService.sanitizeHtml(valueTag[0]['comment'])];
+        defaultValue = [
+          this.htmlSanitizerService.sanitizeHtml(valueTag[0]['comment']),
+        ];
       } else if (valueTag) {
-        defaultValue = valueTag.map((tag) => this.htmlSanitizerService.sanitizeHtml(tag['comment']));
+        defaultValue = valueTag.map((tag) =>
+          this.htmlSanitizerService.sanitizeHtml(tag['comment']),
+        );
       }
 
       // similarly, look for built-in jsdoctag
       const builtInTag = prop['jsdoctags']?.find(
-        (tag: JsdocTagsTypeCompoDocs) => tag['tagName']['escapedText'] === 'builtin'
+        (tag: JsdocTagsTypeCompoDocs) =>
+          tag['tagName']['escapedText'] === 'builtin',
       );
-      builtIn = builtInTag ? this.htmlSanitizerService.sanitizeHtml(builtInTag['comment']) : false;
+      builtIn = builtInTag
+        ? this.htmlSanitizerService.sanitizeHtml(builtInTag['comment'])
+        : false;
 
       prop['jsdoctags']?.forEach((tag: JsdocTagsTypeCompoDocs) => {
         if (
@@ -231,18 +263,22 @@ export class WorkshopService {
         )
           return;
         tags.push({
-          tagName: this.htmlSanitizerService.sanitizeHtml(tag['tagName']['escapedText'] + ': '),
-          value: this.htmlSanitizerService.sanitizeHtml(tag['comment'])
+          tagName: this.htmlSanitizerService.sanitizeHtml(
+            tag['tagName']['escapedText'] + ': ',
+          ),
+          value: this.htmlSanitizerService.sanitizeHtml(tag['comment']),
         });
       });
       if (tags.length > maxTags) maxTags = tags.length;
       inputs.push({
         name: prop['name'],
-        description: this.htmlSanitizerService.sanitizeHtml(prop['description']),
+        description: this.htmlSanitizerService.sanitizeHtml(
+          prop['description'],
+        ),
         defaultValue: defaultValue,
         type: prop['type'],
         tags: tags,
-        builtIn: builtIn
+        builtIn: builtIn,
       });
     });
     APIData.inputs = inputs;
@@ -253,7 +289,9 @@ export class WorkshopService {
       outputs.push({
         name: prop['name'],
         type: prop['type'],
-        description: this.htmlSanitizerService.sanitizeHtml(prop['description'])
+        description: this.htmlSanitizerService.sanitizeHtml(
+          prop['description'],
+        ),
       });
     });
     APIData.outputs = outputs;
@@ -274,7 +312,9 @@ export class WorkshopService {
       const keyValue = option.split(':');
       options.push({
         key: keyValue[0].trim(),
-        value: this.htmlSanitizerService.sanitizeHtml(keyValue[1].trim().replace(',', ''))
+        value: this.htmlSanitizerService.sanitizeHtml(
+          keyValue[1].trim().replace(',', ''),
+        ),
       });
     });
     APIData.options = options;
@@ -296,7 +336,9 @@ export class WorkshopService {
     APIData.code = service.sourceCode;
     APIData.type = APITypes.SERVICE;
     APIData.file = service.file;
-    APIData.description = this.htmlSanitizerService.sanitizeHtml(service.description);
+    APIData.description = this.htmlSanitizerService.sanitizeHtml(
+      service.description,
+    );
     let properties: SafePropertiesInterface[] = [];
     let methods: SafeMethodsInterface[] = [];
     let maxTags = 0;
@@ -304,33 +346,46 @@ export class WorkshopService {
       let defaultValue;
       const tag = prop['jsdoctags']?.find(
         (tag: JsdocTagsTypeCompoDocs) =>
-          tag['tagName']['escapedText'] === 'default' || tag['tagName']['escapedText'] === 'defaultValue'
+          tag['tagName']['escapedText'] === 'default' ||
+          tag['tagName']['escapedText'] === 'defaultValue',
       );
-      if (tag && this.htmlSanitizerService.sanitizeHtml(tag['comment']) !== prop['defaultValue']) {
+      if (
+        tag &&
+        this.htmlSanitizerService.sanitizeHtml(tag['comment']) !==
+          prop['defaultValue']
+      ) {
         defaultValue = this.htmlSanitizerService.sanitizeHtml(tag['comment']);
       }
       properties.push({
         name: prop['name'],
         defaultValue: defaultValue ? defaultValue : prop['defaultValue'],
         type: prop['type'],
-        description: this.htmlSanitizerService.sanitizeHtml(prop['description'])
+        description: this.htmlSanitizerService.sanitizeHtml(
+          prop['description'],
+        ),
       });
     });
     service['methods']?.forEach((method: MethodTypeCompoDocs) => {
       let args: SafeArgsInterface[] = [];
       method['args']?.forEach((argument: BaseInterfaceCompoDocs) => {
-        const comment = method['jsdoctags']?.find((tag) => tag['name']['escapedText'] === argument['name']);
+        const comment = method['jsdoctags']?.find(
+          (tag) => tag['name']['escapedText'] === argument['name'],
+        );
         args.push({
           name: argument['name'],
           type: argument['type'],
-          comment: this.htmlSanitizerService.sanitizeHtml(comment ? comment['comment'] : '')
+          comment: this.htmlSanitizerService.sanitizeHtml(
+            comment ? comment['comment'] : '',
+          ),
         });
       });
       methods.push({
         name: method['name'],
         returnType: method['returnType'],
-        description: this.htmlSanitizerService.sanitizeHtml(method['description']),
-        arguments: args
+        description: this.htmlSanitizerService.sanitizeHtml(
+          method['description'],
+        ),
+        arguments: args,
       });
     });
     APIData.properties = properties;
@@ -357,20 +412,25 @@ export class WorkshopService {
       return;
     }
 
-    const subscription = this.http.get(`${this.themePath}${themeKey}.css`, { responseType: 'text' }).subscribe({
-      next: (theme) => {
-        const themeElement = document.getElementById('nova-themer');
-        const stringExample = themeKey.includes('dark') ? this.darkMarkdownTheme : this.lightMarkdownTheme;
-        if (themeElement) themeElement.textContent = theme + ' ' + stringExample;
-        window.localStorage.setItem(this.LOCALSTORAGEKEY, themeKey);
-        // Unsubscribe immediately after receiving the data
-        subscription.unsubscribe();
-      },
-      error: (err) => {
-        console.error(`Error loading theme: ${themeKey}`, err);
-        subscription.unsubscribe();
-      }
-    });
+    const subscription = this.http
+      .get(`${this.themePath}${themeKey}.css`, { responseType: 'text' })
+      .subscribe({
+        next: (theme) => {
+          const themeElement = document.getElementById('nova-themer');
+          const stringExample = themeKey.includes('dark')
+            ? this.darkMarkdownTheme
+            : this.lightMarkdownTheme;
+          if (themeElement)
+            themeElement.textContent = theme + ' ' + stringExample;
+          window.localStorage.setItem(this.LOCALSTORAGEKEY, themeKey);
+          // Unsubscribe immediately after receiving the data
+          subscription.unsubscribe();
+        },
+        error: (err) => {
+          console.error(`Error loading theme: ${themeKey}`, err);
+          subscription.unsubscribe();
+        },
+      });
   }
 
   resetTheme() {
@@ -381,7 +441,9 @@ export class WorkshopService {
   getMarkdownThemes() {
     this.markdownKeys.forEach((key) => {
       const subscription = this.http
-        .get(`${this.markdownThemePath}${key}.min.css`, { responseType: 'text' })
+        .get(`${this.markdownThemePath}${key}.min.css`, {
+          responseType: 'text',
+        })
         .subscribe({
           next: (theme) => {
             if (key === 'light') {
@@ -395,7 +457,7 @@ export class WorkshopService {
           error: (err) => {
             console.error(`Error loading markdown theme: ${key}`, err);
             subscription.unsubscribe();
-          }
+          },
         });
     });
   }

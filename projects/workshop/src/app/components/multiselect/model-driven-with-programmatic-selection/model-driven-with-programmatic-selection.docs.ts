@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,13 +15,14 @@
  *
  **/
 import {
+  AfterViewInit,
+  ChangeDetectionStrategy,
   Component,
   computed,
   inject,
-  Signal,
-  viewChild,
   OutputRefSubscription,
-  ChangeDetectionStrategy
+  Signal,
+  viewChild
 } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import {
@@ -42,7 +43,7 @@ import { VisaChevronDownTiny, VisaChevronUpTiny } from '@visa/nova-icons-angular
   standalone: true,
   imports: [ReactiveFormsModule, NovaLibModule, VisaChevronDownTiny, VisaChevronUpTiny]
 })
-export class ModelDrivenProgrammticSelectionMultiselectComponent {
+export class ModelDrivenProgrammticSelectionMultiselectComponent implements AfterViewInit {
   readonly combobox = viewChild(ComboboxDirective);
   readonly comboboxService = inject(ComboboxService);
 

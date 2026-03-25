@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,8 @@ import { PanelGroupWithErrorRadioComponent } from './panel-group-with-error/pane
 import { PanelGroupRadioComponent } from './panel-group/panel-group.docs';
 import { PanelWithoutDescriptionRadioComponent } from './panel-without-description/panel-without-description.docs';
 import { PanelRadioComponent } from './panel/panel.docs';
+import { ReusableRadioGroupDemo } from './reusable-group/reusable-group.docs';
+import { ReusableRadioDemo } from './reusable/reusable.docs';
 import { SelectedRadioComponent } from './selected/selected.docs';
 import { TemplateDrivenFormRadioComponent } from './template-driven-form/template-driven-form.docs';
 import { WithDescriptionRadioComponent } from './with-description/with-description.docs';
@@ -64,7 +66,9 @@ import { WithoutVisibleLabelRadioComponent } from './without-visible-label/witho
     SelectedRadioComponent,
     WithDescriptionRadioComponent,
     WithLabelRadioComponent,
-    WithoutVisibleLabelRadioComponent
+    WithoutVisibleLabelRadioComponent,
+    ReusableRadioDemo,
+    ReusableRadioGroupDemo
   ],
   standalone: true,
   selector: 'nova-workshop-radio',
@@ -87,13 +91,5 @@ export class RadioDocsComponent {
       { name: 'AppReadyService', type: 'service-source' },
       { name: 'IdGenerator', type: 'service-source' }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,6 +28,7 @@ export const horizontalNavigationRoutes: Routes = [
 	{ loadComponent: () => import('./stacked/stacked.docs').then(m => m.StackedHorizontalNavComponent), path: 'stacked', title: 'Stacked horizontal navigation component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./stacked-with-persistent-search/stacked-with-persistent-search.docs').then(m => m.StackedWithPersistentSearchHorizontalNavComponent), path: 'stacked-with-persistent-search', title: 'Stacked with persistent search horizontal navigation component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./with-active-element/with-active-element.docs').then(m => m.WithActiveElementHorizontalNavComponent), path: 'with-active-element', title: 'With active element horizontal navigation component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./with-active-prop/with-active-prop.docs').then(m => m.WithActivePropHorizontalNavComponent), path: 'with-active-prop', title: 'With active prop horizontal navigation component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./with-icons/with-icons.docs').then(m => m.WithIconsHorizontalNavComponent), path: 'with-icons', title: 'With icons horizontal navigation component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX }
 ];
 

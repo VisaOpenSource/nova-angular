@@ -1,0 +1,71 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div v-table-wrapper scrollBlockSize="288">
+  <table v-table [alternate]="true" tableSize="compact">
+    <caption vSR>
+      Dynamic table with vertical and horizontal scroll.
+    </caption>
+    <thead>
+      <tr>
+        @for(colItem of columnData; track colItem.name){
+        <th
+          v-th
+          scope="col"
+          [attr.aria-sort]="
+              colItem.name === sortKey().column
+                ? sortKey().direction === 'ascending'
+                  ? 'ascending'
+                  : 'descending'
+                : null
+            "
+          [class.compact-column]="colItem.compact"
+        >
+          <div vFlex vAlignItemsCenter vGap="4">
+            @if (colItem.compact) {
+            <span vSR>{{ colItem.name }}</span>
+            } @else { {{ colItem.name }} }
+            <div vFlex vFlexGrow vGap="4">
+              <nova-workshop-dynamic-table-actions-button
+                [label]="colItem.name"
+                [sorted]="colItem.name === sortKey().column ? sortKey().direction : 'none'"
+                (sort)="sort(colItem, $event)"
+                [column]="colItem"
+              />
+            </div>
+          </div>
+        </th>
+        }
+      </tr>
+    </thead>
+    <tbody>
+      @for(rowItem of sortedData(); track rowItem[identifyingColumn]){
+      <tr>
+        @for(colItem of columnData; track colItem.name){
+        <td v-td [attr.scope]="colItem.identifier ? 'row' : null" [class.compact-column]="colItem.compact">
+          @if (colItem.component) {
+          <ng-container
+            [ngComponentOutlet]="colItem.component"
+            [ngComponentOutletInputs]="getComponentInputs(colItem, rowItem, identifyingColumn)"
+          />
+          } @else { {{ rowItem[colItem.name] }} }
+        </td>
+        }
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

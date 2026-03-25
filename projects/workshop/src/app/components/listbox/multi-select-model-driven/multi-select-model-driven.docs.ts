@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,8 @@
  * limitations under the License.
  *
  **/
-import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { NovaLibModule } from '@visa/nova-angular';
 
@@ -61,22 +62,14 @@ export class MultiSelectModelDrivenListboxComponent {
   listboxFormControl = new FormControl(this.items[2].value);
 
   /** For demo purposes */
-  // Signal to track form control value
-  formValue = signal<string | null>(null);
+  // Signal to track form control value using toSignal
+  formValue = toSignal(this.listboxFormControl.valueChanges, {
+    initialValue: this.listboxFormControl.value
+  });
 
   // Computed signal for formatted display value
   formValueDisplay = computed(() => {
     const value = this.formValue();
-    return value !== undefined ? value : 'none';
+    return value !== undefined ? value : '';
   });
-
-  constructor() {
-    // Initialize signal with initial form control value
-    this.formValue.set(this.listboxFormControl.value);
-
-    // Subscribe to form control value changes
-    this.listboxFormControl.valueChanges.subscribe((value) => {
-      this.formValue.set(value);
-    });
-  }
 }

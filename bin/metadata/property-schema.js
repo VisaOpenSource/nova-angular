@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,8 +17,9 @@
 const fs = require('fs');
 const { get } = require('http');
 const path = require('path');
+
 /**
- * EXAMPLE SCHEMA
+ * PROPERTY SCHEMA
  *
  * | property     | description                                                   | required | type      |
  * |--------------|---------------------------------------------------------------|----------|-----------|
@@ -34,10 +35,19 @@ const path = require('path');
  * | libraryId    | Null                                                          | true     | Null      |
  */
 
+// ============================================================================
+// UTILITY FUNCTIONS
+// ============================================================================
+
+/**
+ * Extracts alias value from a defaultValue string if present.
+ * Input signals can have an alias defined like: alias: 'myAlias'
+ *
+ * @param {string} defaultValue - The default value string to parse
+ * @returns {string|null} The extracted alias or null if not found
+ */
 const getNameAlias = (defaultValue) => {
   /* START GENAI@CHATGPT-4 */
-  // Extract alias value from defaultValue string if present
-  // only input signals have alias
   let alias = null;
   const aliasMatch = defaultValue && defaultValue.match(/alias:\s*['"`]([^'"`]+)['"`]/);
   if (aliasMatch) {
@@ -47,128 +57,149 @@ const getNameAlias = (defaultValue) => {
   /* END GENAI@CHATGPT-4 */
 };
 
-const extractExplicitType = (defaultValue, type) => {
-  /* START GENAI@CHATGPT-4 */
-
-  let fullType = null;
-  const value = defaultValue || '';
-  const fullTypeMatch = value.match(/<([\s\S]*?)>/);
-  if (fullTypeMatch && fullTypeMatch[1]) {
-    // Split on first comma, take the part before the comma, and trim
-    fullType = fullTypeMatch[1].split(',')[0].trim();
-  }
-  if (!fullType) {
-    fullType = type || '';
-    const fullTypeMatch = fullType.match(/<([\s\S]*?)>/);
-    if (fullTypeMatch && fullTypeMatch[1]) {
-      // Split on first comma, take the part before the comma, and trim
-      fullType = fullTypeMatch[1].split(',')[0].trim();
-    }
-  }
-  return fullType;
-  /* END GENAI@CHATGPT-4 */
-};
-
+/**
+ * Returns null for component ID (placeholder for future implementation).
+ * @returns {null}
+ */
 const componentID = () => {
   return null;
 };
 
+/**
+ * Returns null for library ID (placeholder for future implementation).
+ * @returns {null}
+ */
 const libraryID = () => {
   return null;
 };
 
-const getPropertyData = (prop, name, type, bindingtype) => {
-  /** tags are probably not needed, but leaving logic */
-  // let tags = [];
-  // prop['jsdoctags']?.forEach((tag) => {
-  //   tags.push({
-  //     tagName: tag['tagName']['escapedText'],
-  //     value: tag['comment']
-  //   });
-  // });
+/**
+ * Removes HTML tags from a string.
+ *
+ * @param {string} str - The string to clean
+ * @returns {string} The string with HTML tags removed
+ */
+const removeHTMLCode = (str) => {
+  if (str === undefined || str === '') {
+    return '';
+  }
+  return str.replace(/<\/?[^>]+(>|$)/g, '');
+};
 
+// ============================================================================
+// PROPERTY DATA BUILDERS
+// ============================================================================
+
+/**
+ * Extracts and formats property data from JSDoc tags and property metadata.
+ *
+ * @param {Object} prop - The property object from library data
+ * @param {string} name - The property name
+ * @param {string} type - The property type
+ * @param {string} bindingtype - The binding type: 'input', 'output', or null
+ * @returns {Object} Formatted property data object
+ */
+const getPropertyData = (prop, name, type, bindingtype) => {
+  // Extract default value from JSDoc tags (@default or @defaultValue)
   let defaultValue = null;
-  const tag = prop['jsdoctags']?.find(
+  const defaultTag = prop['jsdoctags']?.find(
     (tag) => tag['tagName']['escapedText'] === 'default' || tag['tagName']['escapedText'] === 'defaultValue'
   );
-  if (tag && tag['comment'] !== prop['defaultValue']) {
-    defaultValue = tag['comment'];
+  if (defaultTag && defaultTag['comment'] !== prop['defaultValue']) {
+    defaultValue = defaultTag['comment'];
   }
   defaultValue = defaultValue ? defaultValue : prop['defaultValue'];
 
-  defaultValue = type.toLowerCase().includes('emit') || type.toLowerCase().includes('event') ? '' : defaultValue; // emit signals do not have default values
-  // Extract actual default value from patterns like input<TYPE>(VALUE, ...) or model<TYPE>(VALUE)
-  if (typeof defaultValue === 'string' && defaultValue !== '') {
-    const match = defaultValue.match(/(?:input|model)<[^>]*>\(([^,)\n]+)/);
-    if (match && match[1] !== undefined) {
-      defaultValue = match[1].trim();
-    }
-  }
-
+  // Extract builtIn flag from JSDoc tags (@builtin or @builtIn)
   let builtIn = false;
-  const tag2 = prop['jsdoctags']?.find(
+  const builtInTag = prop['jsdoctags']?.find(
     (tag) => tag['tagName']['escapedText'] === 'builtin' || tag['tagName']['escapedText'] === 'builtIn'
   );
-  builtIn = tag2 ? tag2['comment'] : false;
+  builtIn = builtInTag ? builtInTag['comment'] : false;
 
   return {
     name: name,
     'binding type': bindingtype, // input, output, or null
-    'property type': type + 'signal',
+    'property type': type,
     default: removeHTMLCode(defaultValue),
     description: removeHTMLCode(prop['description']),
     builtIn: removeHTMLCode(builtIn + '')
-    // tags: tags,
   };
 };
 
 /**
- * create example object, depends on both the result of sections-schema.js and the docs json
- * @param {*} item
- * @param {*} type
- * @returns
+ * Creates a property object for documentation examples.
+ * Handles alias extraction for input signals and properties.
+ *
+ * @param {Object} libProperty - The library property object
+ * @param {string} binding - The binding type: 'input', 'output', or 'property'
+ * @param {string} sectionName - The name of the section this property belongs to
+ * @returns {Object} Property object with name, section, and data
  */
-const createExampleProperty = (libProperty, sectionName) => {
-  const type = libProperty.type ? libProperty.type.toLowerCase() : null;
-  if (!type) return;
-  // return input signals, outputs, and model signals
-  const isInputSignal = type.includes('inputsignal');
-  const isModelSignal = type.includes('model');
-  const isOutputSignal = type.includes('emit') || type.includes('event');
-  if (type && (isInputSignal || isModelSignal || isOutputSignal)) {
-    let name = libProperty.name; // store name
-    let type = libProperty.type; // store type
-    if (isInputSignal || isModelSignal) {
-      name = getNameAlias(libProperty.defaultValue) || libProperty.name;
-      type = extractExplicitType(libProperty.defaultValue, libProperty.type) || libProperty.type;
-    }
-    const bindingType = isInputSignal ? 'Input' : isModelSignal ? 'Model' : isOutputSignal ? 'Output' : null;
-    return {
-      name: name,
-      section: sectionName,
-      componentId: componentID(),
-      libraryId: libraryID(),
-      data: getPropertyData(libProperty, name, type, bindingType)
-    };
+const createExampleProperty = (libProperty, binding, sectionName) => {
+  // Clean up the type (remove ', unknown' suffix if present)
+  const type = libProperty.type ? libProperty.type.toLowerCase().replace(', unknown', '') : null;
+
+  // For inputs and properties, check if there's an alias defined
+  let name = libProperty.name;
+  if (binding === 'input' || binding === 'property') {
+    name = getNameAlias(libProperty.defaultValue) || libProperty.name;
   }
+
+  return {
+    name: name,
+    section: sectionName,
+    componentId: componentID(),
+    libraryId: libraryID(),
+    data: getPropertyData(libProperty, name, type, binding)
+  };
 };
 
+// ============================================================================
+// DIRECTIVE PROPERTIES HANDLERS
+// ============================================================================
+
+/**
+ * Extracts all properties from a directive/component including inputs, outputs, and properties.
+ * Removes duplicates (inputs/properties with same name are deduplicated).
+ *
+ * @param {Object} component - The component/directive object from library data
+ * @param {string} name - The component/directive name
+ * @returns {Array} Array of property objects
+ */
 const getDirectiveProps = (component, name) => {
-  let examples = [];
+  let properties = [];
+
+  // Add input properties (skip duplicates)
   component.inputsClass.forEach((libProperty) => {
-    examples.push(createExampleProperty(libProperty, name));
+    if (properties.some((example) => example && example.name === libProperty.name)) return;
+    properties.push(createExampleProperty(libProperty, 'input', name));
   });
+
+  // Add output properties (EventEmitters)
   component.outputsClass.forEach((libProperty) => {
-    examples.push(createExampleProperty(libProperty, name));
+    properties.push(createExampleProperty(libProperty, name));
   });
   component.propertiesClass.forEach((libProperty) => {
-    // Check if a property with the same name already exists in examples
-    if (examples.some((example) => example && example.name === libProperty.name)) return;
-    examples.push(createExampleProperty(libProperty, name));
+    // Check if a property with the same name already exists in properties
+    if (properties.some((example) => example && example.name === libProperty.name)) return;
+    properties.push(createExampleProperty(libProperty, name));
   });
-  return examples.filter((example) => example);
+  return properties.filter((example) => example);
 };
 
+// ============================================================================
+// CONSTANT PROPERTIES HANDLERS
+// ============================================================================
+
+/**
+ * Creates a constant object from an enum-style option string.
+ * Parses strings like "EXPANDED: 'chevron-down'," into property objects.
+ *
+ * @param {string} option - The option string to parse (e.g., "MEDIUM: 'medium',")
+ * @param {string} section - The section name this constant belongs to
+ * @returns {Object} Constant property object
+ */
 const createExampleEnumConst = (option, section) => {
   const options = option.split(':');
   return {
@@ -178,13 +209,20 @@ const createExampleEnumConst = (option, section) => {
     libraryId: libraryID(),
     data: {
       'property name': options[0].trim(),
-      value: options[1].trim().replace("',", "'") // ie "EXPANDED: 'chevron-down',", => "EXPANDED: 'chevron-down'"
+      value: options[1].trim().replace("',", "'") // Remove trailing comma: "EXPANDED: 'chevron-down',"
     }
   };
 };
 
+/**
+ * Reads a source file to extract literal constant values.
+ * Uses regex to find variable assignments in the format: name = value;
+ *
+ * @param {string} filePath - Path to the source file
+ * @param {string} name - Name of the constant to find
+ * @returns {Object|undefined} Constant object or undefined if not found
+ */
 const getLiteralConstant = (filePath, name) => {
-  // Read the file and extract the value assigned to libProperty.name
   // START GENAI@CHATGPT-4
   try {
     const fileContent = fs.readFileSync(filePath, 'utf8');
@@ -211,22 +249,36 @@ const getLiteralConstant = (filePath, name) => {
   // END GENAI@CHATGPT-4
 };
 
+/**
+ * Extracts properties from constant definitions.
+ * Handles three types: 'as const' objects, literal types, and regular constants.
+ *
+ * @param {Object} libProperty - The library property representing a constant
+ * @returns {Array} Array of constant property objects
+ */
 const getConstantProps = (libProperty) => {
   let constants = [];
   let options = libProperty.rawtype ?? libProperty.defaultValue;
+
+  // Handle 'as const' objects (enum-like structures)
   if (options?.includes('as const')) {
-    options = options.split('\n').slice(1, -1); // transform into key-value pairs like MEDIUM - 'medium'
+    // Split into lines and remove first/last (declaration/closing)
+    options = options.split('\n').slice(1, -1);
     options.forEach((option) => {
       constants.push(createExampleEnumConst(option, libProperty.name));
     });
-  } else if (options.includes('literal type')) {
+  }
+  // Handle literal types (need to read from source file)
+  else if (options.includes('literal type')) {
     const file = libProperty.file;
     const filePath = path.resolve(file);
     const literalConstant = getLiteralConstant(filePath, libProperty.name);
     if (literalConstant) {
       constants.push(literalConstant);
     }
-  } else {
+  }
+  // Handle regular constants
+  else {
     constants.push({
       name: libProperty.name,
       section: libProperty.name,
@@ -238,10 +290,24 @@ const getConstantProps = (libProperty) => {
       }
     });
   }
+
   return constants;
 };
 
+// ============================================================================
+// SERVICE PROPERTIES HANDLERS
+// ============================================================================
+
+/**
+ * Creates a property object for a service property.
+ * Extracts default values from JSDoc tags and handles aliases.
+ *
+ * @param {Object} prop - The service property object
+ * @param {string} sectionName - The section name this property belongs to
+ * @returns {Object} Service property object
+ */
 const createServiceProperties = (prop, sectionName) => {
+  // Extract default value from JSDoc tags
   let defaultValue = null;
   const tag = prop['jsdoctags']?.find(
     (tag) => tag['tagName']['escapedText'] === 'default' || tag['tagName']['escapedText'] === 'defaultValue'
@@ -251,8 +317,10 @@ const createServiceProperties = (prop, sectionName) => {
   }
   defaultValue = defaultValue ? defaultValue : prop['defaultValue'];
   defaultValue = removeHTMLCode(defaultValue);
+
+  // Check for alias or use property name
   const name = getNameAlias(defaultValue) || prop['name'];
-  const type = extractExplicitType(defaultValue, prop['type']) || prop['type'];
+
   return {
     name: name,
     section: sectionName,
@@ -261,21 +329,33 @@ const createServiceProperties = (prop, sectionName) => {
     serviceUsage: 'property',
     data: {
       name: name,
-      type: type,
+      type: prop['type'],
       default: defaultValue,
       description: removeHTMLCode(prop['description'])
     }
   };
 };
 
+/**
+ * Creates a method object for a service method.
+ * Extracts method arguments and their descriptions from JSDoc tags.
+ *
+ * @param {Object} method - The service method object
+ * @param {string} sectionName - The section name this method belongs to
+ * @returns {Object} Service method object with arguments
+ */
 const createServiceMethods = (method, sectionName) => {
   let args = [];
+
+  // Process each method argument
   method['args']?.forEach((argument) => {
+    // Find JSDoc comment for this argument
     let comment = method['jsdoctags']?.find((tag) => {
       return tag['name']?.['escapedText'] === argument['name'];
     });
     comment = comment ? comment['comment'] : '';
     comment = removeHTMLCode(comment);
+
     args.push({
       name: argument['name'],
       data: {
@@ -285,6 +365,7 @@ const createServiceMethods = (method, sectionName) => {
       }
     });
   });
+
   return {
     name: method['name'],
     section: sectionName,
@@ -297,35 +378,56 @@ const createServiceMethods = (method, sectionName) => {
   };
 };
 
+/**
+ * Extracts all properties and methods from a service.
+ *
+ * @param {Object} service - The service object from library data
+ * @param {string} name - The service name
+ * @returns {Array} Array of service property and method objects
+ */
 const getServiceProps = (service, name) => {
   let services = [];
+
+  // Add all service properties
   service['properties']?.forEach((prop) => {
     services.push(createServiceProperties(prop, name));
   });
+
+  // Add all service methods
   service['methods']?.forEach((method) => {
     services.push(createServiceMethods(method, name));
   });
+
   return services;
 };
 
-const removeHTMLCode = (str) => {
-  if (str === undefined || str === '') {
-    return '';
-  }
-  return str.replace(/<\/?[^>]+(>|$)/g, '');
-};
+// ============================================================================
+// MAIN EXPORT FUNCTION
+// ============================================================================
 
+/**
+ * Gets properties for a component, directive, constant, or service.
+ *
+ * @param {string} name - The name of the component/directive/constant/service
+ * @param {string} type - The type: 'directives', 'constants', or 'services'
+ * @param {Object} component - The library component data
+ * @returns {Array} Array of property objects
+ */
 const getProperties = (name, type, component) => {
-  examples = [];
-  if (!component) return examples;
+  let properties = [];
+
+  // Return empty array if no component data
+  if (!component) return properties;
+
+  // Route to appropriate handler based on type
   if (type === 'directives') {
-    examples = getDirectiveProps(component, name);
+    properties = getDirectiveProps(component, name);
   } else if (type === 'constants') {
-    examples = getConstantProps(component);
+    properties = getConstantProps(component);
   } else if (type === 'services') {
-    examples = getServiceProps(component, name.service ? name.service : name);
+    properties = getServiceProps(component, name.service ? name.service : name);
   }
-  return examples;
+  return properties;
 };
 
 module.exports = {

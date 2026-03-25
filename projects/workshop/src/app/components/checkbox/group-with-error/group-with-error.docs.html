@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
   <legend v-label id="checkbox-group-error-legend">Group label (required)</legend>
   <div v-input-message id="checkbox-group-error-input-message">Select one or more options.</div>
   <ul vFlex vFlexCol>
-    @for(checkbox of checkboxValues; track $index) {
+    @for(checkbox of checkboxValues; track checkbox) {
     <li v-input-container>
       <input
         [id]="'checkbox-group-error-' + $index"

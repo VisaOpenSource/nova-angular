@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,11 +41,18 @@ import {
 })
 export class LinearProgressDirective {
   /**
-   * Provides custom class&#40;es&#41; for custom styling.
-   * @default .v-progress.v-progress-bar
+   * Hide progress from screen readers when true. By default, indeterminate progress is hidden and determinate progress is visible.
+   * @default 'true' when <code>determinate</code> is false
+   * @default null when <code>determinate</code> is true
+   * @builtin true
    */
   readonly ariaHidden: InputSignal<string | void | null> = input<string | void | null>(null, { alias: 'aria-hidden' });
 
+  /**
+   * Marks progress as complete when true. By default, determinate progress is marked complete
+   * when value is greater than or equal to max, and indeterminate progress is never marked complete.
+   * @default null
+   */
   public readonly completeInput: InputSignalWithTransform<boolean | null, unknown> = input(null, {
     alias: 'complete',
     transform: booleanAttribute
@@ -83,17 +90,17 @@ export class LinearProgressDirective {
   );
 
   /**
-   * Hide indeterminate progress bar from screen readers when true.
-   * @default 'true' when <code>determinate</code> is false
-   * @default null when <code>determinate</code> is true
-   * @builtin true
+   * The current progress as a percentage (0-100). Use this for simple percentage-based progress.
+   * @default null
    */
   readonly percentage: InputSignalWithTransform<number | null, unknown> = input(null, {
     transform: numberAttribute
   });
 
   /**
-   * The current value for a <code>determinate</code> progress bar.
+   * The current progress value. Works with the max attribute to calculate percentage.
+   * Use when tracking progress with custom units (e.g., items processed out of a total).
+   * @default 100
    */
   readonly valueInput: InputSignalWithTransform<number, unknown> = input<number, unknown>(100, {
     alias: 'value',

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,8 @@
  * limitations under the License.
  *
  **/
-import { ChangeDetectionStrategy, Component, viewChildren, signal, computed } from '@angular/core';
+import { ChangeDetectionStrategy, Component, viewChildren, computed } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ListboxDirective, NovaLibModule } from '@visa/nova-angular';
 import { VisaErrorTiny } from '@visa/nova-icons-angular';
@@ -94,47 +95,34 @@ export class ModelDrivenFormListboxComponent {
     }
   ];
 
-  formValidation: FormGroup;
   ssFormControl = new FormControl('', [Validators.required]);
   msFormControl = new FormControl([], [Validators.required]);
+
+  formValidation: FormGroup = new FormGroup({
+    ssFormControl: this.ssFormControl,
+    msFormControl: this.msFormControl
+  });
+
   isSubmitted = false;
 
-  // Demo only - signals to track form control values
-  singleSelectValue = signal<string | null>(null);
-  multiSelectValue = signal<string[] | null>(null);
+  // Demo only - signals to track form control values using toSignal
+  singleSelectValue = toSignal(this.ssFormControl.valueChanges, {
+    initialValue: this.ssFormControl.value
+  });
+  multiSelectValue = toSignal(this.msFormControl.valueChanges, {
+    initialValue: this.msFormControl.value
+  });
 
   // Demo only - computed signals for formatted display values
   singleSelectDisplay = computed(() => {
     const value = this.singleSelectValue();
-    return value !== undefined ? value : 'none';
+    return value !== undefined ? value : '';
   });
 
   multiSelectDisplay = computed(() => {
     const value = this.multiSelectValue();
-    return value !== undefined ? value : 'none';
+    return value !== undefined ? value : '';
   });
-
-  constructor() {
-    this.formValidation = new FormGroup({
-      ssFormControl: this.ssFormControl,
-      msFormControl: this.msFormControl
-    });
-
-    /** For demo purposes */
-    // Initialize signals with initial form control values
-    this.singleSelectValue.set(this.ssFormControl.value);
-    this.multiSelectValue.set(this.msFormControl.value);
-
-    // Subscribe to single select form control value changes
-    this.ssFormControl.valueChanges.subscribe((value) => {
-      this.singleSelectValue.set(value);
-    });
-
-    // Subscribe to multi select form control value changes
-    this.msFormControl.valueChanges.subscribe((value) => {
-      this.multiSelectValue.set(value);
-    });
-  }
 
   onSubmit() {
     this.isSubmitted = true;
@@ -142,19 +130,11 @@ export class ModelDrivenFormListboxComponent {
     if (invalidIndex !== -1) {
       this.listboxes()[invalidIndex]?.listItems()[0].el.nativeElement.focus();
     }
-
-    // Demo only - update signals with current form control values
-    this.singleSelectValue.set(this.ssFormControl.value);
-    this.multiSelectValue.set(this.msFormControl.value);
   }
 
   // Handle form reset
   onReset() {
     this.isSubmitted = false;
     this.formValidation.reset();
-
-    // Demo only - reset signals
-    this.singleSelectValue.set(null);
-    this.multiSelectValue.set(null);
   }
 }

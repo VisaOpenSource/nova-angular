@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`ButtonDirective should render defaults correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <button
     class="v-button"
     type="button"

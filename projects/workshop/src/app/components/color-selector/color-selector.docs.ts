@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,8 +16,8 @@
  **/
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { NovaLibModule } from '@visa/nova-angular';
-import { WorkshopService } from '../../shared/services/workshop.service';
 import { NovaSharedModule } from '../../shared/nova-shared.module';
+import { WorkshopService } from '../../shared/services/workshop.service';
 import { AvailableValuesColorSelectorComponent } from './available-values/available-values.docs';
 import { DefaultColorSelectorComponent } from './default/default.docs';
 
@@ -41,13 +41,5 @@ export class ColorSelectorDocsComponent {
       { name: 'AppReadyService', type: 'service-source' },
       { name: 'IdGenerator', type: 'service-source' }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

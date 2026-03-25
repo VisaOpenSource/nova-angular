@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,6 @@
  * limitations under the License.
  *
  **/
-import { effect, VERSION } from '@angular/core';
 export const DOWN_ARROW_KEY = 'ArrowDown';
 export const END_KEY = 'End';
 export const ESCAPE_KEY = 'Escape';
@@ -35,7 +34,3 @@ export const SpacingProperties = {
 } as const;
 
 export type SpacingProperties = (typeof SpacingProperties)[keyof typeof SpacingProperties] | number;
-
-// DELETE THIS AFTER WE DROP ANGULAR 18:
-const version = VERSION.major;
-export const defaultEffectParam: Parameters<typeof effect>[1] = +version < 19 ? { allowSignalWrites: true } : undefined;

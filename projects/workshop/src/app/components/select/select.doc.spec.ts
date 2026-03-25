@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,6 +23,7 @@ import { IdGenerator } from '@visa/nova-angular';
 import { DefaultSelectComponent } from './default/default.docs';
 import { DisabledSelectComponent } from './disabled/disabled.docs';
 import { ErrorSelectComponent } from './error/error.docs';
+import { ReusableSelectDemo } from './reusable/reusable.docs';
 import { InitialValueSelectComponent } from './initial-value/initial-value.docs';
 import { MockDataSelectComponent } from './mock-data/mock-data.docs';
 import { ModelDrivenFbSelectComponent } from './model-driven-fb/model-driven-fb.docs';
@@ -51,7 +52,8 @@ const examples = {
   TemplateDrivenObjectSelectComponent,
   TemplateDrivenSelectComponent,
   WithInlineLabelSelectComponent,
-  WithInlineMessageSelectComponent
+  WithInlineMessageSelectComponent,
+  ReusableSelectDemo
 };
 
 const keys = Object.keys(examples);

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +17,6 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NovaLibModule } from '@visa/nova-angular';
-import { VisaInformationLow } from '@visa/nova-icons-angular';
 import { MarkdownModule } from 'ngx-markdown';
 import { NovaSharedModule } from '../../shared/nova-shared.module';
 import { WorkshopService } from '../../shared/services/workshop.service';
@@ -31,6 +30,7 @@ import { ManualAutocompleteMultiselectComponent } from './manual-autocomplete/ma
 import { ModelDrivenFbMultiselectComponent } from './model-driven-fb/model-driven-fb.docs';
 import { ModelDrivenMultiselectComponent } from './model-driven/model-driven.docs';
 import { ReadOnlyMultiselectComponent } from './read-only/read-only.docs';
+import { ReusableMultiselectDemo } from './reusable/reusable.docs';
 import { TemplateDrivenMultiselectComponent } from './template-driven/template-driven.docs';
 import { WithDisabledOptionMultiselectComponent } from './with-disabled-option/with-disabled-option.docs';
 import { MultiselectWithMultipleSelectionsAndVerticalScrollComponent } from './with-multiple-selections-and-vertical-scroll/with-multiple-selections-and-vertical-scroll.docs';
@@ -66,7 +66,8 @@ import { WithoutDropdownChevronMultiselectComponent } from './without-dropdown-c
     // TemplateDrivenProgrammaticSelectionMultiselectComponent,
     WithDisabledOptionMultiselectComponent,
     WithoutDropdownChevronMultiselectComponent,
-    WithScrollMultiselectComponent
+    WithScrollMultiselectComponent,
+    ReusableMultiselectDemo
   ]
 })
 export class MultiselectDocsComponent {
@@ -95,13 +96,5 @@ export class MultiselectDocsComponent {
       { name: 'FloatingUIVisibility', type: 'constant' },
       { name: 'IconToggle', type: 'constant' }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

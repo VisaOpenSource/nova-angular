@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,49 +19,15 @@ import { Routes } from '@angular/router';
 import { TITLE_SEPARATOR, TITLE_SUFFIX } from '../../app.constants';
 
 export const wizardRoutes: Routes = [
-  { loadComponent: () => import('./wizard.docs').then((m) => m.WizardDocsComponent), path: '' },
-  {
-    loadComponent: () => import('./compact/compact.docs').then((m) => m.CompactWizardComponent),
-    path: 'compact',
-    title: 'Compact wizard component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX
-  },
-  {
-    loadComponent: () => import('./horizontal/horizontal.docs').then((m) => m.HorizontalWizardComponent),
-    path: 'horizontal',
-    title: 'Horizontal wizard component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX
-  },
-  {
-    loadComponent: () => import('./in-page/in-page.docs').then((m) => m.InPageWizardComponent),
-    path: 'in-page',
-    title: 'In page wizard component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX
-  },
-  {
-    loadComponent: () => import('./shared/exit-dialog/exit-dialog.docs').then((m) => m.SharedWizardExitDialogComponent),
-    path: 'exit-dialog',
-    title: 'Exit dialog wizard component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX
-  },
-  {
-    loadComponent: () => import('./shared/save-flag/save-flag.docs').then((m) => m.SharedWizardSaveFlagComponent),
-    path: 'save-flag',
-    title: 'Save flag wizard component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX
-  },
-  {
-    loadComponent: () =>
-      import('./shared/success-page/success-page.docs').then((m) => m.SharedWizardSuccessPageComponent),
-    path: 'success-page',
-    title: 'Success page wizard component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX
-  },
-  {
-    loadComponent: () =>
-      import('./shared/summary-page/summary-page.docs').then((m) => m.SharedWizardSummaryPageComponent),
-    path: 'summary-page',
-    title: 'Summary page wizard component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX
-  },
-  {
-    loadComponent: () => import('./vertical/vertical.docs').then((m) => m.VerticalWizardComponent),
-    path: 'vertical',
-    title: 'Vertical wizard component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX
-  }
+	{ loadComponent: () => import('./wizard.docs').then(m => m.WizardDocsComponent), path: '' },
+	{ loadComponent: () => import('./compact/compact.docs').then(m => m.CompactWizardComponent), path: 'compact', title: 'Compact wizard pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./horizontal/horizontal.docs').then(m => m.HorizontalWizardComponent), path: 'horizontal', title: 'Horizontal wizard pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./in-page/in-page.docs').then(m => m.InPageWizardComponent), path: 'in-page', title: 'In page wizard pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./shared/exit-dialog/exit-dialog.docs').then(m => m.SharedWizardExitDialogComponent), path: 'exit-dialog', title: 'Exit dialog wizard pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./shared/save-flag/save-flag.docs').then(m => m.SharedWizardSaveFlagComponent), path: 'save-flag', title: 'Save flag wizard pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./shared/success-page/success-page.docs').then(m => m.SharedWizardSuccessPageComponent), path: 'success-page', title: 'Success page wizard pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./shared/summary-page/summary-page.docs').then(m => m.SharedWizardSummaryPageComponent), path: 'summary-page', title: 'Summary page wizard pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./vertical/vertical.docs').then(m => m.VerticalWizardComponent), path: 'vertical', title: 'Vertical wizard pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX }
 ];
 
 export default wizardRoutes;

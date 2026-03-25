@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,18 +23,30 @@
     <nav v-dropdown-menu vFlex vFlexCol>
       <ul v-dropdown-list vAddArrowKeys>
         <li>
-          <a v-dropdown-item vLink vFlex vJustifyContentStart href="./components/horizontal-navigation"> L1 label 1 </a>
+          <a v-dropdown-item v-link vFlex vJustifyContentStart href="./components/horizontal-navigation">
+            L1 label 1
+          </a>
         </li>
         <li>
-          <a v-dropdown-item vLink vFlex vJustifyContentStart href="./components/horizontal-navigation"> L1 label 2 </a>
+          <a v-dropdown-item v-link vFlex vJustifyContentStart href="./components/horizontal-navigation">
+            L1 label 2
+          </a>
         </li>
         <li>
-          <a v-dropdown-item vLink vFlex vJustifyContentStart href="./components/horizontal-navigation"> L1 label 3 </a>
+          <a v-dropdown-item v-link vFlex vJustifyContentStart href="./components/horizontal-navigation">
+            L1 label 3
+          </a>
         </li>
       </ul>
     </nav>
   </div>
-  <a v-link noUnderline vGap="16" aria-label="Visa Application Name Home" href="./components/horizontal-navigation"
+  <a
+    v-link
+    noUnderline
+    vGap="16"
+    aria-label="Visa Application Name Home"
+    href="./components/horizontal-navigation"
+    class="v-link-unstyled"
     ><svg v-logo-visa />
     <div vTypography="headline-3" vContainerHide="xs" class="v-nav-app-name">Application name</div>
   </a>
@@ -89,12 +101,12 @@
       <div v-dropdown-menu vFlex vFlexCol>
         <ul v-dropdown-list vAddArrowKeys>
           <li>
-            <a v-dropdown-item vLink vFlex vJustifyContentStart href="./components/horizontal-navigation">
+            <a v-dropdown-item v-link vFlex vJustifyContentStart href="./components/horizontal-navigation">
               L2 label 1
             </a>
           </li>
           <li>
-            <a v-dropdown-item vLink vFlex vJustifyContentStart href="./components/horizontal-navigation">
+            <a v-dropdown-item v-link vFlex vJustifyContentStart href="./components/horizontal-navigation">
               L2 label 2
             </a>
           </li>

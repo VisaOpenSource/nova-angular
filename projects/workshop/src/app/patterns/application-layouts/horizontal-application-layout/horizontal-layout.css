@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  *
  **/
 
- /* example styles are prefixed with ".layout-horizontal" to avoid conflicts with other styles in the documentation app. */
+/* example styles are prefixed with ".layout-horizontal" to avoid conflicts with other styles in the documentation app. */
 
 .layout-horizontal {
   height: 100vh;
@@ -23,7 +23,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
-  grid-template-areas: 'header' 'content';
+  grid-template-areas: "header" "content";
   background-color: var(--palette-default-surface-3, #f0f0f0);
 }
 
@@ -44,14 +44,14 @@
 }
 
 .divider-after:after {
-    content: "";
-    display: block;
-    height: 1px;
-    width: 100%;
-    margin-block: var(--size-scalable-10, 10px) var(--size-scalable-6, 6px);
-    border-block-end-width: var(--v-divider-thickness-default, 1px);
-    border-block-end-style: solid;
-    border-block-end-color: #0000001a;
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin-block: var(--size-scalable-10, 10px) var(--size-scalable-6, 6px);
+  border-block-end-width: var(--v-divider-thickness-default, 1px);
+  border-block-end-style: solid;
+  border-block-end-color: #0000001a;
 }
 
 .layout-horizontal .layout-content {
@@ -69,7 +69,7 @@
 
 /* customize the default footer color */
 .layout-horizontal .v-footer {
-  background-color: var(--v-palette-default-surface-3);
+  background-color: var(--palette-default-surface-3);
 }
 
 /* breakpoints */

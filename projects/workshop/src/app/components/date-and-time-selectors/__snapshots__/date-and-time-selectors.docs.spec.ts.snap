@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Date and time selector examples DefaultDateSelectorDateTimeComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -36,9 +34,7 @@ exports[`Date and time selector examples DefaultDateSelectorDateTimeComponent sh
 `;
 
 exports[`Date and time selector examples DefaultRangeDateTimeComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <div
     class="v-gap-12 v-flex v-flex-row v-flex-wrap"
     vflex=""
@@ -112,9 +108,7 @@ exports[`Date and time selector examples DefaultRangeDateTimeComponent should re
 `;
 
 exports[`Date and time selector examples DefaultTimeSelectorDateTimeComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -147,9 +141,7 @@ exports[`Date and time selector examples DefaultTimeSelectorDateTimeComponent sh
 `;
 
 exports[`Date and time selector examples DisabledDateSelectorDateTimeComponent should render correctly 1`] = `
-<div
-  id="root3"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -183,9 +175,7 @@ exports[`Date and time selector examples DisabledDateSelectorDateTimeComponent s
 `;
 
 exports[`Date and time selector examples DisabledTimeSelectorDateTimeComponent should render correctly 1`] = `
-<div
-  id="root4"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -219,9 +209,7 @@ exports[`Date and time selector examples DisabledTimeSelectorDateTimeComponent s
 `;
 
 exports[`Date and time selector examples InvalidDateSelectorDateTimeComponent should render correctly 1`] = `
-<div
-  id="root5"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -289,9 +277,7 @@ exports[`Date and time selector examples InvalidDateSelectorDateTimeComponent sh
 `;
 
 exports[`Date and time selector examples InvalidTimeSelectorDateTimeComponent should render correctly 1`] = `
-<div
-  id="root6"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -359,9 +345,7 @@ exports[`Date and time selector examples InvalidTimeSelectorDateTimeComponent sh
 `;
 
 exports[`Date and time selector examples MilitaryTimeSelectorDateTimeComponent should render correctly 1`] = `
-<div
-  id="root7"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -394,9 +378,7 @@ exports[`Date and time selector examples MilitaryTimeSelectorDateTimeComponent s
 `;
 
 exports[`Date and time selector examples ReadOnlyDateSelectorDateTimeComponent should render correctly 1`] = `
-<div
-  id="root8"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -430,9 +412,7 @@ exports[`Date and time selector examples ReadOnlyDateSelectorDateTimeComponent s
 `;
 
 exports[`Date and time selector examples ReadOnlyTimeSelectorDateTimeComponent should render correctly 1`] = `
-<div
-  id="root9"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -466,9 +446,7 @@ exports[`Date and time selector examples ReadOnlyTimeSelectorDateTimeComponent s
 `;
 
 exports[`Date and time selector examples StackedRangeDateTimeComponent should render correctly 1`] = `
-<div
-  id="root10"
->
+<div>
   <div
     class="v-gap-12 v-flex v-flex-col v-flex-wrap"
     vflex=""

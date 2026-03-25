@@ -1,0 +1,118 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div class="layout-example" [style.background]="'var(--palette-default-surface-3)'">
+  <div vFlex style="block-size: 100vh;">
+    <div vML="auto">
+      <button v-button-icon v-panel-toggle buttonSize="large"
+        [attr.aria-label]="panelOpen() ? 'Close panel' : 'Open panel'" (click)="togglePanel()">
+        <img role="presentation" src="imgs/chat-ai.svg" />
+      </button>
+    </div>
+
+    @if (panelOpen()) {
+    <dialog v-panel expandable>
+      <button v-button-icon v-panel-toggle buttonSize="large"
+        [attr.aria-label]="panelOpen() ? 'Close panel' : 'Open panel'" (click)="togglePanel()">
+        <img role="presentation" src="imgs/chat-ai.svg" />
+      </button>
+      <div v-panel-content
+        style="display:flex; flex-direction: column; inline-size: 400px; min-inline-size: 300px; block-size: 100%; overflow: hidden;">
+
+        <div vFlex vJustifyContentBetween vAlignItemsCenter
+          style="block-size: 62px; inline-size: 100%; padding-block: 8px; padding-inline: 16px; background: var(--palette-default-surface-1); box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.05); flex-shrink: 0;">
+          <!-- Empty div balances header layout by matching width of options button on the right -->
+          <div style="inline-size: 46px;"></div>
+          <span>Chat name</span>
+
+          <div v-floating-ui-container>
+            <button v-button-icon v-floating-ui-trigger buttonSize="large" buttonColor="tertiary"
+              aria-controls="more-options" [attr.aria-expanded]="false" aria-label="see more options"
+              id="more-options-button">
+              <svg v-icon-visa-option-horizontal-tiny></svg>
+            </button>
+
+            <div v-dropdown-menu id="more-options" [attr.aria-hidden]="!false"
+              style="inline-size: 180px; z-index: 1;">
+              <ul v-dropdown-list>
+                <li>
+                  <button v-dropdown-item vFlex vFlexRow vAlignItemsStart vGap="6" vPX="8" vPY="11"
+                    buttonColor="tertiary" subtle>
+                    <svg v-icon-visa-edit-tiny></svg> Rename
+                  </button>
+                </li>
+                <li>
+                  <button v-dropdown-item vFlex vFlexRow vAlignItemsStart vGap="6" vPX="8" vPY="11"
+                    buttonColor="tertiary" subtle>
+                    <svg v-icon-visa-search-tiny></svg> Search in chat
+                  </button>
+                </li>
+                <li>
+                  <button v-dropdown-item vFlex vFlexRow vAlignItemsStart vGap="6" vPX="8" vPY="11"
+                    buttonColor="tertiary" subtle>
+                    <svg v-icon-visa-file-download-tiny></svg> Download
+                  </button>
+                </li>
+                <li>
+                  <button v-dropdown-item vFlex vFlexRow vAlignItemsStart vGap="6" vPX="8" vPY="11"
+                    buttonColor="tertiary" subtle>
+                    <svg v-icon-visa-idea-tiny></svg> Make a suggestion
+                  </button>
+                </li>
+                <li>
+                  <button v-dropdown-item vFlex vFlexRow vAlignItemsStart vGap="6" vPX="8" vPY="11" v-button
+                    buttonColor="tertiary" destructive>
+                    <svg v-icon-visa-delete-tiny />
+                    Delete chat
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div v-panel-body style="padding-top: 10px; flex: 1; overflow-y: auto; min-height: 300px;">
+          <div #chatContainer vFlex vFlexCol style="flex: 1; overflow: auto;">
+            <!-- hideTimestamp groups consecutive messages from same sender by hiding intermediate timestamps -->
+            @for (response of currentChat().messages; track response.id; let index = $index) {
+            @let prev = currentChat().messages[index - 1];
+            @let hideTimestamp = !(index === 0 || response.role !== prev?.role);
+
+            <!-- "User 2" represents AI/system responses; other roles are user messages -->
+            @if (response.role === "User 2") {
+            <div style="margin-inline-end: 48px;">
+              <response-chat-bubble [response]="response" [smallAvatar]="true" [hideAvatar]="hideTimestamp"
+                [hideTimestamp]="hideTimestamp">
+              </response-chat-bubble>
+            </div>
+            } @else {
+            <user-chat-bubble [response]="response" [hideAvatar]="true" [hideTimestamp]="hideTimestamp">
+            </user-chat-bubble>
+            }
+            }
+          </div>
+        </div>
+
+        <div vFlex vFlexCol vGap="8" vP="16" style="flex-shrink: 0;">
+          <chat-input id="panel-chat-input" [showCharacterCount]="false">
+          </chat-input>
+        </div>
+      </div>
+    </dialog>
+    }
+  </div>
+</div>

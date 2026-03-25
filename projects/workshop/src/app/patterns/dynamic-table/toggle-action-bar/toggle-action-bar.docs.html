@@ -1,0 +1,63 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<!-- toggle action bar example content -->
+<div vPX="16" vPY="8" vSurface="2" class="v-action-bar">
+  <div vFlex vJustifyContentBetween vGap="20" vFlexWrap>
+    <div vFlex vGap="8" vAlignItemsCenter>
+      <div v-floating-ui-container>
+        <button v-button v-floating-ui-trigger>
+          Action
+          <v-icon-visa-toggle>
+            <svg v-toggle-default-template v-icon-visa-chevron-down-tiny />
+            <svg v-toggle-rotated-template v-icon-visa-chevron-up-tiny />
+          </v-icon-visa-toggle>
+        </button>
+        <div v-dropdown-menu vFlex vFlexCol>
+          <ul v-dropdown-list vAddArrowKeys>
+            <li>
+              <button v-dropdown-item>Action 1</button>
+            </li>
+            <li>
+              <button v-dropdown-item>Action 2</button>
+            </li>
+            <li>
+              <button v-dropdown-item>Action 3</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div vFlex vGap="8" vAlignItemsCenter>
+      <fieldset v-toggle-container vFlex vFlexRow>
+        <button v-toggle vGap="6" aria-label="Label 1">
+          <svg v-icon-visa-view-grid-low />
+        </button>
+        <button v-toggle vGap="6" active aria-label="Label 2">
+          <svg v-icon-visa-map-low />
+        </button>
+      </fieldset>
+      <button
+        v-button-icon
+        buttonSize="small"
+        buttonColor="tertiary"
+        aria-label="filter table - selection-based action bar"
+      >
+        <svg v-icon-visa-filter-alt-tiny />
+      </button>
+    </div>
+  </div>
+</div>

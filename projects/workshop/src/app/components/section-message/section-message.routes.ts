@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -52,7 +52,9 @@ export const sectionMessageRoutes: Routes = [
 	{ loadComponent: () => import('./nova-title-warning-section-message/nova-title-warning-section-message.docs').then(m => m.NovaTitleWarningSectionMessageComponent), path: 'nova-title-warning-section-message', title: 'Nova title warning section message section message component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./nova-warning-section-message/nova-warning-section-message.docs').then(m => m.NovaWarningSectionMessageSectionMessageComponent), path: 'nova-warning-section-message', title: 'Nova warning section message section message component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./nova-warning-section-message-with-action-button/nova-warning-section-message-with-action-button.docs').then(m => m.NovaWarningSectionMessageWithActionButtonSectionMessageComponent), path: 'nova-warning-section-message-with-action-button', title: 'Nova warning section message with action button section message component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
-	{ loadComponent: () => import('./nova-warning-section-message-with-link/nova-warning-section-message-with-link.docs').then(m => m.NovaWarningSectionMessageWithLinkSectionMessageComponent), path: 'nova-warning-section-message-with-link', title: 'Nova warning section message with link section message component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX }
+	{ loadComponent: () => import('./nova-warning-section-message-with-link/nova-warning-section-message-with-link.docs').then(m => m.NovaWarningSectionMessageWithLinkSectionMessageComponent), path: 'nova-warning-section-message-with-link', title: 'Nova warning section message with link section message component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable-component/reusable-component.docs').then(m => m.ReusableSectionMessage), path: 'reusable-component', title: 'Reusable component section message component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable.docs').then(m => m.ReusableSectionMessageDemo), path: 'reusable', title: 'Reusable section message component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX }
 ];
 
 export default sectionMessageRoutes;

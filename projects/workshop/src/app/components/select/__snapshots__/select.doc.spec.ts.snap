@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Select examples DefaultSelectComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -64,16 +62,13 @@ exports[`Select examples DefaultSelectComponent should render correctly 1`] = `
           class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-0"
           v-icon-visa-chevron-down-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
       </div>
@@ -84,9 +79,7 @@ exports[`Select examples DefaultSelectComponent should render correctly 1`] = `
 `;
 
 exports[`Select examples DisabledSelectComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -146,16 +139,13 @@ exports[`Select examples DisabledSelectComponent should render correctly 1`] = `
           class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-1"
           v-icon-visa-chevron-down-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
       </div>
@@ -195,9 +185,7 @@ exports[`Select examples DisabledSelectComponent should render correctly 1`] = `
 `;
 
 exports[`Select examples ErrorSelectComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -261,16 +249,13 @@ exports[`Select examples ErrorSelectComponent should render correctly 1`] = `
           class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-2"
           v-icon-visa-chevron-down-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
       </div>
@@ -312,9 +297,7 @@ exports[`Select examples ErrorSelectComponent should render correctly 1`] = `
 `;
 
 exports[`Select examples InitialValueSelectComponent should render correctly 1`] = `
-<div
-  id="root3"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -373,16 +356,13 @@ exports[`Select examples InitialValueSelectComponent should render correctly 1`]
           class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-3"
           v-icon-visa-chevron-down-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
       </div>
@@ -393,9 +373,7 @@ exports[`Select examples InitialValueSelectComponent should render correctly 1`]
 `;
 
 exports[`Select examples MockDataSelectComponent should render correctly 1`] = `
-<div
-  id="root4"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -430,16 +408,13 @@ exports[`Select examples MockDataSelectComponent should render correctly 1`] = `
           class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-4"
           v-icon-visa-chevron-down-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
       </div>
@@ -471,9 +446,7 @@ exports[`Select examples MockDataSelectComponent should render correctly 1`] = `
 `;
 
 exports[`Select examples ModelDrivenFbSelectComponent should render correctly 1`] = `
-<div
-  id="root5"
->
+<div>
   <form
     class="ng-untouched ng-pristine ng-invalid v-gap-16 v-flex v-flex-col"
     novalidate=""
@@ -545,16 +518,13 @@ exports[`Select examples ModelDrivenFbSelectComponent should render correctly 1`
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-5"
             v-icon-visa-chevron-down-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </div>
@@ -639,7 +609,6 @@ exports[`Select examples ModelDrivenFbSelectComponent should render correctly 1`
               class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-6"
               v-icon-visa-chevron-down-tiny=""
               v-toggle-default-template=""
               viewBox="0 0 16 16"
@@ -647,9 +616,7 @@ exports[`Select examples ModelDrivenFbSelectComponent should render correctly 1`
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-                fill-rule="evenodd"
+                d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
               />
             </svg>
             
@@ -736,7 +703,6 @@ exports[`Select examples ModelDrivenFbSelectComponent should render correctly 1`
               class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-7"
               v-icon-visa-chevron-down-tiny=""
               v-toggle-default-template=""
               viewBox="0 0 16 16"
@@ -744,9 +710,7 @@ exports[`Select examples ModelDrivenFbSelectComponent should render correctly 1`
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-                fill-rule="evenodd"
+                d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
               />
             </svg>
             
@@ -791,9 +755,7 @@ exports[`Select examples ModelDrivenFbSelectComponent should render correctly 1`
 `;
 
 exports[`Select examples ModelDrivenFormSelectComponent should render correctly 1`] = `
-<div
-  id="root6"
->
+<div>
   <form
     class="ng-untouched ng-pristine ng-invalid v-gap-16 v-flex v-flex-col"
     novalidate=""
@@ -864,16 +826,13 @@ exports[`Select examples ModelDrivenFormSelectComponent should render correctly 
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-8"
             v-icon-visa-chevron-down-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </div>
@@ -953,16 +912,13 @@ exports[`Select examples ModelDrivenFormSelectComponent should render correctly 
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-9"
             v-icon-visa-chevron-down-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </div>
@@ -1041,16 +997,13 @@ exports[`Select examples ModelDrivenFormSelectComponent should render correctly 
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-10"
             v-icon-visa-chevron-down-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </div>
@@ -1093,9 +1046,7 @@ exports[`Select examples ModelDrivenFormSelectComponent should render correctly 
 `;
 
 exports[`Select examples ModelDrivenObjectSelectComponent should render correctly 1`] = `
-<div
-  id="root7"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -1154,16 +1105,13 @@ exports[`Select examples ModelDrivenObjectSelectComponent should render correctl
           class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-11"
           v-icon-visa-chevron-down-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
       </div>
@@ -1192,9 +1140,7 @@ exports[`Select examples ModelDrivenObjectSelectComponent should render correctl
 `;
 
 exports[`Select examples ModelDrivenSelectComponent should render correctly 1`] = `
-<div
-  id="root8"
->
+<div>
   <div
     aria-labelledby="model-input-label"
     class="v-gap-4 v-flex v-flex-col"
@@ -1256,16 +1202,13 @@ exports[`Select examples ModelDrivenSelectComponent should render correctly 1`] 
           class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-12"
           v-icon-visa-chevron-down-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
       </div>
@@ -1279,9 +1222,7 @@ exports[`Select examples ModelDrivenSelectComponent should render correctly 1`] 
 `;
 
 exports[`Select examples ReadOnlySelectComponent should render correctly 1`] = `
-<div
-  id="root9"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -1329,16 +1270,13 @@ exports[`Select examples ReadOnlySelectComponent should render correctly 1`] = `
           class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-13"
           v-icon-visa-chevron-down-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
       </div>
@@ -1348,10 +1286,665 @@ exports[`Select examples ReadOnlySelectComponent should render correctly 1`] = `
 </div>
 `;
 
+exports[`Select examples ReusableSelectDemo should render correctly 1`] = `
+<div>
+  <div
+    class="v-gap-6 v-flex v-flex-col v-mt-24"
+    vflexcol=""
+    vgap="6"
+    vmt="24"
+  >
+    <nova-reusable-select>
+      <div
+        class="v-gap-4 v-flex v-flex-col v-flex-wrap"
+        vflex=""
+        vflexwrap=""
+        vgap="4"
+      >
+        <label
+          class="v-label"
+          for="a-reusable-select-0-select"
+          id="a-reusable-select-0-label"
+          v-label=""
+        >
+           Label  
+        </label>
+        <div
+          class="v-input-container v-surface"
+          style="--v-surface-inline-size: inherit;"
+          v-input-container=""
+        >
+          <select
+            aria-describedby="a-reusable-select-0-message"
+            aria-invalid="false"
+            class="v-input"
+            id="a-reusable-select-0-select"
+            v-select=""
+          >
+            <option
+              hidden=""
+            />
+            <option
+              value="1"
+            >
+               Option 1 
+            </option>
+            <option
+              value="2"
+            >
+               Option 2 
+            </option>
+            <option
+              value="3"
+            >
+               Option 3 
+            </option>
+            <option
+              value="4"
+            >
+               Option 4 
+            </option>
+            <option
+              value="5"
+            >
+               Option 5 
+            </option>
+            
+          </select>
+          <div
+            class="v-input-control"
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              v-icon-visa-chevron-down-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+              />
+            </svg>
+          </div>
+          
+        </div>
+        <span
+          aria-atomic="false"
+          class="v-input-message v-align-items-center v-flex v-flex-row"
+          id="a-reusable-select-0-message"
+          v-input-message=""
+          valignitemscenter=""
+          vflex=""
+        >
+          
+           This is optional text that describes the label in more detail. 
+          
+        </span>
+      </div>
+    </nova-reusable-select>
+  </div>
+  
+  <nova-dynamic-reusable-form
+    class="nova-dynamic-reusable-form"
+  >
+    <div
+      class="v-panel v-ml-auto v-panel-expandable v-panel-responsive"
+      responsive=""
+      style="inline-size: 100%;"
+      v-panel=""
+      vml="auto"
+    >
+      <button
+        aria-controls="responsive-expanded-panel"
+        aria-expanded="true"
+        aria-label="Customize demo panel"
+        buttonsize="large"
+        class="v-button v-panel-toggle v-sm-media-hide v-xs-media-hide v-button-icon v-button-large"
+        type="button"
+        v-button-icon=""
+        v-panel-toggle=""
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon-two-color v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          style="--v-icon-secondary: var(--palette-default-active-accent);"
+          v-icon-two-color=""
+          v-icon-visa-media-fast-forward-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            d="M15 8L8.39355 15L7 13.5244L12.2139 8L7 2.47559L8.39355 1L15 8Z"
+          />
+          <path
+            class="v-icon-primary"
+            d="M9 8L2.39355 15L1 13.5244L6.21387 8L1 2.47559L2.39355 1L9 8Z"
+          />
+        </svg>
+        
+        
+      </button>
+      <div
+        aria-hidden="false"
+        class="v-panel-content v-surface v-flex v-flex-col"
+        id="responsive-expanded-panel"
+        v-panel-content=""
+        vflex=""
+        vflexcol=""
+      >
+        <header
+          class="v-gap-4 v-flex v-flex-row v-justify-content-between"
+          vflex=""
+          vgap="4"
+          vjustifycontentbetween=""
+        >
+          <h3
+            class="v-typography-headline-4"
+            vtypography="headline-4"
+          >
+            Customize demo
+          </h3>
+          <button
+            aria-label="Close customize demo panel"
+            buttoncolor="tertiary"
+            buttonsize="small"
+            class="v-button v-desktop-media-hide v-button-icon v-button-small v-button-subtle v-button-tertiary"
+            subtle=""
+            type="button"
+            v-button-icon=""
+            vmediahide="desktop"
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-close v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              v-icon-visa-close-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
+              />
+              <defs>
+                <clippath>
+                  <rect
+                    height="16"
+                    transform="translate(0 0.000488281)"
+                    width="16"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+          </button>
+        </header>
+        <hr
+          aria-hidden="true"
+          class="v-divider v-divider-decorative v-flex-shrink-0 v-mb-20 v-mx-8"
+          dividertype="decorative"
+          v-divider=""
+          vflexshrink0=""
+          vmb="20"
+          vmx="8"
+        />
+        <div
+          class="v-panel-body v-flex v-flex-grow v-flex-row"
+          v-panel-body=""
+          vflex=""
+          vflexgrow=""
+        >
+          <form
+            class="v-gap-16 v-flex v-flex-col ng-untouched ng-pristine ng-valid"
+            novalidate=""
+            vflex=""
+            vflexcol=""
+            vgap="16"
+          >
+            <div
+              class="reusable-form-field-wrapper v-gap-48 v-flex v-flex-row v-mb-32"
+              vflex=""
+              vgap="48"
+              vmb="32"
+            >
+              <div
+                class="v-gap-16 v-flex v-flex-col"
+                style="inline-size: max-content;"
+                vflex=""
+                vflexcol=""
+                vgap="16"
+              >
+                <h4
+                  class="v-typography-subtitle-2"
+                  vtypography="subtitle-2"
+                >
+                  Boolean properties
+                </h4>
+                <div
+                  class="v-gap-16 v-flex v-flex-col v-flex-wrap"
+                  vflex=""
+                  vflexcol=""
+                  vflexwrap=""
+                  vgap="16"
+                >
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="disabled"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="disabled"
+                          id="a-v-label-1"
+                          v-label=""
+                        >
+                          Disabled
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="inline"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="inline"
+                          id="a-v-label-2"
+                          v-label=""
+                        >
+                          Inline
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="invalid"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="invalid"
+                          id="a-v-label-3"
+                          v-label=""
+                        >
+                          Invalid
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="readonly"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="readonly"
+                          id="a-v-label-4"
+                          v-label=""
+                        >
+                          Readonly
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="required"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="required"
+                          id="a-v-label-5"
+                          v-label=""
+                        >
+                          Required
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+              <div
+                class="v-gap-16 v-flex v-flex-col"
+                style="inline-size: max-content;"
+                vflex=""
+                vflexcol=""
+                vgap="16"
+              >
+                <h4
+                  class="v-typography-subtitle-2"
+                  vtypography="subtitle-2"
+                >
+                  Text/numeric properties
+                </h4>
+                <div
+                  class="v-gap-16 v-flex v-flex-col v-flex-wrap"
+                  vflex=""
+                  vflexcol=""
+                  vflexwrap=""
+                  vgap="16"
+                >
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <label
+                      class="v-label"
+                      for="label"
+                      id="a-v-label-6"
+                      v-label=""
+                    >
+                      Label
+                    </label>
+                    <div
+                      class="v-input-container v-surface"
+                      v-input-container=""
+                    >
+                      <textarea
+                        cdktextareaautosize=""
+                        class="v-input cdk-textarea-autosize ng-untouched ng-pristine ng-valid"
+                        id="label"
+                        rows="1"
+                        style="max-block-size: 200px;"
+                        v-input=""
+                        value="Label"
+                      />
+                      
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <label
+                      class="v-label"
+                      for="message"
+                      id="a-v-label-7"
+                      v-label=""
+                    >
+                      Message
+                    </label>
+                    <div
+                      class="v-input-container v-surface"
+                      v-input-container=""
+                    >
+                      <textarea
+                        cdktextareaautosize=""
+                        class="v-input cdk-textarea-autosize ng-untouched ng-pristine ng-valid"
+                        id="message"
+                        rows="1"
+                        style="max-block-size: 200px;"
+                        v-input=""
+                        value="This is optional text that describes the label in more detail."
+                      />
+                      
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+              
+            </div>
+            <div
+              class="reusable-form-field-wrapper v-gap-48 v-flex v-flex-col v-mb-32"
+              vflex=""
+              vflexcol=""
+              vgap="48"
+              vmb="32"
+            >
+              <div
+                class="v-gap-4 v-flex v-flex-col v-flex-grow"
+                vflex=""
+                vflexcol=""
+                vflexgrow=""
+                vgap="4"
+              >
+                <label
+                  class="v-label"
+                  for="options"
+                  id="a-v-label-8"
+                  v-label=""
+                >
+                  Options (JSON)
+                </label>
+                <div
+                  class="v-input-container v-surface"
+                  v-input-container=""
+                >
+                  <textarea
+                    aria-describedby="options-help"
+                    cdktextareaautosize=""
+                    class="v-input cdk-textarea-autosize ng-untouched ng-pristine ng-valid"
+                    id="options"
+                    rows="1"
+                    style="max-block-size: 200px;"
+                    v-input=""
+                    value="[
+  {
+    "label": "Option 1",
+    "value": 1
+  },
+  {
+    "label": "Option 2",
+    "value": 2
+  },
+  {
+    "label": "Option 3",
+    "value": 3
+  },
+  {
+    "label": "Option 4",
+    "value": 4
+  },
+  {
+    "label": "Option 5",
+    "value": 5
+  }
+]"
+                  />
+                  
+                </div>
+                <span
+                  class="v-input-message"
+                  id="options-help"
+                  v-input-message=""
+                >
+                  Edit the JSON array of options. Each option should have "label" and "value" properties.
+                </span>
+                
+              </div>
+              
+            </div>
+            
+            <div
+              class="v-gap-16 v-flex v-flex-row v-mb-16 v-ml-auto"
+              vflex=""
+              vgap="16"
+              vmb="16"
+              vml="auto"
+            >
+              <button
+                class="v-button"
+                type="submit"
+                v-button=""
+              >
+                Apply
+              </button>
+              <button
+                buttoncolor="secondary"
+                class="v-button v-button-secondary"
+                type="button"
+                v-button=""
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nova-dynamic-reusable-form>
+</div>
+`;
+
 exports[`Select examples TemplateDrivenFormSelectComponent should render correctly 1`] = `
-<div
-  id="root10"
->
+<div>
   <form
     class="ng-untouched ng-pristine ng-valid v-gap-16 v-flex v-flex-col"
     novalidate=""
@@ -1424,16 +2017,13 @@ exports[`Select examples TemplateDrivenFormSelectComponent should render correct
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-14"
             v-icon-visa-chevron-down-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </div>
@@ -1514,16 +2104,13 @@ exports[`Select examples TemplateDrivenFormSelectComponent should render correct
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-15"
             v-icon-visa-chevron-down-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </div>
@@ -1604,16 +2191,13 @@ exports[`Select examples TemplateDrivenFormSelectComponent should render correct
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-16"
             v-icon-visa-chevron-down-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </div>
@@ -1655,9 +2239,7 @@ exports[`Select examples TemplateDrivenFormSelectComponent should render correct
 `;
 
 exports[`Select examples TemplateDrivenObjectSelectComponent should render correctly 1`] = `
-<div
-  id="root11"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -1717,16 +2299,13 @@ exports[`Select examples TemplateDrivenObjectSelectComponent should render corre
           class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-17"
           v-icon-visa-chevron-down-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
       </div>
@@ -1751,9 +2330,7 @@ exports[`Select examples TemplateDrivenObjectSelectComponent should render corre
 `;
 
 exports[`Select examples TemplateDrivenSelectComponent should render correctly 1`] = `
-<div
-  id="root12"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -1811,16 +2388,13 @@ exports[`Select examples TemplateDrivenSelectComponent should render correctly 1
           class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-18"
           v-icon-visa-chevron-down-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
       </div>
@@ -1834,9 +2408,7 @@ exports[`Select examples TemplateDrivenSelectComponent should render correctly 1
 `;
 
 exports[`Select examples WithInlineLabelSelectComponent should render correctly 1`] = `
-<div
-  id="root13"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-row"
     vflex=""
@@ -1897,16 +2469,13 @@ exports[`Select examples WithInlineLabelSelectComponent should render correctly 
           class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-19"
           v-icon-visa-chevron-down-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
       </div>
@@ -1917,9 +2486,7 @@ exports[`Select examples WithInlineLabelSelectComponent should render correctly 
 `;
 
 exports[`Select examples WithInlineMessageSelectComponent should render correctly 1`] = `
-<div
-  id="root14"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col v-flex-grow"
     vflex=""
@@ -1982,16 +2549,13 @@ exports[`Select examples WithInlineMessageSelectComponent should render correctl
           class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-20"
           v-icon-visa-chevron-down-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-            fill-rule="evenodd"
+            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
           />
         </svg>
       </div>

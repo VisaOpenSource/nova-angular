@@ -1,0 +1,41 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div vFlex vFlexCol vGap="10" vP="8" style="min-inline-size: max-content">
+  <div vFlex vFlexCol vGap="4">
+    <label v-label [for]="id" [id]="id + '-label'">Show columns</label>
+    <div
+      v-listbox-container
+      [id]="id"
+      [attr.aria-labelledby]="id + '-label' + (hiddenColumnsLength() > 0 ? (' ' + id + '-message') : '')"
+    >
+      <ul v-listbox containHeight multiselect [(ngModel)]="selectedColumnsNonSignal" [id]="id + '-listbox'">
+        @for(colItem of columnData(); track colItem.name; let i = $index) {
+        <!-- **identifying and compact columns are not eligible to be hidden** -->
+        @if (!colItem.identifier && !colItem.compact) {
+        <li v-listbox-item [id]="'in-table-col-management-' + i" [value]="colItem.name">{{ colItem.name }}</li>
+        } }
+      </ul>
+    </div>
+    @if (hiddenColumnsLength() > 0) {
+    <div v-input-message [id]="id + '-message'">{{ hiddenColumnsLength() }} column(s) hidden</div>
+    }
+  </div>
+  <div vFlex vGap="16" vJustifyContentBetween>
+    <button v-button (click)="toggleAllColVisibility.emit(selectedColumnsNonSignal)">Apply</button>
+    <button v-button buttonColor="tertiary" (click)="resetTable.emit()">Reset table</button>
+  </div>
+</div>

@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`IconToggleComponent should allow rotated input 1`] = `
-<div
-  id="root2"
->
+<div>
   <v-icon-visa-toggle
     class="v-icon v-icon-tiny"
     rotated=""
@@ -21,9 +19,7 @@ exports[`IconToggleComponent should allow rotated input 1`] = `
 `;
 
 exports[`IconToggleComponent should allow tagSuffix 1`] = `
-<div
-  id="root6"
->
+<div>
   <v-icon-visa-toggle
     class="v-icon v-icon-tiny v-tab v-tab-suffix"
     disclosuretab=""

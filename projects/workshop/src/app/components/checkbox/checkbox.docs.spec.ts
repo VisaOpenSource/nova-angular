@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,8 @@ import { PanelGroupWithErrorCheckboxComponent } from './panel-group-with-error/p
 import { PanelGroupCheckboxComponent } from './panel-group/panel-group.docs';
 import { PanelWithoutDescriptionCheckboxComponent } from './panel-without-description/panel-without-description.docs';
 import { PanelCheckboxComponent } from './panel/panel.docs';
+import { ReusableCheckboxGroupDemo } from './reusable-group/reusable-group.docs';
+import { ReusableCheckboxDemo } from './reusable/reusable.docs';
 import { TemplateDrivenFormCheckboxComponent } from './template-driven-form/template-driven-form.docs';
 import { TemplateDrivenCheckboxComponent } from './template-driven/template-driven.docs';
 import { WithDescriptionCheckboxComponent } from './with-description/with-description.docs';
@@ -64,7 +66,9 @@ const examples = {
   TemplateDrivenCheckboxComponent,
   WithDescriptionCheckboxComponent,
   WithLabelCheckboxComponent,
-  WithoutVisibleLabelCheckboxComponent
+  WithoutVisibleLabelCheckboxComponent,
+  ReusableCheckboxDemo,
+  ReusableCheckboxGroupDemo
 };
 
 const keys = Object.keys(examples);

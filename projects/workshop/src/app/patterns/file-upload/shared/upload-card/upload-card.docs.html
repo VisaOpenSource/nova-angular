@@ -1,0 +1,73 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div
+  vSurface
+  vFlex
+  vJustifyContentBetween
+  vPX="15"
+  vPY="7"
+  [style.border]="
+    file().error
+      ? '1px solid var(--palette-messaging-graphics-negative)'
+      : '1px solid var(--v-surface-border-color)'
+  "
+  [style.word-break]="'break-all'"
+  [style.border-radius]="'var(--theme-border-radius)'"
+>
+  <div vFlex vAlignItemsCenter vGap="8">
+    <!-- File type icon determined by file extension -->
+    @switch (fileIcon()) { @case ("visa-document-pdf-low") {
+    <svg v-icon-visa-document-pdf-low></svg>
+    } @case ("visa-document-png-low") {
+    <svg v-icon-visa-document-png-low></svg>
+    } @case ("visa-document-jpg-low") {
+    <svg v-icon-visa-document-jpg-low></svg>
+    } @default {
+    <svg v-icon-visa-document-low></svg>
+    } }
+    <div>
+      <h5 vTypography="label" [id]="fileNameId()" [attr.aria-describedby]="file().error ? errorId() : null">
+        {{ file().file.name }}
+      </h5>
+      <p vTypography="label-small" vTypographyColor="subtle" [id]="fileSizeId()">{{ fileSize() }}</p>
+      @if (file().error) {
+      <span vSR [id]="errorId()"> {{ errorMessage() }} </span>
+      }
+    </div>
+  </div>
+  <!-- Action buttons rendered from parent template -->
+  <div vFlex vAlignItemsCenter vGap="8">
+    <ng-container *ngTemplateOutlet="actionsTemplate(); context: { errorId: errorId() }"></ng-container>
+  </div>
+</div>
+@if (file().error) {
+<span
+  vFlex
+  vGap="4"
+  [style.line-height]="'16px'"
+  [style.color]="'var(--palette-messaging-text-negative)'"
+  vTypography="label"
+  aria-hidden="true"
+>
+  <svg
+    v-icon-visa-error-tiny
+    [style.--v-icon-primary]="'var(--palette-messaging-text-negative)'"
+    [style.--v-icon-secondary]="'var(--palette-messaging-text-negative)'"
+  ></svg>
+  {{ errorMessage() }}
+</span>
+}

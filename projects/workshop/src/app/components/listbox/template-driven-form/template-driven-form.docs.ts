@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  *
  **/
-import { ChangeDetectionStrategy, Component, viewChildren, signal, viewChild, computed } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, signal, viewChildren } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ListboxDirective, NovaLibModule } from '@visa/nova-angular';
 import { VisaErrorTiny } from '@visa/nova-icons-angular';
@@ -123,7 +123,7 @@ export class TemplateDrivenFormListboxComponent {
   readonly formValues = signal<{ singleselect?: string | null; multiselect?: string[] | null }>({});
 
   // For demo: display helpers as computed signals
-  readonly singleSelectDisplay = computed(() => this.formValues().singleselect ?? 'none');
+  readonly singleSelectDisplay = computed(() => this.formValues().singleselect ?? '');
 
-  readonly multiSelectDisplay = computed(() => this.formValues().multiselect ?? 'none');
+  readonly multiSelectDisplay = computed(() => this.formValues().multiselect ?? '');
 }

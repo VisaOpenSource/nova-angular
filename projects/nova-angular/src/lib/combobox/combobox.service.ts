@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
  *
  **/
 import { Injectable } from '@angular/core';
+import { ListboxItemComponent } from '../listbox-item/listbox-item.component';
 import { ComboboxFilterType } from './combobox.constants';
 import { ComboboxDirective } from './combobox.directive';
-import { ListboxItemComponent } from '../listbox-item/listbox-item.component';
 
 /**
  * Service containing optional functions for the ComboboxDirective. <br />
@@ -88,7 +88,7 @@ export class ComboboxService {
     const listData = fullList;
     let filteredData: T[] = fullList;
 
-    if (!combobox) return;
+    if (!combobox || !listData || !filteredData) return;
     // filter list with defaultValue
     if (combobox.value()) {
       // only filter single select combobox on initial render
@@ -153,7 +153,7 @@ export class ComboboxService {
       // reset multiselect keyboard traversal altogether
       // combobox.activeIndex = null;
       combobox.listbox()?.highlightedItem.set(null);
-    } else if (combobox.prevActiveItem && filteredListItems.includes(combobox.prevActiveItem)) {
+    } else if (combobox.prevActiveItem && filteredListItems?.includes(combobox.prevActiveItem)) {
       // combobox.activeIndex = filteredListItems.findIndex((item) => item === combobox.prevActiveItem);
     } else {
       // combobox.activeIndex = null;
@@ -170,18 +170,6 @@ export class ComboboxService {
    */
   public autoSelectItem(combobox: ComboboxDirective): void {
     this.selectHighlightedOnMenuClose(combobox);
-
-    let prevInputValue: string = combobox.input()?.value() ?? '';
-    combobox.listenerService.subscriptions.push(
-      combobox.input()?.inputEvent.subscribe(() => {
-        const inputValue = combobox.input()?.value() ?? '';
-
-        // compare lengths. If new input length is shorter, backspace key was pressed and will handle highlightedItem
-        if (inputValue && inputValue.length >= prevInputValue?.length) {
-          combobox.listbox()?.highlightedItem.set(combobox.listbox()?.listItems()[0] ?? null);
-          prevInputValue = inputValue;
-        }
-      })
-    );
+    combobox.autoSelect.set(true);
   }
 }

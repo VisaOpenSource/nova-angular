@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,15 +19,10 @@ import {
   ApplicationConfig,
   importProvidersFrom,
   provideBrowserGlobalErrorListeners,
-  provideZonelessChangeDetection,
+  provideZonelessChangeDetection
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
-import {
-  CLIPBOARD_OPTIONS,
-  ClipboardButtonComponent,
-  provideMarkdown,
-} from 'ngx-markdown';
+import { CLIPBOARD_OPTIONS, ClipboardButtonComponent, provideMarkdown } from 'ngx-markdown';
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
@@ -39,18 +34,17 @@ export const appConfig: ApplicationConfig = {
       clipboardOptions: {
         provide: CLIPBOARD_OPTIONS,
         useValue: {
-          buttonComponent: ClipboardButtonComponent,
-        },
+          buttonComponent: ClipboardButtonComponent
+        }
       },
-      loader: HttpClient,
+      loader: HttpClient
     }),
-    importProvidersFrom(NgxGoogleAnalyticsModule.forRoot('')),
     importProvidersFrom(
       RouterModule.forRoot(routes, {
         scrollPositionRestoration: 'enabled',
         initialNavigation: 'enabledBlocking',
-        anchorScrolling: 'enabled',
-      }),
-    ),
-  ],
+        anchorScrolling: 'enabled'
+      })
+    )
+  ]
 };

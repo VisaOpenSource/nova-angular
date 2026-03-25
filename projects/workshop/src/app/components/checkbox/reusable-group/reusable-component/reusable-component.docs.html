@@ -1,0 +1,77 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+@if(root()){
+<fieldset [attr.aria-labelledby]="fieldsetLabelledBy()">
+  <legend v-label vTypography="label-large" [id]="id() + '-legend'">
+    {{label()+ (required() ? ' (required)' : '')}}
+  </legend>
+
+  @if(description()){
+  <div v-input-message [id]="id() + '-description'">{{description()}}</div>
+  }
+
+  <ng-template [ngTemplateOutlet]="checkboxContent" />
+
+  <span
+    v-input-message
+    [id]="id() + '-message'"
+    [attr.aria-atomic]="invalid() || undefined"
+    [attr.aria-live]="invalid() ? 'assertive' : undefined"
+  >
+    @if(invalid()){
+    <svg v-icon-visa-error-tiny />
+    } @if(message()){ {{ message() }} }
+  </span>
+</fieldset>
+} @else {
+<ng-template [ngTemplateOutlet]="checkboxContent" />
+}
+
+<ng-template #checkboxContent>
+  <ul vFlex [vFlexCol]="!horizontal()" [vML]="root() ? undefined : '32'">
+    @for(checkbox of checkboxes(); track id() + '-checkbox-' + i; let i = $index){
+    <!-- determine if this group has a child group -->
+    @let hasChildren = checkbox?.children?.length;
+    <!-- determine if all child checkboxes are checked -->
+    @let everythingChecked = getChecked(checkbox) ;
+    <!-- determine if the checkbox should be indeterminate -->
+    @let indeterminate = getIndeterminate(checkbox, everythingChecked) ;
+    <li vFlex vFlexCol>
+      <nova-reusable-checkbox
+        (checkedChange)="handleCheckChange($event, i)"
+        [checked]="(!indeterminate && checkbox.checked) || (hasChildren ? everythingChecked : false)"
+        [disabled]="disabled() || checkbox.disabled"
+        [indeterminate]="hasChildren ? indeterminate : null"
+        [invalid]="invalid()"
+        [label]="checkbox.label"
+        [panel]="panel()"
+      />
+      @if(hasChildren){
+      <nova-reusable-checkbox-group
+        [id]="id() + '-checkbox-' + i + '-group'"
+        (checkboxesChange)="handleGroupChange($event, i)"
+        [checkboxes]="checkbox.children!"
+        [disabled]="disabled() || checkbox.disabled"
+        [invalid]="invalid()"
+        root="false"
+        [panel]="panel()"
+      />
+      }
+    </li>
+    }
+  </ul>
+</ng-template>

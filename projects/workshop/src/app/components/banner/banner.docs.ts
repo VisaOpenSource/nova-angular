@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -45,6 +45,7 @@ import { WarningTitleBannerComponent } from './nova-warning-banner-title/nova-wa
 import { WarningBannerWithActionButtonBannerComponent } from './nova-warning-banner-with-action-button/nova-warning-banner-with-action-button.docs';
 import { WarningBannerWithLinkBannerComponent } from './nova-warning-banner-with-link/nova-warning-banner-with-link.docs';
 import { WarningBannerBannerComponent } from './nova-warning-banner/nova-warning-banner.docs';
+import { ReusableBannerDemo } from './reusable/reusable.docs';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -77,7 +78,8 @@ import { WarningBannerBannerComponent } from './nova-warning-banner/nova-warning
     EmptyWarningBannerComponent,
     EmptyErrorBannerComponent,
     GlobalBannerExampleComponent,
-    VisaInformationLow
+    VisaInformationLow,
+    ReusableBannerDemo
   ],
   standalone: true,
   selector: 'vds-docs-nova-banner',
@@ -95,13 +97,5 @@ export class BannerDocsComponent {
       { name: 'MessageIconDirective' },
       { name: 'MessageType', type: APITypes.CONSTANT }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

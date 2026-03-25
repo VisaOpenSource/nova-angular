@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,9 +35,7 @@ import {
 } from '@angular/core';
 import { CheckboxControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { IdGenerator } from '../id-generator/id-generator.service';
-import { ToggleDirective } from '../toggle/toggle.directive';
 import { ListenerService } from '../listener-service/listener.service';
-import { defaultEffectParam } from '../nova-lib.constants';
 
 const CHECKBOX_VALUE_ACCESSOR = {
   provide: NG_VALUE_ACCESSOR,
@@ -94,7 +92,7 @@ export class CheckboxDirective extends CheckboxControlValueAccessor {
   private readonly checkedEffect = effect(() => {
     const checked = this.checked();
     this.setProperty('checked', checked ? checked.toString() : null);
-  }, defaultEffectParam);
+  });
 
   /**
    * Sets checkbox to disabled when true
@@ -138,7 +136,7 @@ export class CheckboxDirective extends CheckboxControlValueAccessor {
   private readonly indeterminateEffect = effect(() => {
     const indeterminate = this.indeterminate();
     this.setProperty('indeterminate', indeterminate ? true : null);
-  }, defaultEffectParam);
+  });
 
   /**
    * Marks checkbox as required when true.

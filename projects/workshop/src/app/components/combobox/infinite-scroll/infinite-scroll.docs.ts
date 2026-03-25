@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,6 +16,7 @@
  **/
 import { CommonModule } from '@angular/common';
 import {
+  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
   inject,
@@ -26,7 +27,7 @@ import {
   viewChild
 } from '@angular/core';
 import { ComboboxDirective, ComboboxService, NovaLibModule } from '@visa/nova-angular';
-import { VisaChevronDownTiny, VisaChevronUpTiny, VisaArrowUpTiny } from '@visa/nova-icons-angular';
+import { VisaArrowUpTiny, VisaChevronDownTiny, VisaChevronUpTiny } from '@visa/nova-icons-angular';
 import { MockDataService } from '../../../shared/services/mock-data.service';
 
 /** #custom **/
@@ -38,7 +39,7 @@ import { MockDataService } from '../../../shared/services/mock-data.service';
   standalone: true,
   imports: [CommonModule, NovaLibModule, VisaChevronDownTiny, VisaChevronUpTiny, VisaArrowUpTiny]
 })
-export class InfiniteScrollComboboxComponent implements OnInit {
+export class InfiniteScrollComboboxComponent implements OnInit, AfterViewInit {
   readonly combobox = viewChild.required(ComboboxDirective);
   readonly comboboxService = inject(ComboboxService, { host: true, optional: true });
   readonly mockDataService = inject(MockDataService);
@@ -133,7 +134,7 @@ export class InfiniteScrollComboboxComponent implements OnInit {
   }
 
   prependItems() {
-    let newFirstIndex = Math.max(0, this.firstItemIndex() - this.itemChunkSize);
+    const newFirstIndex = Math.max(0, this.firstItemIndex() - this.itemChunkSize);
 
     // if we are at the beginning of the list, return
     if (newFirstIndex === this.firstItemIndex()) {

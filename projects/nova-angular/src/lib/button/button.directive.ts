@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -126,7 +126,7 @@ export class ButtonDirective {
     () =>
       this.ariaCurrentInput() ?? // aria-current is used for navigational or nested tabs
       ((this.tabItem?.tabList?.tabListParent || this.tabItem?.tabList?.navParent) && !this.noTabRole()
-        ? this.tabItem?.active()
+        ? (this.tabItem?.active() ? 'page' : null)
         : null) ??
       null
   );
@@ -199,11 +199,13 @@ export class ButtonDirective {
     alias: 'aria-selected',
     transform: booleanAttribute
   });
-  readonly ariaSelected: Signal<boolean | string | null> = computed(
+    readonly ariaSelected: Signal<boolean | string | null> = computed(
     () =>
       this.ariaSelectedInput() ??
       // aria-selected is used for tabs
-      (!this.tabItem?.tabList?.tabListParent && !this.noTabRole() ? this.tabItem?.active() : null) ??
+      (!this.tabItem?.tabList?.tabListParent && !this.tabItem?.tabList?.navParent && !this.noTabRole()
+        ? this.tabItem?.active()
+        : null) ??
       null
   );
 

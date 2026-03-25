@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,6 +30,7 @@ import { DefaultVerticalNavComponent } from './default/default.docs';
 import { LinksOnlyVerticalNavComponent } from './links-only/links-only.docs';
 import { NestedWithSectionTitleVerticalNavComponent } from './nested-with-section-titles/nested-with-section-titles.docs';
 import { NestedVerticalNavComponent } from './nested/nested.docs';
+import { VerticalWithActivePropNavComponent } from './with-active-prop/with-active-prop.docs';
 import { WithIconsVerticalNavComponent } from './with-icons/with-icons.docs';
 import { WithSectionTitleVerticalNavComponent } from './with-section-titles/with-section-titles.docs';
 
@@ -50,6 +51,7 @@ import { WithSectionTitleVerticalNavComponent } from './with-section-titles/with
     NestedWithSectionTitleVerticalNavComponent,
     VerticalAlternateWithActiveElementNavComponent,
     VerticalWithActiveElementNavComponent,
+    VerticalWithActivePropNavComponent,
     WithIconsVerticalNavComponent,
     WithSectionTitleVerticalNavComponent
   ],
@@ -82,14 +84,6 @@ export class VerticalNavDocsComponent {
       { name: 'NovaLibService', type: 'service-source' },
       { name: 'IconToggle', type: 'constant' }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 
   htmlLayout = `<div class="app-container">

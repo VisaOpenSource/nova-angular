@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,6 +18,10 @@ import { ChangeDetectionStrategy, Component, output } from '@angular/core';
 import { NovaLibModule } from '@visa/nova-angular';
 import { VisaSuccessHigh } from '@visa/nova-icons-angular';
 
+/**
+ * Displays a success confirmation page after wizard submission.
+ * Shows a success icon and message with an option to start over.
+ */
 /** #patterns #isShared **/
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -27,5 +31,6 @@ import { VisaSuccessHigh } from '@visa/nova-icons-angular';
   imports: [NovaLibModule, VisaSuccessHigh]
 })
 export class SharedWizardSuccessPageComponent {
+  /** Emits when the user chooses to reset and start a new wizard flow */
   readonly reset = output<void>();
 }

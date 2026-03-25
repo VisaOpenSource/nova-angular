@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,16 @@
  * limitations under the License.
  *
  **/
-import { computed, Directive, inject, input, InputSignal, Signal, signal, WritableSignal } from '@angular/core';
+import {
+  computed,
+  Directive,
+  inject,
+  input,
+  InputSignal,
+  Signal,
+  signal,
+  WritableSignal,
+} from '@angular/core';
 import { IconToggle } from '../icon/icon.constants';
 import { AccordionDetailsDirective } from '../accordion-item/accordion-item.directive';
 import { FloatingUIContainer } from '../floating-ui-container/floating-ui-container.directive';
@@ -25,23 +34,37 @@ import { FloatingUIContainer } from '../floating-ui-container/floating-ui-contai
  */
 @Directive({
   host: {
-    '[class.v-accordion-toggle-icon]': '!!accordion'
+    '[class.v-accordion-toggle-icon]': '!!accordion',
   },
   selector: '[v-icon-toggle]',
-  standalone: true
+  standalone: true,
 })
 export class IconToggleDirective {
-  protected readonly accordion: AccordionDetailsDirective | null = inject(AccordionDetailsDirective, {
-    optional: true,
-    host: true
-  });
-  private readonly floatingContainer: FloatingUIContainer | null = inject(FloatingUIContainer, {
-    optional: true,
-    host: true
-  });
-  readonly rotatedInternal: WritableSignal<boolean | null> = signal<boolean | null>(null); // used in floating-ui-container
-  public readonly expanded: Signal<boolean | string | null> = computed<boolean | string | null>(
-    () => this.rotatedInternal() ?? this.accordion?.expanded() ?? this.floatingContainer?.isShown() ?? null
+  protected readonly accordion: AccordionDetailsDirective | null = inject(
+    AccordionDetailsDirective,
+    {
+      optional: true,
+      host: true,
+    },
+  );
+  private readonly floatingContainer: FloatingUIContainer | null = inject(
+    FloatingUIContainer,
+    {
+      optional: true,
+      host: true,
+    },
+  );
+  readonly rotatedInternal: WritableSignal<boolean | null> = signal<
+    boolean | null
+  >(null); // used in floating-ui-container
+  public readonly expanded: Signal<boolean | string | null> = computed<
+    boolean | string | null
+  >(
+    () =>
+      this.rotatedInternal() ??
+      this.accordion?.expanded() ??
+      this.floatingContainer?.isShown() ??
+      null,
   );
 
   /**
@@ -51,11 +74,17 @@ export class IconToggleDirective {
    * @default 'chevron-right' / IconToggle.COLLAPSED <br>
    * @builtin true
    */
-  readonly collapsedIconInput: InputSignal<string | null> = input<IconToggle | null | string>(null, {
-    alias: 'collapsedIcon'
+  readonly collapsedIconInput: InputSignal<string | null> = input<
+    IconToggle | null | string
+  >(null, {
+    alias: 'collapsedIcon',
   });
   public readonly collapsedIcon: Signal<string> = computed(
-    () => this.collapsedIconInput() ?? (!!this.accordion ? IconToggle.ACCORDION_COLLAPSED : IconToggle.COLLAPSED)
+    () =>
+      this.collapsedIconInput() ??
+      (!!this.accordion
+        ? IconToggle.ACCORDION_COLLAPSED
+        : IconToggle.COLLAPSED),
   );
 
   /**
@@ -65,10 +94,13 @@ export class IconToggleDirective {
    * @default 'chevron-down' / IconToggle.EXPANDED <br>
    * @builtin true
    */
-  readonly expandedIconInput: InputSignal<IconToggle | null> = input<IconToggle | null>(null, {
-    alias: 'expandedIcon'
-  });
+  readonly expandedIconInput: InputSignal<IconToggle | null> =
+    input<IconToggle | null>(null, {
+      alias: 'expandedIcon',
+    });
   public readonly expandedIcon: Signal<string> = computed(
-    () => this.expandedIconInput() ?? (!!this.accordion ? IconToggle.ACCORDION_EXPANDED : IconToggle.EXPANDED)
+    () =>
+      this.expandedIconInput() ??
+      (!!this.accordion ? IconToggle.ACCORDION_EXPANDED : IconToggle.EXPANDED),
   );
 }

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,6 +24,7 @@ import { WorkshopService } from '../../shared/services/workshop.service';
 import { NovaConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.docs';
 import { NovaDefaultDialogComponent } from './default/default.docs';
 import { NovaErrorDialogComponent } from './error/error.docs';
+import { ReusableDialogDemo } from './reusable/reusable.docs';
 import { NovaSuccessDialogComponent } from './success/success.docs';
 import { NovaTouringTipsDialogComponent } from './touring-tips/touring-tips.docs';
 import { NovaWarningDialogComponent } from './warning/warning.docs';
@@ -41,7 +42,8 @@ import { NovaWithoutCloseButtonDialogComponent } from './without-close-button/wi
     NovaErrorDialogComponent,
     NovaWarningDialogComponent,
     NovaTouringTipsDialogComponent,
-    NovaWithoutCloseButtonDialogComponent
+    NovaWithoutCloseButtonDialogComponent,
+    ReusableDialogDemo
   ],
   standalone: true,
   selector: 'nova-docs-dialog',
@@ -63,13 +65,5 @@ export class DialogDocsComponent {
       { name: 'MessageType', type: APITypes.CONSTANT },
       { name: 'IdGenerator', type: APITypes.SERVICESOURCE }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

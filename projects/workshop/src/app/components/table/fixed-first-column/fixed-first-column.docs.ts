@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  *
  **/
-import { CommonModule, KeyValue } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { NovaLibModule } from '@visa/nova-angular';
 
@@ -146,7 +146,7 @@ export class FixedFirstColumnComponent {
     }
   ]);
 
-  originalOrder = (a: KeyValue<number, string>, b: KeyValue<number, string>): number => {
+  originalOrder = (): number => {
     return 0;
   };
 

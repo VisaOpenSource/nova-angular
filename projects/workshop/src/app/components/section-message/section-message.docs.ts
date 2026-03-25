@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -50,6 +50,7 @@ import { NovaTitleSuccessSectionMessageComponent } from './nova-title-success-se
 import { NovaTitleWarningSectionMessageComponent } from './nova-title-warning-section-message/nova-title-warning-section-message.docs';
 import { NovaWarningSectionMessageWithActionButtonSectionMessageComponent } from './nova-warning-section-message-with-action-button/nova-warning-section-message-with-action-button.docs';
 import { NovaWarningSectionMessageWithLinkSectionMessageComponent } from './nova-warning-section-message-with-link/nova-warning-section-message-with-link.docs';
+import { ReusableSectionMessageDemo } from './reusable/reusable.docs';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -85,7 +86,8 @@ import { NovaWarningSectionMessageWithLinkSectionMessageComponent } from './nova
     NovaTitleSubtleSectionMessageComponent,
     NovaSubtleSectionMessageWithLinkSectionMessageComponent,
     NovaPersistentSubtleSectionMessageSectionMessageComponent,
-    NovaSubtleSectionMessageWithActionButtonSectionMessageComponent
+    NovaSubtleSectionMessageWithActionButtonSectionMessageComponent,
+    ReusableSectionMessageDemo
   ],
   standalone: true,
   selector: 'vds-docs-nova-section-message',
@@ -102,13 +104,5 @@ export class SectionMessageDocsComponent {
       { name: 'MessageIconDirective' },
       { name: 'MessageType', type: APITypes.CONSTANT }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

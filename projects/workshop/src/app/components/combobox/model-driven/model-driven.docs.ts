@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,8 @@
  * limitations under the License.
  *
  **/
-import { ChangeDetectionStrategy, Component, signal, computed } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { NovaLibModule } from '@visa/nova-angular';
 import { VisaChevronDownTiny, VisaChevronUpTiny } from '@visa/nova-icons-angular';
@@ -30,22 +31,17 @@ import { VisaChevronDownTiny, VisaChevronUpTiny } from '@visa/nova-icons-angular
 export class ModelDrivenComboboxComponent {
   comboboxFormControl = new FormControl({ label: 'Option A', value: 'option-a' });
 
-  // Signal to track form control value
-  formValue = signal<{ label: string; value: string } | null>({ label: 'Option A', value: 'option-a' });
+  // Signal to track form control value using toSignal
+  formValue = toSignal(this.comboboxFormControl.valueChanges, {
+    initialValue: { label: 'Option A', value: 'option-a' }
+  });
 
   // Computed signals for formatted display values
   labelDisplay = computed(() => {
-    return this.formValue()?.label || 'none';
+    return this.formValue()?.label || '';
   });
 
   valueDisplay = computed(() => {
-    return this.formValue()?.value || 'none';
+    return this.formValue()?.value || '';
   });
-
-  constructor() {
-    // Subscribe to form control value changes
-    this.comboboxFormControl.valueChanges.subscribe((value) => {
-      this.formValue.set(value || null);
-    });
-  }
 }

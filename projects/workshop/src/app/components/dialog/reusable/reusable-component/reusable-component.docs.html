@@ -1,0 +1,64 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<dialog (keydown.escape)="handleEscapeKey($event)" v-dialog v-message [messageType]="messageType()">
+  <div cdkTrapFocus cdkTrapFocusAutoCapture vFlex vFlexRow>
+    <div v-message-content vPB="2" vPR="2">
+      @if(title() || showIcon()){
+      <h2 v-dialog-header vFlex vAlignItemsCenter vJustifyContentStart vGap="6">
+        @if(showIcon()) { @if(messageType() === 'error') {
+        <svg v-message-icon v-icon-visa-error-low aria-hidden="false" aria-label="Error" role="img"></svg>
+        } @else if(messageType() === 'warning') {
+        <svg v-message-icon v-icon-visa-warning-low aria-hidden="false" aria-label="Warning" role="img"></svg>
+        } @else if(messageType() === 'success') {
+        <svg v-message-icon v-icon-visa-success-low aria-hidden="false" aria-label="Success" role="img"></svg>
+        } @else if(messageType() === 'information') {
+        <svg v-message-icon v-icon-visa-information-low aria-hidden="false" aria-label="Information" role="img"></svg>
+        } }
+        <span>{{title()}}</span>
+        <ng-content select="[title]" />
+      </h2>
+      } @if(description()){
+      <p v-dialog-text>{{description()}}</p>
+      }
+      <ng-content />
+      <div vFlex vFlexWrap vGap="8" vPT="16" vAlignItemsCenter vJustifyContentStart>
+        @if(primaryButtonLabel()){
+        <button (click)="primaryButtonClick.emit($event)" v-button buttonColor="primary" autofocus>
+          {{primaryButtonLabel()}}</button
+        >} @if(secondaryButtonLabel()){
+        <button (click)="secondaryButtonClick.emit($event)" v-button buttonColor="secondary">
+          {{secondaryButtonLabel()}}</button
+        >}
+        <ng-content select="[actions]" />
+      </div>
+    </div>
+    @if(dismissible()){
+    <button
+      (click)="close()"
+      v-button-icon
+      buttonColor="tertiary"
+      buttonSize="small"
+      subtle
+      vMT="-20"
+      vML="-12"
+      vMR="-18"
+      aria-label="Close"
+    >
+      <svg v-icon-visa-close-tiny focusable="false" /></button
+    >}
+  </div>
+</dialog>

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,6 +26,8 @@ export const accordionRoutes: Routes = [
 	{ loadComponent: () => import('./multi-select-expanded/multi-select-expanded.docs').then(m => m.MultiSelectExpandedAccordionComponent), path: 'multi-select-expanded', title: 'Multi select expanded accordion component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./multi-select-subtle/multi-select-subtle.docs').then(m => m.MultiSelectSubtleAccordionComponent), path: 'multi-select-subtle', title: 'Multi select subtle accordion component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./multi-select-with-disabled-accordion/multi-select-with-disabled-accordion.docs').then(m => m.MultiSelectWithDisabledAccordionComponent), path: 'multi-select-with-disabled-accordion', title: 'Multi select with disabled accordion accordion component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable-component/reusable-component.docs').then(m => m.ReusableAccordion), path: 'reusable-component', title: 'Reusable component accordion component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable.docs').then(m => m.ReusableAccordionDemo), path: 'reusable', title: 'Reusable accordion component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./separate-toggle/separate-toggle.docs').then(m => m.SeparateToggleAccordionComponent), path: 'separate-toggle', title: 'Separate toggle accordion component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./single-select-default/single-select-default.docs').then(m => m.SingleSelectDefaultAccordionComponent), path: 'single-select-default', title: 'Single select default accordion component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./single-select-expanded/single-select-expanded.docs').then(m => m.SingleSelectExpandedAccordionComponent), path: 'single-select-expanded', title: 'Single select expanded accordion component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },

@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`IconComponent should allow isBadgeEllipse icon 1`] = `
-<div
-  id="root8"
->
+<div>
   <svg
     class="v-icon v-badge-ellipse v-icon-tiny v-icon-visa"
     focusable="false"
@@ -29,9 +27,7 @@ exports[`IconComponent should allow isBadgeEllipse icon 1`] = `
 `;
 
 exports[`IconComponent should render the defaults correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <svg
     class="v-icon v-icon-tiny v-icon-visa"
     focusable="false"

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,7 +23,8 @@ import { computed, Signal, signal, WritableSignal } from '@angular/core';
  * @param {number} length
  * @returns {number[]}
  */
-export const generateArray = (from: number, length: number): number[] => Array.from({ length }, (_, i) => i + from);
+export const generateArray = (from: number, length: number): number[] =>
+  Array.from({ length }, (_, i) => i + from);
 
 export type PaginationControlOptions = {
   /** Max block length for all blocks, this gets overwritten by `startBlockMaxLength`, `middleBlockMaxLength`, `endBlockMaxLength` */
@@ -57,35 +58,38 @@ const defaultOptions = {
   defaultTotalPages: 1,
   delimiter: -1,
   maxPageNumber: null,
-  startPage: 1
+  startPage: 1,
 } satisfies Partial<PaginationControlOptions>;
 
 /**
  * PaginationControl is a signals-based approach to handling and controlling pagination components.
  * It’s customizable, reusable, and allows you to bring your own signal for `selectedPage`.
- * @docs {@link https://design.visa.com/components/pagination/ | See docs}
+ * @docs {@link https://design.visa.com/components/pagination/?code_library=angular | See docs}
  */
 export class PaginationControl {
   constructor(options?: Partial<PaginationControlOptions>) {
-    const blockMaxLength = options?.blockMaxLength ?? defaultOptions.blockMaxLength;
+    const blockMaxLength =
+      options?.blockMaxLength ?? defaultOptions.blockMaxLength;
     // If we have a blockMaxLength, we should set it for all block max lengths, then we override it with all the options provided by the user
     this.options = {
       ...defaultOptions,
       endBlockMaxLength: blockMaxLength,
       middleBlockMaxLength: blockMaxLength,
       startBlockMaxLength: blockMaxLength,
-      ...options
+      ...options,
     } as PaginationControlOptions;
     this.totalPages.set(this.options.defaultTotalPages);
     const defaultStartPage = Math.min(
       Math.max(this.options.defaultSelected, this.options.startPage),
-      this.options.defaultTotalPages
+      this.options.defaultTotalPages,
     );
     this.selectedPage = this.options.selectedPage ?? signal(defaultStartPage);
     this.selectedPage.set(defaultStartPage);
+    this.compact.set(this.options.compact);
   }
 
   /// STATE:
+  public readonly compact = signal<boolean>(false);
 
   private readonly options: PaginationControlOptions;
 
@@ -98,79 +102,114 @@ export class PaginationControl {
   /** Can paginate or just show all pages */
   private readonly canPaginate: Signal<boolean> = computed(
     () =>
-      this.totalPages() > Math.max(this.options.endBlockMaxLength, this.options.startBlockMaxLength) + 2 && // 1 for end or start number + 1 for single separator show while in start/end blocks
-      this.totalPages() > this.options.middleBlockMaxLength + 4 // 2 for start and end numbers + 2 for separators shown while in middle block
+      this.totalPages() >
+        Math.max(
+          this.options.endBlockMaxLength,
+          this.options.startBlockMaxLength,
+        ) +
+          2 && // 1 for end or start number + 1 for single separator show while in start/end blocks
+      this.totalPages() > this.options.middleBlockMaxLength + 4, // 2 for start and end numbers + 2 for separators shown while in middle block
   );
 
   /** Pages to show at the end */
   private readonly endBlock: Signal<number[]> = computed(() =>
     this.isInEndBlock()
-      ? generateArray(this.lastPage() - this.options.endBlockMaxLength + 1, this.options.endBlockMaxLength)
-      : [this.lastPage()]
+      ? generateArray(
+          this.lastPage() - this.options.endBlockMaxLength + 1,
+          this.options.endBlockMaxLength,
+        )
+      : [this.lastPage()],
   );
 
   /** Ideal last page without maxPageNumber interfering */
-  private readonly idealLastPage: Signal<number> = computed(() => this.totalPages() + this.options.startPage - 1);
+  private readonly idealLastPage: Signal<number> = computed(
+    () => this.totalPages() + this.options.startPage - 1,
+  );
 
   /** Is first element selected */
-  public readonly isFirstPage: Signal<boolean> = computed(() => this.selectedPage() === this.options.startPage);
+  public readonly isFirstPage: Signal<boolean> = computed(
+    () => this.selectedPage() === this.options.startPage,
+  );
 
   /** Selected page is in end block */
   private readonly isInEndBlock: Signal<boolean> = computed(
-    () => this.selectedPage() > this.lastPage() - this.options.endBlockMaxLength
+    // prevent page from showing in start and end block by not adding here if it isInStartBlock
+    () =>
+      !this.isInStartBlock() &&
+      this.selectedPage() > this.lastPage() - this.options.endBlockMaxLength,
   );
 
   /** Selected page is in middle block */
-  private readonly isInMiddleBlock: Signal<boolean> = computed(() => !this.isInStartBlock() && !this.isInEndBlock());
+  private readonly isInMiddleBlock: Signal<boolean> = computed(
+    () => !this.isInStartBlock() && !this.isInEndBlock(),
+  );
 
   /** Selected page is in start block */
   private readonly isInStartBlock: Signal<boolean> = computed(
-    () => this.selectedPage() < this.options.startPage + this.options.startBlockMaxLength
+    () =>
+      this.selectedPage() <
+      this.options.startPage + this.options.startBlockMaxLength,
   );
 
   /** Is last element selected */
-  public readonly isLastPage: Signal<boolean> = computed(() => this.selectedPage() === this.lastPage());
+  public readonly isLastPage: Signal<boolean> = computed(
+    () => this.selectedPage() === this.lastPage(),
+  );
 
   /** Last page */
   private readonly lastPage: Signal<number> = computed(() =>
     this.options.maxPageNumber === null
       ? this.idealLastPage()
-      : Math.min(this.options.maxPageNumber, this.idealLastPage())
+      : Math.min(this.options.maxPageNumber, this.idealLastPage()),
   );
 
   /** Pages to show in the middle */
   private readonly middleBlock: Signal<number[]> = computed(() => {
     if (!this.isInMiddleBlock()) return [];
-    const middleBlockPadding = Math.floor(this.options.middleBlockMaxLength / 2);
+    const middleBlockPadding = Math.floor(
+      this.options.middleBlockMaxLength / 2,
+    );
     if (this.selectedPage() - middleBlockPadding <= this.options.startPage)
       return generateArray(
-        this.selectedPage() - (this.selectedPage() - this.options.startPage) + 1,
-        this.options.middleBlockMaxLength
+        this.selectedPage() -
+          (this.selectedPage() - this.options.startPage) +
+          1,
+        this.options.middleBlockMaxLength,
       );
     if (this.selectedPage() + middleBlockPadding >= this.lastPage())
       return generateArray(
-        this.selectedPage() + (this.lastPage() - this.selectedPage()) - this.options.middleBlockMaxLength,
-        this.options.middleBlockMaxLength
+        this.selectedPage() +
+          (this.lastPage() - this.selectedPage()) -
+          this.options.middleBlockMaxLength,
+        this.options.middleBlockMaxLength,
       );
-    return generateArray(this.selectedPage() - middleBlockPadding, this.options.middleBlockMaxLength);
+    return generateArray(
+      this.selectedPage() - middleBlockPadding,
+      this.options.middleBlockMaxLength,
+    );
   });
 
   /** Array of pages arrays to loop over */
   public readonly pages: Signal<(string | number)[]> = computed(() => {
-    if (this.options.compact) return this.compactPages;
+    if (this.compact()) return this.compactPages;
     return this.canPaginate()
       ? [this.startBlock(), this.middleBlock(), this.endBlock()]
-          .map((block) => (block.length ? [...block, this.options.delimiter] : []))
+          .map((block) =>
+            block.length ? [...block, this.options.delimiter] : [],
+          )
           .flat()
           .slice(0, -1)
-      : generateArray(this.options.startPage, this.lastPage() - this.options.startPage + 1);
+      : generateArray(
+          this.options.startPage,
+          this.lastPage() - this.options.startPage + 1,
+        );
   });
 
   /** Pages to show at the start */
   private readonly startBlock: Signal<number[]> = computed(() =>
     this.isInStartBlock()
       ? generateArray(this.options.startPage, this.options.startBlockMaxLength)
-      : [this.options.startPage]
+      : [this.options.startPage],
   );
 
   /// UTILITIES:
@@ -185,14 +224,20 @@ export class PaginationControl {
 
     // Show all pages if we have less than blockMaxLength
     if (blockMaxLength > this.totalPages())
-      return generateArray(this.options.startPage, this.lastPage() - this.options.startPage + 1);
+      return generateArray(
+        this.options.startPage,
+        this.lastPage() - this.options.startPage + 1,
+      );
 
     // Show chunk of blockMaxLength pages
     const padding = Math.floor(blockMaxLength / 2);
     if (this.selectedPage() - padding <= this.options.startPage)
       return generateArray(this.options.startPage, blockMaxLength);
     if (this.selectedPage() + padding >= this.lastPage())
-      return generateArray(this.lastPage() - blockMaxLength + 1, blockMaxLength);
+      return generateArray(
+        this.lastPage() - blockMaxLength + 1,
+        blockMaxLength,
+      );
     return generateArray(this.selectedPage() - padding, blockMaxLength);
   }
 
@@ -203,7 +248,12 @@ export class PaginationControl {
    * @returns to from object with calculated values
    */
   public getToFrom(items: number, itemsPerPage: number) {
-    return PaginationControl.getToFrom(items, itemsPerPage, this.selectedPage(), this.options.startPage);
+    return PaginationControl.getToFrom(
+      items,
+      itemsPerPage,
+      this.selectedPage(),
+      this.options.startPage,
+    );
   }
 
   /** The getTotalPages method calculates the total number of pages. */
@@ -226,9 +276,12 @@ export class PaginationControl {
 
   /** The goToPage method navigates directly to a specific page number. */
   public goToPage(pageNumber: number | string): void {
-    if (Number.isNaN(+pageNumber)) throw new Error("Can't go to page, invalid number");
-    if ((pageNumber as number) > this.lastPage()) this.selectedPage.set(this.lastPage());
-    else if ((pageNumber as number) < this.options.startPage) this.selectedPage.set(this.options.startPage);
+    if (Number.isNaN(+pageNumber))
+      throw new Error("Can't go to page, invalid number");
+    if ((pageNumber as number) > this.lastPage())
+      this.selectedPage.set(this.lastPage());
+    else if ((pageNumber as number) < this.options.startPage)
+      this.selectedPage.set(this.options.startPage);
     else this.selectedPage.set(pageNumber as number);
   }
 
@@ -247,7 +300,11 @@ export class PaginationControl {
    * on the current items-per-page setting, automatically adjusting the pagination control.
    * By default, this also resets the view to the first page.
    */
-  public resetPageCount(totalItems: number, itemsPerPage: number, autoResetToFirstPage = true): void {
+  public resetPageCount(
+    totalItems: number,
+    itemsPerPage: number,
+    autoResetToFirstPage = true,
+  ): void {
     const totalPages = this.getTotalPages(totalItems, itemsPerPage);
     this.totalPages.set(totalPages);
     if (autoResetToFirstPage) this.goToFirstPage();
@@ -263,11 +320,19 @@ export class PaginationControl {
    * @param {number} startPage - which page we're starting from, defaults to page 1 (optional)
    * @returns to from object with calculated values
    */
-  public static getToFrom = (items: number, itemsPerPage: number, currentPage: number, startPage: number = 1) => {
+  public static getToFrom = (
+    items: number,
+    itemsPerPage: number,
+    currentPage: number,
+    startPage: number = 1,
+  ) => {
     if (itemsPerPage < 1 || items < 1) return { 0: 0, 1: 0, from: 0, to: 0 };
     const normalizedPageNumber = currentPage - startPage + 1;
     const from = Math.max((normalizedPageNumber - 1) * itemsPerPage + 1, 0);
-    const to = Math.max(from + itemsPerPage - 1 > items ? items : from + itemsPerPage - 1, 0);
+    const to = Math.max(
+      from + itemsPerPage - 1 > items ? items : from + itemsPerPage - 1,
+      0,
+    );
     return { 0: from, 1: to, from, to };
   };
 

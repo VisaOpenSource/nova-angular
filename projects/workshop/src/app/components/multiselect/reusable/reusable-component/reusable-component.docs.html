@@ -1,0 +1,93 @@
+<!--
+ *              © 2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div v-combobox v-floating-ui-container [invalid]="invalid()" [value]="value()" (valueChange)="writeValue($event)">
+  <label v-label [for]="id() + '-input'" [id]="id()+'-label'">{{label()}}</label>
+  <div v-input-container v-floating-ui-trigger vMY="4" vSurface vFlexRow vPL="3" vPR="6" vPY="3">
+    <div vFlex vGap="2" vFlexShrink="1" vFlexGrow vFlexWrap>
+      @for(chip of chips(); track chip.value; let i = $index) { @let chipId = id() +'-chip-' + chip.value;
+      <div v-chip vFlex vFlexShrink0 compact>
+        @if (readonly()) { {{ chip.label }} } @else {<label v-label [for]="chipId">{{ chip.label }}</label>
+        <button
+          v-button-icon
+          buttonColor="tertiary"
+          [disabled]="chip.disabled || disabled()"
+          subtle
+          [attr.aria-label]="'Remove ' + chip.label"
+          [attr.aria-describedby]="id()+'-label'"
+          [id]="chipId"
+          (click)="handleDeleteChip(chip.value)"
+        >
+          <svg v-icon-visa-clear-alt-tiny /></button
+        >}
+      </div>
+      }
+      <input
+        v-input
+        [disabled]="disabled()"
+        vPL="4"
+        [id]="id() + '-input'"
+        name="id() + '-input'"
+        [attr.aria-describedby]="id() + '-message'"
+        [readonly]="readonly()"
+      />
+    </div>
+    @if(!hideDropdownButton()){
+    <button [disabled]="disabled()" v-button-icon buttonColor="tertiary" buttonSize="small" aria-label="toggle">
+      <v-icon-visa-toggle>
+        <svg v-toggle-default-template v-icon-visa-chevron-down-tiny />
+        <svg v-toggle-rotated-template v-icon-visa-chevron-up-tiny />
+      </v-icon-visa-toggle></button
+    >}
+  </div>
+  <span
+    v-input-message
+    [id]="id() + '-message'"
+    [attr.aria-atomic]="invalid() ? 'true' : null"
+    [attr.aria-live]="invalid() ? 'assertive' : null"
+  >
+    @if(message()) { @if(invalid()) {
+    <svg v-icon-visa-error-tiny />} {{message()}} }
+  </span>
+  <div v-listbox-container v-floating-ui-element>
+    @if(!hideSelectionButtons()){
+    <div vFlex vJustifyContentBetween vAlignItemsCenter vP="8">
+      <button [disabled]="disabled()" v-button buttonColor="tertiary" (click)="handleSelectAll()">Select all</button>
+      <button [disabled]="disabled()" v-button buttonColor="tertiary" destructive (click)="handleClearAll()">
+        Clear all
+      </button>
+    </div>
+    <hr v-divider dividerType="decorative" />
+    }
+    <ul v-listbox multiselect>
+      @for (option of filteredOptions(); track option.value; let i = $index) {
+      <li v-listbox-item [disabled]="option.disabled || disabled()" [value]="option.value">{{ option.label }}</li>
+      } @empty {
+      <li
+        id="multiselect-autocomplete-no-results"
+        style="min-block-size: 180px"
+        vFlex
+        vJustifyContentCenter
+        vAlignItemsCenter
+        aria-atomic="true"
+        aria-live="assertive"
+      >
+        <p vTypography="label-large">No results found</p>
+      </li>
+      }
+    </ul>
+  </div>
+</div>

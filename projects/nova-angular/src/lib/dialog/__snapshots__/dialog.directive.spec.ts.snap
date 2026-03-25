@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`DialogDirective should allow child element 1`] = `
-<div
-  id="root2"
->
+<div>
   <dialog
     aria-describedby="a-v-dialog-2-description"
     aria-labelledby="a-v-dialog-2-title"

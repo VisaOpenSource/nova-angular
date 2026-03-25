@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,11 +23,12 @@ export const paginationRoutes: Routes = [
 	{ loadComponent: () => import('./default-first-page/default-first-page.docs').then(m => m.PaginationDefaultFirstPageComponent), path: 'default-first-page', title: 'Default first page pagination component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./default-last-page/default-last-page.docs').then(m => m.PaginationDefaultLastPageComponent), path: 'default-last-page', title: 'Default last page pagination component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./default-middle-page/default-middle-page.docs').then(m => m.PaginationDefaultMiddlePageComponent), path: 'default-middle-page', title: 'Default middle page pagination component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
-	{ loadComponent: () => import('./multiple-paginations/multiple-paginations.docs').then(m => m.MultiplePaginationsComponent), path: 'multiple-paginations', title: 'Multiple paginations pagination component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./no-middle-block/no-middle-block.docs').then(m => m.PaginationNoMiddleBlockComponent), path: 'no-middle-block', title: 'No middle block pagination component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable-component/reusable-component.docs').then(m => m.ReusablePagination), path: 'reusable-component', title: 'Reusable component pagination component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable.docs').then(m => m.ReusablePaginationDemo), path: 'reusable', title: 'Reusable pagination component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./selected-in-middle/selected-in-middle.docs').then(m => m.PaginationSelectedInMiddleComponent), path: 'selected-in-middle', title: 'Selected in middle pagination component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./slim/slim.docs').then(m => m.PaginationSlimComponent), path: 'slim', title: 'Slim pagination component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
-	{ loadComponent: () => import('./slim-with-count/slim-with-count.docs').then(m => m.PaginationSlimWithCountComponent), path: 'slim-with-count', title: 'Slim with count pagination component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
-	{ loadComponent: () => import('./table/table.docs').then(m => m.PaginationTableComponent), path: 'table', title: 'Table pagination component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX }
+	{ loadComponent: () => import('./slim-with-count/slim-with-count.docs').then(m => m.PaginationSlimWithCountComponent), path: 'slim-with-count', title: 'Slim with count pagination component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX }
 ];
 
 export default paginationRoutes;

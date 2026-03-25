@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,18 @@
  * limitations under the License.
  *
  -->
+<!-- 
+ * NOTE: Error styling relies on the v-label and v-input-container elements being direct siblings
+ * within the v-combobox host element. Wrapping either element in an extra container (e.g., a <div>)
+ * will break the sibling CSS selector and prevent error styles from being applied.
+ *
+ * Forcing error styles with utility classes like `v-input-error` on a parent element will cause
+ * non-listbox text content (e.g., a <span>subtitle</span> inside a v-listbox-item) to also
+ * turn red, which may not be the desired behavior.
+ *
+ * Keep the v-label and v-input-container directives as direct children of the v-combobox host
+ * to ensure error states render correctly.
+-->
 <div v-combobox v-floating-ui-container #combobox [invalid]="isInvalid()" [(value)]="comboboxVal">
   <label v-label>Label (required)</label>
   <div v-input-container v-floating-ui-trigger vMY="4">

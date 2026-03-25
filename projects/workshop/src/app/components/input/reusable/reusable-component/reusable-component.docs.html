@@ -1,0 +1,114 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div vFlex vGap="4" vFlexWrap [vAlignItemsStart]="inline() ? true : null" [vFlexCol]="inline() ? null : true">
+  <label v-label [for]="id()+'-input'" [style.lineHeight]="inline() ? 'var(--v-input-container-block-size)' : null"
+    >{{label()}} {{required() ? ' (required)' : ''}}</label
+  >
+  <div vFlex vFlexCol vGap="4" vFlexGrow>
+    <div v-input-container [style.inlineSize]="otp() ? '160px' : null">
+      <ng-content select="[prefix]" />
+      @if(prefix()) {
+      <span [id]="id() + '-prefix'" vTypography="body-2-bold">{{prefix()}}</span>
+      } @if(textarea()){
+      <textarea
+        v-input
+        (blur)="handleBlur($event)"
+        (focus)="inFocus.set(true)"
+        (input)="handleInput($event)"
+        [attr.aria-describedby]="inputDescribedBy()"
+        [attr.maxlength]="characterCounter() ? maxLength() : null"
+        [disabled]="disabled()"
+        [id]="id()+'-input'"
+        [invalid]="invalid()"
+        rows="4"
+        [noResize]="!resizable()"
+        [readonly]="readonly()"
+        [required]="required()"
+        [(value)]="value"
+      ></textarea>
+      } @else {
+      <input
+        v-input
+        (blur)="handleBlur($event)"
+        (focus)="inFocus.set(true)"
+        (input)="handleInput($event)"
+        [attr.aria-describedby]="inputDescribedBy()"
+        [disabled]="disabled()"
+        [id]="id()+'-input'"
+        [invalid]="invalid()"
+        [otp]="otp()"
+        [readonly]="readonly()"
+        [required]="required()"
+        [step]="step() || null"
+        [type]="type()"
+        [(value)]="value"
+      />
+      } @if(value() && value().length > 0 && inFocus() && clearable()){
+      <button
+        aria-label="clear"
+        buttonColor="tertiary"
+        buttonSize="small"
+        subtle
+        v-button-icon
+        (click)="handleClear()"
+        (blur)="handleBlur($event)"
+        (focus)="inFocus.set(true)"
+      >
+        <svg v-icon-visa-clear-alt-tiny /></button
+      >} @if(suffix()) {
+      <span [id]="id() + '-suffix'" vTypography="body-2-bold">{{suffix()}}</span>
+      } @if(maskable()){
+      <button
+        v-button-icon
+        buttonSize="small"
+        buttonColor="tertiary"
+        [attr.aria-label]="masked() ? 'show password' : 'hide password'"
+        (click)="handleToggleMask()"
+      >
+        @if(masked()){
+        <svg v-icon-visa-password-show-tiny />} @else{
+        <svg v-icon-visa-password-hide-tiny />
+        }
+      </button>
+      }
+      <ng-content select="[actions]" />
+      <ng-content select="[suffix]" />
+    </div>
+    @if(characterCounter()) {
+    <div v-input-message vGap="0" vFlex vFlexCol [id]="id()+'-char-counter'">
+      <span> @if(empty() && !overLimit()){{{maxLength()}} characters remaining} </span>
+      <span aria-live="polite">
+        @if(value().length <= maxLength() && !empty()){ {{ charactersRemaining() }} characters left}
+      </span>
+      <span aria-atomic="true" aria-live="assertive" vFlex vAlignItemsCenter vGap="4">
+        @if(overLimit()){
+        <svg v-icon-visa-error-tiny />
+        {{overLimit()}} characters over limit }
+      </span>
+    </div>
+    } @else {
+    <span
+      v-input-message
+      [id]="id()+'-message'"
+      [attr.aria-atomic]="invalid()"
+      [attr.aria-live]="invalid() ? 'assertive': null"
+    >
+      @if(invalid()){ <svg v-icon-visa-error-tiny />} @if(message()){ {{message()}} }</span
+    >
+    }
+  </div>
+</div>

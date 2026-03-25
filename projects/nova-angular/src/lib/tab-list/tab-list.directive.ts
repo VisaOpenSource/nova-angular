@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,7 +36,6 @@ import { NavDirective } from '../nav/nav.directive';
 import { NovaLibService } from '../nova-lib.service';
 import { PanelContentDirective } from '../panel-content/panel-content.directive';
 import { TabItemDirective } from '../tab-item/tab-item.directive';
-import { defaultEffectParam } from '../nova-lib.constants';
 
 @Directive({
   host: {
@@ -64,7 +63,7 @@ export class TabListDirective implements AfterContentInit {
       if (!tabs || tabs.length === 0 || tabs === this.prevTabs()) return;
       this.setUpTabs();
       this.prevTabs.set(tabs as TabItemDirective[]); // store the current tabs for comparison
-    }, defaultEffectParam);
+    });
   }
 
   ngAfterContentInit(): void {
@@ -141,7 +140,7 @@ export class TabListDirective implements AfterContentInit {
         this.prevActiveTab.set(tab);
       }
     });
-  }, defaultEffectParam);
+  });
 
   private setUpFocusListener(): void {
     this.buttons()?.forEach((button) => {

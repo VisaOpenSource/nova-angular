@@ -1,0 +1,105 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div vFlex vFlexCol vGap="12">
+  <!-- Action bar -->
+  <nova-workshop-dynamic-table-action-bar>
+    <nova-workshop-dynamic-table-expandable-filter-dropdown
+      [columnData]="columnData()"
+      [appliedFilters]="tableState().filters"
+      (applyAllFilters)="applyFilters()"
+      (clearAllFilters)="clearAllFilters()"
+      (applyColumnFilters)="applyColumnFilters($event)"
+      (clearColumnFilters)="clearColumnFilters($event)"
+    />
+  </nova-workshop-dynamic-table-action-bar>
+
+  <!-- Chip filters -->
+  <nova-workshop-dynamic-table-filter-chips
+    [filters]="tableState().filters"
+    [columnData]="columnData()"
+    (clearAllFilters)="clearAllFilters()"
+    (clearSingleFilter)="clearSingleFilter($event.columnName, $event.filter)"
+    (noChipsToFocus)="focusFilterButton()"
+    id="filter-dialog"
+  />
+
+  <!-- Table -->
+  <div v-table-wrapper>
+    <table v-table [alternate]="true" tableSize="compact" class="fixed-table">
+      <caption vSR>
+        Dynamic table with filter dialog.
+      </caption>
+      <thead>
+        <tr>
+          @for(colItem of columnData(); track colItem.name){
+          <th
+            v-th
+            scope="col"
+            [class.compact-column]="colItem.compact"
+            [attr.aria-sort]="
+                colItem.name === tableState().column
+                  ? tableState().direction === 'ascending'
+                    ? 'ascending'
+                    : 'descending'
+                  : null
+              "
+          >
+            <div vFlex vAlignItemsCenter vGap="4">
+              @if (colItem.compact) {
+              <span vSR>{{ colItem.name }}</span>
+              } @else { {{ colItem.name }} }
+              <div vFlex vAlignItemsCenter vGap="4" vML="auto">
+                <nova-workshop-dynamic-table-actions-button
+                  [label]="colItem.name"
+                  [sorted]="colItem.name === tableState().column ? tableState().direction : 'none'"
+                  (sort)="sort(colItem, $event)"
+                  [column]="colItem"
+                  sortOnly
+                />
+              </div>
+            </div>
+          </th>
+          }
+        </tr>
+      </thead>
+      <tbody>
+        @for(rowItem of visibleRows(); track rowItem[identifyingColumn]){
+        <tr>
+          @for(colItem of columnData(); track colItem.name){
+          <td v-td [attr.scope]="colItem.identifier ? 'row' : null" [class.compact-column]="colItem.compact">
+            @if (colItem.component) {
+            <ng-container
+              [ngComponentOutlet]="colItem.component"
+              [ngComponentOutletInputs]="getComponentInputs(colItem, rowItem, identifyingColumn)"
+            />
+            } @else { {{ rowItem[colItem.name] }} }
+          </td>
+          }
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Pagination -->
+  <nova-workshop-dynamic-table-shared-pagination
+    [(itemsPerPage)]="itemsPerPage"
+    [totalItems]="totalItems()"
+    [(selectedPage)]="selectedPage"
+    id="filter-dialog-dynamic-table"
+  />
+</div>

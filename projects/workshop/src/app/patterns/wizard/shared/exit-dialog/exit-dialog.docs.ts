@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,6 +19,10 @@ import { ChangeDetectionStrategy, Component, ElementRef, viewChild } from '@angu
 import { NovaLibModule } from '@visa/nova-angular';
 import { VisaCloseTiny, VisaWarningLow } from '@visa/nova-icons-angular';
 
+/**
+ * Displays a confirmation dialog when users attempt to exit a wizard.
+ * Warns that unsaved progress may be lost and provides cancel/confirm actions.
+ */
 /** #patterns #isShared **/
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -28,12 +32,21 @@ import { VisaCloseTiny, VisaWarningLow } from '@visa/nova-icons-angular';
   imports: [NovaLibModule, VisaWarningLow, VisaCloseTiny, CdkTrapFocus]
 })
 export class SharedWizardExitDialogComponent {
+  /** Reference to the native dialog element */
   readonly dialog = viewChild('dialog', { read: ElementRef });
 
+  /**
+   * Opens the exit confirmation dialog as a modal.
+   * Uses the native showModal() method to display the dialog with backdrop.
+   */
   openDialog() {
     this.dialog()?.nativeElement.showModal();
   }
 
+  /**
+   * Closes the exit confirmation dialog.
+   * Uses the native close() method to dismiss the dialog.
+   */
   closeDialog() {
     this.dialog()?.nativeElement.close();
   }

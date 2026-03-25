@@ -1,0 +1,77 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div vFlex vFlexCol vGap="4">
+    <label v-label for="empty-label-error"></label>
+    <div v-input-container vFlexRow style="position: relative;">
+        <textarea v-input noResize required rows="3" placeholder="Start typing..." id="user-message"
+            [ngModel]="userMessage()" (ngModelChange)="userMessage.set($event); onTextChange()" (keypress)="onKeyPress($event)"
+            [invalid]="messageIsError()" [attr.aria-describedby]="messageIsError() ? 'chat-input-error' : null" style="
+                margin-top: 0px;
+                margin-block-end: 40px;
+                field-sizing: content;
+                block-size: auto;
+                min-height: 50px;
+                max-height: calc(4*var(--typography-body-2-line-height));"></textarea>
+        <div style="
+          position: absolute;
+          right: 8px;
+          bottom: 6px;
+          display: flex;
+          gap: 6px;
+          align-items: center;
+        ">
+            <button v-button-icon aria-label="record" type="button" buttonColor="tertiary" subtle
+            style="
+                    block-size: 32px;
+                    inline-size: 32px;
+                    padding: 7px;
+                  ">
+                <svg v-icon-visa-microphone-tiny></svg>
+            </button>
+            <button v-button-icon aria-label="files" type="button" buttonColor="tertiary" subtle style="
+                    block-size: 32px;
+                    inline-size: 32px;
+                    padding: 7px;
+                  ">
+                <svg v-icon-visa-attachment-tiny></svg>
+            </button>
+            <button v-button-icon aria-label="send" type="button" buttonColor="tertiary" subtle (click)="onSubmit()"
+                [disabled]="characterCountInvalid()"
+                style="
+                    block-size: 32px;
+                    inline-size: 32px;
+                    padding: 7px;
+                  ">
+                <svg v-icon-visa-send-tiny></svg>
+            </button>
+        </div>
+    </div>
+    <!-- Validation message -->
+    @if (messageIsError() && message()) {
+    <span v-input-message id="default-error-message" aria-atomic="true" aria-live="assertive">
+        <svg v-icon-visa-error-tiny />
+        {{ message() }}
+    </span>
+    }
+
+    <!-- Character Count (when not in error state) -->
+    @if (!messageIsError() && showCharacterCount() && message()) {
+    <span v-input-message id="default-message">
+        {{ message() }}
+    </span>
+    }
+</div>

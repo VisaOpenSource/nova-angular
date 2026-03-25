@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Link examples AlternateLinkComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <a
     class="v-alternate v-link v-link-no-underline"
     href="./components/link"
@@ -17,16 +15,13 @@ exports[`Link examples AlternateLinkComponent should render correctly 1`] = `
       class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-0"
       v-icon-visa-chevron-right-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-        fill-rule="evenodd"
+        d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
       />
     </svg>
   </a>
@@ -34,9 +29,7 @@ exports[`Link examples AlternateLinkComponent should render correctly 1`] = `
 `;
 
 exports[`Link examples ButtonAsDisabledLinkLinkComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <button
     aria-disabled="true"
     class="v-link v-link-no-underline"
@@ -51,22 +44,17 @@ exports[`Link examples ButtonAsDisabledLinkLinkComponent should render correctly
       class="v-icon v-icon-device-printer v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-1"
       v-icon-visa-device-printer-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M10 10H6V14H10V10ZM4 8V16H12V8H4Z"
-        fill-rule="evenodd"
+        d="M12 8V16H4V8H12ZM6 14H10V10H6V14Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M4 2H12V4H4V2ZM2 4.18359V0H14V4.18359H16V12.1836H14V6.18359H2V12.1836H0V4.18359H2Z"
-        fill-rule="evenodd"
+        d="M14 0V4.18359H16V12.1836H14V6.18359H2V12.1836H0V4.18359H2V0H14ZM4 4H12V2H4V4Z"
       />
       <defs>
         <clippath>
@@ -82,9 +70,7 @@ exports[`Link examples ButtonAsDisabledLinkLinkComponent should render correctly
 `;
 
 exports[`Link examples ButtonAsLinkLinkComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <button
     class="v-link v-link-no-underline"
     href="./components/link"
@@ -97,22 +83,17 @@ exports[`Link examples ButtonAsLinkLinkComponent should render correctly 1`] = `
       class="v-icon v-icon-device-printer v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-2"
       v-icon-visa-device-printer-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M10 10H6V14H10V10ZM4 8V16H12V8H4Z"
-        fill-rule="evenodd"
+        d="M12 8V16H4V8H12ZM6 14H10V10H6V14Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M4 2H12V4H4V2ZM2 4.18359V0H14V4.18359H16V12.1836H14V6.18359H2V12.1836H0V4.18359H2Z"
-        fill-rule="evenodd"
+        d="M14 0V4.18359H16V12.1836H14V6.18359H2V12.1836H0V4.18359H2V0H14ZM4 4H12V2H4V4Z"
       />
       <defs>
         <clippath>
@@ -128,9 +109,7 @@ exports[`Link examples ButtonAsLinkLinkComponent should render correctly 1`] = `
 `;
 
 exports[`Link examples DefaultLinkComponent should render correctly 1`] = `
-<div
-  id="root3"
->
+<div>
   <a
     class="v-link"
     href="./components/link"
@@ -142,9 +121,7 @@ exports[`Link examples DefaultLinkComponent should render correctly 1`] = `
 `;
 
 exports[`Link examples DisabledLinkComponent should render correctly 1`] = `
-<div
-  id="root4"
->
+<div>
   <a
     aria-disabled="true"
     class="v-link"
@@ -158,9 +135,7 @@ exports[`Link examples DisabledLinkComponent should render correctly 1`] = `
 `;
 
 exports[`Link examples InlineLinkComponent should render correctly 1`] = `
-<div
-  id="root5"
->
+<div>
   <p>
      This is a sentence with an inline 
     <a
@@ -175,9 +150,7 @@ exports[`Link examples InlineLinkComponent should render correctly 1`] = `
 `;
 
 exports[`Link examples LinkOpenInNewTab should render correctly 1`] = `
-<div
-  id="root8"
->
+<div>
   <a
     aria-label="Destination label (opens in new tab)"
     class="v-link v-link-no-underline"
@@ -194,20 +167,17 @@ exports[`Link examples LinkOpenInNewTab should render correctly 1`] = `
       class="v-icon v-icon-maximize v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-5"
       v-icon-visa-maximize-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        d="M14 6H16L16 0H10V2L12.5393 2L6 8.54302L7.45688 9.99991L14 3.46442V6Z"
+        d="M16 0V6H14V3.46484L7.45703 10L6 8.54297L12.5391 2H10V0H16Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M0 1H8V3H2V14H13V8H15V16H0V1Z"
-        fill-rule="evenodd"
+        d="M8 3H2V14H13V8H15V16H0V1H8V3Z"
       />
       <defs>
         <clippath>
@@ -223,9 +193,7 @@ exports[`Link examples LinkOpenInNewTab should render correctly 1`] = `
 `;
 
 exports[`Link examples LinkWithLeadingIconComponent should render correctly 1`] = `
-<div
-  id="root6"
->
+<div>
   <a
     class="v-link v-link-no-underline"
     href="./components/link"
@@ -237,14 +205,13 @@ exports[`Link examples LinkWithLeadingIconComponent should render correctly 1`] 
       class="v-icon v-icon-arrow-back v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-3"
       v-icon-visa-arrow-back-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-primary"
-        d="M3.91838 7.00159L9.21132 1.70865L7.7971 0.294434L0.0899963 8.00154L7.7971 15.7086L9.21132 14.2944L3.91847 9.00159H16.0042V7.00159H3.91838Z"
+        d="M9.21109 1.7085L3.91812 7.00146H16.0041V9.00146H3.91812L9.21109 14.2944L7.79703 15.7085L0.0899963 8.00146L7.79703 0.294434L9.21109 1.7085Z"
       />
       <defs>
         <clippath>
@@ -262,9 +229,7 @@ exports[`Link examples LinkWithLeadingIconComponent should render correctly 1`] 
 `;
 
 exports[`Link examples LinkWithTrailingIconComponent should render correctly 1`] = `
-<div
-  id="root7"
->
+<div>
   <a
     class="v-link v-link-no-underline"
     href="./components/link"
@@ -277,16 +242,13 @@ exports[`Link examples LinkWithTrailingIconComponent should render correctly 1`]
       class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-4"
       v-icon-visa-chevron-right-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-        fill-rule="evenodd"
+        d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
       />
     </svg>
   </a>
@@ -294,9 +256,7 @@ exports[`Link examples LinkWithTrailingIconComponent should render correctly 1`]
 `;
 
 exports[`Link examples WithoutUnderlineLinkComponent should render correctly 1`] = `
-<div
-  id="root9"
->
+<div>
   <p>
      This is a sentence with an inline 
     <a
@@ -311,20 +271,17 @@ exports[`Link examples WithoutUnderlineLinkComponent should render correctly 1`]
         class="v-icon v-icon-maximize v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-6"
         v-icon-visa-maximize-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-secondary"
-          d="M14 6H16L16 0H10V2L12.5393 2L6 8.54302L7.45688 9.99991L14 3.46442V6Z"
+          d="M16 0V6H14V3.46484L7.45703 10L6 8.54297L12.5391 2H10V0H16Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M0 1H8V3H2V14H13V8H15V16H0V1Z"
-          fill-rule="evenodd"
+          d="M8 3H2V14H13V8H15V16H0V1H8V3Z"
         />
         <defs>
           <clippath>

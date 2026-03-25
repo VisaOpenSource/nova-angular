@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,6 +29,7 @@
   />
   }
   <div v-wizard vFlex vFlexCol vGap="16">
+    <!-- Each step is rendered as an accordion panel using native HTML details/summary elements -->
     @for (step of steps; track step.id; let i = $index) {
     <details
       v-wizard-step
@@ -81,6 +82,7 @@
       </summary>
       <div v-accordion-panel vPX="0" vPY="12">
         <div vFlex vFlexCol>
+          <!-- Final step displays summary of all previous step values -->
           @if (currentStep() === steps.length - 1) {
           <div vFlex vGap="4" vFlexCol vPX="40" vPY="8">
             <nova-workshop-wizard-shared-summary-page

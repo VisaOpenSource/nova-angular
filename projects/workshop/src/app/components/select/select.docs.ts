@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,6 +29,7 @@ import { ModelDrivenFormSelectComponent } from './model-driven-form/model-driven
 import { ModelDrivenObjectSelectComponent } from './model-driven-object/model-driven-object.docs';
 import { ModelDrivenSelectComponent } from './model-driven/model-driven.docs';
 import { ReadOnlySelectComponent } from './read-only/read-only.docs';
+import { ReusableSelectDemo } from './reusable/reusable.docs';
 import { TemplateDrivenFormSelectComponent } from './template-driven-form/template-driven-form.docs';
 import { TemplateDrivenObjectSelectComponent } from './template-driven-object/template-driven-object.docs';
 import { TemplateDrivenSelectComponent } from './template-driven/template-driven.docs';
@@ -56,7 +57,8 @@ import { WithInlineMessageSelectComponent } from './with-inline-message/with-inl
     ReadOnlySelectComponent,
     TemplateDrivenFormSelectComponent,
     ModelDrivenFormSelectComponent,
-    ModelDrivenFbSelectComponent
+    ModelDrivenFbSelectComponent,
+    ReusableSelectDemo
   ],
   standalone: true,
   selector: 'nova-workshop-select',
@@ -74,13 +76,5 @@ export class SelectDocsComponent {
       { name: 'AppReadyService', type: 'service-source' },
       { name: 'IdGenerator', type: 'service-source' }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

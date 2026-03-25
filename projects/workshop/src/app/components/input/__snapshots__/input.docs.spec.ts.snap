@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Input examples CharacterCounterInputComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <span
     class="v-typography-label"
     vtypography="label"
@@ -101,9 +99,7 @@ exports[`Input examples CharacterCounterInputComponent should render correctly 1
 `;
 
 exports[`Input examples DefaultInputComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -136,9 +132,7 @@ exports[`Input examples DefaultInputComponent should render correctly 1`] = `
 `;
 
 exports[`Input examples DisabledInputComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -195,9 +189,7 @@ exports[`Input examples DisabledInputComponent should render correctly 1`] = `
 `;
 
 exports[`Input examples ErrorInputComponent should render correctly 1`] = `
-<div
-  id="root3"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -264,9 +256,7 @@ exports[`Input examples ErrorInputComponent should render correctly 1`] = `
 `;
 
 exports[`Input examples InitialValueInputComponent should render correctly 1`] = `
-<div
-  id="root4"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -299,9 +289,7 @@ exports[`Input examples InitialValueInputComponent should render correctly 1`] =
 `;
 
 exports[`Input examples InlineInputComponent should render correctly 1`] = `
-<div
-  id="root5"
->
+<div>
   <div
     class="v-gap-4 v-align-items-start v-flex v-flex-row v-flex-wrap"
     valignitemsstart=""
@@ -352,9 +340,7 @@ exports[`Input examples InlineInputComponent should render correctly 1`] = `
 `;
 
 exports[`Input examples InlineMessageInputComponent should render correctly 1`] = `
-<div
-  id="root6"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -395,9 +381,7 @@ exports[`Input examples InlineMessageInputComponent should render correctly 1`] 
 `;
 
 exports[`Input examples LeadingIconInputComponent should render correctly 1`] = `
-<div
-  id="root7"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -428,22 +412,17 @@ exports[`Input examples LeadingIconInputComponent should render correctly 1`] = 
           class="v-icon v-icon-account v-icon-low v-icon-visa"
           focusable="false"
           height="24"
-          id="a-v__icon__internal-0"
           v-icon-visa-account-low=""
           viewBox="0 0 24 24"
           width="24"
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M12 14C7.58172 14 4 17.5817 4 22V24H2V22C2 16.4772 6.47715 12 12 12C17.5228 12 22 16.4772 22 22V24H20V22C20 17.5817 16.4183 14 12 14Z"
-            fill-rule="evenodd"
+            d="M12 12C17.5228 12 22 16.4772 22 22V24H20V22C20 17.5817 16.4183 14 12 14C7.58172 14 4 17.5817 4 22V24H2V22C2 16.4772 6.47715 12 12 12Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8ZM12 10C14.7614 10 17 7.76142 17 5C17 2.23858 14.7614 0 12 0C9.23858 0 7 2.23858 7 5C7 7.76142 9.23858 10 12 10Z"
-            fill-rule="evenodd"
+            d="M12 0C14.7614 0 17 2.23858 17 5C17 7.76142 14.7614 10 12 10C9.23858 10 7 7.76142 7 5C7 2.23858 9.23858 0 12 0ZM12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2Z"
           />
         </svg>
       </span>
@@ -461,9 +440,7 @@ exports[`Input examples LeadingIconInputComponent should render correctly 1`] = 
 `;
 
 exports[`Input examples ModelDrivenFbInputComponent should render correctly 1`] = `
-<div
-  id="root8"
->
+<div>
   <form
     class="ng-untouched ng-pristine ng-invalid v-gap-16 v-flex v-flex-col"
     novalidate=""
@@ -615,9 +592,7 @@ exports[`Input examples ModelDrivenFbInputComponent should render correctly 1`] 
 `;
 
 exports[`Input examples ModelDrivenFormInputComponent should render correctly 1`] = `
-<div
-  id="root9"
->
+<div>
   <form
     class="ng-untouched ng-pristine ng-invalid v-gap-16 v-flex v-flex-col"
     novalidate=""
@@ -766,9 +741,7 @@ exports[`Input examples ModelDrivenFormInputComponent should render correctly 1`
 `;
 
 exports[`Input examples ModelDrivenInputComponent should render correctly 1`] = `
-<div
-  id="root10"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -788,7 +761,7 @@ exports[`Input examples ModelDrivenInputComponent should render correctly 1`] = 
       v-input-container=""
     >
       <input
-        class="v-input ng-untouched ng-dirty ng-valid"
+        class="v-input ng-untouched ng-pristine ng-valid"
         id="model-input"
         required=""
         v-input=""
@@ -804,9 +777,7 @@ exports[`Input examples ModelDrivenInputComponent should render correctly 1`] = 
 `;
 
 exports[`Input examples OneTimePasscodeInputComponent should render correctly 1`] = `
-<div
-  id="root11"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -840,9 +811,7 @@ exports[`Input examples OneTimePasscodeInputComponent should render correctly 1`
 `;
 
 exports[`Input examples PrefixInputComponent should render correctly 1`] = `
-<div
-  id="root12"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -882,9 +851,7 @@ exports[`Input examples PrefixInputComponent should render correctly 1`] = `
 `;
 
 exports[`Input examples ReadOnlyInputComponent should render correctly 1`] = `
-<div
-  id="root13"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -940,10 +907,1156 @@ exports[`Input examples ReadOnlyInputComponent should render correctly 1`] = `
 </div>
 `;
 
+exports[`Input examples ReusableInputDemo should render correctly 1`] = `
+<div>
+  <div
+    class="v-gap-6 v-flex v-flex-col v-mt-24"
+    vflexcol=""
+    vgap="6"
+    vmt="24"
+  >
+    <nova-reusable-input>
+      <div
+        class="v-gap-4 v-flex v-flex-col v-flex-wrap"
+        vflex=""
+        vflexwrap=""
+        vgap="4"
+      >
+        <label
+          class="v-label"
+          for="a-reusable-input-0-input"
+          id="a-v-label-0"
+          v-label=""
+        >
+          Label 
+        </label>
+        <div
+          class="v-gap-4 v-flex v-flex-col v-flex-grow"
+          vflex=""
+          vflexcol=""
+          vflexgrow=""
+          vgap="4"
+        >
+          <div
+            class="v-input-container v-surface"
+            v-input-container=""
+          >
+            
+            
+            
+            <input
+              aria-describedby="a-reusable-input-0-message"
+              aria-invalid="false"
+              class="v-input"
+              id="a-reusable-input-0-input"
+              step="null"
+              type="text"
+              v-input=""
+              value=""
+            />
+            
+            
+            
+            
+            
+            
+          </div>
+          
+          <span
+            aria-atomic="false"
+            class="v-input-message"
+            id="a-reusable-input-0-message"
+            v-input-message=""
+          >
+            
+             This is optional text that describes the label in more detail. 
+            
+          </span>
+          
+        </div>
+      </div>
+    </nova-reusable-input>
+  </div>
+  
+  <nova-dynamic-reusable-form
+    class="nova-dynamic-reusable-form"
+  >
+    <div
+      class="v-panel v-ml-auto v-panel-expandable v-panel-responsive"
+      responsive=""
+      style="inline-size: 100%;"
+      v-panel=""
+      vml="auto"
+    >
+      <button
+        aria-controls="responsive-expanded-panel"
+        aria-expanded="true"
+        aria-label="Customize demo panel"
+        buttonsize="large"
+        class="v-button v-panel-toggle v-sm-media-hide v-xs-media-hide v-button-icon v-button-large"
+        type="button"
+        v-button-icon=""
+        v-panel-toggle=""
+      >
+        <svg
+          aria-hidden="true"
+          class="v-icon-two-color v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
+          focusable="false"
+          height="16"
+          style="--v-icon-secondary: var(--palette-default-active-accent);"
+          v-icon-two-color=""
+          v-icon-visa-media-fast-forward-tiny=""
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <path
+            class="v-icon-secondary"
+            d="M15 8L8.39355 15L7 13.5244L12.2139 8L7 2.47559L8.39355 1L15 8Z"
+          />
+          <path
+            class="v-icon-primary"
+            d="M9 8L2.39355 15L1 13.5244L6.21387 8L1 2.47559L2.39355 1L9 8Z"
+          />
+        </svg>
+        
+        
+      </button>
+      <div
+        aria-hidden="false"
+        class="v-panel-content v-surface v-flex v-flex-col"
+        id="responsive-expanded-panel"
+        v-panel-content=""
+        vflex=""
+        vflexcol=""
+      >
+        <header
+          class="v-gap-4 v-flex v-flex-row v-justify-content-between"
+          vflex=""
+          vgap="4"
+          vjustifycontentbetween=""
+        >
+          <h3
+            class="v-typography-headline-4"
+            vtypography="headline-4"
+          >
+            Customize demo
+          </h3>
+          <button
+            aria-label="Close customize demo panel"
+            buttoncolor="tertiary"
+            buttonsize="small"
+            class="v-button v-desktop-media-hide v-button-icon v-button-small v-button-subtle v-button-tertiary"
+            subtle=""
+            type="button"
+            v-button-icon=""
+            vmediahide="desktop"
+          >
+            <svg
+              aria-hidden="true"
+              class="v-icon v-icon-close v-icon-tiny v-icon-visa"
+              focusable="false"
+              height="16"
+              v-icon-visa-close-tiny=""
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <path
+                class="v-icon-primary"
+                d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
+              />
+              <defs>
+                <clippath>
+                  <rect
+                    height="16"
+                    transform="translate(0 0.000488281)"
+                    width="16"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+          </button>
+        </header>
+        <hr
+          aria-hidden="true"
+          class="v-divider v-divider-decorative v-flex-shrink-0 v-mb-20 v-mx-8"
+          dividertype="decorative"
+          v-divider=""
+          vflexshrink0=""
+          vmb="20"
+          vmx="8"
+        />
+        <div
+          class="v-panel-body v-flex v-flex-grow v-flex-row"
+          v-panel-body=""
+          vflex=""
+          vflexgrow=""
+        >
+          <form
+            class="v-gap-16 v-flex v-flex-col ng-untouched ng-pristine ng-valid"
+            novalidate=""
+            vflex=""
+            vflexcol=""
+            vgap="16"
+          >
+            <div
+              class="reusable-form-field-wrapper v-gap-48 v-flex v-flex-row v-mb-32"
+              vflex=""
+              vgap="48"
+              vmb="32"
+            >
+              <div
+                class="v-gap-16 v-flex v-flex-col"
+                style="inline-size: max-content;"
+                vflex=""
+                vflexcol=""
+                vgap="16"
+              >
+                <h4
+                  class="v-typography-subtitle-2"
+                  vtypography="subtitle-2"
+                >
+                  Boolean properties
+                </h4>
+                <div
+                  class="v-gap-16 v-flex v-flex-col v-flex-wrap"
+                  vflex=""
+                  vflexcol=""
+                  vflexwrap=""
+                  vgap="16"
+                >
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="showActionButton"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="showActionButton"
+                          id="a-v-label-1"
+                          v-label=""
+                        >
+                          Show action button
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="showCharacterCounter"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="showCharacterCounter"
+                          id="a-v-label-2"
+                          v-label=""
+                        >
+                          Show character counter
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="showPlaceholder"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="showPlaceholder"
+                          id="a-v-label-3"
+                          v-label=""
+                        >
+                          Show placeholder
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        checked="checked"
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="input-message"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="input-message"
+                          id="a-v-label-4"
+                          v-label=""
+                        >
+                          Input message
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="clearable"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="clearable"
+                          id="a-v-label-5"
+                          v-label=""
+                        >
+                          Clearable
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="disabled"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="disabled"
+                          id="a-v-label-6"
+                          v-label=""
+                        >
+                          Disabled
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="inline"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="inline"
+                          id="a-v-label-7"
+                          v-label=""
+                        >
+                          Inline
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="invalid"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="invalid"
+                          id="a-v-label-8"
+                          v-label=""
+                        >
+                          Invalid
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="maskable"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="maskable"
+                          id="a-v-label-9"
+                          v-label=""
+                        >
+                          Maskable
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="otp"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="otp"
+                          id="a-v-label-10"
+                          v-label=""
+                        >
+                          OTP
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="readonly"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="readonly"
+                          id="a-v-label-11"
+                          v-label=""
+                        >
+                          Readonly
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="required"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="required"
+                          id="a-v-label-12"
+                          v-label=""
+                        >
+                          Required
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="showLeadingIcon"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="showLeadingIcon"
+                          id="a-v-label-13"
+                          v-label=""
+                        >
+                          Show leading icon
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="showPrefix"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="showPrefix"
+                          id="a-v-label-14"
+                          v-label=""
+                        >
+                          Show prefix
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="showSuffix"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="showSuffix"
+                          id="a-v-label-15"
+                          v-label=""
+                        >
+                          Show suffix
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="textarea"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="textarea"
+                          id="a-v-label-16"
+                          v-label=""
+                        >
+                          Textarea
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <div
+                      class="v-input-container v-align-items-start v-flex v-flex-row"
+                      v-input-container=""
+                      valignitemsstart=""
+                      vflex=""
+                    >
+                      <input
+                        class="v-checkbox ng-untouched ng-pristine ng-valid"
+                        id="resizable"
+                        type="checkbox"
+                        v-checkbox=""
+                      />
+                      <div
+                        class="v-gap-4 v-flex v-flex-col v-my-10"
+                        vflex=""
+                        vflexcol=""
+                        vgap="4"
+                        vmy="10"
+                      >
+                        <label
+                          class="v-label"
+                          for="resizable"
+                          id="a-v-label-17"
+                          v-label=""
+                        >
+                          Resizable
+                        </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+              <div
+                class="v-gap-16 v-flex v-flex-col"
+                style="inline-size: max-content;"
+                vflex=""
+                vflexcol=""
+                vgap="16"
+              >
+                <h4
+                  class="v-typography-subtitle-2"
+                  vtypography="subtitle-2"
+                >
+                  Text/numeric properties
+                </h4>
+                <div
+                  class="v-gap-16 v-flex v-flex-col v-flex-wrap"
+                  vflex=""
+                  vflexcol=""
+                  vflexwrap=""
+                  vgap="16"
+                >
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <label
+                      class="v-label"
+                      for="label"
+                      id="a-v-label-18"
+                      v-label=""
+                    >
+                      Label
+                    </label>
+                    <div
+                      class="v-input-container v-surface"
+                      v-input-container=""
+                    >
+                      <textarea
+                        cdktextareaautosize=""
+                        class="v-input cdk-textarea-autosize ng-untouched ng-pristine ng-valid"
+                        id="label"
+                        rows="1"
+                        style="max-block-size: 200px;"
+                        v-input=""
+                        value="Label"
+                      />
+                      
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <label
+                      class="v-label"
+                      for="message"
+                      id="a-v-label-19"
+                      v-label=""
+                    >
+                      Message
+                    </label>
+                    <div
+                      class="v-input-container v-surface"
+                      v-input-container=""
+                    >
+                      <textarea
+                        cdktextareaautosize=""
+                        class="v-input cdk-textarea-autosize ng-untouched ng-pristine ng-valid"
+                        id="message"
+                        rows="1"
+                        style="max-block-size: 200px;"
+                        v-input=""
+                        value="This is optional text that describes the label in more detail."
+                      />
+                      
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div
+                    class="v-gap-4 v-flex v-flex-col"
+                    vflex=""
+                    vflexcol=""
+                    vgap="4"
+                  >
+                    <label
+                      class="v-label"
+                      for="type"
+                      id="a-v-label-20"
+                      v-label=""
+                    >
+                      Type
+                    </label>
+                    <div
+                      class="v-input-container v-surface"
+                      v-input-container=""
+                    >
+                      <select
+                        class="v-input ng-untouched ng-pristine ng-valid"
+                        id="type"
+                        v-select=""
+                      >
+                        <option
+                          value="text"
+                        >
+                          Text
+                        </option>
+                        <option
+                          value="number"
+                        >
+                          Number
+                        </option>
+                        <option
+                          value="email"
+                        >
+                          Email
+                        </option>
+                        <option
+                          value="tel"
+                        >
+                          Tel
+                        </option>
+                        <option
+                          value="url"
+                        >
+                          URL
+                        </option>
+                        <option
+                          value="password"
+                        >
+                          Password
+                        </option>
+                        <option
+                          value="search"
+                        >
+                          Search
+                        </option>
+                        
+                      </select>
+                      <div
+                        class="v-input-control"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
+                          focusable="false"
+                          height="16"
+                          v-icon-visa-chevron-down-tiny=""
+                          viewBox="0 0 16 16"
+                          width="16"
+                        >
+                          <path
+                            class="v-icon-primary"
+                            d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
+                          />
+                        </svg>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                  
+                  
+                </div>
+              </div>
+              
+            </div>
+            
+            <div
+              class="v-gap-16 v-flex v-flex-row v-mb-16 v-ml-auto"
+              vflex=""
+              vgap="16"
+              vmb="16"
+              vml="auto"
+            >
+              <button
+                class="v-button"
+                type="submit"
+                v-button=""
+              >
+                Apply
+              </button>
+              <button
+                buttoncolor="secondary"
+                class="v-button v-button-secondary"
+                type="button"
+                v-button=""
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nova-dynamic-reusable-form>
+</div>
+`;
+
 exports[`Input examples SuffixInputComponent should render correctly 1`] = `
-<div
-  id="root14"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -983,9 +2096,7 @@ exports[`Input examples SuffixInputComponent should render correctly 1`] = `
 `;
 
 exports[`Input examples TemplateDrivenFormInputComponent should render correctly 1`] = `
-<div
-  id="root15"
->
+<div>
   <form
     class="ng-untouched ng-pristine v-gap-16 v-flex v-flex-col ng-invalid"
     novalidate=""
@@ -1142,9 +2253,7 @@ exports[`Input examples TemplateDrivenFormInputComponent should render correctly
 `;
 
 exports[`Input examples TemplateDrivenInputComponent should render correctly 1`] = `
-<div
-  id="root16"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -1164,7 +2273,7 @@ exports[`Input examples TemplateDrivenInputComponent should render correctly 1`]
       v-input-container=""
     >
       <input
-        class="v-input ng-untouched ng-dirty ng-valid"
+        class="v-input ng-untouched ng-pristine ng-valid"
         id="template-input"
         required=""
         v-input=""
@@ -1180,9 +2289,7 @@ exports[`Input examples TemplateDrivenInputComponent should render correctly 1`]
 `;
 
 exports[`Input examples TextareaWithFixedHeightAndResizeInputComponent should render correctly 1`] = `
-<div
-  id="root17"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -1216,9 +2323,7 @@ exports[`Input examples TextareaWithFixedHeightAndResizeInputComponent should re
 `;
 
 exports[`Input examples TextareaWithFixedHeightInputComponent should render correctly 1`] = `
-<div
-  id="root18"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -1253,9 +2358,7 @@ exports[`Input examples TextareaWithFixedHeightInputComponent should render corr
 `;
 
 exports[`Input examples TextareaWithNativeRowsAttributeInputComponent should render correctly 1`] = `
-<div
-  id="root19"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -1290,9 +2393,7 @@ exports[`Input examples TextareaWithNativeRowsAttributeInputComponent should ren
 `;
 
 exports[`Input examples TextareaWithResizeInputComponent should render correctly 1`] = `
-<div
-  id="root21"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -1325,9 +2426,7 @@ exports[`Input examples TextareaWithResizeInputComponent should render correctly
 `;
 
 exports[`Input examples TextareaWithoutResizeInputComponent should render correctly 1`] = `
-<div
-  id="root20"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -1361,9 +2460,7 @@ exports[`Input examples TextareaWithoutResizeInputComponent should render correc
 `;
 
 exports[`Input examples WithActionButtonInputComponent should render correctly 1`] = `
-<div
-  id="root22"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -1403,22 +2500,17 @@ exports[`Input examples WithActionButtonInputComponent should render correctly 1
           class="v-icon v-icon-password-hide v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-1"
           v-icon-visa-password-hide-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M0.298828 14.29L14.2988 0.290039L15.713 1.70425L1.71304 15.7043L0.298828 14.29Z"
-            fill-rule="evenodd"
+            d="M15.7129 1.7041L1.71289 15.7041L0.298828 14.29L14.2988 0.290039L15.7129 1.7041Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M6.51868 13.7269C8.90896 14.2429 11.5201 13.4989 13.2736 11.4949L15.47 8.98466C15.9649 8.41913 15.9649 7.57469 15.47 7.00915L14.4277 5.81788L13.0103 7.23523L13.6768 7.99691L11.7684 10.1779C10.8608 11.2152 9.63149 11.7798 8.37364 11.8719L6.51868 13.7269ZM7.63841 4.12184C6.38022 4.21369 5.15051 4.77838 4.24266 5.81594L2.33431 7.99691L3.00119 8.75906L1.58384 10.1764L0.541057 8.98466C0.0462088 8.41912 0.0462116 7.57469 0.541057 7.00915L2.7375 4.49893C4.49118 2.49473 7.10265 1.75079 9.49314 2.26711L7.63841 4.12184Z"
-            fill-rule="evenodd"
+            d="M15.4697 7.00873C15.9646 7.57424 15.9645 8.41878 15.4697 8.98431L13.2734 11.4951C11.5201 13.4988 8.90961 14.2413 6.51953 13.7255L8.37598 11.8691C9.63294 11.7764 10.8615 11.2143 11.7686 10.1777L13.6768 7.99701L13.0098 7.23529L14.4277 5.81732L15.4697 7.00873ZM2.7373 4.49896C4.49055 2.49525 7.1012 1.75193 9.49121 2.26752L7.63574 4.12299C6.37849 4.21545 5.14939 4.77954 4.24219 5.81635L2.33398 7.99701L3 8.75873L1.58301 10.1757L0.541016 8.98431C0.0463642 8.41877 0.0462356 7.57419 0.541016 7.00873L2.7373 4.49896Z"
           />
         </svg>
         
@@ -1430,9 +2522,7 @@ exports[`Input examples WithActionButtonInputComponent should render correctly 1
 `;
 
 exports[`Input examples WithClearTextButtonInputComponent should render correctly 1`] = `
-<div
-  id="root23"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -1466,9 +2556,7 @@ exports[`Input examples WithClearTextButtonInputComponent should render correctl
 `;
 
 exports[`Input examples WithMaskedFieldInputComponent should render correctly 1`] = `
-<div
-  id="root24"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-col"
     vflex=""
@@ -1507,16 +2595,13 @@ exports[`Input examples WithMaskedFieldInputComponent should render correctly 1`
           class="v-icon v-icon-password-show v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-2"
           v-icon-visa-password-show-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M4.2368 5.8188C6.22885 3.54217 9.77051 3.54217 11.7626 5.81881L13.6709 7.99977L11.7626 10.1807C9.7705 12.4574 6.22885 12.4574 4.23679 10.1807L2.32845 7.99977L4.2368 5.8188ZM13.2677 4.5018C10.4788 1.31451 5.52052 1.3145 2.73164 4.50179L0.535198 7.01202C0.0403522 7.57756 0.0403494 8.42199 0.535197 8.98753L2.73164 11.4978C5.52052 14.685 10.4788 14.685 13.2677 11.4978L15.4642 8.98753C15.959 8.42199 15.959 7.57756 15.4642 7.01202L13.2677 4.5018ZM7.99968 10C9.10425 10 9.99968 9.10457 9.99968 8C9.99968 6.89543 9.10425 6 7.99968 6C6.89511 6 5.99968 6.89543 5.99968 8C5.99968 9.10457 6.89511 10 7.99968 10Z"
-            fill-rule="evenodd"
+            d="M2.73145 4.50195C5.52032 1.31466 10.4787 1.31466 13.2676 4.50195L15.4639 7.01172C15.9587 7.57726 15.9587 8.42177 15.4639 8.9873L13.2676 11.498C10.4787 14.6851 5.52027 14.6852 2.73145 11.498L0.535156 8.9873C0.0404386 8.42177 0.0403542 7.57721 0.535156 7.01172L2.73145 4.50195ZM11.7627 5.81836C9.77061 3.54192 6.22833 3.54181 4.23633 5.81836L2.32812 8L4.23633 10.1807C6.22838 12.4573 9.77064 12.4573 11.7627 10.1807L13.6709 8L11.7627 5.81836ZM8 6C9.10442 6.00017 10 6.89554 10 8C10 9.10446 9.10442 9.99983 8 10C6.89543 10 6 9.10457 6 8C6 6.89543 6.89543 6 8 6Z"
           />
         </svg>
         

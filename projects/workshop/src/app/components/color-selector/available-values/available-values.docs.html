@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,15 +16,14 @@
  -->
 <div vFlex vGap="6" vAlignItemsCenter vFlexWrap>
   <input
+    v-input
+    aria-describedby="values-a11y-color-tooltip"
+    id="color-selector-values"
+    type="color"
     vFlexBasis="5%"
     vFlexGrow0
-    v-input
-    type="color"
-    #colorSelector
+    (change)="handleChange($event)"
     [value]="hex()"
-    id="color-selector-values"
-    (change)="getColors(colorSelector.value)"
-    aria-describedby="values-a11y-color-tooltip"
   />
   <label v-label for="color-selector-values">Label</label>
   <div v-floating-ui-container placement="top">

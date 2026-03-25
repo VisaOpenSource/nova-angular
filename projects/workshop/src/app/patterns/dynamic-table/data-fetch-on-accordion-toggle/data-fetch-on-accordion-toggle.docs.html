@@ -1,0 +1,142 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div v-table-wrapper>
+  <table v-table v-accordion class="accordion-style-table" tableSize="compact">
+    <caption vSR>
+      Dynamic table with data fetch on accordion toggle
+    </caption>
+    <thead>
+      <tr>
+        <th v-th scope="col" class="compact-column">
+          <button
+            v-button-icon
+            (click)="toggleHeader()"
+            [aria-expanded]="headerExpanded()"
+            buttonSize="small"
+            buttonColor="tertiary"
+            [attr.aria-label]="headerExpanded() ? 'Collapse all rows' : 'Expand all rows'"
+            vMY="auto"
+            vML="auto"
+          >
+            @if (headerExpanded()) {
+            <svg v-icon-visa-chevron-down-tiny style="--v-accordion-icon-color: white" />
+            } @else {
+            <svg v-icon-visa-chevron-right-tiny style="--v-accordion-icon-color: white" />
+            }
+          </button>
+        </th>
+        @for(colItem of columnData; track colItem.name){
+        <th
+          v-th
+          scope="col"
+          [attr.aria-sort]="
+                colItem.name === sortKey().column
+                  ? sortKey().direction === 'ascending'
+                    ? 'ascending'
+                    : 'descending'
+                  : null
+              "
+          [class.compact-column]="colItem.compact"
+        >
+          <div vFlex vAlignItemsCenter vFlexGrow vGap="4">
+            @if (colItem.compact) {
+            <span vSR>{{ colItem.name }}</span>
+            } @else { {{ colItem.name }} }
+            <div vFlex vAlignItemsCenter vFlexGrow vGap="4">
+              <nova-workshop-dynamic-table-actions-button
+                [label]="colItem.name"
+                [sorted]="colItem.name === sortKey().column ? sortKey().direction : 'none'"
+                (sort)="sort(colItem, $event)"
+                [column]="colItem"
+              />
+            </div>
+          </div>
+        </th>
+        }
+      </tr>
+    </thead>
+    @for(rowItem of sortedData(); let i = $index; track rowItem[identifyingColumn]){
+    <tbody v-accordion-item>
+      <tr v-accordion-heading>
+        <td v-td class="compact-column">
+          <button
+            v-button-icon
+            (click)="toggleRow(rowItem)"
+            [aria-expanded]="expandedRows()[rowItem[identifyingColumn]]"
+            buttonSize="small"
+            buttonColor="tertiary"
+            [attr.aria-labelledby]="rowItem[identifyingColumn] + '-id-multi-row'"
+            vMY="auto"
+            vML="auto"
+          >
+            @if (expandedRows()[rowItem[identifyingColumn]]) {
+            <svg v-icon-visa-chevron-down-tiny style="--v-accordion-icon-color: white" />
+            } @else {
+            <svg v-icon-visa-chevron-right-tiny style="--v-accordion-icon-color: white" />
+            }
+          </button>
+        </td>
+        @for(colItem of columnData; track colItem.name){
+        <td
+          v-td
+          [attr.scope]="colItem.identifier ? 'row' : null"
+          [class.compact-column]="colItem.compact"
+          [attr.id]="colItem.name === identifyingColumn ? rowItem[identifyingColumn] + '-id-multi-row' : null"
+          vTypography="body-2"
+        >
+          @if (colItem.component) {
+          <ng-container
+            [ngComponentOutlet]="colItem.component"
+            [ngComponentOutletInputs]="getComponentInputs(colItem, rowItem, identifyingColumn)"
+          />
+          } @else { {{ rowItem[colItem.name] }} }
+        </td>
+        }
+      </tr>
+      <tr>
+        <td
+          v-accordion-panel
+          [attr.colspan]="columnData.length + 1"
+          [attr.aria-hidden]="!expandedRows()[rowItem[identifyingColumn]]"
+          [vHide]="!expandedRows()[rowItem[identifyingColumn]]"
+          vPY="10"
+        >
+          @defer (when expandedRows()[rowItem[identifyingColumn]]) { @if
+          (accordionData()[rowItem[identifyingColumn]]?.loading) {
+          <div vFlex vAlignItemsCenter vGap="8">
+            <progress v-progress-linear id="progress-bar-accordion-fetch-dynamic-table"></progress>
+            <label class="v-progress-label" vSR for="progress-bar-accordion-fetch-dynamic-table"
+              ><span role="alert">Loading...</span></label
+            >
+          </div>
+          } @else if (accordionData()[rowItem[identifyingColumn]]?.data) {
+          <div>
+            <p vTypography="label-large-active" vMB="8">Details for {{ rowItem[identifyingColumn] }}</p>
+            @if (accordionData()[rowItem[identifyingColumn]].data!['Data']) {
+            <p vTypography="body-2" vMB="12">{{ accordionData()[rowItem[identifyingColumn]].data!['Data'] }}</p>
+            }
+          </div>
+          } @else {
+          <p vTypography="label-large-active">Row {{ rowItem[identifyingColumn] }}</p>
+          <p vTypography="body-2">Error loading expanded content.</p>
+          } }
+        </td>
+      </tr>
+    </tbody>
+    }
+  </table>
+</div>

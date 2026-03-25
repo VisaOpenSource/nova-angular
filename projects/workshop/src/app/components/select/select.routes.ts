@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,6 +30,8 @@ export const selectRoutes: Routes = [
 	{ loadComponent: () => import('./model-driven-form/model-driven-form.docs').then(m => m.ModelDrivenFormSelectComponent), path: 'model-driven-form', title: 'Model driven form select component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./model-driven-object/model-driven-object.docs').then(m => m.ModelDrivenObjectSelectComponent), path: 'model-driven-object', title: 'Model driven object select component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./read-only/read-only.docs').then(m => m.ReadOnlySelectComponent), path: 'read-only', title: 'Read only select component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable-component/reusable-component.docs').then(m => m.ReusableSelect), path: 'reusable-component', title: 'Reusable component select component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable.docs').then(m => m.ReusableSelectDemo), path: 'reusable', title: 'Reusable select component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./template-driven/template-driven.docs').then(m => m.TemplateDrivenSelectComponent), path: 'template-driven', title: 'Template driven select component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./template-driven-form/template-driven-form.docs').then(m => m.TemplateDrivenFormSelectComponent), path: 'template-driven-form', title: 'Template driven form select component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./template-driven-object/template-driven-object.docs').then(m => m.TemplateDrivenObjectSelectComponent), path: 'template-driven-object', title: 'Template driven object select component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },

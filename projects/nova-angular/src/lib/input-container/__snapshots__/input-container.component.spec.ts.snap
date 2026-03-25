@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`InputContainerComponent it should disable all child buttons when input is disabled 1`] = `
-<div
-  id="root6"
->
+<div>
   <div
     class="v-input-container v-surface"
     v-input-container=""
@@ -35,9 +33,7 @@ exports[`InputContainerComponent it should disable all child buttons when input 
 `;
 
 exports[`InputContainerComponent it should disable all child buttons when input is readonly 1`] = `
-<div
-  id="root7"
->
+<div>
   <div
     class="v-input-container v-surface"
     v-input-container=""
@@ -69,9 +65,7 @@ exports[`InputContainerComponent it should disable all child buttons when input 
 `;
 
 exports[`InputContainerComponent should not render v-input-control when select is a child and v-icon-visa-toggle is a child 1`] = `
-<div
-  id="root5"
->
+<div>
   <div
     class="v-input-container v-surface"
     usecustomicon="true"
@@ -92,9 +86,7 @@ exports[`InputContainerComponent should not render v-input-control when select i
 `;
 
 exports[`InputContainerComponent should render v-input-control when select is a child and v-icon-visa-toggle is a child 1`] = `
-<div
-  id="root4"
->
+<div>
   <div
     class="v-input-container v-surface"
     v-input-container=""

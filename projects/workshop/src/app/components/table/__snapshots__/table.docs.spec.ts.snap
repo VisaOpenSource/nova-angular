@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Table examples CompactPaddingBandedRowsTableComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <table
     class="v-table v-table-alt"
     style="--v-table-data-block-default: var(--v-table-data-block-small); --v-table-data-padding-block-default: var(--v-table-data-padding-block-small);"
@@ -17,9 +15,7 @@ exports[`Table examples CompactPaddingBandedRowsTableComponent should render cor
        Table with compact padding and banded rows. 
     </caption>
     <thead>
-      <tr
-        v-tr=""
-      >
+      <tr>
         <th
           class="v-th"
           scope="col"
@@ -51,18 +47,15 @@ exports[`Table examples CompactPaddingBandedRowsTableComponent should render cor
         
       </tr>
     </thead>
-    <tbody
-      v-tbody=""
-    >
-      <tr
-        v-tr=""
-      >
-        <td
+    <tbody>
+      <tr>
+        <th
           class="v-td"
+          scope="row"
           v-td=""
         >
           A1
-        </td>
+        </th>
         <td
           class="v-td"
           v-td=""
@@ -82,15 +75,14 @@ exports[`Table examples CompactPaddingBandedRowsTableComponent should render cor
           D1
         </td>
       </tr>
-      <tr
-        v-tr=""
-      >
-        <td
+      <tr>
+        <th
           class="v-td"
+          scope="row"
           v-td=""
         >
           A2
-        </td>
+        </th>
         <td
           class="v-td"
           v-td=""
@@ -110,15 +102,14 @@ exports[`Table examples CompactPaddingBandedRowsTableComponent should render cor
           D2
         </td>
       </tr>
-      <tr
-        v-tr=""
-      >
-        <td
+      <tr>
+        <th
           class="v-td"
+          scope="row"
           v-td=""
         >
           A3
-        </td>
+        </th>
         <td
           class="v-td"
           v-td=""
@@ -145,9 +136,7 @@ exports[`Table examples CompactPaddingBandedRowsTableComponent should render cor
 `;
 
 exports[`Table examples FixedFirstColumnComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <div
     class="v-flex v-flex-col"
     vflex=""
@@ -197,9 +186,7 @@ exports[`Table examples FixedFirstColumnComponent should render correctly 1`] = 
            Table with fixed first column. Dummy data displayed with the title in the first column and related data in the subsequent columns. 
         </caption>
         <thead>
-          <tr
-            v-tr=""
-          >
+          <tr>
             <th
               class="v-th"
               scope="col"
@@ -301,12 +288,8 @@ exports[`Table examples FixedFirstColumnComponent should render correctly 1`] = 
             
           </tr>
         </thead>
-        <tbody
-          v-tbody=""
-        >
-          <tr
-            v-tr=""
-          >
+        <tbody>
+          <tr>
             <th
               class="v-td"
               scope="row"
@@ -422,9 +405,7 @@ exports[`Table examples FixedFirstColumnComponent should render correctly 1`] = 
             
             
           </tr>
-          <tr
-            v-tr=""
-          >
+          <tr>
             <th
               class="v-td"
               scope="row"
@@ -540,9 +521,7 @@ exports[`Table examples FixedFirstColumnComponent should render correctly 1`] = 
             
             
           </tr>
-          <tr
-            v-tr=""
-          >
+          <tr>
             <th
               class="v-td"
               scope="row"
@@ -658,9 +637,7 @@ exports[`Table examples FixedFirstColumnComponent should render correctly 1`] = 
             
             
           </tr>
-          <tr
-            v-tr=""
-          >
+          <tr>
             <th
               class="v-td"
               scope="row"
@@ -785,9 +762,7 @@ exports[`Table examples FixedFirstColumnComponent should render correctly 1`] = 
 `;
 
 exports[`Table examples GroupHeadersTableComponent should render correctly 1`] = `
-<div
-  id="root3"
->
+<div>
   <table
     class="v-table v-table-border"
     v-table=""
@@ -799,12 +774,11 @@ exports[`Table examples GroupHeadersTableComponent should render correctly 1`] =
        Table with group headers. 
     </caption>
     <thead>
-      <tr
-        v-tr=""
-      >
+      <tr>
         <th
           class="v-th v-th-alt v-typography-overline"
           colspan="2"
+          id="group-header-1"
           scope="col"
           v-th=""
         >
@@ -813,17 +787,17 @@ exports[`Table examples GroupHeadersTableComponent should render correctly 1`] =
         <th
           class="v-th v-th-alt v-typography-overline"
           colspan="2"
+          id="group-header-2"
           scope="col"
           v-th=""
         >
           Group header 2
         </th>
       </tr>
-      <tr
-        v-tr=""
-      >
+      <tr>
         <th
           class="v-th"
+          id="col-0"
           scope="col"
           v-th=""
         >
@@ -831,6 +805,7 @@ exports[`Table examples GroupHeadersTableComponent should render correctly 1`] =
         </th>
         <th
           class="v-th"
+          id="col-1"
           scope="col"
           v-th=""
         >
@@ -838,6 +813,7 @@ exports[`Table examples GroupHeadersTableComponent should render correctly 1`] =
         </th>
         <th
           class="v-th"
+          id="col-2"
           scope="col"
           v-th=""
         >
@@ -845,6 +821,7 @@ exports[`Table examples GroupHeadersTableComponent should render correctly 1`] =
         </th>
         <th
           class="v-th"
+          id="col-3"
           scope="col"
           v-th=""
         >
@@ -853,88 +830,95 @@ exports[`Table examples GroupHeadersTableComponent should render correctly 1`] =
         
       </tr>
     </thead>
-    <tbody
-      v-tbody=""
-    >
-      <tr
-        v-tr=""
-      >
-        <td
+    <tbody>
+      <tr>
+        <th
           class="v-td"
+          headers="group-header-1 col-1"
+          id="row-header-0"
           v-td=""
         >
           A1
-        </td>
+        </th>
         <td
           class="v-td"
+          headers="group-header-1 col-1 row-header-0"
           v-td=""
         >
           B1
         </td>
         <td
           class="v-td"
+          headers="group-header-2 col-2 row-header-0"
           v-td=""
         >
           C1
         </td>
         <td
           class="v-td"
+          headers="group-header-2 col-3 row-header-0"
           v-td=""
         >
           D1
         </td>
       </tr>
-      <tr
-        v-tr=""
-      >
-        <td
+      <tr>
+        <th
           class="v-td"
+          headers="group-header-1 col-1"
+          id="row-header-1"
           v-td=""
         >
           A2
-        </td>
+        </th>
         <td
           class="v-td"
+          headers="group-header-1 col-1 row-header-1"
           v-td=""
         >
           B2
         </td>
         <td
           class="v-td"
+          headers="group-header-2 col-2 row-header-1"
           v-td=""
         >
           C2
         </td>
         <td
           class="v-td"
+          headers="group-header-2 col-3 row-header-1"
           v-td=""
         >
           D2
         </td>
       </tr>
-      <tr
-        v-tr=""
-      >
-        <td
+      <tr>
+        <th
           class="v-td"
+          headers="group-header-1 col-1"
+          id="row-header-2"
           v-td=""
         >
           A3
-        </td>
+        </th>
         <td
           class="v-td"
+          headers="group-header-1 col-1 row-header-2"
           v-td=""
         >
           B3
         </td>
         <td
           class="v-td"
+          headers="group-header-2 col-2 row-header-2"
           v-td=""
         >
           C3
         </td>
         <td
           class="v-td"
+          headers="group-header-2 col-3 row-header-2"
           v-td=""
         >
           D3
@@ -947,9 +931,7 @@ exports[`Table examples GroupHeadersTableComponent should render correctly 1`] =
 `;
 
 exports[`Table examples GroupHeadersWithEmptyCellTableComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <table
     class="v-table v-table-border"
     v-table=""
@@ -961,12 +943,11 @@ exports[`Table examples GroupHeadersWithEmptyCellTableComponent should render co
        Table with group headers and empty cell. 
     </caption>
     <thead>
-      <tr
-        v-tr=""
-      >
+      <tr>
         <th />
         <th
           class="v-th v-th-alt v-typography-overline"
+          id="group-header-1"
           scope="col"
           v-th=""
         >
@@ -974,103 +955,107 @@ exports[`Table examples GroupHeadersWithEmptyCellTableComponent should render co
         </th>
         <th
           class="v-th v-th-alt v-typography-overline"
+          id="group-header-2"
           scope="col"
           v-th=""
         >
           Group header 2
         </th>
       </tr>
-      <tr
-        v-tr=""
-      >
+      <tr>
         <th
           class="v-th"
-          scope="col"
+          id="column-a"
           v-th=""
         >
           Column A
         </th>
         <th
           class="v-th"
-          scope="col"
+          headers="group-header-1"
+          id="column-b"
           v-th=""
         >
           Column B
         </th>
         <th
           class="v-th"
-          scope="col"
+          headers="group-header-2"
+          id="column-c"
           v-th=""
         >
           Column C
         </th>
-        
       </tr>
     </thead>
-    <tbody
-      v-tbody=""
-    >
-      <tr
-        v-tr=""
-      >
-        <td
+    <tbody>
+      <tr>
+        <th
           class="v-td"
+          headers="col-0"
+          id="row-0"
           v-td=""
         >
           A1
-        </td>
+        </th>
         <td
           class="v-td"
+          headers="col-0 group-header-1 row-0"
           v-td=""
         >
           B1
         </td>
         <td
           class="v-td"
+          headers="col-0 group-header-2 row-0"
           v-td=""
         >
           C1
         </td>
       </tr>
-      <tr
-        v-tr=""
-      >
-        <td
+      <tr>
+        <th
           class="v-td"
+          headers="col-1"
+          id="row-1"
           v-td=""
         >
           A2
-        </td>
+        </th>
         <td
           class="v-td"
+          headers="col-1 group-header-1 row-1"
           v-td=""
         >
           B2
         </td>
         <td
           class="v-td"
+          headers="col-1 group-header-2 row-1"
           v-td=""
         >
           C2
         </td>
       </tr>
-      <tr
-        v-tr=""
-      >
-        <td
+      <tr>
+        <th
           class="v-td"
+          headers="col-2"
+          id="row-2"
           v-td=""
         >
           A3
-        </td>
+        </th>
         <td
           class="v-td"
+          headers="col-2 group-header-1 row-2"
           v-td=""
         >
           B3
         </td>
         <td
           class="v-td"
+          headers="col-2 group-header-2 row-2"
           v-td=""
         >
           C3
@@ -1083,9 +1068,7 @@ exports[`Table examples GroupHeadersWithEmptyCellTableComponent should render co
 `;
 
 exports[`Table examples KeyValueTableBandedTableComponent should render correctly 1`] = `
-<div
-  id="root4"
->
+<div>
   <table
     class="v-table v-table-alt v-table-key-value"
     tablesize="medium"
@@ -1097,12 +1080,8 @@ exports[`Table examples KeyValueTableBandedTableComponent should render correctl
     >
        Table with banded key-value pairs. 
     </caption>
-    <tbody
-      v-tbody=""
-    >
-      <tr
-        v-tr=""
-      >
+    <tbody>
+      <tr>
         <th
           class="v-td"
           scope="row"
@@ -1117,9 +1096,7 @@ exports[`Table examples KeyValueTableBandedTableComponent should render correctl
           Value 1
         </td>
       </tr>
-      <tr
-        v-tr=""
-      >
+      <tr>
         <th
           class="v-td"
           scope="row"
@@ -1134,9 +1111,7 @@ exports[`Table examples KeyValueTableBandedTableComponent should render correctl
           Value 2
         </td>
       </tr>
-      <tr
-        v-tr=""
-      >
+      <tr>
         <th
           class="v-td"
           scope="row"
@@ -1151,9 +1126,7 @@ exports[`Table examples KeyValueTableBandedTableComponent should render correctl
           Value 3
         </td>
       </tr>
-      <tr
-        v-tr=""
-      >
+      <tr>
         <th
           class="v-td"
           scope="row"
@@ -1175,9 +1148,7 @@ exports[`Table examples KeyValueTableBandedTableComponent should render correctl
 `;
 
 exports[`Table examples KeyValueTableLinedTableComponent should render correctly 1`] = `
-<div
-  id="root5"
->
+<div>
   <div
     class="v-table-wrapper"
     style="--v-table-wrapper-block-size: unset; --v-table-wrapper-inline-size: unset;"
@@ -1194,12 +1165,8 @@ exports[`Table examples KeyValueTableLinedTableComponent should render correctly
       >
          Table with lined key-value pairs. 
       </caption>
-      <tbody
-        v-tbody=""
-      >
-        <tr
-          v-tr=""
-        >
+      <tbody>
+        <tr>
           <th
             class="v-td"
             scope="row"
@@ -1214,9 +1181,7 @@ exports[`Table examples KeyValueTableLinedTableComponent should render correctly
             Value 1
           </td>
         </tr>
-        <tr
-          v-tr=""
-        >
+        <tr>
           <th
             class="v-td"
             scope="row"
@@ -1231,9 +1196,7 @@ exports[`Table examples KeyValueTableLinedTableComponent should render correctly
             Value 2
           </td>
         </tr>
-        <tr
-          v-tr=""
-        >
+        <tr>
           <th
             class="v-td"
             scope="row"
@@ -1248,9 +1211,7 @@ exports[`Table examples KeyValueTableLinedTableComponent should render correctly
             Value 3
           </td>
         </tr>
-        <tr
-          v-tr=""
-        >
+        <tr>
           <th
             class="v-td"
             scope="row"
@@ -1273,9 +1234,7 @@ exports[`Table examples KeyValueTableLinedTableComponent should render correctly
 `;
 
 exports[`Table examples LargePaddingBandedRowsTableComponent should render correctly 1`] = `
-<div
-  id="root6"
->
+<div>
   <table
     class="v-table v-table-alt"
     style="--v-table-data-block-default: var(--v-table-data-block-large); --v-table-data-padding-block-default: var(--v-table-data-padding-block-large);"
@@ -1289,9 +1248,7 @@ exports[`Table examples LargePaddingBandedRowsTableComponent should render corre
        Table with large padding and banded rows. 
     </caption>
     <thead>
-      <tr
-        v-tr=""
-      >
+      <tr>
         <th
           class="v-th"
           scope="col"
@@ -1323,18 +1280,15 @@ exports[`Table examples LargePaddingBandedRowsTableComponent should render corre
         
       </tr>
     </thead>
-    <tbody
-      v-tbody=""
-    >
-      <tr
-        v-tr=""
-      >
-        <td
+    <tbody>
+      <tr>
+        <th
           class="v-td"
+          scope="row"
           v-td=""
         >
           A1
-        </td>
+        </th>
         <td
           class="v-td"
           v-td=""
@@ -1354,15 +1308,14 @@ exports[`Table examples LargePaddingBandedRowsTableComponent should render corre
           D1
         </td>
       </tr>
-      <tr
-        v-tr=""
-      >
-        <td
+      <tr>
+        <th
           class="v-td"
+          scope="row"
           v-td=""
         >
           A2
-        </td>
+        </th>
         <td
           class="v-td"
           v-td=""
@@ -1382,15 +1335,14 @@ exports[`Table examples LargePaddingBandedRowsTableComponent should render corre
           D2
         </td>
       </tr>
-      <tr
-        v-tr=""
-      >
-        <td
+      <tr>
+        <th
           class="v-td"
+          scope="row"
           v-td=""
         >
           A3
-        </td>
+        </th>
         <td
           class="v-td"
           v-td=""
@@ -1417,9 +1369,7 @@ exports[`Table examples LargePaddingBandedRowsTableComponent should render corre
 `;
 
 exports[`Table examples LinedRowsTableComponent should render correctly 1`] = `
-<div
-  id="root7"
->
+<div>
   <table
     class="v-table v-table-border-block"
     v-table=""
@@ -1431,9 +1381,7 @@ exports[`Table examples LinedRowsTableComponent should render correctly 1`] = `
        Table with lined rows. 
     </caption>
     <thead>
-      <tr
-        v-tr=""
-      >
+      <tr>
         <th
           class="v-th"
           scope="col"
@@ -1465,18 +1413,15 @@ exports[`Table examples LinedRowsTableComponent should render correctly 1`] = `
         
       </tr>
     </thead>
-    <tbody
-      v-tbody=""
-    >
-      <tr
-        v-tr=""
-      >
-        <td
+    <tbody>
+      <tr>
+        <th
           class="v-td"
+          scope="row"
           v-td=""
         >
           A1
-        </td>
+        </th>
         <td
           class="v-td"
           v-td=""
@@ -1496,15 +1441,14 @@ exports[`Table examples LinedRowsTableComponent should render correctly 1`] = `
           D1
         </td>
       </tr>
-      <tr
-        v-tr=""
-      >
-        <td
+      <tr>
+        <th
           class="v-td"
+          scope="row"
           v-td=""
         >
           A2
-        </td>
+        </th>
         <td
           class="v-td"
           v-td=""
@@ -1531,9 +1475,7 @@ exports[`Table examples LinedRowsTableComponent should render correctly 1`] = `
 `;
 
 exports[`Table examples MediumPaddingBandedRowsTableComponent should render correctly 1`] = `
-<div
-  id="root8"
->
+<div>
   <table
     class="v-table v-table-alt"
     tablesize="medium"
@@ -1546,9 +1488,7 @@ exports[`Table examples MediumPaddingBandedRowsTableComponent should render corr
        Table with medium padding and banded rows. 
     </caption>
     <thead>
-      <tr
-        v-tr=""
-      >
+      <tr>
         <th
           class="v-th"
           scope="col"
@@ -1580,18 +1520,15 @@ exports[`Table examples MediumPaddingBandedRowsTableComponent should render corr
         
       </tr>
     </thead>
-    <tbody
-      v-tbody=""
-    >
-      <tr
-        v-tr=""
-      >
-        <td
+    <tbody>
+      <tr>
+        <th
           class="v-td"
+          scope="row"
           v-td=""
         >
           A1
-        </td>
+        </th>
         <td
           class="v-td"
           v-td=""
@@ -1611,15 +1548,14 @@ exports[`Table examples MediumPaddingBandedRowsTableComponent should render corr
           D1
         </td>
       </tr>
-      <tr
-        v-tr=""
-      >
-        <td
+      <tr>
+        <th
           class="v-td"
+          scope="row"
           v-td=""
         >
           A2
-        </td>
+        </th>
         <td
           class="v-td"
           v-td=""
@@ -1639,15 +1575,14 @@ exports[`Table examples MediumPaddingBandedRowsTableComponent should render corr
           D2
         </td>
       </tr>
-      <tr
-        v-tr=""
-      >
-        <td
+      <tr>
+        <th
           class="v-td"
+          scope="row"
           v-td=""
         >
           A3
-        </td>
+        </th>
         <td
           class="v-td"
           v-td=""
@@ -1674,9 +1609,7 @@ exports[`Table examples MediumPaddingBandedRowsTableComponent should render corr
 `;
 
 exports[`Table examples OuterBorderColumnAndRowDividersTableComponent should render correctly 1`] = `
-<div
-  id="root9"
->
+<div>
   <div
     class="v-table-wrapper"
     style="--v-table-wrapper-block-size: unset; --v-table-wrapper-inline-size: unset;"
@@ -1693,9 +1626,7 @@ exports[`Table examples OuterBorderColumnAndRowDividersTableComponent should ren
          Table with outer borders on columns and row dividers. 
       </caption>
       <thead>
-        <tr
-          v-tr=""
-        >
+        <tr>
           <th
             class="v-th"
             scope="col"
@@ -1727,18 +1658,15 @@ exports[`Table examples OuterBorderColumnAndRowDividersTableComponent should ren
           
         </tr>
       </thead>
-      <tbody
-        v-tbody=""
-      >
-        <tr
-          v-tr=""
-        >
-          <td
+      <tbody>
+        <tr>
+          <th
             class="v-td"
+            scope="row"
             v-td=""
           >
             A1
-          </td>
+          </th>
           <td
             class="v-td"
             v-td=""
@@ -1758,15 +1686,14 @@ exports[`Table examples OuterBorderColumnAndRowDividersTableComponent should ren
             D1
           </td>
         </tr>
-        <tr
-          v-tr=""
-        >
-          <td
+        <tr>
+          <th
             class="v-td"
+            scope="row"
             v-td=""
           >
             A2
-          </td>
+          </th>
           <td
             class="v-td"
             v-td=""
@@ -1794,9 +1721,7 @@ exports[`Table examples OuterBorderColumnAndRowDividersTableComponent should ren
 `;
 
 exports[`Table examples OuterBorderSubtleHeadersTableComponent should render correctly 1`] = `
-<div
-  id="root10"
->
+<div>
   <div
     class="v-table-wrapper"
     style="--v-table-wrapper-block-size: unset; --v-table-wrapper-inline-size: unset;"
@@ -1813,9 +1738,7 @@ exports[`Table examples OuterBorderSubtleHeadersTableComponent should render cor
          Table with outer borders and subtle headers. 
       </caption>
       <thead>
-        <tr
-          v-tr=""
-        >
+        <tr>
           <th
             class="v-th"
             scope="col"
@@ -1847,18 +1770,15 @@ exports[`Table examples OuterBorderSubtleHeadersTableComponent should render cor
           
         </tr>
       </thead>
-      <tbody
-        v-tbody=""
-      >
-        <tr
-          v-tr=""
-        >
-          <td
+      <tbody>
+        <tr>
+          <th
             class="v-td"
+            scope="row"
             v-td=""
           >
             A1
-          </td>
+          </th>
           <td
             class="v-td"
             v-td=""
@@ -1878,15 +1798,14 @@ exports[`Table examples OuterBorderSubtleHeadersTableComponent should render cor
             D1
           </td>
         </tr>
-        <tr
-          v-tr=""
-        >
-          <td
+        <tr>
+          <th
             class="v-td"
+            scope="row"
             v-td=""
           >
             A2
-          </td>
+          </th>
           <td
             class="v-td"
             v-td=""
@@ -1914,9 +1833,7 @@ exports[`Table examples OuterBorderSubtleHeadersTableComponent should render cor
 `;
 
 exports[`Table examples ScrollTableComponent should render correctly 1`] = `
-<div
-  id="root11"
->
+<div>
   <div
     class="v-table-wrapper"
     scrollblocksize="298"
@@ -1937,9 +1854,7 @@ exports[`Table examples ScrollTableComponent should render correctly 1`] = `
          Table with extra data added to demo scrollable content. 
       </caption>
       <thead>
-        <tr
-          v-tr=""
-        >
+        <tr>
           <th
             class="v-th"
             scope="col"
@@ -2027,18 +1942,15 @@ exports[`Table examples ScrollTableComponent should render correctly 1`] = `
           
         </tr>
       </thead>
-      <tbody
-        v-tbody=""
-      >
-        <tr
-          v-tr=""
-        >
-          <td
+      <tbody>
+        <tr>
+          <th
             class="v-td"
+            scope="row"
             v-td=""
           >
             A1
-          </td>
+          </th>
           <td
             class="v-td"
             v-td=""
@@ -2106,15 +2018,14 @@ exports[`Table examples ScrollTableComponent should render correctly 1`] = `
             L1
           </td>
         </tr>
-        <tr
-          v-tr=""
-        >
-          <td
+        <tr>
+          <th
             class="v-td"
+            scope="row"
             v-td=""
           >
             A2
-          </td>
+          </th>
           <td
             class="v-td"
             v-td=""
@@ -2182,15 +2093,14 @@ exports[`Table examples ScrollTableComponent should render correctly 1`] = `
             L2
           </td>
         </tr>
-        <tr
-          v-tr=""
-        >
-          <td
+        <tr>
+          <th
             class="v-td"
+            scope="row"
             v-td=""
           >
             A3
-          </td>
+          </th>
           <td
             class="v-td"
             v-td=""
@@ -2258,15 +2168,14 @@ exports[`Table examples ScrollTableComponent should render correctly 1`] = `
             L3
           </td>
         </tr>
-        <tr
-          v-tr=""
-        >
-          <td
+        <tr>
+          <th
             class="v-td"
+            scope="row"
             v-td=""
           >
             A4
-          </td>
+          </th>
           <td
             class="v-td"
             v-td=""
@@ -2334,15 +2243,14 @@ exports[`Table examples ScrollTableComponent should render correctly 1`] = `
             L4
           </td>
         </tr>
-        <tr
-          v-tr=""
-        >
-          <td
+        <tr>
+          <th
             class="v-td"
+            scope="row"
             v-td=""
           >
             A5
-          </td>
+          </th>
           <td
             class="v-td"
             v-td=""
@@ -2410,15 +2318,14 @@ exports[`Table examples ScrollTableComponent should render correctly 1`] = `
             L5
           </td>
         </tr>
-        <tr
-          v-tr=""
-        >
-          <td
+        <tr>
+          <th
             class="v-td"
+            scope="row"
             v-td=""
           >
             A6
-          </td>
+          </th>
           <td
             class="v-td"
             v-td=""
@@ -2486,15 +2393,14 @@ exports[`Table examples ScrollTableComponent should render correctly 1`] = `
             L6
           </td>
         </tr>
-        <tr
-          v-tr=""
-        >
-          <td
+        <tr>
+          <th
             class="v-td"
+            scope="row"
             v-td=""
           >
             A7
-          </td>
+          </th>
           <td
             class="v-td"
             v-td=""
@@ -2562,15 +2468,14 @@ exports[`Table examples ScrollTableComponent should render correctly 1`] = `
             L7
           </td>
         </tr>
-        <tr
-          v-tr=""
-        >
-          <td
+        <tr>
+          <th
             class="v-td"
+            scope="row"
             v-td=""
           >
             A8
-          </td>
+          </th>
           <td
             class="v-td"
             v-td=""
@@ -2638,15 +2543,14 @@ exports[`Table examples ScrollTableComponent should render correctly 1`] = `
             L8
           </td>
         </tr>
-        <tr
-          v-tr=""
-        >
-          <td
+        <tr>
+          <th
             class="v-td"
+            scope="row"
             v-td=""
           >
             A9
-          </td>
+          </th>
           <td
             class="v-td"
             v-td=""

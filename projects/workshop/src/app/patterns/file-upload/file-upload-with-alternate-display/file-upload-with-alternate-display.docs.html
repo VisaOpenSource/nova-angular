@@ -1,0 +1,253 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div vFlex vFlexCol vGap="25">
+  <div vFlex vFlexCol vGap="4" style="max-width: 400px">
+    <div vFlex vFlexCol vGap="16">
+      <div vFlex vFlexCol vGap="8">
+        <p vTypography="subtitle-1">Upload files</p>
+        <p vTypography="label-small">
+          Choose one or more files to upload, up to 10MB each. Accepted file
+          types are .jpg, .pdf, .docx, and .xlsx.
+        </p>
+      </div>
+      <div>
+        <input
+          #fileInput
+          vSR
+          type="file"
+          multiple
+          (change)="handleFileChange($event)"
+        />
+        <div vAlignSelf="start">
+          <button
+            v-button
+            buttonColor="secondary"
+            (click)="handleSelectFilesClick()"
+          >
+            Select file(s)
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Always-present live region; hidden when empty to avoid flex gap spacing -->
+    <div vFlex vFlexCol vGap="8" role="status" style="min-height: 1rem">
+      @if (uploadingFiles().length > 0) {
+      <p vTypography="label-small">
+        Uploading {{ uploadingFiles().length }} file{{ uploadingFiles().length >
+        1 ? "s" : "" }}...
+      </p>
+      } @if ( erroredFiles().length > 0 && !uploadingFiles().length &&
+      showSectionMessage() ) {
+      <div v-section v-message messageType="error" vMY="21">
+        <svg
+          v-message-icon
+          v-icon-visa-error-low
+          aria-hidden="false"
+          aria-label="Error"
+          role="img"
+        />
+        <div v-message-content vPL="2" vPB="2">
+          <div style="word-break: break-all">
+            <p vTypography>The following files have errors:</p>
+            <div vPL="20">
+              <ul style="list-style: initial">
+                @for (file of erroredFiles(); track file.id) {
+                <li>
+                  <a href="#" (click)="$event.preventDefault()">
+                    {{ file.file.name }}
+                  </a>
+                </li>
+                }
+              </ul>
+            </div>
+            @if (erroredFiles().length > 1) {
+            <div vMT="8">
+              <button
+                v-button
+                buttonColor="secondary"
+                (click)="handleRetryAll()"
+              >
+                Retry all
+              </button>
+            </div>
+            }
+          </div>
+        </div>
+        <button
+          v-button-icon
+          subtle
+          vMT="-8"
+          vMR="-8"
+          vML="14"
+          vP="7"
+          buttonSize="small"
+          buttonColor="tertiary"
+          aria-label="close"
+          (click)="handleSectionMessageClose()"
+        >
+          <svg v-icon-visa-close-tiny />
+        </button>
+      </div>
+      }
+    </div>
+
+    <!-- Table with files -->
+    @if (sortedFiles().length > 0) {
+    <div v-table-wrapper style="--v-table-wrapper-inline-size: 1000px">
+      <table
+        v-table
+        alternate
+        style="
+          --v-table-data-padding-block-default: 3px;
+          --v-table-header-padding-block: 4px;
+          --v-table-header-padding-inline: 7px;
+          --v-button-default-block-size: 30px;
+        "
+      >
+        <caption vSR>
+          File upload table showing file name, type, status, and upload date
+          with sortable columns and action buttons for each file.
+        </caption>
+        <thead>
+          <tr v-tr>
+            <th
+              v-th
+              scope="col"
+              [attr.aria-sort]="
+              sortKey().column === 'name'
+                ? sortKey().direction === 'ascending'
+                  ? 'ascending'
+                  : 'descending'
+                : null
+            "
+            >
+              <div vFlex vJustifyContentBetween vAlignItemsCenter vGap="4">
+                File name
+                <sort-button
+                  [columnName]="'File name'"
+                  [sorted]="sortKey().column === 'name' ? sortKey().direction : 'none'"
+                  (sort)="handleSort('name', $event)"
+                ></sort-button>
+              </div>
+            </th>
+            <th
+              v-th
+              scope="col"
+              [attr.aria-sort]="
+              sortKey().column === 'type'
+                ? sortKey().direction === 'ascending'
+                  ? 'ascending'
+                  : 'descending'
+                : null
+            "
+            >
+              <div vFlex vJustifyContentBetween vAlignItemsCenter vGap="4">
+                File type
+                <sort-button
+                  [columnName]="'File type'"
+                  [sorted]="sortKey().column === 'type' ? sortKey().direction : 'none'"
+                  (sort)="handleSort('type', $event)"
+                ></sort-button>
+              </div>
+            </th>
+            <th
+              v-th
+              scope="col"
+              [attr.aria-sort]="
+              sortKey().column === 'status'
+                ? sortKey().direction === 'ascending'
+                  ? 'ascending'
+                  : 'descending'
+                : null
+            "
+            >
+              <div vFlex vJustifyContentBetween vAlignItemsCenter vGap="4">
+                Status
+                <sort-button
+                  [columnName]="'Status'"
+                  [sorted]="sortKey().column === 'status' ? sortKey().direction : 'none'"
+                  (sort)="handleSort('status', $event)"
+                ></sort-button>
+              </div>
+            </th>
+            <th
+              v-th
+              scope="col"
+              [attr.aria-sort]="
+              sortKey().column === 'uploadDate'
+                ? sortKey().direction === 'ascending'
+                  ? 'ascending'
+                  : 'descending'
+                : null
+            "
+            >
+              <div vFlex vJustifyContentBetween vAlignItemsCenter vGap="4">
+                Upload date
+                <sort-button
+                  [columnName]="'Upload date'"
+                  [sorted]="sortKey().column === 'uploadDate' ? sortKey().direction : 'none'"
+                  (sort)="handleSort('uploadDate', $event)"
+                ></sort-button>
+              </div>
+            </th>
+            <th v-th scope="col">
+              <div vPX="8">
+                <span vTypography>Actions</span>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody v-tbody>
+          @for (file of sortedFiles(); track file.id) {
+          <tr
+            v-tr
+            nova-upload-row
+            [file]="file"
+            (onRetry)="handleRetryFile(file)"
+            (onDelete)="handleDeleteFile(file)"
+          ></tr>
+          }
+        </tbody>
+      </table>
+    </div>
+    }
+  </div>
+
+  <!-- Success flag -->
+  <div role="alert" vAlignSelfEnd>
+    @if (showFlag() && allFilesUploaded()) {
+    <upload-success-flag
+      message="Files uploaded successfully."
+      (closeFlag)="handleFlagClose()"
+    ></upload-success-flag>
+    }
+  </div>
+
+  <!-- Upload Dialog -->
+  <nova-upload-dialog
+    [isOpen]="isDialogOpen()"
+    [title]="uploadDialogTitle"
+    [description]="uploadDialogDescription"
+    [queuedFiles]="queuedFiles()"
+    [dialogId]="uploadQueueDialogId"
+    (onSelectFiles)="handleSelectFilesClick()"
+    (onUpload)="handleUploadClick()"
+    (onClose)="handleCloseDialog()"
+    (onDeleteQueuedFile)="handleDeleteQueuedFile($event)"
+  ></nova-upload-dialog>
+</div>

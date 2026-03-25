@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,8 +14,6 @@
  * limitations under the License.
  *
  -->
-@if(!workshopService.isLoadingExamples()){
-
 <div v-section v-message vMT="14" messageType="information">
   <svg v-message-icon v-icon-visa-information-low aria-hidden="false" aria-label="Information" role="img" />
   <div v-message-content>
@@ -123,4 +121,13 @@
 >
   <nova-workshop-radio-model-driven-fb></nova-workshop-radio-model-driven-fb>
 </nova-workshop-example>
-}
+
+<h2 vTypography="headline-2">Reusable radio button</h2>
+
+<nova-workshop-example selector="nova-reusable-radio-demo" exampleTitle="Reusable radio button demo">
+  <nova-reusable-radio-demo></nova-reusable-radio-demo>
+</nova-workshop-example>
+
+<nova-workshop-example selector="nova-reusable-radio-group-demo" exampleTitle="Reusable radio button group demo">
+  <nova-reusable-radio-group-demo></nova-reusable-radio-group-demo>
+</nova-workshop-example>

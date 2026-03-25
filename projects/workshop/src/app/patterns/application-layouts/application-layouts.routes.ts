@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,27 +19,17 @@ import { Routes } from '@angular/router';
 import { TITLE_SEPARATOR, TITLE_SUFFIX } from '../../app.constants';
 
 export const applicationLayoutsRoutes: Routes = [
-  { loadComponent: () => import('./application-layouts.docs').then((m) => m.ApplicationLayoutsDocsComponent), path: '' },
-  {
-    loadComponent: () => import('./horizontal-application-layout/horizontal-application-layout.docs').then((m) => m.HorizontalApplicationLayoutComponent),
-    path: 'horizontal-application-layout',
-    title: 'Horizontal Application Layout | Example' + TITLE_SEPARATOR + TITLE_SUFFIX
-  },
-  {
-    loadComponent: () => import('./stacked-horizontal-application-layout/stacked-horizontal-application-layout.docs').then((m) => m.StackedHorizontalApplicationLayoutComponent),
-    path: 'stacked-horizontal-application-layout',
-    title: 'Stacked Horizontal Application Layout | Example' + TITLE_SEPARATOR + TITLE_SUFFIX
-  },
-  {
-    loadComponent: () => import('./vertical-application-layout/vertical-application-layout.docs').then((m) => m.VerticalApplicationLayoutComponent),
-    path: 'vertical-application-layout',
-    title: 'Vertical Application Layout | Example' + TITLE_SEPARATOR + TITLE_SUFFIX
-  },
-  {
-    loadComponent: () => import('./mixed-application-layout/mixed-application-layout.docs').then((m) => m.MixedApplicationLayoutComponent),
-    path: 'mixed-application-layout',
-    title: 'Mixed Application Layout | Example' + TITLE_SEPARATOR + TITLE_SUFFIX
-  }
+	{ loadComponent: () => import('./application-layouts.docs').then(m => m.ApplicationLayoutsDocsComponent), path: '' },
+	{ loadComponent: () => import('./horizontal-application-layout/horizontal-nav-layout/horizontal-nav-layout.docs').then(m => m.HorizontalNavLayoutComponent), path: 'horizontal-nav-layout', title: 'Horizontal nav layout application layouts pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./horizontal-application-layout/horizontal-application-layout.docs').then(m => m.HorizontalApplicationLayoutComponent), path: 'horizontal-application-layout', title: 'Horizontal application layout application layouts pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./mixed-application-layout/horizontal-mixed-nav-layout/horizontal-mixed-nav-layout.docs').then(m => m.HorizontalMixedNavLayoutComponent), path: 'horizontal-mixed-nav-layout', title: 'Horizontal mixed nav layout application layouts pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./mixed-application-layout/vertical-mixed-nav-layout/vertical-mixed-nav-layout.docs').then(m => m.VerticalMixedNavLayoutComponent), path: 'vertical-mixed-nav-layout', title: 'Vertical mixed nav layout application layouts pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./mixed-application-layout/mixed-application-layout.docs').then(m => m.MixedApplicationLayoutComponent), path: 'mixed-application-layout', title: 'Mixed application layout application layouts pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./shared/footer-layout/footer-layout.docs').then(m => m.FooterLayoutComponent), path: 'footer-layout', title: 'Footer layout application layouts pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./stacked-horizontal-application-layout/stacked-nav-layout/stacked-nav-layout.docs').then(m => m.StackedNavLayoutComponent), path: 'stacked-nav-layout', title: 'Stacked nav layout application layouts pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./stacked-horizontal-application-layout/stacked-horizontal-application-layout.docs').then(m => m.StackedHorizontalApplicationLayoutComponent), path: 'stacked-horizontal-application-layout', title: 'Stacked horizontal application layout application layouts pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./vertical-application-layout/vertical-nav-layout/vertical-nav-layout.docs').then(m => m.VerticalNavLayoutComponent), path: 'vertical-nav-layout', title: 'Vertical nav layout application layouts pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./vertical-application-layout/vertical-application-layout.docs').then(m => m.VerticalApplicationLayoutComponent), path: 'vertical-application-layout', title: 'Vertical application layout application layouts pattern | Example' + TITLE_SEPARATOR + TITLE_SUFFIX }
 ];
 
 export default applicationLayoutsRoutes;

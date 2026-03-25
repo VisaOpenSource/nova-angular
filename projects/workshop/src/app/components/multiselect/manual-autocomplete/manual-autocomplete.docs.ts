@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,7 @@
  *
  **/
 import {
+  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
   computed,
@@ -43,7 +44,7 @@ import { VisaChevronDownTiny, VisaChevronUpTiny, VisaClearAltTiny } from '@visa/
   standalone: true,
   imports: [NovaLibModule, VisaClearAltTiny, VisaChevronDownTiny, VisaChevronUpTiny]
 })
-export class ManualAutocompleteMultiselectComponent {
+export class ManualAutocompleteMultiselectComponent implements AfterViewInit {
   readonly combobox = viewChild(ComboboxDirective);
   readonly comboboxService = inject(ComboboxService);
 

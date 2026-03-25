@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Switch examples NovaDisabledOffSwitchDocsComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <div
     class="v-gap-10 v-flex v-flex-row v-flex-wrap v-justify-content-between v-m-8"
     style="max-inline-size: 288px;"
@@ -36,9 +34,7 @@ exports[`Switch examples NovaDisabledOffSwitchDocsComponent should render correc
 `;
 
 exports[`Switch examples NovaOptionalTextSwitchDocsComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <div
     class="v-gap-10 v-flex v-flex-row v-flex-wrap v-justify-content-between v-m-8"
     style="max-inline-size: 288px;"
@@ -50,6 +46,7 @@ exports[`Switch examples NovaOptionalTextSwitchDocsComponent should render corre
   >
     <div
       class="v-gap-2 v-flex v-flex-col v-flex-grow v-mt-2"
+      style="flex-basis: min-content;"
       vflex=""
       vflexbasis="min-content"
       vflexcol=""
@@ -89,9 +86,7 @@ exports[`Switch examples NovaOptionalTextSwitchDocsComponent should render corre
 `;
 
 exports[`Switch examples NovaStandardSwitchComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <div
     class="v-gap-10 v-flex v-flex-row v-flex-wrap v-justify-content-between v-m-8"
     style="max-inline-size: 288px;"

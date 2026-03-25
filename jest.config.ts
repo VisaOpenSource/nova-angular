@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,16 +41,8 @@ const config: Config = {
   collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  // collectCoverageFrom: undefined,
-
-  // The directory where Jest should output its coverage files
-  collectCoverageFrom: [
-    'projects/nova-angular/**/*.ts',
-    '!projects/**/*.spec.ts',
-    '!projects/**/index.ts',
-    '!projects/**/public-api.ts'
-  ],
-
+  // Note: When using multi-project mode, collectCoverageFrom should be defined at the project level, not here
+  // collectCoverageFrom: [],
   // An array of regexp pattern strings used to skip coverage collection
   // coveragePathIgnorePatterns: [
   //   "/node_modules/"
@@ -62,7 +54,6 @@ const config: Config = {
   // A list of reporter names that Jest uses when writing coverage reports
   coverageReporters: [
     'clover',
-    'cobertura',
     'json',
     'lcov',
     'text',

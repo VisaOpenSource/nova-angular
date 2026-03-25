@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,6 +22,7 @@ import { WorkshopService } from '../../shared/services/workshop.service';
 import { NovaDisabledOffSwitchDocsComponent } from './disabled-off/disabled-off.docs';
 import { NovaDisabledSelectedSwitchDocsComponent } from './disabled-selected/disabled-selected.docs';
 import { NovaOptionalTextSwitchDocsComponent } from './optional-text/optional-text.docs';
+import { ReusableSwitchDemo } from './reusable/reusable.docs';
 import { NovaStandardSwitchComponent } from './standard/standard.docs';
 
 @Component({
@@ -32,7 +33,8 @@ import { NovaStandardSwitchComponent } from './standard/standard.docs';
     NovaStandardSwitchComponent,
     NovaDisabledOffSwitchDocsComponent,
     NovaDisabledSelectedSwitchDocsComponent,
-    NovaOptionalTextSwitchDocsComponent
+    NovaOptionalTextSwitchDocsComponent,
+    ReusableSwitchDemo
   ],
   standalone: true,
   selector: 'nova-workshop-switch',
@@ -50,13 +52,5 @@ export class SwitchDocsComponent {
       { name: 'AppReadyService', type: 'service-source' },
       { name: 'IdGenerator', type: 'service-source' }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

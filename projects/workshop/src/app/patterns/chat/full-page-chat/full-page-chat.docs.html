@@ -1,0 +1,196 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div id="full-page-chat" class="app-container">
+  <div class="layout-container">
+    <full-page-navigation (newChatStarted)="onNewChatStarted()"></full-page-navigation>
+    <main id="full-page-content" class="main-content">
+      <div
+        v-content-card
+        id="chat-card"
+        style="min-block-size: calc(100vh - 64px); container-type: inline-size; min-inline-size: 300px"
+      >
+        <div
+          vPX="20"
+          vFlex
+          vJustifyContentBetween
+          vAlignItemsCenter
+          style="
+            block-size: 56px;
+            border-block-end: var(--v-content-card-border);
+            box-shadow: var(--v-content-card-elevation), var(--v-content-card-border-block-end-none);
+          "
+        >
+          <span>Chat name</span>
+
+          <div vFlex vJustifyContentBetween vAlignItemsCenter vGap="10">
+            <button v-button-icon aria-label="pin" buttonColor="tertiary" subtle>
+              <svg v-icon-visa-pin-outline-tiny></svg>
+            </button>
+
+            <div v-floating-ui-container placement="bottom-end">
+              <button
+                v-button-icon
+                v-floating-ui-trigger
+                aria-label="see more options"
+                buttonColor="tertiary"
+                subtle
+                id="more-options-button"
+                style="--v-button-default-block-size: var(--size-scalable-38)"
+              >
+                <svg v-icon-visa-option-horizontal-tiny></svg>
+              </button>
+
+              <div v-dropdown-menu id="more-options" style="inline-size: 180px; z-index: 1">
+                <ul v-dropdown-list>
+                  <li>
+                    <button
+                      v-dropdown-item
+                      vFlex
+                      vFlexRow
+                      vAlignItemsStart
+                      vGap="6"
+                      vPX="8"
+                      vPY="11"
+                      buttonColor="tertiary"
+                      subtle
+                    >
+                      <svg v-icon-visa-edit-tiny></svg> Rename
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      v-dropdown-item
+                      vFlex
+                      vFlexRow
+                      vAlignItemsStart
+                      vGap="6"
+                      vPX="8"
+                      vPY="11"
+                      buttonColor="tertiary"
+                      subtle
+                    >
+                      <svg v-icon-visa-search-tiny></svg> Search in chat
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      v-dropdown-item
+                      vFlex
+                      vFlexRow
+                      vAlignItemsStart
+                      vGap="6"
+                      vPX="8"
+                      vPY="11"
+                      buttonColor="tertiary"
+                      subtle
+                    >
+                      <svg v-icon-visa-file-download-tiny></svg> Download
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      v-dropdown-item
+                      vFlex
+                      vFlexRow
+                      vAlignItemsStart
+                      vGap="6"
+                      vPX="8"
+                      vPY="11"
+                      buttonColor="tertiary"
+                      subtle
+                    >
+                      <svg v-icon-visa-idea-tiny></svg> Make a suggestion
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      v-dropdown-item
+                      vFlex
+                      vFlexRow
+                      vAlignItemsStart
+                      vGap="6"
+                      vPX="8"
+                      vPY="11"
+                      v-button
+                      buttonColor="tertiary"
+                      destructive
+                    >
+                      <svg v-icon-visa-delete-tiny />
+                      Delete chat
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat Content -->
+        <div
+          v-content-card-body
+          vFlex
+          vFlexCol
+          vJustifyContentBetween
+          style="block-size: calc(100vh - 120px); min-block-size: fit-content; padding: 24px"
+        >
+          @if (shouldShowWelcomeContent()) {
+          <!-- Welcome Message -->
+          <div vFlex vFlexCol>
+            <h3 vTypography="headline-3">Welcome!</h3>
+            <p vTypography="body-2" vPT="4">
+              I'm your friendly AI chatbot, here to assist you. I'm powered by artificial intelligence, which allows me
+              to learn and adapt to better serve your needs. Our conversations are stored to improve our services, but
+              you have the right to access, correct, or delete your personal information at any time.
+            </p>
+          </div>
+          } @else {
+          <div #chatContainer vFlex vFlexCol vGap="24" vFlexGrow vFlexShrink vFlexBasis="0" style="overflow-y: auto">
+            @for (response of currentChat().messages; track response.id) {
+            <!-- "User 2" represents AI/system responses; other roles are user messages -->
+            @if (response.role === "User 2") {
+            <!-- vContainerHide toggles between desktop/mobile layouts based on container width, showing large avatars on desktop and small on mobile -->
+            <div vContainerHide="mobile">
+              <response-chat-bubble [response]="response" [hideTimestamp]="false"> </response-chat-bubble>
+            </div>
+            <div vContainerHide="desktop">
+              <response-chat-bubble [response]="response" [hideTimestamp]="false" [smallAvatar]="true">
+              </response-chat-bubble>
+            </div>
+            } @else {
+            <div vContainerHide="mobile">
+              <user-chat-bubble [response]="response" [hideTimestamp]="false"> </user-chat-bubble>
+            </div>
+            <div vContainerHide="desktop">
+              <user-chat-bubble [response]="response" [hideTimestamp]="false" [smallAvatar]="true"> </user-chat-bubble>
+            </div>
+            } }
+          </div>
+          }
+
+          <!-- Chat Input Section -->
+          <div vFlex vFlexCol vGap="8">
+            @if (shouldShowWelcomeContent()) {
+            <nova-workshop-chat-suggestions (suggestionSelected)="onSuggestionSelected($event)">
+            </nova-workshop-chat-suggestions>
+            }
+            <chat-input id="full-page-chat-input" (messageSubmitted)="onChatInputSubmitted($event)"> </chat-input>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>

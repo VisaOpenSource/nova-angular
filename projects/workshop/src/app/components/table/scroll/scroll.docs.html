@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,16 +20,16 @@
       Table with extra data added to demo scrollable content.
     </caption>
     <thead>
-      <tr v-tr>
+      <tr>
         @for(colItem of columnData(); track colItem){
         <th v-th scope="col">{{ colItem }}</th>
         }
       </tr>
     </thead>
-    <tbody v-tbody>
+    <tbody>
       @for(rowItem of rowData(); track rowItem){
-      <tr v-tr>
-        <td v-td>{{ rowItem['col-a'] }}</td>
+      <tr>
+        <th v-td scope="row">{{ rowItem['col-a'] }}</th>
         <td v-td>{{ rowItem['col-b'] }}</td>
         <td v-td>{{ rowItem['col-c'] }}</td>
         <td v-td>{{ rowItem['col-d'] }}</td>

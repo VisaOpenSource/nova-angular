@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,6 +22,7 @@ const { getComponentData } = require('./component-schema');
 const { getContentData } = require('./generate-content-data');
 const { TARGET_DIR } = require('./meta-data.constants');
 const updateDocs = require('./update-docs');
+
 const Process = (() => {
   let data = {};
   let pargs = {
@@ -44,7 +45,14 @@ const Process = (() => {
     getContentData(); // uncomment when content hierarchy is updated by content team and needs to be recreated
     data['library'] = addStaticData(packageJson);
     data['components'] = getComponentData();
-    fs.writeFileSync(path.resolve(`${TARGET_DIR}/metadata/nova-angular-6.0.0.json`), JSON.stringify(data, null, 2));
+
+    const version = packageJson.version;
+    const metadataFile = `nova-angular-${version}.json`;
+
+    fs.writeFileSync(
+      path.resolve(`${TARGET_DIR}/metadata/${metadataFile}`),
+      JSON.stringify(data, null, 2),
+    );
   };
 
   processArgs(process.argv);

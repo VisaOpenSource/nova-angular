@@ -1,66 +1,80 @@
 {
-  "@angular/cdk@20.2.5": {
+  "@angular/animations@21.1.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/angular/angular",
+    "publisher": "angular",
+    "path": "node_modules/@angular/animations",
+    "licenseFile": "node_modules/@angular/animations/LICENSE"
+  },
+  "@angular/cdk@21.0.3": {
     "licenses": "MIT",
     "repository": "https://github.com/angular/components",
     "path": "node_modules/@angular/cdk",
     "licenseFile": "node_modules/@angular/cdk/LICENSE"
   },
-  "@angular/common@20.3.2": {
+  "@angular/common@21.1.6": {
     "licenses": "MIT",
     "repository": "https://github.com/angular/angular",
     "publisher": "angular",
     "path": "node_modules/@angular/common",
     "licenseFile": "node_modules/@angular/common/LICENSE"
   },
-  "@angular/compiler@20.3.2": {
+  "@angular/compiler@21.1.6": {
     "licenses": "MIT",
     "repository": "https://github.com/angular/angular",
     "publisher": "angular",
     "path": "node_modules/@angular/compiler",
     "licenseFile": "node_modules/@angular/compiler/LICENSE"
   },
-  "@angular/core@20.3.2": {
+  "@angular/core@21.1.6": {
     "licenses": "MIT",
     "repository": "https://github.com/angular/angular",
     "publisher": "angular",
     "path": "node_modules/@angular/core",
     "licenseFile": "node_modules/@angular/core/LICENSE"
   },
-  "@angular/forms@20.3.2": {
+  "@angular/forms@21.1.6": {
     "licenses": "MIT",
     "repository": "https://github.com/angular/angular",
     "publisher": "angular",
     "path": "node_modules/@angular/forms",
     "licenseFile": "node_modules/@angular/forms/LICENSE"
   },
-  "@angular/platform-browser@20.3.2": {
+  "@angular/platform-browser-dynamic@21.1.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/angular/angular",
+    "publisher": "angular",
+    "path": "node_modules/@angular/platform-browser-dynamic",
+    "licenseFile": "node_modules/@angular/platform-browser-dynamic/LICENSE"
+  },
+  "@angular/platform-browser@21.1.6": {
     "licenses": "MIT",
     "repository": "https://github.com/angular/angular",
     "publisher": "angular",
     "path": "node_modules/@angular/platform-browser",
     "licenseFile": "node_modules/@angular/platform-browser/LICENSE"
   },
-  "@angular/router@20.3.2": {
+  "@angular/router@21.1.6": {
     "licenses": "MIT",
     "repository": "https://github.com/angular/angular",
     "publisher": "angular",
     "path": "node_modules/@angular/router",
     "licenseFile": "node_modules/@angular/router/LICENSE"
   },
-  "@floating-ui/dom@1.7.4": {
+  "@floating-ui/dom@1.7.6": {
     "licenses": "MIT",
     "repository": "https://github.com/floating-ui/floating-ui",
     "publisher": "atomiks",
     "path": "node_modules/@floating-ui/dom",
     "licenseFile": "node_modules/@floating-ui/dom/LICENSE"
   },
-  "@visa/nova-icons-angular@3.0.0": {
+  "@visa/nova-icons-angular@4.0.0": {
     "licenses": "Apache-2.0",
     "publisher": "Visa Product Design System",
     "path": "node_modules/@visa/nova-icons-angular",
     "licenseFile": "node_modules/@visa/nova-icons-angular/LICENSE"
   },
-  "@visa/nova-styles@1.6.4": {
+  "@visa/nova-styles@1.6.5": {
     "licenses": "Apache-2.0",
     "publisher": "Visa Product Design System",
     "path": "node_modules/@visa/nova-styles",
@@ -82,7 +96,7 @@
     "path": "node_modules/clipboard",
     "licenseFile": "node_modules/clipboard/LICENSE"
   },
-  "dompurify@3.2.7": {
+  "dompurify@3.3.3": {
     "licenses": "(MPL-2.0 OR Apache-2.0)",
     "repository": "https://github.com/cure53/DOMPurify",
     "publisher": "Dr.-Ing. Mario Heiderich, Cure53",
@@ -91,7 +105,13 @@
     "path": "node_modules/dompurify",
     "licenseFile": "node_modules/dompurify/LICENSE"
   },
-  "marked@15.0.12": {
+  "jest-environment-jsdom@30.2.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jestjs/jest",
+    "path": "node_modules/jest-environment-jsdom",
+    "licenseFile": "node_modules/jest-environment-jsdom/LICENSE"
+  },
+  "marked@17.0.4": {
     "licenses": "MIT",
     "repository": "https://github.com/markedjs/marked",
     "publisher": "Christopher Jeffrey",
@@ -112,7 +132,7 @@
     "path": "node_modules/ngx-google-analytics",
     "licenseFile": "node_modules/ngx-google-analytics/LICENSE"
   },
-  "ngx-markdown@20.1.0": {
+  "ngx-markdown@21.1.0": {
     "licenses": "MIT",
     "repository": "https://github.com/jfcere/ngx-markdown",
     "publisher": "Jean-Francois Cere",

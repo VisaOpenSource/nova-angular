@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -51,7 +51,6 @@ import { ListboxService } from '../listbox/listbox.service';
 import { ListenerService } from '../listener-service/listener.service';
 import {
   BACKSPACE_KEY,
-  defaultEffectParam,
   DOWN_ARROW_KEY,
   ENTER_KEY,
   LEFT_ARROW_KEY,
@@ -70,7 +69,6 @@ import { ComboboxFilterType, ComboboxValue, MultiSelectValue, SingleSelectValue 
     '[attr.aria-invalid]': 'invalid()',
     '[attr.disabled]': 'disabled() ? "disabled" : null',
 
-    '(focus)': 'onTouched($event)',
     '(keydown)': 'hostKeyDown($event)'
   },
   providers: [
@@ -119,7 +117,15 @@ export class ComboboxDirective implements ControlValueAccessor, OnInit, AfterCon
   });
   // used in service only to store previously active item of type ListboxItemComponent or of type of array passed with custom filter
   public prevActiveItem: ListboxItemComponent | any;
-
+  public autoSelect: WritableSignal<boolean> = signal(false);
+  public selectFirstFilteredItemEffect = effect(() => {
+    if (!this.autoSelect()) return;
+    const listItems = this.listbox()?.listItems() || [];
+    if (listItems.length && this.input()?.value() !== '') {
+      const firstItem = this.novaLibService.nextEnabledItem(this.listbox()?.listItems() || []);
+      this.listbox()?.highlightedItem.set(this.listbox()?.listItems()[firstItem] || null);
+    }
+  });
   /**
    * children aria attributes
    */
@@ -161,7 +167,7 @@ export class ComboboxDirective implements ControlValueAccessor, OnInit, AfterCon
     const readonly = this.readonly();
     const removeText = untracked(() => this.removeReadonlyText());
     if (!removeText) this.appendReadonlyText(readonly);
-  }, defaultEffectParam);
+  });
 
   /**
    * Sets component as disabled when true.
@@ -220,7 +226,7 @@ export class ComboboxDirective implements ControlValueAccessor, OnInit, AfterCon
   private readonly labelIdEffect = effect(() => {
     const id = this.inputContainer()?.labelId();
     if (id) this.label()?.htmlForInternal.set(id);
-  }, defaultEffectParam);
+  });
 
   selectedItem: WritableSignal<ListboxItemComponent | undefined> = signal<ListboxItemComponent | undefined>(undefined);
   private readonly selectedItemLabelReady = effect(() => {
@@ -231,7 +237,7 @@ export class ComboboxDirective implements ControlValueAccessor, OnInit, AfterCon
     const currentInputValue = untracked(() => this.input()?.value());
     if (currentInputValue === itemLabel) return; // don't set input value if it already matches the selected item label
     this.input()?.value.set(itemLabel);
-  }, defaultEffectParam);
+  });
 
   prevInputValue: string | null = '';
   private readonly inputValueEffect = effect(() => {
@@ -245,7 +251,7 @@ export class ComboboxDirective implements ControlValueAccessor, OnInit, AfterCon
       this.value.set({ label: inputValue || '', value: listboxValue ?? null });
     });
     this.prevInputValue = inputValue;
-  }, defaultEffectParam);
+  });
 
   prevListboxValue: SingleSelectValue | MultiSelectValue | null = null;
   private readonly listboxValueEffect = effect(() => {
@@ -284,7 +290,7 @@ export class ComboboxDirective implements ControlValueAccessor, OnInit, AfterCon
         input: newValue.label
       });
     }
-  }, defaultEffectParam);
+  });
 
   prevValue: ComboboxValue = this.value();
   private readonly valueEffect = effect(() => {
@@ -315,9 +321,13 @@ export class ComboboxDirective implements ControlValueAccessor, OnInit, AfterCon
       }
     }
 
-    this.onChange(value);
+    if (this.manualChange()) {
+      // only emit onChange if the change was made by user interaction (listbox item selection)
+      this.manualChange.set(false);
+      this.onChange(value);
+    }
     this.prevValue = value;
-  }, defaultEffectParam);
+  });
 
   /**
    * Emits value of selected item(s).
@@ -346,12 +356,14 @@ export class ComboboxDirective implements ControlValueAccessor, OnInit, AfterCon
     this.floatingContainer?.isCombobox.set(true);
   }
 
+  private readonly manualChange = signal<boolean>(false);
   ngAfterContentInit(): void {
     // early returns are avoided here to ensure that all content children are initialized before setting up the combobox
     const input = this.input();
     if (input) {
       this.listenerService.subscriptions.push(
         input.inputEvent.subscribe(() => {
+          this.manualChange.set(true);
           if (!this.listbox()?.multiselect()) this.listbox()?.value.set(null);
           this.filter.emit({
             type: 'input',
@@ -364,6 +376,13 @@ export class ComboboxDirective implements ControlValueAccessor, OnInit, AfterCon
           this.listbox()?.showFocus.set(true);
         })
       );
+
+      // Subscribe to input blur to mark combobox as touched
+      this.listenerService.subscriptions.push(
+        input.blurred.subscribe((event) => {
+          this.onTouched(event);
+        })
+      );
     }
 
     const inputContainer = this.inputContainer();
@@ -374,6 +393,16 @@ export class ComboboxDirective implements ControlValueAccessor, OnInit, AfterCon
         toggleButton.clicked.subscribe(() => {
           this.input()?.el.nativeElement.focus();
           this.floatingContainer?.floatingUIService.toggleFloatingUI();
+        })
+      );
+    }
+
+    const listbox = this.listbox();
+    if (listbox) {
+      this.listenerService.subscriptions.push(
+        listbox.manualUserChange.subscribe(() => {
+          // mark that the change was made by user interaction
+          this.manualChange.set(true);
         })
       );
     }

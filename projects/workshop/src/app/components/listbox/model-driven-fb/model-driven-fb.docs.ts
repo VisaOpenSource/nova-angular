@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,8 @@
  * limitations under the License.
  *
  **/
-import { ChangeDetectionStrategy, Component, inject, viewChildren, signal, computed } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, viewChildren, computed } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ListboxDirective, NovaLibModule } from '@visa/nova-angular';
 import { VisaErrorTiny } from '@visa/nova-icons-angular';
@@ -32,19 +33,28 @@ export class ModelDrivenFBListboxComponent {
 
   readonly listboxes = viewChildren(ListboxDirective);
 
-  // Signals to track form control values
-  singleSelectValue = signal<string | null>(null);
-  multiSelectValue = signal<string[] | null>(null);
+  formValidation = this.fb.group({
+    ssFormControl: ['', Validators.required],
+    msFormControl: [[], Validators.required]
+  });
+
+  // Signals to track form control values using toSignal
+  singleSelectValue = toSignal(this.formValidation.get('ssFormControl')!.valueChanges, {
+    initialValue: this.formValidation.get('ssFormControl')?.value || null
+  });
+  multiSelectValue = toSignal(this.formValidation.get('msFormControl')!.valueChanges, {
+    initialValue: this.formValidation.get('msFormControl')?.value || null
+  });
 
   // Computed signals for formatted display values
   singleSelectDisplay = computed(() => {
     const value = this.singleSelectValue();
-    return value !== undefined ? value : 'none';
+    return value !== undefined ? value : '';
   });
 
   multiSelectDisplay = computed(() => {
     const value = this.multiSelectValue();
-    return value !== undefined ? value : 'none';
+    return value !== undefined ? value : '';
   });
   readonly singleSelectItems = [
     {
@@ -110,29 +120,7 @@ export class ModelDrivenFBListboxComponent {
     }
   ];
 
-  formValidation = this.fb.group({
-    ssFormControl: ['', Validators.required],
-    msFormControl: [[], Validators.required]
-  });
   isSubmitted = false;
-
-  constructor() {
-    // Initialize signals with initial form control values
-    const ssControl = this.formValidation.get('ssFormControl');
-    const msControl = this.formValidation.get('msFormControl');
-
-    this.singleSelectValue.set(ssControl?.value || null);
-    this.multiSelectValue.set(msControl?.value || null);
-
-    // Subscribe to form value changes
-    ssControl?.valueChanges.subscribe((value) => {
-      this.singleSelectValue.set(value || null);
-    });
-
-    msControl?.valueChanges.subscribe((value) => {
-      this.multiSelectValue.set(value || null);
-    });
-  }
 
   onSubmit() {
     this.isSubmitted = true;
@@ -140,22 +128,11 @@ export class ModelDrivenFBListboxComponent {
     if (invalidIndex !== -1) {
       this.listboxes()[invalidIndex]?.listItems()[0].el.nativeElement.focus();
     }
-
-    // Update signals with current form control values
-    const ssControl = this.formValidation.get('ssFormControl');
-    const msControl = this.formValidation.get('msFormControl');
-
-    this.singleSelectValue.set(ssControl?.value || null);
-    this.multiSelectValue.set(msControl?.value || null);
   }
 
   // Handle form reset
   onReset() {
     this.isSubmitted = false;
     this.formValidation.reset();
-
-    // Reset signals
-    this.singleSelectValue.set(null);
-    this.multiSelectValue.set(null);
   }
 }

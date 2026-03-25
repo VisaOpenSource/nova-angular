@@ -15,6 +15,32 @@
  *
  -->
 
+### [7.0.0](Learn more at: https://design.visa.com/developing/angular/changelog) (2026-03-20)
+This release adds Angular 21 support and drops Angular 18 support. It introduces new workshop patterns including a comprehensive dynamic-table pattern with filtering, pagination, and expandable rows, a file-upload pattern, and a chat pattern. Several component bug fixes improve combobox reliability, floating UI focus management, and toggle button state handling.
+  
+  
+#### BREAKING CHANGES
+- **Angular:** Drop Angular 18 support; library now requires Angular 19, 20, or 21
+
+#### Features
+- **Surface:** Add surface variant classes for styling flexibility
+- **Dynamic Table:** Add comprehensive patterns with sorting, filtering, pagination, expandable rows, and action bars
+- **File Upload:** Add patterns with drag-and-drop, progress tracking, and validation
+- **Chat:** Add dialog-based, panel-based, and full-page chat patterns
+
+#### Bug Fixes
+- **Combobox:** Reinstate automatic selection functionality
+- **Combobox:** Handle runtime undefined list case to prevent errors
+- **Floating UI:** Restore focus to trigger element when floating UI closes
+- **Floating UI:** Close menu on child click and properly bind disabled property
+- **Tab:** Fix disclosure tab bug when both expanded prop and disclosureTabToggled event are present
+- **Toggle Button:** Allow multiselect toggle group to return to empty state
+- **Toggle Button:** Fix initial state handling for multiselect mode
+- **Progress:** Allow indeterminate circular progress to be customized
+- **Pagination Control:** Prevent duplicate pages from appearing in start and end blocks
+- **File Upload:** Fix live region behavior for edge cases improving screen reader announcements
+- **Application Layouts:** Correct footer background color in layout patterns
+
 ### [6.0.2](Learn more at: https://design.visa.com/developing/angular/changelog) (2025-09-26)
 
 Learn more about the latest Nova Angular version in our article, [Meet Nova Angular 6](https://design.visa.com/what's-new/latest-news/fy25-nova-angular-6).

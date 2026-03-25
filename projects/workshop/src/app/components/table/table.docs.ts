@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ import { LinedRowsTableComponent } from './lined-rows/lined-rows.docs';
 import { MediumPaddingBandedRowsTableComponent } from './medium-padding-banded-rows/medium-padding-banded-rows.docs';
 import { OuterBorderColumnAndRowDividersTableComponent } from './outer-border-column-and-row-dividers/outer-border-column-and-row-dividers.docs';
 import { OuterBorderSubtleHeadersTableComponent } from './outer-border-subtle-headers/outer-border-subtle-headers.docs';
+import { ReusableTableDemo } from './reusable/reusable.docs';
 import { ScrollTableComponent } from './scroll/scroll.docs';
 
 @Component({
@@ -51,7 +52,8 @@ import { ScrollTableComponent } from './scroll/scroll.docs';
     KeyValueTableBandedTableComponent,
     KeyValueTableLinedTableComponent,
     TableKeyboardScrollMessageComponent,
-    FixedFirstColumnComponent
+    FixedFirstColumnComponent,
+    ReusableTableDemo
   ],
   standalone: true,
   selector: 'vds-docs-nova-table',
@@ -70,13 +72,5 @@ export class TableDocsComponent {
       { name: 'TrDirective' },
       { name: 'TableSize', type: APITypes.CONSTANT }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

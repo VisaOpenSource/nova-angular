@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,7 +37,6 @@ import { IdGenerator } from '../id-generator/id-generator.service';
 import { RadioGroupDirective } from '../radio-group/radio-group.directive';
 import { ToggleContainerDirective } from '../toggle-container/toggle-container.directive';
 import { ToggleDirective } from '../toggle/toggle.directive';
-import { defaultEffectParam } from '../nova-lib.constants';
 
 const RADIO_VALUE_ACCESSOR = {
   provide: NG_VALUE_ACCESSOR,
@@ -97,7 +96,7 @@ export class RadioDirective extends RadioControlValueAccessor {
   readonly checkedEffect = effect(() => {
     const checked = this.checked();
     this.setProperty('checked', checked);
-  }, defaultEffectParam);
+  });
 
   private checkName: () => void = super['_checkName'];
 
@@ -106,7 +105,7 @@ export class RadioDirective extends RadioControlValueAccessor {
     if (radioGroupValue !== undefined) {
       this.checked.set(this.valueSignal() === radioGroupValue);
     }
-  }, defaultEffectParam);
+  });
 
   /**
    * Sets radio as disabled when true.
@@ -160,7 +159,7 @@ export class RadioDirective extends RadioControlValueAccessor {
     this.formControlName = this.formName() ?? '';
     this.name = this.nameSignal() ?? '';
     this.checkName();
-  }, defaultEffectParam); // Used to sync to RadioControlValueAccessor
+  }); // Used to sync to RadioControlValueAccessor
 
   /**
    * Marks component as required when true.
@@ -184,7 +183,7 @@ export class RadioDirective extends RadioControlValueAccessor {
   );
   private readonly valueEffect = effect(() => {
     this.value = this.valueSignal();
-  }, defaultEffectParam); // Used to sync to RadioControlValueAccessor
+  }); // Used to sync to RadioControlValueAccessor
 
   handleChange(event: Event): void {
     const { checked: isChecked } = event.target as HTMLInputElement;

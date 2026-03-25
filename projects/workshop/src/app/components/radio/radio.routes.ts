@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,10 @@ export const radioRoutes: Routes = [
 	{ loadComponent: () => import('./panel-group/panel-group.docs').then(m => m.PanelGroupRadioComponent), path: 'panel-group', title: 'Panel group radio component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./panel-group-with-error/panel-group-with-error.docs').then(m => m.PanelGroupWithErrorRadioComponent), path: 'panel-group-with-error', title: 'Panel group with error radio component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./panel-without-description/panel-without-description.docs').then(m => m.PanelWithoutDescriptionRadioComponent), path: 'panel-without-description', title: 'Panel without description radio component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable-component/reusable-component.docs').then(m => m.ReusableRadio), path: 'reusable-component', title: 'Reusable component radio component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable.docs').then(m => m.ReusableRadioDemo), path: 'reusable', title: 'Reusable radio component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable-group/reusable-component/reusable-component.docs').then(m => m.ReusableRadioGroup), path: 'reusable-component', title: 'Reusable component radio component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable-group/reusable-group.docs').then(m => m.ReusableRadioGroupDemo), path: 'reusable-group', title: 'Reusable group radio component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./selected/selected.docs').then(m => m.SelectedRadioComponent), path: 'selected', title: 'Selected radio component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./template-driven-form/template-driven-form.docs').then(m => m.TemplateDrivenFormRadioComponent), path: 'template-driven-form', title: 'Template driven form radio component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./with-description/with-description.docs').then(m => m.WithDescriptionRadioComponent), path: 'with-description', title: 'With description radio component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },

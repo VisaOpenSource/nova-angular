@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,20 +17,20 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { NovaLibModule } from '@visa/nova-angular';
 import { VisaInformationLow, VisaMaximizeTiny } from '@visa/nova-icons-angular';
+import { NovaSharedModule } from '../../shared/nova-shared.module';
 import { APITypes } from '../../shared/services/workshop.constants';
 import { WorkshopService } from '../../shared/services/workshop.service';
-import { NovaSharedModule } from '../../shared/nova-shared.module';
 import { DefaultIconComponent } from './default/default.docs';
+import { ErrorIconComponent } from './error/error.docs';
 import { GenericIconComponent } from './generic/generic.docs';
 import { HighResolutionIconComponent } from './high-resolution/high-resolution.docs';
 import { LowResolutionIconComponent } from './low-resolution/low-resolution.docs';
 import { RTLIconComponent } from './rtl/rtl.docs';
+import { SuccessIconComponent } from './success/success.docs';
 import { TinyResolutionIconComponent } from './tiny-resolution/tiny-resolution.docs';
 import { UsingIconSpriteIconComponent } from './using-icon-sprite/using-icon-sprite.docs';
 import { VisaIconComponent } from './visa/visa.docs';
-import { SuccessIconComponent } from './success/success.docs';
 import { WarningIconComponent } from './warning/warning.docs';
-import { ErrorIconComponent } from './error/error.docs';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -65,13 +65,5 @@ export class IconDocsComponent {
       { name: 'IconLibrary', type: APITypes.CONSTANT },
       { name: 'IconSize', type: APITypes.CONSTANT }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,8 +15,8 @@
  *
  **/
 import { Component, inject, OnInit, OutputRefSubscription } from '@angular/core';
-import { NovaLibModule } from '@visa/nova-angular';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
+import { NovaLibModule } from '@visa/nova-angular';
 import { filter } from 'rxjs';
 
 @Component({
@@ -34,7 +34,7 @@ export class SkipToContentComponent implements OnInit {
   constructor() {
     this.routeSubscription = this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
-      .subscribe((event) => {
+      .subscribe(() => {
         this.currentRoute = window.location.pathname;
       });
   }

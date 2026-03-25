@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,8 +18,8 @@ import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NovaLibModule } from '@visa/nova-angular';
 import { MarkdownModule } from 'ngx-markdown';
-import { WorkshopService } from '../../shared/services/workshop.service';
 import { NovaSharedModule } from '../../shared/nova-shared.module';
+import { WorkshopService } from '../../shared/services/workshop.service';
 import { CheckedCheckboxComponent } from './checked/checked.docs';
 import { DisabledCheckedCheckboxComponent } from './disabled-checked/disabled-checked.docs';
 import { DisabledPanelCheckboxComponent } from './disabled-panel/disabled-panel.docs';
@@ -37,6 +37,8 @@ import { PanelGroupWithErrorCheckboxComponent } from './panel-group-with-error/p
 import { PanelGroupCheckboxComponent } from './panel-group/panel-group.docs';
 import { PanelWithoutDescriptionCheckboxComponent } from './panel-without-description/panel-without-description.docs';
 import { PanelCheckboxComponent } from './panel/panel.docs';
+import { ReusableCheckboxGroupDemo } from './reusable-group/reusable-group.docs';
+import { ReusableCheckboxDemo } from './reusable/reusable.docs';
 import { TemplateDrivenFormCheckboxComponent } from './template-driven-form/template-driven-form.docs';
 import { TemplateDrivenCheckboxComponent } from './template-driven/template-driven.docs';
 import { WithDescriptionCheckboxComponent } from './with-description/with-description.docs';
@@ -72,7 +74,9 @@ import { WithoutVisibleLabelCheckboxComponent } from './without-visible-label/wi
     DisabledPanelCheckboxComponent,
     PanelGroupCheckboxComponent,
     TemplateDrivenCheckboxComponent,
-    ModelDrivenCheckboxComponent
+    ModelDrivenCheckboxComponent,
+    ReusableCheckboxDemo,
+    ReusableCheckboxGroupDemo
   ],
   standalone: true,
   selector: 'nova-workshop-checkbox',
@@ -92,13 +96,5 @@ export class CheckboxDocsComponent {
       { name: 'AppReadyService', type: 'service-source' },
       { name: 'IdGenerator', type: 'service-source' }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

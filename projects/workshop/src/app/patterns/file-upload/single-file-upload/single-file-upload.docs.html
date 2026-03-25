@@ -1,0 +1,104 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div vFlex vFlexCol vGap="25">
+  <div vFlex vFlexCol vGap="4" style="max-width: 400px">
+    <div vFlex vFlexCol vGap="16">
+      <div vFlex vFlexCol vGap="8">
+        <p vTypography="subtitle-1">Upload file</p>
+        <p vTypography="label-small">
+          Choose one file to upload, up to 25 MB each. Accepted file types are .pdf, .png, and .jpg.
+        </p>
+      </div>
+      <div>
+        <input #fileInput vSR type="file" (change)="handleFileChange($event)" />
+        <div vAlignSelf="start">
+          <button v-button buttonColor="secondary" (click)="handleSelectFilesClick()">Select file</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Always-present live region; hidden when empty to avoid flex gap spacing -->
+    <div vFlex vFlexCol vGap="8" role="status" style="min-height: 1rem">
+      @if (uploadedFile()?.uploading) {
+      <p vTypography="label-small">Upload in progress...</p>
+      } @if (uploadedFile()?.error && showSectionMessage()) {
+      <div v-section v-message messageType="error" vMY="21">
+        <svg
+          v-message-icon
+          v-icon-visa-error-low
+          aria-hidden="false"
+          aria-label="Error"
+          role="img"
+        />
+        <div v-message-content vPL="2" vPB="2">
+          <div style="word-break: break-all">
+            <p vTypography>File failed to upload.</p>
+          </div>
+        </div>
+        <button
+          v-button-icon
+          subtle
+          vMT="-8"
+          vMR="-8"
+          vML="14"
+          vP="7"
+          buttonSize="small"
+          buttonColor="tertiary"
+          aria-label="close"
+          (click)="handleSectionMessageClose()"
+        >
+          <svg v-icon-visa-close-tiny />
+        </button>
+      </div>
+      }
+    </div>
+
+    @if (uploadedFile()) {
+    <ul vFlex vFlexCol vGap="8" style="list-style: none; padding: 0; margin: 0" aria-label="Uploaded file">
+      <li vFlex vFlexCol vGap="5" nova-upload-card [file]="uploadedFile()!" [actionsTemplate]="actionsTemplate"></li>
+
+      <ng-template #actionsTemplate let-errorId="errorId">
+        <div
+          nova-file-status-button
+          [uploadFile]="uploadedFile()!"
+          [errorId]="errorId"
+          (onRetry)="handleRetryFile(uploadedFile()!)"
+        ></div>
+        <button
+          v-button
+          v-button-icon
+          buttonColor="tertiary"
+          [attr.aria-label]="'Delete ' + uploadedFile()!.file.name"
+          (click)="handleDeleteFile()"
+        >
+          <svg v-icon-visa-delete-tiny aria-hidden="true"></svg>
+        </button>
+      </ng-template>
+    </ul>
+    }
+  </div>
+
+  <!-- Success flag -->
+  <div role="alert" vAlignSelfEnd>
+    @if (showFlag() && uploadedFile()?.uploaded) {
+    <upload-success-flag
+      [message]="'File uploaded successfully.'"
+      (closeFlag)="handleFlagClose()"
+    ></upload-success-flag>
+    }
+  </div>
+</div>

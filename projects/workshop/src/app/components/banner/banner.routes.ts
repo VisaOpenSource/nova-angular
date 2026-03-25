@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -44,7 +44,9 @@ export const bannerRoutes: Routes = [
 	{ loadComponent: () => import('./nova-warning-banner-persistent/nova-warning-banner-persistent.docs').then(m => m.WarningPersistentBannerComponent), path: 'nova-warning-banner-persistent', title: 'Nova warning banner persistent banner component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./nova-warning-banner-title/nova-warning-banner-title.docs').then(m => m.WarningTitleBannerComponent), path: 'nova-warning-banner-title', title: 'Nova warning banner title banner component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./nova-warning-banner-with-action-button/nova-warning-banner-with-action-button.docs').then(m => m.WarningBannerWithActionButtonBannerComponent), path: 'nova-warning-banner-with-action-button', title: 'Nova warning banner with action button banner component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
-	{ loadComponent: () => import('./nova-warning-banner-with-link/nova-warning-banner-with-link.docs').then(m => m.WarningBannerWithLinkBannerComponent), path: 'nova-warning-banner-with-link', title: 'Nova warning banner with link banner component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX }
+	{ loadComponent: () => import('./nova-warning-banner-with-link/nova-warning-banner-with-link.docs').then(m => m.WarningBannerWithLinkBannerComponent), path: 'nova-warning-banner-with-link', title: 'Nova warning banner with link banner component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable-component/reusable-component.docs').then(m => m.ReusableBanner), path: 'reusable-component', title: 'Reusable component banner component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable.docs').then(m => m.ReusableBannerDemo), path: 'reusable', title: 'Reusable banner component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX }
 ];
 
 export default bannerRoutes;

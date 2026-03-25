@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Breadcrumbs examples CustomItemsBreadcrumbsComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <nav
     aria-label="breadcrumbs with custom items"
     class="v-breadcrumbs v-breadcrumbs-custom"
@@ -24,9 +22,7 @@ exports[`Breadcrumbs examples CustomItemsBreadcrumbsComponent should render corr
 `;
 
 exports[`Breadcrumbs examples CustomSeparatorBreadcrumbsComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <nav
     aria-label="breadcrumbs with custom separator"
     class="v-breadcrumbs"
@@ -78,9 +74,7 @@ exports[`Breadcrumbs examples CustomSeparatorBreadcrumbsComponent should render 
 `;
 
 exports[`Breadcrumbs examples DefaultBreadcrumbsComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <nav
     aria-label="default breadcrumbs"
     class="v-breadcrumbs"
@@ -130,9 +124,7 @@ exports[`Breadcrumbs examples DefaultBreadcrumbsComponent should render correctl
 `;
 
 exports[`Breadcrumbs examples DynamicBreadcrumbsComponent should render correctly 1`] = `
-<div
-  id="root6"
->
+<div>
   <div
     class="v-gap-4 v-flex v-flex-row v-mb-24"
     vflex=""
@@ -198,9 +190,7 @@ exports[`Breadcrumbs examples DynamicBreadcrumbsComponent should render correctl
 `;
 
 exports[`Breadcrumbs examples InlineSeparatorBreadcrumbsComponent should render correctly 1`] = `
-<div
-  id="root3"
->
+<div>
   <nav
     aria-label="breadcrumbs with inline separator"
     class="v-breadcrumbs v-breadcrumbs-custom"
@@ -260,9 +250,7 @@ exports[`Breadcrumbs examples InlineSeparatorBreadcrumbsComponent should render 
 `;
 
 exports[`Breadcrumbs examples ServiceBasedActiveCrumbBreadcrumbsComponent should render correctly 1`] = `
-<div
-  id="root4"
->
+<div>
   <nav
     aria-label="breadcrumbs with service-based active crumb"
     class="v-breadcrumbs"
@@ -290,9 +278,7 @@ exports[`Breadcrumbs examples ServiceBasedActiveCrumbBreadcrumbsComponent should
 `;
 
 exports[`Breadcrumbs examples SvgSeparatorBreadcrumbsComponent should render correctly 1`] = `
-<div
-  id="root5"
->
+<div>
   <nav
     aria-label="breadcrumbs with svg separator"
     class="v-breadcrumbs v-breadcrumbs-custom"
@@ -314,16 +300,13 @@ exports[`Breadcrumbs examples SvgSeparatorBreadcrumbsComponent should render cor
           class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-0"
           v-icon-visa-chevron-right-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
       </li>
@@ -341,16 +324,13 @@ exports[`Breadcrumbs examples SvgSeparatorBreadcrumbsComponent should render cor
           class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-1"
           v-icon-visa-chevron-right-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
       </li>
@@ -368,16 +348,13 @@ exports[`Breadcrumbs examples SvgSeparatorBreadcrumbsComponent should render cor
           class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-2"
           v-icon-visa-chevron-right-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-            fill-rule="evenodd"
+            d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
           />
         </svg>
       </li>

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,14 +16,15 @@
  **/
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { NovaLibModule } from '@visa/nova-angular';
+import { VisaInformationLow } from '@visa/nova-icons-angular';
 import { NovaSharedModule } from '../../shared/nova-shared.module';
 import { WorkshopService } from '../../shared/services/workshop.service';
 import { CompactWizardComponent } from './compact/compact.docs';
 import { HorizontalWizardComponent } from './horizontal/horizontal.docs';
 import { InPageWizardComponent } from './in-page/in-page.docs';
 import { VerticalWizardComponent } from './vertical/vertical.docs';
-import { VisaInformationLow } from '@visa/nova-icons-angular';
 
+/** #patterns **/
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
@@ -47,13 +48,5 @@ export class WizardDocsComponent {
       { name: 'WizardDirective', type: 'directive' },
       { name: 'WizardStepDirective', type: 'directive' }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

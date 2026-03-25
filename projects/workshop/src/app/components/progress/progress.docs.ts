@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,6 +34,7 @@ import { NovaIndeterminateProgressBarNoLabelProgressComponent } from './indeterm
 import { NovaIndeterminateProgressBarProgressComponent } from './indeterminate-progress-bar/indeterminate-progress-bar.docs';
 import { NovaLiveCircularProgressComponent } from './live-circular-progress/live-circular-progress.docs';
 import { NovaLiveProgressBarProgressComponent } from './live-progress-bar/live-progress-bar.docs';
+import { ReusableProgressDemo } from './reusable/reusable.docs';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -54,7 +55,8 @@ import { NovaLiveProgressBarProgressComponent } from './live-progress-bar/live-p
     NovaLiveProgressBarProgressComponent,
     NovaCustomSizeCircularProgressComponent,
     NovaCustomLinearProgressComponent,
-    NovaCustomSlowCircularProgressComponent
+    NovaCustomSlowCircularProgressComponent,
+    ReusableProgressDemo
   ],
   standalone: true,
   selector: 'nova-workshop-progress',
@@ -71,13 +73,5 @@ export class ProgressDocsComponent {
       { name: 'AppReadyService', type: 'service-source' },
       { name: 'IdGenerator', type: 'service-source' }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

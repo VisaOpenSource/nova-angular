@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,29 +15,30 @@
  *
  **/
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { WorkshopService } from '../../shared/services/workshop.service';
 import { NovaLibModule } from '@visa/nova-angular';
 import { MarkdownModule } from 'ngx-markdown';
 import { NovaSharedModule } from '../../shared/nova-shared.module';
-import { WithProgrammaticExpansionAccordionComponent } from './with-programmatic-expansion/with-programmatic-expansion.docs';
-import { SingleSelectWithDisabledAccordionComponent } from './single-select-with-disabled-accordion/single-select-with-disabled-accordion.docs';
-import { MultiSelectWithDisabledAccordionComponent } from './multi-select-with-disabled-accordion/multi-select-with-disabled-accordion.docs';
-import { WithCustomToggleIconsAccordionComponent } from './with-custom-toggle-icons/with-custom-toggle-icons.docs';
-import { ArrowKeysAndNoTabNavAccordionComponent } from './with-arrow-keys-and-no-tab-navigation/with-arrow-keys-and-no-tab-navigation.docs';
-import { SingleSelectExpandedAccordionComponent } from './single-select-expanded/single-select-expanded.docs';
-import { SingleSelectDefaultAccordionComponent } from './single-select-default/single-select-default.docs';
-import { MultiSelectExpandedAccordionComponent } from './multi-select-expanded/multi-select-expanded.docs';
-import { SingleSelectSubtleAccordionComponent } from './single-select-subtle/single-select-subtle.docs';
-import { MultiSelectDefaultAccordionComponent } from './multi-select-default/multi-select-default.docs';
-import { MultiSelectSubtleAccordionComponent } from './multi-select-subtle/multi-select-subtle.docs';
-import { WithArrowKeyNavAccordionComponent } from './with-arrow-key-navigation/with-arrow-key-navigation.docs';
-import { SubtleWithIconAccordionComponent } from './subtle-with-icon/subtle-with-icon.docs';
-import { SubtleAccordionComponent } from './subtle/subtle.docs';
+import { WorkshopService } from '../../shared/services/workshop.service';
 import { DefaultAccordionComponent } from './default/default.docs';
 import { DisabledAccordionComponent } from './disabled/disabled.docs';
-import { WithIconAccordionComponent } from './with-icon/with-icon.docs';
+import { MultiSelectDefaultAccordionComponent } from './multi-select-default/multi-select-default.docs';
+import { MultiSelectExpandedAccordionComponent } from './multi-select-expanded/multi-select-expanded.docs';
+import { MultiSelectSubtleAccordionComponent } from './multi-select-subtle/multi-select-subtle.docs';
+import { MultiSelectWithDisabledAccordionComponent } from './multi-select-with-disabled-accordion/multi-select-with-disabled-accordion.docs';
+import { ReusableAccordionDemo } from './reusable/reusable.docs';
+import { SingleSelectDefaultAccordionComponent } from './single-select-default/single-select-default.docs';
+import { SingleSelectExpandedAccordionComponent } from './single-select-expanded/single-select-expanded.docs';
+import { SingleSelectSubtleAccordionComponent } from './single-select-subtle/single-select-subtle.docs';
+import { SingleSelectWithDisabledAccordionComponent } from './single-select-with-disabled-accordion/single-select-with-disabled-accordion.docs';
 import { SubtleDisabledAccordionComponent } from './subtle-disabled/subtle-disabled.docs';
+import { SubtleWithIconAccordionComponent } from './subtle-with-icon/subtle-with-icon.docs';
+import { SubtleAccordionComponent } from './subtle/subtle.docs';
+import { WithArrowKeyNavAccordionComponent } from './with-arrow-key-navigation/with-arrow-key-navigation.docs';
+import { ArrowKeysAndNoTabNavAccordionComponent } from './with-arrow-keys-and-no-tab-navigation/with-arrow-keys-and-no-tab-navigation.docs';
 import { WithBadgeAccordionComponent } from './with-badge/with-badge.docs';
+import { WithCustomToggleIconsAccordionComponent } from './with-custom-toggle-icons/with-custom-toggle-icons.docs';
+import { WithIconAccordionComponent } from './with-icon/with-icon.docs';
+import { WithProgrammaticExpansionAccordionComponent } from './with-programmatic-expansion/with-programmatic-expansion.docs';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -63,7 +64,8 @@ import { WithBadgeAccordionComponent } from './with-badge/with-badge.docs';
     DisabledAccordionComponent,
     WithIconAccordionComponent,
     SubtleDisabledAccordionComponent,
-    WithBadgeAccordionComponent
+    WithBadgeAccordionComponent,
+    ReusableAccordionDemo
   ],
   selector: 'nova-workshop-accordion',
   standalone: true,
@@ -85,13 +87,5 @@ export class AccordionDocsComponent {
       { name: 'NovaLibService', type: 'service-source' },
       { name: 'IconToggle', type: 'constant' }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

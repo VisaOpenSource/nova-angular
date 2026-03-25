@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,7 @@
  *
  -->
 # Nova Angular 6 comprehensive migration guide
+This migration guide is intended to help users migrate from Nova Angular 5.x to Nova Angular 6.x. For other version updates, refer to the changelog.
 
 ## Table of contents
 - [Overview](#overview)
@@ -269,7 +270,7 @@ The following services have been removed and replaced:
       </button>
     </li>
     <!-- create all the visible pages here -->
-    @for (page of paginationControl.pages(); track $index) {
+    @for (page of paginationControl.pages(); track page) {
       @if (page !== -1) {
         <li>
           <button

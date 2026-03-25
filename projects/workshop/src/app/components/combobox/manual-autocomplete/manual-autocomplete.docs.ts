@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,7 @@
  *
  **/
 import {
+  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
   inject,
@@ -35,7 +36,7 @@ import { VisaChevronDownTiny, VisaChevronUpTiny } from '@visa/nova-icons-angular
   standalone: true,
   imports: [NovaLibModule, VisaChevronDownTiny, VisaChevronUpTiny]
 })
-export class ManualAutocompleteComboboxComponent {
+export class ManualAutocompleteComboboxComponent implements AfterViewInit {
   readonly combobox = viewChild.required(ComboboxDirective);
   readonly comboboxService = inject(ComboboxService, { host: true, optional: true });
   comboboxFilterSubscription?: OutputRefSubscription;

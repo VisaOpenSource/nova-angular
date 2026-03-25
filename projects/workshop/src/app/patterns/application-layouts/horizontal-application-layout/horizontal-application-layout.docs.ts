@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,20 +18,19 @@ import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { NovaLibModule } from '@visa/nova-angular';
 import { FooterLayoutComponent } from '../shared/footer-layout/footer-layout.docs';
-import { HorizontalNavLayoutComponent } from '../horizontal-nav-layout/horizontal-nav-layout.docs';
+import { HorizontalNavLayoutComponent } from './horizontal-nav-layout/horizontal-nav-layout.docs';
 
-/** #patterns **/
+/**
+ * Layout with horizontal navigation across the top.
+ * Combines top navigation bar, content area, and footer.
+ * #patterns
+ **/
 @Component({
   selector: 'nova-workshop-horizontal-application-layout',
   templateUrl: './horizontal-application-layout.docs.html',
   styleUrls: ['./horizontal-layout.css'],
   encapsulation: ViewEncapsulation.None,
   standalone: true,
-  imports: [
-    CommonModule,
-    NovaLibModule,
-    FooterLayoutComponent,
-    HorizontalNavLayoutComponent
-  ]
+  imports: [CommonModule, NovaLibModule, FooterLayoutComponent, HorizontalNavLayoutComponent]
 })
 export class HorizontalApplicationLayoutComponent {}

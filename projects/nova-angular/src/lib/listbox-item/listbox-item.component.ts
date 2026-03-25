@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,7 +35,7 @@ import {
 } from '@angular/core';
 import { ListboxDirective } from '../listbox/listbox.directive';
 import { ListenerService } from '../listener-service/listener.service';
-import { defaultEffectParam, END_KEY, ENTER_KEY, HOME_KEY, SPACE_KEY } from '../nova-lib.constants';
+import { END_KEY, ENTER_KEY, HOME_KEY, SPACE_KEY } from '../nova-lib.constants';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -103,7 +103,7 @@ export class ListboxItemComponent implements OnInit {
       // single select, set value directly
       this.listbox?.value.set(this.value());
     }
-  }, defaultEffectParam);
+  });
 
   // holds the active state of the item
   readonly active: Signal<boolean | null> = computed(() => {
@@ -214,9 +214,11 @@ export class ListboxItemComponent implements OnInit {
       }
 
       this.listbox.value.set(values);
+      this.listbox.userChange();
     } else {
       // For single select, set to itemValue or null based on newState
       this.listbox.value.set(newState === false ? null : itemValue);
+      this.listbox.userChange();
     }
   }
 }

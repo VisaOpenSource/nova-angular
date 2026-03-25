@@ -1,0 +1,134 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div vFlex vFlexRow vFlexWrap vAlignItemsCenter vGap="20" vMT="16">
+  <div
+    [id]="'dynamic-table-pagination-' + id + '-items-per-page-container'"
+    vFlex
+    vAlignItemsCenter
+    vGap="12"
+    vFlexWrap
+  >
+    <label
+      [for]="'dynamic-table-pagination-' + id + '-items-per-page-select'"
+      vTypography="label"
+      vTypographyColor="subtle"
+      >Results per page</label
+    >
+    <fieldset vFlex vGap="12">
+      <div v-input-container>
+        <select
+          v-select
+          [id]="'dynamic-table-pagination-' + id + '-items-per-page-select'"
+          (change)="handleItemsPerPageChange($event)"
+          [value]="itemsPerPage()"
+          [attr.aria-describedby]="id + 'options-description'"
+        >
+          @for ( option of itemsPerPageOptions; track 'dynamic-table-pagination-' + id + option ) {
+          <option value="{{ option }}" [selected]="option === itemsPerPage()">{{ option }}</option>
+          }
+        </select>
+        <svg
+          [id]="'dynamic-table-pagination-' + id + '-items-per-page-closed-icon'"
+          v-toggle-default-template
+          v-icon-visa-chevron-down-tiny
+        />
+      </div>
+    </fieldset>
+    <span v-input-message [id]="id + 'options-description'"
+      >Showing {{toFrom().from}} - {{toFrom().to}} of {{totalItems()}}</span
+    >
+  </div>
+
+  <ul
+    v-pagination
+    vFlex
+    [id]="'dynamic-table-pagination-' + id + '-pages-list'"
+    vFlexRow
+    vAlignItemsCenter
+    vGap="4"
+    [vML]="'auto'"
+  >
+    <li>
+      <button
+        aria-label="First page"
+        v-button-icon
+        buttonSize="small"
+        buttonColor="tertiary"
+        [disabled]="paginationControl.isFirstPage()"
+        (click)="firstPage()"
+      >
+        <svg [id]="'dynamic-table-pagination-' + id + '-first-page-icon'" v-icon-visa-arrow-start-tiny />
+      </button>
+    </li>
+    <li>
+      <button
+        aria-label="Previous page"
+        v-button-icon
+        buttonSize="small"
+        buttonColor="tertiary"
+        [disabled]="paginationControl.isFirstPage()"
+        (click)="paginationControl.goToPreviousPage()"
+      >
+        <svg [id]="'dynamic-table-pagination-' + id + '-previous-page-icon'" v-icon-visa-chevron-left-tiny />
+      </button>
+    </li>
+    <!-- create all the visible pages here -->
+    @for (page of paginationControl.pages(); track 'dynamic-table-pagination-' + id + '-page-' + page ) { @if (page !==
+    -1) {
+    <li>
+      <button
+        [aria-current]="paginationControl.isCurrentPage(page)"
+        v-button
+        buttonColor="tertiary"
+        (click)="paginationControl.goToPage(page)"
+        [attr.data-id]="page === firstPageIndex() ? 'first-page' : page === lastPageIndex() ? 'last-page' : null"
+      >
+        {{ page }}
+      </button>
+    </li>
+    } @else {
+    <li vFlex vAlignItemsCenter v-pagination-overflow>
+      <svg v-icon-visa-option-horizontal-tiny />
+    </li>
+    } }
+
+    <li>
+      <button
+        aria-label="Next page"
+        v-button-icon
+        buttonSize="small"
+        buttonColor="tertiary"
+        [disabled]="paginationControl.isLastPage()"
+        (click)="paginationControl.goToNextPage()"
+      >
+        <svg [id]="'dynamic-table-pagination-' + id + '-next-page-icon'" v-icon-visa-chevron-right-tiny />
+      </button>
+    </li>
+    <li>
+      <button
+        aria-label="Last page"
+        v-button-icon
+        buttonSize="small"
+        buttonColor="tertiary"
+        [disabled]="paginationControl.isLastPage()"
+        (click)="lastPage()"
+      >
+        <svg [id]="'dynamic-table-pagination-' + id + '-last-page-icon'" v-icon-visa-arrow-end-tiny />
+      </button>
+    </li>
+  </ul>
+</div>

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,6 +31,7 @@ import {
   input,
   model,
   numberAttribute,
+  output,
   signal,
   untracked
 } from '@angular/core';
@@ -41,7 +42,6 @@ import { ListboxItemComponent } from '../listbox-item/listbox-item.component';
 import { ListboxService } from './listbox.service';
 import { NovaLibService } from '../nova-lib.service';
 import { MultiSelectValue, SingleSelectValue } from '../combobox/combobox.constants';
-import { defaultEffectParam } from '../nova-lib.constants';
 import { valuesDiffer } from '../utilities';
 
 export type ListboxValue = string | number | (string | number)[] | null;
@@ -102,7 +102,7 @@ export class ListboxDirective extends DefaultValueAccessor {
       this.highlightedItem.set(firstFocusableItem);
       this.prevListItems = this.listItems() as ListboxItemComponent[];
     }
-  }, defaultEffectParam);
+  });
 
   private readonly inCombobox: boolean = !!this.combobox;
 
@@ -229,9 +229,7 @@ export class ListboxDirective extends DefaultValueAccessor {
     const value = this.value();
     if (!valuesDiffer(value, this.prevListboxValue)) return; // if value hasn't changed, do nothing
     this.prevListboxValue = this.value();
-    // let form control know value has changed
-    this.onChange(value);
-  }, defaultEffectParam);
+  });
 
   /**
    * Overrides default scroll control behavior. <br />
@@ -246,6 +244,15 @@ export class ListboxDirective extends DefaultValueAccessor {
     this.value.set(value);
     super.writeValue(value);
   }
+
+  readonly manualUserChange = output<void>();
+
+  readonly userChange = () => {
+    // let form control know value has changed
+    this.onChange(this.value());
+    // emit manual user change event
+    this.manualUserChange.emit();
+  };
 
   ngOnDestroy(): void {
     // remove listeners

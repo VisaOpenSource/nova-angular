@@ -1,0 +1,115 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<!-- Only renders actions if the column is sortable or if this is a row action -->
+@if (!column() || column()?.sortable) { @if (column() && sortOnly()) {
+<!-- Sort-only mode: displays a single button that cycles through sort states -->
+<button
+  v-button-icon
+  vML="auto"
+  buttonSize="small"
+  buttonColor="tertiary"
+  [attr.aria-label]="'sort by ' + column()!.name + (sorted() === 'ascending' ?  ' descending' : ' ascending')"
+  (click)="sort.emit(sorted() === 'ascending' ? 'descending' : 'ascending')"
+>
+  <nova-workshop-dynamic-table-shared-sort-icon [sorted]="sorted()" />
+</button>
+} @else if (!column()?.compact) {
+<!-- Dropdown mode: displays multiple actions in a menu -->
+<div vFlex vJustifyContentBetween vAlignItemsCenter vFlexGrow [vPL]="(column() && sorted() === 'none') ? '16' : '0'">
+  @if (sorted() !== 'none') {
+  <nova-workshop-dynamic-table-shared-sort-icon [sorted]="sorted()" />
+  }
+  <div v-floating-ui-container placement="bottom-end" vML="auto">
+    <button
+      v-button-icon
+      v-floating-ui-trigger
+      buttonSize="small"
+      buttonColor="tertiary"
+      [aria-label]="label() ? 'more actions for ' + label() : 'more actions'"
+    >
+      <!-- Vertical icon for row actions, horizontal icon for column actions -->
+      @if (!column()) {
+      <svg v-icon-visa-option-vertical-tiny />
+      } @else {
+      <svg v-icon-visa-option-horizontal-tiny />
+      }
+    </button>
+    <div v-dropdown-menu>
+      <div vAddArrowKeys vFlexCol vP="4" vFlexGrow>
+        <ul v-dropdown-list>
+          @if (column()?.sortable) {
+          <!-- Sort buttons -->
+          <li>
+            <button v-dropdown-item [disabled]="sorted() === 'ascending'" (click)="sort.emit('ascending')">
+              <svg v-icon-visa-sort-ascending-tiny />
+              Sort ascending
+            </button>
+          </li>
+          <li>
+            <button v-dropdown-item [disabled]="sorted() === 'descending'" (click)="sort.emit('descending')">
+              <svg v-icon-visa-sort-descending-tiny />
+              Sort descending
+            </button>
+          </li>
+          } @else {
+          <li><button v-dropdown-item>Action 1</button></li>
+          <li><button v-dropdown-item>Action 2</button></li>
+          }
+        </ul>
+        <hr v-divider dividerType="decorative" />
+        <ul v-dropdown-list>
+          @if (pinned() !== null) {
+          <!-- Pin/unpin action -->
+          <li>
+            <button v-dropdown-item (click)="pin.emit(!!pinned())">
+              @if (pinned()) {
+              <svg v-icon-visa-pin-outline-tiny />
+              Unpin column } @else {
+              <svg v-icon-visa-pin-fill-tiny />
+              Pin column }
+            </button>
+          </li>
+          } @else {
+          <li><button v-dropdown-item>Action 3</button></li>
+          } @if (!column()?.identifier || column()?.compact) {
+          <!-- Hide option is not available for identifier or compact columns -->
+          @if (includeHide() ) {
+          <li>
+            <button v-dropdown-item (click)="hide.emit(true)">
+              <svg v-icon-visa-password-hide-tiny />
+              Hide column
+            </button>
+          </li>
+          } @else {
+          <li><button v-dropdown-item>Action 4</button></li>
+          } }
+        </ul>
+        @if (column()?.headerActions?.options) {
+        <hr v-divider dividerType="decorative" />
+        <nova-workshop-dynamic-table-filter-checkbox-lists
+          [appliedFilters]="appliedFilters()!"
+          [column]="column()!"
+          [id]="'filter-checkbox-list-' + toKebabCase(column()!.name) + '-' + id"
+          (applyColumnFilters)="closeFloatingUI(); applyColumnFilters.emit(column()!.name)"
+          (clearColumnFilters)="closeFloatingUI(); clearColumnFilters.emit(column()!.name)"
+        />
+        }
+      </div>
+    </div>
+  </div>
+</div>
+} }

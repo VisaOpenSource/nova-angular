@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,10 +26,9 @@ import {
   signal,
   WritableSignal
 } from '@angular/core';
-import { arrow, autoUpdate, computePosition, ComputePositionReturn, flip, offset, shift } from '@floating-ui/dom';
+import { arrow, autoUpdate, computePosition, ComputePositionReturn, flip, offset, shift, hide } from '@floating-ui/dom';
 import { TooltipArrowDirective } from '../arrow/arrow.directive';
 import { FloatingUIPlacements, FloatingUIVisibility, UIEventVisibilityPair } from './floating-ui.constants';
-import { defaultEffectParam } from '../nova-lib.constants';
 
 /**
  * This internal service is used by Combobox, Dropdown Menu, and Tooltip components. <br />
@@ -57,9 +56,9 @@ export class FloatingUIService {
   /** @ignore */
   private offsetDefault: number = 2;
   /** @ignore */
-  public comboboxMiddleware: any = [offset(0), flip(), shift()];
+  public comboboxMiddleware: any = [offset(0), flip(), shift(), hide()];
   /** @ignore */
-  private middlewareDefault: any = [offset(this.offsetDefault), flip(), shift()];
+  private middlewareDefault: any = [offset(this.offsetDefault), flip(), shift(), hide()];
   /** @ignore */
   private middleware: any = this.middlewareDefault;
   /** @ignore */
@@ -75,7 +74,7 @@ export class FloatingUIService {
     if (!this.trigger || !this.floatingUI || !isShown || triggerDisabled) return;
     this.positionFloatingUI();
     this.renderer.setStyle(this.floatingUI.nativeElement, 'display', this.display);
-  }, defaultEffectParam);
+  });
 
   /**
    * Displays property of the floating UI element.
@@ -140,7 +139,7 @@ export class FloatingUIService {
   }
 
   /**
-   * The customizeFloatingUI method allows you to provide custom placement and middleware options to the Floating UI service.
+   * The customizeFloatingUI method allows you to provide custom placement and middleware options to the Floating UI service.
    * @param placement Optional. See <code>FloatingUIPlacements</code> enum.
    * @param middleware Optional. Visit the official Floating UI documentation for more on [middleware options](https://floating-ui.com/docs/computePosition#middleware).
    * @param display Optional. Sets CSS display property for the floating UI element.
@@ -207,6 +206,17 @@ export class FloatingUIService {
         placement: placement,
         middleware: this.middleware
       }).then(({ x, y, middlewareData, placement }: ComputePositionReturn) => {
+        // Handle hiding when reference is out of view (if hide middleware is present)
+        if (
+          middlewareData.hide &&
+          middlewareData.hide.referenceHidden &&
+          // Skip this check in test environments where JSDOM may not properly calculate element visibility
+          !window?.navigator?.userAgent?.includes('jsdom')
+        ) {
+          this.hidefloatingUI();
+          return; // Don't update position if hidden
+        }
+
         floatingUI.style.left = `${x}px`;
         floatingUI.style.top = `${y}px`;
 
@@ -279,9 +289,16 @@ export class FloatingUIService {
    */
   private readonly closeAndFocus = (): void => {
     this.hidefloatingUI();
-    // focus the trigger element after closing the menu
+    this.restoreFocus();
+  };
+
+  /**
+   * The restoreFocus method focuses the trigger element. <br />
+   * This method is useful if you've set `closeOnClick` to false and want to manually restore focus.
+   */
+  public readonly restoreFocus = (): void => {
     if (this.trigger) {
-      (this.trigger as HTMLElement)?.focus(); // ensure the trigger is focused after closing the menu
+      (this.trigger as HTMLElement)?.focus(); // ensure the trigger is focused after restoring focus
     }
   };
 

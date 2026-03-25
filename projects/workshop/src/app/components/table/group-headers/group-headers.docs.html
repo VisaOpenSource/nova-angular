@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,23 +19,23 @@
     Table with group headers.
   </caption>
   <thead>
-    <tr v-tr>
-      <th v-th [groupHeader]="true" scope="col" colspan="2">Group header 1</th>
-      <th v-th [groupHeader]="true" scope="col" colspan="2">Group header 2</th>
+    <tr>
+      <th v-th [groupHeader]="true" scope="col" colspan="2" id="group-header-1">Group header 1</th>
+      <th v-th [groupHeader]="true" scope="col" colspan="2" id="group-header-2">Group header 2</th>
     </tr>
-    <tr v-tr>
-      @for(colItem of columnData(); track colItem){
-      <th v-th scope="col">{{ colItem }}</th>
+    <tr>
+      @for(colItem of columnData(); track colItem; let i = $index){
+      <th v-th scope="col" id="col-{{$index}}">{{ colItem }}</th>
       }
     </tr>
   </thead>
-  <tbody v-tbody>
-    @for(rowItem of rowData(); track rowItem){
-    <tr v-tr>
-      <td v-td>{{ rowItem['col-a'] }}</td>
-      <td v-td>{{ rowItem['col-b'] }}</td>
-      <td v-td>{{ rowItem['col-c'] }}</td>
-      <td v-td>{{ rowItem['col-d'] }}</td>
+  <tbody>
+    @for(rowItem of rowData(); track rowItem; let i = $index){
+    <tr>
+      <th v-td id="row-header-{{$index}}" headers="group-header-1 col-1">{{ rowItem['col-a'] }}</th>
+      <td v-td headers="group-header-1 col-1 row-header-{{$index}}">{{ rowItem['col-b'] }}</td>
+      <td v-td headers="group-header-2 col-2 row-header-{{$index}}">{{ rowItem['col-c'] }}</td>
+      <td v-td headers="group-header-2 col-3 row-header-{{$index}}">{{ rowItem['col-d'] }}</td>
     </tr>
     }
   </tbody>

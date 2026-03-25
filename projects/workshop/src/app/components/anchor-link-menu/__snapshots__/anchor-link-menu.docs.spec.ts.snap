@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Anchor link menu examples snapshots NovaDefaultAnchorLinkMenuComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <aside
     aria-label="default anchor link menu"
     class="v-anchor-link-menu"
@@ -82,9 +80,7 @@ exports[`Anchor link menu examples snapshots NovaDefaultAnchorLinkMenuComponent 
 `;
 
 exports[`Anchor link menu examples snapshots NovaDefaultNestedAnchorLinkMenuComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <aside
     aria-label="Anchor link menu with nested items"
     class="v-anchor-link-menu"
@@ -165,9 +161,7 @@ exports[`Anchor link menu examples snapshots NovaDefaultNestedAnchorLinkMenuComp
 `;
 
 exports[`Anchor link menu examples snapshots NovaDefaultNoTitleAnchorLinkMenuComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <aside
     aria-label="Anchor link menu without section title"
     class="v-anchor-link-menu"
@@ -235,9 +229,7 @@ exports[`Anchor link menu examples snapshots NovaDefaultNoTitleAnchorLinkMenuCom
 `;
 
 exports[`Anchor link menu examples snapshots NovaRightToLeftAnchorLinkMenuComponent should render correctly 1`] = `
-<div
-  id="root3"
->
+<div>
   <aside
     aria-label="Right to left anchor link menu"
     class="v-anchor-link-menu"

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,7 +32,7 @@ import { FloatingUIContainer } from '../floating-ui-container/floating-ui-contai
 @Directive({
   host: {
     class: 'v-dropdown-menu v-surface',
-    style: 'inline-size: 180px; max-inline-size: 100%; --v-dropdown-menu-surface-margin-block-start: 0;',
+    style: 'inline-size: 180px; --v-dropdown-menu-surface-margin-block-start: 0;',
 
     '[attr.aria-hidden]': '!isShown()',
     '[attr.id]': 'id()',

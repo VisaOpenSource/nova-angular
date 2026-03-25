@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <div
     class="v-gap-40 v-align-items-center v-flex v-flex-col"
     style="container-type: inline-size;"
@@ -66,7 +64,6 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
               class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-mobile-container-hide"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-0"
               v-icon-visa-chevron-right-tiny=""
               vContainerHide="mobile"
               viewBox="0 0 16 16"
@@ -74,9 +71,7 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-                fill-rule="evenodd"
+                d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
               />
             </svg>
             
@@ -119,7 +114,6 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
             class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-mobile-container-hide"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-1"
             v-icon-visa-chevron-right-tiny=""
             vContainerHide="mobile"
             viewBox="0 0 16 16"
@@ -127,9 +121,7 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
           
@@ -172,7 +164,6 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
             class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-mobile-container-hide"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-2"
             v-icon-visa-chevron-right-tiny=""
             vContainerHide="mobile"
             viewBox="0 0 16 16"
@@ -180,9 +171,7 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
           
@@ -225,7 +214,6 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
             class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-mobile-container-hide"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-3"
             v-icon-visa-chevron-right-tiny=""
             vContainerHide="mobile"
             viewBox="0 0 16 16"
@@ -233,9 +221,7 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
           
@@ -328,7 +314,6 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
             class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-mobile-container-hide"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-4"
             v-icon-visa-chevron-right-tiny=""
             vContainerHide="mobile"
             viewBox="0 0 16 16"
@@ -336,9 +321,7 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
           
@@ -381,7 +364,6 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
             class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-mobile-container-hide"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-5"
             v-icon-visa-chevron-right-tiny=""
             vContainerHide="mobile"
             viewBox="0 0 16 16"
@@ -389,9 +371,7 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
           
@@ -434,7 +414,6 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
             class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-mobile-container-hide"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-6"
             v-icon-visa-chevron-right-tiny=""
             vContainerHide="mobile"
             viewBox="0 0 16 16"
@@ -442,9 +421,7 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
           
@@ -487,7 +464,6 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
             class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-mobile-container-hide"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-7"
             v-icon-visa-chevron-right-tiny=""
             vContainerHide="mobile"
             viewBox="0 0 16 16"
@@ -495,9 +471,7 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
           
@@ -869,7 +843,6 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
                   class="v-message-icon v-icon v-icon-low v-icon-visa v-icon-warning"
                   focusable="false"
                   height="24"
-                  id="a-v__icon__internal-8"
                   role="img"
                   v-icon-visa-warning-low=""
                   v-message-icon=""
@@ -878,13 +851,11 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
                 >
                   <path
                     class="v-icon-secondary"
-                    d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+                    d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
                   />
                   <path
                     class="v-icon-primary"
-                    clip-rule="evenodd"
-                    d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-                    fill-rule="evenodd"
+                    d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
                   />
                 </svg>
                 <span>
@@ -936,14 +907,13 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
                 class="v-icon v-icon-close v-icon-tiny v-icon-visa"
                 focusable="false"
                 height="16"
-                id="a-v__icon__internal-9"
                 v-icon-visa-close-tiny=""
                 viewBox="0 0 16 16"
                 width="16"
               >
                 <path
                   class="v-icon-primary"
-                  d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+                  d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
                 />
                 <defs>
                   <clippath>
@@ -1018,16 +988,13 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
               class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-10"
               v-icon-visa-arrow-forward-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                fill-rule="evenodd"
+                d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
               />
               <defs>
                 <clippath>
@@ -1083,16 +1050,13 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
               class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-11"
               v-icon-visa-arrow-forward-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                fill-rule="evenodd"
+                d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
               />
               <defs>
                 <clippath>
@@ -1120,9 +1084,7 @@ exports[`Wizard examples CompactWizardComponent should render correctly 1`] = `
 `;
 
 exports[`Wizard examples HorizontalWizardComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <div
     class="v-gap-40 v-align-items-center v-flex v-flex-col"
     valignitemscenter=""
@@ -1179,16 +1141,13 @@ exports[`Wizard examples HorizontalWizardComponent should render correctly 1`] =
               class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-12"
               v-icon-visa-chevron-right-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-                fill-rule="evenodd"
+                d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
               />
             </svg>
             
@@ -1228,16 +1187,13 @@ exports[`Wizard examples HorizontalWizardComponent should render correctly 1`] =
             class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-13"
             v-icon-visa-chevron-right-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
           
@@ -1275,16 +1231,13 @@ exports[`Wizard examples HorizontalWizardComponent should render correctly 1`] =
             class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-14"
             v-icon-visa-chevron-right-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
           
@@ -1322,16 +1275,13 @@ exports[`Wizard examples HorizontalWizardComponent should render correctly 1`] =
             class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-15"
             v-icon-visa-chevron-right-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-              fill-rule="evenodd"
+              d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
             />
           </svg>
           
@@ -1702,7 +1652,6 @@ exports[`Wizard examples HorizontalWizardComponent should render correctly 1`] =
                       class="v-message-icon v-icon v-icon-low v-icon-visa v-icon-warning"
                       focusable="false"
                       height="24"
-                      id="a-v__icon__internal-16"
                       role="img"
                       v-icon-visa-warning-low=""
                       v-message-icon=""
@@ -1711,13 +1660,11 @@ exports[`Wizard examples HorizontalWizardComponent should render correctly 1`] =
                     >
                       <path
                         class="v-icon-secondary"
-                        d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+                        d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
                       />
                       <path
                         class="v-icon-primary"
-                        clip-rule="evenodd"
-                        d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-                        fill-rule="evenodd"
+                        d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
                       />
                     </svg>
                     <span>
@@ -1769,14 +1716,13 @@ exports[`Wizard examples HorizontalWizardComponent should render correctly 1`] =
                     class="v-icon v-icon-close v-icon-tiny v-icon-visa"
                     focusable="false"
                     height="16"
-                    id="a-v__icon__internal-17"
                     v-icon-visa-close-tiny=""
                     viewBox="0 0 16 16"
                     width="16"
                   >
                     <path
                       class="v-icon-primary"
-                      d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+                      d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
                     />
                     <defs>
                       <clippath>
@@ -1817,16 +1763,13 @@ exports[`Wizard examples HorizontalWizardComponent should render correctly 1`] =
               class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-18"
               v-icon-visa-arrow-forward-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                fill-rule="evenodd"
+                d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
               />
               <defs>
                 <clippath>
@@ -1853,9 +1796,7 @@ exports[`Wizard examples HorizontalWizardComponent should render correctly 1`] =
 `;
 
 exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
-<div
-  id="root3"
->
+<div>
   <nav
     aria-label="Single-page wizard example"
     class="v-flex v-flex-col v-justify-content-center"
@@ -1922,7 +1863,6 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
               class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa v-accordion-toggle-icon"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-25"
               v-icon-visa-chevron-down-tiny=""
               v-toggle-rotated-template=""
               viewBox="0 0 16 16"
@@ -1930,9 +1870,7 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-                fill-rule="evenodd"
+                d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
               />
             </svg>
             
@@ -1981,7 +1919,7 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
                 <input
                   aria-describedby=""
                   aria-invalid="false"
-                  class="v-input ng-untouched ng-dirty ng-invalid"
+                  class="v-input ng-untouched ng-pristine ng-invalid"
                   id="custom-markup-wizard-0"
                   required=""
                   v-input=""
@@ -2049,16 +1987,13 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
                     class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
                     focusable="false"
                     height="16"
-                    id="a-v__icon__internal-34"
                     v-icon-visa-arrow-forward-tiny=""
                     viewBox="0 0 16 16"
                     width="16"
                   >
                     <path
                       class="v-icon-primary"
-                      clip-rule="evenodd"
-                      d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                      fill-rule="evenodd"
+                      d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                     />
                     <defs>
                       <clippath>
@@ -2131,7 +2066,6 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
               class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-26"
               style="--v-icon-primary: var(--palette-default-disabled);"
               v-icon-visa-chevron-right-tiny=""
               v-toggle-default-template=""
@@ -2140,9 +2074,7 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-                fill-rule="evenodd"
+                d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
               />
             </svg>
             
@@ -2190,7 +2122,7 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
                 <input
                   aria-describedby=""
                   aria-invalid="false"
-                  class="v-input ng-untouched ng-dirty ng-invalid"
+                  class="v-input ng-untouched ng-pristine ng-invalid"
                   id="custom-markup-wizard-1"
                   required=""
                   v-input=""
@@ -2258,16 +2190,13 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
                     class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
                     focusable="false"
                     height="16"
-                    id="a-v__icon__internal-35"
                     v-icon-visa-arrow-forward-tiny=""
                     viewBox="0 0 16 16"
                     width="16"
                   >
                     <path
                       class="v-icon-primary"
-                      clip-rule="evenodd"
-                      d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                      fill-rule="evenodd"
+                      d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                     />
                     <defs>
                       <clippath>
@@ -2340,7 +2269,6 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
               class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-28"
               style="--v-icon-primary: var(--palette-default-disabled);"
               v-icon-visa-chevron-right-tiny=""
               v-toggle-default-template=""
@@ -2349,9 +2277,7 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-                fill-rule="evenodd"
+                d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
               />
             </svg>
             
@@ -2399,7 +2325,7 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
                 <input
                   aria-describedby=""
                   aria-invalid="false"
-                  class="v-input ng-untouched ng-dirty ng-invalid"
+                  class="v-input ng-untouched ng-pristine ng-invalid"
                   id="custom-markup-wizard-2"
                   required=""
                   v-input=""
@@ -2467,16 +2393,13 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
                     class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
                     focusable="false"
                     height="16"
-                    id="a-v__icon__internal-36"
                     v-icon-visa-arrow-forward-tiny=""
                     viewBox="0 0 16 16"
                     width="16"
                   >
                     <path
                       class="v-icon-primary"
-                      clip-rule="evenodd"
-                      d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                      fill-rule="evenodd"
+                      d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                     />
                     <defs>
                       <clippath>
@@ -2549,7 +2472,6 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
               class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-30"
               style="--v-icon-primary: var(--palette-default-disabled);"
               v-icon-visa-chevron-right-tiny=""
               v-toggle-default-template=""
@@ -2558,9 +2480,7 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-                fill-rule="evenodd"
+                d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
               />
             </svg>
             
@@ -2608,7 +2528,7 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
                 <input
                   aria-describedby=""
                   aria-invalid="false"
-                  class="v-input ng-untouched ng-dirty ng-invalid"
+                  class="v-input ng-untouched ng-pristine ng-invalid"
                   id="custom-markup-wizard-3"
                   required=""
                   v-input=""
@@ -2676,16 +2596,13 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
                     class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
                     focusable="false"
                     height="16"
-                    id="a-v__icon__internal-37"
                     v-icon-visa-arrow-forward-tiny=""
                     viewBox="0 0 16 16"
                     width="16"
                   >
                     <path
                       class="v-icon-primary"
-                      clip-rule="evenodd"
-                      d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                      fill-rule="evenodd"
+                      d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                     />
                     <defs>
                       <clippath>
@@ -2758,7 +2675,6 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
               class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-32"
               style="--v-icon-primary: var(--palette-default-disabled);"
               v-icon-visa-chevron-right-tiny=""
               v-toggle-default-template=""
@@ -2767,9 +2683,7 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-                fill-rule="evenodd"
+                d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
               />
             </svg>
             
@@ -2817,7 +2731,7 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
                 <input
                   aria-describedby=""
                   aria-invalid="false"
-                  class="v-input ng-untouched ng-dirty ng-invalid"
+                  class="v-input ng-untouched ng-pristine ng-invalid"
                   id="custom-markup-wizard-4"
                   required=""
                   v-input=""
@@ -2885,16 +2799,13 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
                     class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
                     focusable="false"
                     height="16"
-                    id="a-v__icon__internal-38"
                     v-icon-visa-arrow-forward-tiny=""
                     viewBox="0 0 16 16"
                     width="16"
                   >
                     <path
                       class="v-icon-primary"
-                      clip-rule="evenodd"
-                      d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                      fill-rule="evenodd"
+                      d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                     />
                     <defs>
                       <clippath>
@@ -2963,7 +2874,6 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
               class="v-message-icon v-icon v-icon-low v-icon-visa v-icon-warning"
               focusable="false"
               height="24"
-              id="a-v__icon__internal-22"
               role="img"
               v-icon-visa-warning-low=""
               v-message-icon=""
@@ -2972,13 +2882,11 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
             >
               <path
                 class="v-icon-secondary"
-                d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+                d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
               />
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-                fill-rule="evenodd"
+                d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
               />
             </svg>
             <span>
@@ -3030,14 +2938,13 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
             class="v-icon v-icon-close v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-23"
             v-icon-visa-close-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+              d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
             />
             <defs>
               <clippath>
@@ -3063,9 +2970,7 @@ exports[`Wizard examples InPageWizardComponent should render correctly 1`] = `
 `;
 
 exports[`Wizard examples VerticalWizardComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <div
     class="v-gap-40 v-flex v-flex-row v-flex-wrap"
     style="margin: 0 auto; max-inline-size: 878px;"
@@ -3578,7 +3483,6 @@ exports[`Wizard examples VerticalWizardComponent should render correctly 1`] = `
                         class="v-message-icon v-icon v-icon-low v-icon-visa v-icon-warning"
                         focusable="false"
                         height="24"
-                        id="a-v__icon__internal-19"
                         role="img"
                         v-icon-visa-warning-low=""
                         v-message-icon=""
@@ -3587,13 +3491,11 @@ exports[`Wizard examples VerticalWizardComponent should render correctly 1`] = `
                       >
                         <path
                           class="v-icon-secondary"
-                          d="M24 23H0V20.64L11.41 0H13.72L24 20.66V23ZM2.08 21H21.93L12.53 2.1L2.08 21Z"
+                          d="M24 20.6602V23H0V20.6396L11.4102 0H13.7197L24 20.6602ZM2.08008 21H21.9297L12.5303 2.09961L2.08008 21Z"
                         />
                         <path
                           class="v-icon-primary"
-                          clip-rule="evenodd"
-                          d="M11.5 8.00195H13.5V15.002H11.5V8.00195ZM11.5 17.002H13.5V19.002H11.5V17.002Z"
-                          fill-rule="evenodd"
+                          d="M13.5 17.002V19.002H11.5V17.002H13.5ZM13.5 8.00195V15.002H11.5V8.00195H13.5Z"
                         />
                       </svg>
                       <span>
@@ -3645,14 +3547,13 @@ exports[`Wizard examples VerticalWizardComponent should render correctly 1`] = `
                       class="v-icon v-icon-close v-icon-tiny v-icon-visa"
                       focusable="false"
                       height="16"
-                      id="a-v__icon__internal-20"
                       v-icon-visa-close-tiny=""
                       viewBox="0 0 16 16"
                       width="16"
                     >
                       <path
                         class="v-icon-primary"
-                        d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+                        d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
                       />
                       <defs>
                         <clippath>
@@ -3693,16 +3594,13 @@ exports[`Wizard examples VerticalWizardComponent should render correctly 1`] = `
                 class="v-icon v-icon-arrow-forward v-icon-tiny v-icon-visa"
                 focusable="false"
                 height="16"
-                id="a-v__icon__internal-21"
                 v-icon-visa-arrow-forward-tiny=""
                 viewBox="0 0 16 16"
                 width="16"
               >
                 <path
                   class="v-icon-primary"
-                  clip-rule="evenodd"
-                  d="M12.0858 6.99715L6.79289 1.70425L8.20711 0.290039L15.2071 7.29004L15.9142 7.99715L15.2071 8.70425L8.20711 15.7043L6.79289 14.29L12.0858 8.99715H0V6.99715H12.0858Z"
-                  fill-rule="evenodd"
+                  d="M15.9141 7.99707L8.20703 15.7041L6.79297 14.29L12.0859 8.99707H0V6.99707H12.0859L6.79297 1.7041L8.20703 0.290039L15.9141 7.99707Z"
                 />
                 <defs>
                   <clippath>

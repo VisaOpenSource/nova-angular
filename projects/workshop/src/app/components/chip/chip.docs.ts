@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,8 +17,8 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NovaLibModule } from '@visa/nova-angular';
-import { WorkshopService } from '../../shared/services/workshop.service';
 import { NovaSharedModule } from '../../shared/nova-shared.module';
+import { WorkshopService } from '../../shared/services/workshop.service';
 import { CompactDeleteChipAvatarChipComponent } from './compact-delete-chip-avatar/compact-delete-chip-avatar.docs';
 import { CompactDeleteChipDefaultChipComponent } from './compact-delete-chip-default/compact-delete-chip-default.docs';
 import { CompactDeleteChipIconChipComponent } from './compact-delete-chip-icon/compact-delete-chip-icon.docs';
@@ -79,13 +79,5 @@ export class ChipDocsComponent {
       { name: 'ButtonDirective', type: 'directive' },
       { name: 'IdGenerator', type: 'service-source' }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -132,7 +132,7 @@ describe('TabItemDirective', () => {
     );
     fixture.detectChanges();
     const button = screen.getByTestId('button');
-    expect(button.getAttribute('aria-current')).toBe('true');
+    expect(button.getAttribute('aria-current')).toBe('page');
     expect(button.getAttribute('aria-selected')).toBe(null);
   });
 
@@ -156,7 +156,7 @@ describe('TabItemDirective', () => {
     expect(container.firstElementChild?.getAttribute('class')).toBe('v-tab v-tab-section-title');
   });
 
-  it('should render defaults correctly', async () => {
+  it('should render disclosure tab defaults correctly', async () => {
     const { container } = await render('<div disclosureTab>Menu</div>', {
       imports: [TabItemDirective]
     });
@@ -164,7 +164,7 @@ describe('TabItemDirective', () => {
     expect(container.firstElementChild?.getAttribute('style')).toBe(null);
   });
 
-  it('should allow custom class', async () => {
+  it('should allow custom class on disclosure tab', async () => {
     const { container } = await render('<div class="test-class" v-tab-item disclosureTab>Menu</div>', {
       imports: [TabItemDirective]
     });
@@ -266,9 +266,9 @@ describe('TabItemDirective', () => {
 
   it('should allow tagSuffix', async () => {
     const { container, fixture } = await render(
-      `<v-icon-visa-toggle v-tab-item disclosureTab> 
-			<div v-toggle-rotated-template>Rotated</div> 
-			<div v-toggle-default-template>Default</div> 
+      `<v-icon-visa-toggle v-tab-item disclosureTab>
+			<div v-toggle-rotated-template>Rotated</div>
+			<div v-toggle-default-template>Default</div>
 		</v-icon-visa-toggle>`,
       {
         imports: [
@@ -284,5 +284,175 @@ describe('TabItemDirective', () => {
     fixture.detectChanges();
     expect(container.firstElementChild?.getAttribute('class')).toBe('v-icon v-icon-tiny v-tab v-tab-suffix');
     expect(container.firstElementChild?.firstElementChild?.getAttribute('class')).toBe('v-tab-suffix');
+  });
+
+  describe('disclosure tab expanded state', () => {
+    it('should notify when disclosure tab is expanded via disclosureTabToggled output', async () => {
+      const { fixture } = await render(
+        `<div v-tab-item disclosureTab data-testid="tab-item">
+          <button v-button data-testid="button">Menu</button>
+        </div>`,
+        {
+          imports: [TabItemDirective, ButtonDirective]
+        }
+      );
+
+      const tabItem = screen.getByTestId('tab-item');
+      const directive = fixture.debugElement
+        .query((el) => el.nativeElement === tabItem)
+        ?.injector.get(TabItemDirective);
+      expect(directive).toBeDefined();
+
+      const spy = jest.spyOn(directive!.disclosureTabToggled, 'emit');
+
+      const user = userEvent.setup();
+      const button = screen.getByTestId('button');
+
+      // First click expands
+      await user.click(button);
+      fixture.detectChanges();
+      expect(spy).toHaveBeenCalledWith(true);
+
+      // Second click collapses
+      await user.click(button);
+      fixture.detectChanges();
+      expect(spy).toHaveBeenCalledWith(false);
+    });
+
+    it('should notify when disclosure tab is expanded via expandedChange output', async () => {
+      const { fixture } = await render(
+        `<div v-tab-item disclosureTab data-testid="tab-item">
+          <button v-button data-testid="button">Menu</button>
+        </div>`,
+        {
+          imports: [TabItemDirective, ButtonDirective]
+        }
+      );
+
+      const tabItem = screen.getByTestId('tab-item');
+      const directive = fixture.debugElement
+        .query((el) => el.nativeElement === tabItem)
+        ?.injector.get(TabItemDirective);
+      expect(directive).toBeDefined();
+
+      const spy = jest.spyOn(directive!.expanded, 'set');
+
+      const user = userEvent.setup();
+      const button = screen.getByTestId('button');
+
+      await user.click(button);
+      fixture.detectChanges();
+
+      expect(spy).toHaveBeenCalledWith(true);
+    });
+
+    it('should sync expanded state with two-way binding', async () => {
+      const { fixture } = await render(
+        `<div v-tab-item disclosureTab data-testid="tab-item">
+          <button v-button data-testid="button">Menu</button>
+        </div>`,
+        {
+          imports: [TabItemDirective, ButtonDirective]
+        }
+      );
+
+      const tabItem = screen.getByTestId('tab-item');
+      const directive = fixture.debugElement
+        .query((el) => el.nativeElement === tabItem)
+        ?.injector.get(TabItemDirective);
+      expect(directive).toBeDefined();
+
+      const user = userEvent.setup();
+      const button = screen.getByTestId('button');
+
+      // Initially collapsed
+      expect(directive!.expanded()).toBeNull();
+
+      // Click to expand
+      await user.click(button);
+      fixture.detectChanges();
+      expect(directive!.expanded()).toBe(true);
+
+      // Click to collapse
+      await user.click(button);
+      fixture.detectChanges();
+      expect(directive!.expanded()).toBe(false);
+    });
+
+    it('should sync as expected with expanded and disclosureTabToggled present', async () => {
+      const { fixture } = await render(
+        `<div v-tab-item disclosureTab data-testid="tab-item">
+          <button v-button data-testid="button">Menu</button>
+        </div>`,
+        {
+          imports: [TabItemDirective, ButtonDirective]
+        }
+      );
+
+      const tabItem = screen.getByTestId('tab-item');
+      const directive = fixture.debugElement
+        .query((el) => el.nativeElement === tabItem)
+        ?.injector.get(TabItemDirective);
+      expect(directive).toBeDefined();
+
+      const disclosureTabToggledSpy = jest.spyOn(directive!.disclosureTabToggled, 'emit');
+      const expandedChangeSpy = jest.spyOn(directive!.expanded, 'set');
+
+      const user = userEvent.setup();
+      const button = screen.getByTestId('button');
+
+      // Click to expand
+      await user.click(button);
+      fixture.detectChanges();
+
+      // Both outputs should emit
+      expect(disclosureTabToggledSpy).toHaveBeenCalledWith(true);
+      expect(expandedChangeSpy).toHaveBeenCalledWith(true);
+      expect(directive!.expanded()).toBe(true);
+
+      // Click to collapse
+      await user.click(button);
+      fixture.detectChanges();
+
+      expect(disclosureTabToggledSpy).toHaveBeenCalledWith(false);
+      expect(expandedChangeSpy).toHaveBeenCalledWith(false);
+      expect(directive!.expanded()).toBe(false);
+    });
+
+    it('should emit disclosureTabToggled when expanded is changed programmatically', async () => {
+      const { fixture } = await render(
+        `<div v-tab-item disclosureTab data-testid="tab-item">
+          <button v-button data-testid="button">Menu</button>
+        </div>`,
+        {
+          imports: [TabItemDirective, ButtonDirective]
+        }
+      );
+
+      const tabItem = screen.getByTestId('tab-item');
+      const directive = fixture.debugElement
+        .query((el) => el.nativeElement === tabItem)
+        ?.injector.get(TabItemDirective);
+      expect(directive).toBeDefined();
+
+      const disclosureTabToggledSpy = jest.spyOn(directive!.disclosureTabToggled, 'emit');
+
+      // Initially collapsed
+      expect(directive!.expanded()).toBeNull();
+
+      // Programmatically set expanded to true
+      directive!.expanded.set(true);
+      fixture.detectChanges();
+
+      expect(disclosureTabToggledSpy).toHaveBeenCalledWith(true);
+      expect(directive!.expanded()).toBe(true);
+
+      // Programmatically set expanded to false
+      directive!.expanded.set(false);
+      fixture.detectChanges();
+
+      expect(disclosureTabToggledSpy).toHaveBeenCalledWith(false);
+      expect(directive!.expanded()).toBe(false);
+    });
   });
 });

@@ -1,0 +1,113 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<td v-td>
+  <div vFlex vFlexCol vGap="1">
+    <p vTypography="label-large">{{ file().file.name }}</p>
+    @if (file().error) {
+    <div vFlex vGap="2" style="color: var(--palette-messaging-text-negative)">
+      <span [id]="errorId()" vTypography="label-small">
+        <svg
+          v-icon-visa-error-tiny
+          style="
+            --v-icon-primary: var(--palette-messaging-text-negative);
+            --v-icon-secondary: var(--palette-messaging-text-negative);
+            block-size: 14px;
+            inline-size: 14px;
+          "
+        ></svg>
+        {{ errorMessage() }}
+      </span>
+    </div>
+    }
+  </div>
+</td>
+
+<!-- File MIME type -->
+<th scope="row" v-td>{{ file().file.type }}</th>
+
+<!-- Status indicator: uploading, success, or error -->
+<td v-td>
+  <div
+    #statusRef
+    vFlex
+    tabindex="-1"
+    style="border-radius: var(--v-button-default-border-radius); max-inline-size: fit-content"
+  >
+    @if (file().uploading) {
+    <div style="--v-progress-bar-thickness: 2px">
+      <div v-progress-circular [style.--v-progress-circular-size]="'16px'" [style.--v-progress-bar-thickness]="'2px'">
+        <span vSR>Uploading {{ file().file.name }}</span>
+      </div>
+    </div>
+    } @else if (file().uploaded && !file().error) {
+    <div>
+      <svg
+        v-icon-visa-success-tiny
+        style="
+          --v-icon-primary: var(--palette-messaging-text-positive);
+          --v-icon-secondary: var(--palette-messaging-text-positive);
+        "
+      ></svg>
+      <span vSR>Success</span>
+    </div>
+    } @else if (!file().uploaded && file().error) {
+    <div style="display: inline-block; block-size: var(--v-icon-tiny-height)">
+      <svg
+        v-icon-visa-error-tiny
+        style="
+          --v-icon-primary: var(--palette-messaging-text-negative);
+          --v-icon-secondary: var(--palette-messaging-text-negative);
+        "
+      ></svg>
+      <span vSR>Error</span>
+    </div>
+    }
+  </div>
+</td>
+
+<td v-td>{{ uploadDateString() }}</td>
+
+<!-- Action buttons: retry (if error) and delete -->
+<td v-td>
+  <div vFlex>
+    @if (file().error) {
+    <div vAlignSelfStretch style="--v-button-default-block-size: 34px">
+      <button
+        v-button
+        v-button-icon
+        buttonColor="tertiary"
+        [attr.aria-label]="'Retry uploading ' + file().file.name"
+        [attr.aria-describedby]="errorId()"
+        (click)="focusStatusAndRetry()"
+      >
+        <svg v-icon-visa-reload-tiny></svg>
+      </button>
+    </div>
+    }
+    <div vAlignSelfStretch style="--v-button-default-block-size: 34px">
+      <button
+        v-button
+        v-button-icon
+        buttonColor="tertiary"
+        [attr.aria-label]="'Delete ' + file().file.name"
+        (click)="handleDelete()"
+      >
+        <svg v-icon-visa-delete-tiny></svg>
+      </button>
+    </div>
+  </div>
+</td>

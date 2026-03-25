@@ -1,0 +1,87 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+@if (filters().length < 5) {
+<!-- Checkboxes are used for lists with fewer than 5 options -->
+<fieldset [attr.aria-labelledby]="id() + '-for-' + columnNameKebab()">
+  @if (checkboxOnly()) {
+  <legend vSR [id]="id() + '-for-' + columnNameKebab()">Filter by {{ columnName() }}</legend>
+  } @else {
+  <legend
+    v-label
+    vML="8"
+    vPT="10"
+    vTypographyColor="default"
+    [id]="id() + '-for-' + columnNameKebab()"
+    vTypographyColor="subtle"
+  >
+    Filter by {{ columnName() }}
+  </legend>
+  }
+  <ul vFlex vFlexCol vML="6">
+    @for(filter of filters(); track filter + i; let i = $index){
+    <li v-input-container>
+      <input
+        v-checkbox
+        [ngModel]="isFilterSelected(filter)"
+        (ngModelChange)="onFilterToggle(filter, $event)"
+        [id]="id() + '-' + columnNameKebab() + '-' + i"
+        [name]="id() + '-' + columnNameKebab()"
+      />
+      <label v-label [for]="id() + '-' + columnNameKebab() + '-' + i">{{ filter }}</label>
+    </li>
+    }
+  </ul>
+  @if (!checkboxOnly()) {
+  <div vFlex vGap="16" vJustifyContentBetween vP="6" vMB="0">
+    <button v-button (click)="applyColumnFilters.emit(columnName())">Apply</button>
+    <button v-button buttonColor="tertiary" (click)="clearSelectedOptions()">Clear</button>
+  </div>
+  }
+</fieldset>
+} @else {
+<!-- Multiselect listbox with scrolling is used for lists with 5 or more options -->
+@if (checkboxOnly()) {
+<label vSR [id]="id() + '-label'">Filter by {{ columnName() }}</label>
+} @else {
+<label v-label vML="8" vPT="10" [for]="id()" [id]="id() + '-label'">Filter by {{ columnName() }}</label>
+}
+<div
+  v-listbox-container
+  vMX="6"
+  [id]="id()"
+  [attr.aria-labelledby]="id() + '-label'"
+  [style.--v-listbox-container-border-color]="checkboxOnly() ? 'transparent' : null"
+>
+  <ul
+    v-listbox
+    containHeight
+    multiselect
+    [ngModel]="selectedOptions()"
+    (ngModelChange)="onListboxChange($event)"
+    [id]="id() + '-listbox'"
+  >
+    @for(filter of filters(); track filter + i; let i = $index) {
+    <li v-listbox-item [value]="filter" [id]="id() + '-' + columnNameKebab() + '-' + i">{{ filter }}</li>
+    }
+  </ul>
+</div>
+@if (!checkboxOnly()) {
+<div vFlex vGap="16" vJustifyContentBetween vP="6" vMB="0" vMT="4">
+  <button v-button (click)="applyColumnFilters.emit(columnName())">Apply</button>
+  <button v-button buttonColor="tertiary" (click)="clearSelectedOptions()">Clear</button>
+</div>
+} }

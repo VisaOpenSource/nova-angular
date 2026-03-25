@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,9 +17,10 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { NovaLibModule } from '@visa/nova-angular';
 import { MarkdownModule } from 'ngx-markdown';
+import { DisabledATagMessageComponent } from '../../shared/app-components/dev-messages/disabled-a-tag/disabled-a-tag.docs';
+import { NovaSharedModule } from '../../shared/nova-shared.module';
 import { APITypes } from '../../shared/services/workshop.constants';
 import { WorkshopService } from '../../shared/services/workshop.service';
-import { NovaSharedModule } from '../../shared/nova-shared.module';
 import { ButtonAsLinkButtonComponent } from './button-as-link/button-as-link.docs';
 import { DestructivePrimaryButtonComponent } from './destructive-primary/destructive-primary.docs';
 import { DestructiveSecondaryButtonComponent } from './destructive-secondary/destructive-secondary.docs';
@@ -64,7 +65,6 @@ import { UiIconLargeButtonComponent } from './ui-icon-large/ui-icon-large.docs';
 import { UiIconMediumButtonComponent } from './ui-icon-medium/ui-icon-medium.docs';
 import { UiIconSmallButtonComponent } from './ui-icon-small/ui-icon-small.docs';
 import { UiIconSubtleButtonComponent } from './ui-icon-subtle/ui-icon-subtle.docs';
-import { DisabledATagMessageComponent } from '../../shared/app-components/dev-messages/disabled-a-tag/disabled-a-tag.docs';
 
 /** #docs */
 @Component({
@@ -137,13 +137,5 @@ export class ButtonDocsComponent {
       { name: 'ButtonColor', type: APITypes.CONSTANT },
       { name: 'ButtonSize', type: APITypes.CONSTANT }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

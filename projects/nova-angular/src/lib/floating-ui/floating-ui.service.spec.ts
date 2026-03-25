@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,12 +15,10 @@
  *
  **/
 import { Component, ElementRef } from '@angular/core';
-import { fakeAsync, tick } from '@angular/core/testing';
 import { FloatingUIService } from './floating-ui.service';
 import { render, screen } from '@testing-library/angular';
 import { FloatingUIVisibility, UIEventVisibilityPair } from './floating-ui.constants';
 import { offset } from '@floating-ui/core';
-import { ComputePositionConfig } from '@floating-ui/dom';
 import userEvent from '@testing-library/user-event';
 import { FloatingUIContainer } from '../floating-ui-container/floating-ui-container.directive';
 import { FloatingUIElementDirective } from '../floating-ui-element/floating-ui-element.directive';
@@ -34,7 +32,9 @@ const events: UIEventVisibilityPair = [[new UIEvent('click')]];
 
 describe('FloatingUIService', () => {
   it('should set up floating UI with correct styles', async () => {
-    const { fixture } = await render(`<div id="trigger"></div><div id="floating"></div>`);
+    const { fixture } = await render(
+      `<div id="trigger" style="width: 100px; height: 50px; position: relative;"></div><div id="floating" style="width: 200px; height: 100px;"></div>`
+    );
     const triggerEl = fixture.nativeElement.querySelector('#trigger');
     const floatingEl = fixture.nativeElement.querySelector('#floating');
 
@@ -48,7 +48,9 @@ describe('FloatingUIService', () => {
   });
 
   it('should show the floating UI element', async () => {
-    const { fixture } = await render(`<div id="trigger"></div><div id="floating"></div>`);
+    const { fixture } = await render(
+      `<div id="trigger" style="width: 100px; height: 50px; position: relative;"></div><div id="floating" style="width: 200px; height: 100px;"></div>`
+    );
     const floatingEl = fixture.nativeElement.querySelector('#floating');
     const service = fixture.debugElement.injector.get(FloatingUIService);
 
@@ -62,7 +64,9 @@ describe('FloatingUIService', () => {
   });
 
   it('should toggle the floating UI element visibility', async () => {
-    const { fixture } = await render(`<div id="trigger"></div><div id="floating"></div>`);
+    const { fixture } = await render(
+      `<div id="trigger" style="width: 100px; height: 50px; position: relative;"></div><div id="floating" style="width: 200px; height: 100px;"></div>`
+    );
     const floatingEl = fixture.nativeElement.querySelector('#floating');
     const service = fixture.debugElement.injector.get(FloatingUIService);
 
@@ -268,8 +272,8 @@ describe('FloatingUIService', () => {
   it('should close the floating UI element on click outside', async () => {
     const { fixture } = await render(
       `<div v-floating-ui-container>
-        <div v-floating-ui-trigger data-testid="trigger"></div>
-        <div v-floating-ui-element data-testid="floating"></div>
+        <div v-floating-ui-trigger data-testid="trigger" style="width: 100px; height: 50px; position: relative;"></div>
+        <div v-floating-ui-element data-testid="floating" style="width: 200px; height: 100px;"></div>
       </div>
       `,
       {
@@ -299,8 +303,8 @@ describe('FloatingUIService', () => {
   it('should close the floating UI element on escape key press', async () => {
     const { fixture } = await render(
       `<div v-floating-ui-container>
-        <div v-floating-ui-trigger data-testid="trigger"></div>
-        <div v-floating-ui-element data-testid="floating"></div>
+        <div v-floating-ui-trigger data-testid="trigger" style="width: 100px; height: 50px; position: relative;"></div>
+        <div v-floating-ui-element data-testid="floating" style="width: 200px; height: 100px;"></div>
       </div>
       `,
       {
@@ -429,7 +433,7 @@ describe('FloatingUIService', () => {
 
       const { fixture } = await render(
         `<div v-floating-ui-container>
-          <div v-floating-ui-trigger data-testid="trigger"></div> 
+          <div v-floating-ui-trigger data-testid="trigger"></div>
           <div v-tooltip data-testid="floating">
         <div v-tooltip-arrow data-testid="arrow"></div>
           </div>
@@ -449,7 +453,7 @@ describe('FloatingUIService', () => {
     it('should set up the arrow correctly in customizeFloatingUI', async () => {
       const { fixture } = await render(
         `<div v-floating-ui-container>
-          <div v-floating-ui-trigger data-testid="trigger"></div> 
+          <div v-floating-ui-trigger data-testid="trigger"></div>
           <div v-tooltip data-testid="floating">
             <div v-tooltip-arrow data-testid="arrow"></div>
           </div>
@@ -545,8 +549,8 @@ describe('FloatingUIService', () => {
     it('should keep the floating UI visible when hovering over it', async () => {
       const { fixture } = await render(
         `<div v-floating-ui-container>
-        <div v-floating-ui-trigger data-testid="trigger"></div>
-        <div v-floating-ui-element data-testid="floating"></div>
+        <div v-floating-ui-trigger data-testid="trigger" style="width: 100px; height: 50px; position: relative;"></div>
+        <div v-floating-ui-element data-testid="floating" style="width: 200px; height: 100px;"></div>
       </div>`,
         {
           imports: [FloatingUIContainer, FloatingUIElementDirective, FloatingUITriggerDirective],

@@ -1,0 +1,43 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+@if (copyData()) {
+<div class="snippet-container markdown-style">
+  <div class="snippet-copy">
+    <!-- Button icon and text toggle between copy and copied states -->
+    <button
+      #copyButton
+      v-button
+      v-button-icon
+      buttonColor="tertiary"
+      buttonSize="small"
+      [class.copied]="copyFlagOpen"
+      class="w-copy-button"
+      [attr.aria-label]="'copy ' + ariaLabelText()"
+      (click)="onCopyToClipboard()"
+    >
+      @if (copyFlagOpen) {
+      <svg v-icon-visa-checkmark-tiny></svg>
+      } @else {
+      <svg v-icon-visa-copy-tiny></svg>
+      }
+      <span vTypography="label-active">Copied!</span>
+    </button>
+  </div>
+  <!-- language pipe formats code with syntax highlighting for the specified programming language -->
+  <markdown [data]="copyData() | language: codeLanguage()"></markdown>
+</div>
+}

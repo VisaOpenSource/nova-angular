@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,8 @@ export const listboxRoutes: Routes = [
 	{ loadComponent: () => import('./multi-select-with-inline-message/multi-select-with-inline-message.docs').then(m => m.MultiSelectWithInlineMessageListboxComponent), path: 'multi-select-with-inline-message', title: 'Multi select with inline message listbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./multi-select-with-resize/multi-select-with-resize.docs').then(m => m.MultiSelectWithResizeListboxComponent), path: 'multi-select-with-resize', title: 'Multi select with resize listbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./multi-select-with-selected-item/multi-select-with-selected-item.docs').then(m => m.MultiSelectWithSelectedItemListboxComponent), path: 'multi-select-with-selected-item', title: 'Multi select with selected item listbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable-component/reusable-component.docs').then(m => m.ReusableListbox), path: 'reusable-component', title: 'Reusable component listbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable.docs').then(m => m.ReusableListboxDemo), path: 'reusable', title: 'Reusable listbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./single-select-automatic-selection/single-select-automatic-selection.docs').then(m => m.AutomaticSingleSelectListboxComponent), path: 'single-select-automatic-selection', title: 'Single select automatic selection listbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./single-select-default/single-select-default.docs').then(m => m.SingleSelectDefaultListboxComponent), path: 'single-select-default', title: 'Single select default listbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./single-select-model-driven/single-select-model-driven.docs').then(m => m.SingleSelectModelDrivenListboxComponent), path: 'single-select-model-driven', title: 'Single select model driven listbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },

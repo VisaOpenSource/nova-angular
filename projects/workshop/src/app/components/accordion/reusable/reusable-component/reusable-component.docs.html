@@ -1,0 +1,51 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div [id]="id() + '-container'" v-accordion [multiselect]="multiselect()" [subtle]="subtle()">
+  @for (accordion of accordions(); let i = $index; track 'reusable-accordion-' + i) {
+  <details v-accordion-item [name]="name()" [open]="open() ? true : null">
+    <summary
+      v-accordion-heading
+      v-button
+      [aria-disabled]="disabled() ? 'true' : null"
+      [buttonColor]="subtle() ? 'tertiary' : null"
+      [buttonSize]="subtle() ? 'medium' : null"
+      [vTypography]="subtle() ? 'body-2-medium' : null"
+    >
+      <ng-content select="[toggleIcon]" />
+
+      @if(showIcon()){
+      <v-icon-visa-toggle>
+        <svg v-toggle-default-template v-icon-visa-chevron-right-tiny />
+        <svg v-toggle-rotated-template v-icon-visa-chevron-down-tiny /> </v-icon-visa-toggle
+      >}
+
+      <ng-content select="[prefix]" />
+
+      @if(title()){
+      <span vFlex vAlignItemsCenter vGap="6">{{title()! + ' ' + i}}</span>}
+
+      <ng-content select="[suffix]" />
+    </summary>
+    <div v-accordion-panel [vP]="padding() ? undefined : 0">
+      @if(description()){
+      <span>{{description()}}</span>
+      }
+      <ng-content />
+    </div>
+  </details>
+  }
+</div>

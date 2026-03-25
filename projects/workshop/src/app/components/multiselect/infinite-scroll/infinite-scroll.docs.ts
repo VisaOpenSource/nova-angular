@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -162,7 +162,7 @@ export class InfiniteScrollMultiselectComponent implements OnInit, AfterViewInit
   }
 
   prependItems() {
-    let newFirstIndex = Math.max(0, this.firstItemIndex() - this.itemChunkSize);
+    const newFirstIndex = Math.max(0, this.firstItemIndex() - this.itemChunkSize);
 
     // if we are at the beginning of the list, return
     if (newFirstIndex === this.firstItemIndex()) {

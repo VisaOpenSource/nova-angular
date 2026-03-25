@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Combobox examples AutoAutocompleteComboboxComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -56,7 +54,6 @@ exports[`Combobox examples AutoAutocompleteComboboxComponent should render corre
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-0"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -64,9 +61,7 @@ exports[`Combobox examples AutoAutocompleteComboboxComponent should render corre
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -112,9 +107,7 @@ exports[`Combobox examples AutoAutocompleteComboboxComponent should render corre
 `;
 
 exports[`Combobox examples CustomFilterComboboxComponent should render correctly 1`] = `
-<div
-  id="root5"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -167,7 +160,6 @@ exports[`Combobox examples CustomFilterComboboxComponent should render correctly
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-10"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -175,9 +167,7 @@ exports[`Combobox examples CustomFilterComboboxComponent should render correctly
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -274,9 +264,7 @@ exports[`Combobox examples CustomFilterComboboxComponent should render correctly
 `;
 
 exports[`Combobox examples DefaultComboboxComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -328,7 +316,6 @@ exports[`Combobox examples DefaultComboboxComponent should render correctly 1`] 
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-2"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -336,9 +323,7 @@ exports[`Combobox examples DefaultComboboxComponent should render correctly 1`] 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -433,9 +418,7 @@ exports[`Combobox examples DefaultComboboxComponent should render correctly 1`] 
 `;
 
 exports[`Combobox examples DisabledComboboxComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <div
     class="v-combobox"
     disabled="disabled"
@@ -490,7 +473,6 @@ exports[`Combobox examples DisabledComboboxComponent should render correctly 1`]
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-4"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -498,9 +480,7 @@ exports[`Combobox examples DisabledComboboxComponent should render correctly 1`]
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -568,9 +548,7 @@ exports[`Combobox examples DisabledComboboxComponent should render correctly 1`]
 `;
 
 exports[`Combobox examples DisabledOptionComboboxComponent should render correctly 1`] = `
-<div
-  id="root13"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -622,7 +600,6 @@ exports[`Combobox examples DisabledOptionComboboxComponent should render correct
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-26"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -630,9 +607,7 @@ exports[`Combobox examples DisabledOptionComboboxComponent should render correct
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -728,9 +703,7 @@ exports[`Combobox examples DisabledOptionComboboxComponent should render correct
 `;
 
 exports[`Combobox examples DisplayedComboboxDocsComponent should render correctly 1`] = `
-<div
-  id="root23"
->
+<div>
   <div
     class="v-gap-20 v-flex v-flex-col v-p-40"
     vflex=""
@@ -785,16 +758,13 @@ exports[`Combobox examples DisplayedComboboxDocsComponent should render correctl
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-45"
             v-icon-visa-chevron-down-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
         </div>
@@ -855,7 +825,6 @@ exports[`Combobox examples DisplayedComboboxDocsComponent should render correctl
                 class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
                 focusable="false"
                 height="16"
-                id="a-v__icon__internal-46"
                 v-icon-visa-chevron-down-tiny=""
                 v-toggle-default-template=""
                 viewBox="0 0 16 16"
@@ -863,9 +832,7 @@ exports[`Combobox examples DisplayedComboboxDocsComponent should render correctl
               >
                 <path
                   class="v-icon-primary"
-                  clip-rule="evenodd"
-                  d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-                  fill-rule="evenodd"
+                  d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
                 />
               </svg>
               
@@ -961,9 +928,7 @@ exports[`Combobox examples DisplayedComboboxDocsComponent should render correctl
 `;
 
 exports[`Combobox examples DynamicDataSetComboboxComponent should render correctly 1`] = `
-<div
-  id="root3"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -1016,7 +981,6 @@ exports[`Combobox examples DynamicDataSetComboboxComponent should render correct
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-6"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -1024,9 +988,7 @@ exports[`Combobox examples DynamicDataSetComboboxComponent should render correct
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -1077,9 +1039,7 @@ exports[`Combobox examples DynamicDataSetComboboxComponent should render correct
 `;
 
 exports[`Combobox examples ErrorComboboxComponent should render correctly 1`] = `
-<div
-  id="root4"
->
+<div>
   <div
     aria-invalid="false"
     class="v-combobox"
@@ -1135,7 +1095,6 @@ exports[`Combobox examples ErrorComboboxComponent should render correctly 1`] = 
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-8"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -1143,9 +1102,7 @@ exports[`Combobox examples ErrorComboboxComponent should render correctly 1`] = 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -1271,9 +1228,7 @@ exports[`Combobox examples ErrorComboboxComponent should render correctly 1`] = 
 `;
 
 exports[`Combobox examples HighlightOnCloseComboboxComponent should render correctly 1`] = `
-<div
-  id="root6"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -1325,7 +1280,6 @@ exports[`Combobox examples HighlightOnCloseComboboxComponent should render corre
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-12"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -1333,9 +1287,7 @@ exports[`Combobox examples HighlightOnCloseComboboxComponent should render corre
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -1430,9 +1382,7 @@ exports[`Combobox examples HighlightOnCloseComboboxComponent should render corre
 `;
 
 exports[`Combobox examples InfiniteScrollComboboxComponent should render correctly 1`] = `
-<div
-  id="root21"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -1485,7 +1435,6 @@ exports[`Combobox examples InfiniteScrollComboboxComponent should render correct
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-41"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -1493,9 +1442,7 @@ exports[`Combobox examples InfiniteScrollComboboxComponent should render correct
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -1547,9 +1494,7 @@ exports[`Combobox examples InfiniteScrollComboboxComponent should render correct
 `;
 
 exports[`Combobox examples ManualAutocompleteComboboxComponent should render correctly 1`] = `
-<div
-  id="root7"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -1602,7 +1547,6 @@ exports[`Combobox examples ManualAutocompleteComboboxComponent should render cor
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-14"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -1610,9 +1554,7 @@ exports[`Combobox examples ManualAutocompleteComboboxComponent should render cor
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -1709,11 +1651,9 @@ exports[`Combobox examples ManualAutocompleteComboboxComponent should render cor
 `;
 
 exports[`Combobox examples ModelDrivenComboboxComponent should render correctly 1`] = `
-<div
-  id="root8"
->
+<div>
   <div
-    class="v-combobox ng-untouched ng-dirty ng-valid"
+    class="v-combobox ng-untouched ng-pristine ng-valid"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
     v-combobox=""
     v-floating-ui-container=""
@@ -1763,7 +1703,6 @@ exports[`Combobox examples ModelDrivenComboboxComponent should render correctly 
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-16"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -1771,9 +1710,7 @@ exports[`Combobox examples ModelDrivenComboboxComponent should render correctly 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -1876,11 +1813,9 @@ exports[`Combobox examples ModelDrivenComboboxComponent should render correctly 
 `;
 
 exports[`Combobox examples ModelDrivenFbComboboxComponent should render correctly 1`] = `
-<div
-  id="root22"
->
+<div>
   <form
-    class="ng-untouched ng-dirty ng-valid v-gap-16 v-flex v-flex-col"
+    class="ng-untouched ng-pristine ng-invalid v-gap-16 v-flex v-flex-col"
     novalidate=""
     vflex=""
     vflexcol=""
@@ -1888,7 +1823,7 @@ exports[`Combobox examples ModelDrivenFbComboboxComponent should render correctl
   >
     <div
       aria-invalid="false"
-      class="v-combobox ng-untouched ng-dirty ng-valid"
+      class="v-combobox ng-untouched ng-pristine ng-invalid"
       formcontrolname="comboboxFormControl"
       style="--v-dropdown-menu-surface-margin-block-start: 0;"
       v-combobox=""
@@ -1918,7 +1853,7 @@ exports[`Combobox examples ModelDrivenFbComboboxComponent should render correctl
           id="a-v-input-0"
           role="combobox"
           v-input=""
-          value="Option A"
+          value=""
         />
         <button
           aria-haspopup="true"
@@ -1940,7 +1875,6 @@ exports[`Combobox examples ModelDrivenFbComboboxComponent should render correctl
               class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-43"
               v-icon-visa-chevron-down-tiny=""
               v-toggle-default-template=""
               viewBox="0 0 16 16"
@@ -1948,9 +1882,7 @@ exports[`Combobox examples ModelDrivenFbComboboxComponent should render correctl
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-                fill-rule="evenodd"
+                d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
               />
             </svg>
             
@@ -1983,8 +1915,7 @@ exports[`Combobox examples ModelDrivenFbComboboxComponent should render correctl
           v-listbox=""
         >
           <li
-            active=""
-            aria-selected="true"
+            aria-selected="false"
             class="v-listbox-item"
             id="v-listbox-item-option-a"
             role="option"
@@ -2075,22 +2006,16 @@ exports[`Combobox examples ModelDrivenFbComboboxComponent should render correctl
     </div>
   </form>
   <code>
-    Label: Option A
+    Label: 
   </code>
-  
   <code>
-    Value: option-a
+    Value: 
   </code>
-  
-  
-  
 </div>
 `;
 
 exports[`Combobox examples OpenOnSelectComboboxComponent should render correctly 1`] = `
-<div
-  id="root20"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -2142,7 +2067,6 @@ exports[`Combobox examples OpenOnSelectComboboxComponent should render correctly
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-39"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -2150,9 +2074,7 @@ exports[`Combobox examples OpenOnSelectComboboxComponent should render correctly
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -2247,9 +2169,7 @@ exports[`Combobox examples OpenOnSelectComboboxComponent should render correctly
 `;
 
 exports[`Combobox examples ReadOnlyComboboxComponent should render correctly 1`] = `
-<div
-  id="root9"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -2309,7 +2229,6 @@ exports[`Combobox examples ReadOnlyComboboxComponent should render correctly 1`]
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-18"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -2317,9 +2236,7 @@ exports[`Combobox examples ReadOnlyComboboxComponent should render correctly 1`]
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -2386,9 +2303,7 @@ exports[`Combobox examples ReadOnlyComboboxComponent should render correctly 1`]
 `;
 
 exports[`Combobox examples ScrollBarComboboxComponent should render correctly 1`] = `
-<div
-  id="root17"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -2440,7 +2355,6 @@ exports[`Combobox examples ScrollBarComboboxComponent should render correctly 1`
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-35"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -2448,9 +2362,7 @@ exports[`Combobox examples ScrollBarComboboxComponent should render correctly 1`
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -2559,11 +2471,9 @@ exports[`Combobox examples ScrollBarComboboxComponent should render correctly 1`
 `;
 
 exports[`Combobox examples TemplateDrivenComboboxComponent should render correctly 1`] = `
-<div
-  id="root11"
->
+<div>
   <div
-    class="v-combobox ng-untouched ng-valid ng-dirty"
+    class="v-combobox ng-untouched ng-pristine ng-valid"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
     v-combobox=""
     v-floating-ui-container=""
@@ -2613,7 +2523,6 @@ exports[`Combobox examples TemplateDrivenComboboxComponent should render correct
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-22"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -2621,9 +2530,7 @@ exports[`Combobox examples TemplateDrivenComboboxComponent should render correct
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -2725,11 +2632,9 @@ exports[`Combobox examples TemplateDrivenComboboxComponent should render correct
 `;
 
 exports[`Combobox examples TemplateDrivenProgrammaticSelectionComboboxComponent should render correctly 1`] = `
-<div
-  id="root10"
->
+<div>
   <div
-    class="v-combobox ng-untouched ng-valid ng-dirty"
+    class="v-combobox ng-untouched ng-pristine ng-valid"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
     v-combobox=""
     v-floating-ui-container=""
@@ -2780,7 +2685,6 @@ exports[`Combobox examples TemplateDrivenProgrammaticSelectionComboboxComponent 
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-20"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -2788,9 +2692,7 @@ exports[`Combobox examples TemplateDrivenProgrammaticSelectionComboboxComponent 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -2870,9 +2772,7 @@ exports[`Combobox examples TemplateDrivenProgrammaticSelectionComboboxComponent 
 `;
 
 exports[`Combobox examples WithClearButtonComboboxComponent should render correctly 1`] = `
-<div
-  id="root12"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -2925,7 +2825,6 @@ exports[`Combobox examples WithClearButtonComboboxComponent should render correc
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-24"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -2933,9 +2832,7 @@ exports[`Combobox examples WithClearButtonComboboxComponent should render correc
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -2979,9 +2876,7 @@ exports[`Combobox examples WithClearButtonComboboxComponent should render correc
 `;
 
 exports[`Combobox examples WithInlineLabelComboboxComponent should render correctly 1`] = `
-<div
-  id="root14"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -3043,7 +2938,6 @@ exports[`Combobox examples WithInlineLabelComboboxComponent should render correc
               class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-28"
               v-icon-visa-chevron-down-tiny=""
               v-toggle-default-template=""
               viewBox="0 0 16 16"
@@ -3051,9 +2945,7 @@ exports[`Combobox examples WithInlineLabelComboboxComponent should render correc
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-                fill-rule="evenodd"
+                d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
               />
             </svg>
             
@@ -3149,9 +3041,7 @@ exports[`Combobox examples WithInlineLabelComboboxComponent should render correc
 `;
 
 exports[`Combobox examples WithInlineMessageComboboxComponent should render correctly 1`] = `
-<div
-  id="root15"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -3204,7 +3094,6 @@ exports[`Combobox examples WithInlineMessageComboboxComponent should render corr
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-30"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -3212,9 +3101,7 @@ exports[`Combobox examples WithInlineMessageComboboxComponent should render corr
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -3316,9 +3203,7 @@ exports[`Combobox examples WithInlineMessageComboboxComponent should render corr
 `;
 
 exports[`Combobox examples WithLeadingIconComboboxComponent should render correctly 1`] = `
-<div
-  id="root16"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -3344,20 +3229,17 @@ exports[`Combobox examples WithLeadingIconComboboxComponent should render correc
         class="v-icon v-icon-low v-icon-search v-icon-visa"
         focusable="false"
         height="24"
-        id="a-v__icon__internal-32"
         v-icon-visa-search-low=""
         viewBox="0 0 24 24"
         width="24"
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M9 7V5C11.2056 5 13 6.79443 13 9H11C11 7.89697 10.103 7 9 7ZM16.5181 15L24 22.4819L22.4819 24L15 16.5181C15.5551 16.0636 16.0636 15.5551 16.5181 15Z"
-          fill-rule="evenodd"
+          d="M24 22.4814L22.4814 24L15 16.5186C15.5551 16.0641 16.0641 15.5551 16.5186 15L24 22.4814ZM9 5C11.2056 5 13 6.79443 13 9H11C11 7.89697 10.103 7 9 7V5Z"
         />
         <path
           class="v-icon-primary"
-          d="M9 1C4.58887 1 1 4.58887 1 9C1 13.4111 4.58887 17 9 17C13.4111 17 17 13.4111 17 9C17 4.58887 13.4111 1 9 1ZM9 15C5.69141 15 3 12.3086 3 9C3 5.69141 5.69141 3 9 3C12.3086 3 15 5.69141 15 9C15 12.3086 12.3086 15 9 15Z"
+          d="M9 1C13.4111 1 17 4.58887 17 9C17 13.4111 13.4111 17 9 17C4.58887 17 1 13.4111 1 9C1 4.58887 4.58887 1 9 1ZM9 3C5.69141 3 3 5.69141 3 9C3 12.3086 5.69141 15 9 15C12.3086 15 15 12.3086 15 9C15 5.69141 12.3086 3 9 3Z"
         />
       </svg>
       <input
@@ -3391,7 +3273,6 @@ exports[`Combobox examples WithLeadingIconComboboxComponent should render correc
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-33"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -3399,9 +3280,7 @@ exports[`Combobox examples WithLeadingIconComboboxComponent should render correc
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -3496,9 +3375,7 @@ exports[`Combobox examples WithLeadingIconComboboxComponent should render correc
 `;
 
 exports[`Combobox examples WithSelectedOptionComboboxComponent should render correctly 1`] = `
-<div
-  id="root18"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -3550,7 +3427,6 @@ exports[`Combobox examples WithSelectedOptionComboboxComponent should render cor
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-37"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -3558,9 +3434,7 @@ exports[`Combobox examples WithSelectedOptionComboboxComponent should render cor
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -3656,9 +3530,7 @@ exports[`Combobox examples WithSelectedOptionComboboxComponent should render cor
 `;
 
 exports[`Combobox examples WithoutDropdownChevronComboboxComponent should render correctly 1`] = `
-<div
-  id="root19"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"

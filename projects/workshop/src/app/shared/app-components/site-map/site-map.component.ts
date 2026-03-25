@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,12 +29,17 @@ import { routeSorter } from '../site-nav/site-nav.component';
   templateUrl: './site-map.component.html',
   styleUrl: './site-map.component.scss',
   standalone: true,
-  imports: [NovaLibModule, RouterModule, SiteHeaderComponent, SiteFooterComponent]
+  imports: [
+    NovaLibModule,
+    RouterModule,
+    SiteHeaderComponent,
+    SiteFooterComponent,
+  ],
 })
 export class SiteMapComponent {
   navLinks = [
     { title: 'Getting Started', link: '../' },
-    { title: 'Foundations', link: '../foundations/grid' }
+    { title: 'Foundations', link: '../foundations/grid' },
   ];
   components = componentRoutesWithTitleWithHiddenRoutes.sort(routeSorter);
   services = servicesRoutesWithTitle.sort(routeSorter);
@@ -42,6 +47,6 @@ export class SiteMapComponent {
   siteMapData = [
     { title: 'Components', data: this.components },
     { title: 'Services', data: this.services },
-    { title: 'Utilities', data: this.utilities }
+    { title: 'Utilities', data: this.utilities },
   ];
 }

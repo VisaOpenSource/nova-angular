@@ -1,0 +1,124 @@
+<!--
+ *              © 2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div [style.overflowX]="'auto'">
+  <table
+    v-table
+    [alternate]="alternate()"
+    [dividerLines]="dividerLines()"
+    [horizontalDividerLines]="horizontalDividerLines()"
+    [id]="id() + '-table'"
+    [keyValue]="keyValue()"
+    [subtle]="subtle()"
+    [tableSize]="tableSize()"
+  >
+    <caption vSR>
+      {{ caption() }}
+    </caption>
+
+    @if(!keyValue()){
+    <thead>
+      <ng-content select="[head]" />
+      @if(groupHeaders()){
+      <tr v-tr>
+        @for (column of groupHeaders(); track column) {
+        <th
+          v-th
+          [groupHeader]="column.groupHeader ?? true"
+          [attr.colspan]="column.colspan ? column.colspan : null"
+          scope="col"
+        >
+          @if(column.title) { {{ column.title }}}
+        </th>
+        }
+      </tr>
+      }
+      <tr v-tr>
+        @for (column of columns(); track column.key) {
+        <th
+          [attr.aria-sort]="
+              column.key === sort()?.key
+                ? sort()?.ascending
+                  ? 'ascending'
+                  : 'descending'
+                : null
+            "
+          v-th
+          [groupHeader]="column.groupHeader"
+          [attr.colspan]="column.colspan ? column.colspan : null"
+          scope="col"
+        >
+          @if(column.title) { {{ column.title }}} @if (column.sortable) {
+          <button
+            v-button-icon
+            [attr.aria-label]="
+                  column.key === sort()?.key || !sort()?.ascending
+                    ? 'sort ascending'
+                    : 'sort descending'
+                "
+            buttonColor="tertiary"
+            buttonSize="small"
+            (click)="handleSort(column)"
+          >
+            @if ( column.key !== sort()?.key || sort()?.ascending === undefined ) {
+            <svg v-icon-visa-sortable-tiny />
+            } @else if (sort()?.ascending) {
+            <svg v-icon-visa-arrow-up-tiny />
+            } @else {
+            <svg v-icon-visa-arrow-down-tiny />
+            }
+          </button>
+          }
+        </th>
+        }
+      </tr>
+    </thead>
+    }
+
+    <tbody v-tbody>
+      <ng-content select="[body]" />
+      @for ( row of rows() || []; track id() + row.id + index; let index = $index ) {
+      <tr v-tr>
+        @for (column of columns(); track column.key) { @if (column.key === rowHeader()) {
+        <th scope="row" v-td [vTypographyColor]="column.activeTypographyStyle ? 'active' : ''">
+          @if (column.component) {
+          <ng-container
+            [ngComponentOutlet]="column.component"
+            [ngComponentOutletInputs]="
+                      getColumnInputs(row, column?.key!, index, column?.inputs)
+                    "
+          />
+          } @else { {{ column.transform ? column.transform(row) : row[column.key!] }} }
+        </th>
+        } @else {
+        <td v-td [vTypographyColor]="column.activeTypographyStyle ? 'active' : ''">
+          @if (column.component) {
+          <ng-container
+            [ngComponentOutlet]="column.component"
+            [ngComponentOutletInputs]="
+                      getColumnInputs(row, column?.key!, index, column?.inputs)
+                    "
+          />
+          } @else { {{ column.transform ? column.transform(row) : row[column.key!] }} }
+        </td>
+        } }
+      </tr>
+      }
+    </tbody>
+  </table>
+
+  <ng-content />
+</div>

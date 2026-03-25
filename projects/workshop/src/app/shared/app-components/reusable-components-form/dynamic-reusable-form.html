@@ -1,0 +1,178 @@
+<!--
+ *              © 2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div v-panel vML="auto" responsive [expanded]="expanded()" style="inline-size: 100%">
+  <button
+    v-panel-toggle
+    aria-label="Customize demo panel"
+    buttonSize="large"
+    v-button-icon
+    [vML]="expanded() ? '' : 'auto'"
+    [vMediaHide]="expanded() ? ['xs', 'sm'] : null"
+    (click)="toggleExpanded()"
+    [attr.aria-expanded]="expanded()"
+    aria-controls="responsive-expanded-panel"
+  >
+    @if(expanded()){
+    <svg
+      v-icon-visa-media-fast-forward-tiny
+      v-icon-two-color
+      style="--v-icon-secondary: var(--palette-default-active-accent)"
+    />
+    }@else {
+    <svg
+      v-icon-visa-media-rewind-tiny
+      v-icon-two-color
+      style="--v-icon-secondary: var(--palette-default-active-accent)"
+    />
+    }
+  </button>
+  <div
+    v-panel-content
+    [vHide]="!expanded()"
+    [attr.aria-hidden]="!expanded()"
+    id="responsive-expanded-panel"
+    vFlex
+    vFlexCol
+  >
+    <header vFlex vJustifyContentBetween vGap="4">
+      <h3 vTypography="headline-4">Customize demo</h3>
+      <button
+        v-button-icon
+        buttonColor="tertiary"
+        buttonSize="small"
+        subtle
+        vMediaHide="desktop"
+        (click)="expanded.set(false)"
+        aria-label="Close customize demo panel"
+      >
+        <svg v-icon-visa-close-tiny />
+      </button>
+    </header>
+    <hr v-divider dividerType="decorative" vFlexShrink0 vMB="20" vMX="8" />
+    <div v-panel-body vFlex vFlexGrow>
+      <form [formGroup]="form" (ngSubmit)="handleApply()" vFlex vFlexCol vGap="16">
+        <div vMB="32" vFlex vGap="48" class="reusable-form-field-wrapper">
+          @for(group of propertiesSplit(); track group.type) {
+          <div vFlex vFlexCol vGap="16" style="inline-size: max-content">
+            <h4 vTypography="subtitle-2">{{ group.title }}</h4>
+            <div vFlex vFlexCol vFlexWrap vGap="16">
+              @for (prop of group.properties; track prop.name) { @switch (prop.type) { @case ('boolean') {
+              <div vFlex vFlexCol vGap="4">
+                <div v-input-container vFlex vAlignItemsStart>
+                  <input
+                    [id]="prop.name"
+                    [formControlName]="prop.name"
+                    v-checkbox
+                    [attr.aria-describedby]="prop.helpText ? prop.name + '-help' : null"
+                  />
+                  <div vFlex vFlexCol vGap="4" vMY="10">
+                    <label v-label [for]="prop.name">{{ prop.label || prop.name }}</label>
+                    @if (prop.helpText) {
+                    <span v-input-message [id]="prop.name + '-help'">{{ prop.helpText }}</span>
+                    }
+                  </div>
+                </div>
+              </div>
+              } @case ('string') {
+              <div vFlex vGap="4" vFlexCol>
+                <label [for]="prop.name" v-label>{{ prop.label || prop.name }}</label>
+                <div v-input-container>
+                  <textarea
+                    [id]="prop.name"
+                    [formControlName]="prop.name"
+                    v-input
+                    cdkTextareaAutosize
+                    [attr.aria-describedby]="prop.helpText ? prop.name + '-help' : null"
+                    [style.max-block-size]="'200px'"
+                  ></textarea>
+                </div>
+                @if (prop.helpText) {
+                <span v-input-message [id]="prop.name + '-help'">{{ prop.helpText }}</span>
+                }
+              </div>
+              } @case ('number') {
+              <div vFlex vGap="4" vFlexCol>
+                <label [for]="prop.name" v-label>{{ prop.label || prop.name }}</label>
+                <div v-input-container>
+                  <input
+                    [id]="prop.name"
+                    [formControlName]="prop.name"
+                    v-input
+                    type="number"
+                    min="0"
+                    [attr.aria-describedby]="prop.helpText ? prop.name + '-help' : null"
+                  />
+                </div>
+                @if (prop.helpText) {
+                <span v-input-message [id]="prop.name + '-help'">{{ prop.helpText }}</span>
+                }
+              </div>
+              } @case ('enum') {
+              <div vFlex vGap="4" vFlexCol>
+                <label [for]="prop.name" v-label>{{ prop.label || prop.name }}</label>
+                <div v-input-container>
+                  <select
+                    [id]="prop.name"
+                    [formControlName]="prop.name"
+                    v-select
+                    [attr.aria-describedby]="prop.helpText ? prop.name + '-help' : null"
+                  >
+                    @for (option of prop.options; track option.value) {
+                    <option [value]="option.value">{{ option.label }}</option>
+                    }
+                  </select>
+                  <svg v-icon-visa-chevron-down-tiny />
+                </div>
+                @if (prop.helpText) {
+                <span v-input-message [id]="prop.name + '-help'">{{ prop.helpText }}</span>
+                }
+              </div>
+              } } }
+            </div>
+          </div>
+          }
+        </div>
+        @if (jsonProperties().length) {
+        <div vMB="32" vFlex vFlexCol vGap="48" class="reusable-form-field-wrapper">
+          @for (prop of jsonProperties(); track prop.name) {
+          <div vFlex vGap="4" vFlexCol vFlexGrow>
+            <label [for]="prop.name" v-label>{{ prop.label || prop.name }}</label>
+            <div v-input-container>
+              <textarea
+                [id]="prop.name"
+                [formControlName]="prop.name"
+                v-input
+                cdkTextareaAutosize
+                [attr.aria-describedby]="prop.helpText ? prop.name + '-help' : null"
+                [style.max-block-size]="'200px'"
+              ></textarea>
+            </div>
+            @if (prop.helpText) {
+            <span v-input-message [id]="prop.name + '-help'">{{ prop.helpText }}</span>
+            }
+          </div>
+          }
+        </div>
+        }
+        <div vFlex vGap="16" vMB="16" vML="auto">
+          <button type="submit" v-button>Apply</button>
+          <button (click)="handleReset()" type="button" v-button buttonColor="secondary">Reset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,8 +18,24 @@ import { ChangeDetectionStrategy, Component, input, output } from '@angular/core
 import { NovaLibModule } from '@visa/nova-angular';
 import { VisaEditTiny } from '@visa/nova-icons-angular';
 
-export type Step = { stepLabel: string; inputLabel?: string; inputValue?: string; id?: number | string };
+/**
+ * Represents a single step in a wizard flow.
+ * @property {string} stepLabel - Display label for the step
+ * @property {string} [inputLabel] - Label text for the input field within this step
+ * @property {string} [inputValue] - Current value of the input field
+ * @property {number | string} [id] - Unique identifier for the step
+ */
+export interface Step {
+  stepLabel: string;
+  inputLabel?: string;
+  inputValue?: string;
+  id?: number | string;
+}
 
+/**
+ * Displays a summary page showing all wizard step values with edit functionality.
+ * Typically rendered as the final step before submission in a multi-step wizard.
+ */
 /** #patterns #isShared **/
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -29,6 +45,9 @@ export type Step = { stepLabel: string; inputLabel?: string; inputValue?: string
   imports: [NovaLibModule, VisaEditTiny]
 })
 export class SharedWizardSummaryPageComponent {
+  /** Emits the step index when a user clicks an edit button */
   readonly edit = output<number>();
+
+  /** Array of wizard steps to display in the summary */
   readonly steps = input<Step[]>([]);
 }

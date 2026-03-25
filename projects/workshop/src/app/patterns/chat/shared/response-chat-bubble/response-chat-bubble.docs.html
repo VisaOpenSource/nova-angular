@@ -1,0 +1,102 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<!-- Container query units (cqi) constrain bubble width relative to container, leaving space for margins -->
+<div style="max-inline-size: calc(100cqi - 208px)">
+  <div vFlex vAlignItemsStart vAlignSelfStretch vGap="8" [vPB]="hideTimestamp() ? 24 : 4">
+    @if (!hideAvatar()) {
+    <div
+      [style]="{
+      'padding-block-start': '18px',
+      'padding-inline-start': hideTimestamp() ? '32px' : '0'
+    }"
+    >
+      <!-- Small avatar uses active color scheme to differentiate from user avatar -->
+      <span
+        v-avatar
+        [small]="smallAvatar()"
+        [aria-label]="response().role"
+        [style]="smallAvatar() ? {
+        '--v-avatar-background': 'var(--palette-default-active)',
+        '--v-avatar-foreground': 'var(--palette-default-text-on-active)'
+      } : {}"
+      >
+        <svg v-icon-visa-chat-ai-tiny style="width: 18px; height: 18px" />
+      </span>
+    </div>
+    }
+    <div
+      vFlex
+      vFlexCol
+      vAlignItemsStart
+      vGap="4"
+      [style]="{
+      'padding-inline-start': hideAvatar() ? 'var(--size-responsive-40)' : '0'
+    }"
+    >
+      @if (!hideTimestamp()) {
+      <div vFlex vGap="8">
+        <span vTypography="label-small">{{ response().role }}</span>
+        <span vTypography="label-small">{{ response().timeStamp }}</span>
+      </div>
+      }
+      <div style="max-inline-size: calc(100cqi - 208px)">
+        <div
+          vFlex
+          vFlexCol
+          vGap="6"
+          vPY="12"
+          vPX="14"
+          id="response-chat-bubble"
+          [tabIndex]="0"
+          [attr.aria-label]="response().message + ' ' + response().code + ' message from ' + response().role + ' at ' + response().timeStamp + '. Press tab to navigate to more options.'"
+          style="
+            border-radius: 10px;
+            background-color: var(--palette-default-surface-highlight);
+            min-inline-size: fit-content;
+          "
+        >
+          <!-- Multiple word-breaking properties ensure long text wraps correctly across browsers -->
+          <span
+            vTypography="body-2"
+            style="word-wrap: break-word; word-break: break-word; white-space: pre-wrap; overflow-wrap: break-word"
+            >{{response().message}}</span
+          >
+          @if( response().code) {
+          <nova-workshop-chat-code-snippet-single [copyData]="response().code!"></nova-workshop-chat-code-snippet-single
+          >}
+          <div vFlex vFlexRow vJustifyContent="end" vAlignItems="center" vAlignSelfEnd vGap="4">
+            <button
+              v-button-icon
+              [style]="{
+        '--v-button-default-block-size': 'var(--size-scalable-26)',
+        '--v-button-default-border-radius': 'var(--size-rounded-small)'
+      }"
+              aria-label="action"
+              id="flag-action-button"
+              buttonSize="small"
+              buttonColor="tertiary"
+              subtle
+            >
+              <svg v-icon-visa-flag-tiny></svg>
+            </button>
+            <chat-actions />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

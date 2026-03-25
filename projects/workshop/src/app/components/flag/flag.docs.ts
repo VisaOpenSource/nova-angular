@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
  *
  **/
 
-import { AfterViewInit, ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { NovaLibModule } from '@visa/nova-angular';
 import { NovaSharedModule } from '../../shared/nova-shared.module';
 import { APITypes } from '../../shared/services/workshop.constants';
@@ -34,6 +34,7 @@ import { ErrorWithoutCloseIconButtonFlagComponent } from './error-without-close-
 import { InfoFlagWithActionButtonFlagComponent } from './info-flag-with-action-button/info-flag-with-action-button.docs';
 import { InfoFlagWithLinkFlagComponent } from './info-flag-with-link/info-flag-with-link.docs';
 import { InfoWithoutCloseIconButtonFlagComponent } from './info-without-close-icon-button/info-without-close-icon-button.docs';
+import { ReusableFlagDemo } from './reusable/reusable.docs';
 import { SuccessFlagWithTitleComponent } from './success-flag-title/success-flag-title.docs';
 import { SuccessFlagWithActionButtonFlagComponent } from './success-flag-with-action-button/success-flag-with-action-button.docs';
 import { SuccessFlagWithLinkFlagComponent } from './success-flag-with-link/success-flag-with-link.docs';
@@ -73,13 +74,14 @@ import { WarningWithoutCloseIconButtonFlagComponent } from './warning-without-cl
     EmptyFlagComponent,
     EmptySuccessFlagComponent,
     EmptyErrorFlagComponent,
-    EmptyWarningFlagComponent
+    EmptyWarningFlagComponent,
+    ReusableFlagDemo
   ],
   standalone: true,
   selector: 'vds-docs-nova-flag',
   templateUrl: './flag.docs.html'
 })
-export class FlagDocsComponent implements AfterViewInit, OnInit {
+export class FlagDocsComponent {
   readonly workshopService = inject(WorkshopService);
 
   constructor() {
@@ -91,13 +93,5 @@ export class FlagDocsComponent implements AfterViewInit, OnInit {
       { name: 'MessageIconDirective' },
       { name: 'MessageType', type: APITypes.CONSTANT }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

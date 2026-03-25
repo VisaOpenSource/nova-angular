@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,7 +38,7 @@ import {
 import { DefaultValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { ComboboxDirective } from '../combobox/combobox.directive';
 import { IdGenerator } from '../id-generator/id-generator.service';
-import { defaultEffectParam, SPACE_KEY } from '../nova-lib.constants';
+import { SPACE_KEY } from '../nova-lib.constants';
 
 const DEFAULT_VALUE_ACCESSOR: Provider = {
   provide: NG_VALUE_ACCESSOR,
@@ -243,10 +243,9 @@ export class InputDirective extends DefaultValueAccessor {
   private readonly valueEffect = effect(() => {
     const value = this.value();
     if (value === this.prevInputValue) return;
-    this.onChange(this.value());
     this.setProperty('value', this.value());
     this.prevInputValue = value;
-  }, defaultEffectParam);
+  });
 
   /**
    * Emits value when the input event is triggered or backspace key is pressed.
@@ -270,6 +269,7 @@ export class InputDirective extends DefaultValueAccessor {
 
   handleInput(event: Event): void {
     const { value } = event.target as HTMLInputElement;
+    this.onChange(value);
     this.writeValue(value);
     this.inputEvent.emit(value);
   }

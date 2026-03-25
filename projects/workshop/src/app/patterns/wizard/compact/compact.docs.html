@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,7 @@
  * limitations under the License.
  *
  -->
+<!-- Container queries enable responsive layout changes based on container width, not viewport width -->
 <div
   vFlex
   vFlexCol
@@ -27,6 +28,7 @@
     vAlignSelfEnd
   />
   }
+  <!-- Responsive wizard navigation: Desktop shows full horizontal layout -->
   <nav
     aria-label="wizard for compact example-desktop"
     vContainerHide="mobile"
@@ -35,10 +37,11 @@
     <ol v-wizard class="v-justify-content-center">
       <ng-template
         [ngTemplateOutlet]="wizardSteps"
-        [ngTemplateOutletContext]="{ steps: steps, isMobile: false }"
+        [ngTemplateOutletContext]="{ steps: stepsWithState(), isMobile: false }"
       />
     </ol>
   </nav>
+  <!-- Mobile shows compact horizontal layout with reduced step labels -->
   <nav
     aria-label="wizard for compact example-mobile"
     vContainerHide="desktop"
@@ -47,7 +50,7 @@
     <ol v-wizard compact class="v-justify-content-center">
       <ng-template
         [ngTemplateOutlet]="wizardSteps"
-        [ngTemplateOutletContext]="{ steps: steps, isMobile: true }"
+        [ngTemplateOutletContext]="{ steps: stepsWithState(), isMobile: true }"
       />
     </ol>
   </nav>
@@ -177,9 +180,11 @@
   }
 </div>
 
+<!-- Reusable template for rendering wizard steps in both desktop and mobile layouts -->
 <ng-template #wizardSteps let-steps="steps" let-isMobile="isMobile">
   @for (step of steps; track step.id; let i = $index) {
   <li v-wizard-step [active]="i === currentStep()">
+    <!-- Mobile or unavailable steps are non-interactive; available desktop steps are clickable buttons -->
     @if (isMobile || !step.available) {
     <ng-template
       [ngTemplateOutlet]="stepContent"

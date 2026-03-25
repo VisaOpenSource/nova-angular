@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,8 +42,7 @@ import { NovaImageCardComponent } from './image/image.docs';
     NovaDefaultWithUIButtonsCardComponent,
     NovaIconCardComponent,
     NovaImageCardComponent,
-    NovaLibModule,
-    NovaSharedModule
+    NovaLibModule
   ],
   standalone: true,
   selector: 'nova-workshop-content-card',
@@ -62,13 +61,5 @@ export class ContentCardDocsComponent {
       { name: 'ContentCardTitleDirective', type: 'directive' },
       { name: 'ContentCardTitleLinkDirective', type: 'directive' }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

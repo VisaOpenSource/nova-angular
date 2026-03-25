@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,7 +36,7 @@ import {
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { IdGenerator } from '../id-generator/id-generator.service';
 import { ToggleButtonDirective } from '../toggle-button/toggle-button.directive';
-import { defaultEffectParam } from '../nova-lib.constants';
+import { valuesDiffer } from '../utilities';
 
 export type ToggleContainerValue = number | string | (string | number | null)[] | null;
 
@@ -64,19 +64,28 @@ export class ToggleContainerDirective implements ControlValueAccessor, AfterCont
     let prevActiveButtons: ToggleButtonDirective[] | undefined = undefined;
     effect(() => {
       const activeButtons = this.activeButtons();
+      const multiselect = untracked(() => this.multiselect());
+
+      if (multiselect && prevActiveButtons === undefined) {
+        prevActiveButtons = []; // initialize to empty array in multiselect mode
+      }
+
       if (!activeButtons || !activeButtons.length || prevActiveButtons == activeButtons) return;
+
+      // if active buttons changed, store the new value
       prevActiveButtons = activeButtons;
+
       // update container value to match active buttons when changed
       // if multiselect, or single select with only one active button
-      const multiselect = untracked(() => this.multiselect());
       if (multiselect || (!multiselect && activeButtons.length <= 1)) {
         this.updateValue();
       } else {
         // if single select and 2 selected, remove the previous one
+      
         const previousSSValue = untracked(() => this.previousSSValue());
         previousSSValue?.active.set(false);
       }
-    }, defaultEffectParam);
+    });
   }
 
   private readonly idGenerator: IdGenerator = inject(IdGenerator);
@@ -155,11 +164,9 @@ export class ToggleContainerDirective implements ControlValueAccessor, AfterCont
   private readonly valueEffect = effect(() => {
     const value = this.value();
     this.onChange(value);
-  }, defaultEffectParam);
+  });
 
   ngAfterContentInit(): void {
-    // if the value is not set, set it to the value of the active buttons
-    // if the value is set, set the active buttons to the value of the toggle container
     this.updateValue(this.value() ? this.value() : undefined);
   }
 
@@ -168,6 +175,7 @@ export class ToggleContainerDirective implements ControlValueAccessor, AfterCont
    * Used in toggle button directive to avoid circular dependency.
    */
   updateValue(value: ToggleContainerValue | undefined = undefined): void {
+
     // if the value was changed externally, update the active buttons
     if (value !== undefined) {
       this.buttons().forEach((item) => {
@@ -183,18 +191,15 @@ export class ToggleContainerDirective implements ControlValueAccessor, AfterCont
       let newValue: ToggleContainerValue = this.activeButtons().map((item) => item.value());
       if (!this.multiselect()) newValue = newValue[0] ?? null;
 
-      // must use JSON.stringify to compare objects because the value is an array of objects
-      // and the default === operator will not work
-      // @TODO: try to switch to novaLibService.valuesDiffer()
-      if (JSON.stringify(newValue) !== JSON.stringify(this.value())) {
+      if (valuesDiffer(newValue, this.value())) {
         this.value.set(newValue);
       }
     }
   }
 
-  private onChange = (_: any): void => {};
+  private onChange = (_: any): void => { };
 
-  onTouched = (_: any): void => {};
+  onTouched = (_: any): void => { };
 
   registerOnChange(fn: any): void {
     this.onChange = fn;

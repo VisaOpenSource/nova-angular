@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,10 +21,10 @@ import { WorkshopService } from '../../shared/services/workshop.service';
 import { PaginationDefaultFirstPageComponent } from './default-first-page/default-first-page.docs';
 import { PaginationDefaultLastPageComponent } from './default-last-page/default-last-page.docs';
 import { PaginationDefaultMiddlePageComponent } from './default-middle-page/default-middle-page.docs';
-import { MultiplePaginationsComponent } from './multiple-paginations/multiple-paginations.docs';
+import { PaginationNoMiddleBlockComponent } from './no-middle-block/no-middle-block.docs';
+import { ReusablePaginationDemo } from './reusable/reusable.docs';
 import { PaginationSlimWithCountComponent } from './slim-with-count/slim-with-count.docs';
 import { PaginationSlimComponent } from './slim/slim.docs';
-import { PaginationTableComponent } from './table/table.docs';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -37,10 +37,10 @@ import { PaginationTableComponent } from './table/table.docs';
     PaginationDefaultFirstPageComponent,
     PaginationDefaultLastPageComponent,
     PaginationDefaultMiddlePageComponent,
-    MultiplePaginationsComponent,
     PaginationSlimWithCountComponent,
     PaginationSlimComponent,
-    PaginationTableComponent
+    ReusablePaginationDemo,
+    PaginationNoMiddleBlockComponent
   ]
 })
 export class PaginationDocsComponent {
@@ -53,13 +53,5 @@ export class PaginationDocsComponent {
       { name: 'ButtonIconDirective' },
       { name: 'PaginationControl', type: 'service-source' }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

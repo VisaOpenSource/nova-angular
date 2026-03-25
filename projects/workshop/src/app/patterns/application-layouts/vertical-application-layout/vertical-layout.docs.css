@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,46 +14,45 @@
  * limitations under the License.
  *
  **/
- 
+
 .layout-vertical {
-    height: 100vh;
-    height: 700px;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 100%;
-    grid-template-areas: "header content";
-    background-color: var(--palette-default-surface-3, #f0f0f0);
-    container-type: inline-size;
+  height: 100vh;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas: "header content";
+  background-color: var(--palette-default-surface-3, #f0f0f0);
+  container-type: inline-size;
 }
 
 /* open nav */
 .layout-vertical:has(.v-nav .v-tabs) {
-    grid-template-columns: 242px 1fr;
+  grid-template-columns: 242px 1fr;
 }
 
 /* The following example styles are prefixed with ".layout-vertical" to avoid conflicts with other styles in the documentation app. */
 
 .layout-vertical .layout-header {
-    z-index: 3;
-    position: relative;
-    grid-area: header;
+  z-index: 3;
+  position: relative;
+  grid-area: header;
 }
-    
+
 .layout-vertical .layout-content {
-    position: relative;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    grid-area: content;
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  grid-area: content;
 }
 
 .layout-vertical main {
-    display: block;
-    flex-grow: 1;
+  display: block;
+  flex-grow: 1;
 }
 
 /* customize the default footer color */
 .layout-vertical .v-footer {
-  background-color: var(--v-palette-default-surface-3);
+  background-color: var(--palette-default-surface-3);
 }

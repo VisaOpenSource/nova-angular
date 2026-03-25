@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Dialog examples NovaDecorativeDividerComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <hr
     aria-hidden="true"
     class="v-divider v-divider-decorative"
@@ -14,9 +12,7 @@ exports[`Dialog examples NovaDecorativeDividerComponent should render correctly 
 `;
 
 exports[`Dialog examples NovaDefaultDividerComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <hr
     class="v-divider"
     v-divider=""
@@ -25,9 +21,7 @@ exports[`Dialog examples NovaDefaultDividerComponent should render correctly 1`]
 `;
 
 exports[`Dialog examples NovaSectionDividerComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <hr
     class="v-divider v-divider-section"
     dividertype="section"
@@ -37,9 +31,7 @@ exports[`Dialog examples NovaSectionDividerComponent should render correctly 1`]
 `;
 
 exports[`Dialog examples VerticalDividerComponent should render correctly 1`] = `
-<div
-  id="root3"
->
+<div>
   <div
     style="block-size: 100px;"
   >

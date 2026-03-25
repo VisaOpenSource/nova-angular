@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,6 +17,7 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NovaLibModule } from '@visa/nova-angular';
+import { VisaInformationLow } from '@visa/nova-icons-angular';
 import { MarkdownModule } from 'ngx-markdown';
 import { NovaSharedModule } from '../../shared/nova-shared.module';
 import { WorkshopService } from '../../shared/services/workshop.service';
@@ -24,6 +25,7 @@ import { DisabledMultiSelectListboxComponent } from './disabled-multi-select-lis
 import { DisabledSingleSelectListboxComponent } from './disabled-single-select-listbox/disabled-single-select-listbox.docs';
 import { ModelDrivenFBListboxComponent } from './model-driven-fb/model-driven-fb.docs';
 import { ModelDrivenFormListboxComponent } from './model-driven-form/model-driven-form.docs';
+import { MultiSelectCheckboxGroupListboxComponent } from './multi-select-checkbox-group/multi-select-checkbox-group.docs';
 import { MultiSelectDefaultListboxComponent } from './multi-select-default/multi-select-default.docs';
 import { MultiSelectModelDrivenListboxComponent } from './multi-select-model-driven/multi-select-model-driven.docs';
 import { MultiSelectScrollToIndexListboxComponent } from './multi-select-scroll-to-index/multi-select-scroll-to-index.docs';
@@ -33,9 +35,11 @@ import { MultiSelectWithErrorListboxComponent } from './multi-select-with-error/
 import { MultiSelectWithInlineMessageListboxComponent } from './multi-select-with-inline-message/multi-select-with-inline-message.docs';
 import { MultiSelectWithResizeListboxComponent } from './multi-select-with-resize/multi-select-with-resize.docs';
 import { MultiSelectWithSelectedItemListboxComponent } from './multi-select-with-selected-item/multi-select-with-selected-item.docs';
+import { ReusableListboxDemo } from './reusable/reusable.docs';
 import { AutomaticSingleSelectListboxComponent } from './single-select-automatic-selection/single-select-automatic-selection.docs';
 import { SingleSelectDefaultListboxComponent } from './single-select-default/single-select-default.docs';
 import { SingleSelectModelDrivenListboxComponent } from './single-select-model-driven/single-select-model-driven.docs';
+import { SingleSelectRadioGroupListboxComponent } from './single-select-radio-group/single-select-radio-group.docs';
 import { SingleSelectTemplateDrivenListboxComponent } from './single-select-template-driven/single-select-template-driven.docs';
 import { SingleSelectWithDisabledItemListboxComponent } from './single-select-with-disabled-item/single-select-with-disabled-item.docs';
 import { SingleSelectWithErrorListboxComponent } from './single-select-with-error/single-select-with-error.docs';
@@ -43,9 +47,6 @@ import { SingleSelectWithInlineMessageListboxComponent } from './single-select-w
 import { SingleSelectWithResizeListboxComponent } from './single-select-with-resize/single-select-with-resize.docs';
 import { SingleSelectWithSelectedItemListboxComponent } from './single-select-with-selected-item/single-select-with-selected-item.docs';
 import { TemplateDrivenFormListboxComponent } from './template-driven-form/template-driven-form.docs';
-import { VisaInformationLow } from '@visa/nova-icons-angular';
-import { MultiSelectCheckboxGroupListboxComponent } from './multi-select-checkbox-group/multi-select-checkbox-group.docs';
-import { SingleSelectRadioGroupListboxComponent } from './single-select-radio-group/single-select-radio-group.docs';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -81,7 +82,8 @@ import { SingleSelectRadioGroupListboxComponent } from './single-select-radio-gr
     SingleSelectWithResizeListboxComponent,
     SingleSelectWithSelectedItemListboxComponent,
     TemplateDrivenFormListboxComponent,
-    VisaInformationLow
+    VisaInformationLow,
+    ReusableListboxDemo
   ],
   standalone: true,
   selector: 'vds-docs-listbox',
@@ -103,13 +105,5 @@ export class ListboxDocsComponent {
       { name: 'NovaLibService', type: 'service-source' },
       { name: 'AppReadyService', type: 'service-source' }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

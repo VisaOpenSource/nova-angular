@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,7 +33,7 @@
     </span>
     <div v-listbox-container v-floating-ui-element>
       <ul v-listbox>
-        <li v-listbox-item value="option-a" active>Option A</li>
+        <li v-listbox-item value="option-a">Option A</li>
         <li v-listbox-item value="option-b">Option B</li>
         <li v-listbox-item value="option-c">Option C</li>
         <li v-listbox-item value="option-d">Option D</li>
@@ -48,12 +48,5 @@
 </form>
 
 <!-- For demo purposes: -->
-@if (comboboxForm.controls.comboboxFormControl.value) { @if (comboboxForm.controls.comboboxFormControl.value.label) {
-
-<code>{{'Label: ' + comboboxForm.controls.comboboxFormControl.value.label}}</code>
-} @if (comboboxForm.controls.comboboxFormControl.value.value) {
-
-<code>{{'Value: ' + comboboxForm.controls.comboboxFormControl.value.value}}</code>
-} } @else {
-<code>{{'Value: ' + comboboxForm.controls.comboboxFormControl.value}}</code>
-}
+<code>{{'Label: ' + labelDisplay()}}</code>
+<code>{{'Value: ' + valueDisplay()}}</code>

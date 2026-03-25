@@ -1,0 +1,51 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div vFlex vAlignItemsStart vFlexRowReverse vAlignSelfStretch vGap="8" [vPB]="hideTimestamp() ? 24 : 4">
+  @if (!hideAvatar()) {
+  <div style="padding-block-start: 18px;">
+    <span v-avatar [small]="smallAvatar()" aria-label="user">
+      {{ response().role.charAt(0).toUpperCase() }}
+    </span>
+  </div>
+  }
+  <div vFlex vFlexCol vAlignItemsEnd vGap="4" style="flex-grow: 1">
+    @if (!hideTimestamp()) {
+    <div vFlex vGap="8">
+      <span vTypography="label-small">{{ response().role }}</span>
+      <span vTypography="label-small">{{ response().timeStamp }}</span>
+    </div>
+    }
+    <div vFlex vJustifyContentCenter style="margin-left: 88px;">
+      <div vFlex vFlexCol vGap="4" id="user-chat-bubble" [tabIndex]="0"
+        [attr.aria-label]="response().message + ' ' + response().code + ' message from ' + response().role + ' at ' + response().timeStamp + '. Press tab to navigate to more options.'"
+        style="
+                padding-block: 12px;
+                padding-inline: 14px;
+                border-radius: 10px;
+                background-color: var(--palette-default-surface-3);
+                min-inline-size: fit-content;
+              ">
+        <p vTypography="body-2">
+          {{ response().message }}
+        </p>
+        <div vFlex vJustifyContentEnd vGap="4">
+          <chat-actions />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

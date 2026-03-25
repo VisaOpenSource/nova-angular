@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,6 +38,10 @@ export const checkboxRoutes: Routes = [
 	{ loadComponent: () => import('./panel-group/panel-group.docs').then(m => m.PanelGroupCheckboxComponent), path: 'panel-group', title: 'Panel group checkbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./panel-group-with-error/panel-group-with-error.docs').then(m => m.PanelGroupWithErrorCheckboxComponent), path: 'panel-group-with-error', title: 'Panel group with error checkbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./panel-without-description/panel-without-description.docs').then(m => m.PanelWithoutDescriptionCheckboxComponent), path: 'panel-without-description', title: 'Panel without description checkbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable-component/reusable-component.docs').then(m => m.ReusableCheckbox), path: 'reusable-component', title: 'Reusable component checkbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable.docs').then(m => m.ReusableCheckboxDemo), path: 'reusable', title: 'Reusable checkbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable-group/reusable-component/reusable-component.docs').then(m => m.ReusableCheckboxGroup), path: 'reusable-component', title: 'Reusable component checkbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable-group/reusable-group.docs').then(m => m.ReusableCheckboxGroupDemo), path: 'reusable-group', title: 'Reusable group checkbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./template-driven/template-driven.docs').then(m => m.TemplateDrivenCheckboxComponent), path: 'template-driven', title: 'Template driven checkbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./template-driven-form/template-driven-form.docs').then(m => m.TemplateDrivenFormCheckboxComponent), path: 'template-driven-form', title: 'Template driven form checkbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./with-description/with-description.docs').then(m => m.WithDescriptionCheckboxComponent), path: 'with-description', title: 'With description checkbox component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },

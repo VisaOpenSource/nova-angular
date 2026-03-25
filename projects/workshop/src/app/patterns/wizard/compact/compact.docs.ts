@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,6 +19,9 @@ import {
   Component,
   ElementRef,
   signal,
+  computed,
+  effect,
+  untracked,
   viewChild,
   viewChildren,
 } from '@angular/core';
@@ -40,6 +43,11 @@ import { SharedWizardSaveFlagComponent } from '../shared/save-flag/save-flag.doc
 import { SharedWizardSuccessPageComponent } from '../shared/success-page/success-page.docs';
 import { SharedWizardSummaryPageComponent } from '../shared/summary-page/summary-page.docs';
 
+/**
+ * Responsive wizard that adapts between horizontal and compact layouts.
+ * At mobile widths, displays a compact horizontal stepper.
+ * At larger widths, renders as a full horizontal wizard with all steps visible.
+ */
 /** #patterns **/
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -66,22 +74,37 @@ import { SharedWizardSummaryPageComponent } from '../shared/summary-page/summary
   ],
 })
 export class CompactWizardComponent {
+  /** Reference to the exit confirmation dialog component */
   readonly exitDialog =
     viewChild<SharedWizardExitDialogComponent>('exitDialog');
+
+  /** References to all input elements in the wizard steps */
   readonly inputs = viewChildren<InputDirective, ElementRef<HTMLInputElement>>(
     InputDirective,
     { read: ElementRef },
   );
+
+  /** Index of the currently active step (zero-based) */
   readonly currentStep = signal(0);
+
+  /** Tracks the highest step index the user has reached during this session */
+  readonly maxStepReached = signal(0);
+
+  /** Controls visibility of the save success flag notification */
   readonly showFlag = signal(false);
+
+  /** Controls whether the success page is displayed after submission */
   readonly showSuccess = signal(false);
+
+  /**
+   * Configuration for each wizard step including label, validation state, and input values.
+   * Does not include availability or completion state, which are computed dynamically.
+   */
   readonly steps = [
     {
       stepLabel: 'Step 1 label',
       id: 'compact-0',
       invalid: false,
-      complete: false,
-      available: true,
       inputLabel: '* Label',
       inputValue: '',
       showErrorMessage: false,
@@ -90,8 +113,6 @@ export class CompactWizardComponent {
       stepLabel: 'Step 2 label',
       id: 'compact-1',
       invalid: false,
-      complete: false,
-      available: false,
       inputLabel: '* Label',
       inputValue: '',
       showErrorMessage: false,
@@ -100,8 +121,6 @@ export class CompactWizardComponent {
       stepLabel: 'Step 3 label',
       id: 'compact-2',
       invalid: false,
-      complete: false,
-      available: false,
       inputLabel: '* Label',
       inputValue: '',
       showErrorMessage: false,
@@ -110,8 +129,6 @@ export class CompactWizardComponent {
       stepLabel: 'Step 4 label',
       id: 'compact-3',
       invalid: false,
-      complete: false,
-      available: false,
       inputLabel: '* Label',
       inputValue: '',
       showErrorMessage: false,
@@ -120,82 +137,127 @@ export class CompactWizardComponent {
       stepLabel: 'Step 5 label',
       id: 'compact-4',
       invalid: false,
-      complete: false,
-      available: false,
       inputLabel: '* Label',
       inputValue: '',
       showErrorMessage: false,
     },
   ];
 
+  /**
+   * Computed property that combines step data with dynamic state.
+   * Calculates completion and availability based on current position and progress.
+   * Steps before current are marked complete; steps up to maxStepReached are available.
+   */
+  readonly stepsWithState = computed(() => {
+    const current = this.currentStep();
+    const maxReached = this.maxStepReached();
+
+    return this.steps.map((step, index) => ({
+      ...step,
+      complete: index < current,
+      available: index <= maxReached,
+    }));
+  });
+
+  /**
+   * Effect that updates maxStepReached when the user advances to a new step.
+   * This allows users to freely navigate backward and forward within reached steps.
+   */
+  private readonly updateMaxStepReached = effect(() => {
+    const current = this.currentStep();
+    const max = untracked(() => this.maxStepReached());
+    if (current > max) {
+      this.maxStepReached.set(current);
+    }
+  });
+
+  /**
+   * Navigates to the previous step in the wizard.
+   */
   previousStep() {
     this.goTo(this.currentStep() - 1);
   }
 
+  /**
+   * Advances to the next step after validating the current step's input.
+   * If called with isSave=true, displays the save flag instead of advancing.
+   * @param {boolean} isSave - Whether this is a save action rather than navigation
+   */
   nextStep(isSave: boolean = false) {
     if (isSave) return this.showFlag.set(true);
 
-    const currentStep = this.steps[this.currentStep()];
+    const currentStepIndex = this.currentStep();
+    const currentStep = this.steps[currentStepIndex];
     currentStep.invalid = !currentStep.inputValue;
 
-    this.validateStep(this.currentStep());
+    this.validateStep(currentStepIndex);
     if (!currentStep.invalid) {
-      // only make the next step available if current is valid
-      if (this.currentStep() + 1 < this.steps.length) {
-        this.steps[this.currentStep() + 1].available = true;
-      }
-      this.goTo(this.currentStep() + 1);
+      this.goTo(currentStepIndex + 1);
       return;
     }
 
-    currentStep.complete = false;
-
-    setTimeout(() => {
-      const input = this.inputs()[this.currentStep()];
-      if (
-        input &&
-        currentStep.inputLabel &&
-        input.nativeElement !== document.activeElement
-      ) {
-        input.nativeElement.focus();
-      }
-    }, 0);
+    this.focusCurrentInput();
   }
 
+  /**
+   * Navigates to a specific step by index.
+   * Validates the current step if navigating forward. Clears error states when navigating away.
+   * @param {number} index - Zero-based index of the target step
+   */
   goTo(index: number) {
-    const currentStep = this.steps[this.currentStep()];
+    const currentStepIndex = this.currentStep();
+    const currentStep = this.steps[currentStepIndex];
 
-    // clear error state for the current step when navigating away
+    // Clear error state for the current step when navigating away
     currentStep.invalid = false;
     currentStep.showErrorMessage = false;
 
-    // validate the current step if navigating forward
-    if (index > this.currentStep()) {
-      this.validateStep(this.currentStep());
+    // Validate the current step if navigating forward
+    if (index > currentStepIndex) {
+      this.validateStep(currentStepIndex);
       if (currentStep.invalid) {
-        currentStep.complete = false;
         return;
       }
-      currentStep.complete = true;
     }
 
-    this.steps[index].available = true;
     this.currentStep.set(index);
 
-    // wait for input to render before setting focus
+    this.focusCurrentInput();
+  }
+
+  /**
+   * Completes the wizard submission, displays the success page, and resets all step data.
+   */
+  submit() {
+    this.showSuccess.set(true);
+    this.steps.forEach((step) => {
+      step.inputValue = '';
+      step.invalid = false;
+      step.showErrorMessage = false;
+    });
+    this.currentStep.set(0);
+    this.maxStepReached.set(0);
+  }
+
+  /**
+   * Sets focus on the appropriate input element for the current step.
+   * For regular steps, focuses the input field. For the summary page, focuses the first edit button.
+   */
+  private focusCurrentInput(): void {
     setTimeout(() => {
-      if (this.currentStep() < this.steps.length - 1) {
-        const input = this.inputs()[this.currentStep()];
-        const nextStep = this.steps[this.currentStep()];
+      const stepIndex = this.currentStep();
+      if (stepIndex < this.steps.length - 1) {
+        const input = this.inputs()[stepIndex];
+        const step = this.steps[stepIndex];
         if (
           input &&
-          nextStep.inputLabel &&
+          step.inputLabel &&
           input.nativeElement !== document.activeElement
         ) {
           input.nativeElement.focus();
         }
       } else {
-        // focus the first edit button on the summary page
+        // On summary page, focus the first edit button
         const firstEditButton = document.querySelector('[aria-label^="edit"]');
         if (firstEditButton && firstEditButton !== document.activeElement) {
           (firstEditButton as HTMLElement).focus();
@@ -204,20 +266,19 @@ export class CompactWizardComponent {
     }, 0);
   }
 
-  submit() {
-    this.showSuccess.set(true);
-    this.steps.forEach((input, index) => {
-      input.available = index === 0 ? true : false;
-      input.complete = false;
-      input.inputValue = '';
-    });
-    this.currentStep.set(0);
-  }
-
+  /**
+   * Hides the error message banner for a specific step.
+   * @param {number} index - Index of the step whose error message should be hidden
+   */
   hideErrorMessage(index: number): void {
     this.steps[index].showErrorMessage = false;
   }
 
+  /**
+   * Validates a step's input value and updates its error state.
+   * A step is invalid if its input value is empty or contains only whitespace.
+   * @param {number} index - Index of the step to validate
+   */
   validateStep(index: number): void {
     const step = this.steps[index];
     if (!step.inputValue || step.inputValue.trim() === '') {

@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Panel examples DefaultResponsivePanelComponent should render correctly 1`] = `
-<div
-  id="root6"
->
+<div>
   <button
     aria-controls="reponsive-default-panel"
     class="v-button v-m-10"
@@ -59,14 +57,13 @@ exports[`Panel examples DefaultResponsivePanelComponent should render correctly 
             class="v-icon v-icon-close v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-11"
             v-icon-visa-close-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+              d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
             />
             <defs>
               <clippath>
@@ -101,9 +98,7 @@ exports[`Panel examples DefaultResponsivePanelComponent should render correctly 
 `;
 
 exports[`Panel examples ModalDefaultPanelComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <button
     class="v-button v-m-10"
     type="button"
@@ -154,14 +149,13 @@ exports[`Panel examples ModalDefaultPanelComponent should render correctly 1`] =
             class="v-icon v-icon-close v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-2"
             v-icon-visa-close-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+              d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
             />
             <defs>
               <clippath>
@@ -196,9 +190,7 @@ exports[`Panel examples ModalDefaultPanelComponent should render correctly 1`] =
 `;
 
 exports[`Panel examples ModalExpandablePanelComponent should render correctly 1`] = `
-<div
-  id="root5"
->
+<div>
   <div
     class="v-flex v-flex-row v-justify-content-end"
     vflex=""
@@ -217,7 +209,6 @@ exports[`Panel examples ModalExpandablePanelComponent should render correctly 1`
         class="v-icon-two-color v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-9"
         v-icon-two-color=""
         v-icon-visa-media-rewind-tiny=""
         viewBox="0 0 16 16"
@@ -225,15 +216,11 @@ exports[`Panel examples ModalExpandablePanelComponent should render correctly 1`
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
-          fill-rule="evenodd"
+          d="M7 8L13.6064 15L15 13.5244L9.78613 8L15 2.47559L13.6064 1L7 8Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
-          fill-rule="evenodd"
+          d="M1 8L7.60645 15L9 13.5244L3.78613 8L9 2.47559L7.60645 1L1 8Z"
         />
       </svg>
     </button>
@@ -263,7 +250,6 @@ exports[`Panel examples ModalExpandablePanelComponent should render correctly 1`
         class="v-icon-two-color v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-10"
         v-icon-two-color=""
         v-icon-visa-media-fast-forward-tiny=""
         viewBox="0 0 16 16"
@@ -271,15 +257,11 @@ exports[`Panel examples ModalExpandablePanelComponent should render correctly 1`
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
-          fill-rule="evenodd"
+          d="M15 8L8.39355 15L7 13.5244L12.2139 8L7 2.47559L8.39355 1L15 8Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
-          fill-rule="evenodd"
+          d="M9 8L2.39355 15L1 13.5244L6.21387 8L1 2.47559L2.39355 1L9 8Z"
         />
       </svg>
     </button>
@@ -289,9 +271,7 @@ exports[`Panel examples ModalExpandablePanelComponent should render correctly 1`
 `;
 
 exports[`Panel examples ModalExpandableSecondaryButtonPanelComponent should render correctly 1`] = `
-<div
-  id="root3"
->
+<div>
   <div
     class="v-flex v-flex-row v-justify-content-end"
     vflex=""
@@ -311,22 +291,17 @@ exports[`Panel examples ModalExpandableSecondaryButtonPanelComponent should rend
         class="v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-5"
         v-icon-visa-media-rewind-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
-          fill-rule="evenodd"
+          d="M7 8L13.6064 15L15 13.5244L9.78613 8L15 2.47559L13.6064 1L7 8Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
-          fill-rule="evenodd"
+          d="M1 8L7.60645 15L9 13.5244L3.78613 8L9 2.47559L7.60645 1L1 8Z"
         />
       </svg>
     </button>
@@ -357,22 +332,17 @@ exports[`Panel examples ModalExpandableSecondaryButtonPanelComponent should rend
         class="v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-6"
         v-icon-visa-media-fast-forward-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
-          fill-rule="evenodd"
+          d="M15 8L8.39355 15L7 13.5244L12.2139 8L7 2.47559L8.39355 1L15 8Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
-          fill-rule="evenodd"
+          d="M9 8L2.39355 15L1 13.5244L6.21387 8L1 2.47559L2.39355 1L9 8Z"
         />
       </svg>
     </button>
@@ -415,9 +385,7 @@ exports[`Panel examples ModalExpandableSecondaryButtonPanelComponent should rend
 `;
 
 exports[`Panel examples ModalExpandableSkrimPanelComponent should render correctly 1`] = `
-<div
-  id="root4"
->
+<div>
   <div
     class="v-flex v-flex-row v-justify-content-end"
     vflex=""
@@ -436,7 +404,6 @@ exports[`Panel examples ModalExpandableSkrimPanelComponent should render correct
         class="v-icon-two-color v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-7"
         v-icon-two-color=""
         v-icon-visa-media-rewind-tiny=""
         viewBox="0 0 16 16"
@@ -444,15 +411,11 @@ exports[`Panel examples ModalExpandableSkrimPanelComponent should render correct
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
-          fill-rule="evenodd"
+          d="M7 8L13.6064 15L15 13.5244L9.78613 8L15 2.47559L13.6064 1L7 8Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
-          fill-rule="evenodd"
+          d="M1 8L7.60645 15L9 13.5244L3.78613 8L9 2.47559L7.60645 1L1 8Z"
         />
       </svg>
     </button>
@@ -483,7 +446,6 @@ exports[`Panel examples ModalExpandableSkrimPanelComponent should render correct
         class="v-icon-two-color v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-8"
         v-icon-two-color=""
         v-icon-visa-media-fast-forward-tiny=""
         viewBox="0 0 16 16"
@@ -491,15 +453,11 @@ exports[`Panel examples ModalExpandableSkrimPanelComponent should render correct
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
-          fill-rule="evenodd"
+          d="M15 8L8.39355 15L7 13.5244L12.2139 8L7 2.47559L8.39355 1L15 8Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
-          fill-rule="evenodd"
+          d="M9 8L2.39355 15L1 13.5244L6.21387 8L1 2.47559L2.39355 1L9 8Z"
         />
       </svg>
     </button>
@@ -542,9 +500,7 @@ exports[`Panel examples ModalExpandableSkrimPanelComponent should render correct
 `;
 
 exports[`Panel examples ModalExpandableTabbedPanelComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <div
     class="v-flex v-flex-row v-justify-content-end"
     vflex=""
@@ -563,7 +519,6 @@ exports[`Panel examples ModalExpandableTabbedPanelComponent should render correc
         class="v-icon-two-color v-icon v-icon-media-rewind v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-3"
         v-icon-two-color=""
         v-icon-visa-media-rewind-tiny=""
         viewBox="0 0 16 16"
@@ -571,15 +526,11 @@ exports[`Panel examples ModalExpandableTabbedPanelComponent should render correc
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M13.6069 1L7 8L13.6069 15L15 13.524L9.78617 8L15 2.47597L13.6069 1Z"
-          fill-rule="evenodd"
+          d="M7 8L13.6064 15L15 13.5244L9.78613 8L15 2.47559L13.6064 1L7 8Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M7.60691 1L1 8L7.60691 15L9 13.524L3.78617 8L9 2.47597L7.60691 1Z"
-          fill-rule="evenodd"
+          d="M1 8L7.60645 15L9 13.5244L3.78613 8L9 2.47559L7.60645 1L1 8Z"
         />
       </svg>
     </button>
@@ -607,7 +558,6 @@ exports[`Panel examples ModalExpandableTabbedPanelComponent should render correc
         class="v-icon-two-color v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-4"
         v-icon-two-color=""
         v-icon-visa-media-fast-forward-tiny=""
         viewBox="0 0 16 16"
@@ -615,15 +565,11 @@ exports[`Panel examples ModalExpandableTabbedPanelComponent should render correc
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
-          fill-rule="evenodd"
+          d="M15 8L8.39355 15L7 13.5244L12.2139 8L7 2.47559L8.39355 1L15 8Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
-          fill-rule="evenodd"
+          d="M9 8L2.39355 15L1 13.5244L6.21387 8L1 2.47559L2.39355 1L9 8Z"
         />
       </svg>
     </button>
@@ -816,9 +762,7 @@ exports[`Panel examples ModalExpandableTabbedPanelComponent should render correc
 `;
 
 exports[`Panel examples ResponsiveExpandedPanelComponent should render correctly 1`] = `
-<div
-  id="root8"
->
+<div>
   <div
     class="v-panel v-ml-auto v-panel-expandable v-panel-responsive"
     responsive=""
@@ -840,7 +784,6 @@ exports[`Panel examples ResponsiveExpandedPanelComponent should render correctly
         class="v-icon-two-color v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-15"
         style="--v-icon-secondary: var(--palette-default-active-accent);"
         v-icon-two-color=""
         v-icon-visa-media-fast-forward-tiny=""
@@ -849,15 +792,11 @@ exports[`Panel examples ResponsiveExpandedPanelComponent should render correctly
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
-          fill-rule="evenodd"
+          d="M15 8L8.39355 15L7 13.5244L12.2139 8L7 2.47559L8.39355 1L15 8Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
-          fill-rule="evenodd"
+          d="M9 8L2.39355 15L1 13.5244L6.21387 8L1 2.47559L2.39355 1L9 8Z"
         />
       </svg>
       
@@ -896,14 +835,13 @@ exports[`Panel examples ResponsiveExpandedPanelComponent should render correctly
             class="v-icon v-icon-close v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-14"
             v-icon-visa-close-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+              d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
             />
             <defs>
               <clippath>
@@ -937,9 +875,7 @@ exports[`Panel examples ResponsiveExpandedPanelComponent should render correctly
 `;
 
 exports[`Panel examples ResponsiveExpandedTabbedPanelComponent should render correctly 1`] = `
-<div
-  id="root7"
->
+<div>
   <div
     class="v-panel v-ml-auto v-panel-expandable v-panel-responsive"
     responsive=""
@@ -961,7 +897,6 @@ exports[`Panel examples ResponsiveExpandedTabbedPanelComponent should render cor
         class="v-icon-two-color v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-13"
         style="--v-icon-secondary: var(--palette-default-active-accent);"
         v-icon-two-color=""
         v-icon-visa-media-fast-forward-tiny=""
@@ -970,15 +905,11 @@ exports[`Panel examples ResponsiveExpandedTabbedPanelComponent should render cor
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
-          fill-rule="evenodd"
+          d="M15 8L8.39355 15L7 13.5244L12.2139 8L7 2.47559L8.39355 1L15 8Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
-          fill-rule="evenodd"
+          d="M9 8L2.39355 15L1 13.5244L6.21387 8L1 2.47559L2.39355 1L9 8Z"
         />
       </svg>
       
@@ -1077,14 +1008,13 @@ exports[`Panel examples ResponsiveExpandedTabbedPanelComponent should render cor
             class="v-icon v-icon-close v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-12"
             v-icon-visa-close-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+              d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
             />
             <defs>
               <clippath>
@@ -1215,9 +1145,7 @@ exports[`Panel examples ResponsiveExpandedTabbedPanelComponent should render cor
 `;
 
 exports[`Panel examples ResposniveExpandedWithCustomPlacementPanelComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <div
     class="v-panel v-panel-expandable v-panel-responsive"
     responsive=""
@@ -1229,7 +1157,7 @@ exports[`Panel examples ResposniveExpandedWithCustomPlacementPanelComponent shou
       buttoncolor="secondary"
       buttonsize="large"
       class="v-button v-panel-toggle v-sm-media-hide v-xs-media-hide v-button-icon v-button-large v-button-secondary v-button-subtle"
-      style="transform: rotate(180deg);"
+      style="transform: rotate(180deg); left: initial; right: calc(-1 * (var(--v-button-default-icon-size) + 2 * var(--v-button-default-padding-inline)));"
       subtle=""
       type="button"
       v-button-icon=""
@@ -1240,22 +1168,17 @@ exports[`Panel examples ResposniveExpandedWithCustomPlacementPanelComponent shou
         class="v-icon v-icon-media-fast-forward v-icon-tiny v-icon-visa"
         focusable="false"
         height="16"
-        id="a-v__icon__internal-0"
         v-icon-visa-media-fast-forward-tiny=""
         viewBox="0 0 16 16"
         width="16"
       >
         <path
           class="v-icon-secondary"
-          clip-rule="evenodd"
-          d="M8.39309 1L15 8L8.39309 15L7 13.524L12.2138 8L7 2.47597L8.39309 1Z"
-          fill-rule="evenodd"
+          d="M15 8L8.39355 15L7 13.5244L12.2139 8L7 2.47559L8.39355 1L15 8Z"
         />
         <path
           class="v-icon-primary"
-          clip-rule="evenodd"
-          d="M2.39309 1L9 8L2.39309 15L1 13.524L6.21383 8L1 2.47597L2.39309 1Z"
-          fill-rule="evenodd"
+          d="M9 8L2.39355 15L1 13.5244L6.21387 8L1 2.47559L2.39355 1L9 8Z"
         />
       </svg>
       
@@ -1293,14 +1216,13 @@ exports[`Panel examples ResposniveExpandedWithCustomPlacementPanelComponent shou
             class="v-icon v-icon-close v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-1"
             v-icon-visa-close-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+              d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
             />
             <defs>
               <clippath>

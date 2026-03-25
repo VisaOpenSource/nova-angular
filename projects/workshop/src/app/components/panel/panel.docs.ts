@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,11 +19,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NovaLibModule } from '@visa/nova-angular';
 import { NovaSharedModule } from '../../shared/nova-shared.module';
 import { WorkshopService } from '../../shared/services/workshop.service';
-import { ModalDefaultPanelComponent } from './modal-default/modal-default.docs';
-import { ModalExpandableTabbedPanelComponent } from './modal-expandable-tabbed/modal-expandable-tabbed.docs';
-import { ModalExpandableSecondaryButtonPanelComponent } from './modal-expandable-with-secondary-button/modal-expandable-with-secondary-button.docs';
-import { ModalExpandableSkrimPanelComponent } from './modal-expandable-with-skrim/modal-expandable-with-skrim.docs';
-import { ModalExpandablePanelComponent } from './modal-expandable/modal-expandable.docs';
 import { DefaultResponsivePanelComponent } from './responsive-default/responsive-default.docs';
 import { ResponsiveExpandedTabbedPanelComponent } from './responsive-expanded-tabbed/responsive-expanded-tabbed.docs';
 import { ResposniveExpandedWithCustomPlacementPanelComponent } from './responsive-expanded-with-custom-placement/responsive-expanded-with-custom-placement.docs';
@@ -56,13 +51,5 @@ export class PanelDocsComponent {
       { name: 'PanelToggleDirective', type: 'directive' },
       { name: 'IdGenerator', type: 'service-source' }
     ]);
-  }
-
-  ngAfterViewInit(): void {
-    this.workshopService.isLoadingExamples.set(false);
-  }
-
-  ngOnInit(): void {
-    this.workshopService.isLoadingExamples.set(true);
   }
 }

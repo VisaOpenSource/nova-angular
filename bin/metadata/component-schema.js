@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -41,6 +41,8 @@ const { getPropertySections } = require('./property-sections-schema');
  */
 const getTopLevelPages = (docsData) => {
   const topLevel = docsData.filter((component) => {
+    // ie projects/workshop/src/app/components/button/button.docs.html
+    // but not projects/workshop/src/app/patterns/chat/shared/chat-message/message.docs.html
     return component.file.replace('projects/workshop/src/app/', '').split('/').length <= 3;
   });
   return topLevel;
@@ -50,6 +52,7 @@ const getTopLevelPages = (docsData) => {
  * retrieve component name
  */
 const componentName = (component) => {
+  // ie projects/workshop/src/app/components/button/button.docs.html => button
   let componentName = component.file.replace('projects/workshop/src/app/', '').split('/')[1];
   if (!componentName) return;
   return componentName;
@@ -63,33 +66,8 @@ const componentVersion = () => {
   return '0.0.1';
 };
 
-/**
- * placeholder component description
- */
-const componentDescription = () => {
-  // Not sure where this is located. It is a placeholder for future use.
-  return '';
-};
-
-/**
- * One of the following: 'foundations', 'utilities', 'components', 'services', 'patterns'
- */
-const componentCategory = (category) => {
-  return category;
-};
-
 const libraryID = () => {
   return null;
-};
-
-const componentExampleSections = (name) => {
-  return getSections(name, examplesData);
-};
-const componentExamples = (name) => {
-  return getExamples(name, docsData, examplesData);
-};
-const componentPropertySections = (name, type) => {
-  return getPropertySections(name, apiContentData, fullLibData, type);
 };
 
 /**
@@ -98,16 +76,16 @@ const componentPropertySections = (name, type) => {
  */
 const createComponentObject = (item, type) => {
   const name = type === 'services' ? item.name : componentName(item);
-  const { sections, props, description } = componentPropertySections(name, type);
+  const { sections, props, description } = getPropertySections(name, apiContentData, fullLibData, type);
   if (type === 'services' && props.length === 0) return; // don't add component-level services (they'll be added with the component)
   return {
     name: name === 'screenreader-only' ? 'accessibility' : name === 'surfaces' ? 'surface' : name,
     version: componentVersion(),
     description: description,
-    category: componentCategory(type),
+    category: type, // ie 'foundations', 'utilities', 'components', 'services', 'patterns'
     libraryId: libraryID(),
-    exampleSections: type === 'services' ? [] : componentExampleSections(name, type),
-    examples: type === 'services' ? [] : componentExamples(name, type),
+    exampleSections: type === 'services' ? [] : getSections(name, examplesData),
+    examples: type === 'services' ? [] : getExamples(name, docsData, examplesData),
     propertySections: sections,
     properties: props
   };
@@ -119,20 +97,28 @@ let examplesData;
 let apiContentData;
 const getComponentData = () => {
   let data = [];
+
+  // read in app (workshop) files
   docsData = fs.readFileSync(DOCS_JSON, 'utf-8');
   docsData = JSON.parse(docsData);
+  // combine components and directives
   docsData = docsData.components.concat(docsData.directives);
 
+  // read in library files
   fullLibData = fs.readFileSync(LIB_JSON, 'utf-8');
   fullLibData = JSON.parse(fullLibData);
+  // combine components and directives
   libData = fullLibData.components.concat(fullLibData.directives);
 
+  // read in examples hierarchy. This is defined by content and used to create example sections
   examplesData = fs.readFileSync(EXAMPLES_HIERARCHY, 'utf-8');
   examplesData = JSON.parse(examplesData);
 
+  // read in api content data. This categorizes components, services, etc.
   apiContentData = fs.readFileSync(API_CONTENT, 'utf-8');
   apiContentData = JSON.parse(apiContentData);
 
+  // get top-level docs pages, which define components, foundations, utilities, patterns, services
   const topLevelPages = getTopLevelPages(docsData);
 
   let components = [];
@@ -141,6 +127,7 @@ const getComponentData = () => {
   let foundations = [];
   let patterns = [];
 
+  // distribute top-level pages into their respective categories
   topLevelPages.forEach((page) => {
     if (page.file.includes('components')) {
       components.push(page);
@@ -153,6 +140,7 @@ const getComponentData = () => {
     }
   });
 
+  // also get services from api content data
   apiContentData.forEach((section) => {
     if (section.type === 'services') {
       section.content.forEach((service) => {
@@ -161,27 +149,24 @@ const getComponentData = () => {
     }
   });
 
-  components.forEach((item) => {
-    data.push(createComponentObject(item, 'components'));
-  });
+  /**
+   * create component objects for each category
+   */
+  const categories = [
+    { items: components, type: 'components' },
+    { items: services, type: 'services' },
+    { items: utilities, type: 'utilities' },
+    { items: foundations, type: 'foundations' },
+    { items: patterns, type: 'patterns' }
+  ];
 
-  services.forEach((item) => {
-    const service = createComponentObject(item, 'services');
-    if (service) {
-      data.push(service);
-    }
-  });
-
-  utilities.forEach((item) => {
-    data.push(createComponentObject(item, 'utilities'));
-  });
-
-  foundations.forEach((item) => {
-    data.push(createComponentObject(item, 'foundations'));
-  });
-
-  patterns.forEach((item) => {
-    data.push(createComponentObject(item, 'patterns'));
+  categories.forEach(({ items, type }) => {
+    items.forEach((item) => {
+      const component = createComponentObject(item, type);
+      if (component) {
+        data.push(component);
+      }
+    });
   });
 
   return data;
@@ -190,6 +175,5 @@ const getComponentData = () => {
 module.exports = {
   getComponentData,
   getTopLevelPages,
-  componentExampleSections,
   componentName
 };

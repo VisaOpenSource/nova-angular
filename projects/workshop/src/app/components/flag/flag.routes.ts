@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,6 +34,8 @@ export const flagRoutes: Routes = [
 	{ loadComponent: () => import('./info-flag-with-action-button/info-flag-with-action-button.docs').then(m => m.InfoFlagWithActionButtonFlagComponent), path: 'info-flag-with-action-button', title: 'Info flag with action button flag component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./info-flag-with-link/info-flag-with-link.docs').then(m => m.InfoFlagWithLinkFlagComponent), path: 'info-flag-with-link', title: 'Info flag with link flag component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./info-without-close-icon-button/info-without-close-icon-button.docs').then(m => m.InfoWithoutCloseIconButtonFlagComponent), path: 'info-without-close-icon-button', title: 'Info without close icon button flag component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable-component/reusable-component.docs').then(m => m.ReusableFlag), path: 'reusable-component', title: 'Reusable component flag component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable.docs').then(m => m.ReusableFlagDemo), path: 'reusable', title: 'Reusable flag component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./success-flag/success-flag.docs').then(m => m.SuccessFlagComponent), path: 'success-flag', title: 'Success flag flag component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./success-flag-title/success-flag-title.docs').then(m => m.SuccessFlagWithTitleComponent), path: 'success-flag-title', title: 'Success flag title flag component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./success-flag-with-action-button/success-flag-with-action-button.docs').then(m => m.SuccessFlagWithActionButtonFlagComponent), path: 'success-flag-with-action-button', title: 'Success flag with action button flag component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },

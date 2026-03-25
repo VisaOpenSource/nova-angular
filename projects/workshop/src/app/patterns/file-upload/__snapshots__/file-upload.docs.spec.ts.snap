@@ -1,0 +1,651 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`File upload examples FileUploadWithAlternateDisplayComponent should render correctly 1`] = `
+<div>
+  <div
+    class="v-gap-25 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="25"
+  >
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      style="max-width: 400px;"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <div
+        class="v-gap-16 v-flex v-flex-col"
+        vflex=""
+        vflexcol=""
+        vgap="16"
+      >
+        <div
+          class="v-gap-8 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+          vgap="8"
+        >
+          <p
+            class="v-typography-subtitle-1"
+            vtypography="subtitle-1"
+          >
+            Upload files
+          </p>
+          <p
+            class="v-typography-label-small"
+            vtypography="label-small"
+          >
+             Choose one or more files to upload, up to 10MB each. Accepted file types are .jpg, .pdf, .docx, and .xlsx. 
+          </p>
+        </div>
+        <div>
+          <input
+            class="v-sr"
+            multiple=""
+            type="file"
+            vsr=""
+          />
+          <div
+            valignself="start"
+          >
+            <button
+              buttoncolor="secondary"
+              class="v-button v-button-secondary"
+              type="button"
+              v-button=""
+            >
+               Select file(s) 
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="v-gap-8 v-flex v-flex-col"
+        role="status"
+        style="min-height: 1rem;"
+        vflex=""
+        vflexcol=""
+        vgap="8"
+      >
+        
+        
+      </div>
+      
+    </div>
+    <div
+      class="v-align-self-end"
+      role="alert"
+      valignselfend=""
+    >
+      
+    </div>
+    <nova-upload-dialog>
+      <dialog
+        aria-describedby="a-file-upload-alternate-dialog-0-description"
+        aria-labelledby="a-file-upload-alternate-dialog-0-title"
+        aria-modal="true"
+        class="v-dialog v-message v-dialog-default v-px-0"
+        id="a-file-upload-alternate-dialog-0"
+        role="dialog"
+        style="max-width: 400px; --v-message-display: block; overflow-y: auto;"
+        v-dialog=""
+        v-message=""
+        vpx="0"
+      >
+        <button
+          aria-label="Close"
+          buttoncolor="tertiary"
+          buttonsize="small"
+          class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary -v-ml-12 -v-mr-18 -v-mt-20"
+          style="margin-inline-end: 4px; float: inline-end;"
+          subtle=""
+          type="button"
+          v-button-icon=""
+          vml="-12"
+          vmr="-18"
+          vmt="-20"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-close v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            v-icon-visa-close-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
+            />
+            <defs>
+              <clippath>
+                <rect
+                  height="16"
+                  transform="translate(0 0.000488281)"
+                  width="16"
+                />
+              </clippath>
+            </defs>
+          </svg>
+        </button>
+        <div
+          class="v-message-content v-pb-2 v-pr-2"
+          style="overflow-y: visible;"
+          v-message-content=""
+          vpb="2"
+          vpr="2"
+        >
+          <div
+            class="v-px-24"
+            vpx="24"
+          >
+            <h2
+              class="v-dialog-header"
+              id="a-file-upload-alternate-dialog-0-title"
+              v-dialog-header=""
+            >
+              <span>
+                Upload Files
+              </span>
+            </h2>
+            <p
+              id="a-file-upload-alternate-dialog-0-description"
+              v-dialog-text=""
+            >
+              Upload one or more files, up to 10 MB each. Accepted file types are .jpg, .pdf, .docx, and .xlsx. Only files that meet these requirements will be uploaded.
+            </p>
+          </div>
+          <div
+            class="v-gap-8 v-align-items-center v-flex v-flex-row v-flex-wrap v-pt-16 v-px-24"
+            valignitemscenter=""
+            vflex=""
+            vflexwrap=""
+            vgap="8"
+            vpt="16"
+            vpx="24"
+          >
+            <button
+              buttoncolor="secondary"
+              class="v-button v-button-secondary"
+              type="button"
+              v-button=""
+            >
+               Select file(s) 
+            </button>
+          </div>
+          <div
+            class="v-mt-20"
+            vmt="20"
+          >
+            <div
+              aria-hidden="true"
+              class="v-divider v-divider-decorative"
+              dividertype="decorative"
+              v-divider=""
+            />
+          </div>
+          <ul
+            class="v-gap-8 v-flex v-flex-col v-px-24 v-py-12"
+            style="min-height: min(25vh, 266px);"
+            vflex=""
+            vflexcol=""
+            vgap="8"
+            vpx="24"
+            vpy="12"
+          >
+            
+          </ul>
+          <hr
+            aria-hidden="true"
+            class="v-divider v-divider-decorative"
+            dividertype="decorative"
+            v-divider=""
+          />
+          <div
+            class="v-gap-8 v-align-items-center v-flex v-flex-row v-flex-wrap v-pt-16 v-px-24"
+            valignitemscenter=""
+            vflex=""
+            vflexwrap=""
+            vgap="8"
+            vpt="16"
+            vpx="24"
+          >
+            <button
+              class="v-button"
+              type="button"
+              v-button=""
+            >
+              Upload
+            </button>
+            <button
+              buttoncolor="secondary"
+              class="v-button v-button-secondary"
+              type="button"
+              v-button=""
+            >
+               Cancel 
+            </button>
+          </div>
+        </div>
+      </dialog>
+    </nova-upload-dialog>
+  </div>
+</div>
+`;
+
+exports[`File upload examples MultiFileManualUploadComponent should render correctly 1`] = `
+<div>
+  <div
+    class="v-gap-25 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="25"
+  >
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      style="max-width: 400px;"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <div
+        class="v-gap-16 v-flex v-flex-col"
+        vflex=""
+        vflexcol=""
+        vgap="16"
+      >
+        <div
+          class="v-gap-8 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+          vgap="8"
+        >
+          <p
+            class="v-typography-subtitle-1"
+            vtypography="subtitle-1"
+          >
+            Upload files
+          </p>
+          <p
+            class="v-typography-label-small"
+            vtypography="label-small"
+          >
+             Choose one or more files to upload, up to 10MB each. Accepted file types are jpg, pdf, docx, and xlsx. 
+          </p>
+        </div>
+        <div>
+          <input
+            class="v-sr"
+            multiple=""
+            type="file"
+            vsr=""
+          />
+          <div
+            valignself="start"
+          >
+            <button
+              buttoncolor="secondary"
+              class="v-button v-button-secondary"
+              type="button"
+              v-button=""
+            >
+               Select file(s) 
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="v-gap-8 v-flex v-flex-col"
+        role="status"
+        style="min-height: 1rem;"
+        vflex=""
+        vflexcol=""
+        vgap="8"
+      >
+        
+        
+      </div>
+      
+    </div>
+    <div
+      class="v-align-self-end"
+      role="alert"
+      valignselfend=""
+    >
+      
+    </div>
+    <nova-upload-dialog>
+      <dialog
+        aria-describedby="a-file-upload-manual-dialog-0-description"
+        aria-labelledby="a-file-upload-manual-dialog-0-title"
+        aria-modal="true"
+        class="v-dialog v-message v-dialog-default v-px-0"
+        id="a-file-upload-manual-dialog-0"
+        role="dialog"
+        style="max-width: 400px; --v-message-display: block; overflow-y: auto;"
+        v-dialog=""
+        v-message=""
+        vpx="0"
+      >
+        <button
+          aria-label="Close"
+          buttoncolor="tertiary"
+          buttonsize="small"
+          class="v-button v-button-icon v-button-small v-button-subtle v-button-tertiary -v-ml-12 -v-mr-18 -v-mt-20"
+          style="margin-inline-end: 4px; float: inline-end;"
+          subtle=""
+          type="button"
+          v-button-icon=""
+          vml="-12"
+          vmr="-18"
+          vmt="-20"
+        >
+          <svg
+            aria-hidden="true"
+            class="v-icon v-icon-close v-icon-tiny v-icon-visa"
+            focusable="false"
+            height="16"
+            v-icon-visa-close-tiny=""
+            viewBox="0 0 16 16"
+            width="16"
+          >
+            <path
+              class="v-icon-primary"
+              d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
+            />
+            <defs>
+              <clippath>
+                <rect
+                  height="16"
+                  transform="translate(0 0.000488281)"
+                  width="16"
+                />
+              </clippath>
+            </defs>
+          </svg>
+        </button>
+        <div
+          class="v-message-content v-pb-2 v-pr-2"
+          style="overflow-y: visible;"
+          v-message-content=""
+          vpb="2"
+          vpr="2"
+        >
+          <div
+            class="v-px-24"
+            vpx="24"
+          >
+            <h2
+              class="v-dialog-header"
+              id="a-file-upload-manual-dialog-0-title"
+              v-dialog-header=""
+            >
+              <span>
+                Upload files
+              </span>
+            </h2>
+            <p
+              id="a-file-upload-manual-dialog-0-description"
+              v-dialog-text=""
+            >
+              Upload one or more files, up to 10 MB each. Accepted file types are .jpg, .pdf, .docx, and .xlsx. Only files that meet these requirements will be uploaded.
+            </p>
+          </div>
+          <div
+            class="v-gap-8 v-align-items-center v-flex v-flex-row v-flex-wrap v-pt-16 v-px-24"
+            valignitemscenter=""
+            vflex=""
+            vflexwrap=""
+            vgap="8"
+            vpt="16"
+            vpx="24"
+          >
+            <button
+              buttoncolor="secondary"
+              class="v-button v-button-secondary"
+              type="button"
+              v-button=""
+            >
+               Select file(s) 
+            </button>
+          </div>
+          <div
+            class="v-mt-20"
+            vmt="20"
+          >
+            <div
+              aria-hidden="true"
+              class="v-divider v-divider-decorative"
+              dividertype="decorative"
+              v-divider=""
+            />
+          </div>
+          <ul
+            class="v-gap-8 v-flex v-flex-col v-px-24 v-py-12"
+            style="min-height: min(25vh, 266px);"
+            vflex=""
+            vflexcol=""
+            vgap="8"
+            vpx="24"
+            vpy="12"
+          >
+            
+          </ul>
+          <hr
+            aria-hidden="true"
+            class="v-divider v-divider-decorative"
+            dividertype="decorative"
+            v-divider=""
+          />
+          <div
+            class="v-gap-8 v-align-items-center v-flex v-flex-row v-flex-wrap v-pt-16 v-px-24"
+            valignitemscenter=""
+            vflex=""
+            vflexwrap=""
+            vgap="8"
+            vpt="16"
+            vpx="24"
+          >
+            <button
+              class="v-button"
+              type="button"
+              v-button=""
+            >
+              Upload
+            </button>
+            <button
+              buttoncolor="secondary"
+              class="v-button v-button-secondary"
+              type="button"
+              v-button=""
+            >
+               Cancel 
+            </button>
+          </div>
+        </div>
+      </dialog>
+    </nova-upload-dialog>
+  </div>
+</div>
+`;
+
+exports[`File upload examples MultiFileUploadComponent should render correctly 1`] = `
+<div>
+  <div
+    class="v-gap-25 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="25"
+  >
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      style="max-width: 400px;"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <div
+        class="v-gap-16 v-flex v-flex-col"
+        vflex=""
+        vflexcol=""
+        vgap="16"
+      >
+        <div
+          class="v-gap-8 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+          vgap="8"
+        >
+          <p
+            class="v-typography-subtitle-1"
+            vtypography="subtitle-1"
+          >
+            Upload files
+          </p>
+          <p
+            class="v-typography-label-small"
+            vtypography="label-small"
+          >
+             Choose one or more files to upload, up to 25 MB each. Accepted file types are .pdf, .png, and .jpg. 
+          </p>
+        </div>
+        <div
+          class="v-gap-8 v-align-items-center v-flex v-flex-col v-justify-content-center"
+          style="border: 1px solid var(--palette-default-active); border-radius: var(--theme-border-radius); height: 158px;"
+          valignitemscenter=""
+          vflex=""
+          vflexcol=""
+          vgap="8"
+          vjustifycontentcenter=""
+        >
+          <input
+            class="v-sr"
+            multiple=""
+            type="file"
+            vsr=""
+          />
+          <p
+            style="margin: 0;"
+          >
+            Drag and drop files or
+          </p>
+          <button
+            buttoncolor="secondary"
+            class="v-button v-button-secondary"
+            type="button"
+            v-button=""
+          >
+             Select file(s) 
+          </button>
+        </div>
+      </div>
+      <div
+        class="v-gap-8 v-flex v-flex-col"
+        role="status"
+        style="min-height: 1rem;"
+        vflex=""
+        vflexcol=""
+        vgap="8"
+      >
+        
+        
+      </div>
+      
+    </div>
+    <div
+      class="v-align-self-end"
+      role="alert"
+      valignselfend=""
+    >
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`File upload examples SingleFileUploadComponent should render correctly 1`] = `
+<div>
+  <div
+    class="v-gap-25 v-flex v-flex-col"
+    vflex=""
+    vflexcol=""
+    vgap="25"
+  >
+    <div
+      class="v-gap-4 v-flex v-flex-col"
+      style="max-width: 400px;"
+      vflex=""
+      vflexcol=""
+      vgap="4"
+    >
+      <div
+        class="v-gap-16 v-flex v-flex-col"
+        vflex=""
+        vflexcol=""
+        vgap="16"
+      >
+        <div
+          class="v-gap-8 v-flex v-flex-col"
+          vflex=""
+          vflexcol=""
+          vgap="8"
+        >
+          <p
+            class="v-typography-subtitle-1"
+            vtypography="subtitle-1"
+          >
+            Upload file
+          </p>
+          <p
+            class="v-typography-label-small"
+            vtypography="label-small"
+          >
+             Choose one file to upload, up to 25 MB each. Accepted file types are .pdf, .png, and .jpg. 
+          </p>
+        </div>
+        <div>
+          <input
+            class="v-sr"
+            type="file"
+            vsr=""
+          />
+          <div
+            valignself="start"
+          >
+            <button
+              buttoncolor="secondary"
+              class="v-button v-button-secondary"
+              type="button"
+              v-button=""
+            >
+              Select file
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="v-gap-8 v-flex v-flex-col"
+        role="status"
+        style="min-height: 1rem;"
+        vflex=""
+        vflexcol=""
+        vgap="8"
+      >
+        
+        
+      </div>
+      
+    </div>
+    <div
+      class="v-align-self-end"
+      role="alert"
+      valignselfend=""
+    >
+      
+    </div>
+  </div>
+</div>
+`;

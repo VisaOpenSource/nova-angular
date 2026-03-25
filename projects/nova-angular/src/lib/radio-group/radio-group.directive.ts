@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,7 +36,6 @@ import { DefaultValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { IdGenerator } from '../id-generator/id-generator.service';
 import { RadioDirective } from '../radio/radio.directive';
 import { valuesDiffer } from '../utilities';
-import { defaultEffectParam } from '../nova-lib.constants';
 
 const RADIO_GROUP_VALUE_ACCESSOR = {
   provide: NG_VALUE_ACCESSOR,
@@ -115,7 +114,7 @@ export class RadioGroupDirective extends DefaultValueAccessor {
   private readonly valueEffect = effect(() => {
     const value = this.value();
     this.onChange(value);
-  }, defaultEffectParam);
+  });
   private readonly activeRadio: Signal<RadioDirective | undefined> = computed(() =>
     this.radios()?.find((item) => item.checked())
   );
@@ -131,7 +130,7 @@ export class RadioGroupDirective extends DefaultValueAccessor {
         this.value.set(activeValue);
       }
     });
-  }, defaultEffectParam);
+  });
 
   override writeValue(value: string | number): void {
     this.value.set(value);

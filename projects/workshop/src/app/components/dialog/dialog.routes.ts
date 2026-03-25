@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,6 +23,8 @@ export const dialogRoutes: Routes = [
 	{ loadComponent: () => import('./confirmation-dialog/confirmation-dialog.docs').then(m => m.NovaConfirmationDialogComponent), path: 'confirmation-dialog', title: 'Confirmation dialog dialog component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./default/default.docs').then(m => m.NovaDefaultDialogComponent), path: 'default', title: 'Default dialog component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./error/error.docs').then(m => m.NovaErrorDialogComponent), path: 'error', title: 'Error dialog component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable-component/reusable-component.docs').then(m => m.ReusableDialog), path: 'reusable-component', title: 'Reusable component dialog component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable.docs').then(m => m.ReusableDialogDemo), path: 'reusable', title: 'Reusable dialog component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./success/success.docs').then(m => m.NovaSuccessDialogComponent), path: 'success', title: 'Success dialog component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./touring-tips/touring-tips.docs').then(m => m.NovaTouringTipsDialogComponent), path: 'touring-tips', title: 'Touring tips dialog component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./warning/warning.docs').then(m => m.NovaWarningDialogComponent), path: 'warning', title: 'Warning dialog component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },

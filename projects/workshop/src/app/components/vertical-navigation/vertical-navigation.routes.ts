@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,6 +28,7 @@ export const verticalNavigationRoutes: Routes = [
 	{ loadComponent: () => import('./links-only/links-only.docs').then(m => m.LinksOnlyVerticalNavComponent), path: 'links-only', title: 'Links only vertical navigation component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./nested/nested.docs').then(m => m.NestedVerticalNavComponent), path: 'nested', title: 'Nested vertical navigation component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./nested-with-section-titles/nested-with-section-titles.docs').then(m => m.NestedWithSectionTitleVerticalNavComponent), path: 'nested-with-section-titles', title: 'Nested with section titles vertical navigation component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./with-active-prop/with-active-prop.docs').then(m => m.VerticalWithActivePropNavComponent), path: 'with-active-prop', title: 'With active prop vertical navigation component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./with-icons/with-icons.docs').then(m => m.WithIconsVerticalNavComponent), path: 'with-icons', title: 'With icons vertical navigation component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./with-section-titles/with-section-titles.docs').then(m => m.WithSectionTitleVerticalNavComponent), path: 'with-section-titles', title: 'With section titles vertical navigation component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX }
 ];

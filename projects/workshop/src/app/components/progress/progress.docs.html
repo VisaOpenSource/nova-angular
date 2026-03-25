@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,8 +14,6 @@
  * limitations under the License.
  *
  -->
-@if(!workshopService.isLoadingExamples()){
-
 <span role="alert" vSR
   >This page contains many examples with alerts which are included to show developers how to use them in their code.
   Sorry about the bad experience when the page initially loads!</span
@@ -139,4 +137,7 @@
 >
   <nova-workshop-progress-custom-slow-circular-progress></nova-workshop-progress-custom-slow-circular-progress>
 </nova-workshop-example>
-}
+
+<nova-workshop-example selector="nova-reusable-progress-demo" exampleTitle="Reusable progress demo">
+  <nova-reusable-progress-demo></nova-reusable-progress-demo>
+</nova-workshop-example>

@@ -1,12 +1,12 @@
 {
   "name": "@visa/nova-angular",
-  "version": "6.0.2",
+  "version": "7.0.0",
   "license": "Apache-2.0",
   "author": "Visa Product Design System",
   "publishConfig": {
     "access": "public"
   },
-  "description": "Visa Product Design System Nova Angular library",
+  "description": "Visa Product Design System Nova Angular library. Compatible with Angular ^19.0.0 || ^20.0.0 || ^21.0.0.",
   "sideEffects": false,
   "keywords": [
     "angular",
@@ -25,9 +25,9 @@
     "tslib": "^2.6.2"
   },
   "peerDependencies": {
-    "@angular/common": "^18 || ^19 || ^20",
-    "@angular/core": "^18 || ^19 || ^20",
-    "@angular/forms": "^18 || ^19 || ^20",
+    "@angular/common": "^19.0.0 || ^20.0.0 || ^21.0.0",
+    "@angular/core": "^19.0.0 || ^20.0.0 || ^21.0.0",
+    "@angular/forms": "^19.0.0 || ^20.0.0 || ^21.0.0",
     "@floating-ui/dom": "^1.6.5",
     "@visa/nova-styles": "^1.6.4"
   }

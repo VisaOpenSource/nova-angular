@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,6 @@
  *
  **/
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, viewChild, viewChildren } from '@angular/core';
-import { JsonPipe } from '@angular/common';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {
   CheckboxDirective,
@@ -49,17 +48,39 @@ export class FormControlNgComponent implements AfterViewInit {
 
   formGroup: FormGroup;
   controlNames = ['input', 'select', 'radio', 'checkbox', 'switch', 'listbox', 'combobox'];
+  hasInitialValues = true;
 
   constructor(private fb: FormBuilder) {
-    this.formGroup = this.fb.group({
-      input: [''],
-      select: [null],
-      radio: [null],
-      checkbox: [false],
-      switch: [false],
-      listbox: [null],
-      combobox: [null]
-    });
+    this.formGroup = this.createFormGroup(this.hasInitialValues);
+  }
+
+  private createFormGroup(withInitialValues: boolean): FormGroup {
+    if (withInitialValues) {
+      return this.fb.group({
+        input: ['Initial text'],
+        select: ['2'],
+        radio: ['2'],
+        checkbox: [true],
+        switch: [true],
+        listbox: ['item-2'],
+        combobox: [{ label: 'Item 1', value: 'item-1' }]
+      });
+    } else {
+      return this.fb.group({
+        input: [''],
+        select: [null],
+        radio: [null],
+        checkbox: [false],
+        switch: [false],
+        listbox: [null],
+        combobox: [null]
+      });
+    }
+  }
+
+  toggleInitialValues(): void {
+    this.hasInitialValues = !this.hasInitialValues;
+    this.formGroup = this.createFormGroup(this.hasInitialValues);
   }
 
   ngAfterViewInit(): void {

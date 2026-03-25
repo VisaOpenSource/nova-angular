@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,6 +31,8 @@ export const tableRoutes: Routes = [
 	{ loadComponent: () => import('./medium-padding-banded-rows/medium-padding-banded-rows.docs').then(m => m.MediumPaddingBandedRowsTableComponent), path: 'medium-padding-banded-rows', title: 'Medium padding banded rows table component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./outer-border-column-and-row-dividers/outer-border-column-and-row-dividers.docs').then(m => m.OuterBorderColumnAndRowDividersTableComponent), path: 'outer-border-column-and-row-dividers', title: 'Outer border column and row dividers table component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./outer-border-subtle-headers/outer-border-subtle-headers.docs').then(m => m.OuterBorderSubtleHeadersTableComponent), path: 'outer-border-subtle-headers', title: 'Outer border subtle headers table component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable-component/reusable-component.docs').then(m => m.ReusableTable), path: 'reusable-component', title: 'Reusable component table component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable.docs').then(m => m.ReusableTableDemo), path: 'reusable', title: 'Reusable table component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./scroll/scroll.docs').then(m => m.ScrollTableComponent), path: 'scroll', title: 'Scroll table component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX }
 ];
 

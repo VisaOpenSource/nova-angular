@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,6 +17,11 @@
 import { Component } from '@angular/core';
 import { NovaLibModule } from '@visa/nova-angular';
 
+/**
+ * Footer layout with logo, copyright, and navigation links.
+ * Includes configurable links for legal and contact information.
+ * #patterns #isShared
+ **/
 @Component({
   imports: [NovaLibModule],
   standalone: true,
@@ -24,6 +29,10 @@ import { NovaLibModule } from '@visa/nova-angular';
   templateUrl: './footer-layout.docs.html'
 })
 export class FooterLayoutComponent {
+  /**
+   * Sample data representing footer links.
+   * Each item contains a navigation path and display title.
+   */
   mockFooterData = [
     {
       path: './patterns/application-layouts',

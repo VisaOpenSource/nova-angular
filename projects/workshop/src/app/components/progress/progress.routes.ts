@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,7 +36,9 @@ export const progressRoutes: Routes = [
 	{ loadComponent: () => import('./indeterminate-progress-bar/indeterminate-progress-bar.docs').then(m => m.NovaIndeterminateProgressBarProgressComponent), path: 'indeterminate-progress-bar', title: 'Indeterminate progress bar progress component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./indeterminate-progress-bar-no-label/indeterminate-progress-bar-no-label.docs').then(m => m.NovaIndeterminateProgressBarNoLabelProgressComponent), path: 'indeterminate-progress-bar-no-label', title: 'Indeterminate progress bar no label progress component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./live-circular-progress/live-circular-progress.docs').then(m => m.NovaLiveCircularProgressComponent), path: 'live-circular-progress', title: 'Live circular progress progress component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
-	{ loadComponent: () => import('./live-progress-bar/live-progress-bar.docs').then(m => m.NovaLiveProgressBarProgressComponent), path: 'live-progress-bar', title: 'Live progress bar progress component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX }
+	{ loadComponent: () => import('./live-progress-bar/live-progress-bar.docs').then(m => m.NovaLiveProgressBarProgressComponent), path: 'live-progress-bar', title: 'Live progress bar progress component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable-component/reusable-component.docs').then(m => m.ReusableProgress), path: 'reusable-component', title: 'Reusable component progress component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable.docs').then(m => m.ReusableProgressDemo), path: 'reusable', title: 'Reusable progress component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX }
 ];
 
 export default progressRoutes;

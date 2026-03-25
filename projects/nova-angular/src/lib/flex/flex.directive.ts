@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -72,8 +72,8 @@ import { SpacingProperties } from '../nova-lib.constants';
 
     '[style.flex-basis]': 'vFlexBasis()'
   },
-  selector: `[vFlex], [vFlexInline], [vGap], [vFlexGrow], [vFlexGrow0], 
-  [vFlexShrink], [vFlexShrink0], [vFlexBasis], [vAlignSelfStart], [vAlignSelfEnd], 
+  selector: `[vFlex], [vFlexInline], [vGap], [vFlexGrow], [vFlexGrow0],
+  [vFlexShrink], [vFlexShrink0], [vFlexBasis], [vAlignSelfStart], [vAlignSelfEnd],
   [vAlignSelfCenter], [vAlignSelfStretch], [vAlignSelfAuto], [vAlignSelfBaseline],`,
   standalone: true
 })

@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Button examples ButtonAsLinkButtonComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <a
     class="v-button"
     href="./components/button"
@@ -16,16 +14,13 @@ exports[`Button examples ButtonAsLinkButtonComponent should render correctly 1`]
       class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-0"
       v-icon-visa-chevron-right-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-        fill-rule="evenodd"
+        d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
       />
     </svg>
   </a>
@@ -33,9 +28,7 @@ exports[`Button examples ButtonAsLinkButtonComponent should render correctly 1`]
 `;
 
 exports[`Button examples DestructivePrimaryButtonComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <button
     class="v-button v-button-destructive"
     destructive=""
@@ -47,22 +40,17 @@ exports[`Button examples DestructivePrimaryButtonComponent should render correct
       class="v-icon v-icon-delete v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-1"
       v-icon-visa-delete-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M9 2.00049H16V4.00049H14V16.0005H2V6.00049H4V14.0005H12V4.00049H0V2.00049H7L7 0.000488281H9V2.00049Z"
-        fill-rule="evenodd"
+        d="M9 2.00049H16V4.00049H14V16.0005H2V6.00049H4V14.0005H12V4.00049H0V2.00049H7V0.000488281H9V2.00049Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M8.00008 10.4148L6.20718 12.2077L4.79297 10.7935L6.58586 9.00056L4.79297 7.20767L6.20718 5.79346L8.00008 7.58635L9.79297 5.79346L11.2072 7.20767L9.41429 9.00056L11.2072 10.7935L9.79297 12.2077L8.00008 10.4148Z"
-        fill-rule="evenodd"
+        d="M11.207 7.20752L9.41406 9.00049L11.207 10.7935L9.79297 12.2075L8 10.4146L6.20703 12.2075L4.79297 10.7935L6.58594 9.00049L4.79297 7.20752L6.20703 5.79346L8 7.58643L9.79297 5.79346L11.207 7.20752Z"
       />
       <defs>
         <clippath>
@@ -80,9 +68,7 @@ exports[`Button examples DestructivePrimaryButtonComponent should render correct
 `;
 
 exports[`Button examples DestructiveSecondaryButtonComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <button
     buttoncolor="secondary"
     class="v-button v-button-destructive v-button-secondary"
@@ -95,22 +81,17 @@ exports[`Button examples DestructiveSecondaryButtonComponent should render corre
       class="v-icon v-icon-delete v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-2"
       v-icon-visa-delete-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M9 2.00049H16V4.00049H14V16.0005H2V6.00049H4V14.0005H12V4.00049H0V2.00049H7L7 0.000488281H9V2.00049Z"
-        fill-rule="evenodd"
+        d="M9 2.00049H16V4.00049H14V16.0005H2V6.00049H4V14.0005H12V4.00049H0V2.00049H7V0.000488281H9V2.00049Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M8.00008 10.4148L6.20718 12.2077L4.79297 10.7935L6.58586 9.00056L4.79297 7.20767L6.20718 5.79346L8.00008 7.58635L9.79297 5.79346L11.2072 7.20767L9.41429 9.00056L11.2072 10.7935L9.79297 12.2077L8.00008 10.4148Z"
-        fill-rule="evenodd"
+        d="M11.207 7.20752L9.41406 9.00049L11.207 10.7935L9.79297 12.2075L8 10.4146L6.20703 12.2075L4.79297 10.7935L6.58594 9.00049L4.79297 7.20752L6.20703 5.79346L8 7.58643L9.79297 5.79346L11.207 7.20752Z"
       />
       <defs>
         <clippath>
@@ -128,9 +109,7 @@ exports[`Button examples DestructiveSecondaryButtonComponent should render corre
 `;
 
 exports[`Button examples DestructiveTertiaryButtonComponent should render correctly 1`] = `
-<div
-  id="root3"
->
+<div>
   <button
     buttoncolor="tertiary"
     class="v-button v-button-destructive v-button-tertiary"
@@ -143,22 +122,17 @@ exports[`Button examples DestructiveTertiaryButtonComponent should render correc
       class="v-icon v-icon-delete v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-3"
       v-icon-visa-delete-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M9 2.00049H16V4.00049H14V16.0005H2V6.00049H4V14.0005H12V4.00049H0V2.00049H7L7 0.000488281H9V2.00049Z"
-        fill-rule="evenodd"
+        d="M9 2.00049H16V4.00049H14V16.0005H2V6.00049H4V14.0005H12V4.00049H0V2.00049H7V0.000488281H9V2.00049Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M8.00008 10.4148L6.20718 12.2077L4.79297 10.7935L6.58586 9.00056L4.79297 7.20767L6.20718 5.79346L8.00008 7.58635L9.79297 5.79346L11.2072 7.20767L9.41429 9.00056L11.2072 10.7935L9.79297 12.2077L8.00008 10.4148Z"
-        fill-rule="evenodd"
+        d="M11.207 7.20752L9.41406 9.00049L11.207 10.7935L9.79297 12.2075L8 10.4146L6.20703 12.2075L4.79297 10.7935L6.58594 9.00049L4.79297 7.20752L6.20703 5.79346L8 7.58643L9.79297 5.79346L11.207 7.20752Z"
       />
       <defs>
         <clippath>
@@ -177,9 +151,7 @@ exports[`Button examples DestructiveTertiaryButtonComponent should render correc
 `;
 
 exports[`Button examples IconButtonPrimaryAlternateButtonComponent should render correctly 1`] = `
-<div
-  id="root4"
->
+<div>
   <button
     aria-label="primary action"
     class="v-alternate v-button v-button-icon"
@@ -192,16 +164,13 @@ exports[`Button examples IconButtonPrimaryAlternateButtonComponent should render
       class="v-icon v-icon-add v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-4"
       v-icon-visa-add-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M9 7V0H7V7H0V9H7V16H9V9H16V7H9Z"
-        fill-rule="evenodd"
+        d="M9 7H16V9H9V16H7V9H0V7H7V0H9V7Z"
       />
       <defs>
         <clippath>
@@ -217,9 +186,7 @@ exports[`Button examples IconButtonPrimaryAlternateButtonComponent should render
 `;
 
 exports[`Button examples IconButtonPrimaryButtonComponent should render correctly 1`] = `
-<div
-  id="root9"
->
+<div>
   <button
     aria-label="primary action"
     class="v-button v-button-icon"
@@ -231,16 +198,13 @@ exports[`Button examples IconButtonPrimaryButtonComponent should render correctl
       class="v-icon v-icon-add v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-9"
       v-icon-visa-add-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M9 7V0H7V7H0V9H7V16H9V9H16V7H9Z"
-        fill-rule="evenodd"
+        d="M9 7H16V9H9V16H7V9H0V7H7V0H9V7Z"
       />
       <defs>
         <clippath>
@@ -256,9 +220,7 @@ exports[`Button examples IconButtonPrimaryButtonComponent should render correctl
 `;
 
 exports[`Button examples IconButtonPrimaryDisabledButtonComponent should render correctly 1`] = `
-<div
-  id="root5"
->
+<div>
   <div
     class="v-flex v-flex-row"
     vflex=""
@@ -283,16 +245,13 @@ exports[`Button examples IconButtonPrimaryDisabledButtonComponent should render 
           class="v-icon v-icon-add v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-5"
           v-icon-visa-add-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M9 7V0H7V7H0V9H7V16H9V9H16V7H9Z"
-            fill-rule="evenodd"
+            d="M9 7H16V9H9V16H7V9H0V7H7V0H9V7Z"
           />
           <defs>
             <clippath>
@@ -318,9 +277,7 @@ exports[`Button examples IconButtonPrimaryDisabledButtonComponent should render 
 `;
 
 exports[`Button examples IconButtonPrimaryLabelButtonComponent should render correctly 1`] = `
-<div
-  id="root6"
->
+<div>
   <div
     class="v-flex v-flex-row"
     vflex=""
@@ -344,16 +301,13 @@ exports[`Button examples IconButtonPrimaryLabelButtonComponent should render cor
           class="v-icon v-icon-add v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-6"
           v-icon-visa-add-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M9 7V0H7V7H0V9H7V16H9V9H16V7H9Z"
-            fill-rule="evenodd"
+            d="M9 7H16V9H9V16H7V9H0V7H7V0H9V7Z"
           />
           <defs>
             <clippath>
@@ -378,9 +332,7 @@ exports[`Button examples IconButtonPrimaryLabelButtonComponent should render cor
 `;
 
 exports[`Button examples IconButtonPrimaryLargeButtonComponent should render correctly 1`] = `
-<div
-  id="root7"
->
+<div>
   <button
     aria-label="primary action"
     buttonsize="large"
@@ -393,16 +345,13 @@ exports[`Button examples IconButtonPrimaryLargeButtonComponent should render cor
       class="v-icon v-icon-add v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-7"
       v-icon-visa-add-low=""
       viewBox="0 0 24 24"
       width="24"
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M13 11V0H11V11H0V13H11V24H13V13H24V11H13Z"
-        fill-rule="evenodd"
+        d="M13 11H24V13H13V24H11V13H0V11H11V0H13V11Z"
       />
       <defs>
         <clippath>
@@ -418,9 +367,7 @@ exports[`Button examples IconButtonPrimaryLargeButtonComponent should render cor
 `;
 
 exports[`Button examples IconButtonPrimarySmallButtonComponent should render correctly 1`] = `
-<div
-  id="root8"
->
+<div>
   <button
     aria-label="primary action"
     buttonsize="small"
@@ -433,16 +380,13 @@ exports[`Button examples IconButtonPrimarySmallButtonComponent should render cor
       class="v-icon v-icon-add v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-8"
       v-icon-visa-add-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M9 7V0H7V7H0V9H7V16H9V9H16V7H9Z"
-        fill-rule="evenodd"
+        d="M9 7H16V9H9V16H7V9H0V7H7V0H9V7Z"
       />
       <defs>
         <clippath>
@@ -458,9 +402,7 @@ exports[`Button examples IconButtonPrimarySmallButtonComponent should render cor
 `;
 
 exports[`Button examples IconButtonSecondaryAlternateButtonComponent should render correctly 1`] = `
-<div
-  id="root10"
->
+<div>
   <button
     aria-label="secondary action"
     buttoncolor="secondary"
@@ -474,22 +416,17 @@ exports[`Button examples IconButtonSecondaryAlternateButtonComponent should rend
       class="v-icon v-icon-connect v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-10"
       v-icon-visa-connect-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M7.69971 11.3646C8.14847 10.8713 8.4999 10.2878 8.72365 9.64453L10.1935 10.6059C10.696 10.2263 11.3217 10.0012 12 10.0012C13.6568 10.0012 15 11.3444 15 13.0012C15 14.6581 13.6568 16.0012 12 16.0012C10.3431 16.0012 8.99995 14.6581 8.99995 13.0012C8.99995 12.7502 9.03079 12.5063 9.08889 12.2732L7.69971 11.3646ZM13 13.0012C13 13.5535 12.5522 14.0012 12 14.0012C11.4477 14.0012 11 13.5535 11 13.0012C11 12.4489 11.4477 12.0012 12 12.0012C12.5522 12.0012 13 12.4489 13 13.0012Z"
-        fill-rule="evenodd"
+        d="M10.1958 10.6074C10.6981 10.2283 11.3217 10.0011 11.9995 10.001C13.6563 10.001 14.9994 11.3442 14.9995 13.001C14.9995 14.6578 13.6564 16.001 11.9995 16.001C10.3429 16.0007 8.99951 14.6577 8.99951 13.001C8.99953 12.7501 9.03426 12.5073 9.09229 12.2744L7.69971 11.3643C8.14828 10.8711 8.49844 10.2875 8.72217 9.64453L10.1958 10.6074ZM11.9995 12.001C11.4475 12.0012 10.9996 12.449 10.9995 13.001C10.9995 13.5531 11.4474 14.0007 11.9995 14.001C12.5518 14.001 12.9995 13.5533 12.9995 13.001C12.9994 12.4488 12.5517 12.001 11.9995 12.001Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M12 4.00098C12.5523 4.00098 13 3.55326 13 3.00098C13 2.44869 12.5523 2.00098 12 2.00098C11.4477 2.00098 11 2.44869 11 3.00098C11 3.55326 11.4477 4.00098 12 4.00098ZM12 6.00098C13.6569 6.00098 15 4.65783 15 3.00098C15 1.34412 13.6569 0.000976562 12 0.000976562C10.3431 0.000976562 9 1.34412 9 3.00098C9 3.25205 9.03084 3.49591 9.08894 3.72899L5.98997 5.75594C5.46043 5.28621 4.76353 5.00098 4 5.00098C2.34315 5.00098 1 6.34412 1 8.00098C1 9.65783 2.34315 11.001 4 11.001C5.65685 11.001 7 9.65783 7 8.00098C7 7.83417 6.98639 7.67055 6.96021 7.51115L10.1935 5.39633C10.696 5.77589 11.3217 6.00098 12 6.00098ZM4 9.00098C4.55228 9.00098 5 8.55326 5 8.00098C5 7.44869 4.55228 7.00098 4 7.00098C3.44772 7.00098 3 7.44869 3 8.00098C3 8.55326 3.44772 9.00098 4 9.00098Z"
-        fill-rule="evenodd"
+        d="M12 0.000976562C13.6569 0.000976562 15 1.34412 15 3.00098C15 4.65783 13.6569 6.00098 12 6.00098C11.3221 6.00098 10.6986 5.77368 10.1963 5.39453L6.95996 7.51074C6.98618 7.67028 7 7.83402 7 8.00098C7 9.65783 5.65685 11.001 4 11.001C2.34315 11.001 1 9.65783 1 8.00098C1 6.34412 2.34315 5.00098 4 5.00098C4.76276 5.00098 5.45698 5.28795 5.98633 5.75684L9.0918 3.72656C9.03396 3.49397 9 3.25146 9 3.00098C9 1.34412 10.3431 0.000976562 12 0.000976562ZM4 7.00098C3.44772 7.00098 3 7.44869 3 8.00098C3 8.55326 3.44772 9.00098 4 9.00098C4.55228 9.00098 5 8.55326 5 8.00098C5 7.44869 4.55228 7.00098 4 7.00098ZM12 2.00098C11.4477 2.00098 11 2.44869 11 3.00098C11 3.55326 11.4477 4.00098 12 4.00098C12.5523 4.00098 13 3.55326 13 3.00098C13 2.44869 12.5523 2.00098 12 2.00098Z"
       />
       <defs>
         <clippath>
@@ -506,9 +443,7 @@ exports[`Button examples IconButtonSecondaryAlternateButtonComponent should rend
 `;
 
 exports[`Button examples IconButtonSecondaryButtonComponent should render correctly 1`] = `
-<div
-  id="root14"
->
+<div>
   <button
     aria-label="secondary action"
     buttoncolor="secondary"
@@ -521,22 +456,17 @@ exports[`Button examples IconButtonSecondaryButtonComponent should render correc
       class="v-icon v-icon-connect v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-14"
       v-icon-visa-connect-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M7.69971 11.3646C8.14847 10.8713 8.4999 10.2878 8.72365 9.64453L10.1935 10.6059C10.696 10.2263 11.3217 10.0012 12 10.0012C13.6568 10.0012 15 11.3444 15 13.0012C15 14.6581 13.6568 16.0012 12 16.0012C10.3431 16.0012 8.99995 14.6581 8.99995 13.0012C8.99995 12.7502 9.03079 12.5063 9.08889 12.2732L7.69971 11.3646ZM13 13.0012C13 13.5535 12.5522 14.0012 12 14.0012C11.4477 14.0012 11 13.5535 11 13.0012C11 12.4489 11.4477 12.0012 12 12.0012C12.5522 12.0012 13 12.4489 13 13.0012Z"
-        fill-rule="evenodd"
+        d="M10.1958 10.6074C10.6981 10.2283 11.3217 10.0011 11.9995 10.001C13.6563 10.001 14.9994 11.3442 14.9995 13.001C14.9995 14.6578 13.6564 16.001 11.9995 16.001C10.3429 16.0007 8.99951 14.6577 8.99951 13.001C8.99953 12.7501 9.03426 12.5073 9.09229 12.2744L7.69971 11.3643C8.14828 10.8711 8.49844 10.2875 8.72217 9.64453L10.1958 10.6074ZM11.9995 12.001C11.4475 12.0012 10.9996 12.449 10.9995 13.001C10.9995 13.5531 11.4474 14.0007 11.9995 14.001C12.5518 14.001 12.9995 13.5533 12.9995 13.001C12.9994 12.4488 12.5517 12.001 11.9995 12.001Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M12 4.00098C12.5523 4.00098 13 3.55326 13 3.00098C13 2.44869 12.5523 2.00098 12 2.00098C11.4477 2.00098 11 2.44869 11 3.00098C11 3.55326 11.4477 4.00098 12 4.00098ZM12 6.00098C13.6569 6.00098 15 4.65783 15 3.00098C15 1.34412 13.6569 0.000976562 12 0.000976562C10.3431 0.000976562 9 1.34412 9 3.00098C9 3.25205 9.03084 3.49591 9.08894 3.72899L5.98997 5.75594C5.46043 5.28621 4.76353 5.00098 4 5.00098C2.34315 5.00098 1 6.34412 1 8.00098C1 9.65783 2.34315 11.001 4 11.001C5.65685 11.001 7 9.65783 7 8.00098C7 7.83417 6.98639 7.67055 6.96021 7.51115L10.1935 5.39633C10.696 5.77589 11.3217 6.00098 12 6.00098ZM4 9.00098C4.55228 9.00098 5 8.55326 5 8.00098C5 7.44869 4.55228 7.00098 4 7.00098C3.44772 7.00098 3 7.44869 3 8.00098C3 8.55326 3.44772 9.00098 4 9.00098Z"
-        fill-rule="evenodd"
+        d="M12 0.000976562C13.6569 0.000976562 15 1.34412 15 3.00098C15 4.65783 13.6569 6.00098 12 6.00098C11.3221 6.00098 10.6986 5.77368 10.1963 5.39453L6.95996 7.51074C6.98618 7.67028 7 7.83402 7 8.00098C7 9.65783 5.65685 11.001 4 11.001C2.34315 11.001 1 9.65783 1 8.00098C1 6.34412 2.34315 5.00098 4 5.00098C4.76276 5.00098 5.45698 5.28795 5.98633 5.75684L9.0918 3.72656C9.03396 3.49397 9 3.25146 9 3.00098C9 1.34412 10.3431 0.000976562 12 0.000976562ZM4 7.00098C3.44772 7.00098 3 7.44869 3 8.00098C3 8.55326 3.44772 9.00098 4 9.00098C4.55228 9.00098 5 8.55326 5 8.00098C5 7.44869 4.55228 7.00098 4 7.00098ZM12 2.00098C11.4477 2.00098 11 2.44869 11 3.00098C11 3.55326 11.4477 4.00098 12 4.00098C12.5523 4.00098 13 3.55326 13 3.00098C13 2.44869 12.5523 2.00098 12 2.00098Z"
       />
       <defs>
         <clippath>
@@ -553,9 +483,7 @@ exports[`Button examples IconButtonSecondaryButtonComponent should render correc
 `;
 
 exports[`Button examples IconButtonSecondaryDisabledButtonComponent should render correctly 1`] = `
-<div
-  id="root11"
->
+<div>
   <div
     class="v-flex v-flex-row"
     vflex=""
@@ -581,22 +509,17 @@ exports[`Button examples IconButtonSecondaryDisabledButtonComponent should rende
           class="v-icon v-icon-connect v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-11"
           v-icon-visa-connect-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M7.69971 11.3646C8.14847 10.8713 8.4999 10.2878 8.72365 9.64453L10.1935 10.6059C10.696 10.2263 11.3217 10.0012 12 10.0012C13.6568 10.0012 15 11.3444 15 13.0012C15 14.6581 13.6568 16.0012 12 16.0012C10.3431 16.0012 8.99995 14.6581 8.99995 13.0012C8.99995 12.7502 9.03079 12.5063 9.08889 12.2732L7.69971 11.3646ZM13 13.0012C13 13.5535 12.5522 14.0012 12 14.0012C11.4477 14.0012 11 13.5535 11 13.0012C11 12.4489 11.4477 12.0012 12 12.0012C12.5522 12.0012 13 12.4489 13 13.0012Z"
-            fill-rule="evenodd"
+            d="M10.1958 10.6074C10.6981 10.2283 11.3217 10.0011 11.9995 10.001C13.6563 10.001 14.9994 11.3442 14.9995 13.001C14.9995 14.6578 13.6564 16.001 11.9995 16.001C10.3429 16.0007 8.99951 14.6577 8.99951 13.001C8.99953 12.7501 9.03426 12.5073 9.09229 12.2744L7.69971 11.3643C8.14828 10.8711 8.49844 10.2875 8.72217 9.64453L10.1958 10.6074ZM11.9995 12.001C11.4475 12.0012 10.9996 12.449 10.9995 13.001C10.9995 13.5531 11.4474 14.0007 11.9995 14.001C12.5518 14.001 12.9995 13.5533 12.9995 13.001C12.9994 12.4488 12.5517 12.001 11.9995 12.001Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M12 4.00098C12.5523 4.00098 13 3.55326 13 3.00098C13 2.44869 12.5523 2.00098 12 2.00098C11.4477 2.00098 11 2.44869 11 3.00098C11 3.55326 11.4477 4.00098 12 4.00098ZM12 6.00098C13.6569 6.00098 15 4.65783 15 3.00098C15 1.34412 13.6569 0.000976562 12 0.000976562C10.3431 0.000976562 9 1.34412 9 3.00098C9 3.25205 9.03084 3.49591 9.08894 3.72899L5.98997 5.75594C5.46043 5.28621 4.76353 5.00098 4 5.00098C2.34315 5.00098 1 6.34412 1 8.00098C1 9.65783 2.34315 11.001 4 11.001C5.65685 11.001 7 9.65783 7 8.00098C7 7.83417 6.98639 7.67055 6.96021 7.51115L10.1935 5.39633C10.696 5.77589 11.3217 6.00098 12 6.00098ZM4 9.00098C4.55228 9.00098 5 8.55326 5 8.00098C5 7.44869 4.55228 7.00098 4 7.00098C3.44772 7.00098 3 7.44869 3 8.00098C3 8.55326 3.44772 9.00098 4 9.00098Z"
-            fill-rule="evenodd"
+            d="M12 0.000976562C13.6569 0.000976562 15 1.34412 15 3.00098C15 4.65783 13.6569 6.00098 12 6.00098C11.3221 6.00098 10.6986 5.77368 10.1963 5.39453L6.95996 7.51074C6.98618 7.67028 7 7.83402 7 8.00098C7 9.65783 5.65685 11.001 4 11.001C2.34315 11.001 1 9.65783 1 8.00098C1 6.34412 2.34315 5.00098 4 5.00098C4.76276 5.00098 5.45698 5.28795 5.98633 5.75684L9.0918 3.72656C9.03396 3.49397 9 3.25146 9 3.00098C9 1.34412 10.3431 0.000976562 12 0.000976562ZM4 7.00098C3.44772 7.00098 3 7.44869 3 8.00098C3 8.55326 3.44772 9.00098 4 9.00098C4.55228 9.00098 5 8.55326 5 8.00098C5 7.44869 4.55228 7.00098 4 7.00098ZM12 2.00098C11.4477 2.00098 11 2.44869 11 3.00098C11 3.55326 11.4477 4.00098 12 4.00098C12.5523 4.00098 13 3.55326 13 3.00098C13 2.44869 12.5523 2.00098 12 2.00098Z"
           />
           <defs>
             <clippath>
@@ -623,9 +546,7 @@ exports[`Button examples IconButtonSecondaryDisabledButtonComponent should rende
 `;
 
 exports[`Button examples IconButtonSecondaryLabelButtonComponent should render correctly 1`] = `
-<div
-  id="root12"
->
+<div>
   <div
     class="v-flex v-flex-row"
     vflex=""
@@ -650,22 +571,17 @@ exports[`Button examples IconButtonSecondaryLabelButtonComponent should render c
           class="v-icon v-icon-connect v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-12"
           v-icon-visa-connect-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M7.69971 11.3646C8.14847 10.8713 8.4999 10.2878 8.72365 9.64453L10.1935 10.6059C10.696 10.2263 11.3217 10.0012 12 10.0012C13.6568 10.0012 15 11.3444 15 13.0012C15 14.6581 13.6568 16.0012 12 16.0012C10.3431 16.0012 8.99995 14.6581 8.99995 13.0012C8.99995 12.7502 9.03079 12.5063 9.08889 12.2732L7.69971 11.3646ZM13 13.0012C13 13.5535 12.5522 14.0012 12 14.0012C11.4477 14.0012 11 13.5535 11 13.0012C11 12.4489 11.4477 12.0012 12 12.0012C12.5522 12.0012 13 12.4489 13 13.0012Z"
-            fill-rule="evenodd"
+            d="M10.1958 10.6074C10.6981 10.2283 11.3217 10.0011 11.9995 10.001C13.6563 10.001 14.9994 11.3442 14.9995 13.001C14.9995 14.6578 13.6564 16.001 11.9995 16.001C10.3429 16.0007 8.99951 14.6577 8.99951 13.001C8.99953 12.7501 9.03426 12.5073 9.09229 12.2744L7.69971 11.3643C8.14828 10.8711 8.49844 10.2875 8.72217 9.64453L10.1958 10.6074ZM11.9995 12.001C11.4475 12.0012 10.9996 12.449 10.9995 13.001C10.9995 13.5531 11.4474 14.0007 11.9995 14.001C12.5518 14.001 12.9995 13.5533 12.9995 13.001C12.9994 12.4488 12.5517 12.001 11.9995 12.001Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M12 4.00098C12.5523 4.00098 13 3.55326 13 3.00098C13 2.44869 12.5523 2.00098 12 2.00098C11.4477 2.00098 11 2.44869 11 3.00098C11 3.55326 11.4477 4.00098 12 4.00098ZM12 6.00098C13.6569 6.00098 15 4.65783 15 3.00098C15 1.34412 13.6569 0.000976562 12 0.000976562C10.3431 0.000976562 9 1.34412 9 3.00098C9 3.25205 9.03084 3.49591 9.08894 3.72899L5.98997 5.75594C5.46043 5.28621 4.76353 5.00098 4 5.00098C2.34315 5.00098 1 6.34412 1 8.00098C1 9.65783 2.34315 11.001 4 11.001C5.65685 11.001 7 9.65783 7 8.00098C7 7.83417 6.98639 7.67055 6.96021 7.51115L10.1935 5.39633C10.696 5.77589 11.3217 6.00098 12 6.00098ZM4 9.00098C4.55228 9.00098 5 8.55326 5 8.00098C5 7.44869 4.55228 7.00098 4 7.00098C3.44772 7.00098 3 7.44869 3 8.00098C3 8.55326 3.44772 9.00098 4 9.00098Z"
-            fill-rule="evenodd"
+            d="M12 0.000976562C13.6569 0.000976562 15 1.34412 15 3.00098C15 4.65783 13.6569 6.00098 12 6.00098C11.3221 6.00098 10.6986 5.77368 10.1963 5.39453L6.95996 7.51074C6.98618 7.67028 7 7.83402 7 8.00098C7 9.65783 5.65685 11.001 4 11.001C2.34315 11.001 1 9.65783 1 8.00098C1 6.34412 2.34315 5.00098 4 5.00098C4.76276 5.00098 5.45698 5.28795 5.98633 5.75684L9.0918 3.72656C9.03396 3.49397 9 3.25146 9 3.00098C9 1.34412 10.3431 0.000976562 12 0.000976562ZM4 7.00098C3.44772 7.00098 3 7.44869 3 8.00098C3 8.55326 3.44772 9.00098 4 9.00098C4.55228 9.00098 5 8.55326 5 8.00098C5 7.44869 4.55228 7.00098 4 7.00098ZM12 2.00098C11.4477 2.00098 11 2.44869 11 3.00098C11 3.55326 11.4477 4.00098 12 4.00098C12.5523 4.00098 13 3.55326 13 3.00098C13 2.44869 12.5523 2.00098 12 2.00098Z"
           />
           <defs>
             <clippath>
@@ -691,9 +607,7 @@ exports[`Button examples IconButtonSecondaryLabelButtonComponent should render c
 `;
 
 exports[`Button examples IconButtonSecondaryLargeButtonComponent should render correctly 1`] = `
-<div
-  id="root13"
->
+<div>
   <button
     aria-label="secondary action"
     buttoncolor="secondary"
@@ -707,22 +621,17 @@ exports[`Button examples IconButtonSecondaryLargeButtonComponent should render c
       class="v-icon v-icon-connect v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-13"
       v-icon-visa-connect-low=""
       viewBox="0 0 24 24"
       width="24"
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M12 16.501C12 17.3294 11.3284 18.001 10.5 18.001C9.67157 18.001 9 17.3294 9 16.501C9 15.6725 9.67157 15.001 10.5 15.001C11.3284 15.001 12 15.6725 12 16.501ZM17 24.001C19.2091 24.001 21 22.2101 21 20.001C21 17.7918 19.2091 16.001 17 16.001C14.7909 16.001 13 17.7918 13 20.001C13 22.2101 14.7909 24.001 17 24.001ZM17 22.001C18.1046 22.001 19 21.1055 19 20.001C19 18.8964 18.1046 18.001 17 18.001C15.8954 18.001 15 18.8964 15 20.001C15 21.1055 15.8954 22.001 17 22.001Z"
-        fill-rule="evenodd"
+        d="M17 16.001C19.2091 16.001 21 17.7918 21 20.001C21 22.2101 19.2091 24.001 17 24.001C14.7909 24.001 13 22.2101 13 20.001C13 17.7918 14.7909 16.001 17 16.001ZM17 18.001C15.8954 18.001 15 18.8964 15 20.001C15 21.1055 15.8954 22.001 17 22.001C18.1046 22.001 19 21.1055 19 20.001C19 18.8964 18.1046 18.001 17 18.001ZM10.5 15.001C11.3284 15.001 12 15.6725 12 16.501C12 17.3294 11.3284 18.001 10.5 18.001C9.67157 18.001 9 17.3294 9 16.501C9 15.6725 9.67157 15.001 10.5 15.001Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M17 8.00098C19.2091 8.00098 21 6.21012 21 4.00098C21 1.79184 19.2091 0.000976562 17 0.000976562C14.7909 0.000976562 13 1.79184 13 4.00098C13 4.46238 13.0781 4.90553 13.2219 5.31793L7.66788 9.02058C6.96006 8.38655 6.02506 8.00098 5 8.00098C2.79086 8.00098 1 9.79184 1 12.001C1 14.2101 2.79086 16.001 5 16.001C7.20914 16.001 9 14.2101 9 12.001C9 11.5396 8.92189 11.0965 8.77816 10.6841L14.3322 6.98142C15.04 7.61542 15.975 8.00098 17 8.00098ZM17 6.00098C18.1046 6.00098 19 5.10555 19 4.00098C19 2.89641 18.1046 2.00098 17 2.00098C15.8954 2.00098 15 2.89641 15 4.00098C15 5.10555 15.8954 6.00098 17 6.00098ZM5 14.001C6.10457 14.001 7 13.1055 7 12.001C7 10.8964 6.10457 10.001 5 10.001C3.89543 10.001 3 10.8964 3 12.001C3 13.1055 3.89543 14.001 5 14.001Z"
-        fill-rule="evenodd"
+        d="M17 0.000976562C19.2091 0.000976562 21 1.79184 21 4.00098C21 6.21012 19.2091 8.00098 17 8.00098C15.975 8.00098 15.0398 7.61545 14.332 6.98145L8.77832 10.6846C8.92194 11.0968 9 11.5398 9 12.001C9 14.2101 7.20914 16.001 5 16.001C2.79086 16.001 1 14.2101 1 12.001C1 9.79184 2.79086 8.00098 5 8.00098C6.02506 8.00098 6.96015 8.38648 7.66797 9.02051L13.2217 5.31836C13.0779 4.90596 13 4.46238 13 4.00098C13 1.79184 14.7909 0.000976562 17 0.000976562ZM5 10.001C3.89543 10.001 3 10.8964 3 12.001C3 13.1055 3.89543 14.001 5 14.001C6.10457 14.001 7 13.1055 7 12.001C7 10.8964 6.10457 10.001 5 10.001ZM17 2.00098C15.8954 2.00098 15 2.89641 15 4.00098C15 5.10555 15.8954 6.00098 17 6.00098C18.1046 6.00098 19 5.10555 19 4.00098C19 2.89641 18.1046 2.00098 17 2.00098Z"
       />
     </svg>
   </button>
@@ -730,9 +639,7 @@ exports[`Button examples IconButtonSecondaryLargeButtonComponent should render c
 `;
 
 exports[`Button examples PrimaryAlternateButtonComponent should render correctly 1`] = `
-<div
-  id="root15"
->
+<div>
   <button
     class="v-alternate v-button"
     type="button"
@@ -745,9 +652,7 @@ exports[`Button examples PrimaryAlternateButtonComponent should render correctly
 `;
 
 exports[`Button examples PrimaryDefaultButtonComponent should render correctly 1`] = `
-<div
-  id="root16"
->
+<div>
   <button
     class="v-button"
     type="button"
@@ -759,9 +664,7 @@ exports[`Button examples PrimaryDefaultButtonComponent should render correctly 1
 `;
 
 exports[`Button examples PrimaryDisabledButtonComponent should render correctly 1`] = `
-<div
-  id="root17"
->
+<div>
   <button
     class="v-button"
     disabled="disabled"
@@ -773,20 +676,17 @@ exports[`Button examples PrimaryDisabledButtonComponent should render correctly 
       class="v-icon v-icon-file-upload v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-15"
       v-icon-visa-file-upload-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        d="M0 10H2V14H14V10H16V16H0V10Z"
+        d="M2 14H14V10H16V16H0V10H2V14Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M9.00062 3.86585L11.0762 5.97354L12.5012 4.57022L8.71313 0.72353L8.00062 0L7.28811 0.72353L3.5 4.57022L4.92502 5.97354L7.00062 3.86585V12.0036H9.00062V3.86585Z"
-        fill-rule="evenodd"
+        d="M8.71289 0.723633L12.501 4.57031L11.0762 5.97363L9.00098 3.86621V12.0039H7.00098V3.86621L4.9248 5.97363L3.5 4.57031L7.28809 0.723633L8.00098 0L8.71289 0.723633Z"
       />
     </svg>
     Primary action
@@ -795,9 +695,7 @@ exports[`Button examples PrimaryDisabledButtonComponent should render correctly 
 `;
 
 exports[`Button examples PrimaryLargeButtonComponent should render correctly 1`] = `
-<div
-  id="root18"
->
+<div>
   <button
     buttonsize="large"
     class="v-button v-icon-two-color v-button-large"
@@ -810,20 +708,17 @@ exports[`Button examples PrimaryLargeButtonComponent should render correctly 1`]
       class="v-icon v-icon-file-upload v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-16"
       v-icon-visa-file-upload-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        d="M0 10H2V14H14V10H16V16H0V10Z"
+        d="M2 14H14V10H16V16H0V10H2V14Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M9.00062 3.86585L11.0762 5.97354L12.5012 4.57022L8.71313 0.72353L8.00062 0L7.28811 0.72353L3.5 4.57022L4.92502 5.97354L7.00062 3.86585V12.0036H9.00062V3.86585Z"
-        fill-rule="evenodd"
+        d="M8.71289 0.723633L12.501 4.57031L11.0762 5.97363L9.00098 3.86621V12.0039H7.00098V3.86621L4.9248 5.97363L3.5 4.57031L7.28809 0.723633L8.00098 0L8.71289 0.723633Z"
       />
     </svg>
     Primary action
@@ -832,9 +727,7 @@ exports[`Button examples PrimaryLargeButtonComponent should render correctly 1`]
 `;
 
 exports[`Button examples PrimaryLeadingIconButtonComponent should render correctly 1`] = `
-<div
-  id="root19"
->
+<div>
   <button
     class="v-button v-icon-two-color"
     type="button"
@@ -846,20 +739,17 @@ exports[`Button examples PrimaryLeadingIconButtonComponent should render correct
       class="v-icon v-icon-file-upload v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-17"
       v-icon-visa-file-upload-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        d="M0 10H2V14H14V10H16V16H0V10Z"
+        d="M2 14H14V10H16V16H0V10H2V14Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M9.00062 3.86585L11.0762 5.97354L12.5012 4.57022L8.71313 0.72353L8.00062 0L7.28811 0.72353L3.5 4.57022L4.92502 5.97354L7.00062 3.86585V12.0036H9.00062V3.86585Z"
-        fill-rule="evenodd"
+        d="M8.71289 0.723633L12.501 4.57031L11.0762 5.97363L9.00098 3.86621V12.0039H7.00098V3.86621L4.9248 5.97363L3.5 4.57031L7.28809 0.723633L8.00098 0L8.71289 0.723633Z"
       />
     </svg>
     Primary action
@@ -868,9 +758,7 @@ exports[`Button examples PrimaryLeadingIconButtonComponent should render correct
 `;
 
 exports[`Button examples PrimarySmallButtonComponent should render correctly 1`] = `
-<div
-  id="root20"
->
+<div>
   <button
     buttonsize="small"
     class="v-button v-icon-two-color v-button-small"
@@ -883,20 +771,17 @@ exports[`Button examples PrimarySmallButtonComponent should render correctly 1`]
       class="v-icon v-icon-file-upload v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-18"
       v-icon-visa-file-upload-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        d="M0 10H2V14H14V10H16V16H0V10Z"
+        d="M2 14H14V10H16V16H0V10H2V14Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M9.00062 3.86585L11.0762 5.97354L12.5012 4.57022L8.71313 0.72353L8.00062 0L7.28811 0.72353L3.5 4.57022L4.92502 5.97354L7.00062 3.86585V12.0036H9.00062V3.86585Z"
-        fill-rule="evenodd"
+        d="M8.71289 0.723633L12.501 4.57031L11.0762 5.97363L9.00098 3.86621V12.0039H7.00098V3.86621L4.9248 5.97363L3.5 4.57031L7.28809 0.723633L8.00098 0L8.71289 0.723633Z"
       />
     </svg>
     Primary action
@@ -905,9 +790,7 @@ exports[`Button examples PrimarySmallButtonComponent should render correctly 1`]
 `;
 
 exports[`Button examples PrimaryTrailingIconButtonComponent should render correctly 1`] = `
-<div
-  id="root21"
->
+<div>
   <button
     class="v-button v-icon-two-color"
     type="button"
@@ -920,20 +803,17 @@ exports[`Button examples PrimaryTrailingIconButtonComponent should render correc
       class="v-icon v-icon-file-upload v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-19"
       v-icon-visa-file-upload-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        d="M0 10H2V14H14V10H16V16H0V10Z"
+        d="M2 14H14V10H16V16H0V10H2V14Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M9.00062 3.86585L11.0762 5.97354L12.5012 4.57022L8.71313 0.72353L8.00062 0L7.28811 0.72353L3.5 4.57022L4.92502 5.97354L7.00062 3.86585V12.0036H9.00062V3.86585Z"
-        fill-rule="evenodd"
+        d="M8.71289 0.723633L12.501 4.57031L11.0762 5.97363L9.00098 3.86621V12.0039H7.00098V3.86621L4.9248 5.97363L3.5 4.57031L7.28809 0.723633L8.00098 0L8.71289 0.723633Z"
       />
     </svg>
   </button>
@@ -941,9 +821,7 @@ exports[`Button examples PrimaryTrailingIconButtonComponent should render correc
 `;
 
 exports[`Button examples SecondaryAlternateButtonComponent should render correctly 1`] = `
-<div
-  id="root22"
->
+<div>
   <button
     buttoncolor="secondary"
     class="v-alternate v-button v-button-secondary"
@@ -957,9 +835,7 @@ exports[`Button examples SecondaryAlternateButtonComponent should render correct
 `;
 
 exports[`Button examples SecondaryDefaultButtonComponent should render correctly 1`] = `
-<div
-  id="root23"
->
+<div>
   <button
     buttoncolor="secondary"
     class="v-button v-button-secondary"
@@ -972,9 +848,7 @@ exports[`Button examples SecondaryDefaultButtonComponent should render correctly
 `;
 
 exports[`Button examples SecondaryDisabledButtonComponent should render correctly 1`] = `
-<div
-  id="root24"
->
+<div>
   <button
     buttoncolor="secondary"
     class="v-button v-button-secondary"
@@ -987,20 +861,17 @@ exports[`Button examples SecondaryDisabledButtonComponent should render correctl
       class="v-icon v-icon-save v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-20"
       v-icon-visa-save-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        d="M8 16L4.5 12.2579L5.83962 10.8217L7.0566 12.1365V8H8.9434V12.1365L10.1604 10.8217L11.5 12.2579L8 16Z"
+        d="M8.94336 12.1367L10.1602 10.8213L11.5 12.2578L8 16L4.5 12.2578L5.83984 10.8213L7.05664 12.1367V8H8.94336V12.1367Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M0 2H8V0H0V2ZM14 14V6H2V14H3V16H0V4H16V16H13V14H14Z"
-        fill-rule="evenodd"
+        d="M16 16H13V14H14V6H2V14H3V16H0V4H16V16ZM8 2H0V0H8V2Z"
       />
       <defs>
         <clippath>
@@ -1017,9 +888,7 @@ exports[`Button examples SecondaryDisabledButtonComponent should render correctl
 `;
 
 exports[`Button examples SecondaryLargeButtonComponent should render correctly 1`] = `
-<div
-  id="root25"
->
+<div>
   <button
     buttoncolor="secondary"
     buttonsize="large"
@@ -1032,20 +901,17 @@ exports[`Button examples SecondaryLargeButtonComponent should render correctly 1
       class="v-icon v-icon-save v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-21"
       v-icon-visa-save-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        d="M8 16L4.5 12.2579L5.83962 10.8217L7.0566 12.1365V8H8.9434V12.1365L10.1604 10.8217L11.5 12.2579L8 16Z"
+        d="M8.94336 12.1367L10.1602 10.8213L11.5 12.2578L8 16L4.5 12.2578L5.83984 10.8213L7.05664 12.1367V8H8.94336V12.1367Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M0 2H8V0H0V2ZM14 14V6H2V14H3V16H0V4H16V16H13V14H14Z"
-        fill-rule="evenodd"
+        d="M16 16H13V14H14V6H2V14H3V16H0V4H16V16ZM8 2H0V0H8V2Z"
       />
       <defs>
         <clippath>
@@ -1062,9 +928,7 @@ exports[`Button examples SecondaryLargeButtonComponent should render correctly 1
 `;
 
 exports[`Button examples SecondaryLeadingIconButtonComponent should render correctly 1`] = `
-<div
-  id="root26"
->
+<div>
   <button
     buttoncolor="secondary"
     class="v-button v-button-secondary"
@@ -1076,20 +940,17 @@ exports[`Button examples SecondaryLeadingIconButtonComponent should render corre
       class="v-icon v-icon-save v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-22"
       v-icon-visa-save-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        d="M8 16L4.5 12.2579L5.83962 10.8217L7.0566 12.1365V8H8.9434V12.1365L10.1604 10.8217L11.5 12.2579L8 16Z"
+        d="M8.94336 12.1367L10.1602 10.8213L11.5 12.2578L8 16L4.5 12.2578L5.83984 10.8213L7.05664 12.1367V8H8.94336V12.1367Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M0 2H8V0H0V2ZM14 14V6H2V14H3V16H0V4H16V16H13V14H14Z"
-        fill-rule="evenodd"
+        d="M16 16H13V14H14V6H2V14H3V16H0V4H16V16ZM8 2H0V0H8V2Z"
       />
       <defs>
         <clippath>
@@ -1106,9 +967,7 @@ exports[`Button examples SecondaryLeadingIconButtonComponent should render corre
 `;
 
 exports[`Button examples SecondarySmallButtonComponent should render correctly 1`] = `
-<div
-  id="root27"
->
+<div>
   <button
     buttoncolor="secondary"
     buttonsize="small"
@@ -1121,20 +980,17 @@ exports[`Button examples SecondarySmallButtonComponent should render correctly 1
       class="v-icon v-icon-save v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-23"
       v-icon-visa-save-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        d="M8 16L4.5 12.2579L5.83962 10.8217L7.0566 12.1365V8H8.9434V12.1365L10.1604 10.8217L11.5 12.2579L8 16Z"
+        d="M8.94336 12.1367L10.1602 10.8213L11.5 12.2578L8 16L4.5 12.2578L5.83984 10.8213L7.05664 12.1367V8H8.94336V12.1367Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M0 2H8V0H0V2ZM14 14V6H2V14H3V16H0V4H16V16H13V14H14Z"
-        fill-rule="evenodd"
+        d="M16 16H13V14H14V6H2V14H3V16H0V4H16V16ZM8 2H0V0H8V2Z"
       />
       <defs>
         <clippath>
@@ -1152,9 +1008,7 @@ exports[`Button examples SecondarySmallButtonComponent should render correctly 1
 `;
 
 exports[`Button examples SecondaryTrailingIconButtonComponent should render correctly 1`] = `
-<div
-  id="root28"
->
+<div>
   <button
     buttoncolor="secondary"
     class="v-button v-button-secondary"
@@ -1167,20 +1021,17 @@ exports[`Button examples SecondaryTrailingIconButtonComponent should render corr
       class="v-icon v-icon-save v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-24"
       v-icon-visa-save-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        d="M8 16L4.5 12.2579L5.83962 10.8217L7.0566 12.1365V8H8.9434V12.1365L10.1604 10.8217L11.5 12.2579L8 16Z"
+        d="M8.94336 12.1367L10.1602 10.8213L11.5 12.2578L8 16L4.5 12.2578L5.83984 10.8213L7.05664 12.1367V8H8.94336V12.1367Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M0 2H8V0H0V2ZM14 14V6H2V14H3V16H0V4H16V16H13V14H14Z"
-        fill-rule="evenodd"
+        d="M16 16H13V14H14V6H2V14H3V16H0V4H16V16ZM8 2H0V0H8V2Z"
       />
       <defs>
         <clippath>
@@ -1196,9 +1047,7 @@ exports[`Button examples SecondaryTrailingIconButtonComponent should render corr
 `;
 
 exports[`Button examples StackedIconButtonAlternateButtonComponent should render correctly 1`] = `
-<div
-  id="root29"
->
+<div>
   <button
     aria-label="Glossary"
     buttoncolor="tertiary"
@@ -1212,22 +1061,17 @@ exports[`Button examples StackedIconButtonAlternateButtonComponent should render
       class="v-icon v-icon-glossary v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-25"
       v-icon-visa-glossary-low=""
       viewBox="0 0 24 24"
       width="24"
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M5 6H9V8H5V6ZM5 10H9V12H5V10ZM9 14H5V16H9V14ZM15 6H19V8H15V6ZM19 10H15V12H19V10ZM15 14H19V16H15V14Z"
-        fill-rule="evenodd"
+        d="M9 16H5V14H9V16ZM19 14V16H15V14H19ZM9 12H5V10H9V12ZM19 12H15V10H19V12ZM9 8H5V6H9V8ZM19 8H15V6H19V8Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11.3 23H12.71L14.41 21.2672H21C22.1 21.2672 23 20.3551 23 19.2404V3.02672C23 1.91202 22.1 1 21 1H3C1.9 1 1 1.91202 1 3.02672V19.2404C1 20.3551 1.9 21.2672 3 21.2672H9.59L11.3 23ZM3 19.2404V3.02672H11V19.8383C10.63 19.4532 10.12 19.2404 9.59 19.2404H3ZM14.41 19.2404C13.89 19.2404 13.37 19.4634 13 19.8383V3.02672H21V19.2404H14.41Z"
-        fill-rule="evenodd"
+        d="M21 1C22.0999 1 22.9998 1.91183 23 3.02637V19.2402C23 20.3549 22.1 21.2676 21 21.2676H14.4102L12.71 23H11.2998L9.58984 21.2676H3C1.9 21.2676 1 20.3549 1 19.2402V3.02637C1.00019 1.91183 1.90011 1 3 1H21ZM3 19.2402H9.58984C10.1197 19.2402 10.63 19.453 11 19.8379V3.02637H3V19.2402ZM13 19.8379C13.37 19.4631 13.8903 19.2402 14.4102 19.2402H21V3.02637H13V19.8379Z"
       />
     </svg>
      Action
@@ -1237,9 +1081,7 @@ exports[`Button examples StackedIconButtonAlternateButtonComponent should render
 `;
 
 exports[`Button examples StackedIconButtonDefaultButtonComponent should render correctly 1`] = `
-<div
-  id="root30"
->
+<div>
   <button
     aria-label="Glossary"
     buttoncolor="tertiary"
@@ -1252,22 +1094,17 @@ exports[`Button examples StackedIconButtonDefaultButtonComponent should render c
       class="v-icon v-icon-glossary v-icon-low v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-26"
       v-icon-visa-glossary-low=""
       viewBox="0 0 24 24"
       width="24"
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M5 6H9V8H5V6ZM5 10H9V12H5V10ZM9 14H5V16H9V14ZM15 6H19V8H15V6ZM19 10H15V12H19V10ZM15 14H19V16H15V14Z"
-        fill-rule="evenodd"
+        d="M9 16H5V14H9V16ZM19 14V16H15V14H19ZM9 12H5V10H9V12ZM19 12H15V10H19V12ZM9 8H5V6H9V8ZM19 8H15V6H19V8Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M11.3 23H12.71L14.41 21.2672H21C22.1 21.2672 23 20.3551 23 19.2404V3.02672C23 1.91202 22.1 1 21 1H3C1.9 1 1 1.91202 1 3.02672V19.2404C1 20.3551 1.9 21.2672 3 21.2672H9.59L11.3 23ZM3 19.2404V3.02672H11V19.8383C10.63 19.4532 10.12 19.2404 9.59 19.2404H3ZM14.41 19.2404C13.89 19.2404 13.37 19.4634 13 19.8383V3.02672H21V19.2404H14.41Z"
-        fill-rule="evenodd"
+        d="M21 1C22.0999 1 22.9998 1.91183 23 3.02637V19.2402C23 20.3549 22.1 21.2676 21 21.2676H14.4102L12.71 23H11.2998L9.58984 21.2676H3C1.9 21.2676 1 20.3549 1 19.2402V3.02637C1.00019 1.91183 1.90011 1 3 1H21ZM3 19.2402H9.58984C10.1197 19.2402 10.63 19.453 11 19.8379V3.02637H3V19.2402ZM13 19.8379C13.37 19.4631 13.8903 19.2402 14.4102 19.2402H21V3.02637H13V19.8379Z"
       />
     </svg>
      Action
@@ -1277,9 +1114,7 @@ exports[`Button examples StackedIconButtonDefaultButtonComponent should render c
 `;
 
 exports[`Button examples TertiaryAlternateButtonComponent should render correctly 1`] = `
-<div
-  id="root31"
->
+<div>
   <button
     buttoncolor="tertiary"
     class="v-alternate v-button v-button-tertiary"
@@ -1293,9 +1128,7 @@ exports[`Button examples TertiaryAlternateButtonComponent should render correctl
 `;
 
 exports[`Button examples TertiaryDefaultButtonComponent should render correctly 1`] = `
-<div
-  id="root32"
->
+<div>
   <button
     buttoncolor="tertiary"
     class="v-button v-button-tertiary"
@@ -1308,9 +1141,7 @@ exports[`Button examples TertiaryDefaultButtonComponent should render correctly 
 `;
 
 exports[`Button examples TertiaryDisabledButtonComponent should render correctly 1`] = `
-<div
-  id="root33"
->
+<div>
   <button
     buttoncolor="tertiary"
     class="v-button v-button-tertiary"
@@ -1323,22 +1154,17 @@ exports[`Button examples TertiaryDisabledButtonComponent should render correctly
       class="v-icon v-icon-history v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-27"
       v-icon-visa-history-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M7 4H9V7.19575L10.47 6.277L11.53 7.973L7 10.8042V4Z"
-        fill-rule="evenodd"
+        d="M9 7.19531L10.4697 6.27734L11.5303 7.97266L7 10.8047V4H9V7.19531Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8C14 11.3137 11.3137 14 8 14V16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 10.3904 1.0484 12.5348 2.70861 14H1V16H6V11H4V12.4724C2.77174 11.3731 2 9.77615 2 8Z"
-        fill-rule="evenodd"
+        d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16V14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 9.77573 2.77224 11.3714 4 12.4707V11H6V16H1V14H2.70898C1.04865 12.5348 0 10.3905 0 8C0 3.58172 3.58172 0 8 0Z"
       />
       <defs>
         <clippath>
@@ -1356,9 +1182,7 @@ exports[`Button examples TertiaryDisabledButtonComponent should render correctly
 `;
 
 exports[`Button examples TertiaryLargeButtonComponent should render correctly 1`] = `
-<div
-  id="root34"
->
+<div>
   <button
     buttoncolor="tertiary"
     buttonsize="large"
@@ -1371,22 +1195,17 @@ exports[`Button examples TertiaryLargeButtonComponent should render correctly 1`
       class="v-icon v-icon-history v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-28"
       v-icon-visa-history-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M7 4H9V7.19575L10.47 6.277L11.53 7.973L7 10.8042V4Z"
-        fill-rule="evenodd"
+        d="M9 7.19531L10.4697 6.27734L11.5303 7.97266L7 10.8047V4H9V7.19531Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8C14 11.3137 11.3137 14 8 14V16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 10.3904 1.0484 12.5348 2.70861 14H1V16H6V11H4V12.4724C2.77174 11.3731 2 9.77615 2 8Z"
-        fill-rule="evenodd"
+        d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16V14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 9.77573 2.77224 11.3714 4 12.4707V11H6V16H1V14H2.70898C1.04865 12.5348 0 10.3905 0 8C0 3.58172 3.58172 0 8 0Z"
       />
       <defs>
         <clippath>
@@ -1404,9 +1223,7 @@ exports[`Button examples TertiaryLargeButtonComponent should render correctly 1`
 `;
 
 exports[`Button examples TertiaryLeadingIconButtonComponent should render correctly 1`] = `
-<div
-  id="root35"
->
+<div>
   <button
     buttoncolor="tertiary"
     class="v-button v-button-tertiary"
@@ -1418,22 +1235,17 @@ exports[`Button examples TertiaryLeadingIconButtonComponent should render correc
       class="v-icon v-icon-history v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-29"
       v-icon-visa-history-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M7 4H9V7.19575L10.47 6.277L11.53 7.973L7 10.8042V4Z"
-        fill-rule="evenodd"
+        d="M9 7.19531L10.4697 6.27734L11.5303 7.97266L7 10.8047V4H9V7.19531Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8C14 11.3137 11.3137 14 8 14V16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 10.3904 1.0484 12.5348 2.70861 14H1V16H6V11H4V12.4724C2.77174 11.3731 2 9.77615 2 8Z"
-        fill-rule="evenodd"
+        d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16V14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 9.77573 2.77224 11.3714 4 12.4707V11H6V16H1V14H2.70898C1.04865 12.5348 0 10.3905 0 8C0 3.58172 3.58172 0 8 0Z"
       />
       <defs>
         <clippath>
@@ -1451,9 +1263,7 @@ exports[`Button examples TertiaryLeadingIconButtonComponent should render correc
 `;
 
 exports[`Button examples TertiarySmallButtonComponent should render correctly 1`] = `
-<div
-  id="root36"
->
+<div>
   <button
     buttoncolor="tertiary"
     buttonsize="small"
@@ -1466,22 +1276,17 @@ exports[`Button examples TertiarySmallButtonComponent should render correctly 1`
       class="v-icon v-icon-history v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-30"
       v-icon-visa-history-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M7 4H9V7.19575L10.47 6.277L11.53 7.973L7 10.8042V4Z"
-        fill-rule="evenodd"
+        d="M9 7.19531L10.4697 6.27734L11.5303 7.97266L7 10.8047V4H9V7.19531Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8C14 11.3137 11.3137 14 8 14V16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 10.3904 1.0484 12.5348 2.70861 14H1V16H6V11H4V12.4724C2.77174 11.3731 2 9.77615 2 8Z"
-        fill-rule="evenodd"
+        d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16V14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 9.77573 2.77224 11.3714 4 12.4707V11H6V16H1V14H2.70898C1.04865 12.5348 0 10.3905 0 8C0 3.58172 3.58172 0 8 0Z"
       />
       <defs>
         <clippath>
@@ -1499,9 +1304,7 @@ exports[`Button examples TertiarySmallButtonComponent should render correctly 1`
 `;
 
 exports[`Button examples TertiaryTrailingIconButtonComponent should render correctly 1`] = `
-<div
-  id="root37"
->
+<div>
   <button
     buttoncolor="tertiary"
     class="v-button v-button-tertiary"
@@ -1514,22 +1317,17 @@ exports[`Button examples TertiaryTrailingIconButtonComponent should render corre
       class="v-icon v-icon-history v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-31"
       v-icon-visa-history-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M7 4H9V7.19575L10.47 6.277L11.53 7.973L7 10.8042V4Z"
-        fill-rule="evenodd"
+        d="M9 7.19531L10.4697 6.27734L11.5303 7.97266L7 10.8047V4H9V7.19531Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8C14 11.3137 11.3137 14 8 14V16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 10.3904 1.0484 12.5348 2.70861 14H1V16H6V11H4V12.4724C2.77174 11.3731 2 9.77615 2 8Z"
-        fill-rule="evenodd"
+        d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16V14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 9.77573 2.77224 11.3714 4 12.4707V11H6V16H1V14H2.70898C1.04865 12.5348 0 10.3905 0 8C0 3.58172 3.58172 0 8 0Z"
       />
       <defs>
         <clippath>
@@ -1545,9 +1343,7 @@ exports[`Button examples TertiaryTrailingIconButtonComponent should render corre
 `;
 
 exports[`Button examples UiIconAlternateButtonComponent should render correctly 1`] = `
-<div
-  id="root38"
->
+<div>
   <button
     aria-label="notifications"
     buttoncolor="tertiary"
@@ -1561,16 +1357,13 @@ exports[`Button examples UiIconAlternateButtonComponent should render correctly 
       class="v-icon v-icon-notifications v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-32"
       v-icon-visa-notifications-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M2 6C2 2.68629 4.68629 0 8 0C11.3137 0 14 2.68629 14 6V10H15V12H14H11V13C11 14.6569 9.65685 16 8 16C6.34315 16 5 14.6569 5 13V12H3H1V10H3H5H11H12V6C12 3.79086 10.2091 2 8 2C5.79086 2 4 3.79086 4 6V8H2V6ZM7 12V13C7 13.5523 7.44772 14 8 14C8.55228 14 9 13.5523 9 13V12H7Z"
-        fill-rule="evenodd"
+        d="M8 0C11.3137 0 14 2.68629 14 6V10H15V12H11V13C11 14.6569 9.65685 16 8 16C6.34315 16 5 14.6569 5 13V12H1V10H12V6C12 3.79086 10.2091 2 8 2C5.79086 2 4 3.79086 4 6V8H2V6C2 2.68629 4.68629 0 8 0ZM7 13C7 13.5523 7.44772 14 8 14C8.55228 14 9 13.5523 9 13V12H7V13Z"
       />
     </svg>
   </button>
@@ -1578,9 +1371,7 @@ exports[`Button examples UiIconAlternateButtonComponent should render correctly 
 `;
 
 exports[`Button examples UiIconBadgeButtonComponent should render correctly 1`] = `
-<div
-  id="root39"
->
+<div>
   <button
     aria-describedby="a-v-badge-0"
     aria-label="notifications"
@@ -1594,16 +1385,13 @@ exports[`Button examples UiIconBadgeButtonComponent should render correctly 1`] 
       class="v-icon v-icon-notifications v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-33"
       v-icon-visa-notifications-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M2 6C2 2.68629 4.68629 0 8 0C11.3137 0 14 2.68629 14 6V10H15V12H14H11V13C11 14.6569 9.65685 16 8 16C6.34315 16 5 14.6569 5 13V12H3H1V10H3H5H11H12V6C12 3.79086 10.2091 2 8 2C5.79086 2 4 3.79086 4 6V8H2V6ZM7 12V13C7 13.5523 7.44772 14 8 14C8.55228 14 9 13.5523 9 13V12H7Z"
-        fill-rule="evenodd"
+        d="M8 0C11.3137 0 14 2.68629 14 6V10H15V12H11V13C11 14.6569 9.65685 16 8 16C6.34315 16 5 14.6569 5 13V12H1V10H12V6C12 3.79086 10.2091 2 8 2C5.79086 2 4 3.79086 4 6V8H2V6C2 2.68629 4.68629 0 8 0ZM7 13C7 13.5523 7.44772 14 8 14C8.55228 14 9 13.5523 9 13V12H7V13Z"
       />
     </svg>
     <sup
@@ -1621,9 +1409,7 @@ exports[`Button examples UiIconBadgeButtonComponent should render correctly 1`] 
 `;
 
 exports[`Button examples UiIconLargeButtonComponent should render correctly 1`] = `
-<div
-  id="root40"
->
+<div>
   <button
     aria-label="notifications"
     buttoncolor="tertiary"
@@ -1637,22 +1423,17 @@ exports[`Button examples UiIconLargeButtonComponent should render correctly 1`] 
       class="v-icon v-icon-low v-icon-notifications v-icon-visa"
       focusable="false"
       height="24"
-      id="a-v__icon__internal-34"
       v-icon-visa-notifications-low=""
       viewBox="0 0 24 24"
       width="24"
     >
       <path
         class="v-icon-secondary"
-        clip-rule="evenodd"
-        d="M12 0C8.13401 0 5 3.13401 5 7V14H7V7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.2386 17 7.00003V11C17 12.9259 17.8249 14.2261 18.9157 15.0115C19.5873 15.4951 20.3332 15.7664 21 15.8979V16H1V18H22C22.5523 18 23 17.5523 23 17V15C23 14.4477 22.5523 14 22 14C21.4934 14 20.7111 13.8398 20.0843 13.3885C19.5085 12.9739 19 12.2741 19 11V7.00003C19 3.13404 15.866 0 12 0ZM12 6C12.5523 6 13 6.44772 13 7V11H15V7C15 5.34315 13.6569 4 12 4V6Z"
-        fill-rule="evenodd"
+        d="M12 0C15.866 0 19 3.13403 19 7V11C19 12.274 19.5082 12.9741 20.084 13.3887C20.7108 13.84 21.4934 14 22 14C22.5523 14 23 14.4477 23 15V17C23 17.5523 22.5523 18 22 18H1V16H21V15.8975C20.3333 15.766 19.5876 15.4952 18.916 15.0117C17.8252 14.2263 17 12.9259 17 11V7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7V14H5V7C5 3.13401 8.13401 0 12 0ZM12 4C13.6569 4 15 5.34315 15 7V11H13V7C13 6.44772 12.5523 6 12 6V4Z"
       />
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M9 20V21C9 22.6569 10.3431 24 12 24C13.6569 24 15 22.6569 15 21V20H13V21C13 21.5523 12.5523 22 12 22C11.4477 22 11 21.5523 11 21V20H9Z"
-        fill-rule="evenodd"
+        d="M15 21C15 22.6569 13.6569 24 12 24C10.3431 24 9 22.6569 9 21V20H11V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V20H15V21Z"
       />
     </svg>
   </button>
@@ -1660,9 +1441,7 @@ exports[`Button examples UiIconLargeButtonComponent should render correctly 1`] 
 `;
 
 exports[`Button examples UiIconMediumButtonComponent should render correctly 1`] = `
-<div
-  id="root41"
->
+<div>
   <button
     aria-label="notifications"
     buttoncolor="tertiary"
@@ -1675,16 +1454,13 @@ exports[`Button examples UiIconMediumButtonComponent should render correctly 1`]
       class="v-icon v-icon-notifications v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-35"
       v-icon-visa-notifications-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M2 6C2 2.68629 4.68629 0 8 0C11.3137 0 14 2.68629 14 6V10H15V12H14H11V13C11 14.6569 9.65685 16 8 16C6.34315 16 5 14.6569 5 13V12H3H1V10H3H5H11H12V6C12 3.79086 10.2091 2 8 2C5.79086 2 4 3.79086 4 6V8H2V6ZM7 12V13C7 13.5523 7.44772 14 8 14C8.55228 14 9 13.5523 9 13V12H7Z"
-        fill-rule="evenodd"
+        d="M8 0C11.3137 0 14 2.68629 14 6V10H15V12H11V13C11 14.6569 9.65685 16 8 16C6.34315 16 5 14.6569 5 13V12H1V10H12V6C12 3.79086 10.2091 2 8 2C5.79086 2 4 3.79086 4 6V8H2V6C2 2.68629 4.68629 0 8 0ZM7 13C7 13.5523 7.44772 14 8 14C8.55228 14 9 13.5523 9 13V12H7V13Z"
       />
     </svg>
   </button>
@@ -1692,9 +1468,7 @@ exports[`Button examples UiIconMediumButtonComponent should render correctly 1`]
 `;
 
 exports[`Button examples UiIconSmallButtonComponent should render correctly 1`] = `
-<div
-  id="root42"
->
+<div>
   <button
     aria-label="notifications"
     buttoncolor="tertiary"
@@ -1708,16 +1482,13 @@ exports[`Button examples UiIconSmallButtonComponent should render correctly 1`] 
       class="v-icon v-icon-notifications v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-36"
       v-icon-visa-notifications-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M2 6C2 2.68629 4.68629 0 8 0C11.3137 0 14 2.68629 14 6V10H15V12H14H11V13C11 14.6569 9.65685 16 8 16C6.34315 16 5 14.6569 5 13V12H3H1V10H3H5H11H12V6C12 3.79086 10.2091 2 8 2C5.79086 2 4 3.79086 4 6V8H2V6ZM7 12V13C7 13.5523 7.44772 14 8 14C8.55228 14 9 13.5523 9 13V12H7Z"
-        fill-rule="evenodd"
+        d="M8 0C11.3137 0 14 2.68629 14 6V10H15V12H11V13C11 14.6569 9.65685 16 8 16C6.34315 16 5 14.6569 5 13V12H1V10H12V6C12 3.79086 10.2091 2 8 2C5.79086 2 4 3.79086 4 6V8H2V6C2 2.68629 4.68629 0 8 0ZM7 13C7 13.5523 7.44772 14 8 14C8.55228 14 9 13.5523 9 13V12H7V13Z"
       />
     </svg>
   </button>
@@ -1725,9 +1496,7 @@ exports[`Button examples UiIconSmallButtonComponent should render correctly 1`] 
 `;
 
 exports[`Button examples UiIconSubtleButtonComponent should render correctly 1`] = `
-<div
-  id="root43"
->
+<div>
   <button
     aria-label="notifications"
     buttoncolor="tertiary"
@@ -1741,16 +1510,13 @@ exports[`Button examples UiIconSubtleButtonComponent should render correctly 1`]
       class="v-icon v-icon-notifications v-icon-tiny v-icon-visa"
       focusable="false"
       height="16"
-      id="a-v__icon__internal-37"
       v-icon-visa-notifications-tiny=""
       viewBox="0 0 16 16"
       width="16"
     >
       <path
         class="v-icon-primary"
-        clip-rule="evenodd"
-        d="M2 6C2 2.68629 4.68629 0 8 0C11.3137 0 14 2.68629 14 6V10H15V12H14H11V13C11 14.6569 9.65685 16 8 16C6.34315 16 5 14.6569 5 13V12H3H1V10H3H5H11H12V6C12 3.79086 10.2091 2 8 2C5.79086 2 4 3.79086 4 6V8H2V6ZM7 12V13C7 13.5523 7.44772 14 8 14C8.55228 14 9 13.5523 9 13V12H7Z"
-        fill-rule="evenodd"
+        d="M8 0C11.3137 0 14 2.68629 14 6V10H15V12H11V13C11 14.6569 9.65685 16 8 16C6.34315 16 5 14.6569 5 13V12H1V10H12V6C12 3.79086 10.2091 2 8 2C5.79086 2 4 3.79086 4 6V8H2V6C2 2.68629 4.68629 0 8 0ZM7 13C7 13.5523 7.44772 14 8 14C8.55228 14 9 13.5523 9 13V12H7V13Z"
       />
     </svg>
   </button>

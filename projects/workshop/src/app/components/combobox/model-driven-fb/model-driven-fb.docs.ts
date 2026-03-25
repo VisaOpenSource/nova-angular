@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,7 @@
  *
  **/
 import { ChangeDetectionStrategy, Component, computed, ElementRef, inject, signal, viewChild } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { InputDirective, NovaLibModule } from '@visa/nova-angular';
 import { VisaChevronDownTiny, VisaChevronUpTiny, VisaErrorTiny } from '@visa/nova-icons-angular';
@@ -41,6 +42,22 @@ export class ModelDrivenFbComboboxComponent {
   /* isInvalid is true if the form has been submitted and the combobox value is empty */
   readonly isInvalid = computed(() => this.isSubmitted() && this.comboboxForm.controls.comboboxFormControl.invalid);
 
+  // Signal to track form control value using toSignal
+  formValue = toSignal(this.comboboxForm.get('comboboxFormControl')!.valueChanges, {
+    initialValue: this.comboboxForm.get('comboboxFormControl')?.value || null
+  });
+
+  // Computed signals for formatted display values
+  labelDisplay = computed(() => {
+    const value = this.formValue();
+    return value && typeof value !== 'string' ? value.label : '';
+  });
+
+  valueDisplay = computed(() => {
+    const value = this.formValue();
+    return value && typeof value !== 'string' ? value.value : '';
+  });
+
   submit() {
     this.isSubmitted.set(true);
     if (this.isInvalid()) this.input().nativeElement.focus();
@@ -49,9 +66,6 @@ export class ModelDrivenFbComboboxComponent {
   reset() {
     this.isSubmitted.set(false);
     /* Clear the value in the combobox */
-    this.comboboxForm.setControl(
-      'comboboxFormControl',
-      this.fb.control<{ label: string; value: string } | null | ''>(null, Validators.required)
-    );
+    this.comboboxForm.controls.comboboxFormControl.reset(null);
   }
 }

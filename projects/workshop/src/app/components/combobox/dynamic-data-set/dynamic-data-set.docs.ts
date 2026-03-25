@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,6 +16,7 @@
  **/
 import { CommonModule } from '@angular/common';
 import {
+  AfterViewInit,
   ChangeDetectionStrategy,
   Component,
   inject,
@@ -37,7 +38,7 @@ import { MockDataService } from '../../../shared/services/mock-data.service';
   standalone: true,
   imports: [CommonModule, NovaLibModule, VisaChevronDownTiny, VisaChevronUpTiny]
 })
-export class DynamicDataSetComboboxComponent implements OnInit {
+export class DynamicDataSetComboboxComponent implements OnInit, AfterViewInit {
   readonly combobox = viewChild.required(ComboboxDirective);
   readonly comboboxService = inject(ComboboxService, { host: true, optional: true });
   readonly mockDataService = inject(MockDataService);

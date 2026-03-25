@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Radio examples DisabledAndSelectedRadioComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <div
     class="v-input-container"
     v-input-container=""
@@ -32,9 +30,7 @@ exports[`Radio examples DisabledAndSelectedRadioComponent should render correctl
 `;
 
 exports[`Radio examples DisabledPanelRadioComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <div
     class="v-action v-action-secondary v-checkbox-panel"
     v-radio-panel=""
@@ -84,9 +80,7 @@ exports[`Radio examples DisabledPanelRadioComponent should render correctly 1`] 
 `;
 
 exports[`Radio examples DisabledRadioComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <div
     class="v-input-container"
     v-input-container=""
@@ -114,9 +108,7 @@ exports[`Radio examples DisabledRadioComponent should render correctly 1`] = `
 `;
 
 exports[`Radio examples GroupRadioComponent should render correctly 1`] = `
-<div
-  id="root4"
->
+<div>
   <fieldset>
     <legend
       class="v-label v-typography-label"
@@ -203,9 +195,7 @@ exports[`Radio examples GroupRadioComponent should render correctly 1`] = `
 `;
 
 exports[`Radio examples GroupWithErrorRadioComponent should render correctly 1`] = `
-<div
-  id="root3"
->
+<div>
   <fieldset
     aria-labelledby="radio-group-error-legend radio-group-error-message"
     class="v-mt-16"
@@ -338,9 +328,7 @@ exports[`Radio examples GroupWithErrorRadioComponent should render correctly 1`]
 `;
 
 exports[`Radio examples HorizontalGroupRadioComponent should render correctly 1`] = `
-<div
-  id="root5"
->
+<div>
   <fieldset>
     <legend
       class="v-label v-typography-label"
@@ -434,9 +422,7 @@ exports[`Radio examples HorizontalGroupRadioComponent should render correctly 1`
 `;
 
 exports[`Radio examples ModelDrivenFbRadioComponent should render correctly 1`] = `
-<div
-  id="root6"
->
+<div>
   <form
     class="ng-untouched ng-dirty ng-valid v-gap-16 v-flex v-flex-col v-mt-16"
     novalidate=""
@@ -579,9 +565,7 @@ exports[`Radio examples ModelDrivenFbRadioComponent should render correctly 1`] 
 `;
 
 exports[`Radio examples ModelDrivenFormRadioComponent should render correctly 1`] = `
-<div
-  id="root7"
->
+<div>
   <form
     class="ng-untouched ng-dirty ng-valid v-gap-16 v-flex v-flex-col v-mt-16"
     novalidate=""
@@ -725,9 +709,7 @@ exports[`Radio examples ModelDrivenFormRadioComponent should render correctly 1`
 `;
 
 exports[`Radio examples PanelGroupRadioComponent should render correctly 1`] = `
-<div
-  id="root9"
->
+<div>
   <fieldset>
     <legend
       class="v-label v-typography-label"
@@ -881,9 +863,7 @@ exports[`Radio examples PanelGroupRadioComponent should render correctly 1`] = `
 `;
 
 exports[`Radio examples PanelGroupWithErrorRadioComponent should render correctly 1`] = `
-<div
-  id="root8"
->
+<div>
   <fieldset
     aria-labelledby="panel-group-error-legend panel-group-error-message"
     class="v-mt-16"
@@ -1082,9 +1062,7 @@ exports[`Radio examples PanelGroupWithErrorRadioComponent should render correctl
 `;
 
 exports[`Radio examples PanelRadioComponent should render correctly 1`] = `
-<div
-  id="root11"
->
+<div>
   <div
     class="v-action v-action-secondary v-checkbox-panel"
     v-radio-panel=""
@@ -1133,9 +1111,7 @@ exports[`Radio examples PanelRadioComponent should render correctly 1`] = `
 `;
 
 exports[`Radio examples PanelWithoutDescriptionRadioComponent should render correctly 1`] = `
-<div
-  id="root10"
->
+<div>
   <div
     class="v-action v-action-secondary v-checkbox-panel v-align-items-start v-flex v-flex-col"
     v-radio-panel=""
@@ -1170,9 +1146,7 @@ exports[`Radio examples PanelWithoutDescriptionRadioComponent should render corr
 `;
 
 exports[`Radio examples SelectedRadioComponent should render correctly 1`] = `
-<div
-  id="root12"
->
+<div>
   <div
     class="v-input-container"
     v-input-container=""
@@ -1200,9 +1174,7 @@ exports[`Radio examples SelectedRadioComponent should render correctly 1`] = `
 `;
 
 exports[`Radio examples TemplateDrivenFormRadioComponent should render correctly 1`] = `
-<div
-  id="root13"
->
+<div>
   <form
     class="ng-untouched ng-pristine ng-valid v-flex v-flex-col v-mt-16"
     novalidate=""
@@ -1345,9 +1317,7 @@ exports[`Radio examples TemplateDrivenFormRadioComponent should render correctly
 `;
 
 exports[`Radio examples WithDescriptionRadioComponent should render correctly 1`] = `
-<div
-  id="root14"
->
+<div>
   <div
     class="v-input-container v-align-items-start v-flex v-flex-row"
     v-input-container=""
@@ -1392,9 +1362,7 @@ exports[`Radio examples WithDescriptionRadioComponent should render correctly 1`
 `;
 
 exports[`Radio examples WithLabelRadioComponent should render correctly 1`] = `
-<div
-  id="root15"
->
+<div>
   <div
     class="v-input-container"
     v-input-container=""
@@ -1421,9 +1389,7 @@ exports[`Radio examples WithLabelRadioComponent should render correctly 1`] = `
 `;
 
 exports[`Radio examples WithoutVisibleLabelRadioComponent should render correctly 1`] = `
-<div
-  id="root16"
->
+<div>
   <input
     aria-label="Radio button without visible label"
     class="v-radio"

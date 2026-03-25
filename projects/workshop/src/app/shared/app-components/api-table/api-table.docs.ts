@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,11 +22,14 @@ import {
   VisaChevronDownTiny,
   VisaChevronRightTiny,
   VisaCodeForkAltTiny,
-  VisaInformationTiny
+  VisaInformationTiny,
 } from '@visa/nova-icons-angular';
 import { MarkdownModule } from 'ngx-markdown';
 import { RouterModule } from '@angular/router';
-import { APITypes, ReturnAPI } from '../../../shared/services/workshop.constants';
+import {
+  APITypes,
+  ReturnAPI,
+} from '../../../shared/services/workshop.constants';
 import { OnThisPageComponent } from '../on-this-page-alm/on-this-page-alm.docs';
 import { SafeHtmlDirective } from '../safe-html/safe-html.directive';
 
@@ -44,10 +47,10 @@ import { SafeHtmlDirective } from '../safe-html/safe-html.directive';
     VisaChevronDownTiny,
     VisaChevronRightTiny,
     OnThisPageComponent,
-    SafeHtmlDirective
+    SafeHtmlDirective,
   ],
 
-  styleUrl: './api-table.docs.scss'
+  styleUrl: './api-table.docs.scss',
 })
 export class APITableDocsComponent {
   readonly APITypes = APITypes;
@@ -61,7 +64,10 @@ export class APITableDocsComponent {
       this.almData.set([]);
       if (this.workshopService.libJsonDataReady()) {
         this.workshopService.neededAPI()?.forEach((api) => {
-          const result = this.workshopService.getAPI(api['name'], api['type'] ? api['type'] : APITypes.DIRECTIVE);
+          const result = this.workshopService.getAPI(
+            api['name'],
+            api['type'] ? api['type'] : APITypes.DIRECTIVE,
+          );
           if (result) {
             this.APIData.update((prevResult) => [...prevResult, result]);
             const name = result.component ? result.component : result.name;

@@ -1,0 +1,112 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div v-table-wrapper>
+  <table v-table v-accordion class="accordion-style-table" tableSize="compact">
+    <caption vSR>
+      Single row expandable table
+    </caption>
+    <thead>
+      <tr>
+        <th v-th scope="col" class="compact-column">
+          <span vSR>Expand or collapse row</span>
+        </th>
+        @for(colItem of columnData; track colItem.name){
+        <th
+          v-th
+          scope="col"
+          [attr.aria-sort]="
+                colItem.name === sortKey().column
+                  ? sortKey().direction === 'ascending'
+                    ? 'ascending'
+                    : 'descending'
+                  : null
+              "
+          [class.compact-column]="colItem.compact"
+        >
+          <div vFlex vAlignItemsCenter vFlexGrow vGap="4">
+            @if (colItem.compact) {
+            <span vSR>{{ colItem.name }}</span>
+            } @else { {{ colItem.name }} }
+            <div vFlex vAlignItemsCenter vFlexGrow vGap="4">
+              <nova-workshop-dynamic-table-actions-button
+                [label]="colItem.name"
+                [sorted]="colItem.name === sortKey().column ? sortKey().direction : 'none'"
+                (sort)="sort(colItem, $event)"
+                [column]="colItem"
+              />
+            </div>
+          </div>
+        </th>
+        }
+      </tr>
+    </thead>
+    @for(rowItem of sortedData(); track rowItem[identifyingColumn]){
+    <tbody v-accordion-item [open]="expandedRow() === rowItem[identifyingColumn]">
+      <tr v-accordion-heading>
+        <td v-td class="compact-column">
+          <div>
+            <button
+              v-button-icon
+              (click)="toggleRow(rowItem)"
+              [aria-expanded]="expandedRow() === rowItem[identifyingColumn]"
+              buttonSize="small"
+              buttonColor="tertiary"
+              [attr.aria-labelledby]="rowItem[identifyingColumn] + '-id-single-row'"
+              vMY="auto"
+              vML="auto"
+            >
+              @if (expandedRow() === rowItem[identifyingColumn]) {
+              <svg v-icon-visa-chevron-down-tiny style="--v-accordion-icon-color: white" />
+              } @else {
+              <svg v-icon-visa-chevron-right-tiny style="--v-accordion-icon-color: white" />
+              }
+            </button>
+          </div>
+        </td>
+        @for(colItem of columnData; track colItem.name){
+        <td
+          v-td
+          [attr.scope]="colItem.identifier ? 'row' : null"
+          [class.compact-column]="colItem.compact"
+          [attr.id]="colItem.name === identifyingColumn ? rowItem[identifyingColumn] + '-id-single-row' : null"
+          vTypography="body-2"
+        >
+          @if (colItem.component) {
+          <ng-container
+            [ngComponentOutlet]="colItem.component"
+            [ngComponentOutletInputs]="getComponentInputs(colItem, rowItem, identifyingColumn)"
+          />
+          } @else { {{ rowItem[colItem.name] }} }
+        </td>
+        }
+      </tr>
+      <tr>
+        <td
+          v-accordion-panel
+          [attr.colspan]="columnData.length + 1"
+          [attr.aria-hidden]="!(expandedRow() === rowItem[identifyingColumn])"
+          [vHide]="!(expandedRow() === rowItem[identifyingColumn])"
+          vPY="10"
+        >
+          <p vTypography="label-large-active">{{ rowItem[identifyingColumn] }} expanded content</p>
+          <p>This is an optional description with additional data.</p>
+        </td>
+      </tr>
+    </tbody>
+    }
+  </table>
+</div>

@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,261 +15,288 @@
  *
  -->
 @if (navOpen()) {
-  <nav v-nav vertical class="layout__nav-menu" aria-label="Primary">
-    <ul v-tabs vertical>
-      <li v-tab-item>
-        <a
-          v-button
-          routerLink="/"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }"
-          ariaCurrentWhenActive="page"
-          (click)="closeSideNavOnMobile()"
-        >
-          Getting Started
-        </a>
-      </li>
-      <li v-tab-item disclosureTab (disclosureTabToggled)="foundationsOpen = !foundationsOpen">
-        <button v-button>
-          Foundations
-          <v-icon-visa-toggle>
-            <svg v-toggle-default-template v-icon-visa-chevron-down-tiny />
-            <svg v-toggle-rotated-template v-icon-visa-chevron-up-tiny />
-          </v-icon-visa-toggle>
-        </button>
-        @if (foundationsOpen) {
-          <ul v-tabs vertical>
-            <li v-tab-item>
-              <a
-                v-button
-                routerLink="/foundations/grid"
-                routerLinkActive="active"
-                [routerLinkActiveOptions]="{ exact: true }"
-                ariaCurrentWhenActive="page"
-                (click)="closeSideNavOnMobile()"
-              >
-                Grid Resources
-              </a>
-            </li>
-          </ul>
+<nav v-nav vertical class="layout__nav-menu" aria-label="Primary">
+  <ul v-tabs vertical>
+    <li v-tab-item>
+      <a
+        v-button
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        ariaCurrentWhenActive="page"
+        (click)="closeSideNavOnMobile()"
+      >
+        Getting Started
+      </a>
+    </li>
+    <li
+      v-tab-item
+      disclosureTab
+      (disclosureTabToggled)="foundationsOpen = !foundationsOpen"
+    >
+      <button v-button>
+        Foundations
+        <v-icon-visa-toggle>
+          <svg v-toggle-default-template v-icon-visa-chevron-down-tiny />
+          <svg v-toggle-rotated-template v-icon-visa-chevron-up-tiny />
+        </v-icon-visa-toggle>
+      </button>
+      @if (foundationsOpen) {
+      <ul v-tabs vertical>
+        <li v-tab-item>
+          <a
+            v-button
+            routerLink="/foundations/grid"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            ariaCurrentWhenActive="page"
+            (click)="closeSideNavOnMobile()"
+          >
+            Grid Resources
+          </a>
+        </li>
+      </ul>
+      }
+    </li>
+    <li
+      v-tab-item
+      disclosureTab
+      (disclosureTabToggled)="utilitiesOpen = !utilitiesOpen"
+    >
+      <button v-button>
+        Utility directives
+        <v-icon-visa-toggle>
+          <svg v-toggle-default-template v-icon-visa-chevron-down-tiny />
+          <svg v-toggle-rotated-template v-icon-visa-chevron-up-tiny />
+        </v-icon-visa-toggle>
+      </button>
+      @if (utilitiesOpen) {
+      <ul v-tabs vertical>
+        @for (utility of utilities; track utility.path) {
+        <li v-tab-item>
+          <a
+            v-button
+            [routerLink]="'/utilities/' + utility.path"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            ariaCurrentWhenActive="page"
+            (click)="closeSideNavOnMobile()"
+            >{{ utility.name }}</a
+          >
+        </li>
         }
-      </li>
-      <li v-tab-item disclosureTab (disclosureTabToggled)="utilitiesOpen = !utilitiesOpen">
-        <button v-button>
-          Utility directives
-          <v-icon-visa-toggle>
-            <svg v-toggle-default-template v-icon-visa-chevron-down-tiny />
-            <svg v-toggle-rotated-template v-icon-visa-chevron-up-tiny />
-          </v-icon-visa-toggle>
-        </button>
-        @if (utilitiesOpen) {
-          <ul v-tabs vertical>
-            @for (utility of utilities; track utility.path) {
-              <li v-tab-item>
-                <a
-                  v-button
-                  [routerLink]="'/utilities/' + utility.path"
-                  routerLinkActive="active"
-                  [routerLinkActiveOptions]="{ exact: true }"
-                  ariaCurrentWhenActive="page"
-                  (click)="closeSideNavOnMobile()"
-                  >{{ utility.name }}</a
-                >
-              </li>
+      </ul>
+      }
+    </li>
+    <li
+      v-tab-item
+      disclosureTab
+      (disclosureTabToggled)="servicesOpen = !servicesOpen"
+    >
+      <button v-button>
+        Services
+        <v-icon-visa-toggle>
+          <svg v-toggle-default-template v-icon-visa-chevron-down-tiny />
+          <svg v-toggle-rotated-template v-icon-visa-chevron-up-tiny />
+        </v-icon-visa-toggle>
+      </button>
+      @if (servicesOpen) {
+      <ul v-tabs vertical>
+        @for (service of services; track service.path) {
+        <li v-tab-item>
+          <a
+            v-button
+            [routerLink]="'/services/' + service.path"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            ariaCurrentWhenActive="page"
+            (click)="closeSideNavOnMobile()"
+            >{{ service.name }}</a
+          >
+        </li>
+        }
+      </ul>
+      }
+    </li>
+    <li
+      v-tab-item
+      disclosureTab
+      (disclosureTabToggled)="patternsOpen = !patternsOpen"
+    >
+      <button v-button>
+        Patterns
+        <v-icon-visa-toggle>
+          <svg v-toggle-default-template v-icon-visa-chevron-down-tiny></svg>
+          <svg v-toggle-rotated-template v-icon-visa-chevron-up-tiny></svg>
+        </v-icon-visa-toggle>
+      </button>
+      @if (patternsOpen) {
+      <ul v-tabs vertical>
+        @for (pattern of patterns; track pattern.path) {
+        <li v-tab-item>
+          <a
+            v-button
+            [routerLink]="'/patterns/' + pattern.path"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            ariaCurrentWhenActive="page"
+            (click)="closeSideNavOnMobile()"
+            >{{ pattern.name }}</a
+          >
+        </li>
+        }
+      </ul>
+      }
+    </li>
+    <li v-tab-item>
+      <a
+        v-button
+        routerLink="/components"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        ariaCurrentWhenActive="page"
+        (click)="closeSideNavOnMobile()"
+      >
+        Components
+      </a>
+      <ul v-tabs vertical>
+        @for (component of components; track component.path) {
+        <li v-tab-item>
+          <a
+            v-button
+            [routerLink]="'/components/' + component.path"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            ariaCurrentWhenActive="page"
+            (click)="closeSideNavOnMobile()"
+            >{{ component.name }}</a
+          >
+        </li>
+        }
+      </ul>
+    </li>
+    <li
+      v-tab-item
+      [vContainerHide]="['desktop', 'md']"
+      disclosureTab
+      (disclosureTabToggled)="supportOpen = !supportOpen"
+    >
+      <button v-button>
+        Support
+        <v-icon-visa-toggle>
+          <svg v-toggle-default-template v-icon-visa-chevron-down-tiny />
+          <svg v-toggle-rotated-template v-icon-visa-chevron-up-tiny />
+        </v-icon-visa-toggle>
+      </button>
+      @if (supportOpen) {
+      <ul v-tabs vertical>
+        <li v-tab-item>
+          @for (item of supportLinks; track item.name) {
+          <a
+            v-button
+            [href]="item.url"
+            vP="4"
+            vFlex
+            buttonColor="tertiary"
+            vJustifyContentBetween
+            vTypography="label-large"
+            >{{ item.name }} @if (item.name !== 'Email') {
+            <svg v-icon-visa-maximize-tiny />
             }
-          </ul>
-        }
-      </li>
-      <li v-tab-item disclosureTab (disclosureTabToggled)="servicesOpen = !servicesOpen">
-        <button v-button>
-          Services
-          <v-icon-visa-toggle>
-            <svg v-toggle-default-template v-icon-visa-chevron-down-tiny />
-            <svg v-toggle-rotated-template v-icon-visa-chevron-up-tiny />
-          </v-icon-visa-toggle>
-        </button>
-        @if (servicesOpen) {
-          <ul v-tabs vertical>
-            @for (service of services; track service.path) {
-              <li v-tab-item>
-                <a
-                  v-button
-                  [routerLink]="'/services/' + service.path"
-                  routerLinkActive="active"
-                  [routerLinkActiveOptions]="{ exact: true }"
-                  ariaCurrentWhenActive="page"
-                  (click)="closeSideNavOnMobile()"
-                  >{{ service.name }}</a
-                >
-              </li>
-            }
-          </ul>
-        }
-      </li>
-      <li v-tab-item disclosureTab (disclosureTabToggled)="patternsOpen = !patternsOpen">
-        <button v-button>
-          Patterns
-          <v-icon-visa-toggle>
-            <svg v-toggle-default-template v-icon-visa-chevron-down-tiny></svg>
-            <svg v-toggle-rotated-template v-icon-visa-chevron-up-tiny></svg>
-          </v-icon-visa-toggle>
-        </button>
-        @if (patternsOpen) {
-          <ul v-tabs vertical>
-            @for (pattern of patterns; track pattern.path) {
-              <li v-tab-item>
-                <a
-                  v-button
-                  [routerLink]="'/patterns/' + pattern.path"
-                  routerLinkActive="active"
-                  [routerLinkActiveOptions]="{ exact: true }"
-                  ariaCurrentWhenActive="page"
-                  (click)="closeSideNavOnMobile()"
-                  >{{ pattern.name }}</a
-                >
-              </li>
-            }
-          </ul>
-        }
-      </li>
-      <li v-tab-item>
-        <a
-          v-button
-          routerLink="/components"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }"
-          ariaCurrentWhenActive="page"
-          (click)="closeSideNavOnMobile()"
-        >
-          Components
-        </a>
-        <ul v-tabs vertical>
-          @for (component of components; track component.path) {
-            <li v-tab-item>
-              <a
-                v-button
-                [routerLink]="'/components/' + component.path"
-                routerLinkActive="active"
-                [routerLinkActiveOptions]="{ exact: true }"
-                ariaCurrentWhenActive="page"
-                (click)="closeSideNavOnMobile()"
-                >{{ component.name }}</a
-              >
-            </li>
+          </a>
           }
-        </ul>
-      </li>
-      <li
-        v-tab-item
-        [vContainerHide]="['desktop', 'md']"
-        disclosureTab
-        (disclosureTabToggled)="supportOpen = !supportOpen"
+        </li>
+      </ul>
+      }
+    </li>
+    <li
+      v-tab-item
+      [vContainerHide]="['desktop', 'md']"
+      disclosureTab
+      (disclosureTabToggled)="versionOpen = !versionOpen"
+    >
+      <button v-button>
+        v{{ version }}
+        <v-icon-visa-toggle>
+          <svg v-toggle-default-template v-icon-visa-chevron-down-tiny />
+          <svg v-toggle-rotated-template v-icon-visa-chevron-up-tiny />
+        </v-icon-visa-toggle>
+      </button>
+      @if (versionOpen) {
+      <ul v-tabs vertical>
+        <li v-tab-item>
+          @for (version of versionLinks; track version.name) {
+          <a
+            v-button
+            [href]="version.url"
+            vP="4"
+            vFlex
+            buttonColor="tertiary"
+            vJustifyContentBetween
+            vTypography="label-large"
+            >{{ version.name }}
+            <svg v-icon-visa-maximize-tiny />
+          </a>
+          }
+        </li>
+      </ul>
+      }
+    </li>
+    <li v-tab-item [vContainerHide]="['desktop', 'md']">
+      <a
+        v-button
+        buttonColor="tertiary"
+        rel="noopener noreferrer"
+        target="_blank"
+        vFlex
+        vJustifyContentBetween
+        href="https://design.visa.com/"
+        aria-label="VPDS Home (opens in a new tab)"
       >
-        <button v-button>
-          Support
-          <v-icon-visa-toggle>
-            <svg v-toggle-default-template v-icon-visa-chevron-down-tiny />
-            <svg v-toggle-rotated-template v-icon-visa-chevron-up-tiny />
-          </v-icon-visa-toggle>
-        </button>
-        @if (supportOpen) {
-          <ul v-tabs vertical>
-            <li v-tab-item>
-              @for (item of supportLinks; track item.name) {
-                <a
-                  v-button
-                  [href]="item.url"
-                  vP="4"
-                  vFlex
-                  buttonColor="tertiary"
-                  vJustifyContentBetween
-                  vTypography="label-large"
-                  >{{ item.name }}
-                  @if (item.name !== 'Email') {
-                    <svg v-icon-visa-maximize-tiny />
-                  }
-                </a>
-              }
-            </li>
-          </ul>
-        }
-      </li>
-      <li
-        v-tab-item
-        [vContainerHide]="['desktop', 'md']"
-        disclosureTab
-        (disclosureTabToggled)="versionOpen = !versionOpen"
+        VPDS Home
+        <svg v-icon-visa-maximize-tiny />
+      </a>
+    </li>
+    <li v-tab-item [vContainerHide]="['desktop', 'md']">
+      <a
+        v-button
+        buttonColor="tertiary"
+        rel="noopener noreferrer"
+        target="_blank"
+        vFlex
+        vJustifyContentBetween
+        href="https://bookmarks.visa.com/vpds-vault-angular"
+        aria-label="Vault (opens in a new tab)"
       >
-        <button v-button>
-          v{{ version }}
-          <v-icon-visa-toggle>
-            <svg v-toggle-default-template v-icon-visa-chevron-down-tiny />
-            <svg v-toggle-rotated-template v-icon-visa-chevron-up-tiny />
-          </v-icon-visa-toggle>
-        </button>
-        @if (versionOpen) {
-          <ul v-tabs vertical>
-            <li v-tab-item>
-              @for (version of versionLinks; track version.name) {
-                <a
-                  v-button
-                  [href]="version.url"
-                  vP="4"
-                  vFlex
-                  buttonColor="tertiary"
-                  vJustifyContentBetween
-                  vTypography="label-large"
-                  >{{ version.name }}
-                  <svg v-icon-visa-maximize-tiny />
-                </a>
-              }
-            </li>
-          </ul>
-        }
-      </li>
-      <li v-tab-item [vContainerHide]="['desktop', 'md']">
-        <a
-          v-button
-          buttonColor="tertiary"
-          rel="noopener noreferrer"
-          target="_blank"
-          vFlex
-          vJustifyContentBetween
-          href="https://design.visa.com/"
-          aria-label="VPDS Home (opens in a new tab)"
-        >
-          VPDS Home
-          <svg v-icon-visa-maximize-tiny />
-        </a>
-      </li>
-      <li v-tab-item [vContainerHide]="['desktop', 'md']">
-        <a
-          v-button
-          buttonColor="tertiary"
-          rel="noopener noreferrer"
-          target="_blank"
-          vFlex
-          vJustifyContentBetween
-          href="https://bookmarks.visa.com/vpds-vault-angular"
-          aria-label="Vault (opens in a new tab)"
-        >
-          Vault
-          <svg v-icon-visa-maximize-tiny />
-        </a>
-      </li>
-    </ul>
-    <ng-container *ngTemplateOutlet="navFooter; context: { open: navOpen() }"></ng-container>
-  </nav>
+        Vault
+        <svg v-icon-visa-maximize-tiny />
+      </a>
+    </li>
+  </ul>
+  <ng-container
+    *ngTemplateOutlet="navFooter; context: { open: navOpen() }"
+  ></ng-container>
+</nav>
 } @else {
-  <nav v-nav vertical aria-label="Primary">
-    <ng-container *ngTemplateOutlet="navFooter; context: { open: navOpen() }"></ng-container>
-  </nav>
+<nav v-nav vertical aria-label="Primary">
+  <ng-container
+    *ngTemplateOutlet="navFooter; context: { open: navOpen() }"
+  ></ng-container>
+</nav>
 }
 
 <ng-template #navFooter let-open="open">
-  <div vFlex vFlexCol vAlignSelfStretch vGap="4" vMT="auto" vContainerHide="mobile" class="layout__nav-footer">
+  <div
+    vFlex
+    vFlexCol
+    vAlignSelfStretch
+    vGap="4"
+    vMT="auto"
+    vContainerHide="mobile"
+    class="layout__nav-footer"
+  >
     @if (open) {
-      <hr v-divider dividerType="decorative" vM="6" />
+    <hr v-divider dividerType="decorative" vM="6" />
     }
     <button
       [vML]="open ? 'auto' : 3"
@@ -281,9 +308,9 @@
       (click)="toggleNav()"
     >
       @if (open) {
-        <svg v-icon-visa-media-rewind-tiny />
+      <svg v-icon-visa-media-rewind-tiny />
       } @else {
-        <svg v-icon-visa-media-fast-forward-tiny />
+      <svg v-icon-visa-media-fast-forward-tiny />
       }
     </button>
   </div>

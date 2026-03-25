@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Footer examples NovaFooterDefaultComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <footer
     class="v-footer v-gap-15"
     v-footer=""
@@ -15,6 +13,7 @@ exports[`Footer examples NovaFooterDefaultComponent should render correctly 1`] 
       vmr="1"
     >
       <svg
+        aria-hidden="false"
         aria-label="Visa"
         class="v-logo"
         height="23"
@@ -42,7 +41,6 @@ exports[`Footer examples NovaFooterDefaultComponent should render correctly 1`] 
       </p>
       <ul
         class="v-gap-16 v-flex v-flex-row v-flex-wrap"
-        v-footer-links=""
         vflex=""
         vflexwrap=""
         vgap="16"
@@ -82,9 +80,7 @@ exports[`Footer examples NovaFooterDefaultComponent should render correctly 1`] 
 `;
 
 exports[`Footer examples NovaFooterExtendedComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <footer
     class="v-footer v-gap-32 v-flex v-flex-row v-px-32"
     v-footer=""
@@ -101,6 +97,7 @@ exports[`Footer examples NovaFooterExtendedComponent should render correctly 1`]
       vgap="24"
     >
       <svg
+        aria-hidden="false"
         aria-label="Visa"
         class="v-logo"
         height="23"

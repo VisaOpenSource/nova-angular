@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@
   <ul vFlex>
     @for(item of [].constructor(7); track item; let i = $index){
     <li>
-      <label v-label v-chip v-chip-selection vGap="6" for="selection-chip-group{{i}}">
+      <label v-label v-chip vGap="6" for="selection-chip-group{{i}}">
         Label {{i + 1}}
         <input v-checkbox id="selection-chip-group{{i}}" />
       </label>

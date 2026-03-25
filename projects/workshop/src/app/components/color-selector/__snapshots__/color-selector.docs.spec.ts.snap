@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Color selector examples AvailableValuesColorSelectorComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <div
     class="v-gap-6 v-align-items-center v-flex v-flex-row v-flex-wrap"
     valignitemscenter=""
@@ -50,22 +48,17 @@ exports[`Color selector examples AvailableValuesColorSelectorComponent should re
           class="v-icon v-icon-accessibility v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-0"
           v-icon-visa-accessibility-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M3.75736 3.75736C1.41421 6.1005 1.41421 9.89949 3.75736 12.2426L2.34315 13.6569C-0.781049 10.5327 -0.781049 5.46734 2.34315 2.34315C5.46734 -0.781049 10.5327 -0.781049 13.6569 2.34315C16.781 5.46734 16.781 10.5327 13.6569 13.6569L12.2426 12.2426C14.5858 9.8995 14.5858 6.1005 12.2426 3.75736C9.89949 1.41421 6.1005 1.41421 3.75736 3.75736Z"
-            fill-rule="evenodd"
+            d="M2.34338 2.34338C5.46758 -0.780809 10.5327 -0.78081 13.6569 2.34338C16.7809 5.46759 16.781 10.5327 13.6569 13.6569L12.2428 12.2428C14.5859 9.89969 14.5858 6.1006 12.2428 3.75745C9.89965 1.4143 6.10059 1.4143 3.75745 3.75745C1.4143 6.10059 1.4143 9.89965 3.75745 12.2428L2.34338 13.6569C-0.78081 10.5327 -0.78081 5.46758 2.34338 2.34338Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 8C9.10457 8 10 7.10457 10 6C10 4.89543 9.10457 4 8 4C6.89543 4 6 4.89543 6 6C6 7.10457 6.89543 8 8 8ZM8 8H12V10H9V10.9628L10.8844 14.5332L9.11562 15.4668L8 13.353L6.88438 15.4668L5.11562 14.5332L7 10.9628V10H4V8H8Z"
-            fill-rule="evenodd"
+            d="M12 10H9V10.9629L10.8848 14.5332L9.11523 15.4668L8 13.3525L6.88477 15.4668L5.11523 14.5332L7 10.9629V10H4V8H12V10ZM8 4C9.10457 4 10 4.89543 10 6C10 7.10457 9.10457 8 8 8C6.89543 8 6 7.10457 6 6C6 4.89543 6.89543 4 8 4Z"
           />
         </svg>
       </button>
@@ -93,9 +86,7 @@ exports[`Color selector examples AvailableValuesColorSelectorComponent should re
 `;
 
 exports[`Color selector examples DefaultColorSelectorComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <div
     class="v-gap-6 v-align-items-center v-flex v-flex-row v-flex-wrap"
     valignitemscenter=""
@@ -142,22 +133,17 @@ exports[`Color selector examples DefaultColorSelectorComponent should render cor
           class="v-icon v-icon-accessibility v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-1"
           v-icon-visa-accessibility-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M3.75736 3.75736C1.41421 6.1005 1.41421 9.89949 3.75736 12.2426L2.34315 13.6569C-0.781049 10.5327 -0.781049 5.46734 2.34315 2.34315C5.46734 -0.781049 10.5327 -0.781049 13.6569 2.34315C16.781 5.46734 16.781 10.5327 13.6569 13.6569L12.2426 12.2426C14.5858 9.8995 14.5858 6.1005 12.2426 3.75736C9.89949 1.41421 6.1005 1.41421 3.75736 3.75736Z"
-            fill-rule="evenodd"
+            d="M2.34338 2.34338C5.46758 -0.780809 10.5327 -0.78081 13.6569 2.34338C16.7809 5.46759 16.781 10.5327 13.6569 13.6569L12.2428 12.2428C14.5859 9.89969 14.5858 6.1006 12.2428 3.75745C9.89965 1.4143 6.10059 1.4143 3.75745 3.75745C1.4143 6.10059 1.4143 9.89965 3.75745 12.2428L2.34338 13.6569C-0.78081 10.5327 -0.78081 5.46758 2.34338 2.34338Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 8C9.10457 8 10 7.10457 10 6C10 4.89543 9.10457 4 8 4C6.89543 4 6 4.89543 6 6C6 7.10457 6.89543 8 8 8ZM8 8H12V10H9V10.9628L10.8844 14.5332L9.11562 15.4668L8 13.353L6.88438 15.4668L5.11562 14.5332L7 10.9628V10H4V8H8Z"
-            fill-rule="evenodd"
+            d="M12 10H9V10.9629L10.8848 14.5332L9.11523 15.4668L8 13.3525L6.88477 15.4668L5.11523 14.5332L7 10.9629V10H4V8H12V10ZM8 4C9.10457 4 10 4.89543 10 6C10 7.10457 9.10457 8 8 8C6.89543 8 6 7.10457 6 6C6 4.89543 6.89543 4 8 4Z"
           />
         </svg>
       </button>
@@ -176,9 +162,7 @@ exports[`Color selector examples DefaultColorSelectorComponent should render cor
 `;
 
 exports[`Color selector examples DisabledColorSelectorComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <div
     class="v-gap-6 v-align-items-center v-flex v-flex-row v-flex-wrap"
     valignitemscenter=""
@@ -227,22 +211,17 @@ exports[`Color selector examples DisabledColorSelectorComponent should render co
           class="v-icon v-icon-accessibility v-icon-tiny v-icon-visa"
           focusable="false"
           height="16"
-          id="a-v__icon__internal-2"
           v-icon-visa-accessibility-tiny=""
           viewBox="0 0 16 16"
           width="16"
         >
           <path
             class="v-icon-secondary"
-            clip-rule="evenodd"
-            d="M3.75736 3.75736C1.41421 6.1005 1.41421 9.89949 3.75736 12.2426L2.34315 13.6569C-0.781049 10.5327 -0.781049 5.46734 2.34315 2.34315C5.46734 -0.781049 10.5327 -0.781049 13.6569 2.34315C16.781 5.46734 16.781 10.5327 13.6569 13.6569L12.2426 12.2426C14.5858 9.8995 14.5858 6.1005 12.2426 3.75736C9.89949 1.41421 6.1005 1.41421 3.75736 3.75736Z"
-            fill-rule="evenodd"
+            d="M2.34338 2.34338C5.46758 -0.780809 10.5327 -0.78081 13.6569 2.34338C16.7809 5.46759 16.781 10.5327 13.6569 13.6569L12.2428 12.2428C14.5859 9.89969 14.5858 6.1006 12.2428 3.75745C9.89965 1.4143 6.10059 1.4143 3.75745 3.75745C1.4143 6.10059 1.4143 9.89965 3.75745 12.2428L2.34338 13.6569C-0.78081 10.5327 -0.78081 5.46758 2.34338 2.34338Z"
           />
           <path
             class="v-icon-primary"
-            clip-rule="evenodd"
-            d="M8 8C9.10457 8 10 7.10457 10 6C10 4.89543 9.10457 4 8 4C6.89543 4 6 4.89543 6 6C6 7.10457 6.89543 8 8 8ZM8 8H12V10H9V10.9628L10.8844 14.5332L9.11562 15.4668L8 13.353L6.88438 15.4668L5.11562 14.5332L7 10.9628V10H4V8H8Z"
-            fill-rule="evenodd"
+            d="M12 10H9V10.9629L10.8848 14.5332L9.11523 15.4668L8 13.3525L6.88477 15.4668L5.11523 14.5332L7 10.9629V10H4V8H12V10ZM8 4C9.10457 4 10 4.89543 10 6C10 7.10457 9.10457 8 8 8C6.89543 8 6 7.10457 6 6C6 4.89543 6.89543 4 8 4Z"
           />
         </svg>
       </button>

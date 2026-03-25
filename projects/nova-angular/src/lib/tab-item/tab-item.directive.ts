@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,9 +20,9 @@ import {
   InputSignal,
   InputSignalWithTransform,
   ModelSignal,
+  OnInit,
   OutputEmitterRef,
   Signal,
-  WritableSignal,
   afterNextRender,
   booleanAttribute,
   computed,
@@ -32,13 +32,11 @@ import {
   inject,
   input,
   model,
-  output,
-  signal
+  output
 } from '@angular/core';
 import { ButtonDirective } from '../button/button.directive';
 import { FloatingUITriggerDirective } from '../floating-ui-trigger/floating-ui-trigger.directive';
 import { TabListDirective } from '../tab-list/tab-list.directive';
-import { defaultEffectParam } from '../nova-lib.constants';
 
 @Directive({
   host: {
@@ -50,7 +48,14 @@ import { defaultEffectParam } from '../nova-lib.constants';
   selector: '[v-tab-item]',
   standalone: true
 })
-export class TabItemDirective implements AfterContentInit {
+export class TabItemDirective implements OnInit, AfterContentInit {
+  ngOnInit(): void {
+    // ie `<div v-tab-item expanded>` will set the checked state to '', which is truthy
+    if (this.expanded() === '') {
+      this.expanded.set(true);
+    }
+  }
+
   constructor() {
     afterNextRender({
       write: () => {
@@ -61,7 +66,33 @@ export class TabItemDirective implements AfterContentInit {
         }
       }
     });
+
+    // Watch for expanded state changes and emit disclosureTabToggled
+    // This handles both click-triggered and programmatic changes
+    let previousExpandedValue: boolean | null | string = null;
+    let isFirstRun = true;
+
+    effect(() => {
+      if (!this.disclosureTab()) return;
+
+      const currentExpandedValue = this.expanded();
+
+      // Skip initial run and only emit if value changed
+      if (!isFirstRun && currentExpandedValue !== previousExpandedValue) {
+        this.disclosureTabToggled.emit(!!currentExpandedValue);
+
+        // Update button aria-expanded if button exists
+        const button = this.button();
+        if (button) {
+          button.ariaExpandedInternal.set(!!currentExpandedValue);
+        }
+      }
+
+      previousExpandedValue = currentExpandedValue;
+      isFirstRun = false;
+    });
   }
+
   public readonly tabList: TabListDirective | null = inject(TabListDirective, {
     optional: true,
     host: true
@@ -77,9 +108,9 @@ export class TabItemDirective implements AfterContentInit {
 
   /**
    * Marks item as selected when true. <br />
-   * Not to be used with navigational tabs. To set a navigational tab as active, view [Angular's tutorial on identifying the active route](https://angular.dev/guide/routing/router-tutorial#identify-the-active-route).
-   * Use [active] when you want to handle the active state of the listbox item.
-   * Use (activeChange) when you want the library to handle the active state of the listbox item, but get notified of changes.
+   * Can be used with navigational tabs as an alternative to Angular Router's routerLinkActive. When active is true, child buttons will automatically receive aria-current="page".
+   * Use [active] when you want to handle the active state of the tab item.
+   * Use (activeChange) when you want the library to handle the active state of the tab item, but get notified of changes.
    * Use [(active)] when you want the active state to reflect changes by both you and the library.
    */
   readonly active: ModelSignal<boolean | string | null> = model<boolean | string | null>(null);
@@ -100,19 +131,13 @@ export class TabItemDirective implements AfterContentInit {
 
   /**
    * Sets expanded state of disclosure tab item.
+   * Use [expanded] when you want to handle the expanded state of the tab item.
+   * Use (expandedChange) when you want the library to handle the expanded state of the tab item, but get notified of changes.
+   * Use [(expanded)] when you want the expanded state to reflect changes by both you and the library.
+
    * @default false
    */
-  readonly expandedInput: InputSignalWithTransform<boolean | null, unknown> = input<boolean | null, unknown>(null, {
-    alias: 'expanded',
-    transform: booleanAttribute
-  });
-  private readonly expandedInternal: WritableSignal<boolean | null> = signal<boolean | null>(null);
-  readonly expanded: Signal<boolean | null> = computed(() => this.expandedInput() ?? this.expandedInternal());
-  private readonly expandedEffect = effect(() => {
-    const expanded = this.expanded();
-    if (expanded === null || !this.disclosureTab()) return;
-    this.disclosureTabToggled.emit(expanded);
-  }, defaultEffectParam);
+  readonly expanded: ModelSignal<boolean | null | string> = model<boolean | null | string>(null);
 
   /**
    * Sets role of tab item. <br />
@@ -153,9 +178,8 @@ export class TabItemDirective implements AfterContentInit {
 
         if (!this.disclosureTab()) return;
 
-        this.expandedInternal.update((expanded) => !expanded);
-        // update the aria-expanded attribute on the button
-        button.ariaExpandedInternal.set(!!this.expanded());
+        const newExpandedValue = !this.expanded();
+        this.expanded.set(newExpandedValue);
       })
     );
     if (!this.disclosureTab()) return;

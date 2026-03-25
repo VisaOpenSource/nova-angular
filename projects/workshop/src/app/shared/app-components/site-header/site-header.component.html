@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -86,7 +86,7 @@
         <ul v-dropdown-list>
           @for (item of supportLinks; track item.name) {
             <li>
-              <a v-dropdown-item vLink vFlex vJustifyContentBetween [href]="item.url" vOpensInNewTab
+              <a v-dropdown-item v-link vFlex vJustifyContentBetween [href]="item.url" vOpensInNewTab
                 >{{ item.name }}
                 @if (item.name !== 'Email') {
                   <svg v-icon-visa-maximize-tiny />
@@ -109,7 +109,7 @@
         <ul v-dropdown-list>
           @for (version of versionLinks; track version.name) {
             <li>
-              <a [href]="version.url" v-dropdown-item vLink vFlex>{{ version.name }}</a>
+              <a [href]="version.url" v-dropdown-item v-link vFlex>{{ version.name }}</a>
             </li>
           }
         </ul>

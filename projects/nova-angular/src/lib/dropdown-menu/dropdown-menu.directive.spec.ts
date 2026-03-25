@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ describe('DropdownMenuDirective', () => {
     expect(container.firstElementChild?.getAttribute('id')).toBe(null);
     expect(container.firstElementChild?.getAttribute('class')).toBe('v-dropdown-menu v-surface');
     expect(container.firstElementChild?.getAttribute('style')).toBe(
-      'inline-size: 180px; max-inline-size: 100%; --v-dropdown-menu-surface-margin-block-start: 0; z-index: 200;'
+      'inline-size: 180px; --v-dropdown-menu-surface-margin-block-start: 0; z-index: 200;'
     );
   });
 
@@ -53,7 +53,7 @@ describe('DropdownMenuDirective', () => {
       imports: [DropdownMenuDirective]
     });
     expect(container.firstElementChild?.getAttribute('style')).toBe(
-      'inline-size: 180px; max-inline-size: 100%; --v-dropdown-menu-surface-margin-block-start: 0; z-index: 2;'
+      'inline-size: 180px; --v-dropdown-menu-surface-margin-block-start: 0; z-index: 2;'
     );
   });
 
@@ -62,7 +62,7 @@ describe('DropdownMenuDirective', () => {
       imports: [DropdownMenuDirective]
     });
     expect(container.firstElementChild?.getAttribute('style')).toBe(
-      'inline-size: 180px; max-inline-size: 100%; --v-dropdown-menu-surface-margin-block-start: 0;'
+      'inline-size: 180px; --v-dropdown-menu-surface-margin-block-start: 0;'
     );
   });
 

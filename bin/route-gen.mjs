@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,16 +23,18 @@ import { fileURLToPath } from 'url';
 const ExampleType = {
   components: 'components',
   services: 'services',
-  utilities: 'utilities'
+  utilities: 'utilities',
+  patterns: 'patterns'
 };
 const ExampleTypeSingular = {
   components: 'component',
   services: 'service',
-  utilities: 'utility'
+  utilities: 'utility',
+  patterns: 'pattern'
 };
 
 const sharedImports = `/**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -65,6 +67,7 @@ const getDirs = (dir) =>
 const components = getDirs(join(cwd, ExampleType.components));
 const services = getDirs(join(cwd, ExampleType.services));
 const utilities = getDirs(join(cwd, ExampleType.utilities));
+const patterns = getDirs(join(cwd, ExampleType.patterns));
 
 const getExampleFiles = (exampleType, dir) =>
   globSync(`./**/*${docsFileExtension}`, {
@@ -106,6 +109,8 @@ const main = () => {
   generateExamplesRoutes(ExampleType.services, services);
   // Example routes for utilities
   generateExamplesRoutes(ExampleType.utilities, utilities);
+  // Example routes for patterns
+  generateExamplesRoutes(ExampleType.patterns, patterns);
 };
 
 main();

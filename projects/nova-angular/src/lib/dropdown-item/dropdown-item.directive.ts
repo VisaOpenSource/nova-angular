@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,8 @@ import { ListenerService } from '../listener-service/listener.service';
 @Directive({
   host: {
     class: 'v-dropdown-item v-listbox-item',
+
+    '[attr.disabled]': 'disabled() ? "disabled" : null',
 
     '[class.v-button]': 'buttonItem()',
     '[class.v-button-tertiary]': 'buttonItem()',

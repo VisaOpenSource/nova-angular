@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,8 @@
  * limitations under the License.
  *
  **/
+import { Component } from '@angular/core';
+import { provideRouter, Router } from '@angular/router';
 import { render } from '@testing-library/angular';
 
 import { IdGenerator } from '@visa/nova-angular';
@@ -45,10 +47,25 @@ beforeEach(() => {
   IdGenerator.reset();
 });
 
+@Component({ template: '', standalone: true })
+class DummyComponent {}
+
 describe('Navigation drawer examples', () => {
   keys.forEach((key) => {
     it(`${key} should render correctly`, async () => {
-      const { container } = await render(examples[key]);
+      const { container, fixture } = await render(examples[key], {
+        providers: [
+          provideRouter([
+            { path: '', component: DummyComponent },
+            { path: 'components/navigation-drawer', component: DummyComponent }
+          ])
+        ]
+      });
+
+      const router = fixture.debugElement.injector.get(Router);
+      await router.navigate(['/']);
+      fixture.detectChanges();
+
       expect(container).toMatchSnapshot();
     });
   });

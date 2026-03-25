@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,9 @@
   <circle class="v-progress-circular-background" />
   <circle
     class="v-progress-circular-bar"
-    [style.stroke-dasharray]="determinate() ? initialSize() : null"
+    [style.stroke-dasharray]="
+       determinate() ? initialSize() : initialSize() ? initialSize() * 0.8 : null
+     "
     [style.stroke-dashoffset]="determinate() ? dashOffset() : null"
     #progressBar
   />

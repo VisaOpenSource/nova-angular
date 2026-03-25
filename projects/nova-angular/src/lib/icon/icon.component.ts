@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ import {
   Signal,
   signal,
   ViewEncapsulation,
-  WritableSignal
+  WritableSignal,
 } from '@angular/core';
 import { IconToggleDirective } from '../icon-toggle/icon-toggle.directive';
 import { IconLibrary, IconSize } from './icon.constants';
@@ -55,14 +55,18 @@ import { IconLibrary, IconSize } from './icon.constants';
     '[class.v-icon-tiny]': 'iconSize() === "tiny"',
     '[class.v-icon-visa]': 'library() === "visa"',
     '[class.v-tab-suffix]': 'tabSuffix()',
-    '[style.--v-icon-height]': 'isBadgeEllipse() ? "var(--size-scalable-" + customHeight() + ")" : null',
-    '[style.--v-icon-primary]': 'isBadgeEllipse() ? "var(--v-badge-ellipse-color)" : null',
-    '[style.--v-icon-secondary]': 'isBadgeEllipse() ? "var(--v-badge-ellipse-color)" : null',
-    '[style.--v-icon-width]': 'isBadgeEllipse() ? "var(--size-scalable-" + customWidth() + ")" : null'
+    '[style.--v-icon-height]':
+      'isBadgeEllipse() ? "var(--size-scalable-" + customHeight() + ")" : null',
+    '[style.--v-icon-primary]':
+      'isBadgeEllipse() ? "var(--v-badge-ellipse-color)" : null',
+    '[style.--v-icon-secondary]':
+      'isBadgeEllipse() ? "var(--v-badge-ellipse-color)" : null',
+    '[style.--v-icon-width]':
+      'isBadgeEllipse() ? "var(--size-scalable-" + customWidth() + ")" : null',
   },
   selector: '[v-icon]',
   standalone: true,
-  templateUrl: './icon.component.html'
+  templateUrl: './icon.component.html',
 })
 export class IconComponent {
   /**
@@ -88,16 +92,23 @@ export class IconComponent {
    * Name of icon to display. <br />
    * Should refer to an icon in VPDS' [Icon Library](https://design.visa.com/components/icons-illustrations/).
    */
-  readonly iconInput: InputSignal<string | null> = input<null | string>(null, { alias: 'icon' });
+  readonly iconInput: InputSignal<string | null> = input<null | string>(null, {
+    alias: 'icon',
+  });
   private readonly icon: Signal<string | null> = computed(
     () =>
       this.iconInput() ??
       (this.iconToggle !== undefined
-        ? ((this.iconToggle?.expanded() ? this.iconToggle?.expandedIcon() : this.iconToggle?.collapsedIcon()) as string)
-        : null)
+        ? ((this.iconToggle?.expanded()
+            ? this.iconToggle?.expandedIcon()
+            : this.iconToggle?.collapsedIcon()) as string)
+        : null),
   );
 
-  private readonly iconToggle: IconToggleDirective | null = inject(IconToggleDirective, { optional: true, host: true });
+  private readonly iconToggle: IconToggleDirective | null = inject(
+    IconToggleDirective,
+    { optional: true, host: true },
+  );
 
   /**
    * Sets icon resolution/size.
@@ -112,8 +123,11 @@ export class IconComponent {
    * Intended for use in badges with an indicator.
    * @default false
    */
-  readonly isBadgeEllipse: InputSignalWithTransform<boolean, unknown> = input<boolean, unknown>(false, {
-    transform: booleanAttribute
+  readonly isBadgeEllipse: InputSignalWithTransform<boolean, unknown> = input<
+    boolean,
+    unknown
+  >(false, {
+    transform: booleanAttribute,
   });
 
   /**
@@ -127,17 +141,22 @@ export class IconComponent {
    * Flips icon from right to left when true and <code>dir="rtl" is present on a parent element.
    * @default false
    */
-  readonly rtl: InputSignalWithTransform<boolean, unknown> = input<boolean, unknown>(false, {
-    transform: booleanAttribute
+  readonly rtl: InputSignalWithTransform<boolean, unknown> = input<
+    boolean,
+    unknown
+  >(false, {
+    transform: booleanAttribute,
   });
 
   readonly tabSuffix: WritableSignal<boolean> = signal<boolean>(false);
 
   protected readonly computedSize: Signal<number> = computed<number>(() =>
-    this.iconSize() === 'low' ? 24 : this.iconSize() === 'high' ? 48 : 16
+    this.iconSize() === 'low' ? 24 : this.iconSize() === 'high' ? 48 : 16,
   );
 
   protected readonly iconRef: Signal<string | null> = computed(
-    () => this.customIcon() ?? (this.icon() && `${this.library()}-${this.icon()}-${this.iconSize()}`)
+    () =>
+      this.customIcon() ??
+      (this.icon() && `${this.library()}-${this.icon()}-${this.iconSize()}`),
   );
 }

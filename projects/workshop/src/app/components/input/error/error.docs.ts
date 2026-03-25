@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +17,6 @@
 import { ChangeDetectionStrategy, Component, computed, ElementRef, signal, viewChild } from '@angular/core';
 import { InputDirective, NovaLibModule } from '@visa/nova-angular';
 import { VisaErrorTiny } from '@visa/nova-icons-angular';
-import { MarkdownModule } from 'ngx-markdown';
 
 /** #docs */
 @Component({
@@ -25,7 +24,7 @@ import { MarkdownModule } from 'ngx-markdown';
   selector: 'nova-workshop-input-error',
   templateUrl: './error.docs.html',
   standalone: true,
-  imports: [MarkdownModule, NovaLibModule, VisaErrorTiny]
+  imports: [NovaLibModule, VisaErrorTiny]
 })
 export class ErrorInputComponent {
   readonly input = viewChild(InputDirective, { read: ElementRef });

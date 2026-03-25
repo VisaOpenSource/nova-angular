@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <div
     class="v-flex v-flex-col"
     gap="12"
@@ -33,7 +31,6 @@ exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] =
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-0"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -41,9 +38,7 @@ exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] =
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -53,7 +48,7 @@ exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] =
         aria-hidden="true"
         class="v-dropdown-menu v-surface v-flex v-flex-col v-p-4"
         id="a-v-floating-ui-element-1"
-        style="inline-size: 180px; max-inline-size: 100%; --v-dropdown-menu-surface-margin-block-start: 0; position: absolute; top: 0px; left: 0px; display: none; z-index: 200;"
+        style="inline-size: 180px; --v-dropdown-menu-surface-margin-block-start: 0; position: absolute; top: 0px; left: 0px; display: none; z-index: 200;"
         v-dropdown-menu=""
         vflex=""
         vflexcol=""
@@ -84,7 +79,6 @@ exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] =
                   class="v-icon v-icon-chevron-right v-icon-tiny v-icon-visa v-accordion-toggle-icon"
                   focusable="false"
                   height="16"
-                  id="a-v__icon__internal-2"
                   v-icon-visa-chevron-right-tiny=""
                   v-toggle-default-template=""
                   viewBox="0 0 16 16"
@@ -92,9 +86,7 @@ exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] =
                 >
                   <path
                     class="v-icon-primary"
-                    clip-rule="evenodd"
-                    d="M5.39309 1.00049L12 8.00049L5.39309 15.0005L4 13.5245L9.21383 8.00049L4 2.47646L5.39309 1.00049Z"
-                    fill-rule="evenodd"
+                    d="M12 8.00049L5.39355 15.0005L4 13.5249L9.21387 8.00049L4 2.47607L5.39355 1.00049L12 8.00049Z"
                   />
                 </svg>
                 
@@ -169,7 +161,6 @@ exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] =
                   class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
                   focusable="false"
                   height="16"
-                  id="a-v__icon__internal-4"
                   v-icon-visa-chevron-down-tiny=""
                   v-toggle-default-template=""
                   viewBox="0 0 16 16"
@@ -177,9 +168,7 @@ exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] =
                 >
                   <path
                     class="v-icon-primary"
-                    clip-rule="evenodd"
-                    d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-                    fill-rule="evenodd"
+                    d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
                   />
                 </svg>
                 
@@ -330,7 +319,6 @@ exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] =
               class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-6"
               v-icon-visa-chevron-down-tiny=""
               v-toggle-default-template=""
               viewBox="0 0 16 16"
@@ -338,9 +326,7 @@ exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] =
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-                fill-rule="evenodd"
+                d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
               />
             </svg>
             
@@ -482,7 +468,6 @@ exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] =
               class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-8"
               v-icon-visa-chevron-down-tiny=""
               v-toggle-default-template=""
               viewBox="0 0 16 16"
@@ -490,9 +475,7 @@ exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] =
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-                fill-rule="evenodd"
+                d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
               />
             </svg>
             
@@ -670,7 +653,6 @@ exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] =
                     class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
                     focusable="false"
                     height="16"
-                    id="a-v__icon__internal-10"
                     v-icon-visa-chevron-down-tiny=""
                     v-toggle-default-template=""
                     viewBox="0 0 16 16"
@@ -678,9 +660,7 @@ exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] =
                   >
                     <path
                       class="v-icon-primary"
-                      clip-rule="evenodd"
-                      d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-                      fill-rule="evenodd"
+                      d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
                     />
                   </svg>
                   
@@ -789,14 +769,13 @@ exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] =
             class="v-icon v-icon-close v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-12"
             v-icon-visa-close-tiny=""
             viewBox="0 0 16 16"
             width="16"
           >
             <path
               class="v-icon-primary"
-              d="M7.99995 9.4149L13.9497 15.3646L15.3639 13.9504L9.41417 8.00069L15.3639 2.05094L13.9497 0.636723L7.99995 6.58647L2.0502 0.636719L0.635986 2.05093L6.58574 8.00069L0.635993 13.9504L2.05021 15.3646L7.99995 9.4149Z"
+              d="M15.3635 2.05078L9.41431 8.00098L15.3635 13.9502L13.9495 15.3643L8.00024 9.41504L2.05005 15.3643L0.635986 13.9502L6.58618 8.00098L0.635986 2.05078L2.05005 0.636719L8.00024 6.58691L13.9495 0.636719L15.3635 2.05078Z"
             />
             <defs>
               <clippath>
@@ -896,7 +875,6 @@ exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] =
                 class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
                 focusable="false"
                 height="16"
-                id="a-v__icon__internal-13"
                 v-icon-visa-chevron-down-tiny=""
                 v-toggle-default-template=""
                 viewBox="0 0 16 16"
@@ -904,9 +882,7 @@ exports[`Tests examples ComboboxFocusTestComponent should render correctly 1`] =
               >
                 <path
                   class="v-icon-primary"
-                  clip-rule="evenodd"
-                  d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-                  fill-rule="evenodd"
+                  d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
                 />
               </svg>
               

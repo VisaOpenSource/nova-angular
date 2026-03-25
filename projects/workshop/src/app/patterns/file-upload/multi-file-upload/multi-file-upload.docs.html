@@ -1,0 +1,181 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<div vFlex vFlexCol vGap="25">
+  <div vFlex vFlexCol vGap="4" style="max-width: 400px">
+    <div vFlex vFlexCol vGap="16">
+      <div vFlex vFlexCol vGap="8">
+        <p vTypography="subtitle-1">Upload files</p>
+        <p vTypography="label-small">
+          Choose one or more files to upload, up to 25 MB each. Accepted file
+          types are .pdf, .png, and .jpg.
+        </p>
+      </div>
+      <!-- Drag and drop zone with visual feedback during drag -->
+      <div
+        vFlex
+        vFlexCol
+        vJustifyContentCenter
+        vAlignItemsCenter
+        vGap="8"
+        style="
+          border: 1px solid var(--palette-default-active);
+          border-radius: var(--theme-border-radius);
+          height: 158px;
+          background: {{
+          isDragging() ? 'var(--palette-default-surface-highlight)' : 'initial'
+        }};
+        "
+        (drop)="handleDrop($event)"
+        (dragover)="handleDragOver($event)"
+        (dragleave)="handleDragLeave($event)"
+      >
+        <!-- Hidden file input triggered by button -->
+        <input
+          #fileInput
+          vSR
+          type="file"
+          multiple
+          (change)="handleFileChange($event)"
+        />
+        <p style="margin: 0">Drag and drop files or</p>
+        <button
+          #selectFilesButton
+          v-button
+          buttonColor="secondary"
+          (click)="handleSelectFilesClick()"
+        >
+          Select file(s)
+        </button>
+      </div>
+    </div>
+
+    <!-- Always-present live region; hidden when empty to avoid flex gap spacing -->
+    <div vFlex vFlexCol vGap="8" role="status" style="min-height: 1rem">
+      @if (uploadingFiles().length > 0) {
+      <p vTypography="label-small">
+        Uploading {{ uploadingFiles().length }} file{{ uploadingFiles().length >
+        1 ? "s" : "" }}...
+      </p>
+      }
+      <!-- Error summary with links to individual files and batch retry option -->
+      @if ( erroredFiles().length > 0 && !uploadingFiles().length &&
+      showSectionMessage() ) {
+      <div v-section v-message messageType="error" vMY="21">
+        <svg
+          v-message-icon
+          v-icon-visa-error-low
+          aria-hidden="false"
+          aria-label="Error"
+          role="img"
+        />
+        <div v-message-content vPL="2" vPB="2">
+          <div style="word-break: break-all">
+            <p vTypography>The following files have errors:</p>
+            <div vPL="20">
+              <ul style="list-style: initial">
+                @for (file of erroredFiles(); track file.id) {
+                <li>
+                  <a href="#" (click)="handleErrorFileClick($event, file.id)">
+                    {{ file.file.name }}
+                  </a>
+                </li>
+                }
+              </ul>
+            </div>
+            <!-- Batch retry button shown when multiple files have errors -->
+            @if (erroredFiles().length > 1) {
+            <div vMT="8">
+              <button
+                v-button
+                buttonColor="secondary"
+                (click)="handleRetryAll()"
+              >
+                Retry all
+              </button>
+            </div>
+            }
+          </div>
+        </div>
+        <button
+          v-button-icon
+          subtle
+          vMT="-8"
+          vMR="-8"
+          vML="14"
+          vP="7"
+          buttonSize="small"
+          buttonColor="tertiary"
+          aria-label="close"
+          (click)="handleSectionMessageClose()"
+        >
+          <svg v-icon-visa-close-tiny />
+        </button>
+      </div>
+      }
+    </div>
+
+    @if (uploadedFiles().length > 0) {
+    <ul
+      vFlex
+      vFlexCol
+      vGap="8"
+      style="list-style: none; padding: 0; margin: 0"
+      aria-label="Uploaded files"
+    >
+      @for (uploadFile of uploadedFiles(); track uploadFile.id) {
+      <li
+        vFlex
+        vFlexCol
+        vGap="5"
+        nova-upload-card
+        [file]="uploadFile"
+        [actionsTemplate]="actionsTemplate"
+      ></li>
+
+      <!-- Actions template provides retry and delete buttons for each file -->
+      <ng-template #actionsTemplate let-errorId="errorId">
+        <div
+          nova-file-status-button
+          [uploadFile]="uploadFile"
+          [errorId]="errorId"
+          (onRetry)="handleRetryFile(uploadFile)"
+        ></div>
+        <button
+          v-button
+          v-button-icon
+          buttonColor="tertiary"
+          [attr.aria-label]="'Delete ' + uploadFile.file.name"
+          (click)="handleDeleteFile(uploadFile)"
+        >
+          <svg v-icon-visa-delete-tiny aria-hidden="true"></svg>
+        </button>
+      </ng-template>
+      }
+    </ul>
+    }
+  </div>
+
+  <!-- Success notification shown when all files upload successfully -->
+  <div role="alert" vAlignSelfEnd>
+    @if (showFlag() && allFilesUploaded()) {
+    <upload-success-flag
+      [message]="'Files uploaded successfully.'"
+      (closeFlag)="handleFlagClose()"
+    ></upload-success-flag>
+    }
+  </div>
+</div>

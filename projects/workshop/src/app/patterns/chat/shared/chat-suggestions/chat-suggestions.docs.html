@@ -1,0 +1,34 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+
+<div vFlex vFlexCol vAlignItemsEnd vGap="8">
+  <span vTypography="label">Prompt suggestions</span>
+  <div vFlex vFlexWrap vGap="8" vAlignItemsEnd vJustifyContentEnd>
+    @for (chip of chips; track chip; let i = $index) {
+      <label v-chip v-chip-selection vGap="6"
+             [for]="id + '-' + i"
+             style="max-block-size: 32px; min-block-size: fit-content;">
+        <span style="text-wrap: pretty">{{ chip }}</span>
+        <input v-checkbox
+               [attr.aria-label]="chip"
+               [id]="id + '-' + i"
+               type="checkbox"
+               (change)="onSuggestionClick(chip)" />
+      </label>
+    }
+  </div>
+</div>

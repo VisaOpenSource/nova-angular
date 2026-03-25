@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -51,7 +51,7 @@ export class SetOfChipsDeleteChipsChipComponent {
         this.labels = this.labels.filter((item) => item != labelToDelete);
       }
     }
-    let focusedElement = this.el.nativeElement.querySelector('#' + labelToFocus);
+    const focusedElement = this.el.nativeElement.querySelector('#' + labelToFocus);
     if (focusedElement) {
       focusedElement.focus();
     }

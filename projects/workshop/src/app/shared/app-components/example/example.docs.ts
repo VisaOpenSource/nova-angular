@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ import {
   inject,
   input,
   numberAttribute,
-  signal
+  signal,
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NovaLibModule } from '@visa/nova-angular';
@@ -34,13 +34,34 @@ import { MockDataKeys } from '../../../shared/services/mock-data.service';
 import { WorkshopService } from '../../../shared/services/workshop.service';
 import { CodeSnippetComponent } from '../code-snippet/code-snippet.component';
 import { SafeUrlDirective } from '../safe-url/safe-url.directive';
+
+function removeLicenseHeader(snippet: string): string {
+  if (!snippet) return snippet;
+  // Remove HTML license comment block
+  snippet = snippet.replace(
+    /<!--[\s\S]*?© 2025 Visa[\s\S]*?Licensed under the Apache License[\s\S]*?limitations under the License.[\s\S]*?-->\s*/m,
+    '',
+  );
+  // Remove TS license comment block
+  snippet = snippet.replace(
+    /\/\*\*[\s\S]*?© 2025 Visa[\s\S]*?Licensed under the Apache License[\s\S]*?limitations under the License.[\s\S]*?\*\/\s*/m,
+    '',
+  );
+  return snippet;
+}
 @Component({
   selector: 'nova-workshop-example',
   templateUrl: './example.docs.html',
   standalone: true,
-  imports: [NovaLibModule, VisaMaximizeTiny, RouterModule, CodeSnippetComponent, SafeUrlDirective],
+  imports: [
+    NovaLibModule,
+    VisaMaximizeTiny,
+    RouterModule,
+    CodeSnippetComponent,
+    SafeUrlDirective,
+  ],
   styleUrl: './example.docs.scss',
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
 export class ExampleComponent implements OnInit {
   readonly workshopService = inject(WorkshopService);
@@ -54,23 +75,33 @@ export class ExampleComponent implements OnInit {
   exampleTitleID?: string;
   readonly iframeUrl = signal<string>('');
 
-  readonly iframe: InputSignalWithTransform<boolean, unknown> = input<boolean, unknown>(false, {
-    transform: booleanAttribute
+  readonly iframe: InputSignalWithTransform<boolean, unknown> = input<
+    boolean,
+    unknown
+  >(false, {
+    transform: booleanAttribute,
   });
 
   constructor() {
     effect(() => {
       if (!this.workshopService.docsJsonDataReady()) return;
       const match = this.workshopService.docsJsonData?.filter(
-        (component: { selector: string }) => component.selector === this.selector().trim()
+        (component: { selector: string }) =>
+          component.selector === this.selector().trim(),
       )[0];
       if (!match) {
         this.loading.set(false);
         return;
       }
-      this.templateData = match.templateData || match.template;
-      this.exampleType = match.description.match(/#[a-zA-Z|\-]*/g);
-      const matchingKeys = Object.keys(MockDataKeys).filter((key) => match.sourceCode.includes(key));
+      this.templateData = removeLicenseHeader(
+        match.templateData || match.template,
+      );
+      this.exampleType = removeLicenseHeader(match.description).match(
+        /#[a-zA-Z|\-]*/g,
+      );
+      const matchingKeys = Object.keys(MockDataKeys).filter((key) =>
+        match.sourceCode.includes(key),
+      );
       if (matchingKeys.length > 0) {
         matchingKeys?.forEach((dataSet) => {
           fetch(`mock-data/${MockDataKeys[dataSet]}.json`)
@@ -85,7 +116,9 @@ export class ExampleComponent implements OnInit {
                   this.exampleData +
                   `\n\n// ${dataSet}\n${JSON.stringify(data, null, 2).replace(/\]$/g, '  ...\n]\n')}`;
               } else {
-                this.exampleData = this.exampleData + `\n\n// ${dataSet}\n${JSON.stringify(data, null, 2)}`;
+                this.exampleData =
+                  this.exampleData +
+                  `\n\n// ${dataSet}\n${JSON.stringify(data, null, 2)}`;
               }
               this.cdRef.detectChanges();
             });
@@ -108,8 +141,13 @@ export class ExampleComponent implements OnInit {
         .replace(/\s+/g, '-')
         .toLowerCase()
         .replace(/\(|\)|,/g, '');
-      const exampleData = { name: this.exampleTitle(), id: this.exampleTitleID };
-      this.workshopService.examples.update((values) => (values ? [...values, exampleData] : [exampleData]));
+      const exampleData = {
+        name: this.exampleTitle(),
+        id: this.exampleTitleID,
+      };
+      this.workshopService.examples.update((values) =>
+        values ? [...values, exampleData] : [exampleData],
+      );
     }
   }
 

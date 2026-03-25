@@ -1,9 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Multiselect examples AutoAutocompleteMultiselectComponent should render correctly 1`] = `
-<div
-  id="root0"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -65,16 +63,13 @@ exports[`Multiselect examples AutoAutocompleteMultiselectComponent should render
               class="v-icon v-icon-clear-alt v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-2"
               v-icon-visa-clear-alt-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                fill-rule="evenodd"
+                d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
               />
               <defs>
                 <clippath>
@@ -118,16 +113,13 @@ exports[`Multiselect examples AutoAutocompleteMultiselectComponent should render
               class="v-icon v-icon-clear-alt v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-3"
               v-icon-visa-clear-alt-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                fill-rule="evenodd"
+                d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
               />
               <defs>
                 <clippath>
@@ -180,7 +172,6 @@ exports[`Multiselect examples AutoAutocompleteMultiselectComponent should render
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-0"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -188,9 +179,7 @@ exports[`Multiselect examples AutoAutocompleteMultiselectComponent should render
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -289,9 +278,7 @@ exports[`Multiselect examples AutoAutocompleteMultiselectComponent should render
 `;
 
 exports[`Multiselect examples DefaultMultiselectComponent should render correctly 1`] = `
-<div
-  id="root1"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -363,7 +350,6 @@ exports[`Multiselect examples DefaultMultiselectComponent should render correctl
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-4"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -371,9 +357,7 @@ exports[`Multiselect examples DefaultMultiselectComponent should render correctl
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -471,9 +455,7 @@ exports[`Multiselect examples DefaultMultiselectComponent should render correctl
 `;
 
 exports[`Multiselect examples DisabledMultiselectComponent should render correctly 1`] = `
-<div
-  id="root2"
->
+<div>
   <div
     class="v-combobox"
     disabled="disabled"
@@ -548,7 +530,6 @@ exports[`Multiselect examples DisabledMultiselectComponent should render correct
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-6"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -556,9 +537,7 @@ exports[`Multiselect examples DisabledMultiselectComponent should render correct
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -684,9 +663,7 @@ exports[`Multiselect examples DisabledMultiselectComponent should render correct
 `;
 
 exports[`Multiselect examples ErrorMultiselectComponent should render correctly 1`] = `
-<div
-  id="root3"
->
+<div>
   <div
     aria-invalid="false"
     class="v-combobox"
@@ -761,7 +738,6 @@ exports[`Multiselect examples ErrorMultiselectComponent should render correctly 
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-8"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -769,9 +745,7 @@ exports[`Multiselect examples ErrorMultiselectComponent should render correctly 
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -900,9 +874,7 @@ exports[`Multiselect examples ErrorMultiselectComponent should render correctly 
 `;
 
 exports[`Multiselect examples InfiniteScrollMultiselectComponent should render correctly 1`] = `
-<div
-  id="root4"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -972,7 +944,6 @@ exports[`Multiselect examples InfiniteScrollMultiselectComponent should render c
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-10"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -980,9 +951,7 @@ exports[`Multiselect examples InfiniteScrollMultiselectComponent should render c
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -1017,9 +986,7 @@ exports[`Multiselect examples InfiniteScrollMultiselectComponent should render c
 `;
 
 exports[`Multiselect examples InlineMessageMultiselectComponent should render correctly 1`] = `
-<div
-  id="root5"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -1091,7 +1058,6 @@ exports[`Multiselect examples InlineMessageMultiselectComponent should render co
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-12"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -1099,9 +1065,7 @@ exports[`Multiselect examples InlineMessageMultiselectComponent should render co
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -1206,9 +1170,7 @@ exports[`Multiselect examples InlineMessageMultiselectComponent should render co
 `;
 
 exports[`Multiselect examples ManualAutocompleteMultiselectComponent should render correctly 1`] = `
-<div
-  id="root6"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -1278,7 +1240,6 @@ exports[`Multiselect examples ManualAutocompleteMultiselectComponent should rend
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-14"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -1286,9 +1247,7 @@ exports[`Multiselect examples ManualAutocompleteMultiselectComponent should rend
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -1387,9 +1346,7 @@ exports[`Multiselect examples ManualAutocompleteMultiselectComponent should rend
 `;
 
 exports[`Multiselect examples ModelDrivenFbMultiselectComponent should render correctly 1`] = `
-<div
-  id="root7"
->
+<div>
   <form
     class="ng-untouched ng-pristine ng-invalid v-gap-16 v-flex v-flex-col"
     novalidate=""
@@ -1469,7 +1426,6 @@ exports[`Multiselect examples ModelDrivenFbMultiselectComponent should render co
               class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-16"
               v-icon-visa-chevron-down-tiny=""
               v-toggle-default-template=""
               viewBox="0 0 16 16"
@@ -1477,9 +1433,7 @@ exports[`Multiselect examples ModelDrivenFbMultiselectComponent should render co
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-                fill-rule="evenodd"
+                d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
               />
             </svg>
             
@@ -1614,11 +1568,9 @@ exports[`Multiselect examples ModelDrivenFbMultiselectComponent should render co
 `;
 
 exports[`Multiselect examples ModelDrivenMultiselectComponent should render correctly 1`] = `
-<div
-  id="root8"
->
+<div>
   <div
-    class="v-combobox ng-untouched ng-dirty ng-valid"
+    class="v-combobox ng-untouched ng-pristine ng-valid"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
     v-combobox=""
     v-floating-ui-container=""
@@ -1680,16 +1632,13 @@ exports[`Multiselect examples ModelDrivenMultiselectComponent should render corr
               class="v-icon v-icon-clear-alt v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-20"
               v-icon-visa-clear-alt-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                fill-rule="evenodd"
+                d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
               />
               <defs>
                 <clippath>
@@ -1741,7 +1690,6 @@ exports[`Multiselect examples ModelDrivenMultiselectComponent should render corr
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-18"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -1749,9 +1697,7 @@ exports[`Multiselect examples ModelDrivenMultiselectComponent should render corr
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -1846,7 +1792,7 @@ exports[`Multiselect examples ModelDrivenMultiselectComponent should render corr
     </div>
   </div>
   <code>
-    Label: 
+    Label: Option A
   </code>
   <code>
     Value: [option-a]
@@ -1855,9 +1801,7 @@ exports[`Multiselect examples ModelDrivenMultiselectComponent should render corr
 `;
 
 exports[`Multiselect examples MultiselectWithMultipleSelectionsAndVerticalScrollComponent should render correctly 1`] = `
-<div
-  id="root9"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0; max-inline-size: 290px;"
@@ -1922,16 +1866,13 @@ exports[`Multiselect examples MultiselectWithMultipleSelectionsAndVerticalScroll
               class="v-icon v-icon-clear-alt v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-23"
               v-icon-visa-clear-alt-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                fill-rule="evenodd"
+                d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
               />
               <defs>
                 <clippath>
@@ -1975,16 +1916,13 @@ exports[`Multiselect examples MultiselectWithMultipleSelectionsAndVerticalScroll
               class="v-icon v-icon-clear-alt v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-24"
               v-icon-visa-clear-alt-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                fill-rule="evenodd"
+                d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
               />
               <defs>
                 <clippath>
@@ -2028,16 +1966,13 @@ exports[`Multiselect examples MultiselectWithMultipleSelectionsAndVerticalScroll
               class="v-icon v-icon-clear-alt v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-25"
               v-icon-visa-clear-alt-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                fill-rule="evenodd"
+                d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
               />
               <defs>
                 <clippath>
@@ -2081,16 +2016,13 @@ exports[`Multiselect examples MultiselectWithMultipleSelectionsAndVerticalScroll
               class="v-icon v-icon-clear-alt v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-26"
               v-icon-visa-clear-alt-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                fill-rule="evenodd"
+                d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
               />
               <defs>
                 <clippath>
@@ -2134,16 +2066,13 @@ exports[`Multiselect examples MultiselectWithMultipleSelectionsAndVerticalScroll
               class="v-icon v-icon-clear-alt v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-27"
               v-icon-visa-clear-alt-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                fill-rule="evenodd"
+                d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
               />
               <defs>
                 <clippath>
@@ -2187,16 +2116,13 @@ exports[`Multiselect examples MultiselectWithMultipleSelectionsAndVerticalScroll
               class="v-icon v-icon-clear-alt v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-28"
               v-icon-visa-clear-alt-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                fill-rule="evenodd"
+                d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
               />
               <defs>
                 <clippath>
@@ -2240,16 +2166,13 @@ exports[`Multiselect examples MultiselectWithMultipleSelectionsAndVerticalScroll
               class="v-icon v-icon-clear-alt v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-29"
               v-icon-visa-clear-alt-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                fill-rule="evenodd"
+                d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
               />
               <defs>
                 <clippath>
@@ -2293,16 +2216,13 @@ exports[`Multiselect examples MultiselectWithMultipleSelectionsAndVerticalScroll
               class="v-icon v-icon-clear-alt v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-30"
               v-icon-visa-clear-alt-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                fill-rule="evenodd"
+                d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
               />
               <defs>
                 <clippath>
@@ -2346,16 +2266,13 @@ exports[`Multiselect examples MultiselectWithMultipleSelectionsAndVerticalScroll
               class="v-icon v-icon-clear-alt v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-31"
               v-icon-visa-clear-alt-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                fill-rule="evenodd"
+                d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
               />
               <defs>
                 <clippath>
@@ -2399,16 +2316,13 @@ exports[`Multiselect examples MultiselectWithMultipleSelectionsAndVerticalScroll
               class="v-icon v-icon-clear-alt v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-32"
               v-icon-visa-clear-alt-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                fill-rule="evenodd"
+                d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
               />
               <defs>
                 <clippath>
@@ -2452,16 +2366,13 @@ exports[`Multiselect examples MultiselectWithMultipleSelectionsAndVerticalScroll
               class="v-icon v-icon-clear-alt v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-33"
               v-icon-visa-clear-alt-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                fill-rule="evenodd"
+                d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
               />
               <defs>
                 <clippath>
@@ -2505,16 +2416,13 @@ exports[`Multiselect examples MultiselectWithMultipleSelectionsAndVerticalScroll
               class="v-icon v-icon-clear-alt v-icon-tiny v-icon-visa"
               focusable="false"
               height="16"
-              id="a-v__icon__internal-34"
               v-icon-visa-clear-alt-tiny=""
               viewBox="0 0 16 16"
               width="16"
             >
               <path
                 class="v-icon-primary"
-                clip-rule="evenodd"
-                d="M8 16.0005C12.4183 16.0005 16 12.4188 16 8.00049C16 3.58221 12.4183 0.000488281 8 0.000488281C3.58172 0.000488281 0 3.58221 0 8.00049C0 12.4188 3.58172 16.0005 8 16.0005ZM11.7071 10.2934L9.41424 8.00052L11.7071 5.70761L10.2929 4.2934L8.00003 6.5863L5.70712 4.2934L4.29291 5.70761L6.58582 8.00052L4.29294 10.2934L5.70715 11.7076L8.00003 9.41473L10.2929 11.7076L11.7071 10.2934Z"
-                fill-rule="evenodd"
+                d="M8 0.000488281C12.4183 0.000488281 16 3.58221 16 8.00049C16 12.4188 12.4183 16.0005 8 16.0005C3.58172 16.0005 0 12.4188 0 8.00049C0 3.58221 3.58172 0.000488281 8 0.000488281ZM8 6.58643L5.70703 4.29346L4.29297 5.70752L6.58594 8.00049L4.29297 10.2935L5.70703 11.7075L8 9.41455L10.293 11.7075L11.707 10.2935L9.41406 8.00049L11.707 5.70752L10.293 4.29346L8 6.58643Z"
               />
               <defs>
                 <clippath>
@@ -2568,7 +2476,6 @@ exports[`Multiselect examples MultiselectWithMultipleSelectionsAndVerticalScroll
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-21"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -2576,9 +2483,7 @@ exports[`Multiselect examples MultiselectWithMultipleSelectionsAndVerticalScroll
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -2780,9 +2685,7 @@ exports[`Multiselect examples MultiselectWithMultipleSelectionsAndVerticalScroll
 `;
 
 exports[`Multiselect examples ReadOnlyMultiselectComponent should render correctly 1`] = `
-<div
-  id="root10"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -2862,7 +2765,6 @@ exports[`Multiselect examples ReadOnlyMultiselectComponent should render correct
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-35"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -2870,9 +2772,7 @@ exports[`Multiselect examples ReadOnlyMultiselectComponent should render correct
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -2993,9 +2893,7 @@ exports[`Multiselect examples ReadOnlyMultiselectComponent should render correct
 `;
 
 exports[`Multiselect examples SelectAndUnselectAllMenuMultiselectComponent should render correctly 1`] = `
-<div
-  id="root11"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -3068,7 +2966,6 @@ exports[`Multiselect examples SelectAndUnselectAllMenuMultiselectComponent shoul
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-37"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -3076,9 +2973,7 @@ exports[`Multiselect examples SelectAndUnselectAllMenuMultiselectComponent shoul
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -3207,11 +3102,9 @@ exports[`Multiselect examples SelectAndUnselectAllMenuMultiselectComponent shoul
 `;
 
 exports[`Multiselect examples TemplateDrivenProgrammaticSelectionMultiselectComponent should render correctly 1`] = `
-<div
-  id="root12"
->
+<div>
   <div
-    class="v-combobox ng-untouched ng-valid ng-dirty"
+    class="v-combobox ng-untouched ng-pristine ng-valid"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
     v-combobox=""
     v-floating-ui-container=""
@@ -3261,7 +3154,6 @@ exports[`Multiselect examples TemplateDrivenProgrammaticSelectionMultiselectComp
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-39"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -3269,9 +3161,7 @@ exports[`Multiselect examples TemplateDrivenProgrammaticSelectionMultiselectComp
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -3280,7 +3170,6 @@ exports[`Multiselect examples TemplateDrivenProgrammaticSelectionMultiselectComp
       
     </div>
     <div
-      aria-activedescendant="v-listbox-item-option-a"
       aria-hidden="true"
       class="v-listbox-container"
       id="a-v-floating-ui-element-0"
@@ -3307,6 +3196,58 @@ exports[`Multiselect examples TemplateDrivenProgrammaticSelectionMultiselectComp
             class="v-flex-shrink-0 v-radio"
           />
           Option A
+        </li>
+        <li
+          aria-selected="false"
+          class="v-listbox-item"
+          id="v-listbox-item-option-b"
+          role="option"
+          v-listbox-item=""
+          value="option-b"
+        >
+          <span
+            class="v-flex-shrink-0 v-radio"
+          />
+          Option B
+        </li>
+        <li
+          aria-selected="false"
+          class="v-listbox-item"
+          id="v-listbox-item-option-c"
+          role="option"
+          v-listbox-item=""
+          value="option-c"
+        >
+          <span
+            class="v-flex-shrink-0 v-radio"
+          />
+          Option C
+        </li>
+        <li
+          aria-selected="false"
+          class="v-listbox-item"
+          id="v-listbox-item-option-d"
+          role="option"
+          v-listbox-item=""
+          value="option-d"
+        >
+          <span
+            class="v-flex-shrink-0 v-radio"
+          />
+          Option D
+        </li>
+        <li
+          aria-selected="false"
+          class="v-listbox-item"
+          id="v-listbox-item-option-e"
+          role="option"
+          v-listbox-item=""
+          value="option-e"
+        >
+          <span
+            class="v-flex-shrink-0 v-radio"
+          />
+          Option E
         </li>
         
       </ul>
@@ -3335,6 +3276,38 @@ exports[`Multiselect examples TemplateDrivenProgrammaticSelectionMultiselectComp
     >
       Option A
     </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      Option B
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      Option C
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      Option D
+    </button>
+    <button
+      buttoncolor="secondary"
+      class="v-button v-button-secondary"
+      type="button"
+      v-button=""
+    >
+      Option E
+    </button>
     
   </div>
   <button
@@ -3359,9 +3332,7 @@ exports[`Multiselect examples TemplateDrivenProgrammaticSelectionMultiselectComp
 `;
 
 exports[`Multiselect examples WithDisabledOptionMultiselectComponent should render correctly 1`] = `
-<div
-  id="root13"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -3433,7 +3404,6 @@ exports[`Multiselect examples WithDisabledOptionMultiselectComponent should rend
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-41"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -3441,9 +3411,7 @@ exports[`Multiselect examples WithDisabledOptionMultiselectComponent should rend
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -3543,9 +3511,7 @@ exports[`Multiselect examples WithDisabledOptionMultiselectComponent should rend
 `;
 
 exports[`Multiselect examples WithScrollMultiselectComponent should render correctly 1`] = `
-<div
-  id="root15"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"
@@ -3617,7 +3583,6 @@ exports[`Multiselect examples WithScrollMultiselectComponent should render corre
             class="v-icon v-icon-chevron-down v-icon-tiny v-icon-visa"
             focusable="false"
             height="16"
-            id="a-v__icon__internal-43"
             v-icon-visa-chevron-down-tiny=""
             v-toggle-default-template=""
             viewBox="0 0 16 16"
@@ -3625,9 +3590,7 @@ exports[`Multiselect examples WithScrollMultiselectComponent should render corre
           >
             <path
               class="v-icon-primary"
-              clip-rule="evenodd"
-              d="M2.47597 4.00049L1 5.39358L8 12.0005L15 5.39358L13.524 4.00049L8 9.21431L2.47597 4.00049Z"
-              fill-rule="evenodd"
+              d="M1 5.39404L2.47559 4.00049L8 9.21436L13.5244 4.00049L15 5.39404L8 12.0005L1 5.39404Z"
             />
           </svg>
           
@@ -3817,9 +3780,7 @@ exports[`Multiselect examples WithScrollMultiselectComponent should render corre
 `;
 
 exports[`Multiselect examples WithoutDropdownChevronMultiselectComponent should render correctly 1`] = `
-<div
-  id="root14"
->
+<div>
   <div
     class="v-combobox"
     style="--v-dropdown-menu-surface-margin-block-start: 0;"

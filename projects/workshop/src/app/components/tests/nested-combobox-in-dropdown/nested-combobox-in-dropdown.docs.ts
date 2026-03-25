@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  *
  **/
-import { Component, viewChild, signal, inject, OutputRefSubscription } from '@angular/core';
+import { AfterViewInit, Component, inject, OutputRefSubscription, signal, viewChild } from '@angular/core';
 import { ComboboxDirective, ComboboxService, ListboxItemType, NovaLibModule } from '@visa/nova-angular';
 import { VisaChevronDownTiny, VisaChevronUpTiny } from '@visa/nova-icons-angular';
 
@@ -25,7 +25,7 @@ import { VisaChevronDownTiny, VisaChevronUpTiny } from '@visa/nova-icons-angular
   standalone: true,
   imports: [NovaLibModule, VisaChevronDownTiny, VisaChevronUpTiny]
 })
-export class NestedComboboxInDropdownTestComponent {
+export class NestedComboboxInDropdownTestComponent implements AfterViewInit {
   readonly combobox = viewChild.required(ComboboxDirective);
   private readonly comboboxService = inject(ComboboxService, { host: true, optional: true });
 

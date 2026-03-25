@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,6 +21,7 @@ import { TITLE_SEPARATOR, TITLE_SUFFIX } from '../../app.constants';
 export const multiselectRoutes: Routes = [
 	{ loadComponent: () => import('./multiselect.docs').then(m => m.MultiselectDocsComponent), path: '' },
 	{ loadComponent: () => import('./auto-autocomplete/auto-autocomplete.docs').then(m => m.AutoAutocompleteMultiselectComponent), path: 'auto-autocomplete', title: 'Auto autocomplete multiselect component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./categories/default.docs').then(m => m.DefaultMultiselectComponent), path: 'default', title: 'Default multiselect component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./default/default.docs').then(m => m.DefaultMultiselectComponent), path: 'default', title: 'Default multiselect component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./disabled/disabled.docs').then(m => m.DisabledMultiselectComponent), path: 'disabled', title: 'Disabled multiselect component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./dynamic-data-set/dynamic-data-set.docs').then(m => m.DynamicDataSetMultiselectComponent), path: 'dynamic-data-set', title: 'Dynamic data set multiselect component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
@@ -32,6 +33,8 @@ export const multiselectRoutes: Routes = [
 	{ loadComponent: () => import('./model-driven-fb/model-driven-fb.docs').then(m => m.ModelDrivenFbMultiselectComponent), path: 'model-driven-fb', title: 'Model driven fb multiselect component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./model-driven-with-programmatic-selection/model-driven-with-programmatic-selection.docs').then(m => m.ModelDrivenProgrammticSelectionMultiselectComponent), path: 'model-driven-with-programmatic-selection', title: 'Model driven with programmatic selection multiselect component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./read-only/read-only.docs').then(m => m.ReadOnlyMultiselectComponent), path: 'read-only', title: 'Read only multiselect component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable-component/reusable-component.docs').then(m => m.ReusableMultiselect), path: 'reusable-component', title: 'Reusable component multiselect component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable.docs').then(m => m.ReusableMultiselectDemo), path: 'reusable', title: 'Reusable multiselect component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./template-driven/template-driven.docs').then(m => m.TemplateDrivenMultiselectComponent), path: 'template-driven', title: 'Template driven multiselect component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./template-driven-with-programmatic-selection/template-driven-with-programmatic-selection.docs').then(m => m.TemplateDrivenProgrammaticSelectionMultiselectComponent), path: 'template-driven-with-programmatic-selection', title: 'Template driven with programmatic selection multiselect component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./with-disabled-option/with-disabled-option.docs').then(m => m.WithDisabledOptionMultiselectComponent), path: 'with-disabled-option', title: 'With disabled option multiselect component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },

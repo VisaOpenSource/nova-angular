@@ -1,5 +1,5 @@
 <!--
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,15 +35,15 @@
         subsequent columns.
       </caption>
       <thead>
-        <tr v-tr>
+        <tr>
           @for (colItem of columnData(); track colItem) {
           <th v-th scope="col">{{ colItem }}</th>
           }
         </tr>
       </thead>
-      <tbody v-tbody>
+      <tbody>
         @for (rowItem of rowData(); track rowItem) {
-        <tr v-tr>
+        <tr>
           @for (item of $any(rowItem) | keyvalue: originalOrder; track item; let i = $index) { @if (i === 0) {
           <th v-td scope="row">{{ item.value }}</th>
           } @else {

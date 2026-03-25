@@ -1,0 +1,60 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<ng-template #switchInput>
+  <input
+    v-switch
+    [(checked)]="checked"
+    (blur)="onTouched()"
+    (change)="handleChange($event)"
+    [attr.aria-describedby]="inputDescribedBy()"
+    [attr.aria-required]="required() ? 'true' : null"
+    [disabled]="disabled()"
+    [id]="id() + '-input'"
+    [invalid]="invalid()"
+    [required]="required()"
+    type="checkbox"
+  />
+</ng-template>
+
+<div vFlex vFlexWrap vAlignItemsCenter vJustifyContentBetween vM="8" vGap="10">
+  @if(alignStart()){
+  <ng-template [ngTemplateOutlet]="switchInput" />
+  }
+  <div vFlex vFlexCol vGap="2" vMT="2" vFlexGrow vFlexBasis="min-content">
+    <label v-switch-label vTypography="label-large" v-label [for]="id() + '-input'"
+      >{{label()}}{{required() ? ' (required)' : ''}}</label
+    >
+    @if(description()){
+    <span v-input-message [id]="id() + '-description'" vTypography="body-3"> {{ description() }} </span>
+    }
+  </div>
+  @if(!alignStart()){
+  <ng-template [ngTemplateOutlet]="switchInput" />
+  }
+</div>
+
+<span
+  v-input-message
+  [id]="id() + '-message'"
+  [attr.aria-atomic]="invalid() || null"
+  [attr.aria-live]="invalid() ? 'assertive' : null"
+  vMT="4"
+  [class.v-input-error]="invalid()"
+>
+  @if (invalid() && message()) {
+  <svg v-icon-visa-error-tiny />} @if(message()){ {{ message() }} }
+</span>

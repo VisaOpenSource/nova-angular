@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,21 +18,19 @@ import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { NovaLibModule } from '@visa/nova-angular';
 import { FooterLayoutComponent } from '../shared/footer-layout/footer-layout.docs';
-import { StackedNavLayoutComponent } from '../stacked-nav-layout/stacked-nav-layout.docs';
+import { StackedNavLayoutComponent } from './stacked-nav-layout/stacked-nav-layout.docs';
 
-/** #patterns **/
+/**
+ * Layout with stacked horizontal navigation.
+ * Combines two-tier navigation (top bar and secondary menu), content area, and footer.
+ * #patterns
+ **/
 @Component({
   selector: 'nova-workshop-stacked-horizontal-application-layout',
   templateUrl: './stacked-horizontal-application-layout.docs.html',
   styleUrls: ['./stacked-layout.css'],
   encapsulation: ViewEncapsulation.None,
   standalone: true,
-  imports: [
-    CommonModule,
-    NovaLibModule,
-    FooterLayoutComponent,
-    StackedNavLayoutComponent,
-  ]
+  imports: [CommonModule, NovaLibModule, FooterLayoutComponent, StackedNavLayoutComponent]
 })
-export class StackedHorizontalApplicationLayoutComponent {
-}
+export class StackedHorizontalApplicationLayoutComponent {}

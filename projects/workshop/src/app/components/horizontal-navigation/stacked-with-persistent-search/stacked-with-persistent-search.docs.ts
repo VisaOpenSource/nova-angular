@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
  **/
 import { ChangeDetectionStrategy, Component, ElementRef, signal, viewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ButtonDirective, InputDirective, NovaLibModule } from '@visa/nova-angular';
+import { NovaLibModule } from '@visa/nova-angular';
 import {
   VisaAccountLow,
   VisaChevronDownTiny,

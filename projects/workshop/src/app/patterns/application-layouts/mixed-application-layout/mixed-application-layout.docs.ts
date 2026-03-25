@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,21 +18,20 @@
 import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { FooterLayoutComponent } from '../shared/footer-layout/footer-layout.docs';
-import { VerticalMixedNavLayoutComponent } from '../vertical-mixed-nav-layout/vertical-mixed-nav-layout.docs';
-import { HorizontalMixedNavLayoutComponent } from '../horizontal-mixed-nav-layout/horizontal-mixed-nav-layout.docs';
+import { VerticalMixedNavLayoutComponent } from './vertical-mixed-nav-layout/vertical-mixed-nav-layout.docs';
+import { HorizontalMixedNavLayoutComponent } from './horizontal-mixed-nav-layout/horizontal-mixed-nav-layout.docs';
 
-/** #patterns **/
+/**
+ * Layout combining horizontal and vertical navigation.
+ * Includes top navigation bar, sidebar, content area, and footer.
+ * #patterns
+ **/
 @Component({
   selector: 'nova-workshop-mixed-application-layout',
   templateUrl: './mixed-application-layout.docs.html',
   styleUrls: ['./mixed-layout.docs.css'],
   encapsulation: ViewEncapsulation.None,
   standalone: true,
-  imports: [
-    CommonModule,
-    FooterLayoutComponent,
-    VerticalMixedNavLayoutComponent,
-    HorizontalMixedNavLayoutComponent
-  ]
+  imports: [CommonModule, FooterLayoutComponent, VerticalMixedNavLayoutComponent, HorizontalMixedNavLayoutComponent]
 })
 export class MixedApplicationLayoutComponent {}

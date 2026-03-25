@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -473,5 +473,32 @@ describe('PaginationControl', () => {
       });
       expect(service.paginationControl.pages()).toEqual([1, 2, 3]);
     });
+  });
+
+  it('should never duplicate the same number in start and end block', () => {
+    service.paginationControl = new PaginationControl({
+      startBlockMaxLength: 7,
+      middleBlockMaxLength: 3,
+      endBlockMaxLength: 7,
+      blockMaxLength: 5,
+      defaultSelected: 1,
+      defaultTotalPages: 14
+    });
+    // START GENAI
+    const firstBlock = service.paginationControl.pages();
+    expect(firstBlock).toEqual([1, 2, 3, 4, 5, 6, 7, -1, 14]);
+    service.paginationControl.goToLastPage();
+    const lastBlock = service.paginationControl.pages();
+    expect(lastBlock).toEqual([1, -1, 8, 9, 10, 11, 12, 13, 14]);
+
+    // Ensure no numbers except first, last, and -1 (placeholder) are repeated between the two arrays
+    const filterBlockNumbers = (arr: (number | string)[]) =>
+      arr.filter((n) => typeof n === 'number' && n !== 1 && n !== 14 && n !== -1);
+
+    const firstBlockNumbers = filterBlockNumbers(firstBlock);
+    const lastBlockNumbers = filterBlockNumbers(lastBlock);
+    const intersection = firstBlockNumbers.filter((n) => lastBlockNumbers.includes(n));
+    expect(intersection.length).toBe(0);
+    // END GENAI
   });
 });

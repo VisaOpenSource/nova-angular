@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -53,13 +53,10 @@ import { IdGenerator } from '../id-generator/id-generator.service';
 import { ListboxItemComponent } from '../listbox-item/listbox-item.component';
 import { ListboxDirective } from '../listbox/listbox.directive';
 import { TooltipDirective } from '../tooltip/tooltip.directive';
-import { defaultEffectParam } from '../nova-lib.constants';
 import { TabItemDirective } from '../tab-item/tab-item.directive';
 import { Unsubscribable } from '../types';
+import { AccordionHeadingDirective } from '../accordion-heading/accordion-heading.directive';
 
-/**
- * @breakingChange - users will need to explicitly add `v-floating-ui-container` to their components that use floating UI elements as `v-combobox` will no longer be a selector for FloatingUIContainer.
- */
 @Directive({
   host: {
     style: '--v-dropdown-menu-surface-margin-block-start: 0;', // this is an angular-specific override. Spacing between dropdown-menu and button/trigger, is handled within floating-ui.service
@@ -88,6 +85,16 @@ export class FloatingUIContainer implements AfterContentInit {
   private readonly containers: Signal<readonly FloatingUIContainer[]> = contentChildren(FloatingUIContainer, {
     descendants: true
   });
+
+  /**
+   * Gather accordions so we can SKIP setting up any of their children as toggle icons
+   */
+  private readonly accordions: Signal<readonly AccordionHeadingDirective[]> = contentChildren(
+    AccordionHeadingDirective,
+    {
+      descendants: true
+    }
+  );
 
   // gather the children!
   // we specifically need the toggle button (buttons with toggleIcon or toggleIconComponent)
@@ -193,7 +200,7 @@ export class FloatingUIContainer implements AfterContentInit {
     this.prevTabItems = tabItems as TabItemDirective[];
     this.prevTrigger = trigger;
     this.autoCloseOnItemClick();
-  }, defaultEffectParam);
+  });
 
   // store pieces of information about the floating UI
   private readonly floatingElement: WritableSignal<
@@ -234,7 +241,7 @@ export class FloatingUIContainer implements AfterContentInit {
     this.floatingUIToggled.emit(isShown);
     this.floatingUIToggleIcon()?.rotatedInternal.set(isShown);
     this.floatingUITrigger()?.isShown.set(isShown);
-  }, defaultEffectParam);
+  });
   /**
    * Placement of floating content relevant to triggering element.
    * @default FloatingUIPlacements.BOTTOM_START
@@ -247,7 +254,7 @@ export class FloatingUIContainer implements AfterContentInit {
     const placement = this.placement();
     if (!placement) return;
     this.floatingUIService.customizeFloatingUI(placement, null, null, null);
-  }, defaultEffectParam);
+  });
 
   /**
    * Middleware for FloatingUIService.
@@ -265,7 +272,7 @@ export class FloatingUIContainer implements AfterContentInit {
     const middleware = this.middleware();
     if (!middleware || middleware.length === 0) return;
     this.floatingUIService.customizeFloatingUI(null, middleware, null, null);
-  }, defaultEffectParam);
+  });
 
   /**
    * Events array for FloatingUIService. <br />
@@ -396,7 +403,17 @@ export class FloatingUIContainer implements AfterContentInit {
     // this must be done here rather than computed in child components because we need to know if the trigger is in a child container
     const toggleIcon = this.toggleIconComponent() || this.toggleIconDirective();
     // if the toggleIcon doesn't exist is in a child container, we don't want to set it up
-    if (!toggleIcon || this.containers().some((container) => container.floatingUIToggleIcon() === toggleIcon)) return;
+    if (
+      !toggleIcon ||
+      this.containers().some((container) => container.floatingUIToggleIcon() === toggleIcon) ||
+      // if the toggleIcon is part of a button in a child accordion-heading, we don't want to set it up
+      this.accordions().some(
+        (accordion) =>
+          accordion.hostButton?.toggleIcon() === toggleIcon ||
+          accordion.hostButton?.toggleIconComponent() === toggleIcon
+      )
+    )
+      return;
     // if the toggleIcon is in this container, we want to set it up
     this.floatingUIToggleIcon.set(toggleIcon);
   }
@@ -432,6 +449,8 @@ export class FloatingUIContainer implements AfterContentInit {
         child.clicked.subscribe(() => {
           if (child.disabled()) return;
           this.floatingUIService.hidefloatingUI();
+          // when a child is clicked and the floating UI is closed, restore focus to the trigger
+          this.floatingUIService.restoreFocus();
         })
       );
     });

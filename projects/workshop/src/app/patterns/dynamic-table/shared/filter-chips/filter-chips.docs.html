@@ -1,0 +1,47 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+@if (filtersFlattened().length > 0) {
+<form vFlex vGap="8" [attr.aria-labelledby]="id() + '-filter-chips'">
+  <span v-label [id]="id() + '-filter-chips'" vTypography="label-active">Filters applied:</span>
+  <fieldset>
+    <div vFlex>
+      @for(columnName of columnNamesWithFilters(); track columnName){
+      <legend v-label vSr>{{ columnName }}:</legend>
+      <ul vFlex vGap="8" vFlexWrap>
+        @for(filter of filters()[columnName] || []; track filter + i; let i = $index){
+        <li>
+          <div v-chip vFlex>
+            <span>{{ filter }}</span>
+            <button
+              v-button-icon
+              [attr.aria-label]="'clear ' + filter"
+              subtle
+              buttonColor="tertiary"
+              (click)="clearFilter(columnName, filter)"
+            >
+              <svg v-icon-visa-clear-alt-tiny />
+            </button>
+          </div>
+        </li>
+        }
+      </ul>
+      }
+    </div>
+  </fieldset>
+  <button v-button vAlignSelfStart (click)="clearAllFilters.emit()" buttonColor="tertiary">Clear all</button>
+</form>
+}

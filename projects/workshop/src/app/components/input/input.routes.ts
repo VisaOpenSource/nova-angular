@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,8 @@ export const inputRoutes: Routes = [
 	{ loadComponent: () => import('./one-time-passcode/one-time-passcode.docs').then(m => m.OneTimePasscodeInputComponent), path: 'one-time-passcode', title: 'One time passcode input component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./prefix/prefix.docs').then(m => m.PrefixInputComponent), path: 'prefix', title: 'Prefix input component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./read-only/read-only.docs').then(m => m.ReadOnlyInputComponent), path: 'read-only', title: 'Read only input component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable-component/reusable-component.docs').then(m => m.ReusableInput), path: 'reusable-component', title: 'Reusable component input component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
+	{ loadComponent: () => import('./reusable/reusable.docs').then(m => m.ReusableInputDemo), path: 'reusable', title: 'Reusable input component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./suffix/suffix.docs').then(m => m.SuffixInputComponent), path: 'suffix', title: 'Suffix input component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./template-driven/template-driven.docs').then(m => m.TemplateDrivenInputComponent), path: 'template-driven', title: 'Template driven input component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },
 	{ loadComponent: () => import('./template-driven-form/template-driven-form.docs').then(m => m.TemplateDrivenFormInputComponent), path: 'template-driven-form', title: 'Template driven form input component | Example' + TITLE_SEPARATOR + TITLE_SUFFIX },

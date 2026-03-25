@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,10 +20,10 @@ import { VisaChevronDownTiny } from '@visa/nova-icons-angular';
 import { Subscription } from 'rxjs';
 import { MockDataService } from '../../../shared/services/mock-data.service';
 
-type Option = {
+interface Option {
   label: string;
   value: string;
-};
+}
 
 /** #custom **/
 @Component({

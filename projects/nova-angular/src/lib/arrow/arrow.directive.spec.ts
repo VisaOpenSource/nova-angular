@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ describe('TooltipArrowDirective', () => {
     });
     expect(container.firstElementChild?.getAttribute('class')).toBe('v-tooltip-arrow');
     expect(container.firstElementChild?.getAttribute('style')).toBe(
-      'position: absolute; transform: rotate(45deg); z-index: -1; block-size: 8px; inline-size: 8px;'
+      'background-color: var(--v-surface-background); position: absolute; transform: rotate(45deg); z-index: -1; block-size: 8px; inline-size: 8px;'
     );
   });
 
@@ -41,7 +41,7 @@ describe('TooltipArrowDirective', () => {
       imports: [TooltipArrowDirective]
     });
     expect(container.firstElementChild?.getAttribute('style')).toBe(
-      'position: absolute; transform: rotate(45deg); z-index: -1; block-size: 12px; inline-size: 12px;'
+      'background-color: var(--v-surface-background); position: absolute; transform: rotate(45deg); z-index: -1; block-size: 12px; inline-size: 12px;'
     );
   });
 });

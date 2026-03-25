@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,19 +14,20 @@
  * limitations under the License.
  *
  **/
+import { ChangeDetectionStrategy, Component, signal, viewChild } from '@angular/core';
+import { By } from '@angular/platform-browser';
 import { render, screen } from '@testing-library/angular';
 import userEvent from '@testing-library/user-event';
-import { ChangeDetectionStrategy, Component, viewChild } from '@angular/core';
-import { ComboboxService } from './combobox.service';
-import { ComboboxDirective } from './combobox.directive';
-import { ListboxDirective } from '../listbox/listbox.directive';
-import { ListboxItemComponent } from '../listbox-item/listbox-item.component';
-import { InputDirective } from '../input/input.directive';
 import { FloatingUIContainer } from '../floating-ui-container/floating-ui-container.directive';
-import { FloatingUITriggerDirective } from '../floating-ui-trigger/floating-ui-trigger.directive';
 import { FloatingUIElementDirective } from '../floating-ui-element/floating-ui-element.directive';
+import { FloatingUITriggerDirective } from '../floating-ui-trigger/floating-ui-trigger.directive';
 import { FloatingUIService } from '../floating-ui/floating-ui.service';
-import { By } from '@angular/platform-browser';
+import { InputDirective } from '../input/input.directive';
+import { ListboxContainerDirective } from '../listbox-container/listbox-container.directive';
+import { ListboxItemComponent } from '../listbox-item/listbox-item.component';
+import { ListboxDirective } from '../listbox/listbox.directive';
+import { ComboboxDirective } from './combobox.directive';
+import { ComboboxService } from './combobox.service';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -115,8 +116,6 @@ describe('ComboboxService', () => {
 
       expect(filteredItems).toHaveLength(1);
       expect(filteredItems[0].label).toBe('Option B');
-
-      const visibleItems = screen.getAllByRole('option', { hidden: false });
     });
 
     it('should reset filter when input is cleared', async () => {
@@ -308,6 +307,77 @@ describe('ComboboxService', () => {
       expect(item1).toHaveClass('v-listbox-item-highlighted');
     });
 
+    it('should highlight the first item in new list when filtered list changes', async () => {
+      @Component({
+        changeDetection: ChangeDetectionStrategy.OnPush,
+        imports: [
+          ComboboxDirective,
+          ListboxContainerDirective,
+          ListboxDirective,
+          ListboxItemComponent,
+          InputDirective,
+          FloatingUIContainer,
+          FloatingUITriggerDirective,
+          FloatingUIElementDirective
+        ],
+        providers: [ComboboxService, FloatingUIService],
+        standalone: true,
+        template: `
+          <div v-combobox v-floating-ui-container>
+            <input v-input v-floating-ui-trigger data-testid="input" />
+            <div v-listbox-container v-floating-ui-element data-testid="listbox-container">
+              <ul v-listbox id="listbox">
+                @for (item of filteredItems(); track item.value) {
+                  <li v-listbox-item [value]="item.value" [attr.data-testid]="'item-' + item.value">
+                    {{ item.label }}
+                  </li>
+                }
+              </ul>
+            </div>
+          </div>
+        `
+      })
+      class TestFilterComponent {
+        public readonly combobox = viewChild.required(ComboboxDirective);
+        public readonly filteredItems = signal<any[]>([
+          { label: 'Option A', value: 'option-a' },
+          { label: 'Option B', value: 'option-b' },
+          { label: 'Option C', value: 'option-c' }
+        ]);
+      }
+
+      const { fixture } = await render(TestFilterComponent);
+      const component = fixture.componentInstance;
+      const comboboxService = fixture.debugElement.injector.get(ComboboxService);
+      const input = screen.getByTestId('input');
+
+      await fixture.whenStable();
+      fixture.detectChanges();
+
+      const fullList = [
+        { label: 'Option A', value: 'option-a' },
+        { label: 'Option B', value: 'option-b' },
+        { label: 'Option C', value: 'option-c' }
+      ];
+
+      // Subscribe to filter changes and update the signal
+      component.combobox().filteredListEmitter.subscribe((items: any[]) => {
+        component.filteredItems.set(items);
+        fixture.detectChanges();
+      });
+
+      comboboxService.autoFilterBasedOnList(component.combobox() as ComboboxDirective, fullList);
+      comboboxService.autoSelectItem(component.combobox() as ComboboxDirective);
+
+      // Type 'B' to filter - this will also open the menu
+      await userEvent.type(input, 'B');
+      await waitForChanges(fixture);
+
+      const itemB = screen.getByTestId('item-option-b');
+      expect(itemB).toHaveClass('v-listbox-item-highlighted');
+      expect(itemB).toHaveTextContent('Option B');
+    });
+
     it('should select the highlighted item when the menu is closed', async () => {
       const { fixture, comboboxService, component } = await setup();
       const input = screen.getByTestId('input');
@@ -315,10 +385,11 @@ describe('ComboboxService', () => {
       comboboxService.autoSelectItem(component.combobox() as ComboboxDirective);
       await userEvent.click(input);
       await userEvent.keyboard('{ArrowDown}');
+      await userEvent.keyboard('{ArrowDown}');
       await userEvent.keyboard('{Escape}');
       await waitForChanges(fixture);
 
-      expect(input).toHaveValue('Option A');
+      expect(input).toHaveValue('Option B');
     });
   });
 });

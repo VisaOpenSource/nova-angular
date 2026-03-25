@@ -1,0 +1,52 @@
+<!--
+ *              © 2025-2026 Visa
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *         http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ -->
+<!-- selection based action bar example content -->
+<div vPX="16" vPY="8" vSurface="2" class="v-action-bar">
+  <div vFlex vJustifyContentBetween vAlignItemsCenter vGap="20" vFlexWrap>
+    <div vFlex vGap="8" vFlexWrap>
+      <button v-button>Primary action</button>
+      <button v-button [disabled]="amountSelected() < 1" buttonColor="secondary">Secondary action</button>
+      <button v-button [disabled]="amountSelected() < 1" buttonColor="tertiary">Tertiary action</button>
+    </div>
+    <div vFlex vGap="8">
+      @if (amountSelected() > 0) {
+      <div v-chip compact vFlex>
+        <span>{{ amountSelected() }} selected</span>
+        <button (click)="clear.emit()" v-button-icon buttonColor="tertiary" subtle aria-label="clear selected rows">
+          <svg v-icon-visa-clear-alt-tiny />
+        </button>
+      </div>
+      }
+      <button
+        v-button-icon
+        buttonSize="small"
+        buttonColor="tertiary"
+        aria-label="filter table - selection-based action bar"
+      >
+        <svg v-icon-visa-filter-alt-tiny />
+      </button>
+      <button
+        v-button-icon
+        buttonSize="small"
+        buttonColor="tertiary"
+        aria-label="table settings - selection-based action bar"
+      >
+        <svg v-icon-visa-settings-tiny />
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 /**
- *              © 2025 Visa
+ *              © 2025-2026 Visa
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,6 +18,10 @@ import { ChangeDetectionStrategy, Component, output } from '@angular/core';
 import { NovaLibModule } from '@visa/nova-angular';
 import { VisaCloseTiny, VisaSuccessLow } from '@visa/nova-icons-angular';
 
+/**
+ * Displays a temporary success flag notification after saving wizard progress.
+ * Shows a success icon with a message and a dismiss button.
+ */
 /** #patterns #isShared **/
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -27,5 +31,6 @@ import { VisaCloseTiny, VisaSuccessLow } from '@visa/nova-icons-angular';
   imports: [NovaLibModule, VisaSuccessLow, VisaCloseTiny]
 })
 export class SharedWizardSaveFlagComponent {
+  /** Emits when the user dismisses the save notification flag */
   readonly closeFlag = output<void>();
 }
